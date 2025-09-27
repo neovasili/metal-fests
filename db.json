@@ -1,0 +1,349 @@
+{
+  "festivals": [
+    {
+      "name": "Sweden Rock Festival",
+      "dates": {
+        "start": "2026-06-03",
+        "end": "2026-06-06"
+      },
+      "location": "Sölvesborg, Sweden",
+      "poster": "https://images.unsplash.com/photo-1571266028243-d220c9c3b9b5?w=300&h=400&fit=crop&crop=center",
+      "website": "https://swedenrock.com",
+      "bands": [
+        "KISS",
+        "Def Leppard",
+        "Whitesnake",
+        "Europe",
+        "Treat",
+        "H.E.A.T",
+        "Crashdïet",
+        "Eclipse",
+        "The Darkness",
+        "Thunder"
+      ],
+      "ticketPrice": 235
+    },
+    {
+      "name": "Rock am Ring",
+      "dates": {
+        "start": "2026-06-05",
+        "end": "2026-06-07"
+      },
+      "location": "Nürburgring, Germany",
+      "poster": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&h=400&fit=crop&crop=center",
+      "website": "https://www.rock-am-ring.com",
+      "bands": [
+        "Green Day",
+        "The Prodigy",
+        "Foo Fighters",
+        "Rise Against",
+        "Bring Me The Horizon",
+        "Parkway Drive",
+        "Machine Head",
+        "Bad Religion",
+        "NOFX",
+        "The Offspring"
+      ],
+      "ticketPrice": 245
+    },
+    {
+      "name": "Rock im Park",
+      "dates": {
+        "start": "2026-06-05",
+        "end": "2026-06-07"
+      },
+      "location": "Nuremberg, Germany",
+      "poster": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=400&fit=crop&crop=center",
+      "website": "https://www.rock-im-park.com",
+      "bands": [
+        "Green Day",
+        "The Prodigy",
+        "Foo Fighters",
+        "Rise Against",
+        "Bring Me The Horizon",
+        "Parkway Drive",
+        "Machine Head",
+        "Bad Religion",
+        "NOFX",
+        "The Offspring"
+      ],
+      "ticketPrice": 245
+    },
+    {
+      "name": "Download Festival",
+      "dates": {
+        "start": "2026-06-11",
+        "end": "2026-06-13"
+      },
+      "location": "Donington Park, UK",
+      "poster": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=300&h=400&fit=crop&crop=center",
+      "website": "https://downloadfestival.co.uk",
+      "bands": [
+        "Black Sabbath",
+        "System of a Down",
+        "Slipknot",
+        "Avenged Sevenfold",
+        "Disturbed",
+        "Five Finger Death Punch",
+        "Alter Bridge",
+        "Architects",
+        "Parkway Drive",
+        "While She Sleeps"
+      ],
+      "ticketPrice": 289
+    },
+    {
+      "name": "Nova Rock Festival",
+      "dates": {
+        "start": "2026-06-11",
+        "end": "2026-06-14"
+      },
+      "location": "Nickelsdorf, Austria",
+      "poster": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=300&h=400&fit=crop&crop=center",
+      "website": "https://novarock.at",
+      "bands": [
+        "Linkin Park",
+        "System of a Down",
+        "Korn",
+        "Limp Bizkit",
+        "Papa Roach",
+        "Three Days Grace",
+        "Shinedown",
+        "Skillet",
+        "Breaking Benjamin",
+        "Starset"
+      ],
+      "ticketPrice": 195
+    },
+    {
+      "name": "Hellfest",
+      "dates": {
+        "start": "2026-06-18",
+        "end": "2026-06-21"
+      },
+      "location": "Clisson, France",
+      "poster": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=300&h=400&fit=crop&crop=center",
+      "website": "https://hellfest.fr",
+      "bands": [
+        "Rammstein",
+        "Tool",
+        "Gojira",
+        "Mastodon",
+        "Opeth",
+        "Amon Amarth",
+        "Behemoth",
+        "Airbourne",
+        "Mass Hysteria",
+        "Ultra Vomit"
+      ],
+      "ticketPrice": 199
+    },
+    {
+      "name": "Copenhell",
+      "dates": {
+        "start": "2026-06-18",
+        "end": "2026-06-21"
+      },
+      "location": "Copenhagen, Denmark",
+      "poster": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=400&fit=crop&crop=center",
+      "website": "https://copenhell.dk",
+      "bands": [
+        "Volbeat",
+        "Mercyful Fate",
+        "King Diamond",
+        "Slayer",
+        "Cannibal Corpse",
+        "Dimmu Borgir",
+        "Emperor",
+        "Mayhem",
+        "Gorgoroth",
+        "Immortal"
+      ],
+      "ticketPrice": 225
+    },
+    {
+      "name": "Graspop Metal Meeting",
+      "dates": {
+        "start": "2026-06-25",
+        "end": "2026-06-27"
+      },
+      "location": "Dessel, Belgium",
+      "poster": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=400&fit=crop&crop=center",
+      "website": "https://graspop.be",
+      "bands": [
+        "Ozzy Osbourne",
+        "Rob Zombie",
+        "Alice Cooper",
+        "Ghost",
+        "Volbeat",
+        "Jinjer",
+        "Amaranthe",
+        "Within Temptation",
+        "Epica",
+        "Delain"
+      ],
+      "ticketPrice": 215
+    },
+    {
+      "name": "Resurrection Fest",
+      "dates": {
+        "start": "2026-07-01",
+        "end": "2026-07-04"
+      },
+      "location": "Viveiro, Spain",
+      "poster": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=300&h=400&fit=crop&crop=center",
+      "website": "https://resurrectionsevilla.com",
+      "bands": [
+        "Megadeth",
+        "Anthrax",
+        "Testament",
+        "Exodus",
+        "Kreator",
+        "Sodom",
+        "Destruction",
+        "Overkill",
+        "Municipal Waste",
+        "Power Trip"
+      ],
+      "ticketPrice": 165
+    },
+    {
+      "name": "Masters of Rock",
+      "dates": {
+        "start": "2026-07-09",
+        "end": "2026-07-11"
+      },
+      "location": "Vizovice, Czech Republic",
+      "poster": "https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=300&h=400&fit=crop&crop=center",
+      "website": "https://mastersofrock.cz",
+      "bands": [
+        "Nightwish",
+        "Sonata Arctica",
+        "Stratovarius",
+        "Epica",
+        "Kamelot",
+        "Symphony X",
+        "Rhapsody of Fire",
+        "Eluveitie",
+        "Korpiklaani",
+        "Ensiferum"
+      ],
+      "ticketPrice": 145
+    },
+    {
+      "name": "Brutal Assault",
+      "dates": {
+        "start": "2026-08-06",
+        "end": "2026-08-09"
+      },
+      "location": "Jaroměř, Czech Republic",
+      "poster": "https://images.unsplash.com/photo-1571266028243-d220c9c3b9b5?w=300&h=400&fit=crop&crop=center",
+      "website": "https://brutalassault.cz",
+      "bands": [
+        "Death Angel",
+        "Dark Tranquillity",
+        "Insomnium",
+        "Cattle Decapitation",
+        "Napalm Death",
+        "Carcass",
+        "Bloodbath",
+        "At The Gates",
+        "The Black Dahlia Murder",
+        "Dying Fetus"
+      ],
+      "ticketPrice": 125
+    },
+    {
+      "name": "Wacken Open Air",
+      "dates": {
+        "start": "2026-07-30",
+        "end": "2026-08-01"
+      },
+      "location": "Wacken, Germany",
+      "poster": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=400&fit=crop&crop=center",
+      "website": "https://www.wacken.com",
+      "bands": [
+        "Iron Maiden",
+        "Metallica",
+        "Judas Priest",
+        "Saxon",
+        "Accept",
+        "Blind Guardian",
+        "Powerwolf",
+        "Sabaton",
+        "Hammerfall",
+        "Primal Fear"
+      ],
+      "ticketPrice": 249
+    },
+    {
+      "name": "Leyendas del Rock",
+      "dates": {
+        "start": "2026-08-06",
+        "end": "2026-08-09"
+      },
+      "location": "Villena, Spain",
+      "poster": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=300&h=400&fit=crop&crop=center",
+      "website": "https://leyendelrock.com",
+      "bands": [
+        "Scorpions",
+        "Alice Cooper",
+        "Twisted Sister",
+        "Dio Returns",
+        "Europe",
+        "Whitesnake",
+        "Thunder",
+        "UFO",
+        "Bonnie Tyler",
+        "Tesla"
+      ],
+      "ticketPrice": 135
+    },
+    {
+      "name": "Bloodstock Open Air",
+      "dates": {
+        "start": "2026-08-07",
+        "end": "2026-08-10"
+      },
+      "location": "Derbyshire, UK",
+      "poster": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=300&h=400&fit=crop&crop=center",
+      "website": "https://bloodstock.uk.com",
+      "bands": [
+        "Emperor",
+        "Cradle of Filth",
+        "Dimmu Borgir",
+        "Mayhem",
+        "Watain",
+        "Belphegor",
+        "1349",
+        "Carpathian Forest",
+        "Horna",
+        "Mgła"
+      ],
+      "ticketPrice": 165
+    },
+    {
+      "name": "Summer Breeze",
+      "dates": {
+        "start": "2026-08-13",
+        "end": "2026-08-16"
+      },
+      "location": "Dinkelsbühl, Germany",
+      "poster": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&h=400&fit=crop&crop=center",
+      "website": "https://summerbreeze.de",
+      "bands": [
+        "In Flames",
+        "Arch Enemy",
+        "Children of Bodom",
+        "Soilwork",
+        "Dark Tranquillity",
+        "Omnium Gatherum",
+        "Insomnium",
+        "Be'lakor",
+        "Kalmah",
+        "Wintersun"
+      ],
+      "ticketPrice": 155
+    }
+  ]
+}
