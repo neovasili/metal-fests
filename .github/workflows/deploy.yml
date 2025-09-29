@@ -1,0 +1,98 @@
+---
+name: "Deploy"
+
+on:
+  workflow_call:
+    inputs:
+      stage:
+        description: stage of the deployment
+        default: staging
+        required: true
+        type: string
+      domain:
+        description: domain used for bucket and preview values
+        default: metal-fests.com
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: (Event) Start Deploy
+        uses: bobheadxi/deployments@v1.5.0
+        id: deployment
+        with:
+          step: start
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: ${{ inputs.stage }}
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: (Setup) AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+          role-to-assume: ${{ secrets.DEPLOY_ROLE_ARN }}
+          role-session-name: deploy-static-app
+          aws-region: eu-west-1
+
+      - name: (Deploy) Build Application
+        run: |
+          mkdir -p build
+          cp -r ./img ./build/
+          cp index.html ./build/
+          cp script.js ./build/
+          cp styles.css ./build/
+          cp db.json ./build/
+
+      - name: (Deploy) Push Contents to S3
+        run: |
+          aws s3 rm s3://${{ inputs.domain }}/ --recursive
+          aws s3 cp ./build/ s3://${{ inputs.domain }}/ --recursive
+
+      - name: (Deploy) Invalidate CloudFront Cache
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          INVALIDATION_ID=$(aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*" \
+            --query 'Invalidation.Id' \
+            --output text)
+
+          INVALIDATION_STATUS=$(aws cloudfront get-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --id $INVALIDATION_ID \
+            --query 'Invalidation.Status' \
+            --output text)
+
+          while [ "$INVALIDATION_STATUS" != "Completed" ]; do
+            sleep 30
+            INVALIDATION_STATUS=$(aws cloudfront get-invalidation \
+              --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+              --id $INVALIDATION_ID \
+              --query 'Invalidation.Status' \
+              --output text)
+          done
+
+      - name: Notify preview
+        uses: mshick/add-pr-comment@v2.8.2
+        if: ${{ github.ref != 'refs/heads/main' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          message: |
+            New version of website deployed.
+
+            You can preview the deployed web in [${{ inputs.domain }}](https://${{ inputs.domain }}).
+
+      - name: (Event) Update Deploy Status
+        uses: bobheadxi/deployments@v1.5.0
+        if: always()
+        with:
+          step: finish
+          token: ${{ secrets.GITHUB_TOKEN }}
+          status: ${{ job.status }}
+          env: ${{ inputs.stage }}
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}

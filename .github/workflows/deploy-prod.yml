@@ -1,0 +1,26 @@
+---
+name: "Deploy"
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  # Concurrency control scoped to branch-workflow
+  group: deploy-prod-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+  deployments: write
+
+jobs:
+  deploy-prod:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      stage: prod
+      domain: metal-fests.com
+    secrets: inherit
