@@ -138,67 +138,53 @@
         "end": "2026-06-21"
       },
       "location": "Clisson, France",
-      "poster": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://hellfest.fr/images/logo.png",
       "website": "https://hellfest.fr",
       "bands": [
-        "Rammstein",
-        "Tool",
-        "Gojira",
-        "Mastodon",
-        "Opeth",
-        "Amon Amarth",
-        "Behemoth",
-        "Airbourne",
-        "Mass Hysteria",
-        "Ultra Vomit"
+        "Coming soon..."
       ],
-      "ticketPrice": 199
+      "ticketPrice": 300
     },
     {
       "name": "Copenhell",
       "dates": {
-        "start": "2026-06-18",
-        "end": "2026-06-21"
+        "start": "2026-06-24",
+        "end": "2026-06-27"
       },
       "location": "Copenhagen, Denmark",
-      "poster": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://i0.wp.com/kulturtid.dk/wp-content/uploads/2024/07/copenhell-logo2024.jpg?resize=1021%2C580&ssl=1",
       "website": "https://copenhell.dk",
       "bands": [
-        "Volbeat",
-        "Mercyful Fate",
-        "King Diamond",
-        "Slayer",
-        "Cannibal Corpse",
-        "Dimmu Borgir",
-        "Emperor",
-        "Mayhem",
-        "Gorgoroth",
-        "Immortal"
+        "Iron Maiden",
+        "Bring Me The Horizon",
+        "Alice Cooper",
+        "Anthrax",
+        "The Pretty Reckless",
+        "Neckbreakker",
+        "Thrown",
+        "Iotunn",
+        "Trollfest",
+        "Katla",
+        "Die Spitz",
+        "Defecto",
+        "Violent Magic Orchestra",
+        "Omsorg"
       ],
-      "ticketPrice": 225
+      "ticketPrice": 350
     },
     {
       "name": "Graspop Metal Meeting",
       "dates": {
-        "start": "2026-06-25",
-        "end": "2026-06-27"
+        "start": "2026-06-18",
+        "end": "2026-06-21"
       },
       "location": "Dessel, Belgium",
-      "poster": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://www.graspop.be/assets/website/components/header/logo.73035b00.webp",
       "website": "https://graspop.be",
       "bands": [
-        "Ozzy Osbourne",
-        "Rob Zombie",
-        "Alice Cooper",
-        "Ghost",
-        "Volbeat",
-        "Jinjer",
-        "Amaranthe",
-        "Within Temptation",
-        "Epica",
-        "Delain"
+        "Coming soon..."
       ],
-      "ticketPrice": 215
+      "ticketPrice": 300
     },
     {
       "name": "Resurrection Fest",
@@ -207,113 +193,179 @@
         "end": "2026-07-04"
       },
       "location": "Viveiro, Spain",
-      "poster": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=300&h=400&fit=crop&crop=center",
-      "website": "https://resurrectionsevilla.com",
+      "poster": "https://www.resurrectionfest.es/media/RF23-LogoNav.png",
+      "website": "https://www.resurrectionfest.es",
       "bands": [
-        "Megadeth",
-        "Anthrax",
-        "Testament",
-        "Exodus",
-        "Kreator",
-        "Sodom",
-        "Destruction",
-        "Overkill",
-        "Municipal Waste",
-        "Power Trip"
+        "Iron Maiden",
+        "Limp Bizkit",
+        "Marilyn Manson",
+        "Trivium",
+        "Cavalera Conspiracy - Chaos Ad",
+        "P.O.D.",
+        "Blood Incantation",
+        "Converge",
+        "The Rasmus",
+        "Imminence",
+        "Thrown",
+        "Caliban",
+        "House Of Protection",
+        "Feuerschwanz",
+        "Man With A Mission",
+        "Get The Shot",
+        "The Vintage Caravan"
       ],
-      "ticketPrice": 165
+      "ticketPrice": 180
     },
     {
       "name": "Masters of Rock",
       "dates": {
-        "start": "2026-07-09",
-        "end": "2026-07-11"
+        "start": "2026-07-16",
+        "end": "2026-07-19"
       },
       "location": "Vizovice, Czech Republic",
-      "poster": "https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://es.concerty.com/img/festival/logo/496.png",
       "website": "https://mastersofrock.cz",
       "bands": [
-        "Nightwish",
-        "Sonata Arctica",
-        "Stratovarius",
-        "Epica",
-        "Kamelot",
-        "Symphony X",
-        "Rhapsody of Fire",
-        "Eluveitie",
-        "Korpiklaani",
-        "Ensiferum"
+        "In Flames",
+        "Helloween",
+        "The Rasmus",
+        "Miracle of Sound",
+        "Lordi",
+        "Brothers of Metal",
+        "The Gathering",
+        "Voivod",
+        "Elvenking",
+        "Feuerschwanz",
+        "Visions of Atlantis",
+        "Anneke van Giersbergen",
+        "Kissin' Dynamite",
+        "Enemy Inside",
+        "Ex Deo",
+        "Crucified Barbara",
+        "Art Nation",
+        "Dirkschneider",
+        "Brainstorm"
       ],
-      "ticketPrice": 145
+      "ticketPrice": 140
     },
     {
       "name": "Brutal Assault",
       "dates": {
-        "start": "2026-08-06",
-        "end": "2026-08-09"
+        "start": "2026-08-05",
+        "end": "2026-08-08"
       },
       "location": "Jaroměř, Czech Republic",
-      "poster": "https://images.unsplash.com/photo-1571266028243-d220c9c3b9b5?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Brutal_Assault.png",
       "website": "https://brutalassault.cz",
       "bands": [
+        "200 STAB WOUNDS",
+        "Alcest",
+        "Allt",
+        "Amorphis",
+        "Animals As Leaders",
+        "Arthur Brown",
+        "Coroner",
+        "Crippling Alcoholism",
+        "Cryptopsy",
+        "Deafheaven",
         "Death Angel",
-        "Dark Tranquillity",
-        "Insomnium",
-        "Cattle Decapitation",
-        "Napalm Death",
-        "Carcass",
-        "Bloodbath",
-        "At The Gates",
-        "The Black Dahlia Murder",
-        "Dying Fetus"
+        "Deicide",
+        "Draconian",
+        "Elder",
+        "Fallujah",
+        "Internal Bleeding",
+        "Marduk",
+        "Master Boot Record",
+        "Municipal Waste",
+        "Old Man's Child",
+        "Rise of the Northstar",
+        "Sanguisugabogg",
+        "Saor",
+        "Septicflesh",
+        "Signs of the Swarm",
+        "Slope",
+        "The Ghost Inside",
+        "The Sisters of Mercy",
+        "Triptykon",
+        "Vader",
+        "Vended",
+        "Wyatt E."
       ],
-      "ticketPrice": 125
+      "ticketPrice": 195
     },
     {
       "name": "Wacken Open Air",
       "dates": {
-        "start": "2026-07-30",
+        "start": "2026-07-29",
         "end": "2026-08-01"
       },
       "location": "Wacken, Germany",
-      "poster": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTzgs_6Ax_eR3JamWFprxf7kzqSZi9rLoKA&s",
       "website": "https://www.wacken.com",
       "bands": [
-        "Iron Maiden",
-        "Metallica",
-        "Judas Priest",
-        "Saxon",
-        "Accept",
-        "Blind Guardian",
+        "Def Leppard",
+        "In Flames",
         "Powerwolf",
-        "Sabaton",
-        "Hammerfall",
-        "Primal Fear"
+        "Savatage",
+        "Allt",
+        "Airbourne",
+        "Any Given Day",
+        "Blood Command",
+        "Blood Fire Death",
+        "Broken By The Scream",
+        "Einherjer",
+        "Emperor",
+        "Europe",
+        "Faun",
+        "Future Palace",
+        "Gutalax",
+        "Grand Magus",
+        "Insanity Alert",
+        "H-Blockx",
+        "Kupfergold",
+        "Lamb of God",
+        "Luna Kills",
+        "Mantar",
+        "Nevermore",
+        "Orbit Culture",
+        "Paleface Swiss",
+        "Pig Destroyer",
+        "Running Wild",
+        "Sepultura",
+        "Ten56.",
+        "The Gathering",
+        "The Hardkiss",
+        "Thundermother",
+        "Thrown",
+        "Tryptikon"
       ],
-      "ticketPrice": 249
+      "ticketPrice": 350
     },
     {
       "name": "Leyendas del Rock",
       "dates": {
-        "start": "2026-08-06",
-        "end": "2026-08-09"
+        "start": "2026-08-05",
+        "end": "2026-08-08"
       },
       "location": "Villena, Spain",
-      "poster": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=300&h=400&fit=crop&crop=center",
-      "website": "https://leyendelrock.com",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09ctI_UejVHK9a-iFQ9P2J0C6-Zp9a_dPKg&s",
+      "website": "https://www.leyendasdelrockfestival.com",
       "bands": [
-        "Scorpions",
-        "Alice Cooper",
-        "Twisted Sister",
-        "Dio Returns",
-        "Europe",
-        "Whitesnake",
-        "Thunder",
-        "UFO",
-        "Bonnie Tyler",
-        "Tesla"
+        "Helloween",
+        "In Flames",
+        "Slaughter To Prevail",
+        "Godsmack",
+        "WarCry",
+        "Sepultura",
+        "Nothing More",
+        "Deicide",
+        "Dark Tranquillity",
+        "Of Mice & Men",
+        "Black Label Society",
+        "Savatage",
+        "Heaven Shall Burn"
       ],
-      "ticketPrice": 135
+      "ticketPrice": 189
     },
     {
       "name": "Bloodstock Open Air",
