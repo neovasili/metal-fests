@@ -1,0 +1,21 @@
+---
+name: "Deploy"
+
+on:
+  push:
+    branches:
+      - feat/automated-deploy
+
+concurrency:
+  # Concurrency control scoped to branch-workflow
+  group: deploy-prod-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-prod:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      stage: prod
+      domain: metal-fests.com
+      cloudfront_id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+    secrets: inherit
