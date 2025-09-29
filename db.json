@@ -10,18 +10,9 @@
       "poster": "https://images.unsplash.com/photo-1571266028243-d220c9c3b9b5?w=300&h=400&fit=crop&crop=center",
       "website": "https://swedenrock.com",
       "bands": [
-        "KISS",
-        "Def Leppard",
-        "Whitesnake",
-        "Europe",
-        "Treat",
-        "H.E.A.T",
-        "Crashdïet",
-        "Eclipse",
-        "The Darkness",
-        "Thunder"
+        "Coming soon..."
       ],
-      "ticketPrice": 235
+      "ticketPrice": 180
     },
     {
       "name": "Rock in Ring",
@@ -30,21 +21,31 @@
         "end": "2026-06-07"
       },
       "location": "Nürburgring, Germany",
-      "poster": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://www.rock-am-ring.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRaR_Vertical_White_1024.png&w=1280&q=100",
       "website": "https://www.rock-am-ring.com",
       "bands": [
-        "Green Day",
-        "The Prodigy",
-        "Foo Fighters",
-        "Rise Against",
-        "Bring Me The Horizon",
-        "Parkway Drive",
-        "Machine Head",
-        "Bad Religion",
-        "NOFX",
-        "The Offspring"
+        "Limp Bizkit",
+        "Linkin Park",
+        "Papa Roach",
+        "Architects",
+        "Baby Metal",
+        "Trivium",
+        "Within Temptation",
+        "Bad Omens",
+        "Volbeat",
+        "Electric Callboy",
+        "Ice Nine Kills",
+        "Landmarks",
+        "Marteria",
+        "Three Days Grace",
+        "Sabaton",
+        "Iron Maiden",
+        "The Offspring",
+        "A perfect circle",
+        "Hollywood Undead",
+        "Social Distortion"
       ],
-      "ticketPrice": 245
+      "ticketPrice": 257
     },
     {
       "name": "Rock in Park",
@@ -53,42 +54,43 @@
         "end": "2026-06-07"
       },
       "location": "Nuremberg, Germany",
-      "poster": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://www.rock-im-park.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRiP_Vertical_White_1024.png&w=1280&q=100",
       "website": "https://www.rock-im-park.com",
       "bands": [
-        "Green Day",
-        "The Prodigy",
-        "Foo Fighters",
-        "Rise Against",
-        "Bring Me The Horizon",
-        "Parkway Drive",
-        "Machine Head",
-        "Bad Religion",
-        "NOFX",
-        "The Offspring"
+        "Limp Bizkit",
+        "Linkin Park",
+        "Papa Roach",
+        "Architects",
+        "Baby Metal",
+        "Trivium",
+        "Within Temptation",
+        "Bad Omens",
+        "Volbeat",
+        "Electric Callboy",
+        "Ice Nine Kills",
+        "Landmarks",
+        "Marteria",
+        "Three Days Grace",
+        "Sabaton",
+        "Iron Maiden",
+        "The Offspring",
+        "A perfect circle",
+        "Hollywood Undead",
+        "Social Distortion"
       ],
-      "ticketPrice": 245
+      "ticketPrice": 340
     },
     {
       "name": "Download Festival",
       "dates": {
-        "start": "2026-06-11",
-        "end": "2026-06-13"
+        "start": "2026-06-10",
+        "end": "2026-06-14"
       },
       "location": "Donington Park, UK",
-      "poster": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://downloadfestival.co.uk/assets/images/2026/DLXXIII-stack-logo.png",
       "website": "https://downloadfestival.co.uk",
       "bands": [
-        "Black Sabbath",
-        "System of a Down",
-        "Slipknot",
-        "Avenged Sevenfold",
-        "Disturbed",
-        "Five Finger Death Punch",
-        "Alter Bridge",
-        "Architects",
-        "Parkway Drive",
-        "While She Sleeps"
+        "Coming soon..."
       ],
       "ticketPrice": 289
     },
@@ -99,21 +101,35 @@
         "end": "2026-06-14"
       },
       "location": "Nickelsdorf, Austria",
-      "poster": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=300&h=400&fit=crop&crop=center",
+      "poster": "https://dkipu5jeyvxyb.cloudfront.net/wp-content/uploads/2017/09/24040110/NR.png",
       "website": "https://novarock.at",
       "bands": [
-        "Linkin Park",
-        "System of a Down",
-        "Korn",
-        "Limp Bizkit",
+        "Bring Me The Horizon",
+        "The Offspring",
+        "Volbeat",
+        "Iron Maiden",
+        "The Cure",
+        "Bad Omens",
+        "Sabaton",
         "Papa Roach",
-        "Three Days Grace",
-        "Shinedown",
-        "Skillet",
-        "Breaking Benjamin",
-        "Starset"
+        "Architects",
+        "Airbourne",
+        "The Hu",
+        "Trivium",
+        "Pendulum",
+        "Danko Jones",
+        "Hateful Agony",
+        "Glasperlenspiel",
+        "Mayday Parade",
+        "Amon Amarth",
+        "Septicflesh",
+        "Deadlands",
+        "Randy Brecker",
+        "Souldiva",
+        "HYHC",
+        "The Ocean"
       ],
-      "ticketPrice": 195
+      "ticketPrice": 280
     },
     {
       "name": "Hellfest",
