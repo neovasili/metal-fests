@@ -121,7 +121,10 @@ class WebsiteStack extends cdk.Stack {
             }),
             new iam.PolicyStatement({
               effect: iam.Effect.ALLOW,
-              actions: ["cloudfront:CreateInvalidation"],
+              actions: [
+                "cloudfront:CreateInvalidation",
+                "cloudfront:GetInvalidation",
+              ],
               resources: [
                 `arn:aws:cloudfront::*:distribution/${cdn.distributionId}`,
               ],
