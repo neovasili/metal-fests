@@ -4,7 +4,7 @@ name: "Deploy"
 on:
   push:
     branches:
-      - feat/automated-deploy
+      - main
 
 concurrency:
   # Concurrency control scoped to branch-workflow
