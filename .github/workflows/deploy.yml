@@ -14,10 +14,6 @@ on:
         default: metal-fests.com
         required: true
         type: string
-      cloudfront_id:
-        description: ID of the CloudFront distribution
-        required: true
-        type: string
 
 permissions:
   id-token: write
@@ -66,13 +62,13 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           INVALIDATION_ID=$(aws cloudfront create-invalidation \
-            --distribution-id ${{ inputs.cloudfront_id }} \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
             --paths "/*" \
             --query 'Invalidation.Id' \
             --output text)
 
           INVALIDATION_STATUS=$(aws cloudfront get-invalidation \
-            --distribution-id ${{ inputs.cloudfront_id }} \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
             --id $INVALIDATION_ID \
             --query 'Invalidation.Status' \
             --output text)
@@ -80,7 +76,7 @@ jobs:
           while [ "$INVALIDATION_STATUS" != "Completed" ]; do
             sleep 30
             INVALIDATION_STATUS=$(aws cloudfront get-invalidation \
-              --distribution-id ${{ inputs.cloudfront_id }} \
+              --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
               --id $INVALIDATION_ID \
               --query 'Invalidation.Status' \
               --output text)

@@ -17,5 +17,4 @@ jobs:
     with:
       stage: prod
       domain: metal-fests.com
-      cloudfront_id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
     secrets: inherit
