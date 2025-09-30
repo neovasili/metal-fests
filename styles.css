@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "ScienceGothic-Regular";
+  src: url("/fonts/ScienceGothic-Regular.woff2") format("woff2"),
+       url("/fonts/ScienceGothic-Regular.woff") format("woff"),
+       url("/fonts/ScienceGothic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'ScienceGothic-Regular', sans-serif;
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: #ffffff;
     min-height: 100vh;
@@ -14,7 +23,7 @@ body {
 
 header {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     position: sticky;
@@ -37,9 +46,9 @@ header p {
 
 .timeline-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     min-height: calc(100vh - 120px);
 }
 
@@ -56,7 +65,7 @@ header p {
 
 .timeline-content {
     position: relative;
-    padding: 2rem 0;
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +75,7 @@ header p {
     position: relative;
     width: 45%;
     margin: 2rem 0;
-    padding: 1.5rem;
+    padding: 1rem;
     background: rgba(45, 45, 45, 0.9);
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -106,18 +115,18 @@ header p {
 }
 
 .festival-card.left::before {
-    right: -60px;
+    right: -80px;
 }
 
 .festival-card.right::before {
-    left: -60px;
+    left: -80px;
 }
 
 .festival-poster {
     width: 100%;
     max-width: 300px;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
     margin-bottom: 1rem;
     border: 2px solid #555;
@@ -216,7 +225,7 @@ header p {
     position: relative;
     width: 100%;
     text-align: center;
-    margin: 3rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
     clear: both;
 }
 
@@ -268,11 +277,11 @@ header p {
 
 @media (max-width: 480px) {
     .timeline-container {
-        padding: 1rem 0.5rem;
+        padding: 0.5rem 0.5rem;
     }
     
     .festival-card {
-        padding: 1rem;
+        padding: 0.5rem;
         margin-left: 60px;
         width: calc(100% - 70px);
     }
