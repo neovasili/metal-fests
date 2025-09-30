@@ -42,6 +42,7 @@ jobs:
         run: |
           mkdir -p build
           cp -r ./img ./build/
+          cp -r ./fonts ./build/
           cp index.html ./build/
           cp script.js ./build/
           cp styles.css ./build/
