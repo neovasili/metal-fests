@@ -4,6 +4,7 @@ class FestivalTimeline {
         this.festivals = [];
         this.timelineContent = document.getElementById('timeline-content');
         this.loading = document.getElementById('loading');
+        this.favoritesManager = new FavoritesManager();
         this.init();
     }
 
@@ -80,9 +81,15 @@ class FestivalTimeline {
         const endDate = new Date(festival.dates.end);
         const formattedDates = this.formatDateRange(startDate, endDate);
         
+        // Check if festival is favorited
+        const isFavorite = this.favoritesManager.isFavorite(festival.name);
+        
         card.innerHTML = `
-            <img src="${festival.poster}" alt="${festival.name} Poster" class="festival-poster" 
-                 onerror="this.src='img/placeholder.jpg'">
+            <div class="festival-header">
+                <img src="${festival.poster}" alt="${festival.name} Poster" class="festival-poster" 
+                     onerror="this.src='img/placeholder.jpg'">
+                <div class="favorite-container"></div>
+            </div>
             <h2 class="festival-name">${festival.name}</h2>
             <div class="festival-dates">${formattedDates}</div>
             <div class="festival-location">${festival.location}</div>
@@ -100,7 +107,32 @@ class FestivalTimeline {
             </div>
         `;
         
+        // Add star icon and functionality
+        this.addFavoriteFeature(card, festival);
+        
         this.timelineContent.appendChild(card);
+    }
+
+    addFavoriteFeature(card, festival) {
+        const favoriteContainer = card.querySelector('.favorite-container');
+        const isFavorite = this.favoritesManager.isFavorite(festival.name);
+        
+        // Create star icon
+        const starIcon = UIUtils.createStarIcon(isFavorite);
+        
+        // Add event listeners
+        UIUtils.addStarEventListeners(starIcon, () => {
+            const newStatus = this.favoritesManager.toggleFavorite(festival.name);
+            UIUtils.updateStarIcon(starIcon, newStatus);
+            
+            // Show notification
+            const message = newStatus 
+                ? `${festival.name} added to favorites` 
+                : `${festival.name} removed from favorites`;
+            UIUtils.showNotification(message, 'success');
+        });
+        
+        favoriteContainer.appendChild(starIcon);
     }
 
     formatDateRange(startDate, endDate) {
