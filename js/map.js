@@ -14,25 +14,6 @@ class FestivalMap {
         this.bandsFilterManager = new BandsFilterManager();
         this.allBands = [];
         
-        // City coordinates for European cities (lat, lng)
-        this.cityCoordinates = {
-            'Sölvesborg, Sweden': { lat: 56.0515, lng: 14.5683 },
-            'Nürburgring, Germany': { lat: 50.3322, lng: 6.9447 },
-            'Nuremberg, Germany': { lat: 49.4521, lng: 11.0767 },
-            'Donington Park, UK': { lat: 52.8305, lng: -1.3764 },
-            'Nickelsdorf, Austria': { lat: 47.9458, lng: 17.1336 },
-            'Clisson, France': { lat: 47.0869, lng: -1.2816 },
-            'Copenhagen, Denmark': { lat: 55.6761, lng: 12.5683 },
-            'Dessel, Belgium': { lat: 51.2372, lng: 5.1186 },
-            'Interlaken, Switzerland': { lat: 46.6863, lng: 7.8632 },
-            'Viveiro, Spain': { lat: 43.6616, lng: -7.5956 },
-            'Getafe, Spain': { lat: 40.3058, lng: -3.7325 },
-            'Jaromer, Czech Republic': { lat: 50.3558, lng: 15.9272 },
-            'Sion, Switzerland': { lat: 46.2276, lng: 7.3681 },
-            'Kavarna, Bulgaria': { lat: 43.4358, lng: 28.3408 },
-            'Pilsen, Czech Republic': { lat: 49.7384, lng: 13.3736 }
-        };
-
         this.init();
     }
 
@@ -142,14 +123,15 @@ class FestivalMap {
         }).addTo(this.map);
         
         this.createMarkers();
+        this.fitMapToMarkers();
         this.applyFilters();
     }
 
     createMarkers() {
         this.festivals.forEach((festival, index) => {
-            const coordinates = this.cityCoordinates[festival.location];
+            const coordinates = festival.coordinates;
             if (!coordinates) {
-                console.warn(`No coordinates found for ${festival.location}`);
+                console.warn(`No coordinates found for ${festival.name} at ${festival.location}`);
                 return;
             }
 
@@ -196,6 +178,21 @@ class FestivalMap {
         });
     }
 
+    fitMapToMarkers() {
+        if (this.markers.length === 0) {
+            return;
+        }
+
+        // Create a group with all markers to calculate bounds
+        const group = new L.featureGroup(this.markers);
+        
+        // Fit the map to show all markers with some padding
+        this.map.fitBounds(group.getBounds(), {
+            padding: [20, 20], // Add 20px padding on all sides
+            maxZoom: 6 // Don't zoom in too much for better overview
+        });
+    }
+
     applyFilters() {
         const isFavoritesFilterActive = this.filterManager.isFilterEnabled();
         const selectedBands = this.bandsFilterManager.getSelectedBands();
@@ -233,6 +230,27 @@ class FestivalMap {
                     this.map.removeLayer(marker);
                 }
             }
+        });
+
+        // Re-center map to show only visible markers
+        this.fitMapToVisibleMarkers();
+    }
+
+    fitMapToVisibleMarkers() {
+        // Get only visible markers
+        const visibleMarkers = this.markers.filter(marker => this.map.hasLayer(marker));
+        
+        if (visibleMarkers.length === 0) {
+            return;
+        }
+
+        // Create a group with visible markers to calculate bounds
+        const group = new L.featureGroup(visibleMarkers);
+        
+        // Fit the map to show visible markers with padding
+        this.map.fitBounds(group.getBounds(), {
+            padding: [20, 20],
+            maxZoom: 8 // Allow closer zoom when fewer markers are visible
         });
     }
 
