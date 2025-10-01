@@ -13,8 +13,10 @@ This is a **vanilla JavaScript web application** displaying a timeline of Europe
 
 ### Core Components
 - `index.html` - Minimal structure with dynamic content injection point (`#timeline-content`)
-- `script.js` - Single class handles data fetching, sorting, and DOM manipulation
-- `styles.css` - Metal-themed responsive design with CSS Grid timeline layout
+- `script.js` - Main `FestivalTimeline` class handles data fetching, sorting, and DOM rendering
+- `js/favorites-manager.js` - `FavoritesManager` class handles localStorage and favorite state
+- `js/ui-utils.js` - `UIUtils` class provides DOM utilities and UI interactions
+- `styles.css` - Metal-themed responsive design with flexbox timeline layout and favorites styling
 - `db.json` - Festival data with strict schema (dates, bands array, poster URLs)
 - `server.py` - Custom HTTP server with CORS headers for local development
 
@@ -48,11 +50,14 @@ Festival objects must follow this exact structure:
 - **Interactive effects**: Transform-based hover states and click animations
 
 ### JavaScript Patterns
+- **Modular classes**: `FestivalTimeline`, `FavoritesManager`, and `UIUtils` for separation of concerns
 - **No frameworks**: Pure DOM manipulation with `document.createElement()`
+- **localStorage integration**: Persistent favorites using `FavoritesManager` class
 - **Error handling**: Try-catch blocks with user-friendly error messages
 - **Date formatting**: Custom `formatDateRange()` method for consistent date display
 - **Dynamic alternation**: Cards alternate left/right using index modulo (`index % 2`)
 - **Image fallbacks**: `onerror` handlers generate placeholder images with festival names
+- **Accessibility**: Star icons include ARIA labels, keyboard navigation, and focus management
 
 ### Styling Conventions
 - **BEM-like naming**: `.festival-card`, `.festival-poster`, `.bands-list`
