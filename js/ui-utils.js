@@ -153,4 +153,213 @@ class UIUtils {
             }
         });
     }
+
+    /**
+     * Create a multi-selection bands filter dropdown
+     * @param {Array} allBands - Array of all available band names
+     * @param {Array} selectedBands - Array of currently selected band names
+     * @returns {HTMLElement} Bands filter container element
+     */
+    static createBandsFilter(allBands, selectedBands = []) {
+        const container = document.createElement('div');
+        container.className = 'bands-filter-container';
+
+        // Create toggle button
+        const toggleButton = document.createElement('button');
+        toggleButton.className = 'bands-filter-toggle';
+        toggleButton.innerHTML = `
+            <span class="bands-filter-icon">🎸</span>
+            <span class="bands-filter-text">Filter by Bands (${selectedBands.length})</span>
+            <span class="bands-filter-arrow">▼</span>
+        `;
+        toggleButton.setAttribute('aria-label', 'Toggle bands filter');
+        toggleButton.setAttribute('aria-expanded', 'false');
+
+        // Create dropdown
+        const dropdown = document.createElement('div');
+        dropdown.className = 'bands-filter-dropdown';
+        dropdown.style.display = 'none';
+
+        // Create clear all button
+        const clearAllButton = document.createElement('button');
+        clearAllButton.className = 'bands-filter-clear-all';
+        clearAllButton.innerHTML = '🗑️ Clear All';
+        clearAllButton.title = 'Clear all selected bands';
+        dropdown.appendChild(clearAllButton);
+
+        // Create search input
+        const searchInput = document.createElement('input');
+        searchInput.type = 'text';
+        searchInput.className = 'bands-filter-search';
+        searchInput.placeholder = 'Search bands...';
+        dropdown.appendChild(searchInput);
+
+        // Create bands list
+        const bandsList = document.createElement('div');
+        bandsList.className = 'bands-filter-list';
+        dropdown.appendChild(bandsList);
+
+        container.appendChild(toggleButton);
+        container.appendChild(dropdown);
+
+        return container;
+    }
+
+    /**
+     * Update bands filter display
+     * @param {HTMLElement} container - The bands filter container
+     * @param {Array} allBands - Array of all available band names
+     * @param {Array} selectedBands - Array of currently selected band names
+     */
+    static updateBandsFilter(container, allBands, selectedBands) {
+        const toggleButton = container.querySelector('.bands-filter-toggle');
+        const text = toggleButton.querySelector('.bands-filter-text');
+        text.textContent = `Filter by Bands (${selectedBands.length})`;
+
+        const bandsList = container.querySelector('.bands-filter-list');
+        const searchInput = container.querySelector('.bands-filter-search');
+        const searchTerm = searchInput.value.toLowerCase();
+
+        // Separate selected and unselected bands
+        const unselectedBands = allBands.filter(band => !selectedBands.includes(band));
+        
+        // Filter unselected bands based on search
+        const filteredUnselectedBands = unselectedBands.filter(band => 
+            band.toLowerCase().includes(searchTerm)
+        );
+
+        bandsList.innerHTML = '';
+
+        // Add selected bands section (always visible)
+        if (selectedBands.length > 0) {
+            const selectedSection = document.createElement('div');
+            selectedSection.className = 'bands-filter-selected-section';
+            
+            const sectionHeader = document.createElement('div');
+            sectionHeader.className = 'bands-filter-section-header';
+            sectionHeader.textContent = `Selected Bands (${selectedBands.length})`;
+            selectedSection.appendChild(sectionHeader);
+
+            selectedBands.forEach(band => {
+                const bandItem = document.createElement('label');
+                bandItem.className = 'bands-filter-item selected';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = band;
+                checkbox.checked = true;
+                
+                const bandName = document.createElement('span');
+                bandName.textContent = band;
+                bandName.title = band; // Tooltip for full name
+                
+                bandItem.appendChild(checkbox);
+                bandItem.appendChild(bandName);
+                selectedSection.appendChild(bandItem);
+            });
+
+            bandsList.appendChild(selectedSection);
+        }
+
+        // Add unselected bands that match the search
+        filteredUnselectedBands.forEach(band => {
+            const bandItem = document.createElement('label');
+            bandItem.className = 'bands-filter-item';
+            
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = band;
+            checkbox.checked = false;
+            
+            const bandName = document.createElement('span');
+            bandName.textContent = band;
+            bandName.title = band; // Tooltip for full name
+            
+            bandItem.appendChild(checkbox);
+            bandItem.appendChild(bandName);
+            bandsList.appendChild(bandItem);
+        });
+    }
+
+    /**
+     * Add event listeners to bands filter
+     * @param {HTMLElement} container - The bands filter container
+     * @param {Object} callbacks - Object with callback functions
+     */
+    static addBandsFilterEventListeners(container, callbacks) {
+        const toggleButton = container.querySelector('.bands-filter-toggle');
+        const dropdown = container.querySelector('.bands-filter-dropdown');
+        const clearAllButton = container.querySelector('.bands-filter-clear-all');
+        const searchInput = container.querySelector('.bands-filter-search');
+        const bandsList = container.querySelector('.bands-filter-list');
+
+        // Toggle dropdown
+        toggleButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isOpen = dropdown.style.display !== 'none';
+            dropdown.style.display = isOpen ? 'none' : 'block';
+            toggleButton.setAttribute('aria-expanded', !isOpen);
+            
+            const arrow = toggleButton.querySelector('.bands-filter-arrow');
+            arrow.textContent = isOpen ? '▼' : '▲';
+            
+            // Update the bands list when opening the dropdown
+            if (!isOpen && callbacks.onDropdownOpen) {
+                callbacks.onDropdownOpen();
+            }
+        });
+
+        // Clear all bands
+        clearAllButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (callbacks.onClearAll) {
+                callbacks.onClearAll();
+            }
+        });
+
+        // Search input
+        searchInput.addEventListener('input', (e) => {
+            if (callbacks.onSearch) {
+                callbacks.onSearch(e.target.value);
+            }
+        });
+
+        // Band selection
+        bandsList.addEventListener('change', (e) => {
+            if (e.target.type === 'checkbox') {
+                const bandName = e.target.value;
+                const isSelected = e.target.checked;
+                if (callbacks.onBandToggle) {
+                    callbacks.onBandToggle(bandName, isSelected);
+                }
+            }
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!container.contains(e.target)) {
+                dropdown.style.display = 'none';
+                toggleButton.setAttribute('aria-expanded', 'false');
+                const arrow = toggleButton.querySelector('.bands-filter-arrow');
+                arrow.textContent = '▼';
+            }
+        });
+    }
+
+    /**
+     * Highlight selected bands in a band list
+     * @param {HTMLElement} bandsList - The bands list container
+     * @param {Array} selectedBands - Array of selected band names
+     */
+    static highlightSelectedBands(bandsList, selectedBands) {
+        const bandTags = bandsList.querySelectorAll('.band-tag');
+        bandTags.forEach(tag => {
+            const bandName = tag.textContent;
+            if (selectedBands.includes(bandName)) {
+                tag.classList.add('highlighted');
+            } else {
+                tag.classList.remove('highlighted');
+            }
+        });
+    }
 }
