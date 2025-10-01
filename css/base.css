@@ -1,0 +1,31 @@
+/* Base Styles - Reset, fonts, and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ScienceGothic-Regular";
+  src: url("/fonts/ScienceGothic-Regular.woff2") format("woff2"),
+       url("/fonts/ScienceGothic-Regular.woff") format("woff"),
+       url("/fonts/ScienceGothic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'ScienceGothic-Regular', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.loading {
+    text-align: center;
+    padding: 4rem;
+    font-size: 1.2rem;
+    color: #cccccc;
+    display: none;
+}

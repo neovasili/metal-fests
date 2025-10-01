@@ -15,8 +15,12 @@ This is a **vanilla JavaScript web application** displaying a timeline of Europe
 - `index.html` - Minimal structure with dynamic content injection point (`#timeline-content`)
 - `script.js` - Main `FestivalTimeline` class handles data fetching, sorting, and DOM rendering
 - `js/favorites-manager.js` - `FavoritesManager` class handles localStorage and favorite state
+- `js/filter-manager.js` - `FilterManager` class handles filter state and localStorage operations
 - `js/ui-utils.js` - `UIUtils` class provides DOM utilities and UI interactions
-- `styles.css` - Metal-themed responsive design with flexbox timeline layout and favorites styling
+- `css/base.css` - Reset, fonts, and global styles
+- `css/layout.css` - Header, timeline structure, and main layout
+- `css/components.css` - Festival cards, buttons, notifications, and interactive elements
+- `css/responsive.css` - Media queries and responsive behavior
 - `db.json` - Festival data with strict schema (dates, bands array, poster URLs)
 - `server.py` - Custom HTTP server with CORS headers for local development
 
@@ -44,10 +48,12 @@ Festival objects must follow this exact structure:
 ```
 
 ### CSS Architecture
+- **Modular structure**: Separated into base, layout, components, and responsive files
 - **Metal theme**: Dark gradients (`#1a1a1a` to `#2d2d2d`) with orange accents (`#ff6b00`)
-- **Timeline layout**: Absolute positioned central line with alternating left/right cards
-- **Responsive breakpoints**: Desktop (timeline), tablet/mobile (stacked cards)
-- **Interactive effects**: Transform-based hover states and click animations
+- **Timeline layout**: Flexbox-based central line with alternating left/right cards
+- **Component-based**: Individual components (cards, buttons, notifications) in separate sections
+- **Responsive design**: Mobile-first approach with tablet and desktop enhancements
+- **Interactive effects**: Transform-based hover states and smooth animations
 
 ### JavaScript Patterns
 - **Modular classes**: `FestivalTimeline`, `FavoritesManager`, and `UIUtils` for separation of concerns

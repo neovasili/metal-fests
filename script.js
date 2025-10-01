@@ -4,7 +4,9 @@ class FestivalTimeline {
         this.festivals = [];
         this.timelineContent = document.getElementById('timeline-content');
         this.loading = document.getElementById('loading');
+        this.filterContainer = document.getElementById('filter-container');
         this.favoritesManager = new FavoritesManager();
+        this.filterManager = new FilterManager();
         this.init();
     }
 
@@ -13,6 +15,7 @@ class FestivalTimeline {
         try {
             await this.loadFestivals();
             this.sortFestivalsByDate();
+            this.createFilterButton();
             this.renderTimeline();
         } catch (error) {
             console.error('Error initializing timeline:', error);
@@ -44,6 +47,39 @@ class FestivalTimeline {
         });
     }
 
+    createFilterButton() {
+        const filterButton = UIUtils.createFilterButton(this.filterManager.isFilterEnabled());
+        
+        UIUtils.addFilterButtonEventListeners(filterButton, () => {
+            const newState = this.filterManager.toggleFilter();
+            UIUtils.updateFilterButton(filterButton, newState);
+            this.applyFilter();
+            
+            const message = newState 
+                ? 'Showing favorites only' 
+                : 'Showing all festivals';
+            UIUtils.showNotification(message, 'info');
+        });
+        
+        this.filterContainer.appendChild(filterButton);
+    }
+
+    applyFilter() {
+        const isFilterActive = this.filterManager.isFilterEnabled();
+        const cards = this.timelineContent.querySelectorAll('.festival-card');
+        
+        cards.forEach(card => {
+            const festivalName = card.querySelector('.festival-name').textContent;
+            const isFavorite = this.favoritesManager.isFavorite(festivalName);
+            
+            if (isFilterActive && !isFavorite) {
+                card.classList.add('collapsed');
+            } else {
+                card.classList.remove('collapsed');
+            }
+        });
+    }
+
     renderTimeline() {
         this.timelineContent.innerHTML = '';
         let currentMonth = '';
@@ -64,6 +100,9 @@ class FestivalTimeline {
             // Create festival card
             this.createFestivalCard(festival, index);
         });
+        
+        // Apply filter after rendering all cards
+        this.applyFilter();
     }
 
     addMonthMarker(monthYear) {
@@ -124,6 +163,9 @@ class FestivalTimeline {
         UIUtils.addStarEventListeners(starIcon, () => {
             const newStatus = this.favoritesManager.toggleFavorite(festival.name);
             UIUtils.updateStarIcon(starIcon, newStatus);
+            
+            // Refresh filter to reflect changes
+            this.applyFilter();
             
             // Show notification
             const message = newStatus 

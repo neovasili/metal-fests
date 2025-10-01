@@ -97,4 +97,60 @@ class UIUtils {
             }
         }, 3000);
     }
+
+    /**
+     * Create a filter button for showing/hiding favorites
+     * @param {boolean} isActive - Whether the filter is currently active
+     * @returns {HTMLElement} Filter button element
+     */
+    static createFilterButton(isActive = false) {
+        const filterButton = document.createElement('button');
+        filterButton.className = `filter-button ${isActive ? 'active' : ''}`;
+        filterButton.innerHTML = `
+            <span class="filter-icon">★</span>
+            <span class="filter-text">Favorites Only</span>
+        `;
+        filterButton.setAttribute('aria-label', isActive ? 'Show all festivals' : 'Show favorites only');
+        filterButton.title = isActive ? 'Show all festivals' : 'Show favorites only';
+        
+        return filterButton;
+    }
+
+    /**
+     * Update filter button appearance based on state
+     * @param {HTMLElement} filterButton - The filter button element
+     * @param {boolean} isActive - Whether the filter is active
+     */
+    static updateFilterButton(filterButton, isActive) {
+        if (isActive) {
+            filterButton.classList.add('active');
+            filterButton.setAttribute('aria-label', 'Show all festivals');
+            filterButton.title = 'Show all festivals';
+        } else {
+            filterButton.classList.remove('active');
+            filterButton.setAttribute('aria-label', 'Show favorites only');
+            filterButton.title = 'Show favorites only';
+        }
+    }
+
+    /**
+     * Add event listeners to filter button
+     * @param {HTMLElement} filterButton - The filter button element
+     * @param {Function} callback - Callback function to execute on interaction
+     */
+    static addFilterButtonEventListeners(filterButton, callback) {
+        // Click event
+        filterButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            callback();
+        });
+
+        // Keyboard event (Enter and Space)
+        filterButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                callback();
+            }
+        });
+    }
 }

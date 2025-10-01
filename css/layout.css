@@ -1,0 +1,78 @@
+/* Layout Styles - Header, timeline structure, and main layout */
+header {
+    text-align: center;
+    padding: 1rem 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ff6b00;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6b00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+/* Header Controls */
+.header-controls {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Timeline Layout */
+.timeline-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    min-height: calc(100vh - 120px);
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #ff6b00, #cc5500, #ff6b00);
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
+}
+
+.timeline-content {
+    position: relative;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Month Markers */
+.month-marker {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+    clear: both;
+    display: flow-root;
+}
+
+.month-marker h3 {
+    color: #ff6b00;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    border: 2px solid #ff6b00;
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+    backdrop-filter: blur(10px);
+}

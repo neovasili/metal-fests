@@ -43,10 +43,10 @@ jobs:
           mkdir -p build
           cp -r ./js ./build/
           cp -r ./img ./build/
+          cp -r ./css ./build/
           cp -r ./fonts ./build/
           cp index.html ./build/
           cp script.js ./build/
-          cp styles.css ./build/
           cp db.json ./build/
 
       - name: (Deploy) Push Contents to S3
