@@ -1,0 +1,296 @@
+/* Component Styles - Festival cards, buttons, notifications, and interactive elements */
+
+/* Festival Cards */
+.festival-card {
+    position: relative;
+    width: 45%;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: rgba(45, 45, 45, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.festival-card:hover {
+    border-color: #ff6b00;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(255, 107, 0, 0.2);
+}
+
+.festival-card.left {
+    align-self: flex-start;
+    margin-right: 50%;
+    margin-right: calc(50% + 20px);
+}
+
+.festival-card.right {
+    align-self: flex-end;
+    margin-left: 50%;
+    margin-left: calc(50% + 20px);
+}
+
+.festival-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: #ff6b00;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 15px rgba(255, 107, 0, 0.7);
+}
+
+.festival-card.left::before {
+    right: -80px;
+}
+
+.festival-card.right::before {
+    left: -80px;
+}
+
+/* Collapsed Festival Cards */
+.festival-card.collapsed {
+    opacity: 0.4;
+    transform: scale(0.95);
+    height: auto;
+    min-height: auto;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.festival-card.collapsed .festival-header,
+.festival-card.collapsed .festival-dates,
+.festival-card.collapsed .festival-location,
+.festival-card.collapsed .festival-bands,
+.festival-card.collapsed .festival-info {
+    display: none;
+}
+
+.festival-card.collapsed .festival-name {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.festival-card.collapsed::before {
+    display: none;
+}
+
+/* Festival Content */
+.festival-header {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.festival-poster {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid #555;
+}
+
+.festival-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6b00;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.festival-dates {
+    font-size: 1rem;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.festival-location {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 1rem;
+}
+
+.festival-bands h4 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.bands-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.band-tag {
+    background: rgba(255, 107, 0, 0.2);
+    color: #ffffff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 107, 0, 0.4);
+}
+
+.festival-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+.ticket-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.festival-website {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, #ff6b00, #cc5500);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+}
+
+.festival-website:hover {
+    background: linear-gradient(45deg, #cc5500, #ff6b00);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+}
+
+/* Favorites */
+.favorite-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.star-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #cccccc;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    user-select: none;
+    line-height: 1;
+}
+
+.star-icon:hover {
+    transform: scale(1.2);
+}
+
+.star-icon:focus {
+    outline: 2px solid #ff6b00;
+    outline-offset: 2px;
+}
+
+.star-icon.favorite {
+    color: #ff6b00;
+    text-shadow: 0 0 10px rgba(255, 107, 0, 0.8);
+}
+
+.star-icon.favorite:hover {
+    color: #ffaa00;
+}
+
+/* Filter Button */
+.filter-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    background: rgba(45, 45, 45, 0.9);
+    color: #cccccc;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.filter-button:hover {
+    background: rgba(60, 60, 60, 0.9);
+    border-color: #ff6b00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.3);
+}
+
+.filter-button:focus {
+    outline: 2px solid #ff6b00;
+    outline-offset: 2px;
+}
+
+.filter-button.active {
+    background: rgba(255, 107, 0, 0.9);
+    color: #ffffff;
+    border-color: #ff6b00;
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.5);
+}
+
+.filter-button.active:hover {
+    background: rgba(255, 130, 30, 0.9);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.6);
+}
+
+.filter-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.filter-text {
+    font-family: inherit;
+}
+
+/* Notifications */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 2px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.notification-success {
+    background: rgba(34, 197, 94, 0.9);
+    color: #ffffff;
+    border-color: #22c55e;
+}
+
+.notification-info {
+    background: rgba(59, 130, 246, 0.9);
+    color: #ffffff;
+    border-color: #3b82f6;
+}
+
+.notification-error {
+    background: rgba(239, 68, 68, 0.9);
+    color: #ffffff;
+    border-color: #ef4444;
+}
