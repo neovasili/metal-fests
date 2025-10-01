@@ -32,14 +32,36 @@
         right: 10px;
     }
     
-    .header-controls {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin-top: 1rem;
+    /* Header adjustments for mobile */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .header-left h1 {
+        font-size: 1.8rem;
         text-align: center;
+    }
+    
+    .header-right {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: stretch;
+    }
+    
+    .view-toggle {
+        justify-content: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .header-controls {
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
     }
     
     #filter-container {
