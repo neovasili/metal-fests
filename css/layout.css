@@ -1,7 +1,9 @@
 /* Layout Styles - Header, timeline structure, and main layout */
 header {
-    text-align: center;
-    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     position: sticky;
@@ -10,23 +12,51 @@ header {
     border-bottom: 2px solid #ff6b00;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.header-left h1 {
+    font-size: 2.2rem;
+    margin: 0;
     color: #ff6b00;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-header p {
-    font-size: 1.1rem;
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* View Toggle Navigation */
+.view-toggle {
+    display: flex;
+    background: rgba(255, 107, 0, 0.1);
+    border-radius: 8px;
+    padding: 4px;
+    border: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.view-link {
+    padding: 8px 16px;
     color: #cccccc;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.view-link:hover {
+    color: #ff6b00;
+    background: rgba(255, 107, 0, 0.1);
+}
+
+.view-link.active {
+    background: #ff6b00;
+    color: #000;
+    font-weight: 600;
 }
 
 /* Header Controls */
 .header-controls {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;

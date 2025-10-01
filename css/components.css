@@ -275,6 +275,7 @@
 .bands-filter-container {
     position: relative;
     margin-right: 1rem;
+    z-index: 9999;
 }
 
 .bands-filter-toggle {
@@ -334,7 +335,7 @@
     border-radius: 15px;
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 10000;
     max-height: 400px;
     overflow-y: auto;
 }

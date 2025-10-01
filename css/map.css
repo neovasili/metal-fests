@@ -1,0 +1,283 @@
+/* Map page specific styles */
+
+.map-container {
+    width: 100%;
+    height: calc(100vh - 120px); /* Account for header height */
+    position: relative;
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 1200px;
+    z-index: 1; /* Ensure map container has lower z-index */
+}
+
+#festival-map {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 480px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #ff6b00;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    background: rgba(255, 107, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Festival card in modal - reuse existing styles but adjust for modal context */
+#modal-festival-card .festival-card {
+    margin: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    width: 100% !important;
+    max-width: none !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Remove the timeline dot from modal cards */
+#modal-festival-card .festival-card::before {
+    display: none !important;
+}
+
+/* Fix modal card layout */
+#modal-festival-card .festival-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#modal-festival-card .festival-poster {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 20px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+#modal-festival-card .festival-name {
+    text-align: center;
+    margin: 0 0 15px 0;
+    width: 100%;
+}
+
+#modal-festival-card .festival-dates,
+#modal-festival-card .festival-location {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#modal-festival-card .festival-bands {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#modal-festival-card .festival-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#modal-festival-card .favorite-container {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+/* Custom map marker styles (for Leaflet) */
+.custom-marker {
+    background: #ff6b00;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 30px !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-marker:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.custom-marker img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Leaflet popup styling to match theme */
+.leaflet-popup-content-wrapper {
+    background: #1a1a1a !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+}
+
+.leaflet-popup-tip {
+    background: #1a1a1a !important;
+}
+
+.leaflet-popup-content {
+    color: #fff !important;
+    margin: 8px 12px !important;
+}
+
+/* Override Leaflet's z-index for controls on map page */
+.leaflet-control-container {
+    z-index: 50 !important;
+}
+
+.leaflet-pane {
+    z-index: auto !important;
+}
+
+.leaflet-map-pane {
+    z-index: 1 !important;
+}
+
+/* Ensure header controls are above everything on map page */
+header {
+    z-index: 20000 !important;
+}
+
+header .header-controls {
+    z-index: 20001 !important;
+}
+
+/* Ensure bands filter is above map */
+.bands-filter-container {
+    z-index: 20002 !important;
+}
+
+.bands-filter-dropdown {
+    z-index: 20003 !important;
+}
+
+/* Loading state */
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(26, 26, 26, 0.9);
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    z-index: 999;
+}
+
+.loading p {
+    color: #ff6b00;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .map-container {
+        height: calc(100vh - 100px);
+        margin: 10px;
+        border-radius: 0;
+    }
+    
+    .modal-content {
+        margin: 15px;
+        width: calc(100% - 30px);
+        max-height: calc(100vh - 30px);
+        padding: 20px;
+    }
+    
+    .modal-close {
+        top: 10px;
+        right: 15px;
+    }
+    
+    #modal-festival-card .festival-poster {
+        max-width: 250px;
+    }
+    
+    #modal-festival-card .festival-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        height: calc(100vh - 90px);
+        margin: 5px;
+    }
+    
+    .modal-content {
+        margin: 10px;
+        width: calc(100% - 20px);
+        padding: 15px;
+    }
+    
+    #modal-festival-card .festival-poster {
+        max-width: 200px;
+    }
+}

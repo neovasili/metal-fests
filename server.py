@@ -29,10 +29,13 @@ def main():
     
     try:
         with socketserver.TCPServer(("", PORT), MyHTTPRequestHandler) as httpd:
-            print(f"🤘 Metal Festivals Timeline Server 🤘")
+            print(f"🤘 Metal Festivals Timeline Server (Local Dev) 🤘")
             print(f"📡 Serving at: http://localhost:{PORT}")
             print(f"📁 Directory: {script_dir}")
-            print(f"🌐 Open http://localhost:{PORT} in your browser")
+            print(f"🌐 For local development - access HTML files directly:")
+            print(f"   Timeline: http://localhost:{PORT}/index.html")
+            print(f"   Map:      http://localhost:{PORT}/map.html")
+            print(f"   (Clean URLs handled by client-side router)")
             print(f"⏹️  Press Ctrl+C to stop the server\n")
             
             httpd.serve_forever()
