@@ -7,6 +7,8 @@ class FestivalTimeline {
         this.filterContainer = document.getElementById('filter-container');
         this.favoritesManager = new FavoritesManager();
         this.filterManager = new FilterManager();
+        this.bandsFilterManager = new BandsFilterManager();
+        this.allBands = [];
         this.init();
     }
 
@@ -15,7 +17,9 @@ class FestivalTimeline {
         try {
             await this.loadFestivals();
             this.sortFestivalsByDate();
+            this.extractAllBands();
             this.createFilterButton();
+            this.createBandsFilter();
             this.renderTimeline();
         } catch (error) {
             console.error('Error initializing timeline:', error);
@@ -47,6 +51,14 @@ class FestivalTimeline {
         });
     }
 
+    extractAllBands() {
+        const bandsSet = new Set();
+        this.festivals.forEach(festival => {
+            festival.bands.forEach(band => bandsSet.add(band));
+        });
+        this.allBands = Array.from(bandsSet).sort();
+    }
+
     createFilterButton() {
         const filterButton = UIUtils.createFilterButton(this.filterManager.isFilterEnabled());
         
@@ -64,18 +76,94 @@ class FestivalTimeline {
         this.filterContainer.appendChild(filterButton);
     }
 
+    createBandsFilter() {
+        const selectedBands = this.bandsFilterManager.getSelectedBands();
+        const bandsFilter = UIUtils.createBandsFilter(this.allBands, selectedBands);
+        
+        UIUtils.addBandsFilterEventListeners(bandsFilter, {
+            onBandToggle: (bandName, isSelected) => {
+                if (isSelected) {
+                    this.bandsFilterManager.addBand(bandName);
+                } else {
+                    this.bandsFilterManager.removeBand(bandName);
+                }
+                this.updateBandsFilter();
+                this.applyFilter();
+            },
+            onClearAll: () => {
+                this.bandsFilterManager.clearAllBands();
+                this.updateBandsFilter();
+                this.applyFilter();
+                UIUtils.showNotification('All band filters cleared', 'info');
+            },
+            onSearch: (searchTerm) => {
+                this.updateBandsFilter();
+            },
+            onDropdownOpen: () => {
+                this.updateBandsFilter();
+            }
+        });
+        
+        this.filterContainer.appendChild(bandsFilter);
+        this.bandsFilterElement = bandsFilter;
+    }
+
+    updateBandsFilter() {
+        if (this.bandsFilterElement) {
+            const selectedBands = this.bandsFilterManager.getSelectedBands();
+            UIUtils.updateBandsFilter(this.bandsFilterElement, this.allBands, selectedBands);
+        }
+    }
+
     applyFilter() {
-        const isFilterActive = this.filterManager.isFilterEnabled();
+        const isFavoritesFilterActive = this.filterManager.isFilterEnabled();
+        const selectedBands = this.bandsFilterManager.getSelectedBands();
+        const isBandsFilterActive = selectedBands.length > 0;
         const cards = this.timelineContent.querySelectorAll('.festival-card');
         
         cards.forEach(card => {
             const festivalName = card.querySelector('.festival-name').textContent;
-            const isFavorite = this.favoritesManager.isFavorite(festivalName);
+            const festival = this.festivals.find(f => f.name === festivalName);
             
-            if (isFilterActive && !isFavorite) {
-                card.classList.add('collapsed');
-            } else {
+            let shouldShow = true;
+            
+            // Apply favorites filter
+            if (isFavoritesFilterActive) {
+                const isFavorite = this.favoritesManager.isFavorite(festivalName);
+                if (!isFavorite) {
+                    shouldShow = false;
+                }
+            }
+            
+            // Apply bands filter (intersection with favorites filter)
+            if (isBandsFilterActive && shouldShow) {
+                const festivalHasSelectedBands = festival.bands.some(band => 
+                    selectedBands.includes(band)
+                );
+                if (!festivalHasSelectedBands) {
+                    shouldShow = false;
+                }
+            }
+            
+            // Apply visual state
+            if (shouldShow) {
                 card.classList.remove('collapsed');
+            } else {
+                card.classList.add('collapsed');
+            }
+            
+            // Highlight selected bands in the festival
+            if (isBandsFilterActive) {
+                const bandsList = card.querySelector('.bands-list');
+                if (bandsList) {
+                    UIUtils.highlightSelectedBands(bandsList, selectedBands);
+                }
+            } else {
+                // Remove highlights when no bands are selected
+                const bandsList = card.querySelector('.bands-list');
+                if (bandsList) {
+                    UIUtils.highlightSelectedBands(bandsList, []);
+                }
             }
         });
     }

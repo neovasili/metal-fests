@@ -38,6 +38,14 @@
         right: auto;
         margin-top: 1rem;
         text-align: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    #filter-container {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
     }
     
     .filter-button {
@@ -47,6 +55,29 @@
     
     .filter-text {
         display: none;
+    }
+    
+    .bands-filter-container {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .bands-filter-toggle {
+        min-width: auto;
+        max-width: 100%;
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .bands-filter-text {
+        font-size: 0.8rem;
+    }
+    
+    .bands-filter-dropdown {
+        left: 0;
+        right: 0;
+        width: auto;
+        max-height: 300px;
     }
     
     .star-icon {

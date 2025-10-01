@@ -136,6 +136,16 @@
     border-radius: 20px;
     font-size: 0.85rem;
     border: 1px solid rgba(255, 107, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.band-tag.highlighted {
+    background: rgba(255, 107, 0, 0.8);
+    color: #000000;
+    font-weight: bold;
+    border: 2px solid #ff6b00;
+    box-shadow: 0 2px 8px rgba(255, 107, 0, 0.5);
+    transform: scale(1.05);
 }
 
 .festival-info {
@@ -259,6 +269,168 @@
 
 .filter-text {
     font-family: inherit;
+}
+
+/* Bands Filter */
+.bands-filter-container {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.bands-filter-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    background: rgba(45, 45, 45, 0.9);
+    color: #cccccc;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    min-width: 200px;
+}
+
+.bands-filter-toggle:hover {
+    background: rgba(60, 60, 60, 0.9);
+    border-color: #ff6b00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.3);
+}
+
+.bands-filter-toggle:focus {
+    outline: 2px solid #ff6b00;
+    outline-offset: 2px;
+}
+
+.bands-filter-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.bands-filter-text {
+    font-family: inherit;
+    flex: 1;
+    text-align: left;
+}
+
+.bands-filter-arrow {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.bands-filter-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 100%;
+    width: 280px;
+    background: rgba(25, 25, 25, 0.95);
+    border: 2px solid #ff6b00;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.bands-filter-clear-all {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background: rgba(239, 68, 68, 0.8);
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.bands-filter-clear-all:hover {
+    background: rgba(239, 68, 68, 1);
+}
+
+.bands-filter-search {
+    width: 100%;
+    padding: 0.7rem;
+    background: rgba(45, 45, 45, 0.9);
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #555;
+    font-size: 0.9rem;
+}
+
+.bands-filter-search::placeholder {
+    color: #cccccc;
+}
+
+.bands-filter-search:focus {
+    outline: none;
+    background: rgba(60, 60, 60, 0.9);
+}
+
+.bands-filter-list {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 0.5rem 0;
+}
+
+.bands-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.bands-filter-item:hover {
+    background: rgba(255, 107, 0, 0.1);
+}
+
+.bands-filter-item input[type="checkbox"] {
+    accent-color: #ff6b00;
+    transform: scale(1.1);
+    flex-shrink: 0;
+    margin-right: 0.2rem;
+}
+
+.bands-filter-item span {
+    color: #ffffff;
+    font-size: 0.9rem;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    padding-left: 0;
+}
+
+.bands-filter-item.selected {
+    background: rgba(255, 107, 0, 0.2);
+    border-left: 3px solid #ff6b00;
+    font-weight: bold;
+}
+
+.bands-filter-selected-section {
+    border-bottom: 1px solid #555;
+    background: rgba(255, 107, 0, 0.05);
+}
+
+.bands-filter-selected-section .bands-filter-section-header {
+    padding: 0.4rem 0.8rem;
+    color: #ff6b00;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 107, 0, 0.1);
 }
 
 /* Notifications */
