@@ -45,6 +45,7 @@ jobs:
           cp -r ./img ./build/
           cp -r ./css ./build/
           cp -r ./fonts ./build/
+          cp error.html ./build/
           cp index.html ./build/
           cp script.js ./build/
           cp db.json ./build/
