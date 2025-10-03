@@ -115,3 +115,25 @@ header {
     box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
     backdrop-filter: blur(10px);
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 107, 0, 0.2);
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+footer em {
+    color: #ff6b00;
+    font-style: italic;
+}
