@@ -2,6 +2,10 @@
 
 /* Tablet and below */
 @media (max-width: 768px) {
+    main {
+        min-height: calc(100vh - 145px);
+    }
+
     .timeline-line {
         left: 20px;
     }
@@ -136,6 +140,34 @@
     .festival-name {
         font-size: 1.5rem;
     }
+
+    .map-container {
+        height: calc(100vh - 175px);
+        margin: 10px;
+        border-radius: 0;
+    }
+
+    .modal-content {
+        margin: 15px;
+        width: calc(100% - 30px);
+        max-height: calc(100vh - 30px);
+        padding: 20px;
+    }
+    
+    .modal-close {
+        top: 10px;
+        right: 15px;
+    }
+    
+    #modal-festival-card .festival-poster {
+        max-width: 250px;
+    }
+    
+    #modal-festival-card .festival-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
 }
 
 /* Mobile */
@@ -154,5 +186,20 @@
         flex-direction: column;
         gap: 1rem;
         align-items: flex-start;
+    }
+
+    .map-container {
+        height: calc(100vh - 175px);
+        margin: 5px;
+    }
+    
+    .modal-content {
+        margin: 10px;
+        width: calc(100% - 20px);
+        padding: 15px;
+    }
+    
+    #modal-festival-card .festival-poster {
+        max-width: 200px;
     }
 }
