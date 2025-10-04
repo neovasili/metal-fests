@@ -104,6 +104,9 @@ class UIUtils {
      * @returns {HTMLElement} Filter button element
      */
     static createFilterButton(isActive = false) {
+        const container = document.createElement('div');
+        container.className = 'filter-container';
+
         const filterButton = document.createElement('button');
         filterButton.className = `filter-button ${isActive ? 'active' : ''}`;
         filterButton.innerHTML = `
@@ -112,16 +115,23 @@ class UIUtils {
         `;
         filterButton.setAttribute('aria-label', isActive ? 'Show all festivals' : 'Show favorites only');
         filterButton.title = isActive ? 'Show all festivals' : 'Show favorites only';
-        
-        return filterButton;
+
+        container.appendChild(filterButton);
+
+        return container;
     }
 
     /**
      * Update filter button appearance based on state
-     * @param {HTMLElement} filterButton - The filter button element
+     * @param {HTMLElement} filterButtonContainer - The filter button container element
      * @param {boolean} isActive - Whether the filter is active
      */
-    static updateFilterButton(filterButton, isActive) {
+    static updateFilterButton(filterButtonContainer, isActive) {
+        // Find the actual button element within the container
+        const filterButton = filterButtonContainer.querySelector('.filter-button');
+        
+        if (!filterButton) return;
+        
         if (isActive) {
             filterButton.classList.add('active');
             filterButton.setAttribute('aria-label', 'Show all festivals');
@@ -135,10 +145,15 @@ class UIUtils {
 
     /**
      * Add event listeners to filter button
-     * @param {HTMLElement} filterButton - The filter button element
+     * @param {HTMLElement} filterButtonContainer - The filter button container element
      * @param {Function} callback - Callback function to execute on interaction
      */
-    static addFilterButtonEventListeners(filterButton, callback) {
+    static addFilterButtonEventListeners(filterButtonContainer, callback) {
+        // Find the actual button element within the container
+        const filterButton = filterButtonContainer.querySelector('.filter-button');
+        
+        if (!filterButton) return;
+        
         // Click event
         filterButton.addEventListener('click', (e) => {
             e.preventDefault();
@@ -162,7 +177,7 @@ class UIUtils {
      */
     static createBandsFilter(allBands, selectedBands = []) {
         const container = document.createElement('div');
-        container.className = 'bands-filter-container';
+        container.className = 'filter-container';
 
         // Create toggle button
         const toggleButton = document.createElement('button');

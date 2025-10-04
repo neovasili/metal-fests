@@ -2,7 +2,7 @@
 
 .map-container {
     width: 100%;
-    height: calc(100vh - 120px); /* Account for header height */
+    height: calc(100vh - 120px); /* Account for fixed header height */
     position: relative;
     background: #1a1a1a;
     border-radius: 8px;
@@ -205,7 +205,7 @@ header .header-controls {
 }
 
 /* Ensure bands filter is above map */
-.bands-filter-container {
+.filter-container {
     z-index: 20002 !important;
 }
 
