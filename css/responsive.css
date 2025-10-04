@@ -3,26 +3,28 @@
 /* Tablet and below */
 @media (max-width: 768px) {
     .timeline-line {
-        left: 30px;
+        left: 20px;
     }
     
     .festival-card {
-        width: calc(100% - 80px);
-        margin-left: 80px;
+        width: calc(100% - 50px);
+        margin-left: 60px;
         margin-right: 0;
         align-self: stretch;
     }
     
     .festival-card.left,
     .festival-card.right {
-        margin-left: 80px;
+        margin-left: 30px;
         margin-right: 0;
         align-self: stretch;
     }
     
     .festival-card::before {
-        left: -60px !important;
+        left: -28px !important;
         right: auto !important;
+        width: 16px;
+        height: 16px;
     }
     
     .notification {
@@ -117,8 +119,14 @@
     }
     
     .star-icon {
-        font-size: 1.3rem;
-        padding: 0.2rem;
+        font-size: 1.2rem;
+        padding: 0.15rem;
+    }
+    
+    .favorite-container {
+        top: 8px;
+        right: 6px;
+        z-index: 10;
     }
     
     header h1 {
@@ -139,7 +147,7 @@
     .festival-card {
         padding: 0.5rem;
         margin-left: 60px;
-        width: calc(100% - 70px);
+        width: calc(100% - 50px);
     }
     
     .festival-info {
