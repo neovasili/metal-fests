@@ -1,0 +1,27 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": [],
+  "rules": {
+    "color-hex-length": "short",
+    "color-named": "always-where-possible",
+    "selector-max-id": 1,
+    "declaration-no-important": null,
+    "function-url-quotes": "always",
+    "font-family-name-quotes": "always-where-recommended",
+    "comment-whitespace-inside": "always",
+    "comment-empty-line-before": "always",
+    "at-rule-no-unknown": null,
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "selector-pseudo-element-colon-notation": "double"
+  },
+  "ignoreFiles": [
+    "node_modules/**/*",
+    "dist/**/*"
+  ]
+}

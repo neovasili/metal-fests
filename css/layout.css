@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgb(0 0 0 / 95%);
     backdrop-filter: blur(15px);
     z-index: 1000;
     border-bottom: 2px solid #ff6b00;
@@ -29,7 +29,7 @@
     font-size: 1.4rem;
     margin: 0;
     color: #ff6b00;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 70%);
     white-space: nowrap;
 }
 
@@ -74,9 +74,9 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.98);
+    background: rgb(0 0 0 / 98%);
     backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255, 107, 0, 0.3);
+    border-bottom: 1px solid rgb(255 107 0 / 30%);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -107,16 +107,16 @@
 /* View Toggle Navigation */
 .view-toggle {
     display: flex;
-    background: rgba(255, 107, 0, 0.1);
+    background: rgb(255 107 0 / 10%);
     border-radius: 8px;
     padding: 4px;
-    border: 1px solid rgba(255, 107, 0, 0.3);
+    border: 1px solid rgb(255 107 0 / 30%);
     width: fit-content;
 }
 
 .view-link {
     padding: 5px 20px;
-    color: #cccccc;
+    color: #ccc;
     text-decoration: none;
     border-radius: 6px;
     transition: all 0.3s ease;
@@ -128,12 +128,12 @@
 
 .view-link:hover {
     color: #ff6b00;
-    background: rgba(255, 107, 0, 0.1);
+    background: rgb(255 107 0 / 10%);
 }
 
 .view-link.active {
     background: #ff6b00;
-    color: #000;
+    color: "black";
     font-weight: 600;
 }
 
@@ -167,7 +167,7 @@ main {
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem 1rem;
+    padding: 1rem;
     min-height: calc(100vh - 120px); /* Ensure enough height to push footer down */
     width: 100%;
     overflow-x: hidden;
@@ -179,9 +179,9 @@ main {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: linear-gradient(to bottom, #ff6b00, #cc5500, #ff6b00);
+    background: linear-gradient(to bottom, #ff6b00, #c50, #ff6b00);
     transform: translateX(-50%);
-    box-shadow: 0 0 10px rgba(255, 107, 0, 0.5);
+    box-shadow: 0 0 10px rgb(255 107 0 / 50%);
 }
 
 .timeline-content {
@@ -208,7 +208,7 @@ main {
     border-radius: 25px;
     font-size: 1.3rem;
     border: 2px solid #ff6b00;
-    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(255 107 0 / 30%);
     backdrop-filter: blur(10px);
 }
 
@@ -216,11 +216,11 @@ main {
 footer {
     text-align: center;
     padding: 1.5rem 1rem;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgb(0 0 0 / 20%);
     backdrop-filter: blur(5px);
-    border-top: 1px solid rgba(255, 107, 0, 0.2);
+    border-top: 1px solid rgb(255 107 0 / 20%);
     font-size: 0.9rem;
-    color: #cccccc;
+    color: #ccc;
 }
 
 footer p {
@@ -238,7 +238,7 @@ footer em {
 }
 
 .github-link {
-    color: #cccccc;
+    color: #ccc;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -256,5 +256,5 @@ footer em {
 .github-icon {
     width: 18px;
     height: 18px;
-    fill: currentColor;
+    fill: currentcolor;
 }

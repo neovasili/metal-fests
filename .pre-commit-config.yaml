@@ -1,0 +1,54 @@
+# Pre-commit hooks configuration
+repos:
+  # General hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-yaml
+        exclude: 'pnpm-lock\.yaml$'
+      - id: check-toml
+      - id: check-xml
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+
+  # HTML linting
+  - repo: https://github.com/thibaudcolas/pre-commit-stylelint
+    rev: v16.24.0
+    hooks:
+      - id: stylelint
+        files: \.(css|scss|sass)$
+        additional_dependencies:
+          - stylelint@16.24.0
+          - stylelint-config-standard@34.0.0
+          - stylelint-config-prettier@9.0.5
+
+  # JavaScript linting
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v9.37.0
+    hooks:
+      - id: eslint
+        files: \.(js|jsx|ts|tsx)$
+        additional_dependencies:
+          - eslint@9.37.0
+          - '@eslint/js@9.37.0'
+
+  # HTML validation
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
+    rev: v1.1.2
+    hooks:
+      - id: htmlhint
+        files: \.html$
+
+  # Markdown linting
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.45.0
+    hooks:
+      - id: markdownlint
+        args: ['--fix']

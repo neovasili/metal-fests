@@ -25,12 +25,12 @@
 .error-content {
     position: relative;
     z-index: 1;
-    background: rgba(25, 25, 25, 0.2);
+    background: rgb(25 25 25 / 20%);
     padding: 3rem 2rem;
     border-radius: 20px;
-    border: 2px solid rgba(255, 107, 0, 0.8);
+    border: 2px solid rgb(255 107 0 / 80%);
     backdrop-filter: blur(5px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px rgb(0 0 0 / 50%);
     max-width: 600px;
     width: 100%;
 }
@@ -39,64 +39,64 @@
     font-size: 3rem;
     color: #ff6b00;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 8px rgb(0 0 0 / 90%);
     font-weight: bold;
 }
 
 .error-message {
     font-size: 1.3rem;
-    color: #ffffff;
+    color: "white";
     margin-bottom: 2rem;
     line-height: 1.6;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 4px rgb(0 0 0 / 80%);
 }
 
 .error-back-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background: linear-gradient(45deg, #ff6b00, #cc5500);
+    background: linear-gradient(45deg, #ff6b00, #c50);
     color: white;
     text-decoration: none;
     border-radius: 25px;
     font-size: 1rem;
     font-weight: bold;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(255 107 0 / 30%);
     border: none;
     cursor: pointer;
 }
 
 .error-back-button:hover {
-    background: linear-gradient(45deg, #cc5500, #ff6b00);
+    background: linear-gradient(45deg, #c50, #ff6b00);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+    box-shadow: 0 6px 20px rgb(255 107 0 / 40%);
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .error-title {
         font-size: 2.5rem;
     }
-    
+
     .error-message {
         font-size: 1.1rem;
     }
-    
+
     .error-content {
         padding: 2rem 1.5rem;
         margin: 1rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
     .error-title {
         font-size: 2rem;
     }
-    
+
     .error-message {
         font-size: 1rem;
     }
-    
+
     .error-content {
         padding: 1.5rem 1rem;
     }
