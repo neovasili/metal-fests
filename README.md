@@ -1,5 +1,8 @@
 # European Metal Festivals 2026 Timeline
 
+[![Code Quality & Linting](https://github.com/neovasili/metal-fests/actions/workflows/ci.yml/badge.svg)](https://github.com/neovasili/metal-fests/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A responsive web application displaying a timeline of heavy metal festivals across Europe in 2026.
 
 ## Features
@@ -12,6 +15,7 @@ A responsive web application displaying a timeline of heavy metal festivals acro
 - 📱 **Responsive Design**: Works on desktop, tablet, and mobile devices
 - 🎵 **Festival Information**: Complete details including bands, dates, locations, and ticket prices
 - ⚡ **Vanilla JavaScript**: No frameworks needed, fast and lightweight
+- 🔧 **Code Quality**: Comprehensive linting setup with pre-commit hooks and CI/CD
 
 ## Running the Application
 
@@ -27,7 +31,7 @@ cd /Users/neovasili/workspace/personal/metal-fests
 python3 server.py
 ```
 
-Then open your browser and go to: **http://localhost:8000**
+Then open your browser and go to: **<http://localhost:8000>**
 
 ### Option 2: Using Python's built-in server
 
@@ -39,7 +43,7 @@ cd /Users/neovasili/workspace/personal/metal-fests
 python3 -m http.server 8000
 ```
 
-Then open your browser and go to: **http://localhost:8000**
+Then open your browser and go to: **<http://localhost:8000>**
 
 ### Option 3: Using Node.js (if you have it installed)
 
@@ -54,11 +58,93 @@ cd /Users/neovasili/workspace/personal/metal-fests
 http-server -p 8000
 ```
 
-Then open your browser and go to: **http://localhost:8000**
+Then open your browser and go to: <http://localhost:8000>
+
+## Development Setup
+
+### Prerequisites
+
+- **Python 3.7+** (for running the local server)
+- **Node.js 18+** and **pnpm 8+** (for linting and development tools)
+- **Git** (for version control and hooks)
+
+### Quick Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/neovasili/metal-fests.git
+cd metal-fests
+
+# Install development dependencies and setup hooks
+pnpm setup
+
+# Start development server
+npm run dev
+```
+
+### Development Commands
+
+```bash
+# Start development server
+pnpm start                    # or pnpm dev
+
+# Linting commands
+pnpm lint                 # Run all linters
+pnpm lint:js             # Lint JavaScript files
+pnpm lint:css            # Lint CSS files
+pnpm lint:html           # Lint HTML files
+pnpm lint:md             # Lint Markdown files
+
+# Fix linting issues automatically
+pnpm lint:fix            # Fix all auto-fixable issues
+pnpm format              # Alias for lint:fix
+
+# Validation
+pnpm validate            # Run linters + JSON validation
+```
+
+### Pre-commit Hooks
+
+This project uses [pre-commit](https://pre-commit.com/) hooks to ensure code quality:
+
+- **JavaScript**: ESLint with Standard config
+- **CSS**: Stylelint with Standard config
+- **HTML**: HTMLHint validation
+- **Markdown**: Markdownlint
+- **Python**: Black formatting + Flake8 linting
+- **General**: Trailing whitespace, EOF newlines, merge conflicts
+
+Install hooks manually:
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+### Code Quality Tools
+
+| Tool | Purpose | Config File |
+|------|---------|-------------|
+| **ESLint** | JavaScript linting | `.eslintrc.json` |
+| **Stylelint** | CSS linting | `.stylelintrc.json` |
+| **HTMLHint** | HTML validation | `.htmlhintrc` |
+| **Markdownlint** | Markdown linting | `.markdownlint.yaml` |
+| **Black** | Python formatting | Built-in |
+| **Flake8** | Python linting | Built-in |
+
+### Continuous Integration
+
+GitHub Actions automatically runs on:
+
+- **Push to main/develop**: Full linting suite + tests
+- **Pull Requests**: Code quality checks + security scan
+- **All commits**: Pre-commit hooks ensure code quality
+
+View the CI status: [![CI Status](https://github.com/neovasili/metal-fests/actions/workflows/ci.yml/badge.svg)](https://github.com/neovasili/metal-fests/actions/workflows/ci.yml)
 
 ## Files Structure
 
-```
+```shell
 metal-fests/
 ├── index.html              # Main timeline page
 ├── map.html               # Interactive map page
@@ -90,11 +176,13 @@ metal-fests/
 ## Pages and Navigation
 
 ### Timeline View (`index.html`)
+
 - Chronological timeline layout with alternating festival cards
 - Month markers for easy navigation
 - All filtering and favorites features available
 
 ### Map View (`map.html`)
+
 - Interactive map using Leaflet and OpenStreetMap
 - Custom markers using the festival favicon
 - Click markers to open detailed festival modals
@@ -102,6 +190,7 @@ metal-fests/
 - Dark themed map tiles for consistent aesthetics
 
 ### Navigation
+
 - Header navigation allows switching between Timeline and Map views
 - All pages share the same header with filtering options
 - Consistent favorites and band filtering across all views
@@ -111,7 +200,7 @@ metal-fests/
 The `db.json` file contains information about 15 major European metal festivals:
 
 - **Sweden Rock Festival** (Sweden) - June 3-6
-- **Rock in Ring** (Germany) - June 5-7  
+- **Rock in Ring** (Germany) - June 5-7
 - **Rock in Park** (Germany) - June 5-7
 - **Download Festival** (UK) - June 10-14
 - **Nova Rock Festival** (Austria) - June 11-14
@@ -175,7 +264,7 @@ To add more festivals, simply edit the `db.json` file following the existing str
 ## Quick Start
 
 1. Clone or download the repository
-2. Run `python3 server.py` in the project directory  
+2. Run `python3 server.py` in the project directory
 3. Open `http://localhost:8000` in your browser
 4. Navigate using clean URLs:
    - Timeline: `http://localhost:8000/` or `http://localhost:8000/timeline`

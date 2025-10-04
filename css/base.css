@@ -11,7 +11,7 @@ html {
 }
 
 @font-face {
-  font-family: "ScienceGothic-Regular";
+  font-family: ScienceGothic-Regular;
   src: url("/fonts/ScienceGothic-Regular.woff2") format("woff2"),
        url("/fonts/ScienceGothic-Regular.woff") format("woff"),
        url("/fonts/ScienceGothic-Regular.ttf") format("truetype");
@@ -20,9 +20,9 @@ html {
 }
 
 body {
-    font-family: 'ScienceGothic-Regular', sans-serif;
+    font-family: ScienceGothic-Regular, sans-serif;
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    color: #ffffff;
+    color: white;
     min-height: 100vh;
     line-height: 1.6;
     overflow-x: hidden;
@@ -35,6 +35,6 @@ body {
     text-align: center;
     padding: 4rem;
     font-size: 1.2rem;
-    color: #cccccc;
+    color: #ccc;
     display: none;
 }

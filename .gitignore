@@ -1,8 +1,38 @@
 
-!jest.config.js
-*.d.ts
-node_modules
+# Dependencies
+node_modules/
+.pnpm-store/
 
-# CDK asset staging directory
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Build directories
+dist/
+build/
+
+# Pre-commit cache
+.pre-commit-config.yaml.backup
+
+# CDK asset staging directory (existing)
 .cdk.staging
 cdk.out
+
+# TypeScript (existing)
+!jest.config.js
+*.d.ts

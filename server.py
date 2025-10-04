@@ -26,7 +26,7 @@ def main():
     # Change to the directory containing this script
     script_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(script_dir)
-    
+
     try:
         with socketserver.TCPServer(("", PORT), MyHTTPRequestHandler) as httpd:
             print(f"🤘 Metal Festivals Timeline Server (Local Dev) 🤘")
@@ -37,7 +37,7 @@ def main():
             print(f"   Map:      http://localhost:{PORT}/map.html")
             print(f"   (Clean URLs handled by client-side router)")
             print(f"⏹️  Press Ctrl+C to stop the server\n")
-            
+
             httpd.serve_forever()
     except KeyboardInterrupt:
         print("\n🛑 Server stopped by user")

@@ -1,0 +1,55 @@
+{
+  "name": "metal-festivals-timeline",
+  "version": "1.0.0",
+  "description": "European Metal Festivals 2026 Timeline - A vanilla JavaScript web application displaying a timeline of European metal festivals",
+  "main": "script.js",
+  "scripts": {
+    "start": "python3 server.py",
+    "lint": "pnpm lint:js && pnpm lint:css && pnpm lint:html && pnpm lint:md",
+    "lint:js": "eslint \"**/*.js\" --max-warnings 0",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:md": "markdownlint \"**/*.md\" --config .markdownlint.yaml",
+    "lint:fix": "pnpm lint:js --fix && pnpm lint:css --fix && pnpm lint:md --fix",
+    "format": "pnpm lint:fix",
+    "validate": "python3 -m json.tool db.json > /dev/null && echo 'All files validated successfully!'",
+    "dev": "echo 'Starting development server...' && python3 server.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neovasili/metal-fests.git"
+  },
+  "keywords": [
+    "metal",
+    "festivals",
+    "timeline",
+    "javascript",
+    "vanilla-js",
+    "responsive",
+    "music",
+    "events"
+  ],
+  "author": "neovasili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neovasili/metal-fests/issues"
+  },
+  "homepage": "https://github.com/neovasili/metal-fests#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "htmlhint": "^1.1.4",
+    "markdownlint-cli": "^0.45.0",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.24.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

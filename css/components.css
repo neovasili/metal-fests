@@ -6,9 +6,9 @@
     width: 45%;
     margin: 1rem 0;
     padding: 1rem;
-    background: rgba(45, 45, 45, 0.9);
+    background: rgb(45 45 45 / 90%);
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
     backdrop-filter: blur(10px);
     border: 2px solid transparent;
     transition: all 0.3s ease;
@@ -17,7 +17,7 @@
 .festival-card:hover {
     border-color: #ff6b00;
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(255, 107, 0, 0.2);
+    box-shadow: 0 12px 40px rgb(255 107 0 / 20%);
 }
 
 .festival-card.left {
@@ -41,7 +41,7 @@
     background: #ff6b00;
     border-radius: 50%;
     transform: translateY(-50%);
-    box-shadow: 0 0 15px rgba(255, 107, 0, 0.7);
+    box-shadow: 0 0 15px rgb(255 107 0 / 70%);
 }
 
 .festival-card.left::before {
@@ -52,7 +52,57 @@
     left: -80px;
 }
 
-/* Collapsed Festival Cards */
+/* Festival Content */
+.festival-header {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.festival-poster {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid #555;
+}
+
+.festival-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6b00;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 70%);
+}
+
+.festival-dates {
+    font-size: 1rem;
+    color: #fc0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.festival-location {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.festival-bands h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.festival-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
 .festival-card.collapsed {
     opacity: 0.4;
     transform: scale(0.95);
@@ -81,48 +131,6 @@
     display: none;
 }
 
-/* Festival Content */
-.festival-header {
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.festival-poster {
-    width: 100%;
-    max-width: 300px;
-    height: 200px;
-    object-fit: contain;
-    border-radius: 10px;
-    border: 2px solid #555;
-}
-
-.festival-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ff6b00;
-    margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-.festival-dates {
-    font-size: 1rem;
-    color: #ffcc00;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.festival-location {
-    font-size: 0.9rem;
-    color: #cccccc;
-    margin-bottom: 1rem;
-}
-
-.festival-bands h4 {
-    color: #ffffff;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
 .bands-list {
     display: flex;
     flex-wrap: wrap;
@@ -130,56 +138,47 @@
 }
 
 .band-tag {
-    background: rgba(255, 107, 0, 0.2);
-    color: #ffffff;
+    background: rgb(255 107 0 / 20%);
+    color: white;
     padding: 0.3rem 0.6rem;
     border-radius: 20px;
     font-size: 0.85rem;
-    border: 1px solid rgba(255, 107, 0, 0.4);
+    border: 1px solid rgb(255 107 0 / 40%);
     transition: all 0.3s ease;
 }
 
 .band-tag.highlighted {
-    background: rgba(255, 107, 0, 0.8);
-    color: #000000;
+    background: rgb(255 107 0 / 80%);
+    color: black;
     font-weight: bold;
     border: 2px solid #ff6b00;
-    box-shadow: 0 2px 8px rgba(255, 107, 0, 0.5);
+    box-shadow: 0 2px 8px rgb(255 107 0 / 50%);
     transform: scale(1.05);
-}
-
-.festival-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #555;
 }
 
 .ticket-price {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #ffcc00;
+    color: #fc0;
 }
 
 .festival-website {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: linear-gradient(45deg, #ff6b00, #cc5500);
+    background: linear-gradient(45deg, #ff6b00, #c50);
     color: white;
     text-decoration: none;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: bold;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(255 107 0 / 30%);
 }
 
 .festival-website:hover {
-    background: linear-gradient(45deg, #cc5500, #ff6b00);
+    background: linear-gradient(45deg, #c50, #ff6b00);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+    box-shadow: 0 6px 20px rgb(255 107 0 / 40%);
 }
 
 /* Favorites */
@@ -192,7 +191,7 @@
 .star-icon {
     display: inline-block;
     font-size: 1.5rem;
-    color: #cccccc;
+    color: #ccc;
     cursor: pointer;
     padding: 0.3rem;
     border-radius: 50%;
@@ -213,11 +212,11 @@
 
 .star-icon.favorite {
     color: #ff6b00;
-    text-shadow: 0 0 10px rgba(255, 107, 0, 0.8);
+    text-shadow: 0 0 10px rgb(255 107 0 / 80%);
 }
 
 .star-icon.favorite:hover {
-    color: #ffaa00;
+    color: #fa0;
 }
 
 /* Filter Button */
@@ -226,8 +225,8 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.7rem 1rem;
-    background: rgba(45, 45, 45, 0.9);
-    color: #cccccc;
+    background: rgb(45 45 45 / 90%);
+    color: #ccc;
     border: 2px solid transparent;
     border-radius: 25px;
     cursor: pointer;
@@ -235,14 +234,14 @@
     font-weight: bold;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
 }
 
 .filter-button:hover {
-    background: rgba(60, 60, 60, 0.9);
+    background: rgb(60 60 60 / 90%);
     border-color: #ff6b00;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 6px 20px rgb(255 107 0 / 30%);
 }
 
 .filter-button:focus {
@@ -251,15 +250,15 @@
 }
 
 .filter-button.active {
-    background: rgba(255, 107, 0, 0.9);
-    color: #ffffff;
+    background: rgb(255 107 0 / 90%);
+    color: white;
     border-color: #ff6b00;
-    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.5);
+    box-shadow: 0 4px 15px rgb(255 107 0 / 50%);
 }
 
 .filter-button.active:hover {
-    background: rgba(255, 130, 30, 0.9);
-    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.6);
+    background: rgb(255 130 30 / 90%);
+    box-shadow: 0 6px 20px rgb(255 107 0 / 60%);
 }
 
 .filter-icon {
@@ -283,8 +282,8 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.7rem 1rem;
-    background: rgba(45, 45, 45, 0.9);
-    color: #cccccc;
+    background: rgb(45 45 45 / 90%);
+    color: #ccc;
     border: 2px solid transparent;
     border-radius: 25px;
     cursor: pointer;
@@ -292,15 +291,15 @@
     font-weight: bold;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
     min-width: 200px;
 }
 
 .bands-filter-toggle:hover {
-    background: rgba(60, 60, 60, 0.9);
+    background: rgb(60 60 60 / 90%);
     border-color: #ff6b00;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 6px 20px rgb(255 107 0 / 30%);
 }
 
 .bands-filter-toggle:focus {
@@ -330,11 +329,11 @@
     right: 0;
     min-width: 100%;
     width: 280px;
-    background: rgba(25, 25, 25, 0.95);
+    background: rgb(25 25 25 / 95%);
     border: 2px solid #ff6b00;
     border-radius: 15px;
     backdrop-filter: blur(15px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px rgb(0 0 0 / 50%);
     z-index: 10000;
     max-height: 400px;
     overflow-y: auto;
@@ -344,8 +343,8 @@
     display: block;
     width: 100%;
     padding: 0.7rem;
-    background: rgba(239, 68, 68, 0.8);
-    color: #ffffff;
+    background: rgb(239 68 68 / 80%);
+    color: white;
     border: none;
     border-bottom: 1px solid #555;
     cursor: pointer;
@@ -354,26 +353,26 @@
 }
 
 .bands-filter-clear-all:hover {
-    background: rgba(239, 68, 68, 1);
+    background: rgb(239 68 68 / 100%);
 }
 
 .bands-filter-search {
     width: 100%;
     padding: 0.7rem;
-    background: rgba(45, 45, 45, 0.9);
-    color: #ffffff;
+    background: rgb(45 45 45 / 90%);
+    color: white;
     border: none;
     border-bottom: 1px solid #555;
     font-size: 0.9rem;
 }
 
 .bands-filter-search::placeholder {
-    color: #cccccc;
+    color: #ccc;
 }
 
 .bands-filter-search:focus {
     outline: none;
-    background: rgba(60, 60, 60, 0.9);
+    background: rgb(60 60 60 / 90%);
 }
 
 .bands-filter-list {
@@ -392,7 +391,7 @@
 }
 
 .bands-filter-item:hover {
-    background: rgba(255, 107, 0, 0.1);
+    background: rgb(255 107 0 / 10%);
 }
 
 .bands-filter-item input[type="checkbox"] {
@@ -403,7 +402,7 @@
 }
 
 .bands-filter-item span {
-    color: #ffffff;
+    color: white;
     font-size: 0.9rem;
     flex: 1;
     overflow: hidden;
@@ -414,14 +413,14 @@
 }
 
 .bands-filter-item.selected {
-    background: rgba(255, 107, 0, 0.2);
+    background: rgb(255 107 0 / 20%);
     border-left: 3px solid #ff6b00;
     font-weight: bold;
 }
 
 .bands-filter-selected-section {
     border-bottom: 1px solid #555;
-    background: rgba(255, 107, 0, 0.05);
+    background: rgb(255 107 0 / 5%);
 }
 
 .bands-filter-selected-section .bands-filter-section-header {
@@ -431,7 +430,7 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    background: rgba(255, 107, 0, 0.1);
+    background: rgb(255 107 0 / 10%);
 }
 
 /* Notifications */
@@ -447,23 +446,23 @@
     transition: opacity 0.3s ease;
     backdrop-filter: blur(10px);
     border: 2px solid;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
 }
 
 .notification-success {
-    background: rgba(34, 197, 94, 0.9);
-    color: #ffffff;
+    background: rgb(34 197 94 / 90%);
+    color: white;
     border-color: #22c55e;
 }
 
 .notification-info {
-    background: rgba(59, 130, 246, 0.9);
-    color: #ffffff;
+    background: rgb(59 130 246 / 90%);
+    color: white;
     border-color: #3b82f6;
 }
 
 .notification-error {
-    background: rgba(239, 68, 68, 0.9);
-    color: #ffffff;
+    background: rgb(239 68 68 / 90%);
+    color: white;
     border-color: #ef4444;
 }
