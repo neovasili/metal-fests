@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
 @font-face {
   font-family: "ScienceGothic-Regular";
   src: url("/fonts/ScienceGothic-Regular.woff2") format("woff2"),
@@ -20,6 +25,10 @@ body {
     color: #ffffff;
     min-height: 100vh;
     line-height: 1.6;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    position: relative;
 }
 
 .loading {

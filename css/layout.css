@@ -157,6 +157,9 @@
 main {
     margin-top: 50px; /* Account for fixed header */
     min-height: calc(100vh - 80px); /* Ensure content fills viewport minus header */
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Timeline Layout */
@@ -166,6 +169,8 @@ main {
     margin: 0 auto;
     padding: 1rem 1rem;
     min-height: calc(100vh - 120px); /* Ensure enough height to push footer down */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .timeline-line {
