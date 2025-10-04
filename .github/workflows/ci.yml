@@ -33,22 +33,22 @@ jobs:
       - name: Lint JavaScript files
         run: |
           # Lint JS files
-          eslint "**/*.js" --max-warnings 0
+          pnpm lint:js
 
       - name: Lint CSS files
         run: |
           # Lint CSS files
-          stylelint "**/*.css"
+          pnpm lint:css
 
       - name: Lint HTML files
         run: |
           # Lint HTML files
-          htmlhint "**/*.html"
+          pnpm lint:html
 
       - name: Lint Markdown files
         run: |
           # Lint Markdown files
-          markdownlint "**/*.md" --config .markdownlint.yaml
+          pnpm lint:md
 
   security:
     name: Security Scan
