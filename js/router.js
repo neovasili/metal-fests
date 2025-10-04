@@ -73,8 +73,6 @@ class ClientRouter {
                 page: currentPath.split('/').pop(), 
                 cleanUrl: pageForNav 
             }, '', pageForNav);
-            
-            console.log(`🔄 Clean URL: ${currentPath} → ${pageForNav}`);
         }
         
         // Update active navigation
@@ -114,7 +112,6 @@ class ClientRouter {
 
     updateActiveNav(currentPath) {
         const navLinks = document.querySelectorAll('.view-link');
-        console.log('🔍 Updating navigation for path:', currentPath);
         
         navLinks.forEach(link => {
             const href = link.getAttribute('href');
@@ -123,10 +120,8 @@ class ClientRouter {
             // Set active state based on current path
             if ((currentPath === '/' || currentPath === '/timeline') && href === '/') {
                 link.classList.add('active');
-                console.log('✅ Timeline link activated');
             } else if (currentPath === '/map' && href === '/map') {
                 link.classList.add('active');
-                console.log('✅ Map link activated');
             }
         });
     }

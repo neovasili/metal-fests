@@ -272,7 +272,7 @@
 }
 
 /* Bands Filter */
-.bands-filter-container {
+.filter-container {
     position: relative;
     margin-right: 1rem;
     z-index: 9999;

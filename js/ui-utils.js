@@ -104,6 +104,9 @@ class UIUtils {
      * @returns {HTMLElement} Filter button element
      */
     static createFilterButton(isActive = false) {
+        const container = document.createElement('div');
+        container.className = 'filter-container';
+
         const filterButton = document.createElement('button');
         filterButton.className = `filter-button ${isActive ? 'active' : ''}`;
         filterButton.innerHTML = `
@@ -112,8 +115,10 @@ class UIUtils {
         `;
         filterButton.setAttribute('aria-label', isActive ? 'Show all festivals' : 'Show favorites only');
         filterButton.title = isActive ? 'Show all festivals' : 'Show favorites only';
-        
-        return filterButton;
+
+        container.appendChild(filterButton);
+
+        return container;
     }
 
     /**
@@ -162,7 +167,7 @@ class UIUtils {
      */
     static createBandsFilter(allBands, selectedBands = []) {
         const container = document.createElement('div');
-        container.className = 'bands-filter-container';
+        container.className = 'filter-container';
 
         // Create toggle button
         const toggleButton = document.createElement('button');
