@@ -2,7 +2,7 @@
 
 .map-container {
     width: 100%;
-    height: calc(100vh - 120px); /* Account for fixed header height */
+    height: calc(100vh - 175px); /* Account for fixed header height */
     position: relative;
     background: #1a1a1a;
     border-radius: 8px;
@@ -230,54 +230,4 @@ header .header-controls {
     color: #ff6b00;
     margin: 0;
     font-size: 16px;
-}
-
-
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .map-container {
-        height: calc(100vh - 100px);
-        margin: 10px;
-        border-radius: 0;
-    }
-    
-    .modal-content {
-        margin: 15px;
-        width: calc(100% - 30px);
-        max-height: calc(100vh - 30px);
-        padding: 20px;
-    }
-    
-    .modal-close {
-        top: 10px;
-        right: 15px;
-    }
-    
-    #modal-festival-card .festival-poster {
-        max-width: 250px;
-    }
-    
-    #modal-festival-card .festival-info {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .map-container {
-        height: calc(100vh - 90px);
-        margin: 5px;
-    }
-    
-    .modal-content {
-        margin: 10px;
-        width: calc(100% - 20px);
-        padding: 15px;
-    }
-    
-    #modal-festival-card .festival-poster {
-        max-width: 200px;
-    }
 }
