@@ -23,18 +23,13 @@ Thank you for your interest in contributing to the Metal Festivals Timeline proj
 
    ```bash
    # Quick setup (installs everything + pre-commit hooks)
-   npm run setup
-
-   # OR manually:
-   pnpm install
-   pip install pre-commit black flake8
-   pre-commit install
+   make setup
    ```
 
 3. **Start Development Server**
 
    ```bash
-   pnpm dev  # or make dev
+   make dev  # or make dev
    ```
 
 ## Code Quality Standards
@@ -69,17 +64,17 @@ pnpm validate
 
 #### JavaScript
 
-- Use **4 spaces** for indentation
-- Use **single quotes** for strings
+- Use **2 spaces** for indentation
+- Use **double quotes** for strings
 - Always use **semicolons**
 - Follow **Standard JS** conventions
 - Maximum line length: **100 characters**
 
 #### CSS
 
-- Use **4 spaces** for indentation
-- Use **single quotes** for strings
-- Use **lowercase** hex colors (#fff, not #FFF)
+- Use **2 spaces** for indentation
+- Use **double quotes** for strings
+- Use **lowercase** named colors when possible ("white", not #FFF)
 - Avoid **!important** declarations
 - Follow **BEM-like** naming conventions
 

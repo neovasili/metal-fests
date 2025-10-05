@@ -1,40 +1,40 @@
 /* Base Styles - Reset, fonts, and global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    overflow-x: hidden;
-    overscroll-behavior: none;
+  overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 @font-face {
   font-family: ScienceGothic-Regular;
   src: url("/fonts/ScienceGothic-Regular.woff2") format("woff2"),
-       url("/fonts/ScienceGothic-Regular.woff") format("woff"),
-       url("/fonts/ScienceGothic-Regular.ttf") format("truetype");
+     url("/fonts/ScienceGothic-Regular.woff") format("woff"),
+     url("/fonts/ScienceGothic-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-    font-family: ScienceGothic-Regular, sans-serif;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    color: white;
-    min-height: 100vh;
-    line-height: 1.6;
-    overflow-x: hidden;
-    overscroll-behavior: none;
-    overscroll-behavior-y: none;
-    position: relative;
+  font-family: ScienceGothic-Regular, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
+  position: relative;
 }
 
 .loading {
-    text-align: center;
-    padding: 4rem;
-    font-size: 1.2rem;
-    color: #ccc;
-    display: none;
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  display: none;
 }
