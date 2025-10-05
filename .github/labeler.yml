@@ -1,0 +1,54 @@
+---
+ci:
+- changed-files:
+  - any-glob-to-any-file:
+    - .github/*
+    - .github/**/*
+    - .htmlhintrc
+    - .markdownlint.yaml
+    - .pre-commit-config.yaml
+    - .prettierrc
+    - .stylelintrc.json
+    - .eslint.config.mjs
+
+documentation:
+- changed-files:
+  - any-glob-to-any-file:
+    - ./*.md
+    - docs/*
+    - docs/**/*
+
+infra:
+- changed-files:
+  - any-glob-to-any-file:
+    - infra/*
+    - infra/**/*
+
+style:
+- changed-files:
+  - any-glob-to-any-file:
+    - ./*.css
+    - ./**/*.css
+
+logic:
+- changed-files:
+  - any-glob-to-any-file:
+    - ./*.js
+    - ./**/*.js
+
+data:
+- changed-files:
+  - any-glob-to-any-file:
+    - ./db.json
+
+media:
+- changed-files:
+  - any-glob-to-any-file:
+    - ./fonts/**
+    - ./img/**
+
+dependencies:
+- changed-files:
+  - any-glob-to-any-file:
+    - package.json
+    - pnpm-lock.yaml
