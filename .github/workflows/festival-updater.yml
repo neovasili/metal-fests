@@ -2,8 +2,11 @@ name: Festival Information Update
 
 on:
   schedule:
-    # Run every Sunday at 6 AM UTC
-    - cron: '0 6 * * 0'
+    # Run every day at 6 AM UTC
+    - cron: '0 6 * * *'
+  push:
+    branches:
+      - feat/festivals-updater
   workflow_dispatch: # Allow manual triggering
     inputs:
       update_existing:
