@@ -1,233 +1,233 @@
 /* Map page specific styles */
 
 .map-container {
-    width: 100%;
-    height: calc(100vh - 175px); /* Account for fixed header height */
-    position: relative;
-    background: #1a1a1a;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 20px auto;
-    max-width: 1200px;
-    z-index: 1; /* Ensure map container has lower z-index */
+  width: 100%;
+  height: calc(100vh - 175px); /* Account for fixed header height */
+  position: relative;
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 1200px;
+  z-index: 1; /* Ensure map container has lower z-index */
 }
 
 #festival-map {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
 /* Modal styles */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0 0 0 / 80%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
 }
 
 .modal-content {
-    position: relative;
-    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
-    border-radius: 12px;
-    padding: 25px;
-    max-width: 480px;
-    width: 90%;
-    max-height: 85vh;
-    overflow-y: auto;
-    box-shadow: 0 20px 40px rgb(0 0 0 / 50%);
-    border: 1px solid #444;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 480px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 50%);
+  border: 1px solid #444;
 }
 
 .modal-close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    background: none;
-    border: none;
-    color: #ff6b00;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 1001;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #ff6b00;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .modal-close:hover {
-    background: rgb(255 107 0 / 20%);
-    transform: scale(1.1);
+  background: rgb(255 107 0 / 20%);
+  transform: scale(1.1);
 }
 
 /* Festival card in modal - reuse existing styles but adjust for modal context */
 #modal-festival-card .festival-card {
-    margin: 0;
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    width: 100% !important;
-    max-width: none !important;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  width: 100% !important;
+  max-width: none !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Remove the timeline dot from modal cards */
 #modal-festival-card .festival-card::before {
-    display: none !important;
+  display: none !important;
 }
 
 /* Fix modal card layout */
 #modal-festival-card .festival-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 #modal-festival-card .festival-poster {
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto 20px;
-    display: block;
-    border-radius: 8px;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 8px;
 }
 
 #modal-festival-card .festival-name {
-    text-align: center;
-    margin: 0 0 15px;
-    width: 100%;
+  text-align: center;
+  margin: 0 0 15px;
+  width: 100%;
 }
 
 #modal-festival-card .festival-dates,
 #modal-festival-card .festival-location {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 #modal-festival-card .festival-bands {
-    width: 100%;
-    margin: 20px 0;
+  width: 100%;
+  margin: 20px 0;
 }
 
 #modal-festival-card .festival-info {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 #modal-festival-card .favorite-container {
-    top: 10px;
-    right: 10px;
-    position: absolute;
+  top: 10px;
+  right: 10px;
+  position: absolute;
 }
 
 /* Custom map marker styles (for Leaflet) */
 .custom-marker {
-    background: #ff6b00;
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 30px !important;
-    height: 30px !important;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background: #ff6b00;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 30%);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .custom-marker:hover {
-    transform: scale(1.2);
-    box-shadow: 0 6px 12px rgb(0 0 0 / 40%);
+  transform: scale(1.2);
+  box-shadow: 0 6px 12px rgb(0 0 0 / 40%);
 }
 
 .custom-marker img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 /* Leaflet popup styling to match theme */
 .leaflet-popup-content-wrapper {
-    background: #1a1a1a !important;
-    color: white !important;
-    border-radius: 8px !important;
+  background: #1a1a1a !important;
+  color: white !important;
+  border-radius: 8px !important;
 }
 
 .leaflet-popup-tip {
-    background: #1a1a1a !important;
+  background: #1a1a1a !important;
 }
 
 .leaflet-popup-content {
-    color: white !important;
-    margin: 8px 12px !important;
+  color: white !important;
+  margin: 8px 12px !important;
 }
 
 /* Override Leaflet's z-index for controls on map page */
 .leaflet-control-container {
-    z-index: 50 !important;
+  z-index: 50 !important;
 }
 
 .leaflet-pane {
-    z-index: auto !important;
+  z-index: auto !important;
 }
 
 .leaflet-map-pane {
-    z-index: 1 !important;
+  z-index: 1 !important;
 }
 
 /* Ensure header controls are above everything on map page */
 header {
-    z-index: 20000 !important;
+  z-index: 20000 !important;
 }
 
 header .header-controls {
-    z-index: 20001 !important;
+  z-index: 20001 !important;
 }
 
 /* Ensure bands filter is above map */
 .filter-container {
-    z-index: 20002 !important;
+  z-index: 20002 !important;
 }
 
 .bands-filter-dropdown {
-    z-index: 20003 !important;
+  z-index: 20003 !important;
 }
 
 /* Loading state */
 .loading {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(26 26 26 / 90%);
-    padding: 20px 40px;
-    border-radius: 8px;
-    border: 1px solid #444;
-    z-index: 999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(26 26 26 / 90%);
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  z-index: 999;
 }
 
 .loading p {
-    color: #ff6b00;
-    margin: 0;
-    font-size: 16px;
+  color: #ff6b00;
+  margin: 0;
+  font-size: 16px;
 }

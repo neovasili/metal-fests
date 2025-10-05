@@ -1,103 +1,103 @@
 /* Error Page Styles */
 .error-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 120px); /* Account for fixed header height */
-    text-align: center;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px); /* Account for fixed header height */
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .error-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.6;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .error-content {
-    position: relative;
-    z-index: 1;
-    background: rgb(25 25 25 / 20%);
-    padding: 3rem 2rem;
-    border-radius: 20px;
-    border: 2px solid rgb(255 107 0 / 80%);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 8px 32px rgb(0 0 0 / 50%);
-    max-width: 600px;
-    width: 100%;
+  position: relative;
+  z-index: 1;
+  background: rgb(25 25 25 / 20%);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  border: 2px solid rgb(255 107 0 / 80%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 50%);
+  max-width: 600px;
+  width: 100%;
 }
 
 .error-title {
-    font-size: 3rem;
-    color: #ff6b00;
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 8px rgb(0 0 0 / 90%);
-    font-weight: bold;
+  font-size: 3rem;
+  color: #ff6b00;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 8px rgb(0 0 0 / 90%);
+  font-weight: bold;
 }
 
 .error-message {
-    font-size: 1.3rem;
-    color: "white";
-    margin-bottom: 2rem;
-    line-height: 1.6;
-    text-shadow: 1px 1px 4px rgb(0 0 0 / 80%);
+  font-size: 1.3rem;
+  color: "white";
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgb(0 0 0 / 80%);
 }
 
 .error-back-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: linear-gradient(45deg, #ff6b00, #c50);
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgb(255 107 0 / 30%);
-    border: none;
-    cursor: pointer;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #ff6b00, #c50);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgb(255 107 0 / 30%);
+  border: none;
+  cursor: pointer;
 }
 
 .error-back-button:hover {
-    background: linear-gradient(45deg, #c50, #ff6b00);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgb(255 107 0 / 40%);
+  background: linear-gradient(45deg, #c50, #ff6b00);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgb(255 107 0 / 40%);
 }
 
 /* Responsive adjustments */
 @media (width <= 768px) {
-    .error-title {
-        font-size: 2.5rem;
-    }
+  .error-title {
+    font-size: 2.5rem;
+  }
 
-    .error-message {
-        font-size: 1.1rem;
-    }
+  .error-message {
+    font-size: 1.1rem;
+  }
 
-    .error-content {
-        padding: 2rem 1.5rem;
-        margin: 1rem;
-    }
+  .error-content {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
 }
 
 @media (width <= 480px) {
-    .error-title {
-        font-size: 2rem;
-    }
+  .error-title {
+    font-size: 2rem;
+  }
 
-    .error-message {
-        font-size: 1rem;
-    }
+  .error-message {
+    font-size: 1rem;
+  }
 
-    .error-content {
-        padding: 1.5rem 1rem;
-    }
+  .error-content {
+    padding: 1.5rem 1rem;
+  }
 }

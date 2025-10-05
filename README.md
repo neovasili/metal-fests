@@ -1,5 +1,6 @@
 # European Metal Festivals 2026 Timeline
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=neovasili_metal-fests&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=neovasili_metal-fests)
 [![Code Quality & Linting](https://github.com/neovasili/metal-fests/actions/workflows/ci.yml/badge.svg)](https://github.com/neovasili/metal-fests/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -129,8 +130,6 @@ pre-commit install
 | **Stylelint** | CSS linting | `.stylelintrc.json` |
 | **HTMLHint** | HTML validation | `.htmlhintrc` |
 | **Markdownlint** | Markdown linting | `.markdownlint.yaml` |
-| **Black** | Python formatting | Built-in |
-| **Flake8** | Python linting | Built-in |
 
 ### Continuous Integration
 
@@ -239,7 +238,6 @@ To add more festivals, simply edit the `db.json` file following the existing str
 - **Frontend**: Vanilla JavaScript, HTML5, CSS3
 - **Maps**: Leaflet.js with OpenStreetMap tiles (CartoDB Dark theme)
 - **Storage**: localStorage for favorites and filter preferences
-- **Server**: Python 3 HTTP server with CORS support
 - **Styling**: Modular CSS architecture with responsive design
 
 ## Browser Compatibility
