@@ -7,7 +7,10 @@
         "end": "2026-06-06"
       },
       "location": "Sölvesborg, Sweden",
-      "coordinates": { "lat": 56.0515, "lng": 14.5683 },
+      "coordinates": {
+        "lat": 56.0515,
+        "lng": 14.5683
+      },
       "poster": "https://play-lh.googleusercontent.com/GRuI5SUjlbwFnAaj9orWVPVwekchmI25jdvSgu3qSveC7WoTainD9orZMGzsfhZAHmw=w600-h300-pc0xffffff-pd",
       "website": "https://swedenrock.com",
       "bands": [
@@ -22,7 +25,10 @@
         "end": "2026-06-07"
       },
       "location": "Nürburgring, Germany",
-      "coordinates": { "lat": 50.3322, "lng": 6.9447 },
+      "coordinates": {
+        "lat": 50.3322,
+        "lng": 6.9447
+      },
       "poster": "https://www.rock-am-ring.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRaR_Vertical_White_1024.png&w=1280&q=100",
       "website": "https://www.rock-am-ring.com",
       "bands": [
@@ -47,7 +53,7 @@
         "Hollywood Undead",
         "Social Distortion"
       ],
-      "ticketPrice": 257
+      "ticketPrice": 179
     },
     {
       "name": "Rock in Park",
@@ -56,7 +62,10 @@
         "end": "2026-06-07"
       },
       "location": "Nuremberg, Germany",
-      "coordinates": { "lat": 49.4521, "lng": 11.0767 },
+      "coordinates": {
+        "lat": 49.4521,
+        "lng": 11.0767
+      },
       "poster": "https://www.rock-im-park.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRiP_Vertical_White_1024.png&w=1280&q=100",
       "website": "https://www.rock-im-park.com",
       "bands": [
@@ -81,7 +90,7 @@
         "Hollywood Undead",
         "Social Distortion"
       ],
-      "ticketPrice": 340
+      "ticketPrice": 318
     },
     {
       "name": "Download Festival",
@@ -90,7 +99,10 @@
         "end": "2026-06-14"
       },
       "location": "Donington Park, UK",
-      "coordinates": { "lat": 52.8305, "lng": -1.3764 },
+      "coordinates": {
+        "lat": 52.8305,
+        "lng": -1.3764
+      },
       "poster": "https://downloadfestival.co.uk/assets/images/2026/DLXXIII-stack-logo.png",
       "website": "https://downloadfestival.co.uk",
       "bands": [
@@ -105,7 +117,10 @@
         "end": "2026-06-14"
       },
       "location": "Nickelsdorf, Austria",
-      "coordinates": { "lat": 47.9458, "lng": 17.1336 },
+      "coordinates": {
+        "lat": 47.9458,
+        "lng": 17.1336
+      },
       "poster": "https://dkipu5jeyvxyb.cloudfront.net/wp-content/uploads/2017/09/24040110/NR.png",
       "website": "https://novarock.at",
       "bands": [
@@ -143,7 +158,10 @@
         "end": "2026-06-21"
       },
       "location": "Clisson, France",
-      "coordinates": { "lat": 47.0869, "lng": -1.2816 },
+      "coordinates": {
+        "lat": 47.0869,
+        "lng": -1.2816
+      },
       "poster": "https://hellfest.fr/images/logo.png",
       "website": "https://hellfest.fr",
       "bands": [
@@ -158,24 +176,42 @@
         "end": "2026-06-27"
       },
       "location": "Copenhagen, Denmark",
-      "coordinates": { "lat": 55.6761, "lng": 12.5683 },
+      "coordinates": {
+        "lat": 55.6761,
+        "lng": 12.5683
+      },
       "poster": "https://i0.wp.com/kulturtid.dk/wp-content/uploads/2024/07/copenhell-logo2024.jpg?resize=1021%2C580&ssl=1",
       "website": "https://copenhell.dk",
       "bands": [
         "Iron Maiden",
         "Bring Me The Horizon",
+        "Twisted Sister",
+        "Volbeat",
         "Alice Cooper",
-        "Anthrax",
-        "The Pretty Reckless",
-        "Neckbreakker",
-        "Thrown",
-        "Iotunn",
-        "Trollfest",
-        "Katla",
-        "Die Spitz",
-        "Defecto",
-        "Violent Magic Orchestra",
-        "Omsorg"
+        "Papa Roach",
+        "A Perfect Circle",
+        "Trivium",
+        "P.O.D.",
+        "Sepultura",
+        "Kublai Khan Tx",
+        "President",
+        "Queensrÿche",
+        "Konvent",
+        "Six Feet Under",
+        "Malevolence",
+        "Static X",
+        "The Browning",
+        "Gridiron",
+        "Powerplant",
+        "Split",
+        "Twenty One Children",
+        "End It",
+        "Voice Of Baceprot",
+        "Chopper",
+        "Inhuman Nature",
+        "Warkings",
+        "Vexed",
+        "Psycho Moshers"
       ],
       "ticketPrice": 350
     },
@@ -186,7 +222,10 @@
         "end": "2026-06-21"
       },
       "location": "Dessel, Belgium",
-      "coordinates": { "lat": 51.2372, "lng": 5.1186 },
+      "coordinates": {
+        "lat": 51.2372,
+        "lng": 5.1186
+      },
       "poster": "https://www.graspop.be/assets/website/components/header/logo.73035b00.webp",
       "website": "https://graspop.be",
       "bands": [
@@ -201,7 +240,10 @@
         "end": "2026-07-04"
       },
       "location": "Viveiro, Spain",
-      "coordinates": { "lat": 43.6616, "lng": -7.5956 },
+      "coordinates": {
+        "lat": 43.6616,
+        "lng": -7.5956
+      },
       "poster": "https://www.resurrectionfest.es/media/RF23-LogoNav.png",
       "website": "https://www.resurrectionfest.es",
       "bands": [
@@ -223,7 +265,7 @@
         "Get The Shot",
         "The Vintage Caravan"
       ],
-      "ticketPrice": 180
+      "ticketPrice": 235
     },
     {
       "name": "Masters of Rock",
@@ -232,29 +274,36 @@
         "end": "2026-07-19"
       },
       "location": "Vizovice, Czech Republic",
-      "coordinates": { "lat": 49.2188, "lng": 17.8552 },
+      "coordinates": {
+        "lat": 49.2188,
+        "lng": 17.8552
+      },
       "poster": "https://es.concerty.com/img/festival/logo/496.png",
       "website": "https://mastersofrock.cz",
       "bands": [
-        "In Flames",
         "Helloween",
+        "In Flames",
         "The Rasmus",
-        "Miracle of Sound",
-        "Lordi",
-        "Brothers of Metal",
-        "The Gathering",
-        "Voivod",
-        "Elvenking",
-        "Feuerschwanz",
-        "Visions of Atlantis",
-        "Anneke van Giersbergen",
-        "Kissin' Dynamite",
-        "Enemy Inside",
-        "Ex Deo",
-        "Crucified Barbara",
-        "Art Nation",
         "Dirkschneider",
-        "Brainstorm"
+        "Cavalera Conspiracy",
+        "Kissin' Dynamite",
+        "Feuerschwanz",
+        "Lordi",
+        "Primal Fear",
+        "The Gathering",
+        "Visions Of Atlantis",
+        "Voivod",
+        "Brothers Of Metal",
+        "Miracle Of Sound",
+        "Elvenking",
+        "Ex Deo",
+        "Brainstorm",
+        "Crucified Barbara",
+        "Curse Of Cain",
+        "Enemy Inside",
+        "Neckbreaker",
+        "Art Nation",
+        "Self Deception"
       ],
       "ticketPrice": 140
     },
@@ -265,38 +314,51 @@
         "end": "2026-08-08"
       },
       "location": "Jaroměř, Czech Republic",
-      "coordinates": { "lat": 50.3558, "lng": 15.9272 },
+      "coordinates": {
+        "lat": 50.3558,
+        "lng": 15.9272
+      },
       "poster": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Brutal_Assault.png",
       "website": "https://brutalassault.cz",
       "bands": [
-        "200 STAB WOUNDS",
+        "The Sisters Of Mercy",
+        "The Ghost Inside",
+        "200 Stab Wounds",
         "Alcest",
         "Allt",
         "Amorphis",
         "Animals As Leaders",
         "Arthur Brown",
+        "Bleed From Within",
+        "Castle Rat",
         "Coroner",
         "Crippling Alcoholism",
         "Cryptopsy",
         "Deafheaven",
         "Death Angel",
+        "Deceased",
         "Deicide",
+        "Deserted Fear",
+        "Devourment",
         "Draconian",
         "Elder",
         "Fallujah",
+        "Imminence",
+        "Insomnium",
         "Internal Bleeding",
+        "Kittie",
         "Marduk",
         "Master Boot Record",
+        "Metal Church",
         "Municipal Waste",
-        "Old Man's Child",
-        "Rise of the Northstar",
+        "Old Man’S Child",
+        "Rise Of The Northstar",
+        "Sadistic Intent",
         "Sanguisugabogg",
         "Saor",
         "Septicflesh",
-        "Signs of the Swarm",
+        "Signs Of The Swarm",
         "Slope",
-        "The Ghost Inside",
-        "The Sisters of Mercy",
         "Triptykon",
         "Vader",
         "Vended",
@@ -311,7 +373,10 @@
         "end": "2026-08-01"
       },
       "location": "Wacken, Germany",
-      "coordinates": { "lat": 53.9347, "lng": 9.3875 },
+      "coordinates": {
+        "lat": 53.9347,
+        "lng": 9.3875
+      },
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTzgs_6Ax_eR3JamWFprxf7kzqSZi9rLoKA&s",
       "website": "https://www.wacken.com",
       "bands": [
@@ -351,7 +416,7 @@
         "Thrown",
         "Tryptikon"
       ],
-      "ticketPrice": 350
+      "ticketPrice": 349
     },
     {
       "name": "Leyendas del Rock",
@@ -360,7 +425,10 @@
         "end": "2026-08-08"
       },
       "location": "Villena, Spain",
-      "coordinates": { "lat": 38.6372, "lng": -0.8657 },
+      "coordinates": {
+        "lat": 38.6372,
+        "lng": -0.8657
+      },
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09ctI_UejVHK9a-iFQ9P2J0C6-Zp9a_dPKg&s",
       "website": "https://www.leyendasdelrockfestival.com",
       "bands": [
@@ -387,7 +455,10 @@
         "end": "2026-08-09"
       },
       "location": "Derbyshire, UK",
-      "coordinates": { "lat": 52.7323, "lng": -1.5736 },
+      "coordinates": {
+        "lat": 52.7323,
+        "lng": -1.5736
+      },
       "poster": "https://bloodstock.uk.com/assets/objects/line_up_modal/stacked-logo-310f4cb3e82dc4a83c45d48447089e74a9b02c1345b878ee2b06869f8e4c2222.png",
       "website": "https://bloodstock.uk.com",
       "bands": [
@@ -426,7 +497,10 @@
         "end": "2026-08-15"
       },
       "location": "Dinkelsbühl, Germany",
-      "coordinates": { "lat": 49.0686, "lng": 10.3222 },
+      "coordinates": {
+        "lat": 49.0686,
+        "lng": 10.3222
+      },
       "poster": "https://www.sbtix.de/uploads/summer_breeze/ticket/image/86579/FestivalTicket2026_600x600_1755516804.jpeg",
       "website": "https://www.summer-breeze.de/en/",
       "bands": [
@@ -481,7 +555,7 @@
         "Mittel Alta",
         "Luna Kills"
       ],
-      "ticketPrice": 250
+      "ticketPrice": 249
     }
   ]
 }
