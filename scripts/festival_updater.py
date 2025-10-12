@@ -31,7 +31,6 @@ Always return valid compact JSON: {"bands":["..."],"ticketPrice":"..."}.
 Never include explanations or commentary.
 """
 
-
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -47,6 +46,7 @@ class FestivalUpdater:
         """Initialize the festival updater with necessary clients."""
         self.openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.update_existing_festivals_prompt = self._load_prompt_file(PROMPT_FILE)
+        self.total_used_tokens = 0
 
         # Load current festival data
         self.current_festivals = self._load_festivals()
@@ -62,7 +62,8 @@ class FestivalUpdater:
             tools=[{"type": "web_search"}],
             temperature=0.3,
         )
-        print(f" == Request usage: {response.usage}")
+        logger.info(f" == Request usage: {response.usage}")
+        self.total_used_tokens += response.usage.total_tokens
         return response.output_text
 
     def _load_prompt_file(self, filepath: str) -> str:
@@ -133,6 +134,8 @@ class FestivalUpdater:
 
             # Update bands if new ones are found
             if updated_info.get("bands") and len(updated_info["bands"]) > len(festival.get("bands", [])):
+                # Normalize band names with only first letter capitalized
+                updated_info["bands"] = [band.title() for band in updated_info["bands"]]
                 old_bands = set(festival.get("bands", []))
                 new_bands = set(updated_info["bands"])
                 added_bands = new_bands - old_bands
@@ -167,11 +170,8 @@ class FestivalUpdater:
         summary_parts.append("")
 
         # Summary
-        total_changes = len(self.updates_made) + len(self.new_festivals)
         summary_parts.append("## 📊 Summary")
         summary_parts.append(f"- **Existing festivals updated:** {len(self.updates_made)}")
-        summary_parts.append(f"- **New festivals added:** {len(self.new_festivals)}")
-        summary_parts.append(f"- **Total changes:** {total_changes}")
         summary_parts.append("")
 
         # Existing festivals updates
@@ -181,7 +181,7 @@ class FestivalUpdater:
 
             for update in self.updates_made:
                 summary_parts.append(f"### {update['festival']}")
-                summary_parts.append(f"**Confidence:** {update['confidence']}")
+                summary_parts.append(f"**Website:** [{update['festival']}]({update.get('website', 'TBD')})")
                 summary_parts.append("**Changes:**")
                 for change in update["changes"]:
                     summary_parts.append(f"- {change}")
@@ -189,32 +189,6 @@ class FestivalUpdater:
                 if update["sources"]:
                     summary_parts.append("**Sources:**")
                     for source in update["sources"]:
-                        summary_parts.append(f"- {source}")
-
-                summary_parts.append("")
-
-        # New festivals
-        if self.new_festivals:
-            summary_parts.append("## ✨ New Festivals Added")
-            summary_parts.append("")
-
-            for new_festival in self.new_festivals:
-                festival = new_festival["festival"]
-                summary_parts.append(f"### {festival['name']}")
-                summary_parts.append(f"**Location:** {festival['location']}")
-                summary_parts.append(f"**Dates:** {festival['dates'].get('start', 'TBD')} to {festival['dates'].get('end', 'TBD')}")
-                summary_parts.append(f"**Ticket Price:** €{festival.get('ticketPrice', 'TBD')}")
-                summary_parts.append(f"**Website:** {festival.get('website', 'TBD')}")
-                summary_parts.append(f"**Confidence:** {new_festival['confidence']}")
-
-                if festival.get("bands"):
-                    summary_parts.append(f"**Bands:** {', '.join(festival['bands'][:5])}")
-                    if len(festival["bands"]) > 5:
-                        summary_parts.append(f" (and {len(festival['bands']) - 5} more)")
-
-                if new_festival["sources"]:
-                    summary_parts.append("**Sources:**")
-                    for source in new_festival["sources"]:
                         summary_parts.append(f"- {source}")
 
                 summary_parts.append("")
@@ -244,6 +218,8 @@ class FestivalUpdater:
             logger.info(f"Update complete! {len(self.updates_made)} festivals updated.")
         else:
             logger.info("No updates found.")
+
+        logger.info(f"Total tokens used: {self.total_used_tokens}")
 
 
 def main():

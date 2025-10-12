@@ -41,11 +41,13 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "🎸 Update festival information (automated)"
-          title: "🤖 Automated Festival Information Update - ${{ github.run_number }}"
+          commit-message: "chore: 🎸 Update festival information (automated)"
+          title: "chore: 🤖 Automated Festival Information Update - ${{ github.run_number }}"
           body-path: festival_update_summary.md
           branch: automated-festival-update-${{ github.run_number }}
           delete-branch: true
+          add-paths: |
+            db.json
           labels: |
             automated
             festival-data
