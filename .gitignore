@@ -26,6 +26,14 @@ coverage/
 dist/
 build/
 
+# Python environments and cache
+.env
+env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
 # Pre-commit cache
 .pre-commit-config.yaml.backup
 

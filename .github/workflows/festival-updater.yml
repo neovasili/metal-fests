@@ -1,0 +1,52 @@
+name: Festival Information Update
+
+on:
+  schedule:
+    # Run every sunday at 6 AM UTC
+    - cron: "0 6 * * 0"
+  workflow_dispatch: # Allow manual triggering
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-festivals:
+    name: Update Festival Information
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+
+      - name: Run Festival Information Updater
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/festival_updater.py
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: 🎸 Update festival information (automated)"
+          title: "chore: 🤖 Automated Festival Information Update - ${{ github.run_number }}"
+          body-path: festival_update_summary.md
+          branch: automated-festival-update-${{ github.run_number }}
+          delete-branch: true
+          add-paths: |
+            db.json
+          labels: |
+            automated
+            festival-data
+            enhancement
