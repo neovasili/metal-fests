@@ -23,7 +23,14 @@ from dotenv import load_dotenv
 # Constants
 FESTIVALS_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "db.json")
 PROMPT_FILE = os.path.join(os.path.dirname(__file__), "prompt.md")
-OPENAI_MODEL = "gpt-5"
+# OPENAI_MODEL = "gpt-5"
+OPENAI_MODEL = "gpt-4.1-mini"
+SYSTEM_INSTRUCTIONS = """
+You are a data extraction assistant.
+Always return valid compact JSON: {"bands":["..."],"ticketPrice":"..."}.
+Never include explanations or commentary.
+"""
+
 
 # Configure logging
 logging.basicConfig(
@@ -50,9 +57,12 @@ class FestivalUpdater:
     def _ask_openai(self, prompt):
         response = self.openai_client.responses.create(
             model=OPENAI_MODEL,
+            instructions=SYSTEM_INSTRUCTIONS,
             input=prompt,
             tools=[{"type": "web_search"}],
+            temperature=0.3,
         )
+        print(f" == Request usage: {response.usage}")
         return response.output_text
 
     def _load_prompt_file(self, filepath: str) -> str:
@@ -81,8 +91,9 @@ class FestivalUpdater:
 
     def _save_festivals(self, festivals: List[Dict]) -> None:
         """Save updated festival data to db.json."""
+        db_json = { "festivals": festivals }
         with open("db.json", "w", encoding="utf-8") as f:
-            json.dump(festivals, f, indent=2, ensure_ascii=False)
+            json.dump(db_json, f, indent=2, ensure_ascii=False)
 
     def _search_festival_info(self, festival_name: str, festival_url: str, location: str = "") -> Dict:
         """Search for festival information using OpenAI."""
@@ -119,7 +130,6 @@ class FestivalUpdater:
                 continue
 
             changes = []
-            original_festival = festival.copy()
 
             # Update bands if new ones are found
             if updated_info.get("bands") and len(updated_info["bands"]) > len(festival.get("bands", [])):
@@ -132,10 +142,10 @@ class FestivalUpdater:
                     changes.append(f"Added bands: {', '.join(added_bands)}")
 
             # Update ticket price if available and different
-            if updated_info.get("ticketPrice") and updated_info["ticketPrice"] != festival.get("ticketPrice"):
+            if updated_info.get("ticketPrice") != "" and updated_info["ticketPrice"] != festival.get("ticketPrice"):
                 old_price = festival.get("ticketPrice", "Unknown")
                 festival["ticketPrice"] = updated_info["ticketPrice"]
-                changes.append(f"Updated ticket price: €{old_price} → €{updated_info['ticketPrice']}")
+                changes.append(f"Updated ticket price: {old_price}€ → {updated_info['ticketPrice']}€")
 
             if changes:
                 self.updates_made.append({
