@@ -145,14 +145,15 @@ class FestivalUpdater:
                     changes.append(f"Added bands: {', '.join(added_bands)}")
 
             # Update ticket price if available and different
-            if updated_info.get("ticketPrice") != "" and updated_info["ticketPrice"] != festival.get("ticketPrice"):
+            if updated_info.get("ticketPrice") is not None and updated_info["ticketPrice"] != festival.get("ticketPrice"):
                 old_price = festival.get("ticketPrice", "Unknown")
-                festival["ticketPrice"] = updated_info["ticketPrice"]
+                festival["ticketPrice"] = int(updated_info["ticketPrice"])
                 changes.append(f"Updated ticket price: {old_price}€ → {updated_info['ticketPrice']}€")
 
             if changes:
                 self.updates_made.append({
                     "festival": festival_name,
+                    "website": festival.get("website", "TBD"),
                     "changes": changes,
                     "sources": updated_info.get("sources", []),
                     "confidence": updated_info.get("confidence", "medium")
@@ -181,7 +182,10 @@ class FestivalUpdater:
 
             for update in self.updates_made:
                 summary_parts.append(f"### {update['festival']}")
-                summary_parts.append(f"**Website:** [{update['festival']}]({update.get('website', 'TBD')})")
+                if update["website"] != "TBD":
+                    summary_parts.append(f"**Website:** [{update['festival']}]({update['website']})")
+                else:
+                    summary_parts.append(f"**Website:** TBD")
                 summary_parts.append("**Changes:**")
                 for change in update["changes"]:
                     summary_parts.append(f"- {change}")
