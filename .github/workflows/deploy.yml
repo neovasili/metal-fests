@@ -14,6 +14,16 @@ on:
         default: metal-fests.com
         required: true
         type: string
+    secrets:
+      DEPLOY_ROLE_ARN:
+        description: ARN of the role to assume for deployment
+        required: true
+      CLOUDFRONT_DISTRIBUTION_ID:
+        description: CloudFront distribution ID to invalidate cache
+        required: true
+      GITHUB_TOKEN:
+        description: Token to use for deployment status updates and PR comments
+        required: true
 
 jobs:
   deploy:
@@ -51,20 +61,22 @@ jobs:
 
       - name: (Deploy) Push Contents to S3
         run: |
-          aws s3 rm s3://${{ inputs.domain }}/ --recursive
-          aws s3 cp ./build/ s3://${{ inputs.domain }}/ --recursive
+          aws s3 rm "s3://${AWS_S3_BUCKET}/" --recursive
+          aws s3 cp ./build/ "s3://${AWS_S3_BUCKET}/" --recursive
+        env:
+          AWS_S3_BUCKET: ${{ inputs.domain }}
 
       - name: (Deploy) Invalidate CloudFront Cache
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           INVALIDATION_ID=$(aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --distribution-id "${CLOUDFRONT_DISTRIBUTION_ID}" \
             --paths "/*" \
             --query 'Invalidation.Id' \
             --output text)
 
           INVALIDATION_STATUS=$(aws cloudfront get-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --distribution-id "${CLOUDFRONT_DISTRIBUTION_ID}" \
             --id $INVALIDATION_ID \
             --query 'Invalidation.Status' \
             --output text)
@@ -72,11 +84,13 @@ jobs:
           while [ "$INVALIDATION_STATUS" != "Completed" ]; do
             sleep 30
             INVALIDATION_STATUS=$(aws cloudfront get-invalidation \
-              --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+              --distribution-id "${CLOUDFRONT_DISTRIBUTION_ID}" \
               --id $INVALIDATION_ID \
               --query 'Invalidation.Status' \
               --output text)
           done
+        env:
+          CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 
       - name: Notify preview
         uses: mshick/add-pr-comment@v2.8.2

@@ -23,4 +23,7 @@ jobs:
     with:
       stage: prod
       domain: metal-fests.com
-    secrets: inherit
+    secrets:
+      DEPLOY_ROLE_ARN: ${{ secrets.DEPLOY_ROLE_ARN }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
