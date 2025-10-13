@@ -21,9 +21,9 @@ from openai import OpenAI
 from dotenv import load_dotenv
 
 # Constants
-FESTIVALS_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "db.json")
+DB_FILE_NAME = "db.json"
+FESTIVALS_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), DB_FILE_NAME)
 PROMPT_FILE = os.path.join(os.path.dirname(__file__), "prompt.md")
-# OPENAI_MODEL = "gpt-5"
 OPENAI_MODEL = "gpt-4.1-mini"
 SYSTEM_INSTRUCTIONS = """
 You are a data extraction assistant.
@@ -81,19 +81,19 @@ class FestivalUpdater:
     def _load_festivals(self) -> List[Dict]:
         """Load current festival data from db.json."""
         try:
-            with open("db.json", "r", encoding="utf-8") as f:
+            with open(DB_FILE_NAME, "r", encoding="utf-8") as f:
                 return json.load(f)["festivals"]
         except FileNotFoundError:
-            logger.error("db.json not found")
+            logger.error(f"{DB_FILE_NAME} not found")
             return []
         except json.JSONDecodeError as e:
-            logger.error(f"Error parsing db.json: {e}")
+            logger.error(f"Error parsing {DB_FILE_NAME}: {e}")
             return []
 
     def _save_festivals(self, festivals: List[Dict]) -> None:
         """Save updated festival data to db.json."""
         db_json = { "festivals": festivals }
-        with open("db.json", "w", encoding="utf-8") as f:
+        with open(DB_FILE_NAME, "w", encoding="utf-8") as f:
             json.dump(db_json, f, indent=2, ensure_ascii=False)
 
     def _search_festival_info(self, festival_name: str, festival_url: str, location: str = "") -> Dict:
@@ -112,6 +112,29 @@ class FestivalUpdater:
         except Exception as e:
             logger.error(f"Error searching for {festival_name}: {e}")
             return {}
+
+    def _add_update_to_summary(self, current_summary_parts: List[str], update: Dict[str, str]) -> List[str]:
+        """Add festival changes to the summary."""
+        summary_parts = current_summary_parts.copy()
+
+        summary_parts.append(f"### {update['festival']}")
+        if update["website"] != "TBD":
+            summary_parts.append(f"**Website:** [{update['festival']}]({update['website']})")
+        else:
+            summary_parts.append(f"**Website:** TBD")
+        summary_parts.append("**Changes:**")
+        for change in update["changes"]:
+            summary_parts.append(f"- {change}")
+
+        if update["sources"]:
+            summary_parts.append("**Sources:**")
+            for source in update["sources"]:
+                summary_parts.append(f"- {source}")
+
+        summary_parts.append("")
+
+        return summary_parts
+
 
     def update_existing_festivals(self) -> None:
         """Update information for existing festivals."""
@@ -181,21 +204,7 @@ class FestivalUpdater:
             summary_parts.append("")
 
             for update in self.updates_made:
-                summary_parts.append(f"### {update['festival']}")
-                if update["website"] != "TBD":
-                    summary_parts.append(f"**Website:** [{update['festival']}]({update['website']})")
-                else:
-                    summary_parts.append(f"**Website:** TBD")
-                summary_parts.append("**Changes:**")
-                for change in update["changes"]:
-                    summary_parts.append(f"- {change}")
-
-                if update["sources"]:
-                    summary_parts.append("**Sources:**")
-                    for source in update["sources"]:
-                        summary_parts.append(f"- {source}")
-
-                summary_parts.append("")
+                summary_parts = self._add_update_to_summary(summary_parts, update)
 
         # Footer
         summary_parts.append("---")
