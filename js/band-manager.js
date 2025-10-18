@@ -119,7 +119,7 @@ class BandManager {
     const band = this.getBandByName(bandName);
     if (!band) return false;
 
-    // Check if band has all required fields
+    // Check if band has all required fields AND is reviewed
     return (
       band.key &&
       band.name &&
@@ -131,7 +131,8 @@ class BandManager {
       band.genres &&
       band.genres.length > 0 &&
       band.members &&
-      band.members.length > 0
+      band.members.length > 0 &&
+      band.reviewed === true
     );
   }
 
@@ -263,6 +264,12 @@ class BandManager {
       return false;
     }
 
+    // Check if band is reviewed before showing
+    if (band.reviewed !== true) {
+      console.warn(`Band not reviewed: ${bandKey}`);
+      return false;
+    }
+
     this.currentBand = band;
     this.createModal();
     this.populateModal(band);
@@ -308,8 +315,8 @@ class BandManager {
   createStandalonePage(bandKey) {
     const band = this.getBandByKey(bandKey);
 
-    if (!band) {
-      // Show 404 error
+    if (!band || band.reviewed !== true) {
+      // Show 404 error for non-existent or non-reviewed bands
       document.body.innerHTML = `
         <header class="header">
           <div class="header-content">

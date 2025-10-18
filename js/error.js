@@ -15,8 +15,8 @@ async function checkAndHandleBandRoute() {
 
     const band = bandManager.getBandByKey(bandKey);
 
-    if (band) {
-      // Band exists! Hide error content and show band page
+    if (band && band.reviewed === true) {
+      // Band exists and is reviewed! Hide error content and show band page
       hideErrorContent();
       renderBandPage(band, bandManager);
       return true;
