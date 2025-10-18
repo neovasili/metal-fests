@@ -1,5 +1,23 @@
 // Error Page JavaScript
 
+/**
+ * Parse markdown-style links [text](url) and convert to HTML links
+ * @param {string} text - Text with markdown links
+ * @returns {string} - HTML with converted links
+ */
+function parseMarkdownLinks(text) {
+  if (!text) return "";
+
+  // Regex to match [text](url) pattern
+  const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+  // Replace markdown links with HTML anchor tags
+  return text.replace(markdownLinkRegex, (match, linkText, url) => {
+    // Add target="_blank" and rel for external links
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${linkText}</a>`;
+  });
+}
+
 // Check if this is actually a band route that should be handled
 async function checkAndHandleBandRoute() {
   const path = window.location.pathname;
@@ -54,7 +72,7 @@ function renderBandPage(band) {
           <img src="${band.headlineImage}" alt="${band.name} Band Photo" class="band-modal-headline-image">
           <div class="band-modal-section">
             <h3>About</h3>
-            <p class="band-modal-description">${band.description}</p>
+            <p class="band-modal-description">${parseMarkdownLinks(band.description)}</p>
           </div>
           <div class="band-modal-section">
             <h3>Genres</h3>

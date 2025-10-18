@@ -139,6 +139,7 @@
   border-radius: 10px;
   margin-bottom: 2rem;
   border: 2px solid rgb(255 107 0 / 30%);
+  object-position: top;
 }
 
 .band-modal-section {
@@ -160,6 +161,19 @@
   line-height: 1.8;
   font-size: 1rem;
   text-align: justify;
+}
+
+.band-modal-description a {
+  color: #ff6b00;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.band-modal-description a:hover {
+  color: #ff8c33;
+  border-bottom-color: #ff6b00;
 }
 
 .band-modal-genres {

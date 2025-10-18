@@ -7,6 +7,24 @@ class BandManager {
     this.isStandalone = false;
   }
 
+  /**
+   * Parse markdown-style links [text](url) and convert to HTML links
+   * @param {string} text - Text with markdown links
+   * @returns {string} - HTML with converted links
+   */
+  parseMarkdownLinks(text) {
+    if (!text) return "";
+
+    // Regex to match [text](url) pattern
+    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+    // Replace markdown links with HTML anchor tags
+    return text.replace(markdownLinkRegex, (match, linkText, url) => {
+      // Add target="_blank" and rel for external links
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${linkText}</a>`;
+    });
+  }
+
   async loadBands() {
     try {
       const response = await fetch("/db.json");
@@ -144,7 +162,7 @@ class BandManager {
 
     // Update description
     const description = this.modalOverlay.querySelector(".band-modal-description");
-    description.textContent = band.description;
+    description.innerHTML = this.parseMarkdownLinks(band.description);
 
     // Update genres
     const genresContainer = this.modalOverlay.querySelector(".band-modal-genres");
