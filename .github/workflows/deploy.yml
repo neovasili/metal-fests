@@ -21,7 +21,7 @@ on:
       CLOUDFRONT_DISTRIBUTION_ID:
         description: CloudFront distribution ID to invalidate cache
         required: true
-      GITHUB_TOKEN:
+      TOKEN:
         description: Token to use for deployment status updates and PR comments
         required: true
 
@@ -35,7 +35,7 @@ jobs:
         id: deployment
         with:
           step: start
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN }}
           env: ${{ inputs.stage }}
 
       - name: Checkout
@@ -92,23 +92,12 @@ jobs:
         env:
           CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 
-      - name: Notify preview
-        uses: mshick/add-pr-comment@v2.8.2
-        if: ${{ github.ref != 'refs/heads/main' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          message: |
-            New version of website deployed.
-
-            You can preview the deployed web in [${{ inputs.domain }}](https://${{ inputs.domain }}).
-
       - name: (Event) Update Deploy Status
         uses: bobheadxi/deployments@v1.5.0
         if: always()
         with:
           step: finish
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN }}
           status: ${{ job.status }}
           env: ${{ inputs.stage }}
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
