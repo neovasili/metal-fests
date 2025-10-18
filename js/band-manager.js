@@ -7,6 +7,89 @@ class BandManager {
     this.isStandalone = false;
   }
 
+  /**
+   * Parse markdown-style links [text](url) and convert to HTML links
+   * @param {string} text - Text with markdown links
+   * @returns {string} - HTML with converted links
+   */
+  parseMarkdownLinks(text) {
+    if (!text) return "";
+
+    // Regex to match [text](url) pattern
+    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+    // Replace markdown links with HTML anchor tags
+    return text.replace(markdownLinkRegex, (match, linkText, url) => {
+      // Add target="_blank" and rel for external links
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${linkText}</a>`;
+    });
+  }
+
+  /**
+   * Generate HTML for band modal content
+   * @param {Object} band - Band data object
+   * @param {boolean} isStandalone - Whether this is a standalone page
+   * @returns {string} - HTML string for band modal
+   */
+  generateBandHTML(band, isStandalone = false) {
+    const closeButtonHandler = isStandalone ? "onclick=\"window.location.href='/'\"" : "";
+
+    return `
+      <div class="band-modal-overlay active">
+        <div class="band-modal">
+          <button class="band-modal-close" aria-label="Close band details" ${closeButtonHandler}>×</button>
+          <div class="band-modal-header">
+            <img src="${band.logo}" alt="${band.name} Logo" class="band-modal-logo">
+            <h2 class="band-modal-name">${band.name}</h2>
+            <p class="band-modal-country">${band.country}</p>
+          </div>
+          <div class="band-modal-content">
+            <img src="${band.headlineImage}" alt="${band.name} Band Photo" class="band-modal-headline-image">
+            <div class="band-modal-section">
+              <h3>About</h3>
+              <p class="band-modal-description">${this.parseMarkdownLinks(band.description)}</p>
+            </div>
+            <div class="band-modal-section">
+              <h3>Genres</h3>
+              <div class="band-modal-genres">
+                ${band.genres.map((genre) => `<span class="band-modal-genre-tag">${genre}</span>`).join("")}
+              </div>
+            </div>
+            <div class="band-modal-section">
+              <h3>Members</h3>
+              <div class="band-modal-members">
+                ${band.members
+                  .map(
+                    (member) => `
+                  <div class="band-modal-member">
+                    <div class="band-modal-member-name">${member.name}</div>
+                    <div class="band-modal-member-role">${member.role}</div>
+                  </div>
+                `,
+                  )
+                  .join("")}
+              </div>
+            </div>
+          </div>
+          <div class="band-modal-actions">
+            <a href="${band.website}" target="_blank" rel="noopener noreferrer" class="band-modal-button">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1 5v10h2V7h-2zm0-3v2h2V4h-2z"/>
+              </svg>
+              Official Website
+            </a>
+            <a href="${band.spotify}" target="_blank" rel="noopener noreferrer" class="band-modal-button">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+              </svg>
+              Listen on Spotify
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   async loadBands() {
     try {
       const response = await fetch("/db.json");
@@ -36,7 +119,7 @@ class BandManager {
     const band = this.getBandByName(bandName);
     if (!band) return false;
 
-    // Check if band has all required fields
+    // Check if band has all required fields AND is reviewed
     return (
       band.key &&
       band.name &&
@@ -48,7 +131,8 @@ class BandManager {
       band.genres &&
       band.genres.length > 0 &&
       band.members &&
-      band.members.length > 0
+      band.members.length > 0 &&
+      band.reviewed === true
     );
   }
 
@@ -144,7 +228,7 @@ class BandManager {
 
     // Update description
     const description = this.modalOverlay.querySelector(".band-modal-description");
-    description.textContent = band.description;
+    description.innerHTML = this.parseMarkdownLinks(band.description);
 
     // Update genres
     const genresContainer = this.modalOverlay.querySelector(".band-modal-genres");
@@ -177,6 +261,12 @@ class BandManager {
 
     if (!band) {
       console.error(`Band not found: ${bandKey}`);
+      return false;
+    }
+
+    // Check if band is reviewed before showing
+    if (band.reviewed !== true) {
+      console.warn(`Band not reviewed: ${bandKey}`);
       return false;
     }
 
@@ -225,8 +315,8 @@ class BandManager {
   createStandalonePage(bandKey) {
     const band = this.getBandByKey(bandKey);
 
-    if (!band) {
-      // Show 404 error
+    if (!band || band.reviewed !== true) {
+      // Show 404 error for non-existent or non-reviewed bands
       document.body.innerHTML = `
         <header class="header">
           <div class="header-content">
@@ -249,6 +339,9 @@ class BandManager {
       return;
     }
 
+    // Update page title
+    document.title = `${band.name} - Metal Festivals 2026`;
+
     // Create standalone page structure
     document.body.className = "standalone-band-page";
 
@@ -256,12 +349,7 @@ class BandManager {
     if (main) {
       main.innerHTML = "";
       main.className = "standalone-band-page";
-
-      this.createModal();
-      this.populateModal(band);
-      this.modalOverlay.classList.add("active");
-
-      main.appendChild(this.modalOverlay);
+      main.innerHTML = this.generateBandHTML(band, true);
     }
   }
 

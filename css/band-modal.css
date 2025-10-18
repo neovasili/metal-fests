@@ -28,7 +28,7 @@
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   border: 2px solid #ff6b00;
   border-radius: 15px;
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
@@ -134,11 +134,12 @@
 
 .band-modal-headline-image {
   width: 100%;
-  height: 300px;
+  height: 400px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 2rem;
   border: 2px solid rgb(255 107 0 / 30%);
+  object-position: top;
 }
 
 .band-modal-section {
@@ -160,6 +161,19 @@
   line-height: 1.8;
   font-size: 1rem;
   text-align: justify;
+}
+
+.band-modal-description a {
+  color: #ff6b00;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.band-modal-description a:hover {
+  color: #ff8c33;
+  border-bottom-color: #ff6b00;
 }
 
 .band-modal-genres {
