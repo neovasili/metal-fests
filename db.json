@@ -710,6 +710,254 @@
         "Decapitated"
       ],
       "ticketPrice": 162.5
+    },
+    {
+      "name": "Rock For People 2026",
+      "dates": {
+        "start": "2026-06-10",
+        "end": "2026-06-14"
+      },
+      "location": "Hradec Králové, Czech Republic",
+      "coordinates": {
+        "lat": 50.2092,
+        "lng": 15.8328
+      },
+      "poster": "",
+      "website": "https://rockforpeople.cz",
+      "bands": [
+        "Bring Me The Horizon",
+        "Gorillaz",
+        "Limp Bizkit",
+        "Iron Maiden",
+        "Electric Callboy",
+        "Papa Roach",
+        "Three Days Grace",
+        "Alter Bridge",
+        "BABYMETAL",
+        "Megadeth",
+        "Nothing But Thieves"
+      ],
+      "ticketPrice": 208
+    },
+    {
+      "name": "Jera On Air 2026",
+      "dates": {
+        "start": "2026-06-25",
+        "end": "2026-06-27"
+      },
+      "location": "Ysselsteyn, Netherlands",
+      "coordinates": {
+        "lat": 51.4033,
+        "lng": 5.9344
+      },
+      "poster": "",
+      "website": "https://www.jeraonair.nl",
+      "bands": [
+        "The Offspring",
+        "Papa Roach",
+        "Rise Against",
+        "All Time Low",
+        "Bury Tomorrow",
+        "Ignite",
+        "Imminence",
+        "Malevolence",
+        "Magnolia Park",
+        "Wargasm",
+        "Ho99o9"
+      ],
+      "ticketPrice": null
+    },
+    {
+      "name": "Tuska Open Air 2026",
+      "dates": {
+        "start": "2026-06-26",
+        "end": "2026-06-28"
+      },
+      "location": "Helsinki, Finland",
+      "coordinates": {
+        "lat": 60.1699,
+        "lng": 24.9384
+      },
+      "poster": "",
+      "website": "https://tuska.fi",
+      "bands": [
+        "Bring Me The Horizon",
+        "Bad Omens",
+        "Megadeth",
+        "Trivium",
+        "P.O.D.",
+        "Stam1na",
+        "Blood Incantation",
+        "Queensrÿche",
+        "Kublai Khan TX",
+        "Soilwork",
+        "Ensiferum"
+      ],
+      "ticketPrice": 239
+    },
+    {
+      "name": "Rockharz Open Air 2026",
+      "dates": {
+        "start": "2026-07-01",
+        "end": "2026-07-04"
+      },
+      "location": "Ballenstedt, Germany",
+      "coordinates": {
+        "lat": 51.8170,
+        "lng": 11.1690
+      },
+      "poster": "",
+      "website": "https://www.rockharz-festival.com",
+      "bands": [
+        "Helloween",
+        "Alice Cooper",
+        "Emperor",
+        "Knorkator",
+        "Subway To Sally",
+        "Agnostic Front",
+        "KataKlysm",
+        "Biohazard",
+        "Domnum",
+        "Finntroll",
+        "Gothminister",
+        "Motorjesus"
+      ],
+      "ticketPrice": null
+    },
+    {
+      "name": "Motocultor Festival 2026",
+      "dates": {
+        "start": "2026-08-13",
+        "end": "2026-08-16"
+      },
+      "location": "Carhaix, France",
+      "coordinates": {
+        "lat": 48.2833,
+        "lng": -3.5833
+      },
+      "poster": "",
+      "website": "https://www.motocultor-festival.com",
+      "bands": [
+        "Within Temptation",
+        "Slaughter To Prevail",
+        "Nanowar of Steel",
+        "Uuhai",
+        "Cold Snap",
+        "Lone Survivors",
+        "…"
+      ],
+      "ticketPrice": null
+    },
+    {
+      "name": "Reload Festival 2026",
+      "dates": {
+        "start": "2026-08-13",
+        "end": "2026-08-15"
+      },
+      "location": "Sulingen, Germany",
+      "coordinates": {
+        "lat": 52.6589,
+        "lng": 8.7663
+      },
+      "poster": "",
+      "website": "https://reload-festival.de",
+      "bands": [
+        "Judas Priest",
+        "In Flames",
+        "Arch Enemy",
+        "Lamb of God",
+        "Godsmack",
+        "Airbourne",
+        "The Ghost Inside",
+        "Thy Art Is Murder",
+        "Imminence",
+        "Amorphis",
+        "Stick To Your Guns"
+      ],
+      "ticketPrice": null
+    },
+    {
+      "name": "Samhain Festival 2026",
+      "dates": {
+        "start": "2026-04-04",
+        "end": "2026-04-05"
+      },
+      "location": "Antwerp, Belgium",
+      "coordinates": {
+        "lat": 51.2194,
+        "lng": 4.4025
+      },
+      "poster": "",
+      "website": "https://samhainfestival.com/",
+      "bands": [
+        "Triumph of Death (plays Hellhammer)",
+        "Rotting Christ",
+        "Mysticum",
+        "Blackbraid",
+        "Panopticon",
+        "Full of Hell",
+        "Der Weg einer Freiheit",
+        "The Body",
+        "Dödsrit",
+        "Lamp Of Murmuur",
+        "Hexvessel",
+        "Esoteric",
+        "Wolvennest",
+        "Aluk Todolo",
+        "Naxen",
+        "Five the Hierophant",
+        "Final Dose",
+        "Predatory Void",
+        "Mütterlein",
+        "Gudsforladt",
+        "Vacuous",
+        "Terzij De Horde",
+        "Jarhead Fertilizer",
+        "Jad",
+        "Ashenspire"
+      ],
+      "ticketPrice": 139.50
+    },
+    {
+      "name": "Karmøygeddon Metal Festival 2026",
+      "dates": {
+        "start": "2026-04-30",
+        "end": "2026-05-02"
+      },
+      "location": "Kopervik, Norway",
+      "coordinates": {
+        "lat": 59.6548,
+        "lng": 5.5339
+      },
+      "poster": "",
+      "website": "https://www.karmoygeddon.no/",
+      "bands": [
+        "Accept",
+        "Insomnium",
+        "Annisokay",
+        "Septicflesh",
+        "Hardcore Superstar",
+        "Adept",
+        "Beyond the Black",
+        "Abbath",
+        "Infected Rain",
+        "Phil Campbell and the Bastard Sons",
+        "Old Man's Child",
+        "Before the Dawn",
+        "Kissin’ Dynamite",
+        "Wolfheart",
+        "Ambush",
+        "Saor",
+        "Djerv",
+        "Disillusion",
+        "SETYØURSAILS",
+        "Iotunn",
+        "Mayfire",
+        "Neonfly",
+        "THRON",
+        "Captain Black Beard"
+      ],
+      "ticketPrice": 999
     }
   ]
 }
