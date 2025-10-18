@@ -12,6 +12,15 @@ import sys
 PORT = 8000
 
 class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        # For clean URLs that don't exist as files, serve error.html
+        # This allows client-side routing to take over
+        if not os.path.exists(self.translate_path(self.path)):
+            # Serve error.html for non-existent paths
+            self.path = '/error.html'
+
+        return super().do_GET()
+
     def end_headers(self):
         self.send_header('Access-Control-Allow-Origin', '*')
         self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
