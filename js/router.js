@@ -7,6 +7,7 @@ class ClientRouter {
       "/map": "map.html",
       "/error": "error.html",
     };
+    this.bandRoutePattern = /^\/bands\/([a-z0-9-]+)$/;
     this.init();
   }
 
@@ -53,6 +54,19 @@ class ClientRouter {
 
   handleInitialRoute() {
     const currentPath = window.location.pathname;
+
+    // Check if it's a band route
+    const bandMatch = currentPath.match(this.bandRoutePattern);
+    if (bandMatch) {
+      // Band routes are handled by BandManager in script.js
+      // Just ensure we're on the index page
+      const currentFile = window.location.pathname.split("/").pop();
+      if (currentFile !== "" && currentFile.endsWith(".html") && currentFile !== "index.html") {
+        this.loadPage("index.html");
+      }
+      return;
+    }
+
     const targetPage = this.routes[currentPath];
 
     // Determine the current page for navigation highlighting
