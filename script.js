@@ -219,6 +219,7 @@ class FestivalTimeline {
             <div class="festival-bands">
                 <h4>Featured Bands:</h4>
                 <div class="bands-list">
+                    ${festival.bands.length === 0 ? `<span class="band-tag">Coming soon...</span>` : ""}
                     ${festival.bands.map((band) => `<span class="band-tag">${band}</span>`).join("")}
                 </div>
             </div>
