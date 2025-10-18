@@ -1,0 +1,323 @@
+/* Band Modal Styles */
+
+.band-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 85%);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.band-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.band-modal {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 2px solid #ff6b00;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 50px rgb(255 107 0 / 30%);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.band-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgb(255 107 0 / 20%);
+  border: 2px solid #ff6b00;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ff6b00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.band-modal-close:hover {
+  background: #ff6b00;
+  color: #1a1a1a;
+  transform: rotate(90deg);
+}
+
+/* Standalone band page */
+.standalone-band-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.standalone-band-page .band-modal-overlay {
+  position: relative;
+  height: auto;
+  min-height: calc(100vh - 80px);
+  opacity: 1;
+  visibility: visible;
+  background-color: transparent;
+  backdrop-filter: none;
+  padding: 2rem 1rem;
+}
+
+.standalone-band-page .band-modal {
+  margin: 0 auto;
+  transform: scale(1);
+}
+
+.standalone-band-page .band-modal-close {
+  display: none;
+}
+
+.band-modal-overlay.active .band-modal {
+  transform: scale(1);
+}
+
+.band-modal-header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgb(255 107 0 / 10%) 0%, transparent 100%);
+  border-bottom: 1px solid rgb(255 107 0 / 20%);
+}
+
+.band-modal-logo {
+  max-width: 300px;
+  max-height: 80px;
+  margin: 0 auto 1rem;
+  display: block;
+  object-fit: contain;
+}
+
+.band-modal-name {
+  font-size: 2.5rem;
+  color: #ff6b00;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgb(255 107 0 / 50%);
+}
+
+.band-modal-country {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.band-modal-content {
+  padding: 2rem;
+}
+
+.band-modal-headline-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 2px solid rgb(255 107 0 / 30%);
+}
+
+.band-modal-section {
+  margin-bottom: 2rem;
+}
+
+.band-modal-section h3 {
+  color: #ff6b00;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgb(255 107 0 / 30%);
+  padding-bottom: 0.5rem;
+}
+
+.band-modal-description {
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.band-modal-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.band-modal-genre-tag {
+  background: linear-gradient(135deg, rgb(255 107 0 / 20%) 0%, rgb(255 107 0 / 10%) 100%);
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.band-modal-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.band-modal-member {
+  background: rgb(255 107 0 / 5%);
+  border: 1px solid rgb(255 107 0 / 20%);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.band-modal-member:hover {
+  background: rgb(255 107 0 / 10%);
+  border-color: #ff6b00;
+  transform: translateY(-2px);
+}
+
+.band-modal-member-name {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.band-modal-member-role {
+  color: #888;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.band-modal-actions {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  background: linear-gradient(180deg, transparent 0%, rgb(255 107 0 / 5%) 100%);
+  border-top: 1px solid rgb(255 107 0 / 20%);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.band-modal-button {
+  background: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgb(255 107 0 / 30%);
+}
+
+.band-modal-button:hover {
+  background: linear-gradient(135deg, #ff8533 0%, #fa6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgb(255 107 0 / 40%);
+}
+
+.band-modal-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentcolor;
+}
+
+/* Clickable band tags in festival cards */
+.band-tag.clickable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.band-tag.clickable:hover {
+  background: linear-gradient(135deg, #ff6b00 0%, #ff8533 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgb(255 107 0 / 40%);
+}
+
+.band-tag.clickable::after {
+  content: "ℹ";
+  position: absolute;
+  right: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.band-tag.clickable:hover::after {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (width <= 768px) {
+  .band-modal-overlay {
+    padding: 1rem;
+  }
+
+  .band-modal {
+    max-height: 95vh;
+  }
+
+  .band-modal-name {
+    font-size: 1.8rem;
+  }
+
+  .band-modal-logo {
+    max-width: 200px;
+    max-height: 60px;
+  }
+
+  .band-modal-headline-image {
+    height: 200px;
+  }
+
+  .band-modal-content {
+    padding: 1rem;
+  }
+
+  .band-modal-actions {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .band-modal-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .band-modal-members {
+    grid-template-columns: 1fr;
+  }
+}

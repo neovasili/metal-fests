@@ -8,6 +8,7 @@ class FestivalTimeline {
     this.favoritesManager = new FavoritesManager();
     this.filterManager = new FilterManager();
     this.bandsFilterManager = new BandsFilterManager();
+    this.bandManager = new BandManager();
     this.allBands = [];
     this.init();
   }
@@ -15,12 +16,14 @@ class FestivalTimeline {
   async init() {
     this.showLoading(true);
     try {
+      await this.bandManager.loadBands();
       await this.loadFestivals();
       this.sortFestivalsByDate();
       this.extractAllBands();
       this.createFilterButton();
       this.createBandsFilter();
       this.renderTimeline();
+      await this.bandManager.init();
     } catch (error) {
       console.error("Error initializing timeline:", error);
       this.showError("Failed to load festival data. Please try again later.");
@@ -207,6 +210,20 @@ class FestivalTimeline {
     // Check if festival is favorited
     const isFavorite = this.favoritesManager.isFavorite(festival.name);
 
+    // Create band tags with clickable links for bands with complete info
+    const bandTagsHTML =
+      festival.bands.length === 0
+        ? `<span class="band-tag">Coming soon...</span>`
+        : festival.bands
+            .map((band) => {
+              const hasCompleteInfo = this.bandManager.hasCompleteInfo(band);
+              const bandData = this.bandManager.getBandByName(band);
+              const clickableClass = hasCompleteInfo ? " clickable" : "";
+              const dataKey = hasCompleteInfo && bandData ? ` data-band-key="${bandData.key}"` : "";
+              return `<span class="band-tag${clickableClass}"${dataKey}>${band}</span>`;
+            })
+            .join("");
+
     card.innerHTML = `
             <div class="festival-header">
                 <img src="${festival.poster}" alt="${festival.name} Poster" class="festival-poster"
@@ -219,8 +236,7 @@ class FestivalTimeline {
             <div class="festival-bands">
                 <h4>Featured Bands:</h4>
                 <div class="bands-list">
-                    ${festival.bands.length === 0 ? `<span class="band-tag">Coming soon...</span>` : ""}
-                    ${festival.bands.map((band) => `<span class="band-tag">${band}</span>`).join("")}
+                    ${bandTagsHTML}
                 </div>
             </div>
             <div class="festival-info">
@@ -234,7 +250,23 @@ class FestivalTimeline {
     // Add star icon and functionality
     this.addFavoriteFeature(card, festival);
 
+    // Add click handlers for clickable band tags
+    this.addBandClickHandlers(card);
+
     this.timelineContent.appendChild(card);
+  }
+
+  addBandClickHandlers(card) {
+    const clickableBands = card.querySelectorAll(".band-tag.clickable");
+    clickableBands.forEach((bandTag) => {
+      bandTag.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const bandKey = bandTag.getAttribute("data-band-key");
+        if (bandKey) {
+          this.bandManager.showBand(bandKey, false);
+        }
+      });
+    });
   }
 
   addFavoriteFeature(card, festival) {

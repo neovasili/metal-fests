@@ -12,6 +12,7 @@ class FestivalMap {
     this.favoritesManager = new FavoritesManager();
     this.filterManager = new FilterManager();
     this.bandsFilterManager = new BandsFilterManager();
+    this.bandManager = new BandManager();
     this.allBands = [];
 
     this.init();
@@ -20,11 +21,13 @@ class FestivalMap {
   async init() {
     this.showLoading(true);
     try {
+      await this.bandManager.loadBands();
       await this.loadFestivals();
       this.extractAllBands();
       this.createFilterControls();
       this.setupModalEventListeners();
       this.initializeMap();
+      await this.bandManager.init();
     } catch (error) {
       console.error("Error initializing map:", error);
       this.showError("Failed to load festival data. Please try again later.");
@@ -277,6 +280,20 @@ class FestivalMap {
     const isFavorite = this.favoritesManager.isFavorite(festival.name);
     const selectedBands = this.bandsFilterManager.getSelectedBands();
 
+    // Create band tags with clickable links for bands with complete info
+    const bandTagsHTML =
+      festival.bands.length === 0
+        ? `<span class="band-tag">Coming soon...</span>`
+        : festival.bands
+            .map((band) => {
+              const hasCompleteInfo = this.bandManager.hasCompleteInfo(band);
+              const bandData = this.bandManager.getBandByName(band);
+              const clickableClass = hasCompleteInfo ? " clickable" : "";
+              const dataKey = hasCompleteInfo && bandData ? ` data-band-key="${bandData.key}"` : "";
+              return `<span class="band-tag${clickableClass}"${dataKey}>${band}</span>`;
+            })
+            .join("");
+
     return `
             <div class="festival-card">
                 <div class="festival-header">
@@ -290,7 +307,7 @@ class FestivalMap {
                 <div class="festival-bands">
                     <h4>Featured Bands:</h4>
                     <div class="bands-list">
-                        ${festival.bands.map((band) => `<span class="band-tag">${band}</span>`).join("")}
+                        ${bandTagsHTML}
                     </div>
                 </div>
                 <div class="festival-info">
@@ -333,6 +350,22 @@ class FestivalMap {
         UIUtils.highlightSelectedBands(bandsList, selectedBands);
       }
     }
+
+    // Add click handlers for clickable band tags
+    this.addBandClickHandlers();
+  }
+
+  addBandClickHandlers() {
+    const clickableBands = this.modalContent.querySelectorAll(".band-tag.clickable");
+    clickableBands.forEach((bandTag) => {
+      bandTag.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const bandKey = bandTag.getAttribute("data-band-key");
+        if (bandKey) {
+          this.bandManager.showBand(bandKey, false);
+        }
+      });
+    });
   }
 
   setupModalEventListeners() {
