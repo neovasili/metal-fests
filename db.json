@@ -556,6 +556,71 @@
         "Luna Kills"
       ],
       "ticketPrice": 249
+    },
+    {
+      "name": "Rock Imperium Festival",
+      "dates": {
+        "start": "2026-07-03",
+        "end": "2026-07-05"
+      },
+      "location": "Cartagena, Spain",
+      "coordinates": {
+        "lat": 37.6050,
+        "lng": -0.9919
+      },
+      "poster": "https://www.rockimperiumfestival.es/wp-content/uploads/2025/09/web_2026_logo_300.png",
+      "website": "https://www.rockimperiumfestival.es/en/",
+      "bands": [
+        "Iron Maiden",
+        "Sabaton",
+        "Trivium",
+        "Queensrÿche",
+        "Lacuna Coil"
+      ],
+      "ticketPrice": 195
+    },
+    {
+      "name": "Sun & Thunder 2026",
+      "dates": {
+        "start": "2026-08-27",
+        "end": "2026-08-29"
+      },
+      "location": "Fuengirola, Spain",
+      "coordinates": {
+        "lat": 36.5399,
+        "lng": -4.6246
+      },
+      "poster": "",
+      "website": "https://sunandthunderfest.com/en/",
+      "bands": [
+        "Coming soon..."
+      ],
+      "ticketPrice": 180
+    },
+    {
+      "name": "Vagos Metal Fest 2026",
+      "dates": {
+        "start": "2026-08-05",
+        "end": "2026-08-09"
+      },
+      "location": "Vagos, Portugal",
+      "coordinates": {
+        "lat": 40.5542,
+        "lng": -8.7139
+      },
+      "poster": "",
+      "website": "https://vagosmetalfest.com/",
+      "bands": [
+        "Lamb Of God",
+        "Within Temptation",
+        "In Flames",
+        "Godsmack",
+        "Heaven Shall Burn",
+        "Deicide",
+        "Combichrist",
+        "Holocausto Canibal"
+      ],
+      "ticketPrice": 159
     }
   ]
 }
