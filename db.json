@@ -13,9 +13,7 @@
       },
       "poster": "https://play-lh.googleusercontent.com/GRuI5SUjlbwFnAaj9orWVPVwekchmI25jdvSgu3qSveC7WoTainD9orZMGzsfhZAHmw=w600-h300-pc0xffffff-pd",
       "website": "https://swedenrock.com",
-      "bands": [
-        "Coming Soon..."
-      ],
+      "bands": [],
       "ticketPrice": 180
     },
     {
@@ -105,9 +103,7 @@
       },
       "poster": "https://downloadfestival.co.uk/assets/images/2026/DLXXIII-stack-logo.png",
       "website": "https://downloadfestival.co.uk",
-      "bands": [
-        "Coming Soon..."
-      ],
+      "bands": [],
       "ticketPrice": 289
     },
     {
@@ -164,9 +160,7 @@
       },
       "poster": "https://hellfest.fr/images/logo.png",
       "website": "https://hellfest.fr",
-      "bands": [
-        "Coming Soon..."
-      ],
+      "bands": [],
       "ticketPrice": 300
     },
     {
@@ -228,9 +222,7 @@
       },
       "poster": "https://www.graspop.be/assets/website/components/header/logo.73035b00.webp",
       "website": "https://graspop.be",
-      "bands": [
-        "Coming Soon..."
-      ],
+      "bands": [],
       "ticketPrice": 300
     },
     {
@@ -251,7 +243,7 @@
         "Limp Bizkit",
         "Marilyn Manson",
         "Trivium",
-        "Cavalera Conspiracy - Chaos Ad",
+        "Cavalera Conspiracy",
         "P.O.D.",
         "Blood Incantation",
         "Converge",
@@ -351,7 +343,7 @@
         "Master Boot Record",
         "Metal Church",
         "Municipal Waste",
-        "Old Man’S Child",
+        "Old Man'S Child",
         "Rise Of The Northstar",
         "Sadistic Intent",
         "Sanguisugabogg",
@@ -469,7 +461,7 @@
         "Life Of Agony",
         "Slaughter To Prevail",
         "Bleed From Within",
-        "Of Mice And Men",
+        "Of Mice & Men",
         "Northlane",
         "Vended",
         "Death Angel",
@@ -592,9 +584,7 @@
       },
       "poster": "",
       "website": "https://sunandthunderfest.com/en/",
-      "bands": [
-        "Coming Soon..."
-      ],
+      "bands": [],
       "ticketPrice": 180
     },
     {
@@ -733,7 +723,7 @@
         "Papa Roach",
         "Three Days Grace",
         "Alter Bridge",
-        "Babymetal",
+        "Baby Metal",
         "Megadeth",
         "Nothing But Thieves"
       ],
@@ -843,8 +833,7 @@
         "Nanowar Of Steel",
         "Uuhai",
         "Cold Snap",
-        "Lone Survivors",
-        "…"
+        "Lone Survivors"
       ],
       "ticketPrice": null
     },
@@ -944,7 +933,7 @@
         "Phil Campbell And The Bastard Sons",
         "Old Man'S Child",
         "Before The Dawn",
-        "Kissin’ Dynamite",
+        "Kissin' Dynamite",
         "Wolfheart",
         "Ambush",
         "Saor",
