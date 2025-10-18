@@ -875,6 +875,89 @@
         "Stick To Your Guns"
       ],
       "ticketPrice": null
+    },
+    {
+      "name": "Samhain Festival 2026",
+      "dates": {
+        "start": "2026-04-04",
+        "end": "2026-04-05"
+      },
+      "location": "Antwerp, Belgium",
+      "coordinates": {
+        "lat": 51.2194,
+        "lng": 4.4025
+      },
+      "poster": "",
+      "website": "https://samhainfestival.com/",
+      "bands": [
+        "Triumph of Death (plays Hellhammer)",
+        "Rotting Christ",
+        "Mysticum",
+        "Blackbraid",
+        "Panopticon",
+        "Full of Hell",
+        "Der Weg einer Freiheit",
+        "The Body",
+        "Dödsrit",
+        "Lamp Of Murmuur",
+        "Hexvessel",
+        "Esoteric",
+        "Wolvennest",
+        "Aluk Todolo",
+        "Naxen",
+        "Five the Hierophant",
+        "Final Dose",
+        "Predatory Void",
+        "Mütterlein",
+        "Gudsforladt",
+        "Vacuous",
+        "Terzij De Horde",
+        "Jarhead Fertilizer",
+        "Jad",
+        "Ashenspire"
+      ],
+      "ticketPrice": 139.50
+    },
+    {
+      "name": "Karmøygeddon Metal Festival 2026",
+      "dates": {
+        "start": "2026-04-30",
+        "end": "2026-05-02"
+      },
+      "location": "Kopervik, Norway",
+      "coordinates": {
+        "lat": 59.6548,
+        "lng": 5.5339
+      },
+      "poster": "",
+      "website": "https://www.karmoygeddon.no/",
+      "bands": [
+        "Accept",
+        "Insomnium",
+        "Annisokay",
+        "Septicflesh",
+        "Hardcore Superstar",
+        "Adept",
+        "Beyond the Black",
+        "Abbath",
+        "Infected Rain",
+        "Phil Campbell and the Bastard Sons",
+        "Old Man's Child",
+        "Before the Dawn",
+        "Kissin’ Dynamite",
+        "Wolfheart",
+        "Ambush",
+        "Saor",
+        "Djerv",
+        "Disillusion",
+        "SETYØURSAILS",
+        "Iotunn",
+        "Mayfire",
+        "Neonfly",
+        "THRON",
+        "Captain Black Beard"
+      ],
+      "ticketPrice": 999
     }
   ]
 }
