@@ -41,6 +41,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
+      - name: Setup node
+        uses: ./github/actions/node-setup
+
+      - name: Set up Python
+        uses: ./.github/actions/python-setup
+
       - name: (Setup) AWS Credentials
         uses: aws-actions/configure-aws-credentials@v5.1.0
         with:
@@ -50,7 +56,7 @@ jobs:
 
       - name: (Deploy) Build Application
         run: |
-          make build
+          make build-project
 
       - name: (Deploy) Push Contents to S3
         run: |

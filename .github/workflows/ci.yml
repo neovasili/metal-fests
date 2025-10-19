@@ -14,16 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: "18"
-          cache: "pnpm"
+      - name: Setup node
+        uses: ./github/actions/node-setup
 
       - name: Install Node.js dependencies
         run: |
@@ -48,6 +40,7 @@ jobs:
         run: |
           # Lint Markdown files
           pnpm lint:md
+
   validate:
     name: Validate json files
     runs-on: ubuntu-latest
@@ -55,16 +48,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+      - name: Setup node
+        uses: ./github/actions/node-setup
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: "18"
-          cache: "pnpm"
+      - name: Set up Python
+        uses: ./.github/actions/python-setup
 
       - name: Validate JSON files
         run: |
