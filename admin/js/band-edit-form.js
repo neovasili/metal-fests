@@ -10,6 +10,7 @@ class BandEditForm {
     this.formContainer = null;
     this.allGenres = new Set(); // Store all existing genres
     this.urlValidationCache = new Map(); // Cache URL validation results
+    this.storageKey = "adminSelectedBand"; // localStorage key
   }
 
   /**
@@ -47,11 +48,15 @@ class BandEditForm {
   loadBand(band) {
     if (!band) {
       this.showPlaceholder();
+      this.clearSelectedBand();
+      this.hidePreviewButton();
       return;
     }
 
     this.currentBand = { ...band }; // Create a copy
+    this.saveSelectedBand(band.key);
     this.renderForm();
+    this.updatePreviewButton();
   }
 
   /**
@@ -65,6 +70,79 @@ class BandEditForm {
           <p>👈 Select a band from the list to start editing</p>
         </div>
       `;
+    }
+  }
+
+  /**
+   * Update preview button visibility and link
+   */
+  updatePreviewButton() {
+    const previewBtn = document.getElementById("previewBand");
+    if (!previewBtn) return;
+
+    if (this.currentBand && this.currentBand.key) {
+      previewBtn.style.display = "flex";
+      previewBtn.disabled = false;
+      previewBtn.onclick = () => this.previewBand();
+    } else {
+      this.hidePreviewButton();
+    }
+  }
+
+  /**
+   * Hide preview button
+   */
+  hidePreviewButton() {
+    const previewBtn = document.getElementById("previewBand");
+    if (previewBtn) {
+      previewBtn.style.display = "none";
+      previewBtn.disabled = true;
+    }
+  }
+
+  /**
+   * Open band preview page in new tab
+   */
+  previewBand() {
+    if (!this.currentBand || !this.currentBand.key) {
+      return;
+    }
+
+    const bandUrl = `/bands/${this.currentBand.key}`;
+    window.open(bandUrl, "_blank", "noopener,noreferrer");
+  }
+
+  /**
+   * Save selected band key to localStorage
+   */
+  saveSelectedBand(bandKey) {
+    try {
+      localStorage.setItem(this.storageKey, bandKey);
+    } catch (error) {
+      console.error("Error saving selected band to localStorage:", error);
+    }
+  }
+
+  /**
+   * Get selected band key from localStorage
+   */
+  getSelectedBandKey() {
+    try {
+      return localStorage.getItem(this.storageKey);
+    } catch (error) {
+      console.error("Error loading selected band from localStorage:", error);
+      return null;
+    }
+  }
+
+  /**
+   * Clear selected band from localStorage
+   */
+  clearSelectedBand() {
+    try {
+      localStorage.removeItem(this.storageKey);
+    } catch (error) {
+      console.error("Error clearing selected band from localStorage:", error);
     }
   }
 
@@ -120,13 +198,20 @@ class BandEditForm {
         <div class="image-preview" id="headlineImagePreview">
           ${this.renderImagePreview(band.headlineImage)}
         </div>
-        <input
-          type="url"
-          id="headlineImage"
-          value="${band.headlineImage || ""}"
-          data-field="headlineImage"
-          data-preview="headlineImagePreview"
-        />
+        <div class="url-field-container">
+          <input
+            type="url"
+            id="headlineImage"
+            value="${band.headlineImage || ""}"
+            data-field="headlineImage"
+            data-preview="headlineImagePreview"
+          />
+          <button type="button" class="btn-search-image" onclick="bandEditForm.searchGoogleImages('headlineImage')" title="Search on Google Images">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Logo -->
@@ -135,13 +220,20 @@ class BandEditForm {
         <div class="image-preview" id="logoPreview">
           ${this.renderImagePreview(band.logo)}
         </div>
-        <input
-          type="url"
-          id="logo"
-          value="${band.logo || ""}"
-          data-field="logo"
-          data-preview="logoPreview"
-        />
+        <div class="url-field-container">
+          <input
+            type="url"
+            id="logo"
+            value="${band.logo || ""}"
+            data-field="logo"
+            data-preview="logoPreview"
+          />
+          <button type="button" class="btn-search-image" onclick="bandEditForm.searchGoogleImages('logo')" title="Search on Google Images">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <!-- Website -->
@@ -215,7 +307,7 @@ class BandEditForm {
     if (!url) {
       return '<div class="loading">No image URL provided</div>';
     }
-    return `<img src="${url}" alt="Preview" onerror="this.parentElement.innerHTML='<div class=\\'error\\'>Failed to load image</div>'" />`;
+    return `<img src="${url}" alt="Preview" onerror="this.parentElement.innerHTML='<div class=\\'error\\'>❌ Failed to load image</div>'" />`;
   }
 
   /**
@@ -493,6 +585,37 @@ class BandEditForm {
   }
 
   /**
+   * Open Google Images search in new tab
+   */
+  searchGoogleImages(fieldType) {
+    if (!this.currentBand || !this.currentBand.name) {
+      alert("Please load a band first");
+      return;
+    }
+
+    const bandName = this.currentBand.name;
+    let searchQuery = "";
+
+    switch (fieldType) {
+      case "headlineImage":
+        searchQuery = `${bandName} band members`;
+        break;
+      case "logo":
+        searchQuery = `${bandName} band logo`;
+        break;
+      default:
+        searchQuery = bandName;
+    }
+
+    // Encode the search query for URL
+    const encodedQuery = encodeURIComponent(searchQuery);
+    const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${encodedQuery}`;
+
+    // Open in new tab
+    window.open(googleImagesUrl, "_blank", "noopener,noreferrer");
+  }
+
+  /**
    * Validate URLs asynchronously
    */
   async validateUrls() {
@@ -530,97 +653,48 @@ class BandEditForm {
     inputField.title = "Checking URL...";
 
     try {
-      // Try to fetch the URL with a timeout
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
-
-      const response = await fetch(url, {
-        method: "HEAD",
-        signal: controller.signal,
-        // Don't use no-cors, we want to see the actual response
+      // Use our server endpoint to validate the URL
+      // This bypasses CORS and gives us accurate status codes
+      const response = await fetch("/api/validate-url", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ url: url }),
       });
 
-      clearTimeout(timeoutId);
-
-      // Check if status is 2xx or 3xx (success or redirect)
-      const isValid = response.ok || (response.status >= 300 && response.status < 400);
-
-      this.urlValidationCache.set(url, isValid);
-      this.applyUrlValidationStyle(inputField, isValid);
-    } catch (error) {
-      // If CORS blocks us, try a GET request with no-cors
-      // This will succeed if the server responds, even if we can't read the response
-      try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 5000);
-
-        await fetch(url, {
-          method: "GET",
-          mode: "no-cors",
-          signal: controller.signal,
-        });
-
-        clearTimeout(timeoutId);
-
-        // If we get here without error, the URL is reachable
-        // We assume it's valid since the server responded
-        this.urlValidationCache.set(url, true);
-        this.applyUrlValidationStyle(inputField, true);
-      } catch (nocorsError) {
-        // Both methods failed - URL is likely unreachable
-        this.urlValidationCache.set(url, false);
-        this.applyUrlValidationStyle(inputField, false);
+      if (!response.ok) {
+        throw new Error("Failed to validate URL");
       }
+
+      const result = await response.json();
+
+      // Cache the result
+      this.urlValidationCache.set(url, result.valid);
+
+      // Apply styling based on validation result
+      this.applyUrlValidationStyle(inputField, result.valid, result.status);
+    } catch (error) {
+      console.error("Error validating URL:", error);
+      // On error, mark as invalid but don't cache (so we can retry later)
+      this.applyUrlValidationStyle(inputField, false);
     }
-  }
-
-  /**
-   * Check URL reachability using Image or script loading technique
-   */
-  async checkUrlReachability(url) {
-    return new Promise((resolve) => {
-      const timeout = setTimeout(() => {
-        resolve(false); // Timeout = invalid
-      }, 5000); // 5 second timeout
-
-      // Try to load the URL using an image tag
-      const img = new Image();
-
-      img.onload = () => {
-        clearTimeout(timeout);
-        resolve(true); // Successfully loaded
-      };
-
-      img.onerror = () => {
-        clearTimeout(timeout);
-        // For websites, error doesn't necessarily mean unreachable
-        // Try a different approach - use a fetch with a short timeout
-        fetch(url, {
-          method: "GET",
-          mode: "no-cors",
-          cache: "no-cache",
-          signal: AbortSignal.timeout(5000),
-        })
-          .then(() => resolve(true))
-          .catch(() => resolve(false));
-      };
-
-      img.src = url;
-    });
   }
 
   /**
    * Apply validation styling to URL input field
    */
-  applyUrlValidationStyle(inputField, isValid) {
+  applyUrlValidationStyle(inputField, isValid, statusCode) {
     if (isValid) {
       inputField.style.borderColor = "#10b981"; // green
       inputField.style.borderWidth = "2px";
-      inputField.title = "URL is reachable ✓";
+      const statusText = statusCode ? ` (HTTP ${statusCode})` : "";
+      inputField.title = `URL is reachable ✓${statusText}`;
     } else {
       inputField.style.borderColor = "#ef4444"; // red
       inputField.style.borderWidth = "2px";
-      inputField.title = "URL may be unreachable or invalid ✗";
+      const statusText = statusCode ? ` (HTTP ${statusCode})` : "";
+      inputField.title = `URL may be unreachable or invalid ✗${statusText}`;
     }
   }
 
