@@ -9,6 +9,7 @@ class BandEditForm {
     this.onBandUpdated = null; // Callback when band is saved
     this.formContainer = null;
     this.allGenres = new Set(); // Store all existing genres
+    this.urlValidationCache = new Map(); // Cache URL validation results
   }
 
   /**
@@ -76,6 +77,19 @@ class BandEditForm {
     const band = this.currentBand;
 
     this.formContainer.innerHTML = `
+      <!-- Reviewed (checkbox) -->
+      <div class="form-group">
+        <label for="reviewed">
+          <input
+            type="checkbox"
+            id="reviewed"
+            ${band.reviewed ? "checked" : ""}
+            data-field="reviewed"
+          />
+          Mark as Reviewed
+        </label>
+      </div>
+
       <!-- Key (readonly) -->
       <div class="form-group">
         <label for="key">Key</label>
@@ -164,19 +178,6 @@ class BandEditForm {
         </div>
       </div>
 
-      <!-- Reviewed (checkbox) -->
-      <div class="form-group">
-        <label for="reviewed">
-          <input
-            type="checkbox"
-            id="reviewed"
-            ${band.reviewed ? "checked" : ""}
-            data-field="reviewed"
-          />
-          Mark as Reviewed
-        </label>
-      </div>
-
       <!-- Members (array of objects) -->
       <div class="form-group">
         <label>Members</label>
@@ -185,10 +186,26 @@ class BandEditForm {
         </div>
         <button type="button" class="btn-add" onclick="bandEditForm.addMember()">+ Add Member</button>
       </div>
+
+      <!-- Scroll to Top Button -->
+      <div class="scroll-to-top-container">
+        <button type="button" class="btn-scroll-top" onclick="bandEditForm.scrollToTop()">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+          </svg>
+          Scroll to Top
+        </button>
+      </div>
     `;
 
     // Attach event listeners
     this.attachEventListeners();
+
+    // Initialize genres dropdown
+    this.initializeGenresDropdown();
+
+    // Validate URLs asynchronously
+    this.validateUrls();
   }
 
   /**
@@ -202,44 +219,28 @@ class BandEditForm {
   }
 
   /**
-   * Render genres field with multi-select and custom input
+   * Render genres field with dropdown multi-select and custom input
    */
   renderGenresField(selectedGenres) {
-    const allGenresArray = Array.from(this.allGenres).sort();
-
-    // Create checkboxes for all existing genres
-    const genreCheckboxes = allGenresArray
-      .map((genre) => {
-        const isSelected = selectedGenres.includes(genre);
-        return `
-        <label class="genre-checkbox">
-          <input
-            type="checkbox"
-            value="${genre}"
-            ${isSelected ? "checked" : ""}
-            onchange="bandEditForm.handleGenreToggle(this)"
-          />
-          <span>${genre}</span>
-        </label>
-      `;
-      })
-      .join("");
-
     return `
-      <div class="genres-multiselect">
-        ${genreCheckboxes}
+      <div class="selected-genres-display">
+        <strong>Selected Genres:</strong> ${selectedGenres.length > 0 ? selectedGenres.join(", ") : "None"}
       </div>
+      <div id="genresDropdownContainer" class="genres-dropdown-container"></div>
       <div class="add-new-genre">
         <input
           type="text"
           id="newGenreInput"
           placeholder="Add new genre..."
           class="new-genre-input"
+          oninput="bandEditForm.validateNewGenre(this)"
         />
-        <button type="button" class="btn-add-small" onclick="bandEditForm.addNewGenre()">Add</button>
-      </div>
-      <div class="selected-genres-display">
-        <strong>Selected:</strong> ${selectedGenres.length > 0 ? selectedGenres.join(", ") : "None"}
+        <button type="button" class="btn-add-icon" onclick="bandEditForm.addNewGenre()" id="addGenreBtn">
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+          </svg>
+        </button>
+        <div class="genre-validation-message" id="genreValidationMessage"></div>
       </div>
     `;
   }
@@ -280,30 +281,30 @@ class BandEditForm {
     return members
       .map(
         (member, index) => `
-      <div class="member-item">
-        <div class="member-fields">
-          <div>
-            <label style="font-size: 0.75rem;">Name</label>
-            <input
-              type="text"
-              value="${member.name || ""}"
-              data-field="members"
-              data-index="${index}"
-              data-subfield="name"
-            />
-          </div>
-          <div>
-            <label style="font-size: 0.75rem;">Role</label>
-            <input
-              type="text"
-              value="${member.role || ""}"
-              data-field="members"
-              data-index="${index}"
-              data-subfield="role"
-            />
-          </div>
-        </div>
-        <button type="button" class="btn-remove" onclick="bandEditForm.removeMember(${index})">Remove Member</button>
+      <div class="member-item-compact">
+        <label>Name</label>
+        <input
+          type="text"
+          value="${member.name || ""}"
+          data-field="members"
+          data-index="${index}"
+          data-subfield="name"
+          placeholder="Member name"
+        />
+        <label>Role</label>
+        <input
+          type="text"
+          value="${member.role || ""}"
+          data-field="members"
+          data-index="${index}"
+          data-subfield="role"
+          placeholder="Role/Instrument"
+        />
+        <button type="button" class="btn-remove-icon" onclick="bandEditForm.removeMember(${index})" title="Remove member">
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+          </svg>
+        </button>
       </div>
     `,
       )
@@ -339,12 +340,49 @@ class BandEditForm {
     const spotifyField = document.getElementById("spotify");
 
     if (websiteField) {
-      websiteField.addEventListener("input", (e) => this.updateUrlLink("websiteLink", e.target.value));
+      websiteField.addEventListener("input", (e) => {
+        this.updateUrlLink("websiteLink", e.target.value);
+        // Debounce URL validation
+        this.scheduleUrlValidation(e.target.value, "website");
+      });
     }
 
     if (spotifyField) {
-      spotifyField.addEventListener("input", (e) => this.updateUrlLink("spotifyLink", e.target.value));
+      spotifyField.addEventListener("input", (e) => {
+        this.updateUrlLink("spotifyLink", e.target.value);
+        // Debounce URL validation
+        this.scheduleUrlValidation(e.target.value, "spotify");
+      });
     }
+  }
+
+  /**
+   * Schedule URL validation with debounce
+   */
+  scheduleUrlValidation(url, fieldId) {
+    // Clear existing timeout for this field
+    if (this.urlValidationTimeouts && this.urlValidationTimeouts[fieldId]) {
+      clearTimeout(this.urlValidationTimeouts[fieldId]);
+    }
+
+    if (!this.urlValidationTimeouts) {
+      this.urlValidationTimeouts = {};
+    }
+
+    // Reset border to default while waiting
+    const inputField = document.getElementById(fieldId);
+    if (inputField && url && url.trim()) {
+      inputField.style.borderColor = "#555";
+      inputField.style.borderWidth = "1px";
+      inputField.title = "";
+    }
+
+    // Schedule validation after 1.5 seconds of no typing
+    this.urlValidationTimeouts[fieldId] = setTimeout(() => {
+      if (url && url.trim()) {
+        this.validateUrl(url, fieldId);
+      }
+    }, 1500);
   }
 
   /**
@@ -455,9 +493,297 @@ class BandEditForm {
   }
 
   /**
-   * Handle genre checkbox toggle
+   * Validate URLs asynchronously
    */
-  handleGenreToggle(checkbox) {
+  async validateUrls() {
+    const websiteUrl = this.currentBand?.website;
+    const spotifyUrl = this.currentBand?.spotify;
+
+    if (websiteUrl) {
+      this.validateUrl(websiteUrl, "website");
+    }
+
+    if (spotifyUrl) {
+      this.validateUrl(spotifyUrl, "spotify");
+    }
+  }
+
+  /**
+   * Validate a single URL
+   */
+  async validateUrl(url, fieldId) {
+    if (!url || !url.trim()) return;
+
+    const inputField = document.getElementById(fieldId);
+    if (!inputField) return;
+
+    // Check cache first
+    if (this.urlValidationCache.has(url)) {
+      const isValid = this.urlValidationCache.get(url);
+      this.applyUrlValidationStyle(inputField, isValid);
+      return;
+    }
+
+    // Show loading state
+    inputField.style.borderColor = "#fbbf24"; // amber/yellow for loading
+    inputField.style.borderWidth = "2px";
+    inputField.title = "Checking URL...";
+
+    try {
+      // Try to fetch the URL with a timeout
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+
+      const response = await fetch(url, {
+        method: "HEAD",
+        signal: controller.signal,
+        // Don't use no-cors, we want to see the actual response
+      });
+
+      clearTimeout(timeoutId);
+
+      // Check if status is 2xx or 3xx (success or redirect)
+      const isValid = response.ok || (response.status >= 300 && response.status < 400);
+
+      this.urlValidationCache.set(url, isValid);
+      this.applyUrlValidationStyle(inputField, isValid);
+    } catch (error) {
+      // If CORS blocks us, try a GET request with no-cors
+      // This will succeed if the server responds, even if we can't read the response
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+        await fetch(url, {
+          method: "GET",
+          mode: "no-cors",
+          signal: controller.signal,
+        });
+
+        clearTimeout(timeoutId);
+
+        // If we get here without error, the URL is reachable
+        // We assume it's valid since the server responded
+        this.urlValidationCache.set(url, true);
+        this.applyUrlValidationStyle(inputField, true);
+      } catch (nocorsError) {
+        // Both methods failed - URL is likely unreachable
+        this.urlValidationCache.set(url, false);
+        this.applyUrlValidationStyle(inputField, false);
+      }
+    }
+  }
+
+  /**
+   * Check URL reachability using Image or script loading technique
+   */
+  async checkUrlReachability(url) {
+    return new Promise((resolve) => {
+      const timeout = setTimeout(() => {
+        resolve(false); // Timeout = invalid
+      }, 5000); // 5 second timeout
+
+      // Try to load the URL using an image tag
+      const img = new Image();
+
+      img.onload = () => {
+        clearTimeout(timeout);
+        resolve(true); // Successfully loaded
+      };
+
+      img.onerror = () => {
+        clearTimeout(timeout);
+        // For websites, error doesn't necessarily mean unreachable
+        // Try a different approach - use a fetch with a short timeout
+        fetch(url, {
+          method: "GET",
+          mode: "no-cors",
+          cache: "no-cache",
+          signal: AbortSignal.timeout(5000),
+        })
+          .then(() => resolve(true))
+          .catch(() => resolve(false));
+      };
+
+      img.src = url;
+    });
+  }
+
+  /**
+   * Apply validation styling to URL input field
+   */
+  applyUrlValidationStyle(inputField, isValid) {
+    if (isValid) {
+      inputField.style.borderColor = "#10b981"; // green
+      inputField.style.borderWidth = "2px";
+      inputField.title = "URL is reachable ✓";
+    } else {
+      inputField.style.borderColor = "#ef4444"; // red
+      inputField.style.borderWidth = "2px";
+      inputField.title = "URL may be unreachable or invalid ✗";
+    }
+  }
+
+  /**
+   * Initialize genres dropdown component
+   */
+  initializeGenresDropdown() {
+    const container = document.getElementById("genresDropdownContainer");
+    if (!container || !this.currentBand) return;
+
+    // Destroy existing dropdown if any
+    if (this.genresDropdown) {
+      this.genresDropdown.destroy();
+    }
+
+    const allGenresArray = Array.from(this.allGenres).sort();
+
+    this.genresDropdown = new MultiselectDropdown({
+      allItems: allGenresArray,
+      selectedItems: this.currentBand.genres || [],
+      placeholder: "Search genres...",
+      icon: "🎵",
+      label: "Select Genres",
+      onToggle: (genre, isSelected) => {
+        this.handleGenreToggle(genre, isSelected);
+      },
+      onSearch: () => {
+        // Search is handled internally by the component
+      },
+    });
+
+    container.innerHTML = "";
+    container.appendChild(this.genresDropdown.create());
+  }
+
+  /**
+   * Handle genre toggle from dropdown
+   */
+  handleGenreToggle(genre, isSelected) {
+    if (!this.currentBand.genres) {
+      this.currentBand.genres = [];
+    }
+
+    if (isSelected) {
+      // Add genre if not already present
+      if (!this.currentBand.genres.includes(genre)) {
+        this.currentBand.genres.push(genre);
+      }
+    } else {
+      // Remove genre
+      this.currentBand.genres = this.currentBand.genres.filter((g) => g !== genre);
+    }
+
+    // Update the dropdown and display
+    this.updateGenresDisplay();
+
+    // Schedule auto-save
+    this.scheduleAutoSave();
+  }
+
+  /**
+   * Validate new genre input
+   */
+  validateNewGenre(input) {
+    const newGenre = input.value.trim();
+    const addBtn = document.getElementById("addGenreBtn");
+    const validationMsg = document.getElementById("genreValidationMessage");
+
+    if (!newGenre) {
+      input.style.borderColor = "";
+      addBtn.disabled = false;
+      validationMsg.textContent = "";
+      validationMsg.style.display = "none";
+      return;
+    }
+
+    // Check if genre already exists (case-insensitive)
+    const genreExists = Array.from(this.allGenres).some((genre) => genre.toLowerCase() === newGenre.toLowerCase());
+
+    if (genreExists) {
+      input.style.borderColor = "#ef4444";
+      addBtn.disabled = true;
+      validationMsg.textContent = "This genre already exists, select from the dropdown";
+      validationMsg.style.display = "block";
+    } else {
+      input.style.borderColor = "#10b981"; // green
+      addBtn.disabled = false;
+      validationMsg.textContent = "";
+      validationMsg.style.display = "none";
+    }
+  }
+
+  /**
+   * Add a new genre to the list
+   */
+  addNewGenre() {
+    const input = document.getElementById("newGenreInput");
+    if (!input) return;
+
+    const newGenre = input.value.trim();
+
+    if (!newGenre) {
+      return;
+    }
+
+    // Check if genre already exists
+    const genreExists = Array.from(this.allGenres).some((genre) => genre.toLowerCase() === newGenre.toLowerCase());
+
+    if (genreExists) {
+      return; // Don't add if it exists
+    }
+
+    // Add to global genres list
+    this.allGenres.add(newGenre);
+
+    // Add to current band genres
+    if (!this.currentBand.genres) {
+      this.currentBand.genres = [];
+    }
+
+    if (!this.currentBand.genres.includes(newGenre)) {
+      this.currentBand.genres.push(newGenre);
+    }
+
+    // Clear input and validation
+    input.value = "";
+    input.style.borderColor = "";
+    const validationMsg = document.getElementById("genreValidationMessage");
+    if (validationMsg) {
+      validationMsg.textContent = "";
+      validationMsg.style.display = "none";
+    }
+
+    // Re-initialize dropdown with updated genres
+    this.initializeGenresDropdown();
+
+    // Update display
+    this.updateGenresDisplay();
+
+    // Schedule auto-save
+    this.scheduleAutoSave();
+  }
+
+  /**
+   * Update the selected genres display
+   */
+  updateGenresDisplay() {
+    const display = document.querySelector(".selected-genres-display");
+    if (!display || !this.currentBand) return;
+
+    const genres = this.currentBand.genres || [];
+    display.innerHTML = `<strong>Selected Genres:</strong> ${genres.length > 0 ? genres.join(", ") : "None"}`;
+
+    // Update dropdown if it exists
+    if (this.genresDropdown) {
+      this.genresDropdown.update(Array.from(this.allGenres).sort(), this.currentBand.genres || []);
+    }
+  }
+
+  /**
+   * Handle genre checkbox toggle (DEPRECATED - keeping for backward compatibility)
+   */
+  handleGenreToggle_OLD(checkbox) {
     if (!this.currentBand.genres) {
       this.currentBand.genres = [];
     }
@@ -482,45 +808,7 @@ class BandEditForm {
   }
 
   /**
-   * Add a new genre to the list
-   */
-  addNewGenre() {
-    const input = document.getElementById("newGenreInput");
-    if (!input) return;
-
-    const newGenre = input.value.trim();
-
-    if (!newGenre) {
-      return;
-    }
-
-    // Add to global genres list
-    this.allGenres.add(newGenre);
-
-    // Add to current band genres
-    if (!this.currentBand.genres) {
-      this.currentBand.genres = [];
-    }
-
-    if (!this.currentBand.genres.includes(newGenre)) {
-      this.currentBand.genres.push(newGenre);
-    }
-
-    // Clear input
-    input.value = "";
-
-    // Re-render genres section
-    const container = document.getElementById("genresContainer");
-    if (container) {
-      container.innerHTML = this.renderGenresField(this.currentBand.genres);
-    }
-
-    // Schedule auto-save
-    this.scheduleAutoSave();
-  }
-
-  /**
-   * Update the selected genres display
+   * Update the selected genres display (DEPRECATED - use updateGenresDisplay)
    */
   updateSelectedGenresDisplay() {
     const display = document.querySelector(".selected-genres-display");
@@ -647,6 +935,17 @@ class BandEditForm {
    */
   getCurrentBand() {
     return this.currentBand;
+  }
+
+  /**
+   * Scroll to top of the form
+   */
+  scrollToTop() {
+    // Find the scrollable container (.form-content)
+    const scrollableContainer = this.formContainer?.closest(".form-content");
+    if (scrollableContainer) {
+      scrollableContainer.scrollTo({ top: 0, behavior: "smooth" });
+    }
   }
 }
 

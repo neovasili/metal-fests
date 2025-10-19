@@ -72,7 +72,7 @@ class BandReviewManager {
    * Update the band count in the UI
    */
   updateCount() {
-    const countElement = document.getElementById("bandCount");
+    const countElement = document.getElementById("band-count");
     if (countElement) {
       countElement.textContent = this.filteredBands.length;
     }
