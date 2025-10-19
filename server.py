@@ -12,6 +12,8 @@ import sys
 import json
 import re
 from urllib.parse import urlparse
+import urllib.request
+import urllib.error
 
 PORT = 8000
 
@@ -30,6 +32,13 @@ class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         # Check if this is an API request to update a band
         if self.path.startswith('/api/bands/'):
             self.handle_update_band()
+        else:
+            self.send_error(404, "Not Found")
+
+    def do_POST(self):
+        """Handle POST requests"""
+        if self.path == '/api/validate-url':
+            self.handle_validate_url()
         else:
             self.send_error(404, "Not Found")
 
@@ -85,6 +94,93 @@ class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         except Exception as e:
             self.send_error(500, f"Server error: {str(e)}")
             print(f"❌ Error updating band: {str(e)}")
+
+    def handle_validate_url(self):
+        """Validate a URL by making a request to it"""
+        try:
+            # Read request body
+            content_length = int(self.headers.get('Content-Length', 0))
+            body = self.rfile.read(content_length)
+            request_data = json.loads(body.decode('utf-8'))
+
+            url = request_data.get('url')
+            if not url:
+                self.send_error(400, "URL is required")
+                return
+
+            # Validate the URL
+            try:
+                # Create request with a reasonable User-Agent
+                req = urllib.request.Request(
+                    url,
+                    headers={
+                        'User-Agent': 'Mozilla/5.0 (compatible; URLValidator/1.0)'
+                    }
+                )
+
+                # Make the request with a timeout
+                with urllib.request.urlopen(req, timeout=5) as response:
+                    status_code = response.getcode()
+                    is_valid = 200 <= status_code < 400
+
+                    # Send success response
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'application/json')
+                    self.end_headers()
+                    response_data = json.dumps({
+                        'valid': is_valid,
+                        'status': status_code,
+                        'url': url
+                    })
+                    self.wfile.write(response_data.encode('utf-8'))
+
+                    print(f"✅ URL validated: {url} (status: {status_code})")
+
+            except urllib.error.HTTPError as e:
+                # HTTP error (4xx, 5xx)
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                response_data = json.dumps({
+                    'valid': False,
+                    'status': e.code,
+                    'url': url
+                })
+                self.wfile.write(response_data.encode('utf-8'))
+                print(f"⚠️  URL returned error: {url} (status: {e.code})")
+
+            except urllib.error.URLError as e:
+                # URL error (timeout, connection refused, etc.)
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                response_data = json.dumps({
+                    'valid': False,
+                    'status': 0,
+                    'error': str(e.reason),
+                    'url': url
+                })
+                self.wfile.write(response_data.encode('utf-8'))
+                print(f"❌ URL unreachable: {url} ({e.reason})")
+
+            except Exception as e:
+                # Other errors
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                response_data = json.dumps({
+                    'valid': False,
+                    'status': 0,
+                    'error': str(e),
+                    'url': url
+                })
+                self.wfile.write(response_data.encode('utf-8'))
+                print(f"❌ Error validating URL: {url} ({e})")
+
+        except json.JSONDecodeError as e:
+            self.send_error(400, f"Invalid JSON: {str(e)}")
+        except Exception as e:
+            self.send_error(500, f"Server error: {str(e)}")
 
     def end_headers(self):
         self.send_header('Access-Control-Allow-Origin', '*')
