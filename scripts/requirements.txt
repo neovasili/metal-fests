@@ -1,3 +1,8 @@
 # Festival Updater Dependencies
 openai>=2.1.0
 dotenv>=0.9.9
+
+# Minification Dependencies
+htmlmin>=0.1.12
+rjsmin>=1.2.1
+csscompressor>=0.9.5

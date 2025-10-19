@@ -12,8 +12,14 @@
     "lint:md": "markdownlint \"**/*.md\" --config .markdownlint.yaml",
     "lint:fix": "pnpm lint:js --fix && pnpm lint:css --fix && pnpm lint:md --fix",
     "format": "pnpm lint:fix",
-    "validate": "python3 -m json.tool db.json > /dev/null && echo 'All files validated successfully!'",
-    "dev": "echo 'Starting development server...' && python3 server.py"
+    "validate": "python3 scripts/validate_data.py",
+    "dev": "echo 'Starting development server...' && python3 server.py",
+    "minify": "pnpm minify:html && pnpm minify:js && pnpm minify:css && pnpm minify:json",
+    "minify:html": "python3 scripts/minify_html.py",
+    "minify:js": "python3 scripts/minify_js.py",
+    "minify:css": "python3 scripts/minify_css.py",
+    "minify:json": "python3 scripts/minify_json.py",
+    "build": "./scripts/build.sh && pnpm minify"
   },
   "repository": {
     "type": "git",
