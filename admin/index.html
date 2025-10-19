@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Band Review | Metal Festivals 2026</title>
+
+    <!-- Reuse public stylesheets -->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/band-modal.css" />
+
+    <!-- Admin-specific styles -->
+    <link rel="stylesheet" href="/admin/css/admin.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header (reusing public header structure) -->
+    <header class="header admin-header">
+      <div class="header-content">
+        <div class="header-left">
+          <h1><a href="/">Metal Festivals 2026 - Admin</a></h1>
+          <span class="admin-badge">Band Review</span>
+        </div>
+        <div class="header-right">
+          <a href="/" class="btn-link">← Back to Public Site</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main admin container -->
+    <main class="admin-container">
+      <!-- Band Edit Form Section -->
+      <section class="admin-form-section">
+        <div class="form-header">
+          <button class="nav-arrow nav-prev" id="prevBand" disabled title="Previous band">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
+          <h2>Band Information</h2>
+          <button class="nav-arrow nav-next" id="nextBand" disabled title="Next band">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="form-content" id="bandForm">
+          <div class="form-placeholder">
+            <p>Select a band from the list to start editing 👉</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bands to Review List Section -->
+      <section class="admin-list-section">
+        <div class="list-header">
+          <h2>Bands to Review (<span id="band-count">0</span>)</h2>
+          <button class="sort-toggle" id="sortToggle" title="Toggle sort order">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"/>
+            </svg>
+            <span id="sortLabel">A-Z</span>
+          </button>
+        </div>
+
+        <div class="list-content" id="bandsList">
+          <div class="list-placeholder">
+            <p>🎉 No bands to review!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Toast notification for save confirmations -->
+    <div class="toast" id="toast">
+      <svg viewBox="0 0 24 24" width="20" height="20">
+        <path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+      </svg>
+      <span id="toastMessage">Changes saved</span>
+    </div>
+
+    <!-- Reuse public scripts -->
+    <script src="/js/band-manager.js"></script>
+
+    <!-- Admin-specific scripts -->
+    <script src="/admin/js/band-review-manager.js"></script>
+    <script src="/admin/js/band-edit-form.js"></script>
+    <script src="/admin/js/notification.js"></script>
+    <script src="/admin/js/admin.js"></script>
+  </body>
+</html>
