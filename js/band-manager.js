@@ -115,11 +115,23 @@ class BandManager {
     return this.bands.find((band) => band.name.toLowerCase() === normalizedName);
   }
 
+  /**
+   * Check if we're running on localhost/local server
+   */
+  isLocalHost() {
+    const hostname = window.location.hostname;
+    return hostname === "localhost" || hostname === "127.0.0.1" || hostname === "[::1]";
+  }
+
   hasCompleteInfo(bandName) {
+    // On localhost, consider it true
+    if (this.isLocalHost()) {
+      return true;
+    }
     const band = this.getBandByName(bandName);
     if (!band) return false;
 
-    // Check if band has all required fields AND is reviewed
+    // In production, require info complete
     return (
       band.key &&
       band.name &&
@@ -264,8 +276,8 @@ class BandManager {
       return false;
     }
 
-    // Check if band is reviewed before showing
-    if (band.reviewed !== true) {
+    // Check if band is reviewed before showing (skip check on localhost)
+    if (!this.isLocalHost() && band.reviewed !== true) {
       console.warn(`Band not reviewed: ${bandKey}`);
       return false;
     }
@@ -315,7 +327,10 @@ class BandManager {
   createStandalonePage(bandKey) {
     const band = this.getBandByKey(bandKey);
 
-    if (!band || band.reviewed !== true) {
+    // On localhost, allow non-reviewed bands; in production, require review
+    const shouldShow = band && (this.isLocalHost() || band.reviewed === true);
+
+    if (!shouldShow) {
       // Show 404 error for non-existent or non-reviewed bands
       document.body.innerHTML = `
         <header class="header">
