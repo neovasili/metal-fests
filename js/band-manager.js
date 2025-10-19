@@ -2,6 +2,7 @@
 class BandManager {
   constructor() {
     this.bands = [];
+    this.festivals = [];
     this.currentBand = null;
     this.modalOverlay = null;
     this.isStandalone = false;
@@ -34,6 +35,9 @@ class BandManager {
   generateBandHTML(band, isStandalone = false) {
     const closeButtonHandler = isStandalone ? "onclick=\"window.location.href='/'\"" : "";
 
+    // Get festivals for this band
+    const bandFestivals = this.getFestivalsForBand(band.name);
+
     return `
       <div class="band-modal-overlay active">
         <div class="band-modal">
@@ -55,6 +59,31 @@ class BandManager {
                 ${band.genres.map((genre) => `<span class="band-modal-genre-tag">${genre}</span>`).join("")}
               </div>
             </div>
+            ${
+              bandFestivals.length > 0
+                ? `
+            <div class="band-modal-section">
+              <h3>2026 Festival Appearances</h3>
+              <div class="band-modal-festivals">
+                ${bandFestivals
+                  .map(
+                    (festival) => `
+                  <div class="band-modal-festival">
+                    <div class="band-modal-festival-name">${festival.name}</div>
+                    <div class="band-modal-festival-info">
+                      <span class="band-modal-festival-location">📍 ${festival.location}</span>
+                      <span class="band-modal-festival-dates">📅 ${this.formatFestivalDates(festival.dates)}</span>
+                    </div>
+                    ${festival.website ? `<a href="${festival.website}" target="_blank" rel="noopener noreferrer" class="band-modal-festival-link">Festival Website →</a>` : ""}
+                  </div>
+                `,
+                  )
+                  .join("")}
+              </div>
+            </div>
+            `
+                : ""
+            }
             <div class="band-modal-section">
               <h3>Members</h3>
               <div class="band-modal-members">
@@ -98,6 +127,7 @@ class BandManager {
       }
       const data = await response.json();
       this.bands = data.bands || [];
+      this.festivals = data.festivals || [];
       return this.bands;
     } catch (error) {
       console.error("Error loading bands:", error);
@@ -113,6 +143,37 @@ class BandManager {
     // Normalize the name for comparison
     const normalizedName = name.toLowerCase().trim();
     return this.bands.find((band) => band.name.toLowerCase() === normalizedName);
+  }
+
+  /**
+   * Get all festivals that include a specific band
+   * @param {string} bandName - The name of the band
+   * @returns {Array} - Array of festival objects
+   */
+  getFestivalsForBand(bandName) {
+    return this.festivals.filter((festival) => festival.bands && festival.bands.includes(bandName));
+  }
+
+  /**
+   * Format festival dates for display
+   * @param {Object} dates - Festival dates object with start and end
+   * @returns {string} - Formatted date string
+   */
+  formatFestivalDates(dates) {
+    const startDate = new Date(dates.start);
+    const endDate = new Date(dates.end);
+
+    const options = { month: "short", day: "numeric" };
+    const startFormatted = startDate.toLocaleDateString("en-US", options);
+    const endFormatted = endDate.toLocaleDateString("en-US", options);
+
+    // If same month, show "Jun 12-14"
+    if (startDate.getMonth() === endDate.getMonth()) {
+      return `${startDate.toLocaleDateString("en-US", { month: "short" })} ${startDate.getDate()}-${endDate.getDate()}`;
+    }
+
+    // Otherwise show "Jun 30 - Jul 2"
+    return `${startFormatted} - ${endFormatted}`;
   }
 
   /**
@@ -173,6 +234,10 @@ class BandManager {
           <div class="band-modal-section">
             <h3>Genres</h3>
             <div class="band-modal-genres"></div>
+          </div>
+          <div class="band-modal-section band-modal-festivals-section" style="display: none;">
+            <h3>2026 Festival Appearances</h3>
+            <div class="band-modal-festivals"></div>
           </div>
           <div class="band-modal-section">
             <h3>Members</h3>
@@ -247,6 +312,31 @@ class BandManager {
     genresContainer.innerHTML = band.genres
       .map((genre) => `<span class="band-modal-genre-tag">${genre}</span>`)
       .join("");
+
+    // Update festivals
+    const bandFestivals = this.getFestivalsForBand(band.name);
+    const festivalsSection = this.modalOverlay.querySelector(".band-modal-festivals-section");
+    const festivalsContainer = this.modalOverlay.querySelector(".band-modal-festivals");
+
+    if (bandFestivals.length > 0) {
+      festivalsSection.style.display = "block";
+      festivalsContainer.innerHTML = bandFestivals
+        .map(
+          (festival) => `
+        <div class="band-modal-festival">
+          <div class="band-modal-festival-name">${festival.name}</div>
+          <div class="band-modal-festival-info">
+            <span class="band-modal-festival-location">📍 ${festival.location}</span>
+            <span class="band-modal-festival-dates">📅 ${this.formatFestivalDates(festival.dates)}</span>
+          </div>
+          ${festival.website ? `<a href="${festival.website}" target="_blank" rel="noopener noreferrer" class="band-modal-festival-link">Festival Website →</a>` : ""}
+        </div>
+      `,
+        )
+        .join("");
+    } else {
+      festivalsSection.style.display = "none";
+    }
 
     // Update members
     const membersContainer = this.modalOverlay.querySelector(".band-modal-members");
