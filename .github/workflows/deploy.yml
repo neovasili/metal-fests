@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Setup node
-        uses: ./github/actions/node-setup
+        uses: ./.github/actions/node-setup
 
       - name: Set up Python
         uses: ./.github/actions/python-setup
