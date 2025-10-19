@@ -39,10 +39,10 @@ jobs:
           env: ${{ inputs.stage }}
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: (Setup) AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4.0.2
+        uses: aws-actions/configure-aws-credentials@v5.1.0
         with:
           role-to-assume: ${{ secrets.DEPLOY_ROLE_ARN }}
           role-session-name: deploy-static-app
@@ -50,14 +50,7 @@ jobs:
 
       - name: (Deploy) Build Application
         run: |
-          mkdir -p build
-          cp -r ./js ./build/
-          cp -r ./img ./build/
-          cp -r ./css ./build/
-          cp -r ./fonts ./build/
-          cp *.html ./build/
-          cp script.js ./build/
-          cp db.json ./build/
+          make build
 
       - name: (Deploy) Push Contents to S3
         run: |

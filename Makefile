@@ -7,20 +7,23 @@ help:
 	@echo "Metal Festivals Timeline - Available commands:"
 	@echo ""
 	@echo "Setup & Installation:"
-	@echo "  make setup     - Install all dependencies and setup pre-commit hooks"
-	@echo "  make install   - Install npm dependencies only"
+	@echo "  make setup     			- Install all dependencies and setup pre-commit hooks"
+	@echo "  make install   			- Install npm dependencies only"
 	@echo ""
 	@echo "Development:"
-	@echo "  make start     - Start the development server"
-	@echo "  make dev       - Alias for start"
+	@echo "  make start     			- Start the development server"
+	@echo "  make dev       			- Alias for start"
 	@echo ""
 	@echo "Code Quality:"
-	@echo "  make lint      - Run all linters"
-	@echo "  make lint-fix  - Fix auto-fixable linting issues"
-	@echo "  make validate  - Run linters + JSON validation"
+	@echo "  make lint      			- Run all linters"
+	@echo "  make lint-fix  			- Fix auto-fixable linting issues"
+	@echo "  make validate  			- Run linters + JSON validation"
 	@echo ""
 	@echo "Maintenance:"
-	@echo "  make clean     - Clean temporary files and caches"
+	@echo "  make clean     			- Clean temporary files and caches"
+	@echo ""
+	@echo "Build:"
+	@echo "  make build-project   - Build the project for production"
 	@echo ""
 
 # Install pnpm dependencies
@@ -63,3 +66,8 @@ clean:
 	rm -rf .eslintcache
 	find . -name ".DS_Store" -delete
 	@echo "✅ Cleanup complete!"
+
+build-project:
+	@echo "🏗️  Building the project..."
+	pnpm build
+	@echo "✅ Build complete!"
