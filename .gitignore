@@ -34,6 +34,17 @@ venv/
 __pycache__/
 *.pyc
 
+# Go binaries and build artifacts
+metal-fests-server
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.sum
+
 # Pre-commit cache
 .pre-commit-config.yaml.backup
 

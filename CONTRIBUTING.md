@@ -6,7 +6,7 @@ Thank you for your interest in contributing to the Metal Festivals Timeline proj
 
 ### Prerequisites
 
-- **Python 3.7+** (for running the local server)
+- **Go 1.21+** (for running the local server)
 - **Node.js 18+** and **pnpm 8+** (for development tools)
 - **Git** (for version control)
 
@@ -203,7 +203,7 @@ The project is designed for static hosting:
 
 - **GitHub Pages**: Automatic deployment from main branch
 - **S3 + CloudFront**: See deployment guide in README
-- **Local Development**: Python server with CORS support
+- **Local Development**: Go server with CORS support and admin API
 
 ## Getting Help
 

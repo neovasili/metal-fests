@@ -10,7 +10,7 @@ The admin panel provides a desktop-focused interface for reviewing and managing 
 
 **Requirements:**
 
-- Local development server running (`python3 server.py`)
+- Local development server running (`go run server.go`)
 - Desktop browser (optimized for 1024px+ width)
 
 ## Features
@@ -285,7 +285,7 @@ Currently not implemented, but could add:
 
 ### Review a New Band
 
-1. Start local server: `python3 server.py`
+1. Start local server: `go run server.go`
 2. Navigate to `http://localhost:8000/admin/`
 3. Click band from list
 4. Review/edit all fields
