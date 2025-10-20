@@ -77,8 +77,9 @@ Then open your browser and go to: <http://localhost:8000>
 
 ### Prerequisites
 
-- **Go 1.21+** (for running the local server)
+- **Go 1.21+** (for running the local server and validation)
 - **Node.js 18+** and **pnpm 8+** (for linting and development tools)
+- **Python 3.7+** (optional, for minification and updater scripts)
 - **Git** (for version control and hooks)
 
 ### Quick Setup
