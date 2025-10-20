@@ -20,6 +20,7 @@ cp -r ./js ./build/
 cp -r ./img ./build/
 cp -r ./css ./build/
 cp -r ./fonts ./build/
+cp -r ./components ./build/
 cp *.html ./build/
 cp script.js ./build/
 cp db.json ./build/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival Card Template</title>
+  </head>
+  <body>
+    <div class="festival-card">
+      <div class="festival-header">
+        <img
+          src="{{poster}}"
+          alt="{{name}} Poster"
+          class="festival-poster"
+          onerror="this.src='img/placeholder.jpg'"
+        />
+        <div class="favorite-container"></div>
+      </div>
+      <h2 class="festival-name">{{name}}</h2>
+      <div class="festival-dates">{{dates}}</div>
+      <div class="festival-location">{{location}}</div>
+      <div class="festival-bands">
+        <h4>Featured Bands:</h4>
+        <div class="bands-list">{{bands}}</div>
+      </div>
+      <div class="festival-info">
+        <div class="ticket-price">From €{{ticketPrice}}</div>
+        <a
+          href="{{website}}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="festival-website"
+        >
+          Visit Website
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
