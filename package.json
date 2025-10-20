@@ -4,7 +4,7 @@
   "description": "European Metal Festivals 2026 Timeline - A vanilla JavaScript web application displaying a timeline of European metal festivals",
   "main": "script.js",
   "scripts": {
-    "start": "python3 server.py",
+    "start": "go run server.go",
     "lint": "pnpm lint:js && pnpm lint:css && pnpm lint:html && pnpm lint:md",
     "lint:js": "eslint \"**/*.js\" --max-warnings 0",
     "lint:css": "stylelint \"**/*.css\"",
@@ -13,7 +13,7 @@
     "lint:fix": "pnpm lint:js --fix && pnpm lint:css --fix && pnpm lint:md --fix",
     "format": "pnpm lint:fix",
     "validate": "python3 scripts/validate_data.py",
-    "dev": "echo 'Starting development server...' && python3 server.py",
+    "dev": "echo 'Starting development server...' && go run server.go",
     "minify": "pnpm minify:html && pnpm minify:js && pnpm minify:css && pnpm minify:json",
     "minify:html": "python3 scripts/minify_html.py",
     "minify:js": "python3 scripts/minify_js.py",

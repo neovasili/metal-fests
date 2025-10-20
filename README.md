@@ -22,14 +22,24 @@ A responsive web application displaying a timeline of heavy metal festivals acro
 
 Due to browser CORS restrictions, you cannot open `index.html` directly. You need to serve the files through a local HTTP server.
 
-### Option 1: Using the included Python server (Recommended)
+### Option 1: Using the included Go server (Recommended)
 
 ```bash
 # Navigate to the project directory
 cd /Users/neovasili/workspace/personal/metal-fests
 
 # Run the server
-python3 server.py
+go run server.go
+```
+
+Or build and run the binary:
+
+```bash
+# Build the server
+go build -o metal-fests-server server.go
+
+# Run the server
+./metal-fests-server
 ```
 
 Then open your browser and go to: **<http://localhost:8000>**
@@ -45,6 +55,8 @@ python3 -m http.server 8000
 ```
 
 Then open your browser and go to: **<http://localhost:8000>**
+
+**Note**: Python's built-in server won't support the admin API endpoints for updating band data.
 
 ### Option 3: Using Node.js (if you have it installed)
 
@@ -65,7 +77,7 @@ Then open your browser and go to: <http://localhost:8000>
 
 ### Prerequisites
 
-- **Python 3.7+** (for running the local server)
+- **Go 1.21+** (for running the local server)
 - **Node.js 18+** and **pnpm 8+** (for linting and development tools)
 - **Git** (for version control and hooks)
 
@@ -86,7 +98,7 @@ npm run dev
 ### Development Commands
 
 ```bash
-# Start development server
+# Start development server (Go)
 pnpm start                    # or pnpm dev
 
 # Linting commands
@@ -168,8 +180,9 @@ metal-fests/
 │   ├── placeholder.jpg      # Fallback poster image
 │   └── error-background.png # Error page background
 ├── db.json               # Festival data
-├── server.py            # Python server script
-└── README.md           # This file
+├── server.go             # Go server (main server)
+├── go.mod                # Go module file
+└── README.md             # This file
 ```
 
 ## Pages and Navigation
@@ -253,7 +266,7 @@ To add more festivals, simply edit the `db.json` file following the existing str
 
 **Images not loading**: The poster images use Unsplash URLs. If they don't load, check your internet connection or replace with local image paths.
 
-**Port already in use**: If port 8000 is busy, edit `server.py` and change the `PORT` variable to a different number (e.g., 8080, 3000, etc.).
+**Port already in use**: If port 8000 is busy, edit `server.go` and change the `PORT` constant to a different number (e.g., 8080, 3000, etc.).
 
 ---
 
@@ -262,7 +275,7 @@ To add more festivals, simply edit the `db.json` file following the existing str
 ## Quick Start
 
 1. Clone or download the repository
-2. Run `python3 server.py` in the project directory
+2. Run `go run server.go` in the project directory
 3. Open `http://localhost:8000` in your browser
 4. Navigate using clean URLs:
    - Timeline: `http://localhost:8000/` or `http://localhost:8000/timeline`

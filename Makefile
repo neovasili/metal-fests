@@ -11,8 +11,9 @@ help:
 	@echo "  make install   			- Install npm dependencies only"
 	@echo ""
 	@echo "Development:"
-	@echo "  make start     			- Start the development server"
-	@echo "  make dev       			- Alias for start"
+	@echo "  make start     			- Start the Go development server"
+	@echo "  make dev       			- Alias for start (Go server)"
+	@echo "  make build-server		- Build the Go server binary"
 	@echo ""
 	@echo "Code Quality:"
 	@echo "  make lint      			- Run all linters"
@@ -21,6 +22,7 @@ help:
 	@echo ""
 	@echo "Maintenance:"
 	@echo "  make clean     			- Clean temporary files and caches"
+	@echo "  make clean-server		- Remove Go server binary"
 	@echo ""
 	@echo "Build:"
 	@echo "  make build-project   - Build the project for production"
@@ -38,10 +40,16 @@ setup: install
 
 # Start development server
 start:
-	@echo "🚀 Starting Metal Festivals Timeline development server..."
-	python3 server.py
+	@echo "🚀 Starting Metal Festivals Timeline server (Go)..."
+	go run server.go
 
 dev: start
+
+# Build Go server binary
+build-server:
+	@echo "🔨 Building Go server binary..."
+	go build -o metal-fests-server server.go
+	@echo "✅ Build complete: ./metal-fests-server"
 
 # Linting commands
 lint:
@@ -66,6 +74,11 @@ clean:
 	rm -rf .eslintcache
 	find . -name ".DS_Store" -delete
 	@echo "✅ Cleanup complete!"
+
+clean-server:
+	@echo "🧹 Cleaning Go server binary..."
+	rm -f metal-fests-server
+	@echo "✅ Server binary removed!"
 
 build-project:
 	@echo "🏗️  Building the project..."
