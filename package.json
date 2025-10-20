@@ -12,7 +12,7 @@
     "lint:md": "markdownlint \"**/*.md\" --config .markdownlint.yaml",
     "lint:fix": "pnpm lint:js --fix && pnpm lint:css --fix && pnpm lint:md --fix",
     "format": "pnpm lint:fix",
-    "validate": "python3 scripts/validate_data.py",
+    "validate": "go run scripts/validate_data.go",
     "dev": "echo 'Starting development server...' && go run server.go",
     "minify": "pnpm minify:html && pnpm minify:js && pnpm minify:css && pnpm minify:json",
     "minify:html": "python3 scripts/minify_html.py",

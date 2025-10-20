@@ -64,7 +64,9 @@ format:
 	@echo "🎨 Formatting code with Prettier..."
 	pnpm format
 
-validate: lint
+validate:
+	@echo "🔍 Running all validations..."
+	@pnpm validate
 	@echo "✅ All validations passed!"
 
 # Clean temporary files

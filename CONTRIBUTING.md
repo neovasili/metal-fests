@@ -6,8 +6,9 @@ Thank you for your interest in contributing to the Metal Festivals Timeline proj
 
 ### Prerequisites
 
-- **Go 1.21+** (for running the local server)
+- **Go 1.21+** (for running the local server and validation)
 - **Node.js 18+** and **pnpm 8+** (for development tools)
+- **Python 3.7+** (optional, for minification and updater scripts)
 - **Git** (for version control)
 
 ### Setup Development Environment
