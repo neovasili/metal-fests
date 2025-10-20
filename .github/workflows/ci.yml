@@ -41,6 +41,45 @@ jobs:
           # Lint Markdown files
           pnpm lint:md
 
+  lint-go:
+    name: Lint Go Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Go
+        uses: ./.github/actions/go-setup
+
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v6
+        with:
+          version: v1.61.0
+          args: --timeout=5m
+
+  build-go:
+    name: Build Go Scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Go
+        uses: ./.github/actions/go-setup
+
+      - name: Build all Go scripts
+        run: |
+          echo "Building all Go scripts..."
+          go build -o /tmp/server server.go
+          go build -o /tmp/validate_data scripts/validate_data/validate_data.go
+          go build -o /tmp/festival_updater scripts/festival_updater/festival_updater.go
+          go build -o /tmp/band_updater scripts/band_updater/band_updater.go
+          go build -o /tmp/minify_css scripts/minify_css/minify_css.go
+          go build -o /tmp/minify_js scripts/minify_js/minify_js.go
+          go build -o /tmp/minify_html scripts/minify_html/minify_html.go
+          go build -o /tmp/minify_json scripts/minify_json/minify_json.go
+          echo "✅ All Go scripts compiled successfully"
+
   validate:
     name: Validate json files
     runs-on: ubuntu-latest

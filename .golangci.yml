@@ -1,0 +1,17 @@
+# golangci-lint configuration
+# See https://golangci-lint.run/usage/configuration/
+
+version: "2"
+
+run:
+  timeout: 5m
+
+linters:
+  enable:
+    - errcheck      # Check for unchecked errors
+    - govet         # Vet examines Go source code and reports suspicious constructs
+    - ineffassign   # Detects when assignments to existing variables are not used
+    - staticcheck   # Set of rules from staticcheck
+    - unused        # Checks for unused constants, variables, functions and types
+    - misspell      # Finds commonly misspelled English words
+    - gosec         # Inspects source code for security problems

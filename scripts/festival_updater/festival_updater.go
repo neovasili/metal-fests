@@ -97,6 +97,7 @@ type UpdateStats struct {
 }
 
 func loadPromptFile(filename string) (string, error) {
+	// #nosec G304 - filename comes from validated command-line arguments
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return "", err
@@ -105,6 +106,7 @@ func loadPromptFile(filename string) (string, error) {
 }
 
 func loadDatabase(filename string) (*Database, error) {
+	// #nosec G304 - filename comes from validated command-line arguments
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
@@ -124,7 +126,7 @@ func saveDatabase(filename string, db *Database) error {
 		return err
 	}
 
-	return os.WriteFile(filename, data, 0644)
+	return os.WriteFile(filename, data, 0600)
 }
 
 func askOpenAI(apiKey, systemPrompt, userPrompt string) (*OpenAIResponse, error) {
@@ -164,7 +166,11 @@ func askOpenAI(apiKey, systemPrompt, userPrompt string) (*OpenAIResponse, error)
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() {
+		if err := resp.Body.Close(); err != nil {
+			fmt.Fprintf(os.Stderr, "Failed to close response body: %v\n", err)
+		}
+	}()
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
@@ -218,7 +224,7 @@ func searchFestivalInfo(apiKey string, promptTemplate string, festival Festival,
 	return &result, resp.Usage.TotalTokens, nil
 }
 
-func updateExistingFestivals(apiKey, promptTemplate string, db *Database, dryRun bool) (*UpdateStats, error) {
+func updateExistingFestivals(apiKey, promptTemplate string, db *Database, dryRun bool) *UpdateStats {
 	stats := &UpdateStats{
 		TotalFestivals: len(db.Festivals),
 	}
@@ -279,7 +285,7 @@ func updateExistingFestivals(apiKey, promptTemplate string, db *Database, dryRun
 		fmt.Printf("  📊 Tokens used: %d\n", tokens)
 	}
 
-	return stats, nil
+	return stats
 }
 
 func contains(slice []string, item string) bool {
@@ -341,7 +347,7 @@ func main() {
 	}
 
 	// Load prompt template
-	promptTemplate, err := loadPromptFile("scripts/prompt.md")
+	promptTemplate, err := loadPromptFile("scripts/festival_prompt.md")
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error loading prompt template: %v\n", err)
 		os.Exit(1)
@@ -355,11 +361,7 @@ func main() {
 	}
 
 	// Update festivals
-	stats, err := updateExistingFestivals(apiKey, promptTemplate, db, dryRun)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error updating festivals: %v\n", err)
-		os.Exit(1)
-	}
+	stats := updateExistingFestivals(apiKey, promptTemplate, db, dryRun)
 
 	if !dryRun {
 		// Save updated database
@@ -370,7 +372,7 @@ func main() {
 
 		// Generate PR summary
 		summary := generatePRSummary(stats)
-		if err := os.WriteFile("festival_update_summary.md", []byte(summary), 0644); err != nil {
+		if err := os.WriteFile("festival_update_summary.md", []byte(summary), 0600); err != nil {
 			fmt.Fprintf(os.Stderr, "Error writing summary: %v\n", err)
 			os.Exit(1)
 		}

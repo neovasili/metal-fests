@@ -104,7 +104,7 @@ func levenshteinDistance(s1, s2 string) int {
 			if c1 != c2 {
 				substitutions++
 			}
-			currentRow = append(currentRow, min(insertions, deletions, substitutions))
+			currentRow = append(currentRow, minInt(insertions, deletions, substitutions))
 		}
 		previousRow = currentRow
 	}
@@ -112,7 +112,7 @@ func levenshteinDistance(s1, s2 string) int {
 	return previousRow[len(r2)]
 }
 
-func min(a, b, c int) int {
+func minInt(a, b, c int) int {
 	if a < b {
 		if a < c {
 			return a
@@ -216,6 +216,7 @@ func isRoleCapitalized(role string) bool {
 func validateJSONStructure(filePath string) (bool, *Database) {
 	printHeader("JSON STRUCTURE VALIDATION")
 
+	// #nosec G304 - filePath comes from validated command-line arguments
 	file, err := os.ReadFile(filePath)
 	if err != nil {
 		printError(fmt.Sprintf("Error reading file: %v", err))
@@ -458,17 +459,17 @@ func main() {
 	if totalErrors == 0 && totalWarnings == 0 {
 		fmt.Printf("%s\n", colorize("✅ All validations passed! No issues found.", ColorBold+ColorGreen))
 		os.Exit(0)
-	} else {
-		if totalErrors > 0 {
-			fmt.Printf("%s\n", colorize(fmt.Sprintf("❌ Found %d error(s)", totalErrors), ColorBold+ColorRed))
-		}
-		if totalWarnings > 0 {
-			fmt.Printf("%s\n", colorize(fmt.Sprintf("⚠️  Found %d warning(s)", totalWarnings), ColorBold+ColorYellow))
-		}
-
-		if totalErrors > 0 {
-			os.Exit(1)
-		}
-		os.Exit(0)
 	}
+
+	if totalErrors > 0 {
+		fmt.Printf("%s\n", colorize(fmt.Sprintf("❌ Found %d error(s)", totalErrors), ColorBold+ColorRed))
+	}
+	if totalWarnings > 0 {
+		fmt.Printf("%s\n", colorize(fmt.Sprintf("⚠️  Found %d warning(s)", totalWarnings), ColorBold+ColorYellow))
+	}
+
+	if totalErrors > 0 {
+		os.Exit(1)
+	}
+	os.Exit(0)
 }

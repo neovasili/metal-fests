@@ -6,9 +6,8 @@ Thank you for your interest in contributing to the Metal Festivals Timeline proj
 
 ### Prerequisites
 
-- **Go 1.21+** (for running the local server and validation)
+- **Go 1.24+** (for running the local server, validation, and build tools)
 - **Node.js 18+** and **pnpm 8+** (for development tools)
-- **Python 3.7+** (optional, for minification scripts)
 - **Git** (for version control)
 
 ### Setup Development Environment
@@ -45,7 +44,7 @@ All commits are automatically checked for:
 - **CSS**: Stylelint (Standard config)
 - **HTML**: HTMLHint validation
 - **Markdown**: Markdownlint
-- **Python**: Black formatting + Flake8 linting
+- **Go**: golangci-lint, go fmt, go vet, go mod tidy
 - **General**: Trailing whitespace, file endings, merge conflicts
 
 ### Manual Code Quality Checks
@@ -56,6 +55,9 @@ pnpm lint
 
 # Fix auto-fixable issues
 pnpm lint:fix
+
+# Format Go code
+pnpm format:go
 
 # Validate everything (linting + JSON)
 pnpm validate
@@ -85,6 +87,15 @@ pnpm validate
 - Include **alt** attributes for images
 - Use semantic HTML elements
 - Validate with HTMLHint
+
+#### Go
+
+- Use **tabs** for indentation (gofmt standard)
+- Follow **Effective Go** guidelines
+- Use **gofmt** and **goimports** for formatting
+- Handle all errors explicitly
+- Write clear, idiomatic Go code
+- Run **golangci-lint** before committing
 
 ## Making Changes
 

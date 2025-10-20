@@ -13,8 +13,8 @@ import (
 )
 
 const (
-	PORT    = 8000
-	DB_FILE = "db.json"
+	PORT   = 8000
+	DBFile = "db.json"
 )
 
 // Database structure
@@ -130,7 +130,11 @@ func handleUpdateBand(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to read request body", http.StatusBadRequest)
 		return
 	}
-	defer r.Body.Close()
+	defer func() {
+		if err := r.Body.Close(); err != nil {
+			log.Printf("Failed to close request body: %v", err)
+		}
+	}()
 
 	// Parse updated band data
 	var updatedBand Band
@@ -140,7 +144,7 @@ func handleUpdateBand(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Read current database
-	dbData, err := os.ReadFile(DB_FILE)
+	dbData, err := os.ReadFile(DBFile)
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Failed to read database: %v", err), http.StatusInternalServerError)
 		return
@@ -177,17 +181,19 @@ func handleUpdateBand(w http.ResponseWriter, r *http.Request) {
 	// Add trailing newline
 	updatedData = append(updatedData, '\n')
 
-	if err := os.WriteFile(DB_FILE, updatedData, 0644); err != nil {
+	if err := os.WriteFile(DBFile, updatedData, 0600); err != nil {
 		http.Error(w, fmt.Sprintf("Failed to write database: %v", err), http.StatusInternalServerError)
 		return
 	}
 
 	// Send success response
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(UpdateBandResponse{
+	if err := json.NewEncoder(w).Encode(UpdateBandResponse{
 		Success: true,
 		Message: "Band updated",
-	})
+	}); err != nil {
+		log.Printf("Failed to encode response: %v", err)
+	}
 
 	log.Printf("✅ Updated band: %s (%s)", updatedBand.Name, bandKey)
 }
@@ -200,7 +206,11 @@ func handleValidateURL(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to read request body", http.StatusBadRequest)
 		return
 	}
-	defer r.Body.Close()
+	defer func() {
+		if err := r.Body.Close(); err != nil {
+			log.Printf("Failed to close request body: %v", err)
+		}
+	}()
 
 	// Parse request
 	var req ValidateURLRequest
@@ -219,7 +229,7 @@ func handleValidateURL(w http.ResponseWriter, r *http.Request) {
 
 	client := &http.Client{
 		Timeout: 5 * time.Second,
-		CheckRedirect: func(req *http.Request, via []*http.Request) error {
+		CheckRedirect: func(_ *http.Request, _ []*http.Request) error {
 			// Allow redirects
 			return nil
 		},
@@ -231,7 +241,9 @@ func handleValidateURL(w http.ResponseWriter, r *http.Request) {
 		response.Status = 0
 		response.Error = fmt.Sprintf("Invalid URL: %v", err)
 		w.Header().Set("Content-Type", "application/json")
-		json.NewEncoder(w).Encode(response)
+		if err := json.NewEncoder(w).Encode(response); err != nil {
+			log.Printf("Failed to encode response: %v", err)
+		}
 		log.Printf("❌ Invalid URL: %s (%v)", req.URL, err)
 		return
 	}
@@ -244,17 +256,25 @@ func handleValidateURL(w http.ResponseWriter, r *http.Request) {
 		response.Status = 0
 		response.Error = err.Error()
 		w.Header().Set("Content-Type", "application/json")
-		json.NewEncoder(w).Encode(response)
+		if err := json.NewEncoder(w).Encode(response); err != nil {
+			log.Printf("Failed to encode response: %v", err)
+		}
 		log.Printf("❌ URL unreachable: %s (%v)", req.URL, err)
 		return
 	}
-	defer resp.Body.Close()
+	defer func() {
+		if err := resp.Body.Close(); err != nil {
+			log.Printf("Failed to close response body: %v", err)
+		}
+	}()
 
 	response.Status = resp.StatusCode
 	response.Valid = resp.StatusCode >= 200 && resp.StatusCode < 400
 
 	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(response)
+	if err := json.NewEncoder(w).Encode(response); err != nil {
+		log.Printf("Failed to encode response: %v", err)
+	}
 
 	if response.Valid {
 		log.Printf("✅ URL validated: %s (status: %d)", req.URL, resp.StatusCode)
@@ -308,11 +328,20 @@ func main() {
 	fmt.Printf("   Map:      http://localhost:%d/map.html\n", PORT)
 	fmt.Printf("   Admin:    http://localhost:%d/admin/\n", PORT)
 	fmt.Println("   (Clean URLs handled by client-side router)")
-	fmt.Println("⏹️  Press Ctrl+C to stop the server\n")
+	fmt.Println("⏹️  Press Ctrl+C to stop the server")
+	fmt.Println()
 
-	// Start server
+	// Start server with timeouts
 	addr := fmt.Sprintf(":%d", PORT)
-	if err := http.ListenAndServe(addr, handler); err != nil {
+	server := &http.Server{
+		Addr:           addr,
+		Handler:        handler,
+		ReadTimeout:    10 * time.Second,
+		WriteTimeout:   10 * time.Second,
+		IdleTimeout:    60 * time.Second,
+		MaxHeaderBytes: 1 << 20, // 1 MB
+	}
+	if err := server.ListenAndServe(); err != nil {
 		log.Fatal(err)
 	}
 }
