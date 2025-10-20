@@ -19,14 +19,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Set up Python
-        uses: ./.github/actions/python-setup
+      - name: Set up Go
+        uses: ./.github/actions/go-setup
 
       - name: Run Festival Information Updater
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python scripts/festival_updater.py
+          go run scripts/festival_updater/festival_updater.go
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
