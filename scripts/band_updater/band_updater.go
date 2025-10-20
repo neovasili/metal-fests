@@ -108,6 +108,7 @@ type UpdateStats struct {
 }
 
 func loadPromptFile(filename string) (string, error) {
+	// #nosec G304 - filename comes from validated command-line arguments
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return "", err
@@ -116,6 +117,7 @@ func loadPromptFile(filename string) (string, error) {
 }
 
 func loadDatabase(filename string) (*Database, error) {
+	// #nosec G304 - filename comes from validated command-line arguments
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
@@ -135,7 +137,7 @@ func saveDatabase(filename string, db *Database) error {
 		return err
 	}
 
-	return os.WriteFile(filename, data, 0644)
+	return os.WriteFile(filename, data, 0600)
 }
 
 func askOpenAI(apiKey, systemPrompt, userPrompt string) (*OpenAIResponse, error) {
@@ -175,7 +177,11 @@ func askOpenAI(apiKey, systemPrompt, userPrompt string) (*OpenAIResponse, error)
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() {
+		if err := resp.Body.Close(); err != nil {
+			fmt.Fprintf(os.Stderr, "Failed to close response body: %v\n", err)
+		}
+	}()
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
@@ -277,46 +283,46 @@ func searchBandInfo(apiKey, promptTemplate, bandName string, dryRun bool) (*Band
 	return &result, resp.Usage.TotalTokens, nil
 }
 
-func mergeBandData(existing *Band, new *BandSearchResult) bool {
-	updated := false
+func mergeBandData(existing *Band, updated *BandSearchResult) bool {
+	hasChanges := false
 
-	if existing.Country == "" && new.Country != "" {
-		existing.Country = new.Country
-		updated = true
+	if existing.Country == "" && updated.Country != "" {
+		existing.Country = updated.Country
+		hasChanges = true
 	}
-	if existing.Description == "" && new.Description != "" {
-		existing.Description = new.Description
-		updated = true
+	if existing.Description == "" && updated.Description != "" {
+		existing.Description = updated.Description
+		hasChanges = true
 	}
-	if existing.HeadlineImage == "" && new.HeadlineImage != "" {
-		existing.HeadlineImage = new.HeadlineImage
-		updated = true
+	if existing.HeadlineImage == "" && updated.HeadlineImage != "" {
+		existing.HeadlineImage = updated.HeadlineImage
+		hasChanges = true
 	}
-	if existing.Logo == "" && new.Logo != "" {
-		existing.Logo = new.Logo
-		updated = true
+	if existing.Logo == "" && updated.Logo != "" {
+		existing.Logo = updated.Logo
+		hasChanges = true
 	}
-	if existing.Website == "" && new.Website != "" {
-		existing.Website = new.Website
-		updated = true
+	if existing.Website == "" && updated.Website != "" {
+		existing.Website = updated.Website
+		hasChanges = true
 	}
-	if existing.Spotify == "" && new.Spotify != "" {
-		existing.Spotify = new.Spotify
-		updated = true
+	if existing.Spotify == "" && updated.Spotify != "" {
+		existing.Spotify = updated.Spotify
+		hasChanges = true
 	}
-	if len(existing.Genres) == 0 && len(new.Genres) > 0 {
-		existing.Genres = new.Genres
-		updated = true
+	if len(existing.Genres) == 0 && len(updated.Genres) > 0 {
+		existing.Genres = updated.Genres
+		hasChanges = true
 	}
-	if len(existing.Members) == 0 && len(new.Members) > 0 {
-		existing.Members = new.Members
-		updated = true
+	if len(existing.Members) == 0 && len(updated.Members) > 0 {
+		existing.Members = updated.Members
+		hasChanges = true
 	}
 
-	return updated
+	return hasChanges
 }
 
-func addMissingBands(apiKey, promptTemplate string, db *Database, dryRun bool) (*UpdateStats, error) {
+func addMissingBands(apiKey, promptTemplate string, db *Database, dryRun bool) *UpdateStats {
 	stats := &UpdateStats{}
 
 	// Collect all bands from festivals
@@ -394,7 +400,7 @@ func addMissingBands(apiKey, promptTemplate string, db *Database, dryRun bool) (
 		fmt.Printf("  📊 Tokens used: %d\n", tokens)
 	}
 
-	return stats, nil
+	return stats
 }
 
 func generateSummary(stats *UpdateStats) string {
@@ -462,11 +468,7 @@ func main() {
 	}
 
 	// Add missing bands
-	stats, err := addMissingBands(apiKey, promptTemplate, db, dryRun)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error adding bands: %v\n", err)
-		os.Exit(1)
-	}
+	stats := addMissingBands(apiKey, promptTemplate, db, dryRun)
 
 	if !dryRun {
 		// Save updated database
@@ -477,7 +479,7 @@ func main() {
 
 		// Generate summary
 		summary := generateSummary(stats)
-		if err := os.WriteFile("band_update_summary.md", []byte(summary), 0644); err != nil {
+		if err := os.WriteFile("band_update_summary.md", []byte(summary), 0600); err != nil {
 			fmt.Fprintf(os.Stderr, "Error writing summary: %v\n", err)
 			os.Exit(1)
 		}

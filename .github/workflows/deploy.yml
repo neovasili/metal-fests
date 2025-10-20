@@ -44,8 +44,8 @@ jobs:
       - name: Setup node
         uses: ./.github/actions/node-setup
 
-      - name: Set up Python
-        uses: ./.github/actions/python-setup
+      - name: Set up Go
+        uses: ./.github/actions/go-setup
 
       - name: (Setup) AWS Credentials
         uses: aws-actions/configure-aws-credentials@v5.1.0

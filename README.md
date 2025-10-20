@@ -77,9 +77,8 @@ Then open your browser and go to: <http://localhost:8000>
 
 ### Prerequisites
 
-- **Go 1.21+** (for running the local server and validation)
+- **Go 1.24+** (for running the local server, validation, and build tools)
 - **Node.js 18+** and **pnpm 8+** (for linting and development tools)
-- **Python 3.7+** (optional, for minification scripts)
 - **Git** (for version control and hooks)
 
 ### Quick Setup
@@ -108,10 +107,12 @@ pnpm lint:js             # Lint JavaScript files
 pnpm lint:css            # Lint CSS files
 pnpm lint:html           # Lint HTML files
 pnpm lint:md             # Lint Markdown files
+pnpm lint:go             # Lint Go files
 
 # Fix linting issues automatically
 pnpm lint:fix            # Fix all auto-fixable issues
 pnpm format              # Alias for lint:fix
+pnpm format:go           # Format Go code
 
 # Validation
 pnpm validate            # Run linters + JSON validation
@@ -125,7 +126,7 @@ This project uses [pre-commit](https://pre-commit.com/) hooks to ensure code qua
 - **CSS**: Stylelint with Standard config
 - **HTML**: HTMLHint validation
 - **Markdown**: Markdownlint
-- **Python**: Black formatting + Flake8 linting
+- **Go**: golangci-lint, go fmt, go vet, go mod tidy
 - **General**: Trailing whitespace, EOF newlines, merge conflicts
 
 Install hooks manually:
@@ -143,6 +144,7 @@ pre-commit install
 | **Stylelint** | CSS linting | `.stylelintrc.json` |
 | **HTMLHint** | HTML validation | `.htmlhintrc` |
 | **Markdownlint** | Markdown linting | `.markdownlint.yaml` |
+| **golangci-lint** | Go linting | `.golangci.yml` |
 
 ### Continuous Integration
 
