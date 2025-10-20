@@ -26,6 +26,8 @@ class FestivalMap {
       this.extractAllBands();
       this.createFilterControls();
       this.setupModalEventListeners();
+      // Pre-load the festival card template once
+      await FestivalCard.loadTemplate();
       this.initializeMap();
       await this.bandManager.init();
     } catch (error) {
@@ -258,114 +260,39 @@ class FestivalMap {
     });
   }
 
-  showFestivalModal(festival) {
-    // Create festival card content
-    const cardHTML = this.createFestivalCardHTML(festival);
-    this.modalContent.innerHTML = cardHTML;
+  async showFestivalModal(festival) {
+    // Clear previous content
+    this.modalContent.innerHTML = "";
 
-    // Add favorite functionality to the modal card
-    this.addFavoriteFeatureToModal(festival);
+    // Render festival card using the component
+    const card = await FestivalCard.render(festival, {
+      bandManager: this.bandManager,
+      favoritesManager: this.favoritesManager,
+      wrapInDiv: false, // Don't wrap, we want the card directly
+    });
+
+    // Listen for favorite toggle events to refresh filters
+    card.addEventListener("favoriteToggled", () => {
+      this.applyFilters();
+    });
+
+    // Apply band highlighting if bands filter is active
+    const selectedBands = this.bandsFilterManager.getSelectedBands();
+    if (selectedBands.length > 0) {
+      const bandsList = card.querySelector(".bands-list");
+      if (bandsList) {
+        UIUtils.highlightSelectedBands(bandsList, selectedBands);
+      }
+    }
+
+    // Add card to modal
+    this.modalContent.appendChild(card);
 
     // Show modal
     this.modal.style.display = "flex";
 
     // Add keyboard navigation
     document.addEventListener("keydown", this.handleModalKeydown.bind(this));
-  }
-
-  createFestivalCardHTML(festival) {
-    const startDate = new Date(festival.dates.start);
-    const endDate = new Date(festival.dates.end);
-    const formattedDates = this.formatDateRange(startDate, endDate);
-    const isFavorite = this.favoritesManager.isFavorite(festival.name);
-    const selectedBands = this.bandsFilterManager.getSelectedBands();
-
-    // Create band tags with clickable links for bands with complete info
-    const bandTagsHTML =
-      festival.bands.length === 0
-        ? `<span class="band-tag">Coming soon...</span>`
-        : festival.bands
-            .map((band) => {
-              const hasCompleteInfo = this.bandManager.hasCompleteInfo(band);
-              const bandData = this.bandManager.getBandByName(band);
-              const clickableClass = hasCompleteInfo ? " clickable" : "";
-              const dataKey = hasCompleteInfo && bandData ? ` data-band-key="${bandData.key}"` : "";
-              return `<span class="band-tag${clickableClass}"${dataKey}>${band}</span>`;
-            })
-            .join("");
-
-    return `
-            <div class="festival-card">
-                <div class="festival-header">
-                    <img src="${festival.poster}" alt="${festival.name} Poster" class="festival-poster"
-                         onerror="this.src='img/placeholder.jpg'">
-                    <div class="favorite-container"></div>
-                </div>
-                <h2 class="festival-name">${festival.name}</h2>
-                <div class="festival-dates">${formattedDates}</div>
-                <div class="festival-location">${festival.location}</div>
-                <div class="festival-bands">
-                    <h4>Featured Bands:</h4>
-                    <div class="bands-list">
-                        ${bandTagsHTML}
-                    </div>
-                </div>
-                <div class="festival-info">
-                    <div class="ticket-price">From €${festival.ticketPrice}</div>
-                    <a href="${festival.website}" target="_blank" rel="noopener noreferrer" class="festival-website">
-                        Visit Website
-                    </a>
-                </div>
-            </div>
-        `;
-  }
-
-  addFavoriteFeatureToModal(festival) {
-    const favoriteContainer = this.modalContent.querySelector(".favorite-container");
-    const isFavorite = this.favoritesManager.isFavorite(festival.name);
-
-    // Create star icon
-    const starIcon = UIUtils.createStarIcon(isFavorite);
-
-    // Add event listeners
-    UIUtils.addStarEventListeners(starIcon, () => {
-      const newStatus = this.favoritesManager.toggleFavorite(festival.name);
-      UIUtils.updateStarIcon(starIcon, newStatus);
-
-      // Refresh filters to reflect changes
-      this.applyFilters();
-
-      // Show notification
-      const message = newStatus ? `${festival.name} added to favorites` : `${festival.name} removed from favorites`;
-      UIUtils.showNotification(message, "success");
-    });
-
-    favoriteContainer.appendChild(starIcon);
-
-    // Apply band highlighting if bands filter is active
-    const selectedBands = this.bandsFilterManager.getSelectedBands();
-    if (selectedBands.length > 0) {
-      const bandsList = this.modalContent.querySelector(".bands-list");
-      if (bandsList) {
-        UIUtils.highlightSelectedBands(bandsList, selectedBands);
-      }
-    }
-
-    // Add click handlers for clickable band tags
-    this.addBandClickHandlers();
-  }
-
-  addBandClickHandlers() {
-    const clickableBands = this.modalContent.querySelectorAll(".band-tag.clickable");
-    clickableBands.forEach((bandTag) => {
-      bandTag.addEventListener("click", (e) => {
-        e.stopPropagation();
-        const bandKey = bandTag.getAttribute("data-band-key");
-        if (bandKey) {
-          this.bandManager.showBand(bandKey, false);
-        }
-      });
-    });
   }
 
   setupModalEventListeners() {
@@ -391,20 +318,6 @@ class FestivalMap {
   handleModalKeydown(e) {
     if (e.key === "Escape") {
       this.closeModal();
-    }
-  }
-
-  formatDateRange(startDate, endDate) {
-    const options = { month: "short", day: "numeric" };
-
-    if (startDate.getTime() === endDate.getTime()) {
-      return startDate.toLocaleDateString("en-US", options);
-    } else if (startDate.getMonth() === endDate.getMonth()) {
-      return `${startDate.toLocaleDateString("en-US", {
-        day: "numeric",
-      })}-${endDate.toLocaleDateString("en-US", options)}`;
-    } else {
-      return `${startDate.toLocaleDateString("en-US", options)} - ${endDate.toLocaleDateString("en-US", options)}`;
     }
   }
 

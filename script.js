@@ -22,7 +22,9 @@ class FestivalTimeline {
       this.extractAllBands();
       this.createFilterButton();
       this.createBandsFilter();
-      this.renderTimeline();
+      // Pre-load the festival card template once
+      await FestivalCard.loadTemplate();
+      await this.renderTimeline();
       await this.bandManager.init();
     } catch (error) {
       console.error("Error initializing timeline:", error);
@@ -167,11 +169,12 @@ class FestivalTimeline {
     });
   }
 
-  renderTimeline() {
+  async renderTimeline() {
     this.timelineContent.innerHTML = "";
     let currentMonth = "";
 
-    this.festivals.forEach((festival, index) => {
+    for (let index = 0; index < this.festivals.length; index++) {
+      const festival = this.festivals[index];
       const festivalDate = new Date(festival.dates.start);
       const monthYear = festivalDate.toLocaleDateString("en-US", {
         month: "long",
@@ -184,9 +187,9 @@ class FestivalTimeline {
         this.addMonthMarker(monthYear);
       }
 
-      // Create festival card
-      this.createFestivalCard(festival, index);
-    });
+      // Create festival card using the component
+      await this.createFestivalCard(festival, index);
+    }
 
     // Apply filter after rendering all cards
     this.applyFilter();
@@ -199,109 +202,19 @@ class FestivalTimeline {
     this.timelineContent.appendChild(monthMarker);
   }
 
-  createFestivalCard(festival, index) {
-    const card = document.createElement("div");
-    card.className = `festival-card ${index % 2 === 0 ? "left" : "right"}`;
+  async createFestivalCard(festival, index) {
+    const card = await FestivalCard.render(festival, {
+      bandManager: this.bandManager,
+      favoritesManager: this.favoritesManager,
+      index: index,
+    });
 
-    const startDate = new Date(festival.dates.start);
-    const endDate = new Date(festival.dates.end);
-    const formattedDates = this.formatDateRange(startDate, endDate);
-
-    // Check if festival is favorited
-    const isFavorite = this.favoritesManager.isFavorite(festival.name);
-
-    // Create band tags with clickable links for bands with complete info
-    const bandTagsHTML =
-      festival.bands.length === 0
-        ? `<span class="band-tag">Coming soon...</span>`
-        : festival.bands
-            .map((band) => {
-              const hasCompleteInfo = this.bandManager.hasCompleteInfo(band);
-              const bandData = this.bandManager.getBandByName(band);
-              const clickableClass = hasCompleteInfo ? " clickable" : "";
-              const dataKey = hasCompleteInfo && bandData ? ` data-band-key="${bandData.key}"` : "";
-              return `<span class="band-tag${clickableClass}"${dataKey}>${band}</span>`;
-            })
-            .join("");
-
-    card.innerHTML = `
-            <div class="festival-header">
-                <img src="${festival.poster}" alt="${festival.name} Poster" class="festival-poster"
-                     onerror="this.src='img/placeholder.jpg'">
-                <div class="favorite-container"></div>
-            </div>
-            <h2 class="festival-name">${festival.name}</h2>
-            <div class="festival-dates">${formattedDates}</div>
-            <div class="festival-location">${festival.location}</div>
-            <div class="festival-bands">
-                <h4>Featured Bands:</h4>
-                <div class="bands-list">
-                    ${bandTagsHTML}
-                </div>
-            </div>
-            <div class="festival-info">
-                <div class="ticket-price">From €${festival.ticketPrice}</div>
-                <a href="${festival.website}" target="_blank" rel="noopener noreferrer" class="festival-website">
-                    Visit Website
-                </a>
-            </div>
-        `;
-
-    // Add star icon and functionality
-    this.addFavoriteFeature(card, festival);
-
-    // Add click handlers for clickable band tags
-    this.addBandClickHandlers(card);
+    // Listen for favorite toggle events to refresh filter
+    card.addEventListener("favoriteToggled", () => {
+      this.applyFilter();
+    });
 
     this.timelineContent.appendChild(card);
-  }
-
-  addBandClickHandlers(card) {
-    const clickableBands = card.querySelectorAll(".band-tag.clickable");
-    clickableBands.forEach((bandTag) => {
-      bandTag.addEventListener("click", (e) => {
-        e.stopPropagation();
-        const bandKey = bandTag.getAttribute("data-band-key");
-        if (bandKey) {
-          this.bandManager.showBand(bandKey, false);
-        }
-      });
-    });
-  }
-
-  addFavoriteFeature(card, festival) {
-    const favoriteContainer = card.querySelector(".favorite-container");
-    const isFavorite = this.favoritesManager.isFavorite(festival.name);
-
-    // Create star icon
-    const starIcon = UIUtils.createStarIcon(isFavorite);
-
-    // Add event listeners
-    UIUtils.addStarEventListeners(starIcon, () => {
-      const newStatus = this.favoritesManager.toggleFavorite(festival.name);
-      UIUtils.updateStarIcon(starIcon, newStatus);
-
-      // Refresh filter to reflect changes
-      this.applyFilter();
-
-      // Show notification
-      const message = newStatus ? `${festival.name} added to favorites` : `${festival.name} removed from favorites`;
-      UIUtils.showNotification(message, "success");
-    });
-
-    favoriteContainer.appendChild(starIcon);
-  }
-
-  formatDateRange(startDate, endDate) {
-    const options = { month: "short", day: "numeric" };
-
-    if (startDate.getTime() === endDate.getTime()) {
-      return startDate.toLocaleDateString("en-US", options);
-    } else if (startDate.getMonth() === endDate.getMonth()) {
-      return `${startDate.toLocaleDateString("en-US", { day: "numeric" })}-${endDate.toLocaleDateString("en-US", options)}`;
-    } else {
-      return `${startDate.toLocaleDateString("en-US", options)} - ${endDate.toLocaleDateString("en-US", options)}`;
-    }
   }
 
   showLoading(show) {
