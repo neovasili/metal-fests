@@ -59,6 +59,42 @@ jobs:
           # Validate JSON files
           pnpm validate
 
+  update-festivals-check:
+    name: Check Festival Updater
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Setup node
+        uses: ./.github/actions/node-setup
+
+      - name: Set up Go
+        uses: ./.github/actions/go-setup
+
+      - name: Run festivals updater in dry run mode
+        run: |
+          # Run festival updater in dry run mode
+          go run scripts/festival_updater/festival_updater.go --dry-run
+
+  update-bands-check:
+    name: Check Bands Updater
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Setup node
+        uses: ./.github/actions/node-setup
+
+      - name: Set up Go
+        uses: ./.github/actions/go-setup
+
+      - name: Run bands updater in dry run mode
+        run: |
+          # Run bands updater in dry run mode
+          go run scripts/band_updater/band_updater.go --dry-run
+
   security:
     name: Security Scan
     runs-on: ubuntu-latest
