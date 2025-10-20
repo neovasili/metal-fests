@@ -66,9 +66,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Setup node
-        uses: ./.github/actions/node-setup
-
       - name: Set up Go
         uses: ./.github/actions/go-setup
 
@@ -83,9 +80,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
-
-      - name: Setup node
-        uses: ./.github/actions/node-setup
 
       - name: Set up Go
         uses: ./.github/actions/go-setup
