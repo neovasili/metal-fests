@@ -23,7 +23,13 @@ func minifyHTML(content string) string {
 		content = content + comment
 	}
 
-	// Remove whitespace between tags
+	// First, collapse whitespace within tag attributes to single spaces
+	// This handles multi-line attributes
+	content = regexp.MustCompile(`(<[a-zA-Z][a-zA-Z0-9]*)\s+`).ReplaceAllString(content, "$1 ")
+	content = regexp.MustCompile(`\s+([a-zA-Z][a-zA-Z0-9\-]*=)`).ReplaceAllString(content, " $1")
+	content = regexp.MustCompile(`\s+(/?>)`).ReplaceAllString(content, "$1")
+
+	// Normalize whitespace between tags
 	content = regexp.MustCompile(`>\s+<`).ReplaceAllString(content, "><")
 
 	// Remove leading/trailing whitespace on lines
@@ -33,13 +39,8 @@ func minifyHTML(content string) string {
 	}
 	content = strings.Join(lines, "")
 
-	// Collapse multiple spaces into one (but preserve spaces in text content)
+	// Collapse multiple spaces into one
 	content = regexp.MustCompile(`\s{2,}`).ReplaceAllString(content, " ")
-
-	// Remove quotes around attribute values where safe
-	// (keeping them for values with spaces or special characters)
-	content = regexp.MustCompile(`=\s*"([a-zA-Z0-9\-_]+)"`).ReplaceAllString(content, `=$1`)
-	content = regexp.MustCompile(`=\s*'([a-zA-Z0-9\-_]+)'`).ReplaceAllString(content, `=$1`)
 
 	return strings.TrimSpace(content)
 }

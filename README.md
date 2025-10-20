@@ -24,12 +24,28 @@ Due to browser CORS restrictions, you cannot open `index.html` directly. You nee
 
 ### Option 1: Using the included Go server (Recommended)
 
-```bash
-# Navigate to the project directory
-cd /Users/neovasili/workspace/personal/metal-fests
+**Development Mode** (serves source files):
 
-# Run the server
+```bash
+# Using npm/pnpm script
+pnpm start
+# or
+npm run dev
+
+# Or run directly
 go run server.go
+```
+
+**Production Mode** (serves minified build files):
+
+```bash
+# Build the project first
+pnpm build
+
+# Serve the production build
+pnpm start:prod
+# or
+go run server.go -build
 ```
 
 Or build and run the binary:
@@ -38,11 +54,19 @@ Or build and run the binary:
 # Build the server
 go build -o metal-fests-server server.go
 
-# Run the server
+# Run in development mode
 ./metal-fests-server
+
+# Run in production mode
+./metal-fests-server -build
 ```
 
 Then open your browser and go to: **<http://localhost:8000>**
+
+**Server Modes:**
+
+- **Development Mode** (default): Serves source files from the project root for easier debugging
+- **Production Mode** (`-build` flag): Serves minified files from the `build/` folder for testing the production build locally
 
 ### Option 2: Using Python's built-in server
 

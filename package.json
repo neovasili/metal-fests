@@ -5,10 +5,11 @@
   "main": "script.js",
   "scripts": {
     "start": "go run server.go",
+    "start:prod": "go run server.go -build",
     "lint": "pnpm lint:js && pnpm lint:css && pnpm lint:html && pnpm lint:md && pnpm lint:go",
-    "lint:js": "eslint \"**/*.js\" --max-warnings 0",
-    "lint:css": "stylelint \"**/*.css\"",
-    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:js": "eslint \"**/*.js\" --max-warnings 0 --ignore-pattern \"build/**\"",
+    "lint:css": "stylelint \"**/*.css\" --ignore-pattern \"**/build/**\"",
+    "lint:html": "htmlhint \"**/*.html\" --ignore \"**/build/**\"",
     "lint:md": "markdownlint \"**/*.md\" --config .markdownlint.yaml",
     "lint:go": "golangci-lint run --timeout=5m",
     "lint:fix": "pnpm lint:js --fix && pnpm lint:css --fix && pnpm lint:md --fix",
@@ -16,12 +17,12 @@
     "format:go": "gofmt -s -w . && goimports -w .",
     "validate": "go run scripts/validate_data/validate_data.go",
     "dev": "echo 'Starting development server...' && go run server.go",
-    "minify": "pnpm minify:html && pnpm minify:js && pnpm minify:css && pnpm minify:json",
+    "minify": "pnpm minify:html && pnpm minify:css && pnpm minify:json",
     "minify:html": "go run scripts/minify_html/minify_html.go",
     "minify:js": "go run scripts/minify_js/minify_js.go",
     "minify:css": "go run scripts/minify_css/minify_css.go",
     "minify:json": "go run scripts/minify_json/minify_json.go",
-    "build": "./scripts/build.sh && pnpm minify"
+    "build": "./scripts/build.sh"
   },
   "repository": {
     "type": "git",

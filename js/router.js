@@ -99,9 +99,16 @@ class ClientRouter {
     this.updateActiveNav(pageForNav);
 
     // If we're on a clean URL but not the right HTML file, redirect
+    // Only do this if we're NOT already on an HTML file (to prevent double loads)
     if (targetPage && !currentPath.endsWith(".html") && !shouldReplaceUrl) {
       const currentFile = window.location.pathname.split("/").pop() || "index.html";
       if (currentFile !== targetPage) {
+        // Prevent multiple redirects
+        if (window.__routerRedirecting) {
+          return;
+        }
+        window.__routerRedirecting = true;
+
         // For S3 deployment, we need to navigate to the actual HTML file
         // but maintain the clean URL in the browser
         window.history.replaceState({ page: targetPage, cleanUrl: currentPath }, "", currentPath);
