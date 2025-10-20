@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io"
 	"log"
@@ -73,13 +74,22 @@ type UpdateBandResponse struct {
 
 // CustomFileServer wraps http.FileServer to handle clean URLs
 type CustomFileServer struct {
-	fs http.Handler
+	fs      http.Handler
+	baseDir string
+	devMode bool
 }
 
 func (cfs *CustomFileServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	// In development mode, disable caching
+	if cfs.devMode {
+		w.Header().Set("Cache-Control", "no-cache, no-store, must-revalidate")
+		w.Header().Set("Pragma", "no-cache")
+		w.Header().Set("Expires", "0")
+	}
+
 	// Check if the file exists
 	path := r.URL.Path
-	fullPath := filepath.Join(".", path)
+	fullPath := filepath.Join(cfs.baseDir, path)
 
 	// If path doesn't exist and it's not an API request, serve error.html
 	if _, err := os.Stat(fullPath); os.IsNotExist(err) && !strings.HasPrefix(path, "/api/") {
@@ -296,15 +306,34 @@ func apiRouter(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	// Define command-line flags
+	useBuild := flag.Bool("build", false, "Serve from the build folder (production mode)")
+	flag.Parse()
+
+	// Determine which directory to serve
+	serveDir := "."
+	mode := "Development"
+	if *useBuild {
+		serveDir = "build"
+		mode = "Production"
+	}
+
 	// Get current directory
 	dir, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	// Create file server
+	// Verify the serve directory exists
+	if _, err := os.Stat(serveDir); os.IsNotExist(err) {
+		log.Fatalf("❌ Error: %s directory does not exist. Run 'pnpm build' first.", serveDir)
+	}
+
+	// Create file server with the appropriate directory
 	fileServer := &CustomFileServer{
-		fs: http.FileServer(http.Dir(".")),
+		fs:      http.FileServer(http.Dir(serveDir)),
+		baseDir: serveDir,
+		devMode: !*useBuild, // Disable caching in dev mode
 	}
 
 	// Setup routes
@@ -320,13 +349,19 @@ func main() {
 	handler := corsMiddleware(loggingMiddleware(mux))
 
 	// Print startup information
-	fmt.Println("🤘 Metal Festivals Timeline Server (Local Dev) 🤘")
+	fmt.Printf("🤘 Metal Festivals Timeline Server (%s Mode) 🤘\n", mode)
 	fmt.Printf("📡 Serving at: http://localhost:%d\n", PORT)
-	fmt.Printf("📁 Directory: %s\n", dir)
-	fmt.Println("🌐 For local development - access HTML files directly:")
+	fmt.Printf("📁 Base directory: %s\n", dir)
+	fmt.Printf("📂 Serving from: %s/\n", serveDir)
+	fmt.Println("🌐 Access the application:")
 	fmt.Printf("   Timeline: http://localhost:%d/index.html\n", PORT)
 	fmt.Printf("   Map:      http://localhost:%d/map.html\n", PORT)
 	fmt.Printf("   Admin:    http://localhost:%d/admin/\n", PORT)
+	if *useBuild {
+		fmt.Println("   ⚡ Serving minified production files")
+	} else {
+		fmt.Println("   🔧 Serving source files (dev mode)")
+	}
 	fmt.Println("   (Clean URLs handled by client-side router)")
 	fmt.Println("⏹️  Press Ctrl+C to stop the server")
 	fmt.Println()

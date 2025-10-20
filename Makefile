@@ -12,6 +12,7 @@ help:
 	@echo ""
 	@echo "Development:"
 	@echo "  make start     			- Start the Go development server"
+	@echo "  make start-prod			- Start the Go server with build folder"
 	@echo "  make dev       			- Alias for start (Go server)"
 	@echo "  make build-server		- Build the Go server binary"
 	@echo ""
@@ -42,6 +43,11 @@ setup: install
 start:
 	@echo "🚀 Starting Metal Festivals Timeline server (Go)..."
 	go run server.go
+
+# Start production server (with build folder)
+start-prod:
+	@echo "🚀 Starting Metal Festivals Timeline server (Production mode)..."
+	go run server.go -build
 
 dev: start
 

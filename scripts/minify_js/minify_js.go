@@ -12,81 +12,169 @@ const buildDir = "build"
 
 func minifyJS(content string) string {
 	var result strings.Builder
+	runes := []rune(content)
+	length := len(runes)
+
 	inString := false
 	stringChar := rune(0)
-	lastChar := rune(0)
-	lastNonSpace := rune(0)
+	inRegex := false
+	inSingleLineComment := false
+	inMultiLineComment := false
 
-	for i, char := range content {
-		// Handle strings
-		if (char == '"' || char == '\'' || char == '`') && lastChar != '\\' {
-			if !inString {
-				inString = true
-				stringChar = char
-			} else if char == stringChar {
-				inString = false
-				stringChar = 0
-			}
+	for i := 0; i < length; i++ {
+		char := runes[i]
+
+		// Handle escape sequences - but only if not already escaped
+		if i > 0 && runes[i-1] == '\\' && (i < 2 || runes[i-2] != '\\') {
 			result.WriteRune(char)
-			lastChar = char
-			lastNonSpace = char
 			continue
 		}
 
+		// Handle strings (double quotes, single quotes, template literals)
+		if !inRegex && !inSingleLineComment && !inMultiLineComment {
+			if char == '"' || char == '\'' || char == '`' {
+				if !inString {
+					inString = true
+					stringChar = char
+					result.WriteRune(char)
+					continue
+				} else if char == stringChar {
+					// Check if this closing quote is escaped
+					escapedCount := 0
+					for j := i - 1; j >= 0 && runes[j] == '\\'; j-- {
+						escapedCount++
+					}
+					// If odd number of backslashes, the quote is escaped
+					if escapedCount%2 == 1 {
+						result.WriteRune(char)
+						continue
+					}
+					inString = false
+					stringChar = 0
+					result.WriteRune(char)
+					continue
+				}
+			}
+		}
+
+		// Inside string - preserve everything
 		if inString {
 			result.WriteRune(char)
-			lastChar = char
 			continue
 		}
 
-		// Handle comments
-		if char == '/' && i+1 < len(content) {
-			nextChar := rune(content[i+1])
-			if nextChar == '/' {
-				// Single-line comment - skip until newline
-				for i++; i < len(content) && content[i] != '\n'; i++ {
-				}
-				lastChar = ' '
-				continue
-			} else if nextChar == '*' {
-				// Multi-line comment - skip until */
-				i++
-				for i++; i < len(content)-1; i++ {
-					if content[i] == '*' && content[i+1] == '/' {
-						i++
-						break
-					}
-				}
-				lastChar = ' '
+		// Handle single-line comments
+		if !inMultiLineComment && !inRegex && char == '/' && i+1 < length && runes[i+1] == '/' {
+			inSingleLineComment = true
+			i++ // Skip the second /
+			continue
+		}
+
+		if inSingleLineComment {
+			if char == '\n' {
+				inSingleLineComment = false
+				// Don't add the newline, just continue
+			}
+			continue
+		}
+
+		// Handle multi-line comments
+		if !inSingleLineComment && !inRegex && char == '/' && i+1 < length && runes[i+1] == '*' {
+			inMultiLineComment = true
+			i++ // Skip the *
+			continue
+		}
+
+		if inMultiLineComment {
+			if char == '*' && i+1 < length && runes[i+1] == '/' {
+				inMultiLineComment = false
+				i++ // Skip the /
+			}
+			continue
+		}
+
+		// Handle regex detection (basic)
+		// A regex likely follows: =, (, [, {, :, ;, !, &, |, ?, +, -, *, /, %, <, >, ^, ~, ,, return, throw
+		if !inRegex && char == '/' {
+			// Look back to determine if this could be a regex
+			prevNonSpace := getPrevNonSpace(&result)
+			if isRegexContext(prevNonSpace) {
+				inRegex = true
+				result.WriteRune(char)
 				continue
 			}
+		}
+
+		if inRegex {
+			result.WriteRune(char)
+			if char == '/' {
+				// End of regex - but handle flags (g, i, m, s, u, y)
+				inRegex = false
+				// Continue to include flags
+				for i+1 < length && isRegexFlag(runes[i+1]) {
+					i++
+					result.WriteRune(runes[i])
+				}
+			}
+			continue
 		}
 
 		// Handle whitespace
 		if unicode.IsSpace(char) {
-			// Keep space if it's between alphanumeric characters or certain operators
-			if lastNonSpace != 0 && i+1 < len(content) {
-				nextNonSpace := rune(0)
-				for j := i + 1; j < len(content); j++ {
-					if !unicode.IsSpace(rune(content[j])) {
-						nextNonSpace = rune(content[j])
-						break
-					}
-				}
-				if needsSpace(lastNonSpace, nextNonSpace) {
+			// Check if we need space between tokens
+			if result.Len() > 0 && i+1 < length {
+				prevChar := getLastChar(&result)
+				nextNonSpace := getNextNonSpace(runes, i)
+
+				if needsSpace(prevChar, nextNonSpace) {
 					result.WriteRune(' ')
 				}
 			}
-			lastChar = char
 			continue
 		}
 
+		// Regular character
 		result.WriteRune(char)
-		lastChar = char
-		lastNonSpace = char
 	}
 
 	return result.String()
+}
+
+func getPrevNonSpace(sb *strings.Builder) rune {
+	s := sb.String()
+	for i := len(s) - 1; i >= 0; i-- {
+		if !unicode.IsSpace(rune(s[i])) {
+			return rune(s[i])
+		}
+	}
+	return 0
+}
+
+func getLastChar(sb *strings.Builder) rune {
+	s := sb.String()
+	if len(s) == 0 {
+		return 0
+	}
+	return rune(s[len(s)-1])
+}
+
+func getNextNonSpace(runes []rune, start int) rune {
+	for i := start + 1; i < len(runes); i++ {
+		if !unicode.IsSpace(runes[i]) {
+			return runes[i]
+		}
+	}
+	return 0
+}
+
+func isRegexContext(prev rune) bool {
+	// Characters that typically precede a regex
+	regexPreceders := "=([{:;!&|?+-%<>^~,\n"
+	return strings.ContainsRune(regexPreceders, prev) || prev == 0
+}
+
+func isRegexFlag(r rune) bool {
+	return r == 'g' || r == 'i' || r == 'm' || r == 's' || r == 'u' || r == 'y'
 }
 
 func needsSpace(prev, next rune) bool {
@@ -94,16 +182,40 @@ func needsSpace(prev, next rune) bool {
 		return false
 	}
 
-	// Need space between alphanumeric characters
-	if (unicode.IsLetter(prev) || unicode.IsDigit(prev) || prev == '_' || prev == '$') &&
-		(unicode.IsLetter(next) || unicode.IsDigit(next) || next == '_' || next == '$') {
+	// Need space between alphanumeric characters or identifiers
+	isIdentChar := func(r rune) bool {
+		return unicode.IsLetter(r) || unicode.IsDigit(r) || r == '_' || r == '$'
+	}
+
+	if isIdentChar(prev) && isIdentChar(next) {
 		return true
 	}
 
-	// Need space between certain operators and keywords
-	operators := "+-*/%<>=!&|"
-	if strings.ContainsRune(operators, prev) && strings.ContainsRune(operators, next) {
+	// Need space between certain operator combinations to avoid ambiguity
+	// Examples: + +, - -, < <, > >, & &, | |, = =
+	operatorPairs := map[string]bool{
+		"++": true, "--": true, "<<": true, ">>": true,
+		"&&": true, "||": true, "==": true, "!=": true,
+		"<=": true, ">=": true, "**": true,
+	}
+
+	pair := string([]rune{prev, next})
+	if operatorPairs[pair] {
+		return false // These are valid operators, don't separate
+	}
+
+	// Space needed between single operators that could combine
+	singleOps := "+-*/%<>=!&|"
+	if strings.ContainsRune(singleOps, prev) && strings.ContainsRune(singleOps, next) {
 		return true
+	}
+
+	// Space needed after keywords
+	keywords := []string{"return", "throw", "new", "delete", "typeof", "void", "in", "of", "instanceof"}
+	for _, keyword := range keywords {
+		if prev == rune(keyword[len(keyword)-1]) && isIdentChar(next) {
+			return true
+		}
 	}
 
 	return false
