@@ -19,20 +19,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Set up Python
-        uses: ./.github/actions/python-setup
+      - name: Set up Go
+        uses: ./.github/actions/go-setup
 
       - name: Run Bands Information Updater
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python scripts/band_updater.py
+          go run scripts/band_updater/band_updater.go
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "chore: 🎸 Update festival information (automated)"
+          commit-message: "chore: 🎸 Update bands information (automated)"
           title: "chore: 🤖 Automated Bands Information Update - ${{ github.run_number }}"
           body-path: band_update_summary.md
           branch: automated-bands-update-${{ github.run_number }}
