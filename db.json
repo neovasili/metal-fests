@@ -947,6 +947,32 @@
         "Captain Black Beard"
       ],
       "ticketPrice": 999
+    },
+    {
+      "name": "Dynamo Metalfest 2026",
+      "dates": {
+        "start": "2026-08-14",
+        "end": "2026-08-16"
+      },
+      "location": "Eindhoven, Netherlands",
+      "coordinates": {
+        "lat": 51.4416,
+        "lng": 5.4697
+      },
+      "poster": "https://dynamo-metalfest.nl/wp-content/uploads/2025/08/LOGO.png",
+      "website": "https://dynamo-metalfest.nl/",
+      "bands": [
+        "Godsmack",
+        "Lamb of God",
+        "In Flames",
+        "Testament",
+        "Destruction",
+        "Overkill",
+        "Death Angel",
+        "200 Stab Wounds",
+        "Urne"
+      ],
+      "ticketPrice": 129
     }
   ],
   "bands": [
