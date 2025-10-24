@@ -206,7 +206,6 @@ class FestivalTimeline {
     const card = await FestivalCard.render(festival, {
       bandManager: this.bandManager,
       favoritesManager: this.favoritesManager,
-      index: index,
     });
 
     // Listen for favorite toggle events to refresh filter

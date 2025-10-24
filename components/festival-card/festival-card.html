@@ -7,32 +7,47 @@
   </head>
   <body>
     <div class="festival-card">
-      <div class="festival-header">
-        <img
-          src="{{poster}}"
-          alt="{{name}} Poster"
-          class="festival-poster"
-          onerror="this.src='img/placeholder.jpg'"
-        />
-        <div class="favorite-container"></div>
-      </div>
-      <h2 class="festival-name">{{name}}</h2>
-      <div class="festival-dates">{{dates}}</div>
-      <div class="festival-location">{{location}}</div>
-      <div class="festival-bands">
-        <h4>Featured Bands:</h4>
-        <div class="bands-list">{{bands}}</div>
-      </div>
-      <div class="festival-info">
-        <div class="ticket-price">{{ticketPrice}}</div>
-        <a
-          href="{{website}}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="festival-website"
-        >
-          Visit Website
-        </a>
+      <div class="festival-card-main">
+        <div class="festival-poster-column">
+          <img
+            src="{{poster}}"
+            alt="{{name}} Poster"
+            class="festival-poster"
+            onerror="this.src='img/placeholder.jpg'"
+          />
+        </div>
+        <div class="festival-content-column">
+          <div class="festival-header-actions">
+            <a
+              href="{{website}}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="festival-website"
+            >
+              Visit Website
+            </a>
+            <div class="favorite-container"></div>
+          </div>
+          <h2 class="festival-name">
+            <a
+              href="{{website}}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="festival-name-link"
+            >
+              {{name}}
+            </a>
+          </h2>
+          <div class="festival-date-location">
+            <div class="festival-dates">{{dates}}</div>
+            <div class="festival-location">{{location}}</div>
+          </div>
+          <div class="ticket-price">{{ticketPrice}}</div>
+          <div class="festival-bands">
+            <h4>Featured Bands:</h4>
+            <div class="bands-list">{{bands}}</div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

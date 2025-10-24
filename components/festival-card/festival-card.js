@@ -82,12 +82,11 @@ class FestivalCard {
    * @param {Object} options - Rendering options
    * @param {Object} options.bandManager - Band manager instance
    * @param {Object} options.favoritesManager - Favorites manager instance
-   * @param {number} [options.index] - Card index for timeline view (determines left/right position)
    * @param {boolean} [options.wrapInDiv=false] - Whether to wrap in an outer div (for map view)
    * @returns {Promise<HTMLElement>} The rendered card element
    */
   static async render(festival, options = {}) {
-    const { bandManager, favoritesManager, index, wrapInDiv = false } = options;
+    const { bandManager, favoritesManager, wrapInDiv = false } = options;
 
     // Load template
     const template = await this.loadTemplate();
@@ -130,11 +129,6 @@ class FestivalCard {
         this.addBandClickHandlers(card, bandManager);
       }
       return wrapper;
-    }
-
-    // Add positioning class for timeline view
-    if (index !== undefined) {
-      card.classList.add(index % 2 === 0 ? "left" : "right");
     }
 
     // Add favorite feature

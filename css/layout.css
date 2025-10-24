@@ -177,21 +177,10 @@ main {
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   min-height: calc(100vh - 120px); /* Ensure enough height to push footer down */
   width: 100%;
   overflow-x: hidden;
-}
-
-.timeline-line {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(to bottom, #ff6b00, #c50, #ff6b00);
-  transform: translateX(-50%);
-  box-shadow: 0 0 10px rgb(255 107 0 / 50%);
 }
 
 .timeline-content {
@@ -199,27 +188,27 @@ main {
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* Month Markers */
 .month-marker {
   position: relative;
   width: 100%;
-  text-align: center;
-  margin: 1rem 0;
+  margin: 2rem 0 1rem;
   clear: both;
   display: flow-root;
+  text-align: center;
 }
 
 .month-marker h3 {
   color: #ff6b00;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 25px;
   font-size: 1.3rem;
   border: 2px solid #ff6b00;
   box-shadow: 0 4px 15px rgb(255 107 0 / 30%);
   backdrop-filter: blur(10px);
+  display: inline-block;
 }
 
 /* Footer */

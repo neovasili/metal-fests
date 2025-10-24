@@ -37,107 +37,126 @@
   position: relative;
   background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
   border-radius: 12px;
-  padding: 25px;
-  max-width: 480px;
+  padding: 50px 25px 25px;
+  max-width: 1200px;
   width: 90%;
-  max-height: 85vh;
+  max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 20px 40px rgb(0 0 0 / 50%);
   border: 1px solid #444;
 }
 
 .modal-close {
-  position: absolute;
-  top: 15px;
+  position: fixed;
+  top: 20px;
   right: 20px;
-  background: none;
+  background: rgb(255 107 0 / 90%);
   border: none;
-  color: #ff6b00;
+  color: white;
   font-size: 28px;
   cursor: pointer;
-  z-index: 1001;
-  width: 30px;
-  height: 30px;
+  z-index: 1002;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 50%);
 }
 
 .modal-close:hover {
-  background: rgb(255 107 0 / 20%);
+  background: rgb(255 107 0 / 100%);
   transform: scale(1.1);
 }
 
-/* Festival card in modal - reuse existing styles but adjust for modal context */
+/* Festival card in modal - use same layout as timeline */
 #modal-festival-card .festival-card {
   margin: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-  width: 100% !important;
-  max-width: none !important;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Remove the timeline dot from modal cards */
-#modal-festival-card .festival-card::before {
-  display: none !important;
-}
-
-/* Fix modal card layout */
-#modal-festival-card .festival-header {
+  border: 2px solid transparent;
+  background: rgb(45 45 45 / 90%);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 30%);
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: none;
   position: relative;
+  padding: 1.5rem;
+}
+
+#modal-festival-card .festival-card:hover {
+  border-color: #ff6b00;
+}
+
+#modal-festival-card .festival-card-main {
+  display: flex;
+  gap: 2rem;
+}
+
+#modal-festival-card .festival-poster-column {
+  flex-shrink: 0;
+  width: 300px;
 }
 
 #modal-festival-card .festival-poster {
   width: 100%;
-  max-width: 280px;
-  margin: 0 auto 20px;
-  display: block;
-  border-radius: 8px;
+  height: 360px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 2px solid #555;
+}
+
+#modal-festival-card .festival-content-column {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#modal-festival-card .festival-header-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #modal-festival-card .festival-name {
-  text-align: center;
-  margin: 0 0 15px;
-  width: 100%;
+  font-size: 2rem;
+  padding-right: 12rem;
+  margin: 0;
 }
 
-#modal-festival-card .festival-dates,
+#modal-festival-card .festival-date-location {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#modal-festival-card .festival-dates {
+  font-size: 1.1rem;
+}
+
 #modal-festival-card .festival-location {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#modal-festival-card .ticket-price {
+  font-size: 1.1rem;
 }
 
 #modal-festival-card .festival-bands {
-  width: 100%;
-  margin: 20px 0;
+  margin-top: 0.5rem;
 }
 
-#modal-festival-card .festival-info {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  gap: 10px;
+#modal-festival-card .festival-bands h4 {
+  font-size: 1.1rem;
 }
 
 #modal-festival-card .favorite-container {
-  top: 10px;
-  right: 10px;
-  position: absolute;
+  position: relative;
 }
 
 /* Custom map marker styles (for Leaflet) */
