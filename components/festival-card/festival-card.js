@@ -48,7 +48,7 @@ class FestivalCard {
     if (startDate.getTime() === endDate.getTime()) {
       return startDate.toLocaleDateString("en-US", options);
     } else if (startDate.getMonth() === endDate.getMonth()) {
-      return `${startDate.toLocaleDateString("en-US", { day: "numeric" })}-${endDate.toLocaleDateString("en-US", options)}`;
+      return `${startDate.toLocaleDateString("en-US", { month: "short" })} ${startDate.getDate()}-${endDate.getDate()}`;
     } else {
       return `${startDate.toLocaleDateString("en-US", options)} - ${endDate.toLocaleDateString("en-US", options)}`;
     }
@@ -100,6 +100,8 @@ class FestivalCard {
     // Create band tags HTML
     const bandTagsHTML = this.createBandTagsHTML(festival.bands, bandManager);
 
+    const festivalPrice = festival.ticketPrice ? `From ${festival.ticketPrice}€` : "Price not available";
+
     // Replace template placeholders
     const html = template
       .replace(/\{\{poster\}\}/g, festival.poster)
@@ -107,7 +109,7 @@ class FestivalCard {
       .replace(/\{\{dates\}\}/g, formattedDates)
       .replace(/\{\{location\}\}/g, festival.location)
       .replace(/\{\{bands\}\}/g, bandTagsHTML)
-      .replace(/\{\{ticketPrice\}\}/g, festival.ticketPrice)
+      .replace(/\{\{ticketPrice\}\}/g, festivalPrice)
       .replace(/\{\{website\}\}/g, festival.website);
 
     // Create element from HTML
