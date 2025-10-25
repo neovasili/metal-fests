@@ -47,7 +47,7 @@
 }
 
 .modal-close {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   background: rgb(255 107 0 / 90%);
@@ -90,11 +90,6 @@
 #modal-festival-card .festival-card-main {
   display: flex;
   gap: 2rem;
-}
-
-#modal-festival-card .festival-poster-column {
-  flex-shrink: 0;
-  width: 300px;
 }
 
 #modal-festival-card .festival-poster {
@@ -216,20 +211,20 @@
 
 /* Ensure header controls are above everything on map page */
 header {
-  z-index: 20000 !important;
+  z-index: 10000 !important;
 }
 
 header .header-controls {
-  z-index: 20001 !important;
+  z-index: 10001 !important;
 }
 
 /* Ensure bands filter is above map */
 .filter-container {
-  z-index: 20002 !important;
+  z-index: 10002 !important;
 }
 
 .bands-filter-dropdown {
-  z-index: 20003 !important;
+  z-index: 10003 !important;
 }
 
 /* Loading state */

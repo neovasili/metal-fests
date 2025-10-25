@@ -3,7 +3,20 @@
 /* Tablet and below */
 @media (width <= 768px) {
   main {
+    margin-top: 50px;
     min-height: calc(100vh - 145px);
+  }
+
+  .header-desktop-nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
   }
 
   .timeline-container {
@@ -70,6 +83,7 @@
     flex-flow: row nowrap;
     gap: 0.5rem;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .filter-button {
@@ -85,10 +99,11 @@
   }
 
   .filter-container {
-    margin-right: 0;
+    float: left;
     flex: 1;
     min-width: 0;
-    width: calc(50% - 0.25rem); /* 50% minus half the gap */
+    margin: 0 0.5rem;
+    width: calc(50% - 2rem);
   }
 
   .bands-filter-toggle {
@@ -270,8 +285,7 @@
     width: 100%;
   }
 
-  #modal-festival-card .festival-poster {
-    max-width: 180px;
+  #modal-festival-card img.festival-poster {
     height: 240px;
   }
 

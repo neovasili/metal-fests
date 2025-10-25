@@ -74,10 +74,6 @@ jobs:
           go build -o /tmp/validate_data scripts/validate_data/validate_data.go
           go build -o /tmp/festival_updater scripts/festival_updater/festival_updater.go
           go build -o /tmp/band_updater scripts/band_updater/band_updater.go
-          go build -o /tmp/minify_css scripts/minify_css/minify_css.go
-          go build -o /tmp/minify_js scripts/minify_js/minify_js.go
-          go build -o /tmp/minify_html scripts/minify_html/minify_html.go
-          go build -o /tmp/minify_json scripts/minify_json/minify_json.go
           echo "✅ All Go scripts compiled successfully"
 
   validate:

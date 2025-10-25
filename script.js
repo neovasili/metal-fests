@@ -5,6 +5,7 @@ class FestivalTimeline {
     this.timelineContent = document.getElementById("timeline-content");
     this.loading = document.getElementById("loading");
     this.filterContainer = document.getElementById("filter-container");
+    this.filterContainerMobile = document.getElementById("filter-container-mobile");
     this.favoritesManager = new FavoritesManager();
     this.filterManager = new FilterManager();
     this.bandsFilterManager = new BandsFilterManager();
@@ -66,24 +67,31 @@ class FestivalTimeline {
 
   createFilterButton() {
     const filterButton = UIUtils.createFilterButton(this.filterManager.isFilterEnabled());
+    const filterButtonMobile = UIUtils.createFilterButton(this.filterManager.isFilterEnabled());
 
-    UIUtils.addFilterButtonEventListeners(filterButton, () => {
+    const updateBothButtons = () => {
       const newState = this.filterManager.toggleFilter();
       UIUtils.updateFilterButton(filterButton, newState);
+      UIUtils.updateFilterButton(filterButtonMobile, newState);
       this.applyFilter();
 
       const message = newState ? "Showing favorites only" : "Showing all festivals";
       UIUtils.showNotification(message, "info");
-    });
+    };
+
+    UIUtils.addFilterButtonEventListeners(filterButton, updateBothButtons);
+    UIUtils.addFilterButtonEventListeners(filterButtonMobile, updateBothButtons);
 
     this.filterContainer.appendChild(filterButton);
+    this.filterContainerMobile.appendChild(filterButtonMobile);
   }
 
   createBandsFilter() {
     const selectedBands = this.bandsFilterManager.getSelectedBands();
     const bandsFilter = UIUtils.createBandsFilter(this.allBands, selectedBands);
+    const bandsFilterMobile = UIUtils.createBandsFilter(this.allBands, selectedBands);
 
-    UIUtils.addBandsFilterEventListeners(bandsFilter, {
+    const filterCallbacks = {
       onBandToggle: (bandName, isSelected) => {
         if (isSelected) {
           this.bandsFilterManager.addBand(bandName);
@@ -105,16 +113,24 @@ class FestivalTimeline {
       onDropdownOpen: () => {
         this.updateBandsFilter();
       },
-    });
+    };
+
+    UIUtils.addBandsFilterEventListeners(bandsFilter, filterCallbacks);
+    UIUtils.addBandsFilterEventListeners(bandsFilterMobile, filterCallbacks);
 
     this.filterContainer.appendChild(bandsFilter);
+    this.filterContainerMobile.appendChild(bandsFilterMobile);
     this.bandsFilterElement = bandsFilter;
+    this.bandsFilterElementMobile = bandsFilterMobile;
   }
 
   updateBandsFilter() {
+    const selectedBands = this.bandsFilterManager.getSelectedBands();
     if (this.bandsFilterElement) {
-      const selectedBands = this.bandsFilterManager.getSelectedBands();
       UIUtils.updateBandsFilter(this.bandsFilterElement, this.allBands, selectedBands);
+    }
+    if (this.bandsFilterElementMobile) {
+      UIUtils.updateBandsFilter(this.bandsFilterElementMobile, this.allBands, selectedBands);
     }
   }
 
@@ -125,7 +141,8 @@ class FestivalTimeline {
     const cards = this.timelineContent.querySelectorAll(".festival-card");
 
     cards.forEach((card) => {
-      const festivalName = card.querySelector(".festival-name").textContent;
+      const festivalNameElement = card.querySelector(".festival-name-link") || card.querySelector(".festival-name");
+      const festivalName = festivalNameElement.textContent.trim();
       const festival = this.festivals.find((f) => f.name === festivalName);
 
       let shouldShow = true;

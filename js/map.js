@@ -9,6 +9,7 @@ class FestivalMap {
     this.modalContent = document.getElementById("modal-festival-card");
     this.loading = document.getElementById("loading");
     this.filterContainer = document.getElementById("filter-container");
+    this.filterContainerMobile = document.getElementById("filter-container-mobile");
     this.favoritesManager = new FavoritesManager();
     this.filterManager = new FilterManager();
     this.bandsFilterManager = new BandsFilterManager();
@@ -63,23 +64,30 @@ class FestivalMap {
   createFilterControls() {
     // Create favorites filter button
     const filterButton = UIUtils.createFilterButton(this.filterManager.isFilterEnabled());
+    const filterButtonMobile = UIUtils.createFilterButton(this.filterManager.isFilterEnabled());
 
-    UIUtils.addFilterButtonEventListeners(filterButton, () => {
+    const updateBothButtons = () => {
       const newState = this.filterManager.toggleFilter();
       UIUtils.updateFilterButton(filterButton, newState);
+      UIUtils.updateFilterButton(filterButtonMobile, newState);
       this.applyFilters();
 
       const message = newState ? "Showing favorites only" : "Showing all festivals";
       UIUtils.showNotification(message, "info");
-    });
+    };
+
+    UIUtils.addFilterButtonEventListeners(filterButton, updateBothButtons);
+    UIUtils.addFilterButtonEventListeners(filterButtonMobile, updateBothButtons);
 
     this.filterContainer.appendChild(filterButton);
+    this.filterContainerMobile.appendChild(filterButtonMobile);
 
     // Create bands filter
     const selectedBands = this.bandsFilterManager.getSelectedBands();
     const bandsFilter = UIUtils.createBandsFilter(this.allBands, selectedBands);
+    const bandsFilterMobile = UIUtils.createBandsFilter(this.allBands, selectedBands);
 
-    UIUtils.addBandsFilterEventListeners(bandsFilter, {
+    const filterCallbacks = {
       onBandToggle: (bandName, isSelected) => {
         if (isSelected) {
           this.bandsFilterManager.addBand(bandName);
@@ -101,16 +109,24 @@ class FestivalMap {
       onDropdownOpen: () => {
         this.updateBandsFilter();
       },
-    });
+    };
+
+    UIUtils.addBandsFilterEventListeners(bandsFilter, filterCallbacks);
+    UIUtils.addBandsFilterEventListeners(bandsFilterMobile, filterCallbacks);
 
     this.filterContainer.appendChild(bandsFilter);
+    this.filterContainerMobile.appendChild(bandsFilterMobile);
     this.bandsFilterElement = bandsFilter;
+    this.bandsFilterElementMobile = bandsFilterMobile;
   }
 
   updateBandsFilter() {
+    const selectedBands = this.bandsFilterManager.getSelectedBands();
     if (this.bandsFilterElement) {
-      const selectedBands = this.bandsFilterManager.getSelectedBands();
       UIUtils.updateBandsFilter(this.bandsFilterElement, this.allBands, selectedBands);
+    }
+    if (this.bandsFilterElementMobile) {
+      UIUtils.updateBandsFilter(this.bandsFilterElementMobile, this.allBands, selectedBands);
     }
   }
 

@@ -17,11 +17,11 @@
     "format:go": "gofmt -s -w . && goimports -w .",
     "validate": "go run scripts/validate_data/validate_data.go",
     "dev": "echo 'Starting development server...' && go run server.go",
-    "minify": "pnpm minify:html && pnpm minify:css && pnpm minify:json",
-    "minify:html": "go run scripts/minify_html/minify_html.go",
-    "minify:js": "go run scripts/minify_js/minify_js.go",
-    "minify:css": "go run scripts/minify_css/minify_css.go",
-    "minify:json": "go run scripts/minify_json/minify_json.go",
+    "minify": "pnpm minify:html && pnpm minify:css && pnpm minify:js && pnpm minify:json",
+    "minify:html": "./scripts/minify-html.sh",
+    "minify:js": "./scripts/minify-js.sh",
+    "minify:css": "./scripts/minify-css.sh",
+    "minify:json": "./scripts/minify-json.sh",
     "build": "./scripts/build.sh"
   },
   "repository": {
@@ -46,15 +46,19 @@
   "homepage": "https://github.com/neovasili/metal-fests#readme",
   "devDependencies": {
     "@eslint/js": "^9.37.0",
+    "clean-css-cli": "^5.6.3",
     "eslint": "^9.37.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
+    "html-minifier-terser": "^7.2.0",
     "htmlhint": "^1.1.4",
+    "javascript-obfuscator": "^4.1.1",
     "markdownlint-cli": "^0.45.0",
     "prettier": "^3.6.2",
     "stylelint": "^16.24.0",
     "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint-config-standard": "^34.0.0",
+    "terser": "^5.36.0"
   },
   "engines": {
     "node": ">=18.0.0",
