@@ -65,7 +65,6 @@ class AdminPageLoader {
   }
 
   async loadFestivalsPage() {
-    console.log("loadFestivalsPage called");
     this.updatePageTitle("Festivals Management");
     this.updateAdminBadge("Festivals Management");
 
@@ -132,7 +131,6 @@ class AdminPageLoader {
   }
 
   handleTabChange(tabId) {
-    console.log("Tab changed to:", tabId);
     localStorage.setItem("adminActiveTab", tabId);
 
     // Update the band manager to filter by the new tab

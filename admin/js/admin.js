@@ -99,11 +99,9 @@ function restoreLastSession() {
 
     if (bandIndex !== -1) {
       currentManager.selectBand(bandIndex);
-      console.log(`✅ Restored selected band: ${savedBandKey}`);
     } else {
       // Band not found in current tab
       bandEditForm.clearSelectedBand();
-      console.log(`⚠️  Previously selected band not found: ${savedBandKey}`);
     }
   }
 }
@@ -141,8 +139,6 @@ function switchTab(tab) {
 
   // Update navigation buttons for active tab
   updateNavigationButtons();
-
-  console.log(`Switched to ${tab} tab`);
 }
 
 /**

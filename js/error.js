@@ -14,11 +14,8 @@ async function checkAndHandleBandRoute() {
     await bandManager.loadBands();
 
     const band = bandManager.getBandByKey(bandKey);
-    console.log("Band:", band);
-    console.log("Is Local Host:", bandManager.isLocalHost());
 
     if ((band && band.reviewed === true) || (band && bandManager.isLocalHost())) {
-      console.log("Render the band page");
       // Band exists and is reviewed! Hide error content and show band page
       hideErrorContent();
       renderBandPage(band, bandManager);

@@ -118,7 +118,6 @@ class SPARouter {
     if (window.location.pathname === path) {
       return;
     }
-    console.log("navigating to:", path);
 
     // Update browser history
     window.history.pushState({ path }, "", path);
