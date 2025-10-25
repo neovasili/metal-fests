@@ -45,6 +45,7 @@ repos:
     hooks:
       - id: htmlhint
         files: \.html$
+        exclude: '(build|components)/'
 
   # Markdown linting
   - repo: https://github.com/igorshubovych/markdownlint-cli

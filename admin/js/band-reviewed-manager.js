@@ -11,6 +11,24 @@ class BandReviewedManager {
   }
 
   /**
+   * Initialize the manager
+   */
+  async init() {
+    await this.loadBands();
+    this.setupEventListeners();
+  }
+
+  /**
+   * Setup event listeners
+   */
+  setupEventListeners() {
+    const sortToggle = document.getElementById("sortToggleReviewed");
+    if (sortToggle) {
+      sortToggle.addEventListener("click", () => this.toggleSortOrder());
+    }
+  }
+
+  /**
    * Load all reviewed bands from the database
    */
   async loadBands() {

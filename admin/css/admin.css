@@ -5,11 +5,44 @@ body, html {
   background-color: #0d0d0d;
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for admin navigation - positioned below fixed header */
+.admin-nav-container {
+  margin-top: 5rem; /* Account for fixed header */
+  flex-shrink: 0;
+}
+
+/* Admin Navigation (from component, duplicated here for positioning) */
+.admin-nav {
+  flex-shrink: 0;
+}
+
+/* Admin Tabs Container */
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 2rem 0;
+  background: #0d0d0d;
+  border-bottom: 2px solid #1a1a1a;
+  flex-shrink: 0;
+}
+
+.admin-tabs:empty {
+  display: none;
 }
 
 /* Admin Header */
 .admin-header {
   border-bottom: 2px solid #ff6b00;
+  flex-shrink: 0;
 }
 
 .admin-badge {
@@ -21,20 +54,6 @@ body, html {
   font-size: 0.875rem;
   font-weight: bold;
   margin-left: 1rem;
-}
-
-/* Admin Tabs */
-.admin-tabs {
-  display: flex;
-  gap: 0.5rem;
-  padding: 1rem 2rem 0;
-  background: #0d0d0d;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  border-bottom: 2px solid #1a1a1a;
 }
 
 .admin-tab {
@@ -106,8 +125,10 @@ body, html {
   gap: 2rem;
   padding: 2rem;
   max-width: 2000px;
-  margin: 125px auto 0;
-  height: calc(100vh - 125px);
+  margin: 0 auto;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
 }
 
 /* Form Section */
@@ -116,6 +137,10 @@ body, html {
   border-radius: 8px;
   padding: 2rem 2.5rem;
   box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: hidden;
 }
 
 .form-header {
@@ -125,6 +150,7 @@ body, html {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #ff6b00;
+  flex-shrink: 0;
 }
 
 .form-header-title {
@@ -199,9 +225,10 @@ body, html {
 }
 
 .form-content {
-  max-height: calc(100vh - 320px);
+  flex: 1;
   overflow-y: auto;
   padding: 0 1.5rem 0 0.5rem;
+  min-height: 0;
 }
 
 /* Custom scrollbar for form */
@@ -210,17 +237,29 @@ body, html {
 }
 
 .form-content::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: rgb(26 26 26);
   border-radius: 4px;
 }
 
 .form-content::-webkit-scrollbar-thumb {
-  background: #555;
+  background: rgb(255 107 0 / 40%);
   border-radius: 4px;
 }
 
 .form-content::-webkit-scrollbar-thumb:hover {
-  background: #ff6b00;
+  background: rgb(255 107 0 / 60%);
+}
+
+#edit-form-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.admin-form {
+  overflow: hidden;
+  display: grid;
 }
 
 .form-placeholder {
@@ -427,9 +466,6 @@ body, html {
 }
 
 /* Form Fields */
-.form-group {
-  margin-bottom: 0.5rem;
-}
 
 .form-group label {
   display: block;
@@ -880,6 +916,8 @@ body, html {
   box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
   display: flex;
   flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .list-header {
@@ -889,6 +927,7 @@ body, html {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #ff6b00;
+  flex-shrink: 0;
 }
 
 .list-header h2 {
@@ -923,7 +962,7 @@ body, html {
 .list-content {
   flex: 1;
   overflow-y: auto;
-  max-height: calc(100vh - 330px);
+  min-height: 0;
 }
 
 /* Custom scrollbar for list */
