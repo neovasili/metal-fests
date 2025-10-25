@@ -91,8 +91,13 @@ func (cfs *CustomFileServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	path := r.URL.Path
 	fullPath := filepath.Join(cfs.baseDir, path)
 
-	// If path doesn't exist and it's not an API request, serve error.html
-	if _, err := os.Stat(fullPath); os.IsNotExist(err) && !strings.HasPrefix(path, "/api/") {
+	// If path starts with /admin, serve admin/index.html
+	if strings.HasPrefix(path, "/admin") {
+		if _, err := os.Stat(fullPath); os.IsNotExist(err) {
+			r.URL.Path = "/admin/index.html"
+		}
+	} else if _, err := os.Stat(fullPath); os.IsNotExist(err) && !strings.HasPrefix(path, "/api/") {
+		// If path doesn't exist and it's not an API request, serve error.html
 		r.URL.Path = "/error.html"
 	}
 

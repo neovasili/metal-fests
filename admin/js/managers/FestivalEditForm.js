@@ -1,0 +1,372 @@
+class FestivalEditForm {
+  constructor(containerId, options = {}) {
+    this.container = document.getElementById(containerId);
+    if (!this.container) {
+      console.error(`FestivalEditForm container not found: ${containerId}`);
+      return;
+    }
+    this.onSave = options.onSave || null;
+    this.onCancel = options.onCancel || null;
+    this.currentFestival = null;
+    this.bands = [];
+  }
+
+  async init() {
+    await this.loadBands();
+    this.setupEventListeners();
+  }
+
+  async loadBands() {
+    try {
+      const response = await fetch("/db.json");
+      if (!response.ok) {
+        throw new Error("Failed to load bands database");
+      }
+      const data = await response.json();
+      const reviewedBands = data.bands?.filter((band) => band.reviewed) || [];
+      this.bands = reviewedBands.map((band) => band.name).sort();
+    } catch (error) {
+      console.error("Error loading bands:", error);
+    }
+  }
+
+  render() {
+    this.container.innerHTML = `
+      <div class="admin-form">
+        <div class="form-header">
+          <h2 class="form-title">Festival Details</h2>
+          <button type="button" class="btn-clear" id="clearFormBtn">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+            </svg>
+            Clear
+          </button>
+        </div>
+
+        <form id="festivalForm" class="festival-form">
+          <div class="form-group">
+            <label for="festivalName">Festival Name*</label>
+            <input type="text" id="festivalName" name="name" required placeholder="Enter festival name">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="festivalStartDate">Start Date*</label>
+              <input type="date" id="festivalStartDate" name="startDate" required>
+            </div>
+
+            <div class="form-group">
+              <label for="festivalEndDate">End Date*</label>
+              <input type="date" id="festivalEndDate" name="endDate" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="festivalLocation">Location*</label>
+            <input type="text" id="festivalLocation" name="location" required placeholder="City, Country">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="festivalLatitude">Latitude*</label>
+              <input type="number" id="festivalLatitude" name="latitude" step="0.000001" required placeholder="51.5074">
+            </div>
+
+            <div class="form-group">
+              <label for="festivalLongitude">Longitude*</label>
+              <input type="number" id="festivalLongitude" name="longitude" step="0.000001" required placeholder="-0.1278">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="festivalPoster">Poster URL*</label>
+            <input type="url" id="festivalPoster" name="poster" required placeholder="https://example.com/poster.jpg">
+          </div>
+
+          <div class="form-group">
+            <label for="festivalWebsite">Website*</label>
+            <input type="url" id="festivalWebsite" name="website" required placeholder="https://example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="festivalTicketPrice">Ticket Price (€)*</label>
+            <input type="number" id="festivalTicketPrice" name="ticketPrice" step="0.01" min="0" required placeholder="0.00">
+          </div>
+
+          <div class="form-group">
+            <label for="festivalBands">Bands</label>
+            <div class="multiselect-container">
+              <div class="multiselect-selected" id="selectedBands">
+                <span class="placeholder">Select bands...</span>
+              </div>
+              <div class="multiselect-dropdown" id="bandsDropdown">
+                <input type="text" class="multiselect-search" id="bandsSearch" placeholder="Search bands...">
+                <div class="multiselect-options" id="bandsOptions"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
+            <button type="submit" class="btn-primary">Save Festival</button>
+          </div>
+        </form>
+      </div>
+    `;
+
+    this.renderBandsOptions();
+  }
+
+  renderBandsOptions() {
+    const optionsContainer = this.container.querySelector("#bandsOptions");
+    if (!optionsContainer) return;
+
+    optionsContainer.innerHTML = this.bands
+      .map(
+        (band) => `
+      <label class="multiselect-option">
+        <input type="checkbox" value="${this.escapeHtml(band)}" data-band="${this.escapeHtml(band)}">
+        <span>${this.escapeHtml(band)}</span>
+      </label>
+    `,
+      )
+      .join("");
+  }
+
+  setupEventListeners() {
+    const form = this.container.querySelector("#festivalForm");
+    const clearBtn = this.container.querySelector("#clearFormBtn");
+    const cancelBtn = this.container.querySelector("#cancelBtn");
+    const selectedBands = this.container.querySelector("#selectedBands");
+    const bandsDropdown = this.container.querySelector("#bandsDropdown");
+    const bandsSearch = this.container.querySelector("#bandsSearch");
+    const bandsOptions = this.container.querySelector("#bandsOptions");
+
+    if (form) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        this.handleSubmit();
+      });
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener("click", () => this.clear());
+    }
+
+    if (cancelBtn) {
+      cancelBtn.addEventListener("click", () => {
+        if (this.onCancel) {
+          this.onCancel();
+        }
+      });
+    }
+
+    if (selectedBands && bandsDropdown) {
+      selectedBands.addEventListener("click", () => {
+        bandsDropdown.classList.toggle("open");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!selectedBands.contains(e.target) && !bandsDropdown.contains(e.target)) {
+          bandsDropdown.classList.remove("open");
+        }
+      });
+    }
+
+    if (bandsSearch) {
+      bandsSearch.addEventListener("input", (e) => {
+        this.filterBands(e.target.value);
+      });
+    }
+
+    if (bandsOptions) {
+      bandsOptions.addEventListener("change", () => {
+        this.updateSelectedBands();
+      });
+    }
+  }
+
+  filterBands(searchTerm) {
+    const options = this.container.querySelectorAll(".multiselect-option");
+    const term = searchTerm.toLowerCase();
+
+    options.forEach((option) => {
+      const text = option.textContent.toLowerCase();
+      option.style.display = text.includes(term) ? "flex" : "none";
+    });
+  }
+
+  updateSelectedBands() {
+    const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
+    const selected = Array.from(checkboxes)
+      .filter((cb) => cb.checked)
+      .map((cb) => cb.value);
+
+    const selectedContainer = this.container.querySelector("#selectedBands");
+    if (!selectedContainer) return;
+
+    if (selected.length === 0) {
+      selectedContainer.innerHTML = '<span class="placeholder">Select bands...</span>';
+    } else {
+      selectedContainer.innerHTML = selected
+        .map(
+          (band) => `
+        <span class="selected-tag">
+          ${this.escapeHtml(band)}
+          <button type="button" class="remove-tag" data-band="${this.escapeHtml(band)}">×</button>
+        </span>
+      `,
+        )
+        .join("");
+
+      selectedContainer.querySelectorAll(".remove-tag").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const band = btn.getAttribute("data-band");
+          this.unselectBand(band);
+        });
+      });
+    }
+  }
+
+  unselectBand(band) {
+    const checkbox = this.container.querySelector(`#bandsOptions input[value="${band}"]`);
+    if (checkbox) {
+      checkbox.checked = false;
+      this.updateSelectedBands();
+    }
+  }
+
+  handleSubmit() {
+    const formData = new FormData(this.container.querySelector("#festivalForm"));
+    const selectedBands = Array.from(this.container.querySelectorAll("#bandsOptions input:checked")).map(
+      (cb) => cb.value,
+    );
+
+    const festival = {
+      name: formData.get("name").trim(),
+      dates: {
+        start: formData.get("startDate"),
+        end: formData.get("endDate"),
+      },
+      location: formData.get("location").trim(),
+      coordinates: {
+        lat: parseFloat(formData.get("latitude")),
+        lng: parseFloat(formData.get("longitude")),
+      },
+      poster: formData.get("poster").trim(),
+      website: formData.get("website").trim(),
+      bands: selectedBands,
+      ticketPrice: parseFloat(formData.get("ticketPrice")),
+    };
+
+    if (this.validate(festival)) {
+      if (this.onSave) {
+        this.onSave(festival);
+      }
+    }
+  }
+
+  validate(festival) {
+    if (!festival.name || festival.name.length < 2) {
+      window.notificationManager?.show("Festival name must be at least 2 characters", "error");
+      return false;
+    }
+
+    if (!festival.dates.start || !festival.dates.end) {
+      window.notificationManager?.show("Both start and end dates are required", "error");
+      return false;
+    }
+
+    if (new Date(festival.dates.start) > new Date(festival.dates.end)) {
+      window.notificationManager?.show("End date must be after start date", "error");
+      return false;
+    }
+
+    if (!festival.location || festival.location.length < 2) {
+      window.notificationManager?.show("Location must be at least 2 characters", "error");
+      return false;
+    }
+
+    if (Number.isNaN(festival.coordinates.lat) || festival.coordinates.lat < -90 || festival.coordinates.lat > 90) {
+      window.notificationManager?.show("Latitude must be between -90 and 90", "error");
+      return false;
+    }
+
+    if (Number.isNaN(festival.coordinates.lng) || festival.coordinates.lng < -180 || festival.coordinates.lng > 180) {
+      window.notificationManager?.show("Longitude must be between -180 and 180", "error");
+      return false;
+    }
+
+    if (!this.isValidUrl(festival.poster)) {
+      window.notificationManager?.show("Invalid poster URL", "error");
+      return false;
+    }
+
+    if (!this.isValidUrl(festival.website)) {
+      window.notificationManager?.show("Invalid website URL", "error");
+      return false;
+    }
+
+    if (Number.isNaN(festival.ticketPrice) || festival.ticketPrice < 0) {
+      window.notificationManager?.show("Ticket price must be a positive number", "error");
+      return false;
+    }
+
+    return true;
+  }
+
+  isValidUrl(urlString) {
+    try {
+      const url = new URL(urlString);
+      return url.protocol === "http:" || url.protocol === "https:";
+    } catch {
+      return false;
+    }
+  }
+
+  loadFestival(festival) {
+    this.currentFestival = festival;
+
+    const form = this.container.querySelector("#festivalForm");
+    if (!form) return;
+
+    form.elements.name.value = festival.name || "";
+    form.elements.startDate.value = festival.dates?.start || "";
+    form.elements.endDate.value = festival.dates?.end || "";
+    form.elements.location.value = festival.location || "";
+    form.elements.latitude.value = festival.coordinates?.lat || "";
+    form.elements.longitude.value = festival.coordinates?.lng || "";
+    form.elements.poster.value = festival.poster || "";
+    form.elements.website.value = festival.website || "";
+    form.elements.ticketPrice.value = festival.ticketPrice || "";
+
+    const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
+    checkboxes.forEach((cb) => {
+      cb.checked = festival.bands?.includes(cb.value) || false;
+    });
+
+    this.updateSelectedBands();
+  }
+
+  clear() {
+    const form = this.container.querySelector("#festivalForm");
+    if (form) {
+      form.reset();
+    }
+
+    const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
+    checkboxes.forEach((cb) => {
+      cb.checked = false;
+    });
+
+    this.updateSelectedBands();
+    this.currentFestival = null;
+  }
+
+  escapeHtml(text) {
+    const div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+}
