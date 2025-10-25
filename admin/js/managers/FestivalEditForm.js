@@ -74,6 +74,7 @@ class FestivalEditForm {
     const websiteField = this.container.querySelector("#festivalWebsite");
     if (websiteField) {
       websiteField.addEventListener("input", (e) => {
+        this.updateUrlLink("festivalWebsiteLink", e.target.value);
         this.scheduleUrlValidation(e.target.value, "festivalWebsite");
       });
     }
@@ -239,8 +240,27 @@ class FestivalEditForm {
       }
     } catch (error) {
       console.error("Error auto-saving festival:", error);
+      // Show error notification
+      if (window.notificationManager) {
+        window.notificationManager.show("Failed to save changes", "error", 3000);
+      }
     } finally {
       this.isSaving = false;
+    }
+  }
+
+  updateUrlLink(linkId, url) {
+    const link = this.container.querySelector(`#${linkId}`);
+    if (!link) return;
+
+    if (url && url.trim()) {
+      link.href = url;
+      link.style.pointerEvents = "auto";
+      link.style.opacity = "1";
+    } else {
+      link.href = "#";
+      link.style.pointerEvents = "none";
+      link.style.opacity = "0.3";
     }
   }
 
@@ -331,7 +351,7 @@ class FestivalEditForm {
     }
 
     const festivalName = this.currentFestival.name;
-    const searchQuery = `${festivalName} festival poster`;
+    const searchQuery = `${festivalName} festival logo`;
 
     const encodedQuery = encodeURIComponent(searchQuery);
     const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${encodedQuery}`;
@@ -366,6 +386,7 @@ class FestivalEditForm {
     );
 
     return {
+      key: form.elements.key.value.trim(),
       name: form.elements.name.value.trim(),
       dates: {
         start: form.elements.startDate.value,
@@ -383,7 +404,28 @@ class FestivalEditForm {
     };
   }
 
+  generateKey(name) {
+    return name
+      .toLowerCase()
+      .replace(/\s+/g, "-") // Replace spaces with dashes
+      .replace(/[^a-z0-9-]/g, "") // Remove any character that's not alphanumeric or dash
+      .replace(/-+/g, "-") // Replace multiple dashes with single dash
+      .replace(/^-|-$/g, ""); // Remove leading/trailing dashes
+  }
+
   validate(festival) {
+    if (!festival.key || festival.key.length < 2) {
+      window.notificationManager?.show("Festival key must be at least 2 characters", "error");
+      return false;
+    }
+
+    // Validate key format (only lowercase letters, numbers, and dashes)
+    const keyPattern = /^[a-z0-9-]+$/;
+    if (!keyPattern.test(festival.key)) {
+      window.notificationManager?.show("Festival key can only contain lowercase letters, numbers, and dashes", "error");
+      return false;
+    }
+
     if (!festival.name || festival.name.length < 2) {
       window.notificationManager?.show("Festival name must be at least 2 characters", "error");
       return false;
@@ -468,6 +510,24 @@ class FestivalEditForm {
     this.container.innerHTML = `
       <div class="admin-form">
         <form id="festivalForm" class="festival-form">
+          <div class="form-group">
+            <label for="festivalKey">Festival Key*</label>
+            <input
+              type="text"
+              id="festivalKey"
+              name="key"
+              value="${this.escapeHtml(festival.key || "")}"
+              required
+              placeholder="festival-key-example"
+              data-field="key"
+              pattern="[a-z0-9-]+"
+              title="Only lowercase letters, numbers, and dashes allowed"
+            >
+            <small style="color: #666; font-size: 0.85rem; margin-top: 0.25rem; display: block;">
+              Unique identifier for the festival (lowercase, numbers, and dashes only)
+            </small>
+          </div>
+
           <div class="form-group">
             <label for="festivalName">Festival Name*</label>
             <input
@@ -566,7 +626,7 @@ class FestivalEditForm {
                 data-field="poster"
                 data-preview="posterPreview"
               >
-              <button type="button" class="btn-search-image" onclick="window.festivalEditFormInstance?.searchGoogleImages('poster')" title="Search on Google Images">
+              <button type="button" class="btn-search-image" onclick="window.festivalEditFormInstance?.searchGoogleImages('logo')" title="Search on Google Images">
                 <svg viewBox="0 0 24 24" width="18" height="18">
                   <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
                 </svg>
@@ -576,15 +636,22 @@ class FestivalEditForm {
 
           <div class="form-group">
             <label for="festivalWebsite">Website*</label>
-            <input
-              type="url"
-              id="festivalWebsite"
-              name="website"
-              value="${this.escapeHtml(festival.website || "")}"
-              required
-              placeholder="https://example.com"
-              data-field="website"
-            >
+            <div class="url-field-container">
+              <input
+                type="url"
+                id="festivalWebsite"
+                name="website"
+                value="${this.escapeHtml(festival.website || "")}"
+                required
+                placeholder="https://example.com"
+                data-field="website"
+              >
+              <a href="${festival.website || "#"}" target="_blank" rel="noopener noreferrer" class="url-link-icon" id="festivalWebsiteLink" ${!festival.website ? 'style="pointer-events: none; opacity: 0.3;"' : ""}>
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div class="form-group">
@@ -625,7 +692,7 @@ class FestivalEditForm {
             </button>
           </div>
 
-          <div class="form-actions">
+          <div class="form-actions" style="display: none;">
             <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
             <button type="submit" class="btn-primary">Save Festival</button>
           </div>

@@ -160,6 +160,12 @@ class SPARouter {
       return true;
     }
 
+    // For admin routes, only match exact paths (no nested matching)
+    // This prevents /admin from matching /admin/bands
+    if (linkHref.startsWith("/admin")) {
+      return false;
+    }
+
     // Check if current path starts with link href (for nested routes)
     if (linkHref !== "/" && currentPath.startsWith(linkHref)) {
       return true;

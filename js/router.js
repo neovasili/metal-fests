@@ -31,10 +31,18 @@ class ClientRouter {
 
     // For other routes, check if we need to reload the page
     const targetPage = this.getTargetPage(path);
-    const currentPage = this.getCurrentPage();
 
-    if (targetPage !== currentPage && !isInitial) {
-      // Need to navigate to a different HTML file
+    // Note: We can't use getCurrentPage() here because the URL has already changed
+    // Instead, check if we're already on an HTML page with the right content
+    const currentHtmlFile = document.location.pathname.endsWith(".html")
+      ? document.location.pathname.split("/").pop()
+      : null;
+
+    // Only reload if we're on a different HTML file and this isn't the initial load
+    if (currentHtmlFile && currentHtmlFile !== targetPage && !isInitial) {
+      this.loadPage(targetPage);
+    } else if (!currentHtmlFile && !isInitial) {
+      // We're on a clean URL but need to load a different HTML file
       this.loadPage(targetPage);
     }
   }

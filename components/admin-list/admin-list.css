@@ -130,6 +130,14 @@
   color: rgb(170 170 170);
 }
 
+.list-item-genres {
+  font-size: 0.8rem;
+  color: rgb(255 107 0 / 70%);
+  font-style: italic;
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
 .list-item-badge {
   padding: 0.25rem 0.75rem;
   border-radius: 20px;

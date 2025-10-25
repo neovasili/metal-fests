@@ -27,6 +27,12 @@ class FestivalManager {
       const data = await response.json();
       this.festivals = data.festivals || [];
       this.filteredFestivals = [...this.festivals];
+      // Sort the data, but don't update UI yet (adminList not initialized)
+      this.filteredFestivals.sort((a, b) => {
+        const nameA = a.name.toLowerCase();
+        const nameB = b.name.toLowerCase();
+        return this.sortOrder === "asc" ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
+      });
     } catch (error) {
       console.error("Error loading festivals:", error);
       window.notificationManager?.show("Error loading festivals", "error");
@@ -36,7 +42,6 @@ class FestivalManager {
   async initEditForm() {
     this.editForm = new FestivalEditForm(this.formContainerId, {
       onSave: (festival) => this.saveFestival(festival),
-      onCancel: () => this.clearSelection(),
     });
     await this.editForm.init();
   }
@@ -49,13 +54,14 @@ class FestivalManager {
       onSort: (order) => this.sortFestivals(order),
     });
     await this.adminList.init();
-    this.updateList();
+    // Don't call updateList() here - let render() handle it when the page is actually loaded
   }
 
   updateList() {
     const listItems = this.filteredFestivals.map((festival) => ({
       name: festival.name,
-      meta: `${this.formatDate(festival.dates.start)} - ${this.formatDate(festival.dates.end)} • ${festival.location}`,
+      meta: `${this.formatDate(festival.dates.start)} - ${this.formatDate(festival.dates.end)}`,
+      genres: festival.location || "Unknown location",
       badge: null,
     }));
 
@@ -74,10 +80,11 @@ class FestivalManager {
     this.selectedIndex = index;
     const festival = this.filteredFestivals[index];
     if (festival && this.editForm) {
+      this.currentFestival = festival; // Track current festival for API calls
       this.editForm.loadFestival(festival);
       this.editForm.render();
-      // Save selected festival to localStorage
-      localStorage.setItem("selectedFestivalName", festival.name);
+      // Save selected festival key to localStorage
+      localStorage.setItem("selectedFestivalKey", festival.key);
     }
   }
 
@@ -106,37 +113,44 @@ class FestivalManager {
     this.sortFestivals(this.sortOrder);
   }
 
-  async saveFestival(festivalData) {
+  async saveFestival(festivalData, isAutoSave = false) {
     try {
-      const existingIndex = this.festivals.findIndex((f) => f.name === festivalData.name);
+      const existingIndex = this.festivals.findIndex((f) => f.key === festivalData.key);
 
       if (existingIndex >= 0) {
         this.festivals[existingIndex] = festivalData;
-        window.notificationManager?.show("Festival updated successfully", "success");
+        this.currentFestival = festivalData; // Keep current festival in sync
+        if (!isAutoSave) {
+          window.notificationManager?.show("Festival updated successfully", "success");
+        }
       } else {
         this.festivals.push(festivalData);
-        window.notificationManager?.show("Festival created successfully", "success");
+        this.currentFestival = festivalData; // Keep current festival in sync
+        if (!isAutoSave) {
+          window.notificationManager?.show("Festival created successfully", "success");
+        }
       }
 
       await this.saveToDatabaseJson();
       this.filteredFestivals = [...this.festivals];
-      this.updateList();
-      this.clearSelection();
+      this.sortFestivals(this.sortOrder);
     } catch (error) {
       console.error("Error saving festival:", error);
-      window.notificationManager?.show("Error saving festival", "error");
+      if (!isAutoSave) {
+        window.notificationManager?.show("Error saving festival", "error");
+      }
+      throw error; // Re-throw to let auto-save handle it
     }
   }
 
-  async deleteFestival(festivalName) {
+  async deleteFestival(festivalKey) {
     try {
-      const index = this.festivals.findIndex((f) => f.name === festivalName);
+      const index = this.festivals.findIndex((f) => f.key === festivalKey);
       if (index >= 0) {
         this.festivals.splice(index, 1);
         await this.saveToDatabaseJson();
         this.filteredFestivals = [...this.festivals];
-        this.updateList();
-        this.clearSelection();
+        this.sortFestivals(this.sortOrder);
         window.notificationManager?.show("Festival deleted successfully", "success");
       }
     } catch (error) {
@@ -146,24 +160,36 @@ class FestivalManager {
   }
 
   async saveToDatabaseJson() {
-    console.log("Festival data would be saved to server:", this.festivals);
-  }
+    try {
+      // Use the current festival to determine which one to update
+      if (!this.currentFestival || !this.currentFestival.key) {
+        throw new Error("No festival selected for update");
+      }
 
-  clearSelection() {
-    this.selectedIndex = -1;
-    this.adminList.selectedIndex = -1;
-    this.adminList.render();
-    if (this.editForm) {
-      this.editForm.clear();
+      // Save single festival data to the server
+      const response = await fetch(`/api/festivals/${encodeURIComponent(this.currentFestival.key)}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(this.currentFestival),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to save festival to database");
+      }
+
+      return true;
+    } catch (error) {
+      console.error("Error saving festival to database:", error);
+      throw error;
     }
-    // Clear saved selection from localStorage
-    localStorage.removeItem("selectedFestivalName");
   }
 
   async loadInitialSelection() {
-    const savedFestivalName = localStorage.getItem("selectedFestivalName");
-    if (savedFestivalName) {
-      const index = this.filteredFestivals.findIndex((f) => f.name === savedFestivalName);
+    const savedFestivalKey = localStorage.getItem("selectedFestivalKey");
+    if (savedFestivalKey) {
+      const index = this.filteredFestivals.findIndex((f) => f.key === savedFestivalKey);
       if (index >= 0) {
         const festival = this.filteredFestivals[index];
         this.adminList.selectItem(index);
@@ -190,7 +216,14 @@ class FestivalManager {
   }
 
   async render() {
+    // ALWAYS re-initialize the list to ensure we have the correct HTML
+    await this.initFestivalsList();
+
+    // Update the list before rendering
+    this.updateList();
     await this.editForm.render();
-    await this.adminList.render();
+
+    // Restore selection from localStorage after rendering
+    await this.loadInitialSelection();
   }
 }

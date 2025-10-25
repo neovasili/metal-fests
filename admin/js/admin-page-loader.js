@@ -34,8 +34,8 @@ class AdminPageLoader {
   }
 
   handleRouteChange(path, isInitial) {
-    console.log("handling change to:", path);
-    this.loadPage(this.getTargetPage(path));
+    const targetPage = this.getTargetPage(path);
+    this.loadPage(targetPage);
   }
 
   getTargetPage(path) {
@@ -65,6 +65,7 @@ class AdminPageLoader {
   }
 
   async loadFestivalsPage() {
+    console.log("loadFestivalsPage called");
     this.updatePageTitle("Festivals Management");
     this.updateAdminBadge("Festivals Management");
 
@@ -95,7 +96,6 @@ class AdminPageLoader {
   }
 
   async loadBandsPage() {
-    console.log("Loading Bands Page");
     this.updatePageTitle("Bands Management");
     this.updateAdminBadge("Bands Management");
 

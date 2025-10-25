@@ -29,7 +29,13 @@ class BandManager {
     this.currentTab = tabId;
     this.filterByTab();
     this.updateList();
-    this.clearSelection();
+    // Don't clear selection, instead restore it for the new tab
+    this.loadInitialSelection();
+  }
+
+  getStorageKey() {
+    // Use different localStorage keys for each tab
+    return `selectedBandName_${this.currentTab}`;
   }
 
   filterByTab() {
@@ -43,6 +49,13 @@ class BandManager {
       // Default: show all bands
       this.filteredBands = [...this.bands];
     }
+
+    // Sort the filtered bands
+    this.filteredBands.sort((a, b) => {
+      const nameA = a.name.toLowerCase();
+      const nameB = b.name.toLowerCase();
+      return this.sortOrder === "asc" ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
+    });
   }
 
   async loadBands() {
@@ -53,7 +66,7 @@ class BandManager {
       }
       const data = await response.json();
       this.bands = data.bands || [];
-      // Apply tab filter
+      // Apply tab filter and sort, but don't update UI yet (adminList not initialized)
       this.filterByTab();
     } catch (error) {
       console.error("Error loading bands:", error);
@@ -72,7 +85,6 @@ class BandManager {
   async initEditForm() {
     this.editForm = new BandEditForm(this.formContainerId, {
       onSave: (band) => this.saveBand(band),
-      onCancel: () => this.clearSelection(),
     });
     await this.editForm.init();
   }
@@ -85,13 +97,14 @@ class BandManager {
       onSort: (order) => this.sortBands(order),
     });
     await this.adminList.init();
-    this.updateList();
+    // Don't call updateList() here - let render() handle it when the page is actually loaded
   }
 
   updateList() {
     const listItems = this.filteredBands.map((band) => ({
       name: band.name,
-      meta: `${band.country} • ${band.genres?.join(", ") || "No genres"}`,
+      meta: band.country || "Unknown country",
+      genres: band.genres?.join(", ") || "No genres",
       badge: band.reviewed ? { text: "Reviewed", type: "complete" } : { text: "Pending", type: "pending" },
     }));
 
@@ -105,10 +118,11 @@ class BandManager {
     this.selectedIndex = index;
     const band = this.filteredBands[index];
     if (band && this.editForm) {
+      this.currentBand = band; // Track current band for API calls
       this.editForm.loadBand(band);
       this.editForm.render();
-      // Save selected band to localStorage
-      localStorage.setItem("selectedBandName", band.name);
+      // Save selected band to localStorage with tab-specific key
+      localStorage.setItem(this.getStorageKey(), band.name);
     }
   }
 
@@ -140,26 +154,34 @@ class BandManager {
     this.sortBands(this.sortOrder);
   }
 
-  async saveBand(bandData) {
+  async saveBand(bandData, isAutoSave = false) {
     try {
       const existingIndex = this.bands.findIndex((b) => b.key === bandData.key);
 
       if (existingIndex >= 0) {
         this.bands[existingIndex] = bandData;
-        window.notificationManager?.show("Band updated successfully", "success");
+        this.currentBand = bandData; // Keep current band in sync
+        if (!isAutoSave) {
+          window.notificationManager?.show("Band updated successfully", "success");
+        }
       } else {
         this.bands.push(bandData);
-        window.notificationManager?.show("Band created successfully", "success");
+        this.currentBand = bandData; // Keep current band in sync
+        if (!isAutoSave) {
+          window.notificationManager?.show("Band created successfully", "success");
+        }
       }
 
       await this.saveToDatabaseJson();
       // Refilter based on current tab
       this.filterByTab();
       this.updateList();
-      this.clearSelection();
     } catch (error) {
       console.error("Error saving band:", error);
-      window.notificationManager?.show("Error saving band", "error");
+      if (!isAutoSave) {
+        window.notificationManager?.show("Error saving band", "error");
+      }
+      throw error; // Re-throw to let auto-save handle it
     }
   }
 
@@ -172,7 +194,6 @@ class BandManager {
         // Refilter based on current tab
         this.filterByTab();
         this.updateList();
-        this.clearSelection();
         window.notificationManager?.show("Band deleted successfully", "success");
       }
     } catch (error) {
@@ -182,22 +203,34 @@ class BandManager {
   }
 
   async saveToDatabaseJson() {
-    console.log("Band data would be saved to server:", this.bands);
-  }
+    try {
+      // Use the current band to determine which one to update
+      if (!this.currentBand || !this.currentBand.key) {
+        throw new Error("No band selected for update");
+      }
 
-  clearSelection() {
-    this.selectedIndex = -1;
-    this.adminList.selectedIndex = -1;
-    this.adminList.render();
-    if (this.editForm) {
-      this.editForm.clear();
+      // Save single band data to the server
+      const response = await fetch(`/api/bands/${encodeURIComponent(this.currentBand.key)}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(this.currentBand),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to save band to database");
+      }
+
+      return true;
+    } catch (error) {
+      console.error("Error saving band to database:", error);
+      throw error;
     }
-    // Clear saved selection from localStorage
-    localStorage.removeItem("selectedBandName");
   }
 
   async loadInitialSelection() {
-    const savedBandName = localStorage.getItem("selectedBandName");
+    const savedBandName = localStorage.getItem(this.getStorageKey());
     if (savedBandName) {
       const index = this.filteredBands.findIndex((b) => b.name === savedBandName);
       if (index >= 0) {
@@ -226,12 +259,16 @@ class BandManager {
   }
 
   async render() {
-    console.log("Rendering Band Manager, current tab:", this.currentTab);
+    // ALWAYS re-initialize the list to ensure we have the correct HTML
+    await this.initBandsList();
+
     // Ensure filtered bands match current tab
     this.filterByTab();
-    console.log("Render edit form");
+    // Update the list before rendering
+    this.updateList();
     await this.editForm.render();
-    console.log("Render admin list");
-    await this.adminList.render();
+
+    // Restore selection from localStorage after rendering
+    await this.loadInitialSelection();
   }
 }

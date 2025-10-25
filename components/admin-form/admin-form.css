@@ -79,7 +79,7 @@
 
 .form-group textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 300px;
 }
 
 .form-group input:focus,
@@ -197,6 +197,15 @@
 }
 
 .multiselect-options::-webkit-scrollbar-thumb {
+  background: rgb(255 107 0 / 40%);
+  border-radius: 3px;
+}
+
+.form-group textarea::-webkit-scrollbar-track {
+  background: rgb(26 26 26);
+}
+
+.form-group textarea::-webkit-scrollbar-thumb {
   background: rgb(255 107 0 / 40%);
   border-radius: 3px;
 }

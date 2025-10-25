@@ -25,16 +25,25 @@ type Database struct {
 }
 
 type Festival struct {
-	Name     string   `json:"name"`
-	Location string   `json:"location"`
-	Dates    Dates    `json:"dates"`
-	Website  string   `json:"website"`
-	Bands    []string `json:"bands"`
+	Key         string      `json:"key"`
+	Name        string      `json:"name"`
+	Dates       Dates       `json:"dates"`
+	Location    string      `json:"location"`
+	Coordinates Coordinates `json:"coordinates"`
+	Poster      string      `json:"poster"`
+	Website     string      `json:"website"`
+	Bands       []string    `json:"bands"`
+	TicketPrice float64     `json:"ticketPrice"`
 }
 
 type Dates struct {
 	Start string `json:"start"`
 	End   string `json:"end"`
+}
+
+type Coordinates struct {
+	Lat float64 `json:"lat"`
+	Lng float64 `json:"lng"`
 }
 
 type Band struct {
@@ -213,6 +222,90 @@ func handleUpdateBand(w http.ResponseWriter, r *http.Request) {
 	log.Printf("✅ Updated band: %s (%s)", updatedBand.Name, bandKey)
 }
 
+// Handle PUT /api/festivals/{key} - Update festival data
+func handleUpdateFestival(w http.ResponseWriter, r *http.Request) {
+	// Extract festival key from path
+	pathParts := strings.Split(strings.TrimPrefix(r.URL.Path, "/api/festivals/"), "/")
+	if len(pathParts) == 0 || pathParts[0] == "" {
+		http.Error(w, "Festival key is required", http.StatusBadRequest)
+		return
+	}
+	festivalKey := pathParts[0]
+
+	// Read request body
+	body, err := io.ReadAll(r.Body)
+	if err != nil {
+		http.Error(w, "Failed to read request body", http.StatusBadRequest)
+		return
+	}
+	defer func() {
+		if err := r.Body.Close(); err != nil {
+			log.Printf("Failed to close request body: %v", err)
+		}
+	}()
+
+	// Parse updated festival data
+	var updatedFestival Festival
+	if err := json.Unmarshal(body, &updatedFestival); err != nil {
+		http.Error(w, fmt.Sprintf("Invalid JSON: %v", err), http.StatusBadRequest)
+		return
+	}
+
+	// Read current database
+	dbData, err := os.ReadFile(DBFile)
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Failed to read database: %v", err), http.StatusInternalServerError)
+		return
+	}
+
+	var db Database
+	if err := json.Unmarshal(dbData, &db); err != nil {
+		http.Error(w, fmt.Sprintf("Failed to parse database: %v", err), http.StatusInternalServerError)
+		return
+	}
+
+	// Find and update the festival
+	festivalFound := false
+	for i, festival := range db.Festivals {
+		if festival.Key == festivalKey {
+			db.Festivals[i] = updatedFestival
+			festivalFound = true
+			break
+		}
+	}
+
+	if !festivalFound {
+		http.Error(w, "Festival not found", http.StatusNotFound)
+		return
+	}
+
+	// Write updated data back to database
+	updatedData, err := json.MarshalIndent(db, "", "  ")
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Failed to marshal database: %v", err), http.StatusInternalServerError)
+		return
+	}
+
+	// Add trailing newline
+	updatedData = append(updatedData, '\n')
+
+	if err := os.WriteFile(DBFile, updatedData, 0600); err != nil {
+		http.Error(w, fmt.Sprintf("Failed to write database: %v", err), http.StatusInternalServerError)
+		return
+	}
+
+	// Send success response
+	w.Header().Set("Content-Type", "application/json")
+	if err := json.NewEncoder(w).Encode(UpdateBandResponse{
+		Success: true,
+		Message: "Festival updated",
+	}); err != nil {
+		log.Printf("Failed to encode response: %v", err)
+	}
+
+	log.Printf("✅ Updated festival: %s (%s)", updatedFestival.Name, festivalKey)
+}
+
 // Handle POST /api/validate-url - Validate a URL
 func handleValidateURL(w http.ResponseWriter, r *http.Request) {
 	// Read request body
@@ -303,6 +396,8 @@ func apiRouter(w http.ResponseWriter, r *http.Request) {
 	switch {
 	case r.Method == "PUT" && strings.HasPrefix(r.URL.Path, "/api/bands/"):
 		handleUpdateBand(w, r)
+	case r.Method == "PUT" && strings.HasPrefix(r.URL.Path, "/api/festivals/"):
+		handleUpdateFestival(w, r)
 	case r.Method == "POST" && r.URL.Path == "/api/validate-url":
 		handleValidateURL(w, r)
 	default:

@@ -129,6 +129,7 @@ class AdminList {
         <div class="list-item-content">
           <div class="list-item-name">${this.escapeHtml(item.name)}</div>
           ${item.meta ? `<div class="list-item-meta">${this.escapeHtml(item.meta)}</div>` : ""}
+          ${item.genres ? `<div class="list-item-genres">${this.escapeHtml(item.genres)}</div>` : ""}
         </div>
         ${item.badge ? `<span class="list-item-badge ${item.badge.type}">${this.escapeHtml(item.badge.text)}</span>` : ""}
       </div>

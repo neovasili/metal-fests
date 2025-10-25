@@ -196,6 +196,10 @@ class BandEditForm {
       }
     } catch (error) {
       console.error("Error auto-saving band:", error);
+      // Show error notification
+      if (window.notificationManager) {
+        window.notificationManager.show("Failed to save changes", "error", 3000);
+      }
     } finally {
       this.isSaving = false;
     }
@@ -698,7 +702,7 @@ class BandEditForm {
     if (!this.currentBand) {
       this.container.innerHTML = `
         <div class="form-placeholder">
-          <p>👈 Select a band from the list to start editing</p>
+          <p>Select a band from the list to start editing 👉</p>
         </div>
       `;
       return;

@@ -12,8 +12,9 @@ class Notification {
    * Show a notification
    * @param {string} message - The message to display
    * @param {string} type - 'success' or 'error'
+   * @param {number} duration - Duration in milliseconds (optional, defaults to 3000)
    */
-  show(message, type = "success") {
+  show(message, type = "success", duration) {
     if (!this.toast || !this.message) return;
 
     // Clear existing timeout
@@ -33,10 +34,13 @@ class Notification {
     // Show toast
     this.toast.classList.add("show");
 
+    // Use custom duration or default
+    const displayDuration = duration !== undefined ? duration : this.duration;
+
     // Auto-hide after duration
     this.timeout = setTimeout(() => {
       this.hide();
-    }, this.duration);
+    }, displayDuration);
   }
 
   /**
@@ -52,4 +56,6 @@ class Notification {
 // Initialize and export
 if (typeof window !== "undefined") {
   window.notification = new Notification();
+  // Create alias for consistency with code that uses notificationManager
+  window.notificationManager = window.notification;
 }
