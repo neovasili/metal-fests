@@ -30,7 +30,7 @@ find build -name "*.css" -type f | while read -r file; do
 
   # Minify CSS file
   npx clean-css-cli \
-    -O2 \
+    -O1 \
     --output "$temp_file" \
     "$file"
 
