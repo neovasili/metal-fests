@@ -2,22 +2,47 @@ class BandManager {
   constructor(listContainerId, formContainerId) {
     this.bands = [];
     this.filteredBands = [];
-    this.bandsToReview = [];
-    this.bandsReviewed = [];
     this.selectedIndex = -1;
     this.sortOrder = "asc";
     this.adminList = null;
     this.listContainerId = listContainerId;
     this.formContainerId = formContainerId;
     this.editForm = null;
+    this.currentTab = "review"; // Default tab
   }
 
   async init() {
+    // Restore saved tab from localStorage
+    const savedTab = localStorage.getItem("adminActiveTab");
+    if (savedTab) {
+      this.currentTab = savedTab;
+    }
+
     await this.loadBands();
     await this.initEditForm();
     await this.initBandsList();
     // Load the initial band from localStorage if available
     await this.loadInitialSelection();
+  }
+
+  setActiveTab(tabId) {
+    this.currentTab = tabId;
+    this.filterByTab();
+    this.updateList();
+    this.clearSelection();
+  }
+
+  filterByTab() {
+    if (this.currentTab === "review") {
+      // Show only bands that are NOT reviewed
+      this.filteredBands = this.bands.filter((band) => !band.reviewed);
+    } else if (this.currentTab === "reviewed") {
+      // Show only bands that ARE reviewed
+      this.filteredBands = this.bands.filter((band) => band.reviewed);
+    } else {
+      // Default: show all bands
+      this.filteredBands = [...this.bands];
+    }
   }
 
   async loadBands() {
@@ -28,13 +53,20 @@ class BandManager {
       }
       const data = await response.json();
       this.bands = data.bands || [];
-      this.filteredBands = [...this.bands];
-      this.bandsToReview = this.bands.filter((band) => !band.reviewed);
-      this.bandsReviewed = this.bands.filter((band) => band.reviewed);
+      // Apply tab filter
+      this.filterByTab();
     } catch (error) {
       console.error("Error loading bands:", error);
       window.notificationManager?.show("Error loading bands", "error");
     }
+  }
+
+  getBandsToReview() {
+    return this.bands.filter((band) => !band.reviewed);
+  }
+
+  getBandsReviewed() {
+    return this.bands.filter((band) => band.reviewed);
   }
 
   async initEditForm() {
@@ -64,7 +96,9 @@ class BandManager {
     }));
 
     this.adminList.setItems(listItems);
-    this.adminList.updateTitle(`Bands (${this.filteredBands.length})`);
+    const tabName = this.currentTab === "review" ? "To Review" : this.currentTab === "reviewed" ? "Reviewed" : "All";
+    this.adminList.updateTitle(`Bands ${tabName} (${this.filteredBands.length})`);
+    this.adminList.render();
   }
 
   onBandSelect(item, index) {
@@ -89,17 +123,20 @@ class BandManager {
   }
 
   filterBands(searchTerm) {
-    if (!searchTerm) {
-      this.filteredBands = [...this.bands];
-    } else {
+    // First, filter by tab
+    this.filterByTab();
+
+    // Then, apply search filter if provided
+    if (searchTerm) {
       const term = searchTerm.toLowerCase();
-      this.filteredBands = this.bands.filter(
+      this.filteredBands = this.filteredBands.filter(
         (band) =>
           band.name.toLowerCase().includes(term) ||
           band.country.toLowerCase().includes(term) ||
           band.genres?.some((genre) => genre.toLowerCase().includes(term)),
       );
     }
+
     this.sortBands(this.sortOrder);
   }
 
@@ -116,7 +153,8 @@ class BandManager {
       }
 
       await this.saveToDatabaseJson();
-      this.filteredBands = [...this.bands];
+      // Refilter based on current tab
+      this.filterByTab();
       this.updateList();
       this.clearSelection();
     } catch (error) {
@@ -131,7 +169,8 @@ class BandManager {
       if (index >= 0) {
         this.bands.splice(index, 1);
         await this.saveToDatabaseJson();
-        this.filteredBands = [...this.bands];
+        // Refilter based on current tab
+        this.filterByTab();
         this.updateList();
         this.clearSelection();
         window.notificationManager?.show("Band deleted successfully", "success");
@@ -187,7 +226,9 @@ class BandManager {
   }
 
   async render() {
-    console.log("Rendering Band Manager");
+    console.log("Rendering Band Manager, current tab:", this.currentTab);
+    // Ensure filtered bands match current tab
+    this.filterByTab();
     console.log("Render edit form");
     await this.editForm.render();
     console.log("Render admin list");

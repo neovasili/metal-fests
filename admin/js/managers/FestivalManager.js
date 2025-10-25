@@ -61,6 +61,7 @@ class FestivalManager {
 
     this.adminList.setItems(listItems);
     this.adminList.updateTitle(`Festivals (${this.filteredFestivals.length})`);
+    this.adminList.render();
   }
 
   formatDate(dateString) {

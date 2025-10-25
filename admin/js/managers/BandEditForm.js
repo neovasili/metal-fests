@@ -8,7 +8,13 @@ class BandEditForm {
     this.onSave = options.onSave || null;
     this.onCancel = options.onCancel || null;
     this.currentBand = null;
-    this.allGenres = [];
+    this.allGenres = new Set();
+    this.saveTimeout = null;
+    this.saveDelay = 2000; // 2 seconds for auto-save
+    this.isSaving = false;
+    this.urlValidationCache = new Map();
+    this.urlValidationTimeouts = {};
+    this.genresDropdown = null;
   }
 
   async init() {
@@ -24,11 +30,9 @@ class BandEditForm {
       }
       const data = await response.json();
       // Extract unique genres from all bands
-      const genresSet = new Set();
       data.bands?.forEach((band) => {
-        band.genres?.forEach((genre) => genresSet.add(genre));
+        band.genres?.forEach((genre) => this.allGenres.add(genre));
       });
-      this.allGenres = Array.from(genresSet).sort();
     } catch (error) {
       console.error("Error loading genres:", error);
     }
@@ -38,10 +42,6 @@ class BandEditForm {
     const form = this.container.querySelector("#bandForm");
     const cancelBtn = this.container.querySelector("#cancelBtn");
     const addMemberBtn = this.container.querySelector("#addMemberBtn");
-    const selectedGenres = this.container.querySelector("#selectedGenres");
-    const genresDropdown = this.container.querySelector("#genresDropdown");
-    const genresSearch = this.container.querySelector("#genresSearch");
-    const genresOptions = this.container.querySelector("#genresOptions");
 
     if (form) {
       form.addEventListener("submit", (e) => {
@@ -64,137 +64,545 @@ class BandEditForm {
       });
     }
 
-    if (selectedGenres && genresDropdown) {
-      selectedGenres.addEventListener("click", () => {
-        genresDropdown.classList.toggle("open");
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!selectedGenres.contains(e.target) && !genresDropdown.contains(e.target)) {
-          genresDropdown.classList.remove("open");
-        }
-      });
-    }
-
-    if (genresSearch) {
-      genresSearch.addEventListener("input", (e) => {
-        this.filterGenres(e.target.value);
-      });
-    }
-
-    if (genresOptions) {
-      genresOptions.addEventListener("change", () => {
-        this.updateSelectedGenres();
-      });
-    }
-  }
-
-  filterGenres(searchTerm) {
-    const options = this.container.querySelectorAll(".multiselect-option");
-    const term = searchTerm.toLowerCase();
-
-    options.forEach((option) => {
-      const text = option.textContent.toLowerCase();
-      option.style.display = text.includes(term) ? "flex" : "none";
+    // Auto-save on text inputs and textareas
+    const textFields = this.container.querySelectorAll(
+      'input[data-field]:not([type="checkbox"]), textarea[data-field]',
+    );
+    textFields.forEach((field) => {
+      field.addEventListener("input", (e) => this.handleFieldChange(e));
     });
-  }
 
-  updateSelectedGenres() {
-    const checkboxes = this.container.querySelectorAll('#genresOptions input[type="checkbox"]');
-    const selected = Array.from(checkboxes)
-      .filter((cb) => cb.checked)
-      .map((cb) => cb.value);
+    // Auto-save on checkbox
+    const reviewedCheckbox = this.container.querySelector('input[type="checkbox"][id="bandReviewed"]');
+    if (reviewedCheckbox) {
+      reviewedCheckbox.addEventListener("change", (e) => {
+        this.currentBand.reviewed = e.target.checked;
+        this.scheduleAutoSave();
+      });
+    }
 
-    const selectedContainer = this.container.querySelector("#selectedGenres");
-    if (!selectedContainer) return;
+    // Image preview handlers
+    const imageFields = this.container.querySelectorAll("input[data-preview]");
+    imageFields.forEach((field) => {
+      field.addEventListener("input", (e) => this.handleImagePreviewUpdate(e));
+    });
 
-    if (selected.length === 0) {
-      selectedContainer.innerHTML = '<span class="placeholder">Select genres...</span>';
-    } else {
-      selectedContainer.innerHTML = selected
-        .map(
-          (genre) => `
-        <span class="selected-tag">
-          ${this.escapeHtml(genre)}
-          <button type="button" class="remove-tag" data-genre="${this.escapeHtml(genre)}">×</button>
-        </span>
-      `,
-        )
-        .join("");
+    // URL validation handlers
+    const websiteField = this.container.querySelector("#bandWebsite");
+    const spotifyField = this.container.querySelector("#bandSpotify");
 
-      selectedContainer.querySelectorAll(".remove-tag").forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          const genre = btn.getAttribute("data-genre");
-          this.unselectGenre(genre);
-        });
+    if (websiteField) {
+      websiteField.addEventListener("input", (e) => {
+        this.updateUrlLink("websiteLink", e.target.value);
+        this.scheduleUrlValidation(e.target.value, "bandWebsite");
+      });
+    }
+
+    if (spotifyField) {
+      spotifyField.addEventListener("input", (e) => {
+        this.updateUrlLink("spotifyLink", e.target.value);
+        this.scheduleUrlValidation(e.target.value, "bandSpotify");
       });
     }
   }
 
-  unselectGenre(genre) {
-    const checkbox = this.container.querySelector(`#genresOptions input[value="${genre}"]`);
-    if (checkbox) {
-      checkbox.checked = false;
-      this.updateSelectedGenres();
+  handleFieldChange(event) {
+    const field = event.target;
+    const fieldName = field.getAttribute("data-field");
+    const index = field.getAttribute("data-index");
+    const subfield = field.getAttribute("data-subfield");
+
+    if (!fieldName) return;
+
+    // Update the band data
+    if (index !== null) {
+      // Array field
+      if (subfield) {
+        // Array of objects (members)
+        if (!this.currentBand[fieldName]) {
+          this.currentBand[fieldName] = [];
+        }
+        if (!this.currentBand[fieldName][index]) {
+          this.currentBand[fieldName][index] = {};
+        }
+        this.currentBand[fieldName][index][subfield] = field.value;
+      }
+    } else {
+      // Simple field
+      this.currentBand[fieldName] = field.value;
     }
+
+    // Schedule auto-save
+    this.scheduleAutoSave();
+  }
+
+  handleImagePreviewUpdate(event) {
+    const field = event.target;
+    const previewId = field.getAttribute("data-preview");
+    const previewContainer = this.container.querySelector(`#${previewId}`);
+
+    if (!previewContainer) return;
+
+    const url = field.value.trim();
+
+    if (!url) {
+      previewContainer.innerHTML = '<div class="loading">No image URL provided</div>';
+      return;
+    }
+
+    // Show loading state
+    previewContainer.innerHTML = '<div class="loading">Loading image...</div>';
+
+    // Create new image to test loading
+    const img = new Image();
+    img.onload = () => {
+      previewContainer.innerHTML = `<img src="${url}" alt="Preview" />`;
+    };
+    img.onerror = () => {
+      previewContainer.innerHTML = '<div class="error">❌ Failed to load image</div>';
+    };
+    img.src = url;
+  }
+
+  scheduleAutoSave() {
+    // Clear existing timeout
+    if (this.saveTimeout) {
+      clearTimeout(this.saveTimeout);
+    }
+
+    // Set new timeout
+    this.saveTimeout = setTimeout(() => {
+      this.autoSave();
+    }, this.saveDelay);
+  }
+
+  async autoSave() {
+    if (!this.currentBand || this.isSaving) return;
+
+    this.isSaving = true;
+
+    try {
+      // Collect current form data
+      const formData = this.collectFormData();
+
+      // Trigger save callback with auto-save flag
+      if (this.onSave) {
+        await this.onSave(formData, true); // true = auto-save
+      }
+
+      // Show success notification briefly
+      if (window.notificationManager) {
+        window.notificationManager.show("Changes saved", "success", 1500);
+      }
+    } catch (error) {
+      console.error("Error auto-saving band:", error);
+    } finally {
+      this.isSaving = false;
+    }
+  }
+
+  scheduleUrlValidation(url, fieldId) {
+    // Clear existing timeout for this field
+    if (this.urlValidationTimeouts[fieldId]) {
+      clearTimeout(this.urlValidationTimeouts[fieldId]);
+    }
+
+    const inputField = this.container.querySelector(`#${fieldId}`);
+    if (inputField && url && url.trim()) {
+      inputField.style.borderColor = "#555";
+      inputField.style.borderWidth = "1px";
+      inputField.title = "";
+    }
+
+    // Schedule validation after 1.5 seconds of no typing
+    this.urlValidationTimeouts[fieldId] = setTimeout(() => {
+      if (url && url.trim()) {
+        this.validateUrl(url, fieldId);
+      }
+    }, 1500);
+  }
+
+  async validateUrl(url, fieldId) {
+    if (!url || !url.trim()) return;
+
+    const inputField = this.container.querySelector(`#${fieldId}`);
+    if (!inputField) return;
+
+    // Check cache first
+    if (this.urlValidationCache.has(url)) {
+      const isValid = this.urlValidationCache.get(url);
+      this.applyUrlValidationStyle(inputField, isValid);
+      return;
+    }
+
+    // Show loading state
+    inputField.style.borderColor = "#fbbf24"; // amber/yellow for loading
+    inputField.style.borderWidth = "2px";
+    inputField.title = "Checking URL...";
+
+    try {
+      const response = await fetch("/api/validate-url", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ url: url }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to validate URL");
+      }
+
+      const result = await response.json();
+
+      // Cache the result
+      this.urlValidationCache.set(url, result.valid);
+
+      // Apply styling based on validation result
+      this.applyUrlValidationStyle(inputField, result.valid, result.status);
+    } catch (error) {
+      console.error("Error validating URL:", error);
+      // On error, mark as invalid but don't cache (so we can retry later)
+      this.applyUrlValidationStyle(inputField, false);
+    }
+  }
+
+  applyUrlValidationStyle(inputField, isValid, statusCode) {
+    if (isValid) {
+      inputField.style.borderColor = "#10b981"; // green
+      inputField.style.borderWidth = "2px";
+      const statusText = statusCode ? ` (HTTP ${statusCode})` : "";
+      inputField.title = `URL is reachable ✓${statusText}`;
+    } else {
+      inputField.style.borderColor = "#ef4444"; // red
+      inputField.style.borderWidth = "2px";
+      const statusText = statusCode ? ` (HTTP ${statusCode})` : "";
+      inputField.title = `URL may be unreachable or invalid ✗${statusText}`;
+    }
+  }
+
+  searchGoogleImages(fieldType) {
+    if (!this.currentBand || !this.currentBand.name) {
+      alert("Please load a band first");
+      return;
+    }
+
+    const bandName = this.currentBand.name;
+    let searchQuery = "";
+
+    switch (fieldType) {
+      case "headlineImage":
+        searchQuery = `${bandName} band members`;
+        break;
+      case "logo":
+        searchQuery = `${bandName} band logo`;
+        break;
+      default:
+        searchQuery = bandName;
+    }
+
+    const encodedQuery = encodeURIComponent(searchQuery);
+    const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${encodedQuery}`;
+    window.open(googleImagesUrl, "_blank", "noopener,noreferrer");
+  }
+
+  initializeGenresDropdown() {
+    const container = this.container.querySelector("#genresDropdownContainer");
+    if (!container || !this.currentBand) return;
+
+    // Destroy existing dropdown if any
+    if (this.genresDropdown) {
+      this.genresDropdown.destroy();
+    }
+
+    const allGenresArray = Array.from(this.allGenres).sort();
+
+    this.genresDropdown = new MultiselectDropdown({
+      allItems: allGenresArray,
+      selectedItems: this.currentBand.genres || [],
+      placeholder: "Search genres...",
+      icon: "🎵",
+      label: "Select Genres",
+      onToggle: (genre, isSelected) => {
+        this.handleGenreToggle(genre, isSelected);
+      },
+      onSearch: () => {
+        // Search is handled internally by the component
+      },
+    });
+
+    container.innerHTML = "";
+    container.appendChild(this.genresDropdown.create());
+  }
+
+  handleGenreToggle(genre, isSelected) {
+    if (!this.currentBand.genres) {
+      this.currentBand.genres = [];
+    }
+
+    if (isSelected) {
+      if (!this.currentBand.genres.includes(genre)) {
+        this.currentBand.genres.push(genre);
+      }
+    } else {
+      this.currentBand.genres = this.currentBand.genres.filter((g) => g !== genre);
+    }
+
+    this.updateGenresDisplay();
+    this.scheduleAutoSave();
+  }
+
+  validateNewGenre(input) {
+    const newGenre = input.value.trim();
+    const addBtn = this.container.querySelector("#addGenreBtn");
+    const validationMsg = this.container.querySelector("#genreValidationMessage");
+
+    if (!newGenre) {
+      input.style.borderColor = "";
+      if (addBtn) addBtn.disabled = false;
+      if (validationMsg) {
+        validationMsg.textContent = "";
+        validationMsg.style.display = "none";
+      }
+      return;
+    }
+
+    // Check if genre already exists (case-insensitive)
+    const genreExists = Array.from(this.allGenres).some((genre) => genre.toLowerCase() === newGenre.toLowerCase());
+
+    if (genreExists) {
+      input.style.borderColor = "#ef4444";
+      if (addBtn) addBtn.disabled = true;
+      if (validationMsg) {
+        validationMsg.textContent = "This genre already exists, select from the dropdown";
+        validationMsg.style.display = "block";
+      }
+    } else {
+      input.style.borderColor = "#10b981"; // green
+      if (addBtn) addBtn.disabled = false;
+      if (validationMsg) {
+        validationMsg.textContent = "";
+        validationMsg.style.display = "none";
+      }
+    }
+  }
+
+  addNewGenre() {
+    const input = this.container.querySelector("#newGenreInput");
+    if (!input) return;
+
+    const newGenre = input.value.trim();
+
+    if (!newGenre) return;
+
+    // Check if genre already exists
+    const genreExists = Array.from(this.allGenres).some((genre) => genre.toLowerCase() === newGenre.toLowerCase());
+
+    if (genreExists) return;
+
+    // Add to global genres list
+    this.allGenres.add(newGenre);
+
+    // Add to current band genres
+    if (!this.currentBand.genres) {
+      this.currentBand.genres = [];
+    }
+
+    if (!this.currentBand.genres.includes(newGenre)) {
+      this.currentBand.genres.push(newGenre);
+    }
+
+    // Clear input and validation
+    input.value = "";
+    input.style.borderColor = "";
+    const validationMsg = this.container.querySelector("#genreValidationMessage");
+    if (validationMsg) {
+      validationMsg.textContent = "";
+      validationMsg.style.display = "none";
+    }
+
+    // Re-initialize dropdown with updated genres
+    this.initializeGenresDropdown();
+
+    // Update display
+    this.updateGenresDisplay();
+
+    // Schedule auto-save
+    this.scheduleAutoSave();
+  }
+
+  updateGenresDisplay() {
+    const display = this.container.querySelector(".selected-genres-display");
+    if (!display || !this.currentBand) return;
+
+    const genres = this.currentBand.genres || [];
+    display.innerHTML = `<strong>Selected Genres:</strong> ${genres.length > 0 ? genres.join(", ") : "None"}`;
+
+    // Update dropdown if it exists
+    if (this.genresDropdown) {
+      this.genresDropdown.update(Array.from(this.allGenres).sort(), this.currentBand.genres || []);
+    }
+  }
+
+  scrollToTop() {
+    const scrollableContainer = this.container.closest(".form-content");
+    if (scrollableContainer) {
+      scrollableContainer.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      this.container.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
+
+  updateUrlLink(linkId, url) {
+    const link = this.container.querySelector(`#${linkId}`);
+    if (!link) return;
+
+    if (url && url.trim()) {
+      link.href = url;
+      link.style.pointerEvents = "auto";
+      link.style.opacity = "1";
+    } else {
+      link.href = "#";
+      link.style.pointerEvents = "none";
+      link.style.opacity = "0.3";
+    }
+  }
+
+  previewBand() {
+    if (!this.currentBand || !this.currentBand.key) {
+      return;
+    }
+
+    const bandUrl = `/bands/${this.currentBand.key}`;
+    window.open(bandUrl, "_blank", "noopener,noreferrer");
   }
 
   addMemberField(member = { name: "", role: "" }) {
     const membersContainer = this.container.querySelector("#membersContainer");
     if (!membersContainer) return;
 
+    const index = this.container.querySelectorAll(".member-item").length;
+
     const memberDiv = document.createElement("div");
-    memberDiv.className = "member-item";
+    memberDiv.className = "member-item-compact";
     memberDiv.innerHTML = `
-      <div class="member-fields">
-        <input type="text" class="member-name" placeholder="Member name" value="${this.escapeHtml(member.name)}">
-        <input type="text" class="member-role" placeholder="Role" value="${this.escapeHtml(member.role)}">
-      </div>
-      <button type="button" class="btn-remove-member">Remove</button>
+      <label>Name</label>
+      <input
+        type="text"
+        class="member-name"
+        placeholder="Member name"
+        value="${this.escapeHtml(member.name)}"
+        data-field="members"
+        data-index="${index}"
+        data-subfield="name"
+      >
+      <label>Role</label>
+      <input
+        type="text"
+        class="member-role"
+        placeholder="Role/Instrument"
+        value="${this.escapeHtml(member.role)}"
+        data-field="members"
+        data-index="${index}"
+        data-subfield="role"
+      >
+      <button type="button" class="btn-remove-icon" title="Remove member">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+        </svg>
+      </button>
     `;
 
-    memberDiv.querySelector(".btn-remove-member").addEventListener("click", () => {
-      memberDiv.remove();
+    // Add remove handler
+    memberDiv.querySelector(".btn-remove-icon").addEventListener("click", () => {
+      this.removeMember(memberDiv);
+    });
+
+    // Add auto-save handlers to inputs
+    memberDiv.querySelectorAll("input").forEach((input) => {
+      input.addEventListener("input", (e) => this.handleFieldChange(e));
     });
 
     membersContainer.appendChild(memberDiv);
+
+    // Initialize members array if needed
+    if (!this.currentBand.members) {
+      this.currentBand.members = [];
+    }
+    if (!this.currentBand.members[index]) {
+      this.currentBand.members[index] = member;
+    }
+  }
+
+  removeMember(memberDiv) {
+    if (!memberDiv) return;
+
+    const index = parseInt(memberDiv.querySelector("[data-index]").getAttribute("data-index"));
+
+    // Remove from DOM
+    memberDiv.remove();
+
+    // Remove from data
+    if (this.currentBand.members && this.currentBand.members[index] !== undefined) {
+      this.currentBand.members.splice(index, 1);
+    }
+
+    // Re-index remaining members
+    this.reindexMembers();
+
+    // Auto-save
+    this.scheduleAutoSave();
+  }
+
+  reindexMembers() {
+    const memberItems = this.container.querySelectorAll(".member-item-compact");
+    memberItems.forEach((item, newIndex) => {
+      const inputs = item.querySelectorAll("input[data-index]");
+      inputs.forEach((input) => {
+        input.setAttribute("data-index", newIndex);
+      });
+    });
   }
 
   handleSubmit() {
-    const formData = new FormData(this.container.querySelector("#bandForm"));
-    const selectedGenres = Array.from(this.container.querySelectorAll("#genresOptions input:checked")).map(
-      (cb) => cb.value,
-    );
+    const formData = this.collectFormData();
 
+    if (this.validate(formData)) {
+      if (this.onSave) {
+        this.onSave(formData, false); // false = manual save
+      }
+    }
+  }
+
+  collectFormData() {
+    const form = this.container.querySelector("#bandForm");
+    if (!form) return null;
+
+    // Collect members
     const members = [];
-    this.container.querySelectorAll(".member-item").forEach((item) => {
-      const name = item.querySelector(".member-name").value.trim();
-      const role = item.querySelector(".member-role").value.trim();
+    this.container.querySelectorAll(".member-item-compact").forEach((item) => {
+      const nameInput = item.querySelector(".member-name");
+      const roleInput = item.querySelector(".member-role");
+      const name = nameInput ? nameInput.value.trim() : "";
+      const role = roleInput ? roleInput.value.trim() : "";
       if (name && role) {
         members.push({ name, role });
       }
     });
 
-    const band = {
-      key: formData.get("key").trim(),
-      name: formData.get("name").trim(),
-      country: formData.get("country").trim(),
-      description: formData.get("description").trim(),
-      headlineImage: formData.get("headlineImage").trim(),
-      logo: formData.get("logo").trim(),
-      website: formData.get("website").trim(),
-      spotify: formData.get("spotify").trim(),
-      genres: selectedGenres,
-      reviewed: formData.get("reviewed") === "on",
+    return {
+      key: form.elements.key.value.trim(),
+      name: form.elements.name.value.trim(),
+      country: form.elements.country.value.trim(),
+      description: form.elements.description.value.trim(),
+      headlineImage: form.elements.headlineImage.value.trim(),
+      logo: form.elements.logo.value.trim(),
+      website: form.elements.website.value.trim(),
+      spotify: form.elements.spotify.value.trim(),
+      genres: this.currentBand?.genres || [],
+      reviewed: form.elements.reviewed.checked,
       members,
     };
-
-    if (this.validate(band)) {
-      if (this.onSave) {
-        this.onSave(band);
-      }
-    }
   }
 
   validate(band) {
@@ -243,6 +651,21 @@ class BandEditForm {
       return false;
     }
 
+    // Validate members if any exist
+    if (band.members && band.members.length > 0) {
+      for (let i = 0; i < band.members.length; i++) {
+        const member = band.members[i];
+        if (!member.name || !member.name.trim()) {
+          window.notificationManager?.show(`Member ${i + 1}: Name is required`, "error");
+          return false;
+        }
+        if (!member.role || !member.role.trim()) {
+          window.notificationManager?.show(`Member ${i + 1}: Role is required`, "error");
+          return false;
+        }
+      }
+    }
+
     return true;
   }
 
@@ -257,7 +680,7 @@ class BandEditForm {
   }
 
   loadBand(band) {
-    this.currentBand = band;
+    this.currentBand = band ? { ...band } : null;
   }
 
   clear() {
@@ -275,139 +698,286 @@ class BandEditForm {
     if (!this.currentBand) {
       this.container.innerHTML = `
         <div class="form-placeholder">
-          <p>Select a band from the list to start editing 👉</p>
+          <p>👈 Select a band from the list to start editing</p>
         </div>
       `;
       return;
     }
 
+    const band = this.currentBand;
+
     this.container.innerHTML = `
       <div class="admin-form">
+        <!-- Form Header with Preview Button -->
         <div class="form-header">
-          <h2 class="form-title">Band Details</h2>
+          <div class="form-header-title">
+            <h2>Band Details</h2>
+          </div>
+          <button
+            type="button"
+            class="btn-preview-band"
+            id="previewBand"
+            ${!band.key ? "disabled" : ""}
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+            </svg>
+            Preview Band
+          </button>
         </div>
 
-        <form id="bandForm" class="band-form">
-          <div class="form-group">
-            <label for="bandKey">Band Key*</label>
-            <input type="text" id="bandKey" name="key" required placeholder="e.g., iron-maiden">
-          </div>
+        <!-- Scrollable Form Content -->
+        <div class="form-content">
+          <form id="bandForm" class="band-form">
+            <!-- Reviewed Checkbox -->
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="bandReviewed" name="reviewed" ${band.reviewed ? "checked" : ""}>
+                Mark as Reviewed
+              </label>
+            </div>
 
-          <div class="form-group">
-            <label for="bandName">Band Name*</label>
-            <input type="text" id="bandName" name="name" required placeholder="Enter band name">
-          </div>
+            <!-- Key (readonly when editing) -->
+            <div class="form-group">
+              <label for="bandKey">Band Key*</label>
+              <input
+                type="text"
+                id="bandKey"
+                name="key"
+                value="${this.escapeHtml(band.key || "")}"
+                ${band.key ? "readonly" : "required"}
+                placeholder="e.g., iron-maiden"
+                data-field="key"
+              >
+            </div>
 
-          <div class="form-group">
-            <label for="bandCountry">Country*</label>
-            <input type="text" id="bandCountry" name="country" required placeholder="e.g., United Kingdom">
-          </div>
+            <!-- Name -->
+            <div class="form-group">
+              <label for="bandName">Band Name*</label>
+              <input
+                type="text"
+                id="bandName"
+                name="name"
+                value="${this.escapeHtml(band.name || "")}"
+                required
+                placeholder="Enter band name"
+                data-field="name"
+              >
+            </div>
 
-          <div class="form-group">
-            <label for="bandDescription">Description*</label>
-            <textarea id="bandDescription" name="description" required placeholder="Band description..."></textarea>
-          </div>
+            <!-- Country -->
+            <div class="form-group">
+              <label for="bandCountry">Country*</label>
+              <input
+                type="text"
+                id="bandCountry"
+                name="country"
+                value="${this.escapeHtml(band.country || "")}"
+                required
+                placeholder="e.g., United Kingdom"
+                data-field="country"
+              >
+            </div>
 
-          <div class="form-group">
-            <label for="bandHeadlineImage">Headline Image URL*</label>
-            <input type="url" id="bandHeadlineImage" name="headlineImage" required placeholder="https://example.com/image.jpg">
-          </div>
+            <!-- Description -->
+            <div class="form-group">
+              <label for="bandDescription">Description*</label>
+              <textarea
+                id="bandDescription"
+                name="description"
+                required
+                placeholder="Band description..."
+                data-field="description"
+              >${this.escapeHtml(band.description || "")}</textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="bandLogo">Logo URL*</label>
-            <input type="url" id="bandLogo" name="logo" required placeholder="https://example.com/logo.png">
-          </div>
-
-          <div class="form-group">
-            <label for="bandWebsite">Website*</label>
-            <input type="url" id="bandWebsite" name="website" required placeholder="https://example.com">
-          </div>
-
-          <div class="form-group">
-            <label for="bandSpotify">Spotify URL</label>
-            <input type="url" id="bandSpotify" name="spotify" placeholder="https://open.spotify.com/artist/...">
-          </div>
-
-          <div class="form-group">
-            <label for="bandGenres">Genres*</label>
-            <div class="multiselect-container">
-              <div class="multiselect-selected" id="selectedGenres">
-                <span class="placeholder">Select genres...</span>
+            <!-- Headline Image -->
+            <div class="form-group">
+              <label for="bandHeadlineImage">Headline Image URL*</label>
+              <div class="image-preview" id="headlineImagePreview">
+                ${this.renderImagePreview(band.headlineImage)}
               </div>
-              <div class="multiselect-dropdown" id="genresDropdown">
-                <input type="text" class="multiselect-search" id="genresSearch" placeholder="Search genres...">
-                <div class="multiselect-options" id="genresOptions"></div>
+              <div class="url-field-container">
+                <input
+                  type="url"
+                  id="bandHeadlineImage"
+                  name="headlineImage"
+                  value="${this.escapeHtml(band.headlineImage || "")}"
+                  required
+                  placeholder="https://example.com/image.jpg"
+                  data-field="headlineImage"
+                  data-preview="headlineImagePreview"
+                >
+                <button type="button" class="btn-search-image" onclick="window.bandEditFormInstance?.searchGoogleImages('headlineImage')" title="Search on Google Images">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                  </svg>
+                </button>
               </div>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label>
-              <input type="checkbox" id="bandReviewed" name="reviewed">
-              Reviewed
-            </label>
-          </div>
+            <!-- Logo -->
+            <div class="form-group">
+              <label for="bandLogo">Logo URL*</label>
+              <div class="image-preview" id="logoPreview">
+                ${this.renderImagePreview(band.logo)}
+              </div>
+              <div class="url-field-container">
+                <input
+                  type="url"
+                  id="bandLogo"
+                  name="logo"
+                  value="${this.escapeHtml(band.logo || "")}"
+                  required
+                  placeholder="https://example.com/logo.png"
+                  data-field="logo"
+                  data-preview="logoPreview"
+                >
+                <button type="button" class="btn-search-image" onclick="window.bandEditFormInstance?.searchGoogleImages('logo')" title="Search on Google Images">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-          <div class="form-group">
-            <label>Band Members</label>
-            <div id="membersContainer"></div>
-            <button type="button" class="btn-add" id="addMemberBtn">Add Member</button>
-          </div>
+            <!-- Website -->
+            <div class="form-group">
+              <label for="bandWebsite">Website*</label>
+              <div class="url-field-container">
+                <input
+                  type="url"
+                  id="bandWebsite"
+                  name="website"
+                  value="${this.escapeHtml(band.website || "")}"
+                  required
+                  placeholder="https://example.com"
+                  data-field="website"
+                >
+                <a href="${band.website || "#"}" target="_blank" rel="noopener noreferrer" class="url-link-icon" id="websiteLink" ${!band.website ? 'style="pointer-events: none; opacity: 0.3;"' : ""}>
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
 
-          <div class="form-actions">
-            <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
-            <button type="submit" class="btn-primary">Save Band</button>
-          </div>
-        </form>
+            <!-- Spotify -->
+            <div class="form-group">
+              <label for="bandSpotify">Spotify URL</label>
+              <div class="url-field-container">
+                <input
+                  type="url"
+                  id="bandSpotify"
+                  name="spotify"
+                  value="${this.escapeHtml(band.spotify || "")}"
+                  placeholder="https://open.spotify.com/artist/..."
+                  data-field="spotify"
+                >
+                <a href="${band.spotify || "#"}" target="_blank" rel="noopener noreferrer" class="url-link-icon" id="spotifyLink" ${!band.spotify ? 'style="pointer-events: none; opacity: 0.3;"' : ""}>
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Genres -->
+            <div class="form-group">
+              <label>Genres*</label>
+              <div class="selected-genres-display">
+                <strong>Selected Genres:</strong> ${band.genres && band.genres.length > 0 ? band.genres.join(", ") : "None"}
+              </div>
+              <div id="genresDropdownContainer" class="genres-dropdown-container"></div>
+              <div class="add-new-genre">
+                <input
+                  type="text"
+                  id="newGenreInput"
+                  placeholder="Add new genre..."
+                  class="new-genre-input"
+                  oninput="window.bandEditFormInstance?.validateNewGenre(this)"
+                />
+                <button type="button" class="btn-add-icon" onclick="window.bandEditFormInstance?.addNewGenre()" id="addGenreBtn">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                  </svg>
+                </button>
+                <div class="genre-validation-message" id="genreValidationMessage"></div>
+              </div>
+            </div>
+
+            <!-- Members -->
+            <div class="form-group">
+              <label>Band Members</label>
+              <div id="membersContainer">
+                ${band.members && band.members.length > 0 ? "" : '<p style="color: #999; margin: 0.5rem 0;">No members added yet</p>'}
+              </div>
+              <button type="button" class="btn-add" id="addMemberBtn">+ Add Member</button>
+            </div>
+
+            <!-- Scroll to Top Button -->
+            <div class="scroll-to-top-container">
+              <button type="button" class="btn-scroll-top" onclick="window.bandEditFormInstance?.scrollToTop()">
+                <svg viewBox="0 0 24 24" width="20" height="20">
+                  <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                </svg>
+                Scroll to Top
+              </button>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="form-actions" style="display: none;">
+              <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
+              <button type="submit" class="btn-primary">Save Band</button>
+            </div>
+          </form>
+        </div>
       </div>
     `;
 
-    const form = this.container.querySelector("#bandForm");
-    if (!form) return;
+    // Store instance globally for onclick handlers
+    window.bandEditFormInstance = this;
 
-    form.elements.key.value = this.currentBand.key || "";
-    form.elements.name.value = this.currentBand.name || "";
-    form.elements.country.value = this.currentBand.country || "";
-    form.elements.description.value = this.currentBand.description || "";
-    form.elements.headlineImage.value = this.currentBand.headlineImage || "";
-    form.elements.logo.value = this.currentBand.logo || "";
-    form.elements.website.value = this.currentBand.website || "";
-    form.elements.spotify.value = this.currentBand.spotify || "";
-    form.elements.reviewed.checked = this.currentBand.reviewed || false;
+    // Setup preview button handler
+    const previewBtn = this.container.querySelector("#previewBand");
+    if (previewBtn) {
+      previewBtn.addEventListener("click", () => this.previewBand());
+    }
 
-    this.renderGenresOptions();
+    // Initialize genres dropdown
+    this.initializeGenresDropdown();
 
-    const checkboxes = this.container.querySelectorAll('#genresOptions input[type="checkbox"]');
-    checkboxes.forEach((cb) => {
-      cb.checked = this.currentBand.genres?.includes(cb.value) || false;
-    });
-
-    this.updateSelectedGenres();
-
-    // Render members
-    if (this.currentBand.members && this.currentBand.members.length > 0) {
-      this.currentBand.members.forEach((member) => {
+    // Render existing members
+    if (band.members && band.members.length > 0) {
+      band.members.forEach((member) => {
         this.addMemberField(member);
       });
     }
 
     // Re-setup event listeners after render
     this.setupEventListeners();
+
+    // Validate URLs asynchronously
+    this.validateUrls();
   }
 
-  renderGenresOptions() {
-    const optionsContainer = this.container.querySelector("#genresOptions");
-    if (!optionsContainer) return;
+  renderImagePreview(url) {
+    if (!url) {
+      return '<div class="loading">No image URL provided</div>';
+    }
+    return `<img src="${url}" alt="Preview" onerror="this.parentElement.innerHTML='<div class=\\'error\\'>❌ Failed to load image</div>'" />`;
+  }
 
-    optionsContainer.innerHTML = this.allGenres
-      .map(
-        (genre) => `
-      <label class="multiselect-option">
-        <input type="checkbox" value="${this.escapeHtml(genre)}" data-genre="${this.escapeHtml(genre)}">
-        <span>${this.escapeHtml(genre)}</span>
-      </label>
-    `,
-      )
-      .join("");
+  validateUrls() {
+    const websiteUrl = this.currentBand?.website;
+    const spotifyUrl = this.currentBand?.spotify;
+
+    if (websiteUrl) {
+      this.validateUrl(websiteUrl, "bandWebsite");
+    }
+
+    if (spotifyUrl) {
+      this.validateUrl(spotifyUrl, "bandSpotify");
+    }
   }
 }

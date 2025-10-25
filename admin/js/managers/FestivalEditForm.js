@@ -9,6 +9,11 @@ class FestivalEditForm {
     this.onCancel = options.onCancel || null;
     this.currentFestival = null;
     this.bands = [];
+    this.saveTimeout = null;
+    this.saveDelay = 2000; // 2 seconds for auto-save
+    this.isSaving = false;
+    this.urlValidationCache = new Map();
+    this.urlValidationTimeouts = {};
   }
 
   async init() {
@@ -53,6 +58,26 @@ class FestivalEditForm {
       });
     }
 
+    // Auto-save on text inputs
+    const textFields = this.container.querySelectorAll("input[data-field], textarea[data-field]");
+    textFields.forEach((field) => {
+      field.addEventListener("input", (e) => this.handleFieldChange(e));
+    });
+
+    // Image preview handlers
+    const imageFields = this.container.querySelectorAll("input[data-preview]");
+    imageFields.forEach((field) => {
+      field.addEventListener("input", (e) => this.handleImagePreviewUpdate(e));
+    });
+
+    // URL validation handlers
+    const websiteField = this.container.querySelector("#festivalWebsite");
+    if (websiteField) {
+      websiteField.addEventListener("input", (e) => {
+        this.scheduleUrlValidation(e.target.value, "festivalWebsite");
+      });
+    }
+
     if (selectedBands && bandsDropdown) {
       selectedBands.addEventListener("click", () => {
         bandsDropdown.classList.toggle("open");
@@ -74,6 +99,7 @@ class FestivalEditForm {
     if (bandsOptions) {
       bandsOptions.addEventListener("change", () => {
         this.updateSelectedBands();
+        this.scheduleAutoSave();
       });
     }
   }
@@ -129,34 +155,232 @@ class FestivalEditForm {
     }
   }
 
+  handleFieldChange(event) {
+    const field = event.target;
+    const fieldName = field.getAttribute("data-field");
+    if (!fieldName || !this.currentFestival) return;
+
+    // Update the festival data based on field name
+    const fieldMap = {
+      name: (val) => (this.currentFestival.name = val),
+      startDate: (val) => (this.currentFestival.dates.start = val),
+      endDate: (val) => (this.currentFestival.dates.end = val),
+      location: (val) => (this.currentFestival.location = val),
+      latitude: (val) => (this.currentFestival.coordinates.lat = parseFloat(val)),
+      longitude: (val) => (this.currentFestival.coordinates.lng = parseFloat(val)),
+      poster: (val) => (this.currentFestival.poster = val),
+      website: (val) => (this.currentFestival.website = val),
+      ticketPrice: (val) => (this.currentFestival.ticketPrice = parseFloat(val)),
+    };
+
+    if (fieldMap[fieldName]) {
+      fieldMap[fieldName](field.value);
+      this.scheduleAutoSave();
+    }
+  }
+
+  handleImagePreviewUpdate(event) {
+    const field = event.target;
+    const previewId = field.getAttribute("data-preview");
+    const previewContainer = this.container.querySelector(`#${previewId}`);
+
+    if (!previewContainer) return;
+
+    const url = field.value.trim();
+
+    if (!url) {
+      previewContainer.innerHTML = '<div class="loading">No image URL provided</div>';
+      return;
+    }
+
+    // Show loading state
+    previewContainer.innerHTML = '<div class="loading">Loading image...</div>';
+
+    // Create new image to test loading
+    const img = new Image();
+    img.onload = () => {
+      previewContainer.innerHTML = `<img src="${url}" alt="Preview" />`;
+    };
+    img.onerror = () => {
+      previewContainer.innerHTML = '<div class="error">❌ Failed to load image</div>';
+    };
+    img.src = url;
+  }
+
+  scheduleAutoSave() {
+    // Clear existing timeout
+    if (this.saveTimeout) {
+      clearTimeout(this.saveTimeout);
+    }
+
+    // Set new timeout
+    this.saveTimeout = setTimeout(() => {
+      this.autoSave();
+    }, this.saveDelay);
+  }
+
+  async autoSave() {
+    if (!this.currentFestival || this.isSaving) return;
+
+    this.isSaving = true;
+
+    try {
+      // Collect current form data
+      const formData = this.collectFormData();
+
+      // Trigger save callback with auto-save flag
+      if (this.onSave) {
+        await this.onSave(formData, true); // true = auto-save
+      }
+
+      // Show success notification briefly
+      if (window.notificationManager) {
+        window.notificationManager.show("Changes saved", "success", 1500);
+      }
+    } catch (error) {
+      console.error("Error auto-saving festival:", error);
+    } finally {
+      this.isSaving = false;
+    }
+  }
+
+  scheduleUrlValidation(url, fieldId) {
+    // Clear existing timeout for this field
+    if (this.urlValidationTimeouts[fieldId]) {
+      clearTimeout(this.urlValidationTimeouts[fieldId]);
+    }
+
+    const inputField = this.container.querySelector(`#${fieldId}`);
+    if (inputField && url && url.trim()) {
+      inputField.style.borderColor = "#555";
+      inputField.style.borderWidth = "1px";
+      inputField.title = "";
+    }
+
+    // Schedule validation after 1.5 seconds of no typing
+    this.urlValidationTimeouts[fieldId] = setTimeout(() => {
+      if (url && url.trim()) {
+        this.validateUrl(url, fieldId);
+      }
+    }, 1500);
+  }
+
+  async validateUrl(url, fieldId) {
+    if (!url || !url.trim()) return;
+
+    const inputField = this.container.querySelector(`#${fieldId}`);
+    if (!inputField) return;
+
+    // Check cache first
+    if (this.urlValidationCache.has(url)) {
+      const isValid = this.urlValidationCache.get(url);
+      this.applyUrlValidationStyle(inputField, isValid);
+      return;
+    }
+
+    // Show loading state
+    inputField.style.borderColor = "#fbbf24"; // amber/yellow for loading
+    inputField.style.borderWidth = "2px";
+    inputField.title = "Checking URL...";
+
+    try {
+      const response = await fetch("/api/validate-url", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ url: url }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to validate URL");
+      }
+
+      const result = await response.json();
+
+      // Cache the result
+      this.urlValidationCache.set(url, result.valid);
+
+      // Apply styling based on validation result
+      this.applyUrlValidationStyle(inputField, result.valid, result.status);
+    } catch (error) {
+      console.error("Error validating URL:", error);
+      // On error, mark as invalid but don't cache (so we can retry later)
+      this.applyUrlValidationStyle(inputField, false);
+    }
+  }
+
+  applyUrlValidationStyle(inputField, isValid, statusCode) {
+    if (isValid) {
+      inputField.style.borderColor = "#10b981"; // green
+      inputField.style.borderWidth = "2px";
+      const statusText = statusCode ? ` (HTTP ${statusCode})` : "";
+      inputField.title = `URL is reachable ✓${statusText}`;
+    } else {
+      inputField.style.borderColor = "#ef4444"; // red
+      inputField.style.borderWidth = "2px";
+      const statusText = statusCode ? ` (HTTP ${statusCode})` : "";
+      inputField.title = `URL may be unreachable or invalid ✗${statusText}`;
+    }
+  }
+
+  searchGoogleImages(fieldType) {
+    if (!this.currentFestival || !this.currentFestival.name) {
+      alert("Please load a festival first");
+      return;
+    }
+
+    const festivalName = this.currentFestival.name;
+    const searchQuery = `${festivalName} festival poster`;
+
+    const encodedQuery = encodeURIComponent(searchQuery);
+    const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${encodedQuery}`;
+    window.open(googleImagesUrl, "_blank", "noopener,noreferrer");
+  }
+
+  scrollToTop() {
+    const scrollableContainer = this.container.closest(".form-content");
+    if (scrollableContainer) {
+      scrollableContainer.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      this.container.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
+
   handleSubmit() {
-    const formData = new FormData(this.container.querySelector("#festivalForm"));
+    const formData = this.collectFormData();
+
+    if (this.validate(formData)) {
+      if (this.onSave) {
+        this.onSave(formData, false); // false = manual save
+      }
+    }
+  }
+
+  collectFormData() {
+    const form = this.container.querySelector("#festivalForm");
+    if (!form) return null;
+
     const selectedBands = Array.from(this.container.querySelectorAll("#bandsOptions input:checked")).map(
       (cb) => cb.value,
     );
 
-    const festival = {
-      name: formData.get("name").trim(),
+    return {
+      name: form.elements.name.value.trim(),
       dates: {
-        start: formData.get("startDate"),
-        end: formData.get("endDate"),
+        start: form.elements.startDate.value,
+        end: form.elements.endDate.value,
       },
-      location: formData.get("location").trim(),
+      location: form.elements.location.value.trim(),
       coordinates: {
-        lat: parseFloat(formData.get("latitude")),
-        lng: parseFloat(formData.get("longitude")),
+        lat: parseFloat(form.elements.latitude.value),
+        lng: parseFloat(form.elements.longitude.value),
       },
-      poster: formData.get("poster").trim(),
-      website: formData.get("website").trim(),
+      poster: form.elements.poster.value.trim(),
+      website: form.elements.website.value.trim(),
       bands: selectedBands,
-      ticketPrice: parseFloat(formData.get("ticketPrice")),
+      ticketPrice: parseFloat(form.elements.ticketPrice.value),
     };
-
-    if (this.validate(festival)) {
-      if (this.onSave) {
-        this.onSave(festival);
-      }
-    }
   }
 
   validate(festival) {
@@ -218,7 +442,9 @@ class FestivalEditForm {
   }
 
   loadFestival(festival) {
-    this.currentFestival = festival;
+    this.currentFestival = festival
+      ? { ...festival, dates: { ...festival.dates }, coordinates: { ...festival.coordinates } }
+      : null;
   }
 
   escapeHtml(text) {
@@ -228,60 +454,152 @@ class FestivalEditForm {
   }
 
   render() {
+    if (!this.currentFestival) {
+      this.container.innerHTML = `
+        <div class="form-placeholder">
+          <p>👈 Select a festival from the list to start editing</p>
+        </div>
+      `;
+      return;
+    }
+
+    const festival = this.currentFestival;
+
     this.container.innerHTML = `
       <div class="admin-form">
-        <div class="form-header">
-          <h2 class="form-title">Festival Details</h2>
-        </div>
-
         <form id="festivalForm" class="festival-form">
           <div class="form-group">
             <label for="festivalName">Festival Name*</label>
-            <input type="text" id="festivalName" name="name" required placeholder="Enter festival name">
+            <input
+              type="text"
+              id="festivalName"
+              name="name"
+              value="${this.escapeHtml(festival.name || "")}"
+              required
+              placeholder="Enter festival name"
+              data-field="name"
+            >
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="festivalStartDate">Start Date*</label>
-              <input type="date" id="festivalStartDate" name="startDate" required>
+              <input
+                type="date"
+                id="festivalStartDate"
+                name="startDate"
+                value="${festival.dates?.start || ""}"
+                required
+                data-field="startDate"
+              >
             </div>
 
             <div class="form-group">
               <label for="festivalEndDate">End Date*</label>
-              <input type="date" id="festivalEndDate" name="endDate" required>
+              <input
+                type="date"
+                id="festivalEndDate"
+                name="endDate"
+                value="${festival.dates?.end || ""}"
+                required
+                data-field="endDate"
+              >
             </div>
           </div>
 
           <div class="form-group">
             <label for="festivalLocation">Location*</label>
-            <input type="text" id="festivalLocation" name="location" required placeholder="City, Country">
+            <input
+              type="text"
+              id="festivalLocation"
+              name="location"
+              value="${this.escapeHtml(festival.location || "")}"
+              required
+              placeholder="City, Country"
+              data-field="location"
+            >
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="festivalLatitude">Latitude*</label>
-              <input type="number" id="festivalLatitude" name="latitude" step="0.000001" required placeholder="51.5074">
+              <input
+                type="number"
+                id="festivalLatitude"
+                name="latitude"
+                step="0.000001"
+                value="${festival.coordinates?.lat || ""}"
+                required
+                placeholder="51.5074"
+                data-field="latitude"
+              >
             </div>
 
             <div class="form-group">
               <label for="festivalLongitude">Longitude*</label>
-              <input type="number" id="festivalLongitude" name="longitude" step="0.000001" required placeholder="-0.1278">
+              <input
+                type="number"
+                id="festivalLongitude"
+                name="longitude"
+                step="0.000001"
+                value="${festival.coordinates?.lng || ""}"
+                required
+                placeholder="-0.1278"
+                data-field="longitude"
+              >
             </div>
           </div>
 
           <div class="form-group">
             <label for="festivalPoster">Poster URL*</label>
-            <input type="url" id="festivalPoster" name="poster" required placeholder="https://example.com/poster.jpg">
+            <div class="image-preview" id="posterPreview">
+              ${this.renderImagePreview(festival.poster)}
+            </div>
+            <div class="url-field-container">
+              <input
+                type="url"
+                id="festivalPoster"
+                name="poster"
+                value="${this.escapeHtml(festival.poster || "")}"
+                required
+                placeholder="https://example.com/poster.jpg"
+                data-field="poster"
+                data-preview="posterPreview"
+              >
+              <button type="button" class="btn-search-image" onclick="window.festivalEditFormInstance?.searchGoogleImages('poster')" title="Search on Google Images">
+                <svg viewBox="0 0 24 24" width="18" height="18">
+                  <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div class="form-group">
             <label for="festivalWebsite">Website*</label>
-            <input type="url" id="festivalWebsite" name="website" required placeholder="https://example.com">
+            <input
+              type="url"
+              id="festivalWebsite"
+              name="website"
+              value="${this.escapeHtml(festival.website || "")}"
+              required
+              placeholder="https://example.com"
+              data-field="website"
+            >
           </div>
 
           <div class="form-group">
             <label for="festivalTicketPrice">Ticket Price (€)*</label>
-            <input type="number" id="festivalTicketPrice" name="ticketPrice" step="0.01" min="0" required placeholder="0.00">
+            <input
+              type="number"
+              id="festivalTicketPrice"
+              name="ticketPrice"
+              step="0.01"
+              min="0"
+              value="${festival.ticketPrice || ""}"
+              required
+              placeholder="0.00"
+              data-field="ticketPrice"
+            >
           </div>
 
           <div class="form-group">
@@ -297,6 +615,16 @@ class FestivalEditForm {
             </div>
           </div>
 
+          <!-- Scroll to Top Button -->
+          <div class="scroll-to-top-container">
+            <button type="button" class="btn-scroll-top" onclick="window.festivalEditFormInstance?.scrollToTop()">
+              <svg viewBox="0 0 24 24" width="20" height="20">
+                <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+              </svg>
+              Scroll to Top
+            </button>
+          </div>
+
           <div class="form-actions">
             <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
             <button type="submit" class="btn-primary">Save Festival</button>
@@ -305,27 +633,38 @@ class FestivalEditForm {
       </div>
     `;
 
-    const form = this.container.querySelector("#festivalForm");
-    if (!form) return;
-
-    form.elements.name.value = this.currentFestival.name || "";
-    form.elements.startDate.value = this.currentFestival.dates?.start || "";
-    form.elements.endDate.value = this.currentFestival.dates?.end || "";
-    form.elements.location.value = this.currentFestival.location || "";
-    form.elements.latitude.value = this.currentFestival.coordinates?.lat || "";
-    form.elements.longitude.value = this.currentFestival.coordinates?.lng || "";
-    form.elements.poster.value = this.currentFestival.poster || "";
-    form.elements.website.value = this.currentFestival.website || "";
-    form.elements.ticketPrice.value = this.currentFestival.ticketPrice || "";
+    // Store instance globally for onclick handlers
+    window.festivalEditFormInstance = this;
 
     this.renderBandsOptions();
 
     const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
     checkboxes.forEach((cb) => {
-      cb.checked = this.currentFestival.bands?.includes(cb.value) || false;
+      cb.checked = festival.bands?.includes(cb.value) || false;
     });
 
     this.updateSelectedBands();
+
+    // Re-setup event listeners after render
+    this.setupEventListeners();
+
+    // Validate URLs asynchronously
+    this.validateUrls();
+  }
+
+  renderImagePreview(url) {
+    if (!url) {
+      return '<div class="loading">No image URL provided</div>';
+    }
+    return `<img src="${url}" alt="Preview" onerror="this.parentElement.innerHTML='<div class=\\'error\\'>❌ Failed to load image</div>'" />`;
+  }
+
+  validateUrls() {
+    const websiteUrl = this.currentFestival?.website;
+
+    if (websiteUrl) {
+      this.validateUrl(websiteUrl, "festivalWebsite");
+    }
   }
 
   renderBandsOptions() {

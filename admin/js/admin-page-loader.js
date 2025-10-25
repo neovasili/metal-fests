@@ -108,9 +108,8 @@ class AdminPageLoader {
 
   async initBandTabs() {
     // Get counts from managers
-    const reviewCount = this.bandManager && this.bandManager.bandsToReview ? this.bandManager.bandsToReview.length : 0;
-    const reviewedCount =
-      this.bandManager && this.bandManager.bandsReviewed ? this.bandManager.bandsReviewed.length : 0;
+    const reviewCount = this.bandManager ? this.bandManager.getBandsToReview().length : 0;
+    const reviewedCount = this.bandManager ? this.bandManager.getBandsReviewed().length : 0;
 
     this.adminTabs = new AdminTabs("adminTabsContainer", {
       tabs: [
@@ -133,40 +132,17 @@ class AdminPageLoader {
   }
 
   handleTabChange(tabId) {
+    console.log("Tab changed to:", tabId);
     localStorage.setItem("adminActiveTab", tabId);
 
-    const reviewTab = document.getElementById("reviewTab");
-    const reviewedTab = document.getElementById("reviewedTab");
-
-    if (tabId === "review") {
-      if (reviewTab) reviewTab.style.display = "block";
-      if (reviewedTab) reviewedTab.style.display = "none";
-    } else if (tabId === "reviewed") {
-      if (reviewTab) reviewTab.style.display = "none";
-      if (reviewedTab) reviewedTab.style.display = "block";
+    // Update the band manager to filter by the new tab
+    if (this.bandManager) {
+      this.bandManager.setActiveTab(tabId);
     }
-
-    this.updateNavigationButtons();
   }
 
   getActiveTab() {
     return localStorage.getItem("adminActiveTab") || "review";
-  }
-
-  updateNavigationButtons() {
-    const activeTab = this.getActiveTab();
-    const prevBtn = document.getElementById("prevBand");
-    const nextBtn = document.getElementById("nextBand");
-
-    if (activeTab === "review") {
-      const hasSelection = this.bandReviewManager && this.bandReviewManager.selectedIndex >= 0;
-      if (prevBtn) prevBtn.disabled = !hasSelection;
-      if (nextBtn) nextBtn.disabled = !hasSelection;
-    } else {
-      const hasSelection = this.bandReviewedManager && this.bandReviewedManager.selectedIndex >= 0;
-      if (prevBtn) prevBtn.disabled = !hasSelection;
-      if (nextBtn) nextBtn.disabled = !hasSelection;
-    }
   }
 
   updatePageTitle(title) {

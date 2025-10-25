@@ -58,13 +58,11 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .form-group label {
   font-size: 0.9rem;
   font-weight: 600;
-  color: rgb(204 204 204);
 }
 
 .form-group input,

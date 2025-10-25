@@ -140,7 +140,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .form-header {
@@ -237,17 +237,29 @@ body {
 }
 
 .form-content::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: rgb(26 26 26);
   border-radius: 4px;
 }
 
 .form-content::-webkit-scrollbar-thumb {
-  background: #555;
+  background: rgb(255 107 0 / 40%);
   border-radius: 4px;
 }
 
 .form-content::-webkit-scrollbar-thumb:hover {
-  background: #ff6b00;
+  background: rgb(255 107 0 / 60%);
+}
+
+#edit-form-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.admin-form {
+  overflow: hidden;
+  display: grid;
 }
 
 .form-placeholder {
@@ -454,9 +466,6 @@ body {
 }
 
 /* Form Fields */
-.form-group {
-  margin-bottom: 0.5rem;
-}
 
 .form-group label {
   display: block;
