@@ -54,6 +54,10 @@ jobs:
           role-session-name: deploy-static-app
           aws-region: eu-west-1
 
+      - name: Install Node.js dependencies
+        run: |
+          pnpm install
+
       - name: (Deploy) Build Application
         run: |
           make build-project
