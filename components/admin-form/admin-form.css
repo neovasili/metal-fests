@@ -272,6 +272,73 @@
   border-color: rgb(255 107 0 / 40%);
 }
 
+.member-item {
+  background: rgb(40 40 40);
+  border: 1px solid rgb(255 107 0 / 20%);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.member-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.member-name,
+.member-role {
+  padding: 0.75rem;
+  background: rgb(30 30 30);
+  border: 1px solid rgb(255 107 0 / 20%);
+  border-radius: 8px;
+  color: white;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.member-name:focus,
+.member-role:focus {
+  outline: none;
+  border-color: #ff6b00;
+  box-shadow: 0 0 0 3px rgb(255 107 0 / 10%);
+}
+
+.btn-remove-member {
+  padding: 0.5rem 1rem;
+  background: rgb(239 68 68 / 10%);
+  border: 1px solid rgb(239 68 68 / 30%);
+  border-radius: 6px;
+  color: rgb(239 68 68);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-remove-member:hover {
+  background: rgb(239 68 68 / 20%);
+  border-color: rgb(239 68 68);
+}
+
+.btn-add {
+  padding: 0.75rem 1.5rem;
+  background: rgb(255 107 0 / 10%);
+  border: 1px solid rgb(255 107 0 / 30%);
+  border-radius: 8px;
+  color: #ff6b00;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+  background: rgb(255 107 0 / 20%);
+  border-color: #ff6b00;
+}
+
 @media (width <= 768px) {
   .admin-form {
     padding: 1rem;
@@ -288,5 +355,9 @@
   .btn-primary,
   .btn-secondary {
     width: 100%;
+  }
+
+  .member-fields {
+    grid-template-columns: 1fr;
   }
 }
