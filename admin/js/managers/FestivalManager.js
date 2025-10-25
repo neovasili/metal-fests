@@ -14,6 +14,8 @@ class FestivalManager {
     await this.loadFestivals();
     await this.initEditForm();
     await this.initFestivalsList();
+    // Load the initial festival from localStorage if available
+    await this.loadInitialSelection();
   }
 
   async loadFestivals() {
@@ -72,6 +74,9 @@ class FestivalManager {
     const festival = this.filteredFestivals[index];
     if (festival && this.editForm) {
       this.editForm.loadFestival(festival);
+      this.editForm.render();
+      // Save selected festival to localStorage
+      localStorage.setItem("selectedFestivalName", festival.name);
     }
   }
 
@@ -149,6 +154,20 @@ class FestivalManager {
     this.adminList.render();
     if (this.editForm) {
       this.editForm.clear();
+    }
+    // Clear saved selection from localStorage
+    localStorage.removeItem("selectedFestivalName");
+  }
+
+  async loadInitialSelection() {
+    const savedFestivalName = localStorage.getItem("selectedFestivalName");
+    if (savedFestivalName) {
+      const index = this.filteredFestivals.findIndex((f) => f.name === savedFestivalName);
+      if (index >= 0) {
+        const festival = this.filteredFestivals[index];
+        this.adminList.selectItem(index);
+        this.editForm.loadFestival(festival);
+      }
     }
   }
 

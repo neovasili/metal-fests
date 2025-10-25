@@ -1,9 +1,20 @@
+#management-list-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
 .admin-list-section {
   background: rgb(30 30 30);
   border-radius: 15px;
   padding: 1.5rem;
   border: 1px solid rgb(255 107 0 / 20%);
   box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .list-header {
@@ -13,6 +24,7 @@
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid rgb(255 107 0 / 20%);
+  flex-shrink: 0;
 }
 
 .list-title {
@@ -46,9 +58,10 @@
 }
 
 .list-content {
-  max-height: 81vh;
   overflow-y: auto;
   padding-right: 0.5rem;
+  flex: 1;
+  min-height: 0;
 }
 
 .list-content::-webkit-scrollbar {

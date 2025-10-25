@@ -30,112 +30,8 @@ class FestivalEditForm {
     }
   }
 
-  render() {
-    this.container.innerHTML = `
-      <div class="admin-form">
-        <div class="form-header">
-          <h2 class="form-title">Festival Details</h2>
-          <button type="button" class="btn-clear" id="clearFormBtn">
-            <svg viewBox="0 0 24 24" width="20" height="20">
-              <path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-            </svg>
-            Clear
-          </button>
-        </div>
-
-        <form id="festivalForm" class="festival-form">
-          <div class="form-group">
-            <label for="festivalName">Festival Name*</label>
-            <input type="text" id="festivalName" name="name" required placeholder="Enter festival name">
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="festivalStartDate">Start Date*</label>
-              <input type="date" id="festivalStartDate" name="startDate" required>
-            </div>
-
-            <div class="form-group">
-              <label for="festivalEndDate">End Date*</label>
-              <input type="date" id="festivalEndDate" name="endDate" required>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="festivalLocation">Location*</label>
-            <input type="text" id="festivalLocation" name="location" required placeholder="City, Country">
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="festivalLatitude">Latitude*</label>
-              <input type="number" id="festivalLatitude" name="latitude" step="0.000001" required placeholder="51.5074">
-            </div>
-
-            <div class="form-group">
-              <label for="festivalLongitude">Longitude*</label>
-              <input type="number" id="festivalLongitude" name="longitude" step="0.000001" required placeholder="-0.1278">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="festivalPoster">Poster URL*</label>
-            <input type="url" id="festivalPoster" name="poster" required placeholder="https://example.com/poster.jpg">
-          </div>
-
-          <div class="form-group">
-            <label for="festivalWebsite">Website*</label>
-            <input type="url" id="festivalWebsite" name="website" required placeholder="https://example.com">
-          </div>
-
-          <div class="form-group">
-            <label for="festivalTicketPrice">Ticket Price (€)*</label>
-            <input type="number" id="festivalTicketPrice" name="ticketPrice" step="0.01" min="0" required placeholder="0.00">
-          </div>
-
-          <div class="form-group">
-            <label for="festivalBands">Bands</label>
-            <div class="multiselect-container">
-              <div class="multiselect-selected" id="selectedBands">
-                <span class="placeholder">Select bands...</span>
-              </div>
-              <div class="multiselect-dropdown" id="bandsDropdown">
-                <input type="text" class="multiselect-search" id="bandsSearch" placeholder="Search bands...">
-                <div class="multiselect-options" id="bandsOptions"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-actions">
-            <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
-            <button type="submit" class="btn-primary">Save Festival</button>
-          </div>
-        </form>
-      </div>
-    `;
-
-    this.renderBandsOptions();
-  }
-
-  renderBandsOptions() {
-    const optionsContainer = this.container.querySelector("#bandsOptions");
-    if (!optionsContainer) return;
-
-    optionsContainer.innerHTML = this.bands
-      .map(
-        (band) => `
-      <label class="multiselect-option">
-        <input type="checkbox" value="${this.escapeHtml(band)}" data-band="${this.escapeHtml(band)}">
-        <span>${this.escapeHtml(band)}</span>
-      </label>
-    `,
-      )
-      .join("");
-  }
-
   setupEventListeners() {
     const form = this.container.querySelector("#festivalForm");
-    const clearBtn = this.container.querySelector("#clearFormBtn");
     const cancelBtn = this.container.querySelector("#cancelBtn");
     const selectedBands = this.container.querySelector("#selectedBands");
     const bandsDropdown = this.container.querySelector("#bandsDropdown");
@@ -147,10 +43,6 @@ class FestivalEditForm {
         e.preventDefault();
         this.handleSubmit();
       });
-    }
-
-    if (clearBtn) {
-      clearBtn.addEventListener("click", () => this.clear());
     }
 
     if (cancelBtn) {
@@ -327,46 +219,128 @@ class FestivalEditForm {
 
   loadFestival(festival) {
     this.currentFestival = festival;
-
-    const form = this.container.querySelector("#festivalForm");
-    if (!form) return;
-
-    form.elements.name.value = festival.name || "";
-    form.elements.startDate.value = festival.dates?.start || "";
-    form.elements.endDate.value = festival.dates?.end || "";
-    form.elements.location.value = festival.location || "";
-    form.elements.latitude.value = festival.coordinates?.lat || "";
-    form.elements.longitude.value = festival.coordinates?.lng || "";
-    form.elements.poster.value = festival.poster || "";
-    form.elements.website.value = festival.website || "";
-    form.elements.ticketPrice.value = festival.ticketPrice || "";
-
-    const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
-    checkboxes.forEach((cb) => {
-      cb.checked = festival.bands?.includes(cb.value) || false;
-    });
-
-    this.updateSelectedBands();
-  }
-
-  clear() {
-    const form = this.container.querySelector("#festivalForm");
-    if (form) {
-      form.reset();
-    }
-
-    const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
-    checkboxes.forEach((cb) => {
-      cb.checked = false;
-    });
-
-    this.updateSelectedBands();
-    this.currentFestival = null;
   }
 
   escapeHtml(text) {
     const div = document.createElement("div");
     div.textContent = text;
     return div.innerHTML;
+  }
+
+  render() {
+    this.container.innerHTML = `
+      <div class="admin-form">
+        <div class="form-header">
+          <h2 class="form-title">Festival Details</h2>
+        </div>
+
+        <form id="festivalForm" class="festival-form">
+          <div class="form-group">
+            <label for="festivalName">Festival Name*</label>
+            <input type="text" id="festivalName" name="name" required placeholder="Enter festival name">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="festivalStartDate">Start Date*</label>
+              <input type="date" id="festivalStartDate" name="startDate" required>
+            </div>
+
+            <div class="form-group">
+              <label for="festivalEndDate">End Date*</label>
+              <input type="date" id="festivalEndDate" name="endDate" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="festivalLocation">Location*</label>
+            <input type="text" id="festivalLocation" name="location" required placeholder="City, Country">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="festivalLatitude">Latitude*</label>
+              <input type="number" id="festivalLatitude" name="latitude" step="0.000001" required placeholder="51.5074">
+            </div>
+
+            <div class="form-group">
+              <label for="festivalLongitude">Longitude*</label>
+              <input type="number" id="festivalLongitude" name="longitude" step="0.000001" required placeholder="-0.1278">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="festivalPoster">Poster URL*</label>
+            <input type="url" id="festivalPoster" name="poster" required placeholder="https://example.com/poster.jpg">
+          </div>
+
+          <div class="form-group">
+            <label for="festivalWebsite">Website*</label>
+            <input type="url" id="festivalWebsite" name="website" required placeholder="https://example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="festivalTicketPrice">Ticket Price (€)*</label>
+            <input type="number" id="festivalTicketPrice" name="ticketPrice" step="0.01" min="0" required placeholder="0.00">
+          </div>
+
+          <div class="form-group">
+            <label for="festivalBands">Bands</label>
+            <div class="multiselect-container">
+              <div class="multiselect-selected" id="selectedBands">
+                <span class="placeholder">Select bands...</span>
+              </div>
+              <div class="multiselect-dropdown" id="bandsDropdown">
+                <input type="text" class="multiselect-search" id="bandsSearch" placeholder="Search bands...">
+                <div class="multiselect-options" id="bandsOptions"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
+            <button type="submit" class="btn-primary">Save Festival</button>
+          </div>
+        </form>
+      </div>
+    `;
+
+    const form = this.container.querySelector("#festivalForm");
+    if (!form) return;
+
+    form.elements.name.value = this.currentFestival.name || "";
+    form.elements.startDate.value = this.currentFestival.dates?.start || "";
+    form.elements.endDate.value = this.currentFestival.dates?.end || "";
+    form.elements.location.value = this.currentFestival.location || "";
+    form.elements.latitude.value = this.currentFestival.coordinates?.lat || "";
+    form.elements.longitude.value = this.currentFestival.coordinates?.lng || "";
+    form.elements.poster.value = this.currentFestival.poster || "";
+    form.elements.website.value = this.currentFestival.website || "";
+    form.elements.ticketPrice.value = this.currentFestival.ticketPrice || "";
+
+    this.renderBandsOptions();
+
+    const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
+    checkboxes.forEach((cb) => {
+      cb.checked = this.currentFestival.bands?.includes(cb.value) || false;
+    });
+
+    this.updateSelectedBands();
+  }
+
+  renderBandsOptions() {
+    const optionsContainer = this.container.querySelector("#bandsOptions");
+    if (!optionsContainer) return;
+
+    optionsContainer.innerHTML = this.bands
+      .map(
+        (band) => `
+      <label class="multiselect-option">
+        <input type="checkbox" value="${this.escapeHtml(band)}" data-band="${this.escapeHtml(band)}">
+        <span>${this.escapeHtml(band)}</span>
+      </label>
+    `,
+      )
+      .join("");
   }
 }
