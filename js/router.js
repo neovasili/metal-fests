@@ -2,6 +2,8 @@
 class ClientRouter {
   constructor() {
     this.bandRoutePattern = /^\/bands\/([a-z0-9-]+)$/;
+    this.currentView = null;
+    this.mapInitialized = false;
     this.init();
   }
 
@@ -9,8 +11,8 @@ class ClientRouter {
     // Initialize SPA Router for view links
     this.router = new SPARouter({
       routes: {
-        "/": "index",
-        "/timeline": "index",
+        "/": "timeline",
+        "/timeline": "timeline",
         "/map": "map",
         "/error": "error",
       },
@@ -25,51 +27,88 @@ class ClientRouter {
     // Check if it's a band route - those are handled by BandManager
     const bandMatch = path.match(this.bandRoutePattern);
     if (bandMatch) {
-      // Band routes stay on index page, BandManager handles the modal
+      // Band routes stay on timeline view, BandManager handles the modal
       return;
     }
 
-    // For other routes, check if we need to reload the page
-    const targetPage = this.getTargetPage(path);
+    // Determine which view to show
+    const targetView = this.getTargetView(path);
 
-    // Note: We can't use getCurrentPage() here because the URL has already changed
-    // Instead, check if we're already on an HTML page with the right content
-    const currentHtmlFile = document.location.pathname.endsWith(".html")
-      ? document.location.pathname.split("/").pop()
-      : null;
+    // If error page is needed, redirect to error.html
+    if (targetView === "error") {
+      if (!isInitial) {
+        window.location.href = "error.html";
+      }
+      return;
+    }
 
-    // Only reload if we're on a different HTML file and this isn't the initial load
-    if (currentHtmlFile && currentHtmlFile !== targetPage && !isInitial) {
-      this.loadPage(targetPage);
-    } else if (!currentHtmlFile && !isInitial) {
-      // We're on a clean URL but need to load a different HTML file
-      this.loadPage(targetPage);
+    // Check if we're on the main SPA page (index.html)
+    const hasTimelineView = document.getElementById("timeline-view") !== null;
+    const hasMapView = document.getElementById("map-view") !== null;
+
+    if (hasTimelineView && hasMapView) {
+      // We're on the SPA page, just switch views
+      this.switchView(targetView, isInitial);
+    } else {
+      // We're on a standalone page (map.html or error.html), redirect to index.html
+      if (!isInitial) {
+        window.location.href = path === "/map" ? "/" : "index.html";
+      }
     }
   }
 
-  getTargetPage(path) {
+  getTargetView(path) {
     if (path === "/" || path === "/timeline" || path.match(this.bandRoutePattern)) {
-      return "index.html";
+      return "timeline";
     } else if (path === "/map") {
-      return "map.html";
+      return "map";
     } else if (path === "/error") {
-      return "error.html";
+      return "error";
     }
-    return "index.html";
+    return "timeline";
   }
 
-  getCurrentPage() {
-    const path = window.location.pathname;
-    if (path.endsWith(".html")) {
-      return path.split("/").pop();
+  switchView(view, isInitial) {
+    // Don't switch if already on this view
+    if (this.currentView === view && !isInitial) {
+      return;
     }
-    // If no .html extension, we're on a clean URL
-    return this.getTargetPage(path);
-  }
 
-  loadPage(htmlFile) {
-    // Navigate to the HTML file
-    window.location.href = htmlFile;
+    this.currentView = view;
+
+    const timelineView = document.getElementById("timeline-view");
+    const mapView = document.getElementById("map-view");
+    const loadingText = document.getElementById("loading-text");
+
+    if (view === "timeline") {
+      // Show timeline, hide map
+      if (timelineView) timelineView.style.display = "block";
+      if (mapView) mapView.style.display = "none";
+      if (loadingText) loadingText.textContent = "Loading festivals...";
+      document.title = "European Metal Festivals 2026 Timeline";
+    } else if (view === "map") {
+      // Show map, hide timeline
+      if (timelineView) timelineView.style.display = "none";
+      if (mapView) mapView.style.display = "block";
+      if (loadingText) loadingText.textContent = "Loading festivals map...";
+      document.title = "Festival Map - European Metal Festivals 2026";
+
+      // Initialize map if not already done
+      if (!this.mapInitialized && typeof window.initializeMap === "function") {
+        this.mapInitialized = true;
+        // Small delay to ensure the map container is visible
+        setTimeout(() => {
+          // Pass shared data and managers from timeline to map
+          const festivals = window.sharedFestivals || [];
+          const favoritesManager = window.sharedFavoritesManager;
+          const filterManager = window.sharedFilterManager;
+          const bandsFilterManager = window.sharedBandsFilterManager;
+          const bandManager = window.sharedBandManager;
+
+          window.initializeMap(festivals, favoritesManager, filterManager, bandsFilterManager, bandManager);
+        }, 50);
+      }
+    }
   }
 }
 

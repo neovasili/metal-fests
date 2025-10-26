@@ -6,10 +6,19 @@ class FestivalTimeline {
     this.loading = document.getElementById("loading");
     this.filterContainer = document.getElementById("filter-container");
     this.filterContainerMobile = document.getElementById("filter-container-mobile");
+
+    // Create manager instances and store them globally for reuse in SPA mode
     this.favoritesManager = new FavoritesManager();
     this.filterManager = new FilterManager();
     this.bandsFilterManager = new BandsFilterManager();
     this.bandManager = new BandManager();
+
+    // Store globally so map view can reuse them
+    window.sharedFavoritesManager = this.favoritesManager;
+    window.sharedFilterManager = this.filterManager;
+    window.sharedBandsFilterManager = this.bandsFilterManager;
+    window.sharedBandManager = this.bandManager;
+
     this.allBands = [];
     this.init();
   }
@@ -43,6 +52,9 @@ class FestivalTimeline {
       }
       const data = await response.json();
       this.festivals = data.festivals;
+
+      // Store festivals globally for map view
+      window.sharedFestivals = this.festivals;
     } catch (error) {
       console.error("Error loading festivals:", error);
       throw error;
@@ -75,6 +87,11 @@ class FestivalTimeline {
       UIUtils.updateFilterButton(filterButtonMobile, newState);
       this.applyFilter();
 
+      // Update map if it exists
+      if (window.festivalMapInstance) {
+        window.festivalMapInstance.updateFilters();
+      }
+
       const message = newState ? "Showing favorites only" : "Showing all festivals";
       UIUtils.showNotification(message, "info");
     };
@@ -100,11 +117,22 @@ class FestivalTimeline {
         }
         this.updateBandsFilter();
         this.applyFilter();
+
+        // Update map if it exists
+        if (window.festivalMapInstance) {
+          window.festivalMapInstance.updateFilters();
+        }
       },
       onClearAll: () => {
         this.bandsFilterManager.clearAllBands();
         this.updateBandsFilter();
         this.applyFilter();
+
+        // Update map if it exists
+        if (window.festivalMapInstance) {
+          window.festivalMapInstance.updateFilters();
+        }
+
         UIUtils.showNotification("All band filters cleared", "info");
       },
       onSearch: (searchTerm) => {
@@ -228,6 +256,11 @@ class FestivalTimeline {
     // Listen for favorite toggle events to refresh filter
     card.addEventListener("favoriteToggled", () => {
       this.applyFilter();
+
+      // Update map if it exists
+      if (window.festivalMapInstance) {
+        window.festivalMapInstance.updateFilters();
+      }
     });
 
     this.timelineContent.appendChild(card);
