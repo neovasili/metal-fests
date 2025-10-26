@@ -359,7 +359,7 @@ class FestivalEditForm {
   }
 
   scrollToTop() {
-    const scrollableContainer = this.container.closest(".form-content");
+    const scrollableContainer = this.container.querySelector(".form-content");
     if (scrollableContainer) {
       scrollableContainer.scrollTo({ top: 0, behavior: "smooth" });
     } else {
@@ -509,24 +509,33 @@ class FestivalEditForm {
 
     this.container.innerHTML = `
       <div class="admin-form">
-        <form id="festivalForm" class="festival-form">
-          <div class="form-group">
-            <label for="festivalKey">Festival Key*</label>
-            <input
-              type="text"
-              id="festivalKey"
-              name="key"
-              value="${this.escapeHtml(festival.key || "")}"
-              required
-              placeholder="festival-key-example"
-              data-field="key"
-              pattern="[a-z0-9-]+"
-              title="Only lowercase letters, numbers, and dashes allowed"
-            >
-            <small style="color: #666; font-size: 0.85rem; margin-top: 0.25rem; display: block;">
-              Unique identifier for the festival (lowercase, numbers, and dashes only)
-            </small>
+        <!-- Form Header -->
+        <div class="form-header">
+          <div class="form-header-title">
+            <h2>Festival Details</h2>
           </div>
+        </div>
+
+        <!-- Scrollable Form Content -->
+        <div class="form-content">
+          <form id="festivalForm" class="festival-form">
+            <div class="form-group">
+              <label for="festivalKey">Festival Key*</label>
+              <input
+                type="text"
+                id="festivalKey"
+                name="key"
+                value="${this.escapeHtml(festival.key || "")}"
+                required
+                placeholder="festival-key-example"
+                data-field="key"
+                pattern="[a-z0-9-]+"
+                title="Only lowercase letters, numbers, and dashes allowed"
+              >
+              <small style="color: #666; font-size: 0.85rem; margin-top: 0.25rem; display: block;">
+                Unique identifier for the festival (lowercase, numbers, and dashes only)
+              </small>
+            </div>
 
           <div class="form-group">
             <label for="festivalName">Festival Name*</label>
@@ -697,6 +706,7 @@ class FestivalEditForm {
             <button type="submit" class="btn-primary">Save Festival</button>
           </div>
         </form>
+        </div>
       </div>
     `;
 

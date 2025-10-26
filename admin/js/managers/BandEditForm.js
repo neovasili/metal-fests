@@ -449,7 +449,7 @@ class BandEditForm {
   }
 
   scrollToTop() {
-    const scrollableContainer = this.container.closest(".form-content");
+    const scrollableContainer = this.container.querySelector(".form-content");
     if (scrollableContainer) {
       scrollableContainer.scrollTo({ top: 0, behavior: "smooth" });
     } else {
