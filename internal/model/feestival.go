@@ -8,8 +8,13 @@ type Festival struct {
 	Coordinates Coordinates `json:"coordinates"`
 	Poster      string      `json:"poster"`
 	Website     string      `json:"website"`
-	Bands       []string    `json:"bands"`
+	Bands       []BandRef   `json:"bands"`
 	TicketPrice float64     `json:"ticketPrice"`
+}
+
+type BandRef struct {
+	Key  string `json:"key"`
+	Name string `json:"name"`
 }
 
 type Dates struct {

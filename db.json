@@ -29,29 +29,89 @@
         "lat": 50.3322,
         "lng": 6.9447
       },
-      "poster": "https://www.rock-am-ring.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRaR_Vertical_White_1024.png\u0026w=1280\u0026q=100",
+      "poster": "https://www.rock-am-ring.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRaR_Vertical_White_1024.png&w=1280&q=100",
       "website": "https://www.rock-am-ring.com",
       "bands": [
-        "Limp Bizkit",
-        "Linkin Park",
-        "Papa Roach",
-        "Architects",
-        "Baby Metal",
-        "Trivium",
-        "Within Temptation",
-        "Bad Omens",
-        "Volbeat",
-        "Electric Callboy",
-        "Ice Nine Kills",
-        "Landmarks",
-        "Marteria",
-        "Three Days Grace",
-        "Sabaton",
-        "Iron Maiden",
-        "The Offspring",
-        "A Perfect Circle",
-        "Hollywood Undead",
-        "Social Distortion"
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "linkin-park",
+          "name": "Linkin Park"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "architects",
+          "name": "Architects"
+        },
+        {
+          "key": "babymetal",
+          "name": "Baby Metal"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "electric-callboy",
+          "name": "Electric Callboy"
+        },
+        {
+          "key": "ice-nine-kills",
+          "name": "Ice Nine Kills"
+        },
+        {
+          "key": "landmarks",
+          "name": "Landmarks"
+        },
+        {
+          "key": "marteria",
+          "name": "Marteria"
+        },
+        {
+          "key": "three-days-grace",
+          "name": "Three Days Grace"
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "a-perfect-circle",
+          "name": "A Perfect Circle"
+        },
+        {
+          "key": "hollywood-undead",
+          "name": "Hollywood Undead"
+        },
+        {
+          "key": "social-distortion",
+          "name": "Social Distortion"
+        }
       ],
       "ticketPrice": 179
     },
@@ -67,29 +127,89 @@
         "lat": 49.4521,
         "lng": 11.0767
       },
-      "poster": "https://www.rock-im-park.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRiP_Vertical_White_1024.png\u0026w=1280\u0026q=100",
+      "poster": "https://www.rock-im-park.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRiP_Vertical_White_1024.png&w=1280&q=100",
       "website": "https://www.rock-im-park.com",
       "bands": [
-        "Limp Bizkit",
-        "Linkin Park",
-        "Papa Roach",
-        "Architects",
-        "Baby Metal",
-        "Trivium",
-        "Within Temptation",
-        "Bad Omens",
-        "Volbeat",
-        "Electric Callboy",
-        "Ice Nine Kills",
-        "Landmarks",
-        "Marteria",
-        "Three Days Grace",
-        "Sabaton",
-        "Iron Maiden",
-        "The Offspring",
-        "A Perfect Circle",
-        "Hollywood Undead",
-        "Social Distortion"
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "linkin-park",
+          "name": "Linkin Park"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "architects",
+          "name": "Architects"
+        },
+        {
+          "key": "babymetal",
+          "name": "Baby Metal"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "electric-callboy",
+          "name": "Electric Callboy"
+        },
+        {
+          "key": "ice-nine-kills",
+          "name": "Ice Nine Kills"
+        },
+        {
+          "key": "landmarks",
+          "name": "Landmarks"
+        },
+        {
+          "key": "marteria",
+          "name": "Marteria"
+        },
+        {
+          "key": "three-days-grace",
+          "name": "Three Days Grace"
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "a-perfect-circle",
+          "name": "A Perfect Circle"
+        },
+        {
+          "key": "hollywood-undead",
+          "name": "Hollywood Undead"
+        },
+        {
+          "key": "social-distortion",
+          "name": "Social Distortion"
+        }
       ],
       "ticketPrice": 318
     },
@@ -125,30 +245,102 @@
       "poster": "https://dkipu5jeyvxyb.cloudfront.net/wp-content/uploads/2017/09/24040110/NR.png",
       "website": "https://novarock.at",
       "bands": [
-        "Bring Me The Horizon",
-        "The Offspring",
-        "Volbeat",
-        "Iron Maiden",
-        "The Cure",
-        "Bad Omens",
-        "Sabaton",
-        "Papa Roach",
-        "Architects",
-        "Airbourne",
-        "The Hu",
-        "Trivium",
-        "Pendulum",
-        "Danko Jones",
-        "Hateful Agony",
-        "Glasperlenspiel",
-        "Mayday Parade",
-        "Amon Amarth",
-        "Septicflesh",
-        "Deadlands",
-        "Randy Brecker",
-        "Souldiva",
-        "Hyhc",
-        "The Ocean"
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "the-cure",
+          "name": "The Cure"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "architects",
+          "name": "Architects"
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne"
+        },
+        {
+          "key": "the-hu",
+          "name": "The Hu"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "pendulum",
+          "name": "Pendulum"
+        },
+        {
+          "key": "danko-jones",
+          "name": "Danko Jones"
+        },
+        {
+          "key": "hateful-agony",
+          "name": "Hateful Agony"
+        },
+        {
+          "key": "glasperlenspiel",
+          "name": "Glasperlenspiel"
+        },
+        {
+          "key": "mayday-parade",
+          "name": "Mayday Parade"
+        },
+        {
+          "key": "amon-amarth",
+          "name": "Amon Amarth"
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh"
+        },
+        {
+          "key": "deadlands",
+          "name": "Deadlands"
+        },
+        {
+          "key": "randy-brecker",
+          "name": "Randy Brecker"
+        },
+        {
+          "key": "souldiva",
+          "name": "Souldiva"
+        },
+        {
+          "key": "hyhc",
+          "name": "Hyhc"
+        },
+        {
+          "key": "the-ocean",
+          "name": "The Ocean"
+        }
       ],
       "ticketPrice": 280
     },
@@ -181,38 +373,125 @@
         "lat": 55.6761,
         "lng": 12.5683
       },
-      "poster": "https://i0.wp.com/kulturtid.dk/wp-content/uploads/2024/07/copenhell-logo2024.jpg?resize=1021%2C580\u0026ssl=1",
+      "poster": "https://i0.wp.com/kulturtid.dk/wp-content/uploads/2024/07/copenhell-logo2024.jpg?resize=1021%2C580&ssl=1",
       "website": "https://copenhell.dk",
       "bands": [
-        "Iron Maiden",
-        "Bring Me The Horizon",
-        "Twisted Sister",
-        "Volbeat",
-        "Alice Cooper",
-        "Papa Roach",
-        "A Perfect Circle",
-        "Trivium",
-        "P.O.D.",
-        "Sepultura",
-        "Kublai Khan Tx",
-        "President",
-        "Queensrÿche",
-        "Konvent",
-        "Six Feet Under",
-        "Malevolence",
-        "Static X",
-        "The Browning",
-        "Gridiron",
-        "Powerplant",
-        "Split",
-        "Twenty One Children",
-        "End It",
-        "Voice Of Baceprot",
-        "Chopper",
-        "Inhuman Nature",
-        "Warkings",
-        "Vexed",
-        "Psycho Moshers"
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "twisted-sister",
+          "name": "Twisted Sister"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "alice-cooper",
+          "name": "Alice Cooper"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "a-perfect-circle",
+          "name": "A Perfect Circle"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "p-o-d",
+          "name": "P.O.D."
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan Tx"
+        },
+        {
+          "key": "president-metal-band",
+          "name": "President"
+        },
+        {
+          "key": "queensryche",
+          "name": "Queensrÿche"
+        },
+        {
+          "key": "konvent",
+          "name": "Konvent"
+        },
+        {
+          "key": "six-feet-under",
+          "name": "Six Feet Under"
+        },
+        {
+          "key": "malevolence",
+          "name": "Malevolence"
+        },
+        {
+          "key": "static-x",
+          "name": "Static X"
+        },
+        {
+          "key": "the-browning",
+          "name": "The Browning"
+        },
+        {
+          "key": "gridiron",
+          "name": "Gridiron"
+        },
+        {
+          "key": "powerplant",
+          "name": "Powerplant"
+        },
+        {
+          "key": "split",
+          "name": "Split"
+        },
+        {
+          "key": "twenty-one-children",
+          "name": "Twenty One Children"
+        },
+        {
+          "key": "end-it",
+          "name": "End It"
+        },
+        {
+          "key": "voice-of-baceprot",
+          "name": "Voice Of Baceprot"
+        },
+        {
+          "key": "chopper",
+          "name": "Chopper"
+        },
+        {
+          "key": "inhuman-nature",
+          "name": "Inhuman Nature"
+        },
+        {
+          "key": "warkings",
+          "name": "Warkings"
+        },
+        {
+          "key": "vexed",
+          "name": "Vexed"
+        },
+        {
+          "key": "psycho-moshers",
+          "name": "Psycho Moshers"
+        }
       ],
       "ticketPrice": 350
     },
@@ -248,24 +527,78 @@
       "poster": "https://travelmetal.com/wp-content/uploads/2016/09/resurrection-Fest-2017.jpg",
       "website": "https://www.resurrectionfest.es",
       "bands": [
-        "Caliban",
-        "Iron Maiden",
-        "Limp Bizkit",
-        "Marilyn Manson",
-        "Trivium",
-        "Cavalera Conspiracy",
-        "P.O.D.",
-        "Blood Incantation",
-        "Converge",
-        "The Rasmus",
-        "Imminence",
-        "Thrown",
-        "Caliban",
-        "House Of Protection",
-        "Feuerschwanz",
-        "Man With A Mission",
-        "Get The Shot",
-        "The Vintage Caravan"
+        {
+          "key": "caliban",
+          "name": "Caliban"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "marilyn-manson",
+          "name": "Marilyn Manson"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "cavalera-conspiracy",
+          "name": "Cavalera Conspiracy"
+        },
+        {
+          "key": "p-o-d",
+          "name": "P.O.D."
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "converge",
+          "name": "Converge"
+        },
+        {
+          "key": "the-rasmus",
+          "name": "The Rasmus"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "thrown",
+          "name": "Thrown"
+        },
+        {
+          "key": "caliban",
+          "name": "Caliban"
+        },
+        {
+          "key": "house-of-protection",
+          "name": "House Of Protection"
+        },
+        {
+          "key": "feuerschwanz",
+          "name": "Feuerschwanz"
+        },
+        {
+          "key": "man-with-a-mission",
+          "name": "Man With A Mission"
+        },
+        {
+          "key": "get-the-shot",
+          "name": "Get The Shot"
+        },
+        {
+          "key": "the-vintage-caravan",
+          "name": "The Vintage Caravan"
+        }
       ],
       "ticketPrice": 235
     },
@@ -284,29 +617,98 @@
       "poster": "https://es.concerty.com/img/festival/logo/496.png",
       "website": "https://mastersofrock.cz",
       "bands": [
-        "Helloween",
-        "In Flames",
-        "The Rasmus",
-        "Dirkschneider",
-        "Cavalera Conspiracy",
-        "Kissin' Dynamite",
-        "Feuerschwanz",
-        "Lordi",
-        "Primal Fear",
-        "The Gathering",
-        "Visions Of Atlantis",
-        "Voivod",
-        "Brothers Of Metal",
-        "Miracle Of Sound",
-        "Elvenking",
-        "Ex Deo",
-        "Brainstorm",
-        "Crucified Barbara",
-        "Curse Of Cain",
-        "Enemy Inside",
-        "Neckbreaker",
-        "Art Nation",
-        "Self Deception"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "the-rasmus",
+          "name": "The Rasmus"
+        },
+        {
+          "key": "dirkschneider",
+          "name": "Dirkschneider"
+        },
+        {
+          "key": "cavalera-conspiracy",
+          "name": "Cavalera Conspiracy"
+        },
+        {
+          "key": "kissin-dynamite",
+          "name": "Kissin' Dynamite"
+        },
+        {
+          "key": "feuerschwanz",
+          "name": "Feuerschwanz"
+        },
+        {
+          "key": "lordi",
+          "name": "Lordi"
+        },
+        {
+          "key": "primal-fear",
+          "name": "Primal Fear"
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering"
+        },
+        {
+          "key": "visions-of-atlantis",
+          "name": "Visions Of Atlantis"
+        },
+        {
+          "key": "voivod",
+          "name": "Voivod"
+        },
+        {
+          "key": "brothers-of-metal",
+          "name": "Brothers Of Metal"
+        },
+        {
+          "key": "miracle-of-sound",
+          "name": "Miracle Of Sound"
+        },
+        {
+          "key": "elvenking",
+          "name": "Elvenking"
+        },
+        {
+          "key": "ex-deo",
+          "name": "Ex Deo"
+        },
+        {
+          "key": "brainstorm-metal-band",
+          "name": "Brainstorm"
+        },
+        {
+          "key": "crucified-barbara",
+          "name": "Crucified Barbara"
+        },
+        {
+          "key": "curse-of-cain",
+          "name": "Curse Of Cain"
+        },
+        {
+          "key": "enemy-inside",
+          "name": "Enemy Inside"
+        },
+        {
+          "key": "neckbreaker",
+          "name": "Neckbreaker"
+        },
+        {
+          "key": "art-nation",
+          "name": "Art Nation"
+        },
+        {
+          "key": "self-deception",
+          "name": "Self Deception"
+        }
       ],
       "ticketPrice": 140
     },
@@ -325,48 +727,174 @@
       "poster": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Brutal_Assault.png",
       "website": "https://brutalassault.cz",
       "bands": [
-        "The Sisters Of Mercy",
-        "The Ghost Inside",
-        "200 Stab Wounds",
-        "Alcest",
-        "Allt",
-        "Amorphis",
-        "Animals As Leaders",
-        "Arthur Brown",
-        "Bleed From Within",
-        "Castle Rat",
-        "Coroner",
-        "Crippling Alcoholism",
-        "Cryptopsy",
-        "Deafheaven",
-        "Death Angel",
-        "Deceased",
-        "Deicide",
-        "Deserted Fear",
-        "Devourment",
-        "Draconian",
-        "Elder",
-        "Fallujah",
-        "Imminence",
-        "Insomnium",
-        "Internal Bleeding",
-        "Kittie",
-        "Marduk",
-        "Master Boot Record",
-        "Metal Church",
-        "Municipal Waste",
-        "Old Man'S Child",
-        "Rise Of The Northstar",
-        "Sadistic Intent",
-        "Sanguisugabogg",
-        "Saor",
-        "Septicflesh",
-        "Signs Of The Swarm",
-        "Slope",
-        "Triptykon",
-        "Vader",
-        "Vended",
-        "Wyatt E."
+        {
+          "key": "the-sisters-of-mercy",
+          "name": "The Sisters Of Mercy"
+        },
+        {
+          "key": "the-ghost-inside",
+          "name": "The Ghost Inside"
+        },
+        {
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds"
+        },
+        {
+          "key": "alcest",
+          "name": "Alcest"
+        },
+        {
+          "key": "allt",
+          "name": "Allt"
+        },
+        {
+          "key": "amorphis",
+          "name": "Amorphis"
+        },
+        {
+          "key": "animals-as-leaders",
+          "name": "Animals As Leaders"
+        },
+        {
+          "key": "arthur-brown",
+          "name": "Arthur Brown"
+        },
+        {
+          "key": "bleed-from-within",
+          "name": "Bleed From Within"
+        },
+        {
+          "key": "castle-rat",
+          "name": "Castle Rat"
+        },
+        {
+          "key": "coroner",
+          "name": "Coroner"
+        },
+        {
+          "key": "crippling-alcoholism",
+          "name": "Crippling Alcoholism"
+        },
+        {
+          "key": "cryptopsy",
+          "name": "Cryptopsy"
+        },
+        {
+          "key": "deafheaven",
+          "name": "Deafheaven"
+        },
+        {
+          "key": "death-angel",
+          "name": "Death Angel"
+        },
+        {
+          "key": "deceased",
+          "name": "Deceased"
+        },
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "deserted-fear",
+          "name": "Deserted Fear"
+        },
+        {
+          "key": "devourment",
+          "name": "Devourment"
+        },
+        {
+          "key": "draconian",
+          "name": "Draconian"
+        },
+        {
+          "key": "elder",
+          "name": "Elder"
+        },
+        {
+          "key": "fallujah",
+          "name": "Fallujah"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "insomnium",
+          "name": "Insomnium"
+        },
+        {
+          "key": "internal-bleeding",
+          "name": "Internal Bleeding"
+        },
+        {
+          "key": "kittie",
+          "name": "Kittie"
+        },
+        {
+          "key": "marduk",
+          "name": "Marduk"
+        },
+        {
+          "key": "master-boot-record",
+          "name": "Master Boot Record"
+        },
+        {
+          "key": "metal-church",
+          "name": "Metal Church"
+        },
+        {
+          "key": "municipal-waste",
+          "name": "Municipal Waste"
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Man'S Child"
+        },
+        {
+          "key": "rise-of-the-northstar",
+          "name": "Rise Of The Northstar"
+        },
+        {
+          "key": "sadistic-intent",
+          "name": "Sadistic Intent"
+        },
+        {
+          "key": "sanguisugabogg",
+          "name": "Sanguisugabogg"
+        },
+        {
+          "key": "saor",
+          "name": "Saor"
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh"
+        },
+        {
+          "key": "signs-of-the-swarm",
+          "name": "Signs Of The Swarm"
+        },
+        {
+          "key": "slope",
+          "name": "Slope"
+        },
+        {
+          "key": "tryptikon",
+          "name": "Triptykon"
+        },
+        {
+          "key": "vader",
+          "name": "Vader"
+        },
+        {
+          "key": "vended",
+          "name": "Vended"
+        },
+        {
+          "key": "wyatt-e",
+          "name": "Wyatt E."
+        }
       ],
       "ticketPrice": 195
     },
@@ -382,44 +910,149 @@
         "lat": 53.9347,
         "lng": 9.3875
       },
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTzgs_6Ax_eR3JamWFprxf7kzqSZi9rLoKA\u0026s",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTzgs_6Ax_eR3JamWFprxf7kzqSZi9rLoKA&s",
       "website": "https://www.wacken.com",
       "bands": [
-        "Def Leppard",
-        "In Flames",
-        "Powerwolf",
-        "Savatage",
-        "Allt",
-        "Airbourne",
-        "Any Given Day",
-        "Blood Command",
-        "Blood Fire Death",
-        "Broken By The Scream",
-        "Einherjer",
-        "Emperor",
-        "Europe",
-        "Faun",
-        "Future Palace",
-        "Gutalax",
-        "Grand Magus",
-        "Insanity Alert",
-        "H-Blockx",
-        "Kupfergold",
-        "Lamb Of God",
-        "Luna Kills",
-        "Mantar",
-        "Nevermore",
-        "Orbit Culture",
-        "Paleface Swiss",
-        "Pig Destroyer",
-        "Running Wild",
-        "Sepultura",
-        "Ten56.",
-        "The Gathering",
-        "The Hardkiss",
-        "Thundermother",
-        "Thrown",
-        "Tryptikon"
+        {
+          "key": "def-leppard",
+          "name": "Def Leppard"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "powerwolf",
+          "name": "Powerwolf"
+        },
+        {
+          "key": "savatage",
+          "name": "Savatage"
+        },
+        {
+          "key": "allt",
+          "name": "Allt"
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne"
+        },
+        {
+          "key": "any-given-day",
+          "name": "Any Given Day"
+        },
+        {
+          "key": "blood-command",
+          "name": "Blood Command"
+        },
+        {
+          "key": "blood-fire-death",
+          "name": "Blood Fire Death"
+        },
+        {
+          "key": "broken-by-the-scream",
+          "name": "Broken By The Scream"
+        },
+        {
+          "key": "einherjer",
+          "name": "Einherjer"
+        },
+        {
+          "key": "emperor",
+          "name": "Emperor"
+        },
+        {
+          "key": "europe-metal-band",
+          "name": "Europe"
+        },
+        {
+          "key": "faun",
+          "name": "Faun"
+        },
+        {
+          "key": "future-palace",
+          "name": "Future Palace"
+        },
+        {
+          "key": "gutalax",
+          "name": "Gutalax"
+        },
+        {
+          "key": "grand-magus",
+          "name": "Grand Magus"
+        },
+        {
+          "key": "insanity-alert",
+          "name": "Insanity Alert"
+        },
+        {
+          "key": "h-blockx",
+          "name": "H-Blockx"
+        },
+        {
+          "key": "kupfergold",
+          "name": "Kupfergold"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "luna-kills",
+          "name": "Luna Kills"
+        },
+        {
+          "key": "mantar",
+          "name": "Mantar"
+        },
+        {
+          "key": "nevermore",
+          "name": "Nevermore"
+        },
+        {
+          "key": "orbit-culture",
+          "name": "Orbit Culture"
+        },
+        {
+          "key": "paleface-swiss",
+          "name": "Paleface Swiss"
+        },
+        {
+          "key": "pig-destroyer",
+          "name": "Pig Destroyer"
+        },
+        {
+          "key": "running-wild",
+          "name": "Running Wild"
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "ten56",
+          "name": "Ten56."
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering"
+        },
+        {
+          "key": "the-hardkiss",
+          "name": "The Hardkiss"
+        },
+        {
+          "key": "thundermother",
+          "name": "Thundermother"
+        },
+        {
+          "key": "thrown",
+          "name": "Thrown"
+        },
+        {
+          "key": "tryptikon",
+          "name": "Tryptikon"
+        }
       ],
       "ticketPrice": 349
     },
@@ -435,22 +1068,61 @@
         "lat": 38.6372,
         "lng": -0.8657
       },
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09ctI_UejVHK9a-iFQ9P2J0C6-Zp9a_dPKg\u0026s",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09ctI_UejVHK9a-iFQ9P2J0C6-Zp9a_dPKg&s",
       "website": "https://www.leyendasdelrockfestival.com",
       "bands": [
-        "Helloween",
-        "In Flames",
-        "Slaughter To Prevail",
-        "Godsmack",
-        "Warcry",
-        "Sepultura",
-        "Nothing More",
-        "Deicide",
-        "Dark Tranquillity",
-        "Of Mice \u0026 Men",
-        "Black Label Society",
-        "Savatage",
-        "Heaven Shall Burn"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        },
+        {
+          "key": "godsmack",
+          "name": "Godsmack"
+        },
+        {
+          "key": "warcry",
+          "name": "Warcry"
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "nothing-more",
+          "name": "Nothing More"
+        },
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "dark-tranquillity",
+          "name": "Dark Tranquillity"
+        },
+        {
+          "key": "of-mice-and-men",
+          "name": "Of Mice & Men"
+        },
+        {
+          "key": "black-label-society",
+          "name": "Black Label Society"
+        },
+        {
+          "key": "savatage",
+          "name": "Savatage"
+        },
+        {
+          "key": "heaven-shall-burn",
+          "name": "Heaven Shall Burn"
+        }
       ],
       "ticketPrice": 189
     },
@@ -469,31 +1141,106 @@
       "poster": "https://bloodstock.uk.com/assets/objects/line_up_modal/stacked-logo-310f4cb3e82dc4a83c45d48447089e74a9b02c1345b878ee2b06869f8e4c2222.png",
       "website": "https://bloodstock.uk.com",
       "bands": [
-        "Lamb Of God",
-        "Sepultura",
-        "Municipal Waste",
-        "Biohazard",
-        "Life Of Agony",
-        "Slaughter To Prevail",
-        "Bleed From Within",
-        "Of Mice \u0026 Men",
-        "Northlane",
-        "Vended",
-        "Death Angel",
-        "The Scratch",
-        "Imperial Age",
-        "Judas Priest",
-        "Orbit Culture",
-        "Cryptopsy",
-        "Black Spiders",
-        "The Hell",
-        "Heavysaurus",
-        "Wednesday 13",
-        "Shining",
-        "Leprous",
-        "Nevermore",
-        "Carpenter Brut",
-        "200 Stab Wounds"
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "municipal-waste",
+          "name": "Municipal Waste"
+        },
+        {
+          "key": "biohazard",
+          "name": "Biohazard"
+        },
+        {
+          "key": "life-of-agony",
+          "name": "Life Of Agony"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        },
+        {
+          "key": "bleed-from-within",
+          "name": "Bleed From Within"
+        },
+        {
+          "key": "of-mice-and-men",
+          "name": "Of Mice & Men"
+        },
+        {
+          "key": "northlane",
+          "name": "Northlane"
+        },
+        {
+          "key": "vended",
+          "name": "Vended"
+        },
+        {
+          "key": "death-angel",
+          "name": "Death Angel"
+        },
+        {
+          "key": "the-scratch",
+          "name": "The Scratch"
+        },
+        {
+          "key": "imperial-age",
+          "name": "Imperial Age"
+        },
+        {
+          "key": "judas-priest",
+          "name": "Judas Priest"
+        },
+        {
+          "key": "orbit-culture",
+          "name": "Orbit Culture"
+        },
+        {
+          "key": "cryptopsy",
+          "name": "Cryptopsy"
+        },
+        {
+          "key": "black-spiders",
+          "name": "Black Spiders"
+        },
+        {
+          "key": "the-hell",
+          "name": "The Hell"
+        },
+        {
+          "key": "heavysaurus",
+          "name": "Heavysaurus"
+        },
+        {
+          "key": "wednesday-13",
+          "name": "Wednesday 13"
+        },
+        {
+          "key": "shining",
+          "name": "Shining"
+        },
+        {
+          "key": "leprous",
+          "name": "Leprous"
+        },
+        {
+          "key": "nevermore",
+          "name": "Nevermore"
+        },
+        {
+          "key": "carpenter-brut",
+          "name": "Carpenter Brut"
+        },
+        {
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds"
+        }
       ],
       "ticketPrice": 250
     },
@@ -512,56 +1259,206 @@
       "poster": "https://www.sbtix.de/uploads/summer_breeze/ticket/image/86579/FestivalTicket2026_600x600_1755516804.jpeg",
       "website": "https://www.summer-breeze.de/en/",
       "bands": [
-        "Helloween",
-        "In Flames",
-        "Arch Enemy",
-        "Lamb Of God",
-        "Airbourne",
-        "Alestorm",
-        "Versengold",
-        "The Ghost Inside",
-        "Testament",
-        "Amorphis",
-        "Imminence",
-        "Paleface Swiss",
-        "Alcest",
-        "The Butcher Sisters",
-        "Orbit Culture",
-        "Kim Dracula",
-        "Deicide",
-        "Brothers Of Metal",
-        "Northlane",
-        "Dartagnan",
-        "Betontod",
-        "Terror",
-        "Deafheaven",
-        "Future Palace",
-        "Soen",
-        "Der Weg Einer Freiheit",
-        "Miracle Of Sound",
-        "Mushroomhead",
-        "Municipal Waste",
-        "Trollfest",
-        "Saor",
-        "Nanowar Of Steel",
-        "From Fall To Spring",
-        "Unprocessed",
-        "Misery Index",
-        "Cryptopsy",
-        "Brainstorm",
-        "Parasite Inc.",
-        "Excrementory Grindfuckers",
-        "Our Promise",
-        "Illdisposed",
-        "Ten56.",
-        "200 Stab Wounds",
-        "Groza",
-        "Manntra",
-        "Haggefugg",
-        "Blood Command",
-        "Cabal",
-        "Mittel Alta",
-        "Luna Kills"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "arch-enemy",
+          "name": "Arch Enemy"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne"
+        },
+        {
+          "key": "alestorm",
+          "name": "Alestorm"
+        },
+        {
+          "key": "versengold",
+          "name": "Versengold"
+        },
+        {
+          "key": "the-ghost-inside",
+          "name": "The Ghost Inside"
+        },
+        {
+          "key": "testament",
+          "name": "Testament"
+        },
+        {
+          "key": "amorphis",
+          "name": "Amorphis"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "paleface-swiss",
+          "name": "Paleface Swiss"
+        },
+        {
+          "key": "alcest",
+          "name": "Alcest"
+        },
+        {
+          "key": "the-butcher-sisters",
+          "name": "The Butcher Sisters"
+        },
+        {
+          "key": "orbit-culture",
+          "name": "Orbit Culture"
+        },
+        {
+          "key": "kim-dracula",
+          "name": "Kim Dracula"
+        },
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "brothers-of-metal",
+          "name": "Brothers Of Metal"
+        },
+        {
+          "key": "northlane",
+          "name": "Northlane"
+        },
+        {
+          "key": "dartagnan",
+          "name": "Dartagnan"
+        },
+        {
+          "key": "betontod",
+          "name": "Betontod"
+        },
+        {
+          "key": "terror",
+          "name": "Terror"
+        },
+        {
+          "key": "deafheaven",
+          "name": "Deafheaven"
+        },
+        {
+          "key": "future-palace",
+          "name": "Future Palace"
+        },
+        {
+          "key": "soen",
+          "name": "Soen"
+        },
+        {
+          "key": "der-weg-einer-freiheit",
+          "name": "Der Weg Einer Freiheit"
+        },
+        {
+          "key": "miracle-of-sound",
+          "name": "Miracle Of Sound"
+        },
+        {
+          "key": "mushroomhead",
+          "name": "Mushroomhead"
+        },
+        {
+          "key": "municipal-waste",
+          "name": "Municipal Waste"
+        },
+        {
+          "key": "trollfest",
+          "name": "Trollfest"
+        },
+        {
+          "key": "saor",
+          "name": "Saor"
+        },
+        {
+          "key": "nanowar-of-steel",
+          "name": "Nanowar Of Steel"
+        },
+        {
+          "key": "from-fall-to-spring",
+          "name": "From Fall To Spring"
+        },
+        {
+          "key": "unprocessed",
+          "name": "Unprocessed"
+        },
+        {
+          "key": "misery-index",
+          "name": "Misery Index"
+        },
+        {
+          "key": "cryptopsy",
+          "name": "Cryptopsy"
+        },
+        {
+          "key": "brainstorm-metal-band",
+          "name": "Brainstorm"
+        },
+        {
+          "key": "parasite-inc",
+          "name": "Parasite Inc."
+        },
+        {
+          "key": "excrementory-grindfuckers",
+          "name": "Excrementory Grindfuckers"
+        },
+        {
+          "key": "our-promise",
+          "name": "Our Promise"
+        },
+        {
+          "key": "illdisposed",
+          "name": "Illdisposed"
+        },
+        {
+          "key": "ten56",
+          "name": "Ten56."
+        },
+        {
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds"
+        },
+        {
+          "key": "groza",
+          "name": "Groza"
+        },
+        {
+          "key": "manntra",
+          "name": "Manntra"
+        },
+        {
+          "key": "haggefugg",
+          "name": "Haggefugg"
+        },
+        {
+          "key": "blood-command",
+          "name": "Blood Command"
+        },
+        {
+          "key": "cabal",
+          "name": "Cabal"
+        },
+        {
+          "key": "mittel-alta",
+          "name": "Mittel Alta"
+        },
+        {
+          "key": "luna-kills",
+          "name": "Luna Kills"
+        }
       ],
       "ticketPrice": 249
     },
@@ -580,17 +1477,32 @@
       "poster": "https://www.rockimperiumfestival.es/wp-content/uploads/2025/09/web_2026_logo_300.png",
       "website": "https://www.rockimperiumfestival.es/en/",
       "bands": [
-        "Iron Maiden",
-        "Sabaton",
-        "Trivium",
-        "Queensrÿche",
-        "Lacuna Coil"
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "queensryche",
+          "name": "Queensrÿche"
+        },
+        {
+          "key": "lacuna-coil",
+          "name": "Lacuna Coil"
+        }
       ],
       "ticketPrice": 195
     },
     {
       "key": "sun-thunder-2026",
-      "name": "Sun \u0026 Thunder 2026",
+      "name": "Sun & Thunder 2026",
       "dates": {
         "start": "2026-08-27",
         "end": "2026-08-29"
@@ -620,14 +1532,38 @@
       "poster": "",
       "website": "https://vagosmetalfest.com/",
       "bands": [
-        "Lamb Of God",
-        "Within Temptation",
-        "In Flames",
-        "Godsmack",
-        "Heaven Shall Burn",
-        "Deicide",
-        "Combichrist",
-        "Holocausto Canibal"
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "godsmack",
+          "name": "Godsmack"
+        },
+        {
+          "key": "heaven-shall-burn",
+          "name": "Heaven Shall Burn"
+        },
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "combichrist",
+          "name": "Combichrist"
+        },
+        {
+          "key": "holocausto-canibal",
+          "name": "Holocausto Canibal"
+        }
       ],
       "ticketPrice": 159
     },
@@ -646,12 +1582,30 @@
       "poster": "",
       "website": "https://www.infernofestival.net/",
       "bands": [
-        "Deicide",
-        "Enslaved",
-        "Samael",
-        "Old Man'S Child",
-        "Incantation",
-        "Auðn"
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "enslaved",
+          "name": "Enslaved"
+        },
+        {
+          "key": "samael",
+          "name": "Samael"
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Man'S Child"
+        },
+        {
+          "key": "incantation",
+          "name": "Incantation"
+        },
+        {
+          "key": "auðn",
+          "name": "Auðn"
+        }
       ],
       "ticketPrice": 435
     },
@@ -670,11 +1624,26 @@
       "poster": "",
       "website": "https://www.alcatraz.be/en/",
       "bands": [
-        "Arch Enemy",
-        "Alestorm",
-        "Powerwolf",
-        "Savatage",
-        "Slaughter To Prevail"
+        {
+          "key": "arch-enemy",
+          "name": "Arch Enemy"
+        },
+        {
+          "key": "alestorm",
+          "name": "Alestorm"
+        },
+        {
+          "key": "powerwolf",
+          "name": "Powerwolf"
+        },
+        {
+          "key": "savatage",
+          "name": "Savatage"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        }
       ],
       "ticketPrice": 249
     },
@@ -693,11 +1662,26 @@
       "poster": "",
       "website": "https://www.mysticfestival.pl/en/home/",
       "bands": [
-        "Winterfylleth",
-        "Kublai Khan Tx",
-        "Scour",
-        "Acid King",
-        "Septicflesh"
+        {
+          "key": "winterfylleth",
+          "name": "Winterfylleth"
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan Tx"
+        },
+        {
+          "key": "scour",
+          "name": "Scour"
+        },
+        {
+          "key": "acid-king",
+          "name": "Acid King"
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh"
+        }
       ],
       "ticketPrice": 300
     },
@@ -716,11 +1700,26 @@
       "poster": "",
       "website": "https://rockstadtextremefest.ro/",
       "bands": [
-        "Helloween",
-        "Accept",
-        "Lamb Of God",
-        "In Flames",
-        "Decapitated"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "accept",
+          "name": "Accept"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "decapitated",
+          "name": "Decapitated"
+        }
       ],
       "ticketPrice": 162.5
     },
@@ -739,17 +1738,50 @@
       "poster": "",
       "website": "https://rockforpeople.cz",
       "bands": [
-        "Bring Me The Horizon",
-        "Gorillaz",
-        "Limp Bizkit",
-        "Iron Maiden",
-        "Electric Callboy",
-        "Papa Roach",
-        "Three Days Grace",
-        "Alter Bridge",
-        "Baby Metal",
-        "Megadeth",
-        "Nothing But Thieves"
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "gorillaz",
+          "name": "Gorillaz"
+        },
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "electric-callboy",
+          "name": "Electric Callboy"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "three-days-grace",
+          "name": "Three Days Grace"
+        },
+        {
+          "key": "alter-bridge",
+          "name": "Alter Bridge"
+        },
+        {
+          "key": "babymetal",
+          "name": "Baby Metal"
+        },
+        {
+          "key": "megadeth",
+          "name": "Megadeth"
+        },
+        {
+          "key": "nothing-but-thieves",
+          "name": "Nothing But Thieves"
+        }
       ],
       "ticketPrice": 208
     },
@@ -768,17 +1800,50 @@
       "poster": "",
       "website": "https://www.jeraonair.nl",
       "bands": [
-        "The Offspring",
-        "Papa Roach",
-        "Rise Against",
-        "All Time Low",
-        "Bury Tomorrow",
-        "Ignite",
-        "Imminence",
-        "Malevolence",
-        "Magnolia Park",
-        "Wargasm",
-        "Ho99O9"
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "rise-against",
+          "name": "Rise Against"
+        },
+        {
+          "key": "all-time-low",
+          "name": "All Time Low"
+        },
+        {
+          "key": "bury-tomorrow",
+          "name": "Bury Tomorrow"
+        },
+        {
+          "key": "ignite",
+          "name": "Ignite"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "malevolence",
+          "name": "Malevolence"
+        },
+        {
+          "key": "magnolia-park",
+          "name": "Magnolia Park"
+        },
+        {
+          "key": "wargasm-uk",
+          "name": "Wargasm"
+        },
+        {
+          "key": "ho99o9",
+          "name": "Ho99O9"
+        }
       ],
       "ticketPrice": 239
     },
@@ -797,17 +1862,50 @@
       "poster": "",
       "website": "https://tuska.fi",
       "bands": [
-        "Bring Me The Horizon",
-        "Bad Omens",
-        "Megadeth",
-        "Trivium",
-        "P.O.D.",
-        "Stam1Na",
-        "Blood Incantation",
-        "Queensrÿche",
-        "Kublai Khan Tx",
-        "Soilwork",
-        "Ensiferum"
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "megadeth",
+          "name": "Megadeth"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "p-o-d",
+          "name": "P.O.D."
+        },
+        {
+          "key": "stam1na",
+          "name": "Stam1Na"
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "queensryche",
+          "name": "Queensrÿche"
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan Tx"
+        },
+        {
+          "key": "soilwork",
+          "name": "Soilwork"
+        },
+        {
+          "key": "ensiferum",
+          "name": "Ensiferum"
+        }
       ],
       "ticketPrice": 239
     },
@@ -826,18 +1924,54 @@
       "poster": "",
       "website": "https://www.rockharz-festival.com",
       "bands": [
-        "Helloween",
-        "Alice Cooper",
-        "Emperor",
-        "Knorkator",
-        "Subway To Sally",
-        "Agnostic Front",
-        "Kataklysm",
-        "Biohazard",
-        "Domnum",
-        "Finntroll",
-        "Gothminister",
-        "Motorjesus"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "alice-cooper",
+          "name": "Alice Cooper"
+        },
+        {
+          "key": "emperor",
+          "name": "Emperor"
+        },
+        {
+          "key": "knorkator",
+          "name": "Knorkator"
+        },
+        {
+          "key": "subway-to-sally",
+          "name": "Subway To Sally"
+        },
+        {
+          "key": "agnostic-front",
+          "name": "Agnostic Front"
+        },
+        {
+          "key": "kataklysm",
+          "name": "Kataklysm"
+        },
+        {
+          "key": "biohazard",
+          "name": "Biohazard"
+        },
+        {
+          "key": "domnum",
+          "name": "Domnum"
+        },
+        {
+          "key": "finntroll",
+          "name": "Finntroll"
+        },
+        {
+          "key": "gothminister",
+          "name": "Gothminister"
+        },
+        {
+          "key": "motorjesus",
+          "name": "Motorjesus"
+        }
       ],
       "ticketPrice": 0
     },
@@ -856,12 +1990,30 @@
       "poster": "",
       "website": "https://www.motocultor-festival.com",
       "bands": [
-        "Within Temptation",
-        "Slaughter To Prevail",
-        "Nanowar Of Steel",
-        "Uuhai",
-        "Cold Snap",
-        "Lone Survivors"
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        },
+        {
+          "key": "nanowar-of-steel",
+          "name": "Nanowar Of Steel"
+        },
+        {
+          "key": "uuhai",
+          "name": "Uuhai"
+        },
+        {
+          "key": "cold-snap",
+          "name": "Cold Snap"
+        },
+        {
+          "key": "lone-survivors",
+          "name": "Lone Survivors"
+        }
       ],
       "ticketPrice": 192
     },
@@ -880,17 +2032,50 @@
       "poster": "",
       "website": "https://reload-festival.de",
       "bands": [
-        "Judas Priest",
-        "In Flames",
-        "Arch Enemy",
-        "Lamb Of God",
-        "Godsmack",
-        "Airbourne",
-        "The Ghost Inside",
-        "Thy Art Is Murder",
-        "Imminence",
-        "Amorphis",
-        "Stick To Your Guns"
+        {
+          "key": "judas-priest",
+          "name": "Judas Priest"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "arch-enemy",
+          "name": "Arch Enemy"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "godsmack",
+          "name": "Godsmack"
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne"
+        },
+        {
+          "key": "the-ghost-inside",
+          "name": "The Ghost Inside"
+        },
+        {
+          "key": "thy-art-is-murder",
+          "name": "Thy Art Is Murder"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "amorphis",
+          "name": "Amorphis"
+        },
+        {
+          "key": "stick-to-your-guns",
+          "name": "Stick To Your Guns"
+        }
       ],
       "ticketPrice": 199
     },
@@ -909,31 +2094,106 @@
       "poster": "",
       "website": "https://samhainfestival.com/",
       "bands": [
-        "Triumph Of Death (Plays Hellhammer)",
-        "Rotting Christ",
-        "Mysticum",
-        "Blackbraid",
-        "Panopticon",
-        "Full Of Hell",
-        "Der Weg Einer Freiheit",
-        "The Body",
-        "Dödsrit",
-        "Lamp Of Murmuur",
-        "Hexvessel",
-        "Esoteric",
-        "Wolvennest",
-        "Aluk Todolo",
-        "Naxen",
-        "Five The Hierophant",
-        "Final Dose",
-        "Predatory Void",
-        "Mütterlein",
-        "Gudsforladt",
-        "Vacuous",
-        "Terzij De Horde",
-        "Jarhead Fertilizer",
-        "Jad",
-        "Ashenspire"
+        {
+          "key": "triumph-of-death-plays-hellhammer",
+          "name": "Triumph Of Death (Plays Hellhammer)"
+        },
+        {
+          "key": "rotting-christ",
+          "name": "Rotting Christ"
+        },
+        {
+          "key": "mysticum",
+          "name": "Mysticum"
+        },
+        {
+          "key": "blackbraid",
+          "name": "Blackbraid"
+        },
+        {
+          "key": "panopticon",
+          "name": "Panopticon"
+        },
+        {
+          "key": "full-of-hell",
+          "name": "Full Of Hell"
+        },
+        {
+          "key": "der-weg-einer-freiheit",
+          "name": "Der Weg Einer Freiheit"
+        },
+        {
+          "key": "the-body",
+          "name": "The Body"
+        },
+        {
+          "key": "dödsrit",
+          "name": "Dödsrit"
+        },
+        {
+          "key": "lamp-of-murmuur",
+          "name": "Lamp Of Murmuur"
+        },
+        {
+          "key": "hexvessel",
+          "name": "Hexvessel"
+        },
+        {
+          "key": "esoteric",
+          "name": "Esoteric"
+        },
+        {
+          "key": "wolvennest",
+          "name": "Wolvennest"
+        },
+        {
+          "key": "aluk-todolo",
+          "name": "Aluk Todolo"
+        },
+        {
+          "key": "naxen",
+          "name": "Naxen"
+        },
+        {
+          "key": "five-the-hierophant",
+          "name": "Five The Hierophant"
+        },
+        {
+          "key": "final-dose",
+          "name": "Final Dose"
+        },
+        {
+          "key": "predatory-void",
+          "name": "Predatory Void"
+        },
+        {
+          "key": "mütterlein",
+          "name": "Mütterlein"
+        },
+        {
+          "key": "gudsforladt",
+          "name": "Gudsforladt"
+        },
+        {
+          "key": "vacuous",
+          "name": "Vacuous"
+        },
+        {
+          "key": "terzij-de-horde",
+          "name": "Terzij De Horde"
+        },
+        {
+          "key": "jarhead-fertilizer",
+          "name": "Jarhead Fertilizer"
+        },
+        {
+          "key": "jad",
+          "name": "Jad"
+        },
+        {
+          "key": "ashenspire",
+          "name": "Ashenspire"
+        }
       ],
       "ticketPrice": 139.5
     },
@@ -952,30 +2212,102 @@
       "poster": "",
       "website": "https://www.karmoygeddon.no/",
       "bands": [
-        "Accept",
-        "Insomnium",
-        "Annisokay",
-        "Septicflesh",
-        "Hardcore Superstar",
-        "Adept",
-        "Beyond The Black",
-        "Abbath",
-        "Infected Rain",
-        "Phil Campbell And The Bastard Sons",
-        "Old Man'S Child",
-        "Before The Dawn",
-        "Kissin' Dynamite",
-        "Wolfheart",
-        "Ambush",
-        "Saor",
-        "Djerv",
-        "Disillusion",
-        "Setyøursails",
-        "Iotunn",
-        "Mayfire",
-        "Neonfly",
-        "Thron",
-        "Captain Black Beard"
+        {
+          "key": "accept",
+          "name": "Accept"
+        },
+        {
+          "key": "insomnium",
+          "name": "Insomnium"
+        },
+        {
+          "key": "annisokay",
+          "name": "Annisokay"
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh"
+        },
+        {
+          "key": "hardcore-superstar",
+          "name": "Hardcore Superstar"
+        },
+        {
+          "key": "adept",
+          "name": "Adept"
+        },
+        {
+          "key": "beyond-the-black",
+          "name": "Beyond The Black"
+        },
+        {
+          "key": "abbath",
+          "name": "Abbath"
+        },
+        {
+          "key": "infected-rain",
+          "name": "Infected Rain"
+        },
+        {
+          "key": "phil-campbell-and-the-bastard-sons",
+          "name": "Phil Campbell And The Bastard Sons"
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Man'S Child"
+        },
+        {
+          "key": "before-the-dawn",
+          "name": "Before The Dawn"
+        },
+        {
+          "key": "kissin-dynamite",
+          "name": "Kissin' Dynamite"
+        },
+        {
+          "key": "wolfheart",
+          "name": "Wolfheart"
+        },
+        {
+          "key": "ambush-sweden",
+          "name": "Ambush"
+        },
+        {
+          "key": "saor",
+          "name": "Saor"
+        },
+        {
+          "key": "djerv",
+          "name": "Djerv"
+        },
+        {
+          "key": "disillusion",
+          "name": "Disillusion"
+        },
+        {
+          "key": "setyoursails",
+          "name": "Setyøursails"
+        },
+        {
+          "key": "iotunn",
+          "name": "Iotunn"
+        },
+        {
+          "key": "mayfire",
+          "name": "Mayfire"
+        },
+        {
+          "key": "neonfly",
+          "name": "Neonfly"
+        },
+        {
+          "key": "thron",
+          "name": "Thron"
+        },
+        {
+          "key": "captain-black-beard",
+          "name": "Captain Black Beard"
+        }
       ],
       "ticketPrice": 99.9
     },
@@ -994,15 +2326,42 @@
       "poster": "https://dynamo-metalfest.nl/wp-content/uploads/2025/08/LOGO.png",
       "website": "https://dynamo-metalfest.nl/",
       "bands": [
-        "Godsmack",
-        "Lamb of God",
-        "In Flames",
-        "Testament",
-        "Destruction",
-        "Overkill",
-        "Death Angel",
-        "200 Stab Wounds",
-        "Urne"
+        {
+          "key": "godsmack",
+          "name": "Godsmack"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb of God"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "testament",
+          "name": "Testament"
+        },
+        {
+          "key": "destruction",
+          "name": "Destruction"
+        },
+        {
+          "key": "overkill",
+          "name": "Overkill"
+        },
+        {
+          "key": "death-angel",
+          "name": "Death Angel"
+        },
+        {
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds"
+        },
+        {
+          "key": "urne",
+          "name": "Urne"
+        }
       ],
       "ticketPrice": 129
     }
@@ -1169,7 +2528,7 @@
       "members": [
         {
           "name": "Christoffer Öster",
-          "role": "Guitar \u0026 Vocals"
+          "role": "Guitar & Vocals"
         },
         {
           "name": "Jelle Soolsma",
@@ -1181,7 +2540,7 @@
         },
         {
           "name": "Georgios Maxouris",
-          "role": "Guitar \u0026 Vocals"
+          "role": "Guitar & Vocals"
         }
       ],
       "reviewed": true
@@ -1297,7 +2656,7 @@
       "country": "United Kingdom",
       "description": "Gorillaz is a British virtual band formed in 1998 by musician Damon Albarn and artist Jamie Hewlett. The band comprises four animated members: 2-D (vocals, keyboards), Murdoc Niccals (bass guitar), Noodle (guitar, keyboards, vocals), and Russel Hobbs (drums). Their music blends alternative rock, electronic, trip hop, art pop, and hip-hop, resulting in a distinctive and innovative sound. Gorillaz debuted with their self-titled album in 2001, featuring the hit single \"Clint Eastwood,\" which propelled them into international fame. Their second album, \"Demon Days\" (2005), achieved critical acclaim and commercial success, with the single \"Feel Good Inc.\" topping charts worldwide. Over the years, Gorillaz has released multiple albums, including \"Plastic Beach\" (2010), \"Humanz\" (2017), \"The Now Now\" (2018), \"Song Machine, Season One: Strange Timez\" (2020), and \"Cracker Island\" (2023). The band is known for its eclectic collaborations with artists like De La Soul, Elton John, and Bad Bunny. In 2025, they celebrated their 25th anniversary with the \"House of Kong\" exhibition in London and a special performance at the Pulse of Gaia Festival in Madrid. The band's unique blend of genres and virtual personas has solidified their status as pioneers in the music industry.",
       "logo": "https://gorillaz.com/wp-content/themes/gorillaz/assets/IMG/gorillaz-logo.png",
-      "headlineImage": "https://img2.rtve.es/i/?w=1600\u0026i=1512651586389.jpg",
+      "headlineImage": "https://img2.rtve.es/i/?w=1600&i=1512651586389.jpg",
       "website": "https://www.gorillaz.com",
       "spotify": "https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ",
       "genres": [
@@ -1328,7 +2687,7 @@
       "country": "Germany",
       "description": "Caliban is a German metalcore band formed in Essen in 1997. Originally known as Never Again, the band underwent several lineup changes before settling on its current members. Their music is characterized by a blend of aggressive metalcore riffs, melodic elements, and introspective lyrics. Over the years, Caliban has released numerous studio albums, including \"A Small Boy and a Grey Heaven\" (1999), \"Vent\" (2001), \"Shadow Hearts\" (2003), \"The Opposite from Within\" (2004), \"The Undying Darkness\" (2006), \"The Awakening\" (2007), \"Say Hello to Tragedy\" (2009), \"I Am Nemesis\" (2012), \"Ghost Empire\" (2014), \"Gravity\" (2016), \"Elements\" (2018), \"Zeitgeister\" (2021), and \"Dystopia\" (2022). Their upcoming album, \"Back From Hell,\" is scheduled for release on April 25, 2025. ([calibanmetal.com](https://calibanmetal.com/news-detail/32.html)) The band's lineup consists of Andreas Dörner (vocals), Marc Görtz (lead guitar), Denis Schmidt (rhythm guitar), Patrick Grün (drums), and Kenneth Iain Duncan (bass, clean vocals). ([metal-archives.com](https://www.metal-archives.com/bands/Caliban/3540331819))",
       "logo": "https://calibanmetal.com/files/oneo/img/siteimages/caliban_logo.png",
-      "headlineImage": "https://www.impericon.com/cdn/shop/articles/20241001_calibanpressphoto_1_f4df6b0b-6d4b-4f03-b959-322871aea32c.jpg?v=1734519863\u0026width=1024",
+      "headlineImage": "https://www.impericon.com/cdn/shop/articles/20241001_calibanpressphoto_1_f4df6b0b-6d4b-4f03-b959-322871aea32c.jpg?v=1734519863&width=1024",
       "website": "https://calibanmetal.com",
       "spotify": "https://open.spotify.com/artist/1oeo6cC9Fqa2bxxv67qBQL",
       "genres": [
@@ -1365,7 +2724,7 @@
       "country": "France",
       "description": "Lone Survivors is a French progressive metalcore band formed in 2019. The band emerged with a distinctive sound that blends metalcore, djent, and progressive metal elements, creating a dynamic and groove-oriented musical experience. Their debut album, \"Ground Zero,\" released in 2019, showcases their technical prowess and compositional depth, featuring complex structures and atmospheric passages. In 2024, they released their EP \"Run 1,\" further solidifying their presence in the metalcore scene. The band's lineup includes vocalist Tapio Wilska (ex-Finntroll), guitarist Samuel Ruotsalainen (ex-Finntroll, Shape of Despair), guitarist Sam Jamsen, bassist Kimmo Tukiainen (Hanging Garden, Diablerie), and drummer Jan-Erik Kari (Fear of Domination).",
       "logo": "https://static.wixstatic.com/media/7e962f_22a3e45f0a61491a9fe37af954711613~mv2_d_4134_4134_s_4_2.png/v1/fill/w_650,h_650,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/LogoLS_final.png",
-      "headlineImage": "https://i.ytimg.com/vi/qhWRUce2wjs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD\u0026rs=AOn4CLBYDOPms1l8UBqee7R8PoTsvjzb_A",
+      "headlineImage": "https://i.ytimg.com/vi/qhWRUce2wjs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBYDOPms1l8UBqee7R8PoTsvjzb_A",
       "website": "https://www.lone-survivors.com/",
       "spotify": "https://open.spotify.com/album/4qm7V3zSCeJApeZhmSCLeh",
       "genres": [
@@ -1403,7 +2762,7 @@
       "country": "Sweden",
       "description": "Thundermother is an all-female Swedish hard rock band formed in 2009 by guitarist Filippa Nässil in Växjö. The band has undergone several lineup changes over the years but has consistently delivered energetic rock music. Their debut album, \"Rock N Roll Disaster,\" was released in 2014, followed by \"Road Fever\" in 2015. In 2018, they released their self-titled third album, \"Thundermother,\" which marked the debut of vocalist Guernica Mancini. The band's fourth album, \"Heat Wave,\" released in 2020, achieved significant success, reaching number six on the German charts and number eight in Sweden. Their fifth album, \"Black and Gold,\" released in 2022, continued their upward trajectory, securing top positions in European charts. In 2023, the band underwent another lineup change, with vocalist Guernica Mancini, drummer Emlee Johansson, and bassist Mona Lindgren departing. They were replaced by vocalist Linnéa Vikström, bassist Majsan Lindberg, and drummer Joan Massing. The band's latest album, \"Dirty and Divine,\" was released in February 2025, showcasing their resilience and commitment to rock music. ([metalexpressradio.com](https://www.metalexpressradio.com/2025/02/02/thundermother-dirty-divine/))",
       "logo": "https://usercontent.one/wp/www.thundermother.com/wp-content/uploads/2019/07/logo-TM-layers-kopia-white.png?media=1757512699",
-      "headlineImage": "https://dynamicmedia.livenationinternational.com/b/t/r/5693fdb7-f519-4b40-b457-2c43df52253a.png?format=webp\u0026width=3840\u0026quality=75",
+      "headlineImage": "https://dynamicmedia.livenationinternational.com/b/t/r/5693fdb7-f519-4b40-b457-2c43df52253a.png?format=webp&width=3840&quality=75",
       "website": "https://www.thundermother.com",
       "spotify": "https://open.spotify.com/artist/18jTFcgHRRYHdwdof1MDZw",
       "genres": [
@@ -1477,7 +2836,7 @@
       "key": "helloween",
       "name": "Helloween",
       "country": "Germany",
-      "description": "Helloween is a German power metal band formed in 1984 in Hamburg. They are often credited as pioneers of the power metal genre, blending elements of speed metal and traditional heavy metal. The original lineup included guitarist and vocalist Kai Hansen, bassist Markus Grosskopf, guitarist Michael Weikath, and drummer Ingo Schwichtenberg. Their early work, such as the 1985 EP \"Helloween,\" showcased their energetic style and set the stage for their future success. In 1987, they released \"Keeper of the Seven Keys: Part I,\" followed by \"Part II\" in 1988, both of which are considered classics in the genre. The band's lineup has evolved over the years, with notable members like vocalist Michael Kiske and guitarist Roland Grapow contributing to their distinctive sound. In 2021, Helloween released their sixteenth studio album, \"Helloween,\" marking the return of Hansen and Kiske. Their latest album, \"Giants \u0026 Monsters,\" was released on August 29, 2025, continuing their legacy in the power metal scene. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Helloween))",
+      "description": "Helloween is a German power metal band formed in 1984 in Hamburg. They are often credited as pioneers of the power metal genre, blending elements of speed metal and traditional heavy metal. The original lineup included guitarist and vocalist Kai Hansen, bassist Markus Grosskopf, guitarist Michael Weikath, and drummer Ingo Schwichtenberg. Their early work, such as the 1985 EP \"Helloween,\" showcased their energetic style and set the stage for their future success. In 1987, they released \"Keeper of the Seven Keys: Part I,\" followed by \"Part II\" in 1988, both of which are considered classics in the genre. The band's lineup has evolved over the years, with notable members like vocalist Michael Kiske and guitarist Roland Grapow contributing to their distinctive sound. In 2021, Helloween released their sixteenth studio album, \"Helloween,\" marking the return of Hansen and Kiske. Their latest album, \"Giants & Monsters,\" was released on August 29, 2025, continuing their legacy in the power metal scene. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Helloween))",
       "logo": "https://helloweens.com/wp-content/uploads/2025/09/helloween-logo-gold-1.webp",
       "headlineImage": "https://www.ciudadanorock.com/wp-content/uploads/HELLOWEENband2021-2100x1200.jpg",
       "website": "https://helloweens.com/",
@@ -1747,7 +3106,7 @@
       "key": "alter-bridge",
       "name": "Alter Bridge",
       "country": "United States",
-      "description": "Alter Bridge is an American rock band formed in 2004 in Orlando, Florida, by vocalist and guitarist Myles Kennedy, lead guitarist Mark Tremonti, bassist Brian Marshall, and drummer Scott Phillips. The band emerged after the members' previous group, Creed, became inactive in 2003. Their debut album, \"One Day Remains,\" released in 2004, showcased a blend of hard rock and alternative metal, setting the tone for their future sound. The follow-up, \"Blackbird\" (2007), received critical acclaim for its depth and complexity. In 2010, they released \"AB III,\" which delved into darker themes and featured the hit single \"Isolation.\" The band's subsequent albums, including \"Fortress\" (2013), \"The Last Hero\" (2016), and \"Walk the Sky\" (2019), continued to evolve their sound, incorporating elements of progressive metal and post-grunge. In 2022, they released \"Pawns \u0026 Kings,\" which debuted at number one on the US Hard Music Albums chart. Their upcoming self-titled eighth studio album is scheduled for release on January 9, 2026, via Napalm Records. Known for their memorable riffs, infectious vocal melodies, and dueling guitar attack, Alter Bridge has garnered massive critical and fan acclaim worldwide. ([alterbridge.com](https://alterbridge.com/))",
+      "description": "Alter Bridge is an American rock band formed in 2004 in Orlando, Florida, by vocalist and guitarist Myles Kennedy, lead guitarist Mark Tremonti, bassist Brian Marshall, and drummer Scott Phillips. The band emerged after the members' previous group, Creed, became inactive in 2003. Their debut album, \"One Day Remains,\" released in 2004, showcased a blend of hard rock and alternative metal, setting the tone for their future sound. The follow-up, \"Blackbird\" (2007), received critical acclaim for its depth and complexity. In 2010, they released \"AB III,\" which delved into darker themes and featured the hit single \"Isolation.\" The band's subsequent albums, including \"Fortress\" (2013), \"The Last Hero\" (2016), and \"Walk the Sky\" (2019), continued to evolve their sound, incorporating elements of progressive metal and post-grunge. In 2022, they released \"Pawns & Kings,\" which debuted at number one on the US Hard Music Albums chart. Their upcoming self-titled eighth studio album is scheduled for release on January 9, 2026, via Napalm Records. Known for their memorable riffs, infectious vocal melodies, and dueling guitar attack, Alter Bridge has garnered massive critical and fan acclaim worldwide. ([alterbridge.com](https://alterbridge.com/))",
       "logo": "https://www.spirit-of-metal.com/les%20goupes/A/Alter%20Bridge/pics/165776_logo.jpg",
       "headlineImage": "https://outburn.com/wp-content/uploads/2020/11/Alter_Bridge-Interview-11520.jpg",
       "website": "https://alterbridge.com/",
@@ -1898,7 +3257,7 @@
       "key": "kublai-khan-tx",
       "name": "Kublai Khan Tx",
       "country": "United States",
-      "description": "Kublai Khan TX is an American metalcore band from Sherman, Texas, formed in 2009. The group emerged when vocalist Matt Honeycutt and guitarist Nolan Ashley began channeling local hardcore influences into heavy, groove-forward music. They were soon joined by bassist Eric English and drummer Isaac Lamb. The band's name includes 'TX' to distinguish themselves from the historical figure Kublai Khan and to honor their Texan roots. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kublai_Khan_%28band%29))\n\nTheir debut album, \"Balancing Survival \u0026 Happiness,\" was released in 2014 under Artery Recordings. This was followed by \"New Strength\" in 2015, \"Nomad\" in 2017, \"Absolute\" in 2019, and \"Exhibition of Prowess\" in 2024. The band has also released an EP titled \"Lowest Form of Animal\" in 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kublai_Khan_%28band%29))\n\nKublai Khan TX's music is characterized by a blend of metalcore and beatdown hardcore, featuring aggressive breakdowns, groove-heavy riffs, and lyrics that confront struggle with blunt honesty. Their sound has drawn comparisons to bands like Hatebreed and Merauder. ([kublaikhantour.com](https://www.kublaikhantour.com/))\n\nThe current lineup includes Matt Honeycutt (vocals), Eric English (bass), Isaac Lamb (drums), and Nicholas Adams (guitar). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kublai_Khan_%28band%29))\n\nFor more information, visit their official website at [kublaikhantx.com](https://www.kublaikhantx.com/).",
+      "description": "Kublai Khan TX is an American metalcore band from Sherman, Texas, formed in 2009. The group emerged when vocalist Matt Honeycutt and guitarist Nolan Ashley began channeling local hardcore influences into heavy, groove-forward music. They were soon joined by bassist Eric English and drummer Isaac Lamb. The band's name includes 'TX' to distinguish themselves from the historical figure Kublai Khan and to honor their Texan roots. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kublai_Khan_%28band%29))\n\nTheir debut album, \"Balancing Survival & Happiness,\" was released in 2014 under Artery Recordings. This was followed by \"New Strength\" in 2015, \"Nomad\" in 2017, \"Absolute\" in 2019, and \"Exhibition of Prowess\" in 2024. The band has also released an EP titled \"Lowest Form of Animal\" in 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kublai_Khan_%28band%29))\n\nKublai Khan TX's music is characterized by a blend of metalcore and beatdown hardcore, featuring aggressive breakdowns, groove-heavy riffs, and lyrics that confront struggle with blunt honesty. Their sound has drawn comparisons to bands like Hatebreed and Merauder. ([kublaikhantour.com](https://www.kublaikhantour.com/))\n\nThe current lineup includes Matt Honeycutt (vocals), Eric English (bass), Isaac Lamb (drums), and Nicholas Adams (guitar). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kublai_Khan_%28band%29))\n\nFor more information, visit their official website at [kublaikhantx.com](https://www.kublaikhantx.com/).",
       "logo": "https://www.kublaikhantx.com/images/kublai-khan-tx-logo.png",
       "headlineImage": "https://www.kublaikhantx.com/images/kublai-khan-tx-band.jpg",
       "website": "https://www.kublaikhantx.com/",
@@ -2281,7 +3640,7 @@
       "key": "p-o-d",
       "name": "P.O.D.",
       "country": "United States",
-      "description": "P.O.D. (Payable on Death) is an American Christian nu metal band formed in 1992 in San Diego, California. The lineup consists of vocalist Sonny Sandoval, bassist Traa Daniels, lead guitarist Marcos Curiel, and drummer Wuv Bernardo. Over their career, they've sold over 12 million records worldwide and received three Grammy Award nominations. Their third studio album, \"The Fundamental Elements of Southtown\" (1999), achieved platinum certification, marking their mainstream breakthrough. The follow-up, \"Satellite\" (2001), went triple platinum, featuring hits like \"Alive\" and \"Youth of the Nation.\" In 2003, Curiel departed due to personal differences, replaced by Jason Truby. Curiel rejoined in 2006, and the band released \"When Angels \u0026 Serpents Dance\" in 2008. Their tenth album, \"Circles,\" was released in 2018. In 2021, Wuv Bernardo took a hiatus from the band. ([en.wikipedia.org](https://en.wikipedia.org/wiki/P.O.D.))",
+      "description": "P.O.D. (Payable on Death) is an American Christian nu metal band formed in 1992 in San Diego, California. The lineup consists of vocalist Sonny Sandoval, bassist Traa Daniels, lead guitarist Marcos Curiel, and drummer Wuv Bernardo. Over their career, they've sold over 12 million records worldwide and received three Grammy Award nominations. Their third studio album, \"The Fundamental Elements of Southtown\" (1999), achieved platinum certification, marking their mainstream breakthrough. The follow-up, \"Satellite\" (2001), went triple platinum, featuring hits like \"Alive\" and \"Youth of the Nation.\" In 2003, Curiel departed due to personal differences, replaced by Jason Truby. Curiel rejoined in 2006, and the band released \"When Angels & Serpents Dance\" in 2008. Their tenth album, \"Circles,\" was released in 2018. In 2021, Wuv Bernardo took a hiatus from the band. ([en.wikipedia.org](https://en.wikipedia.org/wiki/P.O.D.))",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/P.O.D._at_Hellfest_2013.jpg/800px-P.O.D._at_Hellfest_2013.jpg",
       "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/P.O.D._at_Hellfest_2013.jpg/800px-P.O.D._at_Hellfest_2013.jpg",
       "website": "https://payableondeath.com",
@@ -2682,7 +4041,7 @@
       "key": "visions-of-atlantis",
       "name": "Visions Of Atlantis",
       "country": "Austria",
-      "description": "Visions of Atlantis is an Austrian symphonic metal band formed in 2000 in Bruck an der Mur, Styria. The band draws inspiration from the myth of Atlantis and the success of Finnish symphonic metal bands like Nightwish. Their music is characterized by a blend of symphonic and power metal elements, often incorporating pirate themes in recent works. The band's lineup has evolved over the years, with current members including Clémentine Delauney (vocals), Michele Guaitoli (vocals), Thomas Caser (drums), Christian Douscha (guitars), and Herbert Glos (bass). They have released several albums, such as \"Eternal Endless Infinity\" (2002), \"Cast Away\" (2004), \"Trinity\" (2007), \"The Deep \u0026 the Dark\" (2018), \"Wanderers\" (2019), \"Pirates\" (2022), and \"Pirates II – Armada\" (2024). Their music often explores themes of nautical tales, mythology, self-discovery, and love.",
+      "description": "Visions of Atlantis is an Austrian symphonic metal band formed in 2000 in Bruck an der Mur, Styria. The band draws inspiration from the myth of Atlantis and the success of Finnish symphonic metal bands like Nightwish. Their music is characterized by a blend of symphonic and power metal elements, often incorporating pirate themes in recent works. The band's lineup has evolved over the years, with current members including Clémentine Delauney (vocals), Michele Guaitoli (vocals), Thomas Caser (drums), Christian Douscha (guitars), and Herbert Glos (bass). They have released several albums, such as \"Eternal Endless Infinity\" (2002), \"Cast Away\" (2004), \"Trinity\" (2007), \"The Deep & the Dark\" (2018), \"Wanderers\" (2019), \"Pirates\" (2022), and \"Pirates II – Armada\" (2024). Their music often explores themes of nautical tales, mythology, self-discovery, and love.",
       "logo": "https://www.visionsofatlantis.com/wp-content/uploads/2023/10/VOA_Logo.png",
       "headlineImage": "https://www.visionsofatlantis.com/wp-content/uploads/2023/10/VOA_2023_Armada_Live_Over_Europe.jpg",
       "website": "https://www.visionsofatlantis.com/",
@@ -3744,7 +5103,7 @@
       "key": "architects",
       "name": "Architects",
       "country": "United Kingdom",
-      "description": "Architects are a British metalcore band from Brighton, East Sussex, formed in 2004 by twin brothers Dan and Tom Searle. The band currently consists of Dan Searle on drums, Sam Carter on vocals, Alex Dean on bass, and Adam Christianson on guitar. They have been signed to Epitaph Records since 2013. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Architects_%28British_band%29))\n\nInitially known as \"Counting the Days,\" the band changed their name to \"Architects\" after the song \"The Architect\" by Every Time I Die. ([jampack.com](https://www.jampack.com/artists/architects)) Their early music was characterized by chaotic, rhythmically complex compositions, drawing influences from bands like The Dillinger Escape Plan. Over time, their sound evolved to incorporate more melodic and atmospheric elements, blending metalcore with progressive metalcore and alternative metal. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Architects_%28British_band%29))\n\nArchitects' discography includes several critically acclaimed albums. Their ninth studio album, \"For Those That Wish to Exist,\" released in 2021, became their first chart-topping album on the UK Albums Chart. The follow-up, \"The Classic Symptoms of a Broken Spirit,\" was released in October 2022. Their eleventh studio album, \"The Sky, the Earth \u0026 All Between,\" was released on 28 February 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Architects_%28British_band%29))\n\nThroughout their career, Architects have been known for their energetic live performances and their ability to blend technical musicianship with emotional depth. Their music often explores themes of personal struggle, societal issues, and existential angst. ([jampack.com](https://www.jampack.com/artists/architects))",
+      "description": "Architects are a British metalcore band from Brighton, East Sussex, formed in 2004 by twin brothers Dan and Tom Searle. The band currently consists of Dan Searle on drums, Sam Carter on vocals, Alex Dean on bass, and Adam Christianson on guitar. They have been signed to Epitaph Records since 2013. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Architects_%28British_band%29))\n\nInitially known as \"Counting the Days,\" the band changed their name to \"Architects\" after the song \"The Architect\" by Every Time I Die. ([jampack.com](https://www.jampack.com/artists/architects)) Their early music was characterized by chaotic, rhythmically complex compositions, drawing influences from bands like The Dillinger Escape Plan. Over time, their sound evolved to incorporate more melodic and atmospheric elements, blending metalcore with progressive metalcore and alternative metal. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Architects_%28British_band%29))\n\nArchitects' discography includes several critically acclaimed albums. Their ninth studio album, \"For Those That Wish to Exist,\" released in 2021, became their first chart-topping album on the UK Albums Chart. The follow-up, \"The Classic Symptoms of a Broken Spirit,\" was released in October 2022. Their eleventh studio album, \"The Sky, the Earth & All Between,\" was released on 28 February 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Architects_%28British_band%29))\n\nThroughout their career, Architects have been known for their energetic live performances and their ability to blend technical musicianship with emotional depth. Their music often explores themes of personal struggle, societal issues, and existential angst. ([jampack.com](https://www.jampack.com/artists/architects))",
       "logo": "https://s3.eu-central-003.backblazeb2.com/bloodstock-active-storage/gtiw2bobv12nsjdop0tmfw3kg5qx",
       "headlineImage": "https://www.rocktotal.com/wp-content/uploads/2021/11/Architects.jpg",
       "website": "https://www.architectsofficial.com",
@@ -3926,7 +5285,7 @@
       "key": "paleface-swiss",
       "name": "Paleface Swiss",
       "country": "Switzerland",
-      "description": "Formed in 2017 in Zürich, Paleface Swiss is a deathcore band known for their aggressive riffs, brutal rhythm section, and distinctive vocals. The lineup includes vocalist Marc \"Zelli\" Zellweger, guitarist Yannick Lehmann, bassist Tommy Lee, and drummer Cassiano \"Cassi\" Toma. They debuted with the EP \"Chapter 1: From The Gallows\" in 2018, followed by \"Chapter 2: Witch King\" in 2019. In 2020, they released their first full-length album, \"Chapter 3: The Last Selection,\" which featured tracks like \"Curse Us\" and \"The Rats.\" Their 2022 album, \"Fear \u0026 Dagger,\" delved into themes of mental health and personal struggles, receiving critical acclaim. In 2023, they added \"Swiss\" to their name to distinguish themselves from another artist named \"Paleface.\" Their third album, \"Cursed,\" was released on January 3, 2025, showcasing their evolution with tracks like \"Hatred\" and \"River of Sorrows.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Paleface_Swiss))",
+      "description": "Formed in 2017 in Zürich, Paleface Swiss is a deathcore band known for their aggressive riffs, brutal rhythm section, and distinctive vocals. The lineup includes vocalist Marc \"Zelli\" Zellweger, guitarist Yannick Lehmann, bassist Tommy Lee, and drummer Cassiano \"Cassi\" Toma. They debuted with the EP \"Chapter 1: From The Gallows\" in 2018, followed by \"Chapter 2: Witch King\" in 2019. In 2020, they released their first full-length album, \"Chapter 3: The Last Selection,\" which featured tracks like \"Curse Us\" and \"The Rats.\" Their 2022 album, \"Fear & Dagger,\" delved into themes of mental health and personal struggles, receiving critical acclaim. In 2023, they added \"Swiss\" to their name to distinguish themselves from another artist named \"Paleface.\" Their third album, \"Cursed,\" was released on January 3, 2025, showcasing their evolution with tracks like \"Hatred\" and \"River of Sorrows.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Paleface_Swiss))",
       "logo": "https://www.graspop.be/media/2025/06/paleface-swiss-logo.png",
       "headlineImage": "https://www.graspop.be/media/2025/06/paleface-swiss.jpg",
       "website": "https://palefaceswiss.com",
@@ -4532,9 +5891,9 @@
     },
     {
       "key": "of-mice-and-men",
-      "name": "Of Mice \u0026 Men",
+      "name": "Of Mice & Men",
       "country": "United States",
-      "description": "Formed in 2009 in Costa Mesa, California, Of Mice \u0026 Men is an American rock band known for their dynamic blend of metalcore, hard rock, and nu metal. The group was founded by former Attack Attack! vocalist Austin Carlile and bassist Jaxin Hall. Over the years, the lineup has evolved, with current members including drummer Valentino Arteaga, guitarists Phil Manansala and Alan Ashby, and bassist and lead vocalist Aaron Pauley. The band's self-titled debut album was released in 2010, showcasing their metalcore roots. Their subsequent albums, such as \"The Flood\" (2011) and \"Restoring Force\" (2014), incorporated elements of nu metal and hard rock, reflecting their evolving sound. In 2019, they released \"Earthandsky,\" marking a return to their metalcore origins. In 2023, they released \"Tether,\" followed by the single \"Another Miracle\" in 2025, signaling a new chapter with Century Media Records. The band's music often explores themes of resilience, mental health, and human connection, resonating deeply with fans. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Of_Mice_%26_Men_%28band%29))",
+      "description": "Formed in 2009 in Costa Mesa, California, Of Mice & Men is an American rock band known for their dynamic blend of metalcore, hard rock, and nu metal. The group was founded by former Attack Attack! vocalist Austin Carlile and bassist Jaxin Hall. Over the years, the lineup has evolved, with current members including drummer Valentino Arteaga, guitarists Phil Manansala and Alan Ashby, and bassist and lead vocalist Aaron Pauley. The band's self-titled debut album was released in 2010, showcasing their metalcore roots. Their subsequent albums, such as \"The Flood\" (2011) and \"Restoring Force\" (2014), incorporated elements of nu metal and hard rock, reflecting their evolving sound. In 2019, they released \"Earthandsky,\" marking a return to their metalcore origins. In 2023, they released \"Tether,\" followed by the single \"Another Miracle\" in 2025, signaling a new chapter with Century Media Records. The band's music often explores themes of resilience, mental health, and human connection, resonating deeply with fans. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Of_Mice_%26_Men_%28band%29))",
       "logo": "https://www.ofmiceandmenofficial.com/images/logo.png",
       "headlineImage": "https://www.ofmiceandmenofficial.com/images/press/OMM_2025_1.jpg",
       "website": "https://www.ofmiceandmenofficial.com/",
@@ -4601,7 +5960,7 @@
       "key": "faun",
       "name": "Faun",
       "country": "Germany",
-      "description": "Faun is a German band formed in 1998, renowned for blending ancient sounds with modern music. Their style encompasses pagan folk, darkwave, and medieval music, utilizing instruments such as the Celtic harp, Swedish nyckelharpa, hurdy-gurdy, bagpipes, cittern, and flutes. The band's lyrics are performed in various languages, including German, English, Latin, Greek, Scandinavian, and Hungarian. Over the years, Faun has released multiple studio albums, with their 2019 album \"Märchen \u0026 Mythen\" marking the first to feature member Laura Fella and the last to include founding member Fiona Frewert. Their 2025 album \"Hex\" delves into themes of witchcraft and female magic, highlighting the various aspects of female magic in different cultures. ([en.wikipedia.org](https://en.wikipedia.org/wiki/M%C3%A4rchen_%26_Mythen))",
+      "description": "Faun is a German band formed in 1998, renowned for blending ancient sounds with modern music. Their style encompasses pagan folk, darkwave, and medieval music, utilizing instruments such as the Celtic harp, Swedish nyckelharpa, hurdy-gurdy, bagpipes, cittern, and flutes. The band's lyrics are performed in various languages, including German, English, Latin, Greek, Scandinavian, and Hungarian. Over the years, Faun has released multiple studio albums, with their 2019 album \"Märchen & Mythen\" marking the first to feature member Laura Fella and the last to include founding member Fiona Frewert. Their 2025 album \"Hex\" delves into themes of witchcraft and female magic, highlighting the various aspects of female magic in different cultures. ([en.wikipedia.org](https://en.wikipedia.org/wiki/M%C3%A4rchen_%26_Mythen))",
       "logo": "https://www.faune.de/wp-content/uploads/2025/09/Faun-Logo.png",
       "headlineImage": "https://www.faune.de/wp-content/uploads/2025/09/Hex-Album-Cover.jpg",
       "website": "https://www.faune.de",
@@ -4918,7 +6277,7 @@
       "name": "Godsmack",
       "country": "United States",
       "description": "Godsmack is an American rock band formed in 1995 in Lawrence, Massachusetts. The lineup consists of lead vocalist and rhythm guitarist Sully Erna and bassist Robbie Merrill. The band has released nine studio albums, including their self-titled debut in 1998, which achieved 5x Platinum status. Their 2000 album, \"Awake,\" debuted at number five on the Billboard 200 and was certified 2x Platinum. In 2023, they released \"Lighting Up the Sky,\" their final studio album before the departures of guitarist Tony Rombola and drummer Shannon Larkin in 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Godsmack)) Known for their dynamic live performances, Godsmack has been a significant presence in the hard rock and alternative metal scenes.",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4SzU948l0Dc1XTlOHKZXUdRk62wXTQZBb8A\u0026s",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4SzU948l0Dc1XTlOHKZXUdRk62wXTQZBb8A&s",
       "headlineImage": "https://www.themetalcircus.com/wp-content/uploads/2018/05/godsmack-2018.jpeg",
       "website": "https://www.godsmack.com/",
       "spotify": "https://open.spotify.com/artist/6gZq1Q6bdOxsUPUG1TaFbF",
@@ -5545,7 +6904,7 @@
       "key": "elder",
       "name": "Elder",
       "country": "United States",
-      "description": "Elder is an American progressive rock band formed in Massachusetts in 2006. The group consists of frontman and lead guitarist Nick DiSalvo, bassist Jack Donovan, guitarist/keyboardist Michael Risberg, and drummer Georg Edert. Initially, Elder's music was rooted in stoner and doom metal, drawing influences from bands like Kyuss and Sleep. Their 2008 self-titled debut album showcased this heavy, riff-driven style. However, with their 2011 release, \"Dead Roots Stirring,\" the band began incorporating elements of psychedelic and progressive rock, marking a significant evolution in their sound. This trend continued with subsequent albums: \"Lore\" (2015), which delved deeper into progressive rock territories; \"Reflections of a Floating World\" (2017), recognized by Rolling Stone as the fifth-best metal album of that year; and \"Omens\" (2020), which further refined their progressive approach. In 2021, Elder collaborated with the German band Kadavar to release \"Eldovar – A Story of Darkness \u0026 Light,\" blending their styles into a cohesive psychedelic experience. Their latest album, \"Innate Passage,\" released in 2022, continues to explore and expand their progressive rock influences. The band's dynamic compositions often feature extended instrumental passages and intricate melodies, appealing to fans of both metal and psychedelic rock. Elder's music is characterized by its heavy riffs, intricate melodies, and dynamic rhythms, creating immersive and expansive soundscapes.",
+      "description": "Elder is an American progressive rock band formed in Massachusetts in 2006. The group consists of frontman and lead guitarist Nick DiSalvo, bassist Jack Donovan, guitarist/keyboardist Michael Risberg, and drummer Georg Edert. Initially, Elder's music was rooted in stoner and doom metal, drawing influences from bands like Kyuss and Sleep. Their 2008 self-titled debut album showcased this heavy, riff-driven style. However, with their 2011 release, \"Dead Roots Stirring,\" the band began incorporating elements of psychedelic and progressive rock, marking a significant evolution in their sound. This trend continued with subsequent albums: \"Lore\" (2015), which delved deeper into progressive rock territories; \"Reflections of a Floating World\" (2017), recognized by Rolling Stone as the fifth-best metal album of that year; and \"Omens\" (2020), which further refined their progressive approach. In 2021, Elder collaborated with the German band Kadavar to release \"Eldovar – A Story of Darkness & Light,\" blending their styles into a cohesive psychedelic experience. Their latest album, \"Innate Passage,\" released in 2022, continues to explore and expand their progressive rock influences. The band's dynamic compositions often feature extended instrumental passages and intricate melodies, appealing to fans of both metal and psychedelic rock. Elder's music is characterized by its heavy riffs, intricate melodies, and dynamic rhythms, creating immersive and expansive soundscapes.",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Elder_band_logo.png",
       "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Elder_band.jpg",
       "website": "https://beholdtheelder.com",
@@ -5579,7 +6938,7 @@
       "key": "mayfire",
       "name": "Mayfire",
       "country": "Norway",
-      "description": "Mayfire is a Norwegian progressive metal band formed in 2019, known for their innovative fusion of metal, progressive rock, and electronic music. Their music is characterized by complex rhythms, intricate melodies, and thought-provoking lyrics. In November 2023, they released their debut album, \"Cloudscapes \u0026 Silhouettes,\" which blends influences from Dream Theater, Leprous, In Flames, and Ghost. The album features tracks like \"Shadows,\" which includes a guest appearance by Baard Kolstad of Leprous. ([progrockjournal.com](https://progrockjournal.com/news-mayfire-published-the-official-video-for-the-track-the-age-of-kings-taken-from-their-new-album/)) The band is signed to Rock of Angels Records and has been recognized for their unique approach to modern progressive metal. ([theprogspace.com](https://theprogspace.com/ppe25-mayfire/))",
+      "description": "Mayfire is a Norwegian progressive metal band formed in 2019, known for their innovative fusion of metal, progressive rock, and electronic music. Their music is characterized by complex rhythms, intricate melodies, and thought-provoking lyrics. In November 2023, they released their debut album, \"Cloudscapes & Silhouettes,\" which blends influences from Dream Theater, Leprous, In Flames, and Ghost. The album features tracks like \"Shadows,\" which includes a guest appearance by Baard Kolstad of Leprous. ([progrockjournal.com](https://progrockjournal.com/news-mayfire-published-the-official-video-for-the-track-the-age-of-kings-taken-from-their-new-album/)) The band is signed to Rock of Angels Records and has been recognized for their unique approach to modern progressive metal. ([theprogspace.com](https://theprogspace.com/ppe25-mayfire/))",
       "logo": "https://www.mayfirechronicles.com/images/logo.png",
       "headlineImage": "https://www.mayfirechronicles.com/images/album_cover.jpg",
       "website": "https://www.mayfirechronicles.com/",
@@ -5991,8 +7350,8 @@
       "key": "sabaton",
       "name": "Sabaton",
       "country": "Sweden",
-      "description": "Sabaton is a Swedish heavy metal band formed in 1999 in Falun, Sweden. Known for their militaristic aesthetic and lyrics centered on historical warfare, they have become a prominent act in the metal scene. The band's name, \"Sabaton,\" refers to a piece of medieval foot armor, aligning with their thematic focus on battles and heroism. ([sabaton.net](https://www.sabaton.net/band/))\n\nTheir musical style is characterized by powerful riffs, orchestral elements, and a distinctive vocal delivery. While often categorized as power metal, Sabaton prefers to define their sound as a unique form of heavy metal, emphasizing their focus on historical themes rather than traditional power metal motifs. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Sabaton_%28band%29))\n\nOver the years, Sabaton has released eleven studio albums, including \"Primo Victoria\" (2005), \"The Art of War\" (2008), \"Carolus Rex\" (2012), \"The Great War\" (2019), and \"The War to End All Wars\" (2022). Their 2012 album \"Carolus Rex\" achieved significant success, being certified gold in Poland and platinum in Sweden, marking it as one of the most successful Swedish heavy metal albums. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Sabaton_discography))\n\nThe band's lyrics often delve into historical events, particularly wars and significant battles, providing listeners with both entertainment and education. Their energetic live performances, featuring elaborate stage setups like a full-sized tank drum riser, have earned them a dedicated global fanbase. ([sabaton.net](https://www.sabaton.net/band/))\n\nAs of October 2025, Sabaton's lineup includes Joakim Brodén (vocals \u0026 keyboards), Pär Sundström (bass), Chris Rörland (lead guitar), Hannes Van Dahl (drums), and Thobbe Englund (lead guitar). ([sabaton.net](https://www.sabaton.net/band/))",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1BDoek3APHgXBA1gwpkwe4H0G2YQqJmX4jg\u0026s",
+      "description": "Sabaton is a Swedish heavy metal band formed in 1999 in Falun, Sweden. Known for their militaristic aesthetic and lyrics centered on historical warfare, they have become a prominent act in the metal scene. The band's name, \"Sabaton,\" refers to a piece of medieval foot armor, aligning with their thematic focus on battles and heroism. ([sabaton.net](https://www.sabaton.net/band/))\n\nTheir musical style is characterized by powerful riffs, orchestral elements, and a distinctive vocal delivery. While often categorized as power metal, Sabaton prefers to define their sound as a unique form of heavy metal, emphasizing their focus on historical themes rather than traditional power metal motifs. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Sabaton_%28band%29))\n\nOver the years, Sabaton has released eleven studio albums, including \"Primo Victoria\" (2005), \"The Art of War\" (2008), \"Carolus Rex\" (2012), \"The Great War\" (2019), and \"The War to End All Wars\" (2022). Their 2012 album \"Carolus Rex\" achieved significant success, being certified gold in Poland and platinum in Sweden, marking it as one of the most successful Swedish heavy metal albums. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Sabaton_discography))\n\nThe band's lyrics often delve into historical events, particularly wars and significant battles, providing listeners with both entertainment and education. Their energetic live performances, featuring elaborate stage setups like a full-sized tank drum riser, have earned them a dedicated global fanbase. ([sabaton.net](https://www.sabaton.net/band/))\n\nAs of October 2025, Sabaton's lineup includes Joakim Brodén (vocals & keyboards), Pär Sundström (bass), Chris Rörland (lead guitar), Hannes Van Dahl (drums), and Thobbe Englund (lead guitar). ([sabaton.net](https://www.sabaton.net/band/))",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1BDoek3APHgXBA1gwpkwe4H0G2YQqJmX4jg&s",
       "headlineImage": "https://stairwaytorock.com/wp-content/uploads/2024/09/sabaton-54cfef8356da3.jpg",
       "website": "https://www.sabaton.net",
       "spotify": "https://open.spotify.com/artist/3o2dn2O0FCVsWDFSh8qxgG",
@@ -6003,7 +7362,7 @@
       "members": [
         {
           "name": "Joakim Brodén",
-          "role": "Vocals \u0026 Keyboards"
+          "role": "Vocals & Keyboards"
         },
         {
           "name": "Pär Sundström",
@@ -6220,7 +7579,7 @@
       "key": "emperor",
       "name": "Emperor",
       "country": "Norway",
-      "description": "Emperor is a seminal Norwegian black metal band formed in 1991 in Notodden, Norway. The band was founded by guitarist and vocalist Ihsahn and guitarist Samoth, who were later joined by drummer Trym Torson. Emperor is renowned for pioneering symphonic black metal, blending traditional black metal elements with orchestral arrangements to create a unique and atmospheric sound. Their debut album, \"In the Nightside Eclipse\" (1994), is widely regarded as a landmark in the black metal genre, featuring tracks like \"I Am the Black Wizards\" and \"Inno a Satana.\" The band's subsequent albums include \"Anthems to the Welkin at Dusk\" (1997), \"IX Equilibrium\" (1999), and \"Prometheus: The Discipline of Fire \u0026 Demise\" (2001). After disbanding in 2001, Emperor reunited for select performances in 2005–2007 and again in 2013–2014. In 2016, they reformed for a third time and have since performed at various festivals and tours, including a notable appearance at Wacken Open Air in 2025. Emperor's influence on the black metal scene is profound, inspiring countless bands and shaping the genre's evolution.",
+      "description": "Emperor is a seminal Norwegian black metal band formed in 1991 in Notodden, Norway. The band was founded by guitarist and vocalist Ihsahn and guitarist Samoth, who were later joined by drummer Trym Torson. Emperor is renowned for pioneering symphonic black metal, blending traditional black metal elements with orchestral arrangements to create a unique and atmospheric sound. Their debut album, \"In the Nightside Eclipse\" (1994), is widely regarded as a landmark in the black metal genre, featuring tracks like \"I Am the Black Wizards\" and \"Inno a Satana.\" The band's subsequent albums include \"Anthems to the Welkin at Dusk\" (1997), \"IX Equilibrium\" (1999), and \"Prometheus: The Discipline of Fire & Demise\" (2001). After disbanding in 2001, Emperor reunited for select performances in 2005–2007 and again in 2013–2014. In 2016, they reformed for a third time and have since performed at various festivals and tours, including a notable appearance at Wacken Open Air in 2025. Emperor's influence on the black metal scene is profound, inspiring countless bands and shaping the genre's evolution.",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Emperor_band_logo.png",
       "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Emperor_band_2024.jpg",
       "website": "https://emperorhorde.com",
@@ -6596,7 +7955,7 @@
       "key": "full-of-hell",
       "name": "Full Of Hell",
       "country": "United States",
-      "description": "Formed in 2009 in Ocean City, Maryland, and Central Pennsylvania, Full of Hell is an American grindcore band known for their aggressive and experimental approach to extreme music. Their sound is a fusion of grindcore, powerviolence, sludge metal, and noise, characterized by blistering tempos, piercing shrieks, and a relentless assault on the senses. The band released their debut album, \"Roots of Earth Are Consuming My Home,\" in 2011, followed by \"Rudiments of Mutilation\" in 2013. In 2014, they collaborated with Japanese noise artist Merzbow on a self-titled album, \"Full of Hell \u0026 Merzbow.\" Subsequent releases include \"Trumpeting Ecstasy\" (2017), \"Weeping Choir\" (2019), \"Garden of Burning Apparitions\" (2021), and \"Coagulated Bliss\" (2024). The band's lineup consists of Dylan Walker (vocals, electronics), Spencer Hazard (guitar), Dave Bland (drums), Sam DiGristine (bass, saxophone, backing vocals), and Gabe Solomon (guitar). Their music has been described as \"blistering,\" \"brutal,\" and \"experimental,\" reflecting their commitment to pushing the boundaries of extreme music. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Full_of_Hell_%28band%29))",
+      "description": "Formed in 2009 in Ocean City, Maryland, and Central Pennsylvania, Full of Hell is an American grindcore band known for their aggressive and experimental approach to extreme music. Their sound is a fusion of grindcore, powerviolence, sludge metal, and noise, characterized by blistering tempos, piercing shrieks, and a relentless assault on the senses. The band released their debut album, \"Roots of Earth Are Consuming My Home,\" in 2011, followed by \"Rudiments of Mutilation\" in 2013. In 2014, they collaborated with Japanese noise artist Merzbow on a self-titled album, \"Full of Hell & Merzbow.\" Subsequent releases include \"Trumpeting Ecstasy\" (2017), \"Weeping Choir\" (2019), \"Garden of Burning Apparitions\" (2021), and \"Coagulated Bliss\" (2024). The band's lineup consists of Dylan Walker (vocals, electronics), Spencer Hazard (guitar), Dave Bland (drums), Sam DiGristine (bass, saxophone, backing vocals), and Gabe Solomon (guitar). Their music has been described as \"blistering,\" \"brutal,\" and \"experimental,\" reflecting their commitment to pushing the boundaries of extreme music. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Full_of_Hell_%28band%29))",
       "logo": "https://fullofhell.com/wp-content/uploads/2019/04/FOH_logo.png",
       "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Full_of_Hell_2019.jpg/800px-Full_of_Hell_2019.jpg",
       "website": "https://fullofhell.com",
@@ -6915,7 +8274,7 @@
       "key": "signs-of-the-swarm",
       "name": "Signs Of The Swarm",
       "country": "United States",
-      "description": "Signs of the Swarm is an American deathcore band from Pittsburgh, Pennsylvania, formed in 2014. The band has released five studio albums, with their latest, \"To Rid Myself of Truth,\" released on August 22, 2025. Their music is characterized by aggressive breakdowns, guttural vocals, and dark, apocalyptic themes. The current lineup includes drummer Bobby Crow, vocalist David Simonich, guitarist Carl Schulz, and bassist Michael Cassese. They have toured extensively, sharing stages with bands like Lorna Shore and Despised Icon. Their discography includes \"Senseless Order\" (2016), \"The Disfigurement of Existence\" (2017), \"Vital Deprivation\" (2019), \"Absolvere\" (2021), and \"Amongst the Low \u0026 Empty\" (2023). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Signs_of_the_Swarm))",
+      "description": "Signs of the Swarm is an American deathcore band from Pittsburgh, Pennsylvania, formed in 2014. The band has released five studio albums, with their latest, \"To Rid Myself of Truth,\" released on August 22, 2025. Their music is characterized by aggressive breakdowns, guttural vocals, and dark, apocalyptic themes. The current lineup includes drummer Bobby Crow, vocalist David Simonich, guitarist Carl Schulz, and bassist Michael Cassese. They have toured extensively, sharing stages with bands like Lorna Shore and Despised Icon. Their discography includes \"Senseless Order\" (2016), \"The Disfigurement of Existence\" (2017), \"Vital Deprivation\" (2019), \"Absolvere\" (2021), and \"Amongst the Low & Empty\" (2023). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Signs_of_the_Swarm))",
       "logo": "https://signsoftheswarm.com/wp-content/uploads/2025/08/Signs-of-the-Swarm-Logo.png",
       "headlineImage": "https://signsoftheswarm.com/wp-content/uploads/2025/08/To-Rid-Myself-of-Truth-Album-Cover.jpg",
       "website": "https://signsoftheswarm.com/",
@@ -7055,7 +8414,7 @@
       "key": "rise-against",
       "name": "Rise Against",
       "country": "United States",
-      "description": "Rise Against is an American punk rock band formed in Chicago in 1999. The group consists of vocalist and rhythm guitarist Tim McIlrath, lead guitarist Zach Blair, bassist Joe Principe, and drummer Brandon Barnes. Initially known as Transistor Revolt, they released a self-produced demo in 2000 before changing their name to Rise Against in 2001. Their debut album, \"The Unraveling,\" was produced by Mass Giorgini and released through Fat Wreck Chords. The band's music is characterized by melodic hardcore elements, aggressive sound, rapid tempos, and socially conscious lyrics addressing topics like animal rights, economic injustice, and environmental issues. Over the years, Rise Against has released several successful albums, including \"Revolutions per Minute\" (2003), \"The Sufferer \u0026 the Witness\" (2006), \"Appeal to Reason\" (2008), \"Endgame\" (2011), \"The Black Market\" (2014), \"Wolves\" (2017), \"Nowhere Generation\" (2021), and \"Ricochet\" (2025). The band has been recognized for their energetic live performances and commitment to activism, often supporting progressive causes and promoting social change.",
+      "description": "Rise Against is an American punk rock band formed in Chicago in 1999. The group consists of vocalist and rhythm guitarist Tim McIlrath, lead guitarist Zach Blair, bassist Joe Principe, and drummer Brandon Barnes. Initially known as Transistor Revolt, they released a self-produced demo in 2000 before changing their name to Rise Against in 2001. Their debut album, \"The Unraveling,\" was produced by Mass Giorgini and released through Fat Wreck Chords. The band's music is characterized by melodic hardcore elements, aggressive sound, rapid tempos, and socially conscious lyrics addressing topics like animal rights, economic injustice, and environmental issues. Over the years, Rise Against has released several successful albums, including \"Revolutions per Minute\" (2003), \"The Sufferer & the Witness\" (2006), \"Appeal to Reason\" (2008), \"Endgame\" (2011), \"The Black Market\" (2014), \"Wolves\" (2017), \"Nowhere Generation\" (2021), and \"Ricochet\" (2025). The band has been recognized for their energetic live performances and commitment to activism, often supporting progressive causes and promoting social change.",
       "logo": "https://riseagainst.com/wp-content/uploads/2025/05/ricochet-logo.png",
       "headlineImage": "https://riseagainst.com/wp-content/uploads/2025/05/ricochet-album-cover.jpg",
       "website": "https://riseagainst.com/",
@@ -7936,7 +9295,7 @@
       "key": "kataklysm",
       "name": "Kataklysm",
       "country": "Canada",
-      "description": "Kataklysm is a Canadian death metal band formed in Montreal, Quebec, in 1991. Initially recognized for their rapid and technical style, they coined the term \"Northern Hyperblast\" to describe their unique sound, characterized by extremely fast blast beats. Their debut demo, \"The Death Gate Cycle of Reincarnation,\" released in 1992, garnered significant acclaim in the underground metal scene. In 1994, they signed with Nuclear Blast Records, leading to the release of their first EP, \"The Mystical Gate of Reincarnation,\" followed by their debut album, \"Sorcery,\" in 1995. The band's lineup underwent a significant change after the release of their second full-length album, \"Temple of Knowledge,\" in 1996, when founding member and lead vocalist Sylvain Houde departed. Bassist Maurizio Iacono assumed vocal duties, with Stéphane Barbe replacing him on bass. This shift marked a new era for Kataklysm, blending elements of melodic death metal and groove metal into their sound. Over the years, they have released several acclaimed albums, including \"Shadows \u0026 Dust\" (2002), \"Serenity in Fire\" (2004), \"Prevail\" (2008), \"Heaven's Venom\" (2010), \"Waiting for the End to Come\" (2013), \"Of Ghosts and Gods\" (2015), \"Meditations\" (2018), \"Unconquered\" (2020), and \"Goliath\" (2023). Their 2015 album, \"Of Ghosts and Gods,\" earned them a Juno Award for Best Heavy Metal Album. Known for their energetic live performances, Kataklysm continues to be a prominent force in the death metal scene.",
+      "description": "Kataklysm is a Canadian death metal band formed in Montreal, Quebec, in 1991. Initially recognized for their rapid and technical style, they coined the term \"Northern Hyperblast\" to describe their unique sound, characterized by extremely fast blast beats. Their debut demo, \"The Death Gate Cycle of Reincarnation,\" released in 1992, garnered significant acclaim in the underground metal scene. In 1994, they signed with Nuclear Blast Records, leading to the release of their first EP, \"The Mystical Gate of Reincarnation,\" followed by their debut album, \"Sorcery,\" in 1995. The band's lineup underwent a significant change after the release of their second full-length album, \"Temple of Knowledge,\" in 1996, when founding member and lead vocalist Sylvain Houde departed. Bassist Maurizio Iacono assumed vocal duties, with Stéphane Barbe replacing him on bass. This shift marked a new era for Kataklysm, blending elements of melodic death metal and groove metal into their sound. Over the years, they have released several acclaimed albums, including \"Shadows & Dust\" (2002), \"Serenity in Fire\" (2004), \"Prevail\" (2008), \"Heaven's Venom\" (2010), \"Waiting for the End to Come\" (2013), \"Of Ghosts and Gods\" (2015), \"Meditations\" (2018), \"Unconquered\" (2020), and \"Goliath\" (2023). Their 2015 album, \"Of Ghosts and Gods,\" earned them a Juno Award for Best Heavy Metal Album. Known for their energetic live performances, Kataklysm continues to be a prominent force in the death metal scene.",
       "logo": "https://www.kataklysm.ca/images/kataklysm_logo.png",
       "headlineImage": "https://www.kataklysm.ca/images/kataklysm_band_photo.jpg",
       "website": "https://www.kataklysm.ca",
@@ -8214,7 +9573,7 @@
       "key": "black-label-society",
       "name": "Black Label Society",
       "country": "United States",
-      "description": "Black Label Society is an American heavy metal band formed in Los Angeles in 1998 by guitarist and vocalist Zakk Wylde. The band emerged after Wylde's solo project, Pride \u0026 Glory, disbanded in 1994. Initially named Hell's Kitchen, they changed their name to Black Label Society due to trademark issues. Their debut album, \"Sonic Brew,\" released in 1999, showcased a blend of heavy metal and southern rock influences. Over the years, the band has released numerous albums, including \"1919 Eternal\" (2002), \"The Blessed Hellride\" (2003), and \"Catacombs of the Black Vatican\" (2014). Their music is characterized by heavy guitar riffs, soulful melodies, and themes of rebellion and freedom. The current lineup includes Zakk Wylde (vocals, lead guitar, piano), John DeServio (bass, backing vocals), Dario Lorina (rhythm guitar, backing vocals), and Jeff Fabb (drums). They continue to tour and release new material, maintaining a dedicated fan base worldwide.",
+      "description": "Black Label Society is an American heavy metal band formed in Los Angeles in 1998 by guitarist and vocalist Zakk Wylde. The band emerged after Wylde's solo project, Pride & Glory, disbanded in 1994. Initially named Hell's Kitchen, they changed their name to Black Label Society due to trademark issues. Their debut album, \"Sonic Brew,\" released in 1999, showcased a blend of heavy metal and southern rock influences. Over the years, the band has released numerous albums, including \"1919 Eternal\" (2002), \"The Blessed Hellride\" (2003), and \"Catacombs of the Black Vatican\" (2014). Their music is characterized by heavy guitar riffs, soulful melodies, and themes of rebellion and freedom. The current lineup includes Zakk Wylde (vocals, lead guitar, piano), John DeServio (bass, backing vocals), Dario Lorina (rhythm guitar, backing vocals), and Jeff Fabb (drums). They continue to tour and release new material, maintaining a dedicated fan base worldwide.",
       "logo": "https://blacklabelsociety.com/wp-content/uploads/2024/10/bls-editorial-logo-2.png",
       "headlineImage": "https://www.rockaxis.com/img/newsList/8738517.jpg",
       "website": "https://blacklabelsociety.com/",
@@ -8359,7 +9718,7 @@
       "key": "wargasm-uk",
       "name": "Wargasm",
       "country": "United Kingdom",
-      "description": "Wargasm is a British electronic rock duo from London, formed in 2018 by Sam Matlock and Milkie Way. Matlock, previously part of Dead!, and Way, a former concert photographer, bonded over a shared love of nu metal acts like Limp Bizkit. Initially writing pop-punk songs, they shifted towards a fusion of rap and nu metal, leading to the formation of Wargasm in August 2019. The band's music is characterized by a blend of electro-punk, digital hardcore, nu metal, and post-hardcore elements. Their debut mixtape, \"Explicit: The Mixxxtape,\" released in September 2022, charted at No. 19 on the UK Rock \u0026 Metal Albums Chart. In October 2023, they released their first full-length album, \"Venom,\" which peaked at No. 88 on the UK Albums Chart. The duo has been recognized with several accolades, including the New Noise Award at the 2022 Kerrang! Awards and Best UK Breakthrough Band at the 2021 Heavy Music Awards. Their energetic performances and distinctive sound have established them as a prominent act in the modern rock scene.",
+      "description": "Wargasm is a British electronic rock duo from London, formed in 2018 by Sam Matlock and Milkie Way. Matlock, previously part of Dead!, and Way, a former concert photographer, bonded over a shared love of nu metal acts like Limp Bizkit. Initially writing pop-punk songs, they shifted towards a fusion of rap and nu metal, leading to the formation of Wargasm in August 2019. The band's music is characterized by a blend of electro-punk, digital hardcore, nu metal, and post-hardcore elements. Their debut mixtape, \"Explicit: The Mixxxtape,\" released in September 2022, charted at No. 19 on the UK Rock & Metal Albums Chart. In October 2023, they released their first full-length album, \"Venom,\" which peaked at No. 88 on the UK Albums Chart. The duo has been recognized with several accolades, including the New Noise Award at the 2022 Kerrang! Awards and Best UK Breakthrough Band at the 2021 Heavy Music Awards. Their energetic performances and distinctive sound have established them as a prominent act in the modern rock scene.",
       "logo": "https://wargasm.online/wp-content/uploads/2022/05/cropped-Wargasm-Logo-Black-Transparent-1.png",
       "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Wargasm_band_2022.jpg/800px-Wargasm_band_2022.jpg",
       "website": "https://wargasm.online",

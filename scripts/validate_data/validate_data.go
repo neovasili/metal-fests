@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/neovasili/metal-fests/internal/model"
 	"os"
 	"path/filepath"
 	"strings"
@@ -21,28 +22,6 @@ const (
 	ColorUnderline = "\033[4m"
 	ColorEnd       = "\033[0m"
 )
-
-// Database structures
-type Database struct {
-	Festivals []Festival `json:"festivals"`
-	Bands     []Band     `json:"bands"`
-}
-
-type Festival struct {
-	Name  string   `json:"name"`
-	Bands []string `json:"bands"`
-}
-
-type Band struct {
-	Name    string   `json:"name"`
-	Genres  []string `json:"genres"`
-	Members []Member `json:"members"`
-}
-
-type Member struct {
-	Name string `json:"name"`
-	Role string `json:"role"`
-}
 
 // ValidationResult tracks errors and warnings
 type ValidationResult struct {
@@ -213,7 +192,7 @@ func isRoleCapitalized(role string) bool {
 }
 
 // validateJSONStructure validates that the file is valid JSON and loads it
-func validateJSONStructure(filePath string) (bool, *Database) {
+func validateJSONStructure(filePath string) (bool, *model.Database) {
 	printHeader("JSON STRUCTURE VALIDATION")
 
 	// #nosec G304 - filePath comes from validated command-line arguments
@@ -223,7 +202,7 @@ func validateJSONStructure(filePath string) (bool, *Database) {
 		return false, nil
 	}
 
-	var data Database
+	var data model.Database
 	if err := json.Unmarshal(file, &data); err != nil {
 		printError(fmt.Sprintf("Invalid JSON: %v", err))
 		return false, nil
@@ -234,7 +213,7 @@ func validateJSONStructure(filePath string) (bool, *Database) {
 }
 
 // validateBandNames validates band names in both festivals and bands sections
-func validateBandNames(data *Database) ValidationResult {
+func validateBandNames(data *model.Database) ValidationResult {
 	printHeader("BAND NAME CAPITALIZATION")
 
 	result := ValidationResult{}
@@ -243,10 +222,10 @@ func validateBandNames(data *Database) ValidationResult {
 	printInfo("Checking band names in festivals...")
 	totalFestivalBands := 0
 	for _, festival := range data.Festivals {
-		for _, bandName := range festival.Bands {
+		for _, bandRef := range festival.Bands {
 			totalFestivalBands++
-			if !isCapitalizedPerWord(bandName, true) {
-				printError(fmt.Sprintf("  Festival '%s': Band name '%s' not properly capitalized", festival.Name, bandName))
+			if !isCapitalizedPerWord(bandRef.Name, true) {
+				printError(fmt.Sprintf("  Festival '%s': Band name '%s' not properly capitalized", festival.Name, bandRef.Name))
 				result.Errors++
 			}
 		}
@@ -275,7 +254,7 @@ func validateBandNames(data *Database) ValidationResult {
 }
 
 // validateGenres validates music genre capitalization
-func validateGenres(data *Database) ValidationResult {
+func validateGenres(data *model.Database) ValidationResult {
 	printHeader("MUSIC GENRE CAPITALIZATION")
 
 	result := ValidationResult{}
@@ -299,7 +278,7 @@ func validateGenres(data *Database) ValidationResult {
 }
 
 // validateMemberRoles validates band member role capitalization
-func validateMemberRoles(data *Database) ValidationResult {
+func validateMemberRoles(data *model.Database) ValidationResult {
 	printHeader("BAND MEMBER ROLE CAPITALIZATION")
 
 	result := ValidationResult{}
@@ -323,7 +302,7 @@ func validateMemberRoles(data *Database) ValidationResult {
 }
 
 // detectDuplicates detects potential duplicate band names using Levenshtein distance
-func detectDuplicates(data *Database, threshold int) ValidationResult {
+func detectDuplicates(data *model.Database, threshold int) ValidationResult {
 	printHeader("DUPLICATE DETECTION (Levenshtein Distance)")
 
 	result := ValidationResult{}
@@ -337,9 +316,9 @@ func detectDuplicates(data *Database, threshold int) ValidationResult {
 
 	// From festivals
 	for _, festival := range data.Festivals {
-		for _, bandName := range festival.Bands {
+		for _, bandRef := range festival.Bands {
 			allBands = append(allBands, BandEntry{
-				Name:   bandName,
+				Name:   bandRef.Name,
 				Source: fmt.Sprintf("Festival: %s", festival.Name),
 			})
 		}

@@ -137,7 +137,7 @@ class FestivalMap {
 
       // Apply bands filter
       if (isBandsFilterActive && shouldShow) {
-        const festivalHasSelectedBands = festival.bands.some((band) => selectedBands.includes(band));
+        const festivalHasSelectedBands = festival.bands.some((bandRef) => selectedBands.includes(bandRef.name));
         if (!festivalHasSelectedBands) {
           shouldShow = false;
         }

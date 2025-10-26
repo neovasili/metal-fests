@@ -4,45 +4,13 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/neovasili/metal-fests/internal/model"
 	"io"
 	"net/http"
 	"os"
 	"strings"
 	"time"
 )
-
-type Festival struct {
-	Key         string   `json:"key"`
-	Name        string   `json:"name"`
-	Location    string   `json:"location"`
-	Date        string   `json:"date"`
-	Bands       []string `json:"bands"`
-	TicketPrice *float64 `json:"ticketPrice"`
-	Website     string   `json:"website"`
-}
-
-type Band struct {
-	Key           string   `json:"key"`
-	Name          string   `json:"name"`
-	Country       string   `json:"country"`
-	Description   string   `json:"description"`
-	HeadlineImage string   `json:"headlineImage"`
-	Logo          string   `json:"logo"`
-	Website       string   `json:"website"`
-	Spotify       string   `json:"spotify"`
-	Genres        []string `json:"genres"`
-	Members       []Member `json:"members"`
-}
-
-type Member struct {
-	Name string `json:"name"`
-	Role string `json:"role"`
-}
-
-type Database struct {
-	Festivals []Festival `json:"festivals"`
-	Bands     []Band     `json:"bands"`
-}
 
 type OpenAIRequest struct {
 	Model       string          `json:"model"`
@@ -105,14 +73,14 @@ func loadPromptFile(filename string) (string, error) {
 	return string(data), nil
 }
 
-func loadDatabase(filename string) (*Database, error) {
+func loadDatabase(filename string) (*model.Database, error) {
 	// #nosec G304 - filename comes from validated command-line arguments
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
 
-	var db Database
+	var db model.Database
 	if err := json.Unmarshal(data, &db); err != nil {
 		return nil, err
 	}
@@ -120,7 +88,7 @@ func loadDatabase(filename string) (*Database, error) {
 	return &db, nil
 }
 
-func saveDatabase(filename string, db *Database) error {
+func saveDatabase(filename string, db *model.Database) error {
 	data, err := json.MarshalIndent(db, "", "  ")
 	if err != nil {
 		return err
@@ -189,7 +157,7 @@ func askOpenAI(apiKey, systemPrompt, userPrompt string) (*OpenAIResponse, error)
 	return &openAIResp, nil
 }
 
-func searchFestivalInfo(apiKey string, promptTemplate string, festival Festival, dryRun bool) (*FestivalUpdateResult, int, error) {
+func searchFestivalInfo(apiKey string, promptTemplate string, festival model.Festival, dryRun bool) (*FestivalUpdateResult, int, error) {
 	userPrompt := strings.ReplaceAll(promptTemplate, "{{ FESTIVAL_NAME }}", festival.Name)
 	userPrompt = strings.ReplaceAll(userPrompt, "{{ FESTIVAL_LOCATION }}", festival.Location)
 	userPrompt = strings.ReplaceAll(userPrompt, "{{ FESTIVAL_URL }}", festival.Website)
@@ -224,7 +192,7 @@ func searchFestivalInfo(apiKey string, promptTemplate string, festival Festival,
 	return &result, resp.Usage.TotalTokens, nil
 }
 
-func updateExistingFestivals(apiKey, promptTemplate string, db *Database, dryRun bool) *UpdateStats {
+func updateExistingFestivals(apiKey, promptTemplate string, db *model.Database, dryRun bool) *UpdateStats {
 	stats := &UpdateStats{
 		TotalFestivals: len(db.Festivals),
 	}
@@ -248,11 +216,13 @@ func updateExistingFestivals(apiKey, promptTemplate string, db *Database, dryRun
 		// Update bands if new ones found
 		if len(result.Bands) > 0 {
 			oldBandCount := len(festival.Bands)
-			newBands := make([]string, 0)
+			newBands := make([]model.BandRef, 0)
 
-			for _, band := range result.Bands {
-				if !contains(festival.Bands, band) {
-					newBands = append(newBands, band)
+			for _, bandName := range result.Bands {
+				if !containsBand(festival.Bands, bandName) {
+					// Convert band name to key (lowercase with hyphens)
+					bandKey := bandNameToKey(bandName)
+					newBands = append(newBands, model.BandRef{Key: bandKey, Name: bandName})
 				}
 			}
 
@@ -267,12 +237,10 @@ func updateExistingFestivals(apiKey, promptTemplate string, db *Database, dryRun
 		}
 
 		// Update ticket price if available and different
-		if result.TicketPrice != nil && (festival.TicketPrice == nil || *festival.TicketPrice != *result.TicketPrice) {
+		if result.TicketPrice != nil && festival.TicketPrice != *result.TicketPrice {
 			oldPrice := "null"
-			if festival.TicketPrice != nil {
-				oldPrice = fmt.Sprintf("%.2f€", *festival.TicketPrice)
-			}
-			festival.TicketPrice = result.TicketPrice
+			oldPrice = fmt.Sprintf("%.2f€", festival.TicketPrice)
+			festival.TicketPrice = *result.TicketPrice
 			stats.UpdatedPrices++
 			updated = true
 			fmt.Printf("  ✓ Updated ticket price: %s → %.2f€\n", oldPrice, *result.TicketPrice)
@@ -288,13 +256,21 @@ func updateExistingFestivals(apiKey, promptTemplate string, db *Database, dryRun
 	return stats
 }
 
-func contains(slice []string, item string) bool {
-	for _, s := range slice {
-		if s == item {
+func containsBand(bands []model.BandRef, bandName string) bool {
+	for _, band := range bands {
+		if band.Name == bandName {
 			return true
 		}
 	}
 	return false
+}
+
+func bandNameToKey(name string) string {
+	// Convert band name to key format (lowercase with hyphens, & to and)
+	key := strings.ToLower(name)
+	key = strings.ReplaceAll(key, "&", "and")
+	key = strings.ReplaceAll(key, " ", "-")
+	return key
 }
 
 func generatePRSummary(stats *UpdateStats) string {

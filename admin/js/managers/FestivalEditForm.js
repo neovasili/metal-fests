@@ -9,6 +9,7 @@ class FestivalEditForm {
     this.onCancel = options.onCancel || null;
     this.currentFestival = null;
     this.bands = [];
+    this.bandsMap = new Map(); // Map of band name to band key
     this.saveTimeout = null;
     this.saveDelay = 2000; // 2 seconds for auto-save
     this.isSaving = false;
@@ -30,6 +31,10 @@ class FestivalEditForm {
       const data = await response.json();
       const reviewedBands = data.bands?.filter((band) => band.reviewed) || [];
       this.bands = reviewedBands.map((band) => band.name).sort();
+      // Create a map of band name to band key for quick lookup
+      reviewedBands.forEach((band) => {
+        this.bandsMap.set(band.name, band.key);
+      });
     } catch (error) {
       console.error("Error loading bands:", error);
     }
@@ -381,9 +386,15 @@ class FestivalEditForm {
     const form = this.container.querySelector("#festivalForm");
     if (!form) return null;
 
-    const selectedBands = Array.from(this.container.querySelectorAll("#bandsOptions input:checked")).map(
+    const selectedBandNames = Array.from(this.container.querySelectorAll("#bandsOptions input:checked")).map(
       (cb) => cb.value,
     );
+
+    // Convert band names to the new structure with key and name
+    const selectedBands = selectedBandNames.map((bandName) => ({
+      key: this.bandsMap.get(bandName) || this.bandNameToKey(bandName),
+      name: bandName,
+    }));
 
     return {
       key: form.elements.key.value.trim(),
@@ -402,6 +413,11 @@ class FestivalEditForm {
       bands: selectedBands,
       ticketPrice: parseFloat(form.elements.ticketPrice.value),
     };
+  }
+
+  bandNameToKey(name) {
+    // Convert band name to key format (lowercase with hyphens, & to and)
+    return name.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
   }
 
   generateKey(name) {
@@ -717,7 +733,8 @@ class FestivalEditForm {
 
     const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
     checkboxes.forEach((cb) => {
-      cb.checked = festival.bands?.includes(cb.value) || false;
+      // Check if the band name exists in the festival's bands array
+      cb.checked = festival.bands?.some((bandRef) => bandRef.name === cb.value) || false;
     });
 
     this.updateSelectedBands();
