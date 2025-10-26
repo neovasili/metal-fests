@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="/components/festival-card/festival-card.css">
     <link rel="stylesheet" href="/css/band-modal.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/map.css">
     <link rel="icon" type="image/png" href="/img/metal-fests.png">
+    <!-- Leaflet CSS for maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
 </head>
 <body>
     <header class="header">
@@ -50,16 +55,30 @@
     </header>
 
     <main>
-        <div class="timeline-container">
+        <!-- Timeline View -->
+        <div class="timeline-container" id="timeline-view">
             <div class="timeline-line"></div>
             <div class="timeline-content" id="timeline-content">
                 <!-- Festival cards will be dynamically inserted here -->
             </div>
         </div>
+
+        <!-- Map View -->
+        <div class="map-container" id="map-view" style="display: none;">
+            <div id="festival-map"></div>
+        </div>
     </main>
 
+    <!-- Modal for festival details (used in map view) -->
+    <div id="festival-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-festival-card"></div>
+        </div>
+    </div>
+
     <div class="loading" id="loading">
-        <p>Loading festivals...</p>
+        <p id="loading-text">Loading festivals...</p>
     </div>
 
     <footer>
@@ -73,6 +92,10 @@
     </footer>
 
     <!-- JavaScript files - load in order -->
+    <!-- Leaflet JS for maps -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
     <script src="/js/spa-router.js"></script>
     <script src="/js/router.js"></script>
     <script src="/js/header-manager.js"></script>
@@ -82,6 +105,7 @@
     <script src="/js/band-manager.js"></script>
     <script src="/js/ui-utils.js"></script>
     <script src="/components/festival-card/festival-card.js"></script>
+    <script src="/js/map.js"></script>
     <script src="/script.js"></script>
 </body>
 </html>

@@ -1,132 +1,33 @@
 // Festival Map Application
 class FestivalMap {
-  constructor() {
-    this.festivals = [];
+  constructor(festivals, favoritesManager, filterManager, bandsFilterManager, bandManager) {
+    this.festivals = festivals;
     this.map = null;
     this.markers = [];
-    this.infoWindow = null;
     this.modal = document.getElementById("festival-modal");
     this.modalContent = document.getElementById("modal-festival-card");
-    this.loading = document.getElementById("loading");
-    this.filterContainer = document.getElementById("filter-container");
-    this.filterContainerMobile = document.getElementById("filter-container-mobile");
-    this.favoritesManager = new FavoritesManager();
-    this.filterManager = new FilterManager();
-    this.bandsFilterManager = new BandsFilterManager();
-    this.bandManager = new BandManager();
-    this.allBands = [];
 
-    this.init();
+    // Use shared managers from timeline
+    this.favoritesManager = favoritesManager;
+    this.filterManager = filterManager;
+    this.bandsFilterManager = bandsFilterManager;
+    this.bandManager = bandManager;
   }
 
   async init() {
-    this.showLoading(true);
     try {
-      await this.bandManager.loadBands();
-      await this.loadFestivals();
-      this.extractAllBands();
-      this.createFilterControls();
       this.setupModalEventListeners();
-      // Pre-load the festival card template once
-      await FestivalCard.loadTemplate();
       this.initializeMap();
-      await this.bandManager.init();
     } catch (error) {
       console.error("Error initializing map:", error);
       this.showError("Failed to load festival data. Please try again later.");
-    } finally {
-      this.showLoading(false);
     }
   }
 
-  async loadFestivals() {
-    try {
-      const response = await fetch("db.json");
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      this.festivals = data.festivals;
-    } catch (error) {
-      console.error("Error loading festivals:", error);
-      throw error;
-    }
-  }
-
-  extractAllBands() {
-    const bandsSet = new Set();
-    this.festivals.forEach((festival) => {
-      festival.bands.forEach((band) => bandsSet.add(band));
-    });
-    this.allBands = Array.from(bandsSet).sort();
-  }
-
-  createFilterControls() {
-    // Create favorites filter button
-    const filterButton = UIUtils.createFilterButton(this.filterManager.isFilterEnabled());
-    const filterButtonMobile = UIUtils.createFilterButton(this.filterManager.isFilterEnabled());
-
-    const updateBothButtons = () => {
-      const newState = this.filterManager.toggleFilter();
-      UIUtils.updateFilterButton(filterButton, newState);
-      UIUtils.updateFilterButton(filterButtonMobile, newState);
+  // Public method to update map when filters change
+  updateFilters() {
+    if (this.map) {
       this.applyFilters();
-
-      const message = newState ? "Showing favorites only" : "Showing all festivals";
-      UIUtils.showNotification(message, "info");
-    };
-
-    UIUtils.addFilterButtonEventListeners(filterButton, updateBothButtons);
-    UIUtils.addFilterButtonEventListeners(filterButtonMobile, updateBothButtons);
-
-    this.filterContainer.appendChild(filterButton);
-    this.filterContainerMobile.appendChild(filterButtonMobile);
-
-    // Create bands filter
-    const selectedBands = this.bandsFilterManager.getSelectedBands();
-    const bandsFilter = UIUtils.createBandsFilter(this.allBands, selectedBands);
-    const bandsFilterMobile = UIUtils.createBandsFilter(this.allBands, selectedBands);
-
-    const filterCallbacks = {
-      onBandToggle: (bandName, isSelected) => {
-        if (isSelected) {
-          this.bandsFilterManager.addBand(bandName);
-        } else {
-          this.bandsFilterManager.removeBand(bandName);
-        }
-        this.updateBandsFilter();
-        this.applyFilters();
-      },
-      onClearAll: () => {
-        this.bandsFilterManager.clearAllBands();
-        this.updateBandsFilter();
-        this.applyFilters();
-        UIUtils.showNotification("All band filters cleared", "info");
-      },
-      onSearch: (searchTerm) => {
-        this.updateBandsFilter();
-      },
-      onDropdownOpen: () => {
-        this.updateBandsFilter();
-      },
-    };
-
-    UIUtils.addBandsFilterEventListeners(bandsFilter, filterCallbacks);
-    UIUtils.addBandsFilterEventListeners(bandsFilterMobile, filterCallbacks);
-
-    this.filterContainer.appendChild(bandsFilter);
-    this.filterContainerMobile.appendChild(bandsFilterMobile);
-    this.bandsFilterElement = bandsFilter;
-    this.bandsFilterElementMobile = bandsFilterMobile;
-  }
-
-  updateBandsFilter() {
-    const selectedBands = this.bandsFilterManager.getSelectedBands();
-    if (this.bandsFilterElement) {
-      UIUtils.updateBandsFilter(this.bandsFilterElement, this.allBands, selectedBands);
-    }
-    if (this.bandsFilterElementMobile) {
-      UIUtils.updateBandsFilter(this.bandsFilterElementMobile, this.allBands, selectedBands);
     }
   }
 
@@ -358,10 +259,20 @@ class FestivalMap {
   }
 }
 
-// Initialize the application when DOM is loaded
-document.addEventListener("DOMContentLoaded", () => {
-  window.festivalMapInstance = new FestivalMap();
-});
+// Expose initialization function for SPA mode
+// Called by the timeline script when switching to map view
+window.initializeMap = function (festivals, favoritesManager, filterManager, bandsFilterManager, bandManager) {
+  if (!window.festivalMapInstance) {
+    window.festivalMapInstance = new FestivalMap(
+      festivals,
+      favoritesManager,
+      filterManager,
+      bandsFilterManager,
+      bandManager,
+    );
+    window.festivalMapInstance.init();
+  }
+};
 
 // Export for global access
 window.FestivalMap = FestivalMap;
