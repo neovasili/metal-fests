@@ -103,9 +103,17 @@ class ClientRouter {
           const favoritesManager = window.sharedFavoritesManager;
           const filterManager = window.sharedFilterManager;
           const bandsFilterManager = window.sharedBandsFilterManager;
+          const searchFilterManager = window.sharedSearchFilterManager;
           const bandManager = window.sharedBandManager;
 
-          window.initializeMap(festivals, favoritesManager, filterManager, bandsFilterManager, bandManager);
+          window.initializeMap(
+            festivals,
+            favoritesManager,
+            filterManager,
+            bandsFilterManager,
+            searchFilterManager,
+            bandManager,
+          );
         }, 50);
       }
     }

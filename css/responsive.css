@@ -86,12 +86,23 @@
     flex-wrap: wrap;
   }
 
-  .filter-button {
-    font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
-    flex: 1;
-    min-width: 0;
+  .search-filter-container {
+    order: -1; /* Keep first in mobile too */
+    flex: 1 1 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .search-filter-wrapper {
     width: 100%;
+  }
+
+  .filter-button {
+    width: auto;
+    height: 44px;
+    font-size: 1.2rem;
+    border-radius: 22px;
+    padding: 0 1rem;
+    gap: 0.5rem;
   }
 
   .filter-text {
@@ -99,23 +110,20 @@
   }
 
   .filter-container {
-    float: left;
-    flex: 1;
-    min-width: 0;
-    margin: 0 0.5rem;
-    width: calc(50% - 2rem);
+    margin: 0;
   }
 
   .bands-filter-toggle {
-    width: 100%;
-    font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: auto;
+    height: 44px;
+    font-size: 1.2rem;
+    border-radius: 22px;
+    padding: 0 1rem;
+    gap: 0.5rem;
   }
 
   .bands-filter-text {
+    display: inline; /* Show text on mobile */
     font-size: 0.85rem;
   }
 

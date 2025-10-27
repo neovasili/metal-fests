@@ -1,6 +1,6 @@
 // Festival Map Application
 class FestivalMap {
-  constructor(festivals, favoritesManager, filterManager, bandsFilterManager, bandManager) {
+  constructor(festivals, favoritesManager, filterManager, bandsFilterManager, searchFilterManager, bandManager) {
     this.festivals = festivals;
     this.map = null;
     this.markers = [];
@@ -11,6 +11,7 @@ class FestivalMap {
     this.favoritesManager = favoritesManager;
     this.filterManager = filterManager;
     this.bandsFilterManager = bandsFilterManager;
+    this.searchFilterManager = searchFilterManager;
     this.bandManager = bandManager;
   }
 
@@ -122,6 +123,8 @@ class FestivalMap {
     const isFavoritesFilterActive = this.filterManager.isFilterEnabled();
     const selectedBands = this.bandsFilterManager.getSelectedBands();
     const isBandsFilterActive = selectedBands.length > 0;
+    const searchText = this.searchFilterManager.getSearchText().toLowerCase().trim();
+    const isSearchActive = searchText.length > 0;
 
     this.markers.forEach((marker) => {
       const festival = marker.festivalData;
@@ -143,6 +146,14 @@ class FestivalMap {
         }
       }
 
+      // Apply search filter
+      if (isSearchActive && shouldShow) {
+        const matchesSearch = this.festivalMatchesSearch(festival, searchText);
+        if (!matchesSearch) {
+          shouldShow = false;
+        }
+      }
+
       // Show/hide marker by adding/removing from map
       if (shouldShow) {
         if (!this.map.hasLayer(marker)) {
@@ -157,6 +168,38 @@ class FestivalMap {
 
     // Re-center map to show only visible markers
     this.fitMapToVisibleMarkers();
+  }
+
+  festivalMatchesSearch(festival, searchText) {
+    // Search in festival name
+    if (festival.name.toLowerCase().includes(searchText)) {
+      return true;
+    }
+
+    // Search in location
+    if (festival.location && festival.location.toLowerCase().includes(searchText)) {
+      return true;
+    }
+
+    // Search in band names and genres
+    for (const bandRef of festival.bands) {
+      // Check band name
+      if (bandRef.name.toLowerCase().includes(searchText)) {
+        return true;
+      }
+
+      // Check band genres
+      const band = this.bandManager.getBandByName(bandRef.name);
+      if (band && band.genres && Array.isArray(band.genres)) {
+        for (const genre of band.genres) {
+          if (genre.toLowerCase().includes(searchText)) {
+            return true;
+          }
+        }
+      }
+    }
+
+    return false;
   }
 
   fitMapToVisibleMarkers() {
@@ -261,13 +304,21 @@ class FestivalMap {
 
 // Expose initialization function for SPA mode
 // Called by the timeline script when switching to map view
-window.initializeMap = function (festivals, favoritesManager, filterManager, bandsFilterManager, bandManager) {
+window.initializeMap = function (
+  festivals,
+  favoritesManager,
+  filterManager,
+  bandsFilterManager,
+  searchFilterManager,
+  bandManager,
+) {
   if (!window.festivalMapInstance) {
     window.festivalMapInstance = new FestivalMap(
       festivals,
       favoritesManager,
       filterManager,
       bandsFilterManager,
+      searchFilterManager,
       bandManager,
     );
     window.festivalMapInstance.init();
