@@ -363,6 +363,19 @@ class FestivalEditForm {
     window.open(googleImagesUrl, "_blank", "noopener,noreferrer");
   }
 
+  searchGoogleMaps() {
+    const locationInput = this.container.querySelector("#festivalLocation");
+    if (!locationInput || !locationInput.value.trim()) {
+      alert("Please enter a location first");
+      return;
+    }
+
+    const location = locationInput.value.trim();
+    const encodedLocation = encodeURIComponent(location);
+    const googleMapsUrl = `https://www.google.com/maps/search/${encodedLocation}`;
+    window.open(googleMapsUrl, "_blank", "noopener,noreferrer");
+  }
+
   scrollToTop() {
     const scrollableContainer = this.container.querySelector(".form-content");
     if (scrollableContainer) {
@@ -594,15 +607,22 @@ class FestivalEditForm {
 
           <div class="form-group">
             <label for="festivalLocation">Location*</label>
-            <input
-              type="text"
-              id="festivalLocation"
-              name="location"
-              value="${this.escapeHtml(festival.location || "")}"
-              required
-              placeholder="City, Country"
-              data-field="location"
-            >
+            <div class="url-field-container">
+              <input
+                type="text"
+                id="festivalLocation"
+                name="location"
+                value="${this.escapeHtml(festival.location || "")}"
+                required
+                placeholder="City, Country"
+                data-field="location"
+              >
+              <button type="button" class="btn-search-image" onclick="window.festivalEditFormInstance?.searchGoogleMaps()" title="Search on Google Maps">
+                <svg viewBox="0 0 24 24" width="18" height="18">
+                  <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div class="form-row">
@@ -765,7 +785,23 @@ class FestivalEditForm {
     const optionsContainer = this.container.querySelector("#bandsOptions");
     if (!optionsContainer) return;
 
-    optionsContainer.innerHTML = this.bands
+    // Combine reviewed bands with any bands already in the current festival
+    // This ensures we don't lose unreviewed bands that were previously selected
+    const allBandsToShow = new Set(this.bands);
+
+    if (this.currentFestival && this.currentFestival.bands) {
+      this.currentFestival.bands.forEach((bandRef) => {
+        if (!allBandsToShow.has(bandRef.name)) {
+          allBandsToShow.add(bandRef.name);
+          // Also add to bandsMap if not already there
+          if (!this.bandsMap.has(bandRef.name)) {
+            this.bandsMap.set(bandRef.name, bandRef.key);
+          }
+        }
+      });
+    }
+
+    optionsContainer.innerHTML = Array.from(allBandsToShow)
       .map(
         (band) => `
       <label class="multiselect-option">
