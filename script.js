@@ -191,11 +191,11 @@ class FestivalTimeline {
         }
       }
 
-      // Apply visual state
+      // Completely hide or show the card
       if (shouldShow) {
-        card.classList.remove("collapsed");
+        card.style.display = "";
       } else {
-        card.classList.add("collapsed");
+        card.style.display = "none";
       }
 
       // Highlight selected bands in the festival
@@ -210,6 +210,34 @@ class FestivalTimeline {
         if (bandsList) {
           UIUtils.highlightSelectedBands(bandsList, []);
         }
+      }
+    });
+
+    // Hide month markers that have no visible cards
+    this.updateMonthMarkers();
+  }
+
+  updateMonthMarkers() {
+    const monthMarkers = this.timelineContent.querySelectorAll(".month-marker");
+
+    monthMarkers.forEach((marker) => {
+      // Find all festival cards between this marker and the next marker (or end)
+      let nextElement = marker.nextElementSibling;
+      let hasVisibleCards = false;
+
+      while (nextElement && !nextElement.classList.contains("month-marker")) {
+        if (nextElement.classList.contains("festival-card") && nextElement.style.display !== "none") {
+          hasVisibleCards = true;
+          break;
+        }
+        nextElement = nextElement.nextElementSibling;
+      }
+
+      // Hide or show the month marker based on visible cards
+      if (hasVisibleCards) {
+        marker.style.display = "";
+      } else {
+        marker.style.display = "none";
       }
     });
   }
