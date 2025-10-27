@@ -146,12 +146,14 @@ class BandManager {
   }
 
   /**
-   * Get all festivals that include a specific band
+   * Get all festivals that feature a specific band
    * @param {string} bandName - The name of the band
    * @returns {Array} - Array of festival objects
    */
   getFestivalsForBand(bandName) {
-    return this.festivals.filter((festival) => festival.bands && festival.bands.includes(bandName));
+    return this.festivals.filter(
+      (festival) => festival.bands && festival.bands.some((bandRef) => bandRef.name === bandName),
+    );
   }
 
   /**

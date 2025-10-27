@@ -72,7 +72,7 @@ class FestivalTimeline {
   extractAllBands() {
     const bandsSet = new Set();
     this.festivals.forEach((festival) => {
-      festival.bands.forEach((band) => bandsSet.add(band));
+      festival.bands.forEach((bandRef) => bandsSet.add(bandRef.name));
     });
     this.allBands = Array.from(bandsSet).sort();
   }
@@ -185,7 +185,7 @@ class FestivalTimeline {
 
       // Apply bands filter (intersection with favorites filter)
       if (isBandsFilterActive && shouldShow) {
-        const festivalHasSelectedBands = festival.bands.some((band) => selectedBands.includes(band));
+        const festivalHasSelectedBands = festival.bands.some((bandRef) => selectedBands.includes(bandRef.name));
         if (!festivalHasSelectedBands) {
           shouldShow = false;
         }

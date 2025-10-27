@@ -9,6 +9,7 @@ class FestivalEditForm {
     this.onCancel = options.onCancel || null;
     this.currentFestival = null;
     this.bands = [];
+    this.bandsMap = new Map(); // Map of band name to band key
     this.saveTimeout = null;
     this.saveDelay = 2000; // 2 seconds for auto-save
     this.isSaving = false;
@@ -30,6 +31,10 @@ class FestivalEditForm {
       const data = await response.json();
       const reviewedBands = data.bands?.filter((band) => band.reviewed) || [];
       this.bands = reviewedBands.map((band) => band.name).sort();
+      // Create a map of band name to band key for quick lookup
+      reviewedBands.forEach((band) => {
+        this.bandsMap.set(band.name, band.key);
+      });
     } catch (error) {
       console.error("Error loading bands:", error);
     }
@@ -358,6 +363,19 @@ class FestivalEditForm {
     window.open(googleImagesUrl, "_blank", "noopener,noreferrer");
   }
 
+  searchGoogleMaps() {
+    const locationInput = this.container.querySelector("#festivalLocation");
+    if (!locationInput || !locationInput.value.trim()) {
+      alert("Please enter a location first");
+      return;
+    }
+
+    const location = locationInput.value.trim();
+    const encodedLocation = encodeURIComponent(location);
+    const googleMapsUrl = `https://www.google.com/maps/search/${encodedLocation}`;
+    window.open(googleMapsUrl, "_blank", "noopener,noreferrer");
+  }
+
   scrollToTop() {
     const scrollableContainer = this.container.querySelector(".form-content");
     if (scrollableContainer) {
@@ -381,9 +399,15 @@ class FestivalEditForm {
     const form = this.container.querySelector("#festivalForm");
     if (!form) return null;
 
-    const selectedBands = Array.from(this.container.querySelectorAll("#bandsOptions input:checked")).map(
+    const selectedBandNames = Array.from(this.container.querySelectorAll("#bandsOptions input:checked")).map(
       (cb) => cb.value,
     );
+
+    // Convert band names to the new structure with key and name
+    const selectedBands = selectedBandNames.map((bandName) => ({
+      key: this.bandsMap.get(bandName) || this.bandNameToKey(bandName),
+      name: bandName,
+    }));
 
     return {
       key: form.elements.key.value.trim(),
@@ -402,6 +426,11 @@ class FestivalEditForm {
       bands: selectedBands,
       ticketPrice: parseFloat(form.elements.ticketPrice.value),
     };
+  }
+
+  bandNameToKey(name) {
+    // Convert band name to key format (lowercase with hyphens, & to and)
+    return name.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-");
   }
 
   generateKey(name) {
@@ -578,15 +607,22 @@ class FestivalEditForm {
 
           <div class="form-group">
             <label for="festivalLocation">Location*</label>
-            <input
-              type="text"
-              id="festivalLocation"
-              name="location"
-              value="${this.escapeHtml(festival.location || "")}"
-              required
-              placeholder="City, Country"
-              data-field="location"
-            >
+            <div class="url-field-container">
+              <input
+                type="text"
+                id="festivalLocation"
+                name="location"
+                value="${this.escapeHtml(festival.location || "")}"
+                required
+                placeholder="City, Country"
+                data-field="location"
+              >
+              <button type="button" class="btn-search-image" onclick="window.festivalEditFormInstance?.searchGoogleMaps()" title="Search on Google Maps">
+                <svg viewBox="0 0 24 24" width="18" height="18">
+                  <path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div class="form-row">
@@ -717,7 +753,8 @@ class FestivalEditForm {
 
     const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
     checkboxes.forEach((cb) => {
-      cb.checked = festival.bands?.includes(cb.value) || false;
+      // Check if the band name exists in the festival's bands array
+      cb.checked = festival.bands?.some((bandRef) => bandRef.name === cb.value) || false;
     });
 
     this.updateSelectedBands();
@@ -748,7 +785,23 @@ class FestivalEditForm {
     const optionsContainer = this.container.querySelector("#bandsOptions");
     if (!optionsContainer) return;
 
-    optionsContainer.innerHTML = this.bands
+    // Combine reviewed bands with any bands already in the current festival
+    // This ensures we don't lose unreviewed bands that were previously selected
+    const allBandsToShow = new Set(this.bands);
+
+    if (this.currentFestival && this.currentFestival.bands) {
+      this.currentFestival.bands.forEach((bandRef) => {
+        if (!allBandsToShow.has(bandRef.name)) {
+          allBandsToShow.add(bandRef.name);
+          // Also add to bandsMap if not already there
+          if (!this.bandsMap.has(bandRef.name)) {
+            this.bandsMap.set(bandRef.name, bandRef.key);
+          }
+        }
+      });
+    }
+
+    optionsContainer.innerHTML = Array.from(allBandsToShow)
       .map(
         (band) => `
       <label class="multiselect-option">

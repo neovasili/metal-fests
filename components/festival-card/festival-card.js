@@ -66,12 +66,12 @@ class FestivalCard {
     }
 
     return bands
-      .map((band) => {
-        const hasCompleteInfo = bandManager.hasCompleteInfo(band);
-        const bandData = bandManager.getBandByName(band);
+      .map((bandRef) => {
+        const hasCompleteInfo = bandManager.hasCompleteInfo(bandRef.name);
+        const bandData = bandManager.getBandByName(bandRef.name);
         const clickableClass = hasCompleteInfo ? " clickable" : "";
         const dataKey = hasCompleteInfo && bandData ? ` data-band-key="${bandData.key}"` : "";
-        return `<span class="band-tag${clickableClass}"${dataKey}>${band}</span>`;
+        return `<span class="band-tag${clickableClass}"${dataKey}>${bandRef.name}</span>`;
       })
       .join("");
   }

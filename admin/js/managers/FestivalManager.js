@@ -107,7 +107,7 @@ class FestivalManager {
         (festival) =>
           festival.name.toLowerCase().includes(term) ||
           festival.location.toLowerCase().includes(term) ||
-          festival.bands.some((band) => band.toLowerCase().includes(term)),
+          festival.bands.some((bandRef) => bandRef.name.toLowerCase().includes(term)),
       );
     }
     this.sortFestivals(this.sortOrder);

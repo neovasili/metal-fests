@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/neovasili/metal-fests/internal/model"
 	"io"
 	"net/http"
 	"os"
@@ -11,39 +12,6 @@ import (
 	"strings"
 	"time"
 )
-
-type Festival struct {
-	Key         string   `json:"key"`
-	Name        string   `json:"name"`
-	Location    string   `json:"location"`
-	Date        string   `json:"date"`
-	Bands       []string `json:"bands"`
-	TicketPrice *float64 `json:"ticketPrice"`
-	Website     string   `json:"website"`
-}
-
-type Band struct {
-	Key           string   `json:"key"`
-	Name          string   `json:"name"`
-	Country       string   `json:"country"`
-	Description   string   `json:"description"`
-	HeadlineImage string   `json:"headlineImage"`
-	Logo          string   `json:"logo"`
-	Website       string   `json:"website"`
-	Spotify       string   `json:"spotify"`
-	Genres        []string `json:"genres"`
-	Members       []Member `json:"members"`
-}
-
-type Member struct {
-	Name string `json:"name"`
-	Role string `json:"role"`
-}
-
-type Database struct {
-	Festivals []Festival `json:"festivals"`
-	Bands     []Band     `json:"bands"`
-}
 
 type OpenAIRequest struct {
 	Model       string          `json:"model"`
@@ -83,17 +51,17 @@ type OpenAIResponse struct {
 }
 
 type BandSearchResult struct {
-	Error         string   `json:"error,omitempty"`
-	Key           string   `json:"key,omitempty"`
-	Name          string   `json:"name,omitempty"`
-	Country       string   `json:"country,omitempty"`
-	Description   string   `json:"description,omitempty"`
-	HeadlineImage string   `json:"headlineImage,omitempty"`
-	Logo          string   `json:"logo,omitempty"`
-	Website       string   `json:"website,omitempty"`
-	Spotify       string   `json:"spotify,omitempty"`
-	Genres        []string `json:"genres,omitempty"`
-	Members       []Member `json:"members,omitempty"`
+	Error         string         `json:"error,omitempty"`
+	Key           string         `json:"key,omitempty"`
+	Name          string         `json:"name,omitempty"`
+	Country       string         `json:"country,omitempty"`
+	Description   string         `json:"description,omitempty"`
+	HeadlineImage string         `json:"headlineImage,omitempty"`
+	Logo          string         `json:"logo,omitempty"`
+	Website       string         `json:"website,omitempty"`
+	Spotify       string         `json:"spotify,omitempty"`
+	Genres        []string       `json:"genres,omitempty"`
+	Members       []model.Member `json:"members,omitempty"`
 }
 
 type UpdateStats struct {
@@ -116,14 +84,14 @@ func loadPromptFile(filename string) (string, error) {
 	return string(data), nil
 }
 
-func loadDatabase(filename string) (*Database, error) {
+func loadDatabase(filename string) (*model.Database, error) {
 	// #nosec G304 - filename comes from validated command-line arguments
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
 
-	var db Database
+	var db model.Database
 	if err := json.Unmarshal(data, &db); err != nil {
 		return nil, err
 	}
@@ -131,7 +99,7 @@ func loadDatabase(filename string) (*Database, error) {
 	return &db, nil
 }
 
-func saveDatabase(filename string, db *Database) error {
+func saveDatabase(filename string, db *model.Database) error {
 	data, err := json.MarshalIndent(db, "", "  ")
 	if err != nil {
 		return err
@@ -221,12 +189,12 @@ func generateBandKey(bandName string) string {
 	return key
 }
 
-func collectAllFestivalBands(db *Database) []string {
+func collectAllFestivalBands(db *model.Database) []string {
 	bandSet := make(map[string]bool)
 
 	for _, festival := range db.Festivals {
-		for _, band := range festival.Bands {
-			bandSet[band] = true
+		for _, bandRef := range festival.Bands {
+			bandSet[bandRef.Name] = true
 		}
 	}
 
@@ -238,7 +206,7 @@ func collectAllFestivalBands(db *Database) []string {
 	return bands
 }
 
-func isBandComplete(band Band) bool {
+func isBandComplete(band model.Band) bool {
 	if band.Key == "" || band.Name == "" || band.Country == "" || band.Description == "" {
 		return false
 	}
@@ -283,7 +251,7 @@ func searchBandInfo(apiKey, promptTemplate, bandName string, dryRun bool) (*Band
 	return &result, resp.Usage.TotalTokens, nil
 }
 
-func mergeBandData(existing *Band, updated *BandSearchResult) bool {
+func mergeBandData(existing *model.Band, updated *BandSearchResult) bool {
 	hasChanges := false
 
 	if existing.Country == "" && updated.Country != "" {
@@ -322,7 +290,7 @@ func mergeBandData(existing *Band, updated *BandSearchResult) bool {
 	return hasChanges
 }
 
-func addMissingBands(apiKey, promptTemplate string, db *Database, dryRun bool) *UpdateStats {
+func addMissingBands(apiKey, promptTemplate string, db *model.Database, dryRun bool) *UpdateStats {
 	stats := &UpdateStats{}
 
 	// Collect all bands from festivals
@@ -332,7 +300,7 @@ func addMissingBands(apiKey, promptTemplate string, db *Database, dryRun bool) *
 	fmt.Printf("Found %d unique bands in festivals\n", stats.TotalBands)
 
 	// Create a map of existing bands for quick lookup
-	existingBands := make(map[string]*Band)
+	existingBands := make(map[string]*model.Band)
 	for i := range db.Bands {
 		existingBands[db.Bands[i].Key] = &db.Bands[i]
 	}
@@ -378,7 +346,7 @@ func addMissingBands(apiKey, promptTemplate string, db *Database, dryRun bool) *
 			}
 		} else {
 			// Add new band
-			newBand := Band{
+			newBand := model.Band{
 				Key:           result.Key,
 				Name:          result.Name,
 				Country:       result.Country,

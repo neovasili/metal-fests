@@ -32,26 +32,86 @@
       "poster": "https://www.rock-am-ring.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRaR_Vertical_White_1024.png\u0026w=1280\u0026q=100",
       "website": "https://www.rock-am-ring.com",
       "bands": [
-        "Limp Bizkit",
-        "Linkin Park",
-        "Papa Roach",
-        "Architects",
-        "Baby Metal",
-        "Trivium",
-        "Within Temptation",
-        "Bad Omens",
-        "Volbeat",
-        "Electric Callboy",
-        "Ice Nine Kills",
-        "Landmarks",
-        "Marteria",
-        "Three Days Grace",
-        "Sabaton",
-        "Iron Maiden",
-        "The Offspring",
-        "A Perfect Circle",
-        "Hollywood Undead",
-        "Social Distortion"
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "linkin-park",
+          "name": "Linkin Park"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "architects",
+          "name": "Architects"
+        },
+        {
+          "key": "babymetal",
+          "name": "Baby Metal"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "electric-callboy",
+          "name": "Electric Callboy"
+        },
+        {
+          "key": "ice-nine-kills",
+          "name": "Ice Nine Kills"
+        },
+        {
+          "key": "landmarks",
+          "name": "Landmarks"
+        },
+        {
+          "key": "marteria",
+          "name": "Marteria"
+        },
+        {
+          "key": "three-days-grace",
+          "name": "Three Days Grace"
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "a-perfect-circle",
+          "name": "A Perfect Circle"
+        },
+        {
+          "key": "hollywood-undead",
+          "name": "Hollywood Undead"
+        },
+        {
+          "key": "social-distortion",
+          "name": "Social Distortion"
+        }
       ],
       "ticketPrice": 179
     },
@@ -70,26 +130,86 @@
       "poster": "https://www.rock-im-park.com/_vercel/image?url=%2Fassets%2Fimg%2Flogo%2FRiP_Vertical_White_1024.png\u0026w=1280\u0026q=100",
       "website": "https://www.rock-im-park.com",
       "bands": [
-        "Limp Bizkit",
-        "Linkin Park",
-        "Papa Roach",
-        "Architects",
-        "Baby Metal",
-        "Trivium",
-        "Within Temptation",
-        "Bad Omens",
-        "Volbeat",
-        "Electric Callboy",
-        "Ice Nine Kills",
-        "Landmarks",
-        "Marteria",
-        "Three Days Grace",
-        "Sabaton",
-        "Iron Maiden",
-        "The Offspring",
-        "A Perfect Circle",
-        "Hollywood Undead",
-        "Social Distortion"
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "linkin-park",
+          "name": "Linkin Park"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "architects",
+          "name": "Architects"
+        },
+        {
+          "key": "babymetal",
+          "name": "Baby Metal"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "electric-callboy",
+          "name": "Electric Callboy"
+        },
+        {
+          "key": "ice-nine-kills",
+          "name": "Ice Nine Kills"
+        },
+        {
+          "key": "landmarks",
+          "name": "Landmarks"
+        },
+        {
+          "key": "marteria",
+          "name": "Marteria"
+        },
+        {
+          "key": "three-days-grace",
+          "name": "Three Days Grace"
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "a-perfect-circle",
+          "name": "A Perfect Circle"
+        },
+        {
+          "key": "hollywood-undead",
+          "name": "Hollywood Undead"
+        },
+        {
+          "key": "social-distortion",
+          "name": "Social Distortion"
+        }
       ],
       "ticketPrice": 318
     },
@@ -125,30 +245,102 @@
       "poster": "https://dkipu5jeyvxyb.cloudfront.net/wp-content/uploads/2017/09/24040110/NR.png",
       "website": "https://novarock.at",
       "bands": [
-        "Bring Me The Horizon",
-        "The Offspring",
-        "Volbeat",
-        "Iron Maiden",
-        "The Cure",
-        "Bad Omens",
-        "Sabaton",
-        "Papa Roach",
-        "Architects",
-        "Airbourne",
-        "The Hu",
-        "Trivium",
-        "Pendulum",
-        "Danko Jones",
-        "Hateful Agony",
-        "Glasperlenspiel",
-        "Mayday Parade",
-        "Amon Amarth",
-        "Septicflesh",
-        "Deadlands",
-        "Randy Brecker",
-        "Souldiva",
-        "Hyhc",
-        "The Ocean"
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "the-cure",
+          "name": "The Cure"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "architects",
+          "name": "Architects"
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne"
+        },
+        {
+          "key": "the-hu",
+          "name": "The Hu"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "pendulum",
+          "name": "Pendulum"
+        },
+        {
+          "key": "danko-jones",
+          "name": "Danko Jones"
+        },
+        {
+          "key": "hateful-agony",
+          "name": "Hateful Agony"
+        },
+        {
+          "key": "glasperlenspiel",
+          "name": "Glasperlenspiel"
+        },
+        {
+          "key": "mayday-parade",
+          "name": "Mayday Parade"
+        },
+        {
+          "key": "amon-amarth",
+          "name": "Amon Amarth"
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh"
+        },
+        {
+          "key": "deadlands",
+          "name": "Deadlands"
+        },
+        {
+          "key": "randy-brecker",
+          "name": "Randy Brecker"
+        },
+        {
+          "key": "souldiva",
+          "name": "Souldiva"
+        },
+        {
+          "key": "hyhc",
+          "name": "Hyhc"
+        },
+        {
+          "key": "the-ocean",
+          "name": "The Ocean"
+        }
       ],
       "ticketPrice": 280
     },
@@ -184,35 +376,122 @@
       "poster": "https://i0.wp.com/kulturtid.dk/wp-content/uploads/2024/07/copenhell-logo2024.jpg?resize=1021%2C580\u0026ssl=1",
       "website": "https://copenhell.dk",
       "bands": [
-        "Iron Maiden",
-        "Bring Me The Horizon",
-        "Twisted Sister",
-        "Volbeat",
-        "Alice Cooper",
-        "Papa Roach",
-        "A Perfect Circle",
-        "Trivium",
-        "P.O.D.",
-        "Sepultura",
-        "Kublai Khan Tx",
-        "President",
-        "Queensrÿche",
-        "Konvent",
-        "Six Feet Under",
-        "Malevolence",
-        "Static X",
-        "The Browning",
-        "Gridiron",
-        "Powerplant",
-        "Split",
-        "Twenty One Children",
-        "End It",
-        "Voice Of Baceprot",
-        "Chopper",
-        "Inhuman Nature",
-        "Warkings",
-        "Vexed",
-        "Psycho Moshers"
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "twisted-sister",
+          "name": "Twisted Sister"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "alice-cooper",
+          "name": "Alice Cooper"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "a-perfect-circle",
+          "name": "A Perfect Circle"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "p-o-d",
+          "name": "P.O.D."
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan Tx"
+        },
+        {
+          "key": "president-metal-band",
+          "name": "President"
+        },
+        {
+          "key": "queensryche",
+          "name": "Queensrÿche"
+        },
+        {
+          "key": "konvent",
+          "name": "Konvent"
+        },
+        {
+          "key": "six-feet-under",
+          "name": "Six Feet Under"
+        },
+        {
+          "key": "malevolence",
+          "name": "Malevolence"
+        },
+        {
+          "key": "static-x",
+          "name": "Static X"
+        },
+        {
+          "key": "the-browning",
+          "name": "The Browning"
+        },
+        {
+          "key": "gridiron",
+          "name": "Gridiron"
+        },
+        {
+          "key": "powerplant",
+          "name": "Powerplant"
+        },
+        {
+          "key": "split",
+          "name": "Split"
+        },
+        {
+          "key": "twenty-one-children",
+          "name": "Twenty One Children"
+        },
+        {
+          "key": "end-it",
+          "name": "End It"
+        },
+        {
+          "key": "voice-of-baceprot",
+          "name": "Voice Of Baceprot"
+        },
+        {
+          "key": "chopper",
+          "name": "Chopper"
+        },
+        {
+          "key": "inhuman-nature",
+          "name": "Inhuman Nature"
+        },
+        {
+          "key": "warkings",
+          "name": "Warkings"
+        },
+        {
+          "key": "vexed",
+          "name": "Vexed"
+        },
+        {
+          "key": "psycho-moshers",
+          "name": "Psycho Moshers"
+        }
       ],
       "ticketPrice": 350
     },
@@ -248,24 +527,74 @@
       "poster": "https://travelmetal.com/wp-content/uploads/2016/09/resurrection-Fest-2017.jpg",
       "website": "https://www.resurrectionfest.es",
       "bands": [
-        "Caliban",
-        "Iron Maiden",
-        "Limp Bizkit",
-        "Marilyn Manson",
-        "Trivium",
-        "Cavalera Conspiracy",
-        "P.O.D.",
-        "Blood Incantation",
-        "Converge",
-        "The Rasmus",
-        "Imminence",
-        "Thrown",
-        "Caliban",
-        "House Of Protection",
-        "Feuerschwanz",
-        "Man With A Mission",
-        "Get The Shot",
-        "The Vintage Caravan"
+        {
+          "key": "caliban",
+          "name": "Caliban"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "marilyn-manson",
+          "name": "Marilyn Manson"
+        },
+        {
+          "key": "cavalera-conspiracy",
+          "name": "Cavalera Conspiracy"
+        },
+        {
+          "key": "p-o-d",
+          "name": "P.O.D."
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "converge",
+          "name": "Converge"
+        },
+        {
+          "key": "the-rasmus",
+          "name": "The Rasmus"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "thrown",
+          "name": "Thrown"
+        },
+        {
+          "key": "house-of-protection",
+          "name": "House Of Protection"
+        },
+        {
+          "key": "feuerschwanz",
+          "name": "Feuerschwanz"
+        },
+        {
+          "key": "man-with-a-mission",
+          "name": "Man With A Mission"
+        },
+        {
+          "key": "get-the-shot",
+          "name": "Get The Shot"
+        },
+        {
+          "key": "the-vintage-caravan",
+          "name": "The Vintage Caravan"
+        }
       ],
       "ticketPrice": 235
     },
@@ -284,29 +613,98 @@
       "poster": "https://es.concerty.com/img/festival/logo/496.png",
       "website": "https://mastersofrock.cz",
       "bands": [
-        "Helloween",
-        "In Flames",
-        "The Rasmus",
-        "Dirkschneider",
-        "Cavalera Conspiracy",
-        "Kissin' Dynamite",
-        "Feuerschwanz",
-        "Lordi",
-        "Primal Fear",
-        "The Gathering",
-        "Visions Of Atlantis",
-        "Voivod",
-        "Brothers Of Metal",
-        "Miracle Of Sound",
-        "Elvenking",
-        "Ex Deo",
-        "Brainstorm",
-        "Crucified Barbara",
-        "Curse Of Cain",
-        "Enemy Inside",
-        "Neckbreaker",
-        "Art Nation",
-        "Self Deception"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "the-rasmus",
+          "name": "The Rasmus"
+        },
+        {
+          "key": "dirkschneider",
+          "name": "Dirkschneider"
+        },
+        {
+          "key": "cavalera-conspiracy",
+          "name": "Cavalera Conspiracy"
+        },
+        {
+          "key": "kissin-dynamite",
+          "name": "Kissin' Dynamite"
+        },
+        {
+          "key": "feuerschwanz",
+          "name": "Feuerschwanz"
+        },
+        {
+          "key": "lordi",
+          "name": "Lordi"
+        },
+        {
+          "key": "primal-fear",
+          "name": "Primal Fear"
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering"
+        },
+        {
+          "key": "visions-of-atlantis",
+          "name": "Visions Of Atlantis"
+        },
+        {
+          "key": "voivod",
+          "name": "Voivod"
+        },
+        {
+          "key": "brothers-of-metal",
+          "name": "Brothers Of Metal"
+        },
+        {
+          "key": "miracle-of-sound",
+          "name": "Miracle Of Sound"
+        },
+        {
+          "key": "elvenking",
+          "name": "Elvenking"
+        },
+        {
+          "key": "ex-deo",
+          "name": "Ex Deo"
+        },
+        {
+          "key": "brainstorm-metal-band",
+          "name": "Brainstorm"
+        },
+        {
+          "key": "crucified-barbara",
+          "name": "Crucified Barbara"
+        },
+        {
+          "key": "curse-of-cain",
+          "name": "Curse Of Cain"
+        },
+        {
+          "key": "enemy-inside",
+          "name": "Enemy Inside"
+        },
+        {
+          "key": "neckbreaker",
+          "name": "Neckbreaker"
+        },
+        {
+          "key": "art-nation",
+          "name": "Art Nation"
+        },
+        {
+          "key": "self-deception",
+          "name": "Self Deception"
+        }
       ],
       "ticketPrice": 140
     },
@@ -325,48 +723,174 @@
       "poster": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Logo_Brutal_Assault.png",
       "website": "https://brutalassault.cz",
       "bands": [
-        "The Sisters Of Mercy",
-        "The Ghost Inside",
-        "200 Stab Wounds",
-        "Alcest",
-        "Allt",
-        "Amorphis",
-        "Animals As Leaders",
-        "Arthur Brown",
-        "Bleed From Within",
-        "Castle Rat",
-        "Coroner",
-        "Crippling Alcoholism",
-        "Cryptopsy",
-        "Deafheaven",
-        "Death Angel",
-        "Deceased",
-        "Deicide",
-        "Deserted Fear",
-        "Devourment",
-        "Draconian",
-        "Elder",
-        "Fallujah",
-        "Imminence",
-        "Insomnium",
-        "Internal Bleeding",
-        "Kittie",
-        "Marduk",
-        "Master Boot Record",
-        "Metal Church",
-        "Municipal Waste",
-        "Old Man'S Child",
-        "Rise Of The Northstar",
-        "Sadistic Intent",
-        "Sanguisugabogg",
-        "Saor",
-        "Septicflesh",
-        "Signs Of The Swarm",
-        "Slope",
-        "Triptykon",
-        "Vader",
-        "Vended",
-        "Wyatt E."
+        {
+          "key": "the-sisters-of-mercy",
+          "name": "The Sisters Of Mercy"
+        },
+        {
+          "key": "the-ghost-inside",
+          "name": "The Ghost Inside"
+        },
+        {
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds"
+        },
+        {
+          "key": "alcest",
+          "name": "Alcest"
+        },
+        {
+          "key": "allt",
+          "name": "Allt"
+        },
+        {
+          "key": "amorphis",
+          "name": "Amorphis"
+        },
+        {
+          "key": "animals-as-leaders",
+          "name": "Animals As Leaders"
+        },
+        {
+          "key": "arthur-brown",
+          "name": "Arthur Brown"
+        },
+        {
+          "key": "bleed-from-within",
+          "name": "Bleed From Within"
+        },
+        {
+          "key": "castle-rat",
+          "name": "Castle Rat"
+        },
+        {
+          "key": "coroner",
+          "name": "Coroner"
+        },
+        {
+          "key": "crippling-alcoholism",
+          "name": "Crippling Alcoholism"
+        },
+        {
+          "key": "cryptopsy",
+          "name": "Cryptopsy"
+        },
+        {
+          "key": "deafheaven",
+          "name": "Deafheaven"
+        },
+        {
+          "key": "death-angel",
+          "name": "Death Angel"
+        },
+        {
+          "key": "deceased",
+          "name": "Deceased"
+        },
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "deserted-fear",
+          "name": "Deserted Fear"
+        },
+        {
+          "key": "devourment",
+          "name": "Devourment"
+        },
+        {
+          "key": "draconian",
+          "name": "Draconian"
+        },
+        {
+          "key": "elder",
+          "name": "Elder"
+        },
+        {
+          "key": "fallujah",
+          "name": "Fallujah"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "insomnium",
+          "name": "Insomnium"
+        },
+        {
+          "key": "internal-bleeding",
+          "name": "Internal Bleeding"
+        },
+        {
+          "key": "kittie",
+          "name": "Kittie"
+        },
+        {
+          "key": "marduk",
+          "name": "Marduk"
+        },
+        {
+          "key": "master-boot-record",
+          "name": "Master Boot Record"
+        },
+        {
+          "key": "metal-church",
+          "name": "Metal Church"
+        },
+        {
+          "key": "municipal-waste",
+          "name": "Municipal Waste"
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Man'S Child"
+        },
+        {
+          "key": "rise-of-the-northstar",
+          "name": "Rise Of The Northstar"
+        },
+        {
+          "key": "sadistic-intent",
+          "name": "Sadistic Intent"
+        },
+        {
+          "key": "sanguisugabogg",
+          "name": "Sanguisugabogg"
+        },
+        {
+          "key": "saor",
+          "name": "Saor"
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh"
+        },
+        {
+          "key": "signs-of-the-swarm",
+          "name": "Signs Of The Swarm"
+        },
+        {
+          "key": "slope",
+          "name": "Slope"
+        },
+        {
+          "key": "tryptikon",
+          "name": "Triptykon"
+        },
+        {
+          "key": "vader",
+          "name": "Vader"
+        },
+        {
+          "key": "vended",
+          "name": "Vended"
+        },
+        {
+          "key": "wyatt-e",
+          "name": "Wyatt E."
+        }
       ],
       "ticketPrice": 195
     },
@@ -385,41 +909,146 @@
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTzgs_6Ax_eR3JamWFprxf7kzqSZi9rLoKA\u0026s",
       "website": "https://www.wacken.com",
       "bands": [
-        "Def Leppard",
-        "In Flames",
-        "Powerwolf",
-        "Savatage",
-        "Allt",
-        "Airbourne",
-        "Any Given Day",
-        "Blood Command",
-        "Blood Fire Death",
-        "Broken By The Scream",
-        "Einherjer",
-        "Emperor",
-        "Europe",
-        "Faun",
-        "Future Palace",
-        "Gutalax",
-        "Grand Magus",
-        "Insanity Alert",
-        "H-Blockx",
-        "Kupfergold",
-        "Lamb Of God",
-        "Luna Kills",
-        "Mantar",
-        "Nevermore",
-        "Orbit Culture",
-        "Paleface Swiss",
-        "Pig Destroyer",
-        "Running Wild",
-        "Sepultura",
-        "Ten56.",
-        "The Gathering",
-        "The Hardkiss",
-        "Thundermother",
-        "Thrown",
-        "Tryptikon"
+        {
+          "key": "def-leppard",
+          "name": "Def Leppard"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "powerwolf",
+          "name": "Powerwolf"
+        },
+        {
+          "key": "savatage",
+          "name": "Savatage"
+        },
+        {
+          "key": "allt",
+          "name": "Allt"
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne"
+        },
+        {
+          "key": "any-given-day",
+          "name": "Any Given Day"
+        },
+        {
+          "key": "blood-command",
+          "name": "Blood Command"
+        },
+        {
+          "key": "blood-fire-death",
+          "name": "Blood Fire Death"
+        },
+        {
+          "key": "broken-by-the-scream",
+          "name": "Broken By The Scream"
+        },
+        {
+          "key": "einherjer",
+          "name": "Einherjer"
+        },
+        {
+          "key": "emperor",
+          "name": "Emperor"
+        },
+        {
+          "key": "europe-metal-band",
+          "name": "Europe"
+        },
+        {
+          "key": "faun",
+          "name": "Faun"
+        },
+        {
+          "key": "future-palace",
+          "name": "Future Palace"
+        },
+        {
+          "key": "gutalax",
+          "name": "Gutalax"
+        },
+        {
+          "key": "grand-magus",
+          "name": "Grand Magus"
+        },
+        {
+          "key": "insanity-alert",
+          "name": "Insanity Alert"
+        },
+        {
+          "key": "h-blockx",
+          "name": "H-Blockx"
+        },
+        {
+          "key": "kupfergold",
+          "name": "Kupfergold"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "luna-kills",
+          "name": "Luna Kills"
+        },
+        {
+          "key": "mantar",
+          "name": "Mantar"
+        },
+        {
+          "key": "nevermore",
+          "name": "Nevermore"
+        },
+        {
+          "key": "orbit-culture",
+          "name": "Orbit Culture"
+        },
+        {
+          "key": "paleface-swiss",
+          "name": "Paleface Swiss"
+        },
+        {
+          "key": "pig-destroyer",
+          "name": "Pig Destroyer"
+        },
+        {
+          "key": "running-wild",
+          "name": "Running Wild"
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "ten56",
+          "name": "Ten56."
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering"
+        },
+        {
+          "key": "the-hardkiss",
+          "name": "The Hardkiss"
+        },
+        {
+          "key": "thundermother",
+          "name": "Thundermother"
+        },
+        {
+          "key": "thrown",
+          "name": "Thrown"
+        },
+        {
+          "key": "tryptikon",
+          "name": "Tryptikon"
+        }
       ],
       "ticketPrice": 349
     },
@@ -438,19 +1067,58 @@
       "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09ctI_UejVHK9a-iFQ9P2J0C6-Zp9a_dPKg\u0026s",
       "website": "https://www.leyendasdelrockfestival.com",
       "bands": [
-        "Helloween",
-        "In Flames",
-        "Slaughter To Prevail",
-        "Godsmack",
-        "Warcry",
-        "Sepultura",
-        "Nothing More",
-        "Deicide",
-        "Dark Tranquillity",
-        "Of Mice \u0026 Men",
-        "Black Label Society",
-        "Savatage",
-        "Heaven Shall Burn"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        },
+        {
+          "key": "godsmack",
+          "name": "Godsmack"
+        },
+        {
+          "key": "warcry",
+          "name": "Warcry"
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "nothing-more",
+          "name": "Nothing More"
+        },
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "dark-tranquillity",
+          "name": "Dark Tranquillity"
+        },
+        {
+          "key": "of-mice-and-men",
+          "name": "Of Mice \u0026 Men"
+        },
+        {
+          "key": "black-label-society",
+          "name": "Black Label Society"
+        },
+        {
+          "key": "savatage",
+          "name": "Savatage"
+        },
+        {
+          "key": "heaven-shall-burn",
+          "name": "Heaven Shall Burn"
+        }
       ],
       "ticketPrice": 189
     },
@@ -469,31 +1137,106 @@
       "poster": "https://bloodstock.uk.com/assets/objects/line_up_modal/stacked-logo-310f4cb3e82dc4a83c45d48447089e74a9b02c1345b878ee2b06869f8e4c2222.png",
       "website": "https://bloodstock.uk.com",
       "bands": [
-        "Lamb Of God",
-        "Sepultura",
-        "Municipal Waste",
-        "Biohazard",
-        "Life Of Agony",
-        "Slaughter To Prevail",
-        "Bleed From Within",
-        "Of Mice \u0026 Men",
-        "Northlane",
-        "Vended",
-        "Death Angel",
-        "The Scratch",
-        "Imperial Age",
-        "Judas Priest",
-        "Orbit Culture",
-        "Cryptopsy",
-        "Black Spiders",
-        "The Hell",
-        "Heavysaurus",
-        "Wednesday 13",
-        "Shining",
-        "Leprous",
-        "Nevermore",
-        "Carpenter Brut",
-        "200 Stab Wounds"
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "municipal-waste",
+          "name": "Municipal Waste"
+        },
+        {
+          "key": "biohazard",
+          "name": "Biohazard"
+        },
+        {
+          "key": "life-of-agony",
+          "name": "Life Of Agony"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        },
+        {
+          "key": "bleed-from-within",
+          "name": "Bleed From Within"
+        },
+        {
+          "key": "of-mice-and-men",
+          "name": "Of Mice \u0026 Men"
+        },
+        {
+          "key": "northlane",
+          "name": "Northlane"
+        },
+        {
+          "key": "vended",
+          "name": "Vended"
+        },
+        {
+          "key": "death-angel",
+          "name": "Death Angel"
+        },
+        {
+          "key": "the-scratch",
+          "name": "The Scratch"
+        },
+        {
+          "key": "imperial-age",
+          "name": "Imperial Age"
+        },
+        {
+          "key": "judas-priest",
+          "name": "Judas Priest"
+        },
+        {
+          "key": "orbit-culture",
+          "name": "Orbit Culture"
+        },
+        {
+          "key": "cryptopsy",
+          "name": "Cryptopsy"
+        },
+        {
+          "key": "black-spiders",
+          "name": "Black Spiders"
+        },
+        {
+          "key": "the-hell",
+          "name": "The Hell"
+        },
+        {
+          "key": "heavysaurus",
+          "name": "Heavysaurus"
+        },
+        {
+          "key": "wednesday-13",
+          "name": "Wednesday 13"
+        },
+        {
+          "key": "shining",
+          "name": "Shining"
+        },
+        {
+          "key": "leprous",
+          "name": "Leprous"
+        },
+        {
+          "key": "nevermore",
+          "name": "Nevermore"
+        },
+        {
+          "key": "carpenter-brut",
+          "name": "Carpenter Brut"
+        },
+        {
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds"
+        }
       ],
       "ticketPrice": 250
     },
@@ -512,56 +1255,206 @@
       "poster": "https://www.sbtix.de/uploads/summer_breeze/ticket/image/86579/FestivalTicket2026_600x600_1755516804.jpeg",
       "website": "https://www.summer-breeze.de/en/",
       "bands": [
-        "Helloween",
-        "In Flames",
-        "Arch Enemy",
-        "Lamb Of God",
-        "Airbourne",
-        "Alestorm",
-        "Versengold",
-        "The Ghost Inside",
-        "Testament",
-        "Amorphis",
-        "Imminence",
-        "Paleface Swiss",
-        "Alcest",
-        "The Butcher Sisters",
-        "Orbit Culture",
-        "Kim Dracula",
-        "Deicide",
-        "Brothers Of Metal",
-        "Northlane",
-        "Dartagnan",
-        "Betontod",
-        "Terror",
-        "Deafheaven",
-        "Future Palace",
-        "Soen",
-        "Der Weg Einer Freiheit",
-        "Miracle Of Sound",
-        "Mushroomhead",
-        "Municipal Waste",
-        "Trollfest",
-        "Saor",
-        "Nanowar Of Steel",
-        "From Fall To Spring",
-        "Unprocessed",
-        "Misery Index",
-        "Cryptopsy",
-        "Brainstorm",
-        "Parasite Inc.",
-        "Excrementory Grindfuckers",
-        "Our Promise",
-        "Illdisposed",
-        "Ten56.",
-        "200 Stab Wounds",
-        "Groza",
-        "Manntra",
-        "Haggefugg",
-        "Blood Command",
-        "Cabal",
-        "Mittel Alta",
-        "Luna Kills"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "arch-enemy",
+          "name": "Arch Enemy"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne"
+        },
+        {
+          "key": "alestorm",
+          "name": "Alestorm"
+        },
+        {
+          "key": "versengold",
+          "name": "Versengold"
+        },
+        {
+          "key": "the-ghost-inside",
+          "name": "The Ghost Inside"
+        },
+        {
+          "key": "testament",
+          "name": "Testament"
+        },
+        {
+          "key": "amorphis",
+          "name": "Amorphis"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "paleface-swiss",
+          "name": "Paleface Swiss"
+        },
+        {
+          "key": "alcest",
+          "name": "Alcest"
+        },
+        {
+          "key": "the-butcher-sisters",
+          "name": "The Butcher Sisters"
+        },
+        {
+          "key": "orbit-culture",
+          "name": "Orbit Culture"
+        },
+        {
+          "key": "kim-dracula",
+          "name": "Kim Dracula"
+        },
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "brothers-of-metal",
+          "name": "Brothers Of Metal"
+        },
+        {
+          "key": "northlane",
+          "name": "Northlane"
+        },
+        {
+          "key": "dartagnan",
+          "name": "Dartagnan"
+        },
+        {
+          "key": "betontod",
+          "name": "Betontod"
+        },
+        {
+          "key": "terror",
+          "name": "Terror"
+        },
+        {
+          "key": "deafheaven",
+          "name": "Deafheaven"
+        },
+        {
+          "key": "future-palace",
+          "name": "Future Palace"
+        },
+        {
+          "key": "soen",
+          "name": "Soen"
+        },
+        {
+          "key": "der-weg-einer-freiheit",
+          "name": "Der Weg Einer Freiheit"
+        },
+        {
+          "key": "miracle-of-sound",
+          "name": "Miracle Of Sound"
+        },
+        {
+          "key": "mushroomhead",
+          "name": "Mushroomhead"
+        },
+        {
+          "key": "municipal-waste",
+          "name": "Municipal Waste"
+        },
+        {
+          "key": "trollfest",
+          "name": "Trollfest"
+        },
+        {
+          "key": "saor",
+          "name": "Saor"
+        },
+        {
+          "key": "nanowar-of-steel",
+          "name": "Nanowar Of Steel"
+        },
+        {
+          "key": "from-fall-to-spring",
+          "name": "From Fall To Spring"
+        },
+        {
+          "key": "unprocessed",
+          "name": "Unprocessed"
+        },
+        {
+          "key": "misery-index",
+          "name": "Misery Index"
+        },
+        {
+          "key": "cryptopsy",
+          "name": "Cryptopsy"
+        },
+        {
+          "key": "brainstorm-metal-band",
+          "name": "Brainstorm"
+        },
+        {
+          "key": "parasite-inc",
+          "name": "Parasite Inc."
+        },
+        {
+          "key": "excrementory-grindfuckers",
+          "name": "Excrementory Grindfuckers"
+        },
+        {
+          "key": "our-promise",
+          "name": "Our Promise"
+        },
+        {
+          "key": "illdisposed",
+          "name": "Illdisposed"
+        },
+        {
+          "key": "ten56",
+          "name": "Ten56."
+        },
+        {
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds"
+        },
+        {
+          "key": "groza",
+          "name": "Groza"
+        },
+        {
+          "key": "manntra",
+          "name": "Manntra"
+        },
+        {
+          "key": "haggefugg",
+          "name": "Haggefugg"
+        },
+        {
+          "key": "blood-command",
+          "name": "Blood Command"
+        },
+        {
+          "key": "cabal",
+          "name": "Cabal"
+        },
+        {
+          "key": "mittel-alta",
+          "name": "Mittel Alta"
+        },
+        {
+          "key": "luna-kills",
+          "name": "Luna Kills"
+        }
       ],
       "ticketPrice": 249
     },
@@ -580,11 +1473,26 @@
       "poster": "https://www.rockimperiumfestival.es/wp-content/uploads/2025/09/web_2026_logo_300.png",
       "website": "https://www.rockimperiumfestival.es/en/",
       "bands": [
-        "Iron Maiden",
-        "Sabaton",
-        "Trivium",
-        "Queensrÿche",
-        "Lacuna Coil"
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "queensryche",
+          "name": "Queensrÿche"
+        },
+        {
+          "key": "lacuna-coil",
+          "name": "Lacuna Coil"
+        }
       ],
       "ticketPrice": 195
     },
@@ -620,14 +1528,38 @@
       "poster": "",
       "website": "https://vagosmetalfest.com/",
       "bands": [
-        "Lamb Of God",
-        "Within Temptation",
-        "In Flames",
-        "Godsmack",
-        "Heaven Shall Burn",
-        "Deicide",
-        "Combichrist",
-        "Holocausto Canibal"
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "godsmack",
+          "name": "Godsmack"
+        },
+        {
+          "key": "heaven-shall-burn",
+          "name": "Heaven Shall Burn"
+        },
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "combichrist",
+          "name": "Combichrist"
+        },
+        {
+          "key": "holocausto-canibal",
+          "name": "Holocausto Canibal"
+        }
       ],
       "ticketPrice": 159
     },
@@ -646,12 +1578,30 @@
       "poster": "",
       "website": "https://www.infernofestival.net/",
       "bands": [
-        "Deicide",
-        "Enslaved",
-        "Samael",
-        "Old Man'S Child",
-        "Incantation",
-        "Auðn"
+        {
+          "key": "deicide",
+          "name": "Deicide"
+        },
+        {
+          "key": "enslaved",
+          "name": "Enslaved"
+        },
+        {
+          "key": "samael",
+          "name": "Samael"
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Man'S Child"
+        },
+        {
+          "key": "incantation",
+          "name": "Incantation"
+        },
+        {
+          "key": "auðn",
+          "name": "Auðn"
+        }
       ],
       "ticketPrice": 435
     },
@@ -670,11 +1620,26 @@
       "poster": "",
       "website": "https://www.alcatraz.be/en/",
       "bands": [
-        "Arch Enemy",
-        "Alestorm",
-        "Powerwolf",
-        "Savatage",
-        "Slaughter To Prevail"
+        {
+          "key": "arch-enemy",
+          "name": "Arch Enemy"
+        },
+        {
+          "key": "alestorm",
+          "name": "Alestorm"
+        },
+        {
+          "key": "powerwolf",
+          "name": "Powerwolf"
+        },
+        {
+          "key": "savatage",
+          "name": "Savatage"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        }
       ],
       "ticketPrice": 249
     },
@@ -693,11 +1658,26 @@
       "poster": "",
       "website": "https://www.mysticfestival.pl/en/home/",
       "bands": [
-        "Winterfylleth",
-        "Kublai Khan Tx",
-        "Scour",
-        "Acid King",
-        "Septicflesh"
+        {
+          "key": "winterfylleth",
+          "name": "Winterfylleth"
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan Tx"
+        },
+        {
+          "key": "scour",
+          "name": "Scour"
+        },
+        {
+          "key": "acid-king",
+          "name": "Acid King"
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh"
+        }
       ],
       "ticketPrice": 300
     },
@@ -716,11 +1696,26 @@
       "poster": "",
       "website": "https://rockstadtextremefest.ro/",
       "bands": [
-        "Helloween",
-        "Accept",
-        "Lamb Of God",
-        "In Flames",
-        "Decapitated"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "accept",
+          "name": "Accept"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "decapitated",
+          "name": "Decapitated"
+        }
       ],
       "ticketPrice": 162.5
     },
@@ -739,17 +1734,50 @@
       "poster": "",
       "website": "https://rockforpeople.cz",
       "bands": [
-        "Bring Me The Horizon",
-        "Gorillaz",
-        "Limp Bizkit",
-        "Iron Maiden",
-        "Electric Callboy",
-        "Papa Roach",
-        "Three Days Grace",
-        "Alter Bridge",
-        "Baby Metal",
-        "Megadeth",
-        "Nothing But Thieves"
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "gorillaz",
+          "name": "Gorillaz"
+        },
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "electric-callboy",
+          "name": "Electric Callboy"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "three-days-grace",
+          "name": "Three Days Grace"
+        },
+        {
+          "key": "alter-bridge",
+          "name": "Alter Bridge"
+        },
+        {
+          "key": "babymetal",
+          "name": "Baby Metal"
+        },
+        {
+          "key": "megadeth",
+          "name": "Megadeth"
+        },
+        {
+          "key": "nothing-but-thieves",
+          "name": "Nothing But Thieves"
+        }
       ],
       "ticketPrice": 208
     },
@@ -768,17 +1796,50 @@
       "poster": "",
       "website": "https://www.jeraonair.nl",
       "bands": [
-        "The Offspring",
-        "Papa Roach",
-        "Rise Against",
-        "All Time Low",
-        "Bury Tomorrow",
-        "Ignite",
-        "Imminence",
-        "Malevolence",
-        "Magnolia Park",
-        "Wargasm",
-        "Ho99O9"
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "papa-roach",
+          "name": "Papa Roach"
+        },
+        {
+          "key": "rise-against",
+          "name": "Rise Against"
+        },
+        {
+          "key": "all-time-low",
+          "name": "All Time Low"
+        },
+        {
+          "key": "bury-tomorrow",
+          "name": "Bury Tomorrow"
+        },
+        {
+          "key": "ignite",
+          "name": "Ignite"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "malevolence",
+          "name": "Malevolence"
+        },
+        {
+          "key": "magnolia-park",
+          "name": "Magnolia Park"
+        },
+        {
+          "key": "wargasm-uk",
+          "name": "Wargasm"
+        },
+        {
+          "key": "ho99o9",
+          "name": "Ho99O9"
+        }
       ],
       "ticketPrice": 239
     },
@@ -797,17 +1858,50 @@
       "poster": "",
       "website": "https://tuska.fi",
       "bands": [
-        "Bring Me The Horizon",
-        "Bad Omens",
-        "Megadeth",
-        "Trivium",
-        "P.O.D.",
-        "Stam1Na",
-        "Blood Incantation",
-        "Queensrÿche",
-        "Kublai Khan Tx",
-        "Soilwork",
-        "Ensiferum"
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "megadeth",
+          "name": "Megadeth"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "p-o-d",
+          "name": "P.O.D."
+        },
+        {
+          "key": "stam1na",
+          "name": "Stam1Na"
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "queensryche",
+          "name": "Queensrÿche"
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan Tx"
+        },
+        {
+          "key": "soilwork",
+          "name": "Soilwork"
+        },
+        {
+          "key": "ensiferum",
+          "name": "Ensiferum"
+        }
       ],
       "ticketPrice": 239
     },
@@ -826,18 +1920,54 @@
       "poster": "",
       "website": "https://www.rockharz-festival.com",
       "bands": [
-        "Helloween",
-        "Alice Cooper",
-        "Emperor",
-        "Knorkator",
-        "Subway To Sally",
-        "Agnostic Front",
-        "Kataklysm",
-        "Biohazard",
-        "Domnum",
-        "Finntroll",
-        "Gothminister",
-        "Motorjesus"
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "alice-cooper",
+          "name": "Alice Cooper"
+        },
+        {
+          "key": "emperor",
+          "name": "Emperor"
+        },
+        {
+          "key": "knorkator",
+          "name": "Knorkator"
+        },
+        {
+          "key": "subway-to-sally",
+          "name": "Subway To Sally"
+        },
+        {
+          "key": "agnostic-front",
+          "name": "Agnostic Front"
+        },
+        {
+          "key": "kataklysm",
+          "name": "Kataklysm"
+        },
+        {
+          "key": "biohazard",
+          "name": "Biohazard"
+        },
+        {
+          "key": "domnum",
+          "name": "Domnum"
+        },
+        {
+          "key": "finntroll",
+          "name": "Finntroll"
+        },
+        {
+          "key": "gothminister",
+          "name": "Gothminister"
+        },
+        {
+          "key": "motorjesus",
+          "name": "Motorjesus"
+        }
       ],
       "ticketPrice": 0
     },
@@ -856,12 +1986,30 @@
       "poster": "",
       "website": "https://www.motocultor-festival.com",
       "bands": [
-        "Within Temptation",
-        "Slaughter To Prevail",
-        "Nanowar Of Steel",
-        "Uuhai",
-        "Cold Snap",
-        "Lone Survivors"
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        },
+        {
+          "key": "nanowar-of-steel",
+          "name": "Nanowar Of Steel"
+        },
+        {
+          "key": "uuhai",
+          "name": "Uuhai"
+        },
+        {
+          "key": "cold-snap",
+          "name": "Cold Snap"
+        },
+        {
+          "key": "lone-survivors",
+          "name": "Lone Survivors"
+        }
       ],
       "ticketPrice": 192
     },
@@ -880,17 +2028,50 @@
       "poster": "",
       "website": "https://reload-festival.de",
       "bands": [
-        "Judas Priest",
-        "In Flames",
-        "Arch Enemy",
-        "Lamb Of God",
-        "Godsmack",
-        "Airbourne",
-        "The Ghost Inside",
-        "Thy Art Is Murder",
-        "Imminence",
-        "Amorphis",
-        "Stick To Your Guns"
+        {
+          "key": "judas-priest",
+          "name": "Judas Priest"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "arch-enemy",
+          "name": "Arch Enemy"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "godsmack",
+          "name": "Godsmack"
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne"
+        },
+        {
+          "key": "the-ghost-inside",
+          "name": "The Ghost Inside"
+        },
+        {
+          "key": "thy-art-is-murder",
+          "name": "Thy Art Is Murder"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "amorphis",
+          "name": "Amorphis"
+        },
+        {
+          "key": "stick-to-your-guns",
+          "name": "Stick To Your Guns"
+        }
       ],
       "ticketPrice": 199
     },
@@ -909,31 +2090,106 @@
       "poster": "",
       "website": "https://samhainfestival.com/",
       "bands": [
-        "Triumph Of Death (Plays Hellhammer)",
-        "Rotting Christ",
-        "Mysticum",
-        "Blackbraid",
-        "Panopticon",
-        "Full Of Hell",
-        "Der Weg Einer Freiheit",
-        "The Body",
-        "Dödsrit",
-        "Lamp Of Murmuur",
-        "Hexvessel",
-        "Esoteric",
-        "Wolvennest",
-        "Aluk Todolo",
-        "Naxen",
-        "Five The Hierophant",
-        "Final Dose",
-        "Predatory Void",
-        "Mütterlein",
-        "Gudsforladt",
-        "Vacuous",
-        "Terzij De Horde",
-        "Jarhead Fertilizer",
-        "Jad",
-        "Ashenspire"
+        {
+          "key": "triumph-of-death-plays-hellhammer",
+          "name": "Triumph Of Death (Plays Hellhammer)"
+        },
+        {
+          "key": "rotting-christ",
+          "name": "Rotting Christ"
+        },
+        {
+          "key": "mysticum",
+          "name": "Mysticum"
+        },
+        {
+          "key": "blackbraid",
+          "name": "Blackbraid"
+        },
+        {
+          "key": "panopticon",
+          "name": "Panopticon"
+        },
+        {
+          "key": "full-of-hell",
+          "name": "Full Of Hell"
+        },
+        {
+          "key": "der-weg-einer-freiheit",
+          "name": "Der Weg Einer Freiheit"
+        },
+        {
+          "key": "the-body",
+          "name": "The Body"
+        },
+        {
+          "key": "dödsrit",
+          "name": "Dödsrit"
+        },
+        {
+          "key": "lamp-of-murmuur",
+          "name": "Lamp Of Murmuur"
+        },
+        {
+          "key": "hexvessel",
+          "name": "Hexvessel"
+        },
+        {
+          "key": "esoteric",
+          "name": "Esoteric"
+        },
+        {
+          "key": "wolvennest",
+          "name": "Wolvennest"
+        },
+        {
+          "key": "aluk-todolo",
+          "name": "Aluk Todolo"
+        },
+        {
+          "key": "naxen",
+          "name": "Naxen"
+        },
+        {
+          "key": "five-the-hierophant",
+          "name": "Five The Hierophant"
+        },
+        {
+          "key": "final-dose",
+          "name": "Final Dose"
+        },
+        {
+          "key": "predatory-void",
+          "name": "Predatory Void"
+        },
+        {
+          "key": "mütterlein",
+          "name": "Mütterlein"
+        },
+        {
+          "key": "gudsforladt",
+          "name": "Gudsforladt"
+        },
+        {
+          "key": "vacuous",
+          "name": "Vacuous"
+        },
+        {
+          "key": "terzij-de-horde",
+          "name": "Terzij De Horde"
+        },
+        {
+          "key": "jarhead-fertilizer",
+          "name": "Jarhead Fertilizer"
+        },
+        {
+          "key": "jad",
+          "name": "Jad"
+        },
+        {
+          "key": "ashenspire",
+          "name": "Ashenspire"
+        }
       ],
       "ticketPrice": 139.5
     },
@@ -952,30 +2208,102 @@
       "poster": "",
       "website": "https://www.karmoygeddon.no/",
       "bands": [
-        "Accept",
-        "Insomnium",
-        "Annisokay",
-        "Septicflesh",
-        "Hardcore Superstar",
-        "Adept",
-        "Beyond The Black",
-        "Abbath",
-        "Infected Rain",
-        "Phil Campbell And The Bastard Sons",
-        "Old Man'S Child",
-        "Before The Dawn",
-        "Kissin' Dynamite",
-        "Wolfheart",
-        "Ambush",
-        "Saor",
-        "Djerv",
-        "Disillusion",
-        "Setyøursails",
-        "Iotunn",
-        "Mayfire",
-        "Neonfly",
-        "Thron",
-        "Captain Black Beard"
+        {
+          "key": "accept",
+          "name": "Accept"
+        },
+        {
+          "key": "insomnium",
+          "name": "Insomnium"
+        },
+        {
+          "key": "annisokay",
+          "name": "Annisokay"
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh"
+        },
+        {
+          "key": "hardcore-superstar",
+          "name": "Hardcore Superstar"
+        },
+        {
+          "key": "adept",
+          "name": "Adept"
+        },
+        {
+          "key": "beyond-the-black",
+          "name": "Beyond The Black"
+        },
+        {
+          "key": "abbath",
+          "name": "Abbath"
+        },
+        {
+          "key": "infected-rain",
+          "name": "Infected Rain"
+        },
+        {
+          "key": "phil-campbell-and-the-bastard-sons",
+          "name": "Phil Campbell And The Bastard Sons"
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Man'S Child"
+        },
+        {
+          "key": "before-the-dawn",
+          "name": "Before The Dawn"
+        },
+        {
+          "key": "kissin-dynamite",
+          "name": "Kissin' Dynamite"
+        },
+        {
+          "key": "wolfheart",
+          "name": "Wolfheart"
+        },
+        {
+          "key": "ambush-sweden",
+          "name": "Ambush"
+        },
+        {
+          "key": "saor",
+          "name": "Saor"
+        },
+        {
+          "key": "djerv",
+          "name": "Djerv"
+        },
+        {
+          "key": "disillusion",
+          "name": "Disillusion"
+        },
+        {
+          "key": "setyoursails",
+          "name": "Setyøursails"
+        },
+        {
+          "key": "iotunn",
+          "name": "Iotunn"
+        },
+        {
+          "key": "mayfire",
+          "name": "Mayfire"
+        },
+        {
+          "key": "neonfly",
+          "name": "Neonfly"
+        },
+        {
+          "key": "thron",
+          "name": "Thron"
+        },
+        {
+          "key": "captain-black-beard",
+          "name": "Captain Black Beard"
+        }
       ],
       "ticketPrice": 99.9
     },
@@ -994,15 +2322,42 @@
       "poster": "https://dynamo-metalfest.nl/wp-content/uploads/2025/08/LOGO.png",
       "website": "https://dynamo-metalfest.nl/",
       "bands": [
-        "Godsmack",
-        "Lamb of God",
-        "In Flames",
-        "Testament",
-        "Destruction",
-        "Overkill",
-        "Death Angel",
-        "200 Stab Wounds",
-        "Urne"
+        {
+          "key": "godsmack",
+          "name": "Godsmack"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb of God"
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "testament",
+          "name": "Testament"
+        },
+        {
+          "key": "destruction",
+          "name": "Destruction"
+        },
+        {
+          "key": "overkill",
+          "name": "Overkill"
+        },
+        {
+          "key": "death-angel",
+          "name": "Death Angel"
+        },
+        {
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds"
+        },
+        {
+          "key": "urne",
+          "name": "Urne"
+        }
       ],
       "ticketPrice": 129
     }
