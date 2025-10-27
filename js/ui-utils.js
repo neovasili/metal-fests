@@ -111,6 +111,7 @@ class UIUtils {
     filterButton.className = `filter-button ${isActive ? "active" : ""}`;
     filterButton.innerHTML = `
             <span class="filter-icon">★</span>
+            <span class="filter-text">Favorites</span>
         `;
     filterButton.setAttribute("aria-label", isActive ? "Show all festivals" : "Show favorites only");
     filterButton.title = isActive ? "Show all festivals" : "Show favorites only";
@@ -183,6 +184,7 @@ class UIUtils {
     toggleButton.className = "bands-filter-toggle";
     toggleButton.innerHTML = `
             <span class="bands-filter-icon">🎸</span>
+            <span class="bands-filter-text">Bands</span>
             <span class="bands-filter-count">${selectedBands.length > 0 ? selectedBands.length : ""}</span>
         `;
     toggleButton.setAttribute("aria-label", `Filter by bands (${selectedBands.length} selected)`);

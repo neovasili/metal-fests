@@ -87,9 +87,16 @@
   }
 
   .filter-button {
-    width: 44px;
+    width: auto;
     height: 44px;
     font-size: 1.2rem;
+    border-radius: 22px;
+    padding: 0 1rem;
+    gap: 0.5rem;
+  }
+
+  .filter-text {
+    display: inline; /* Show text on mobile */
   }
 
   .filter-container {
@@ -97,12 +104,16 @@
   }
 
   .bands-filter-toggle {
-    width: 44px;
+    width: auto;
     height: 44px;
     font-size: 1.2rem;
+    border-radius: 22px;
+    padding: 0 1rem;
+    gap: 0.5rem;
   }
 
   .bands-filter-text {
+    display: inline; /* Show text on mobile */
     font-size: 0.85rem;
   }
 

@@ -83,6 +83,13 @@
   line-height: 1;
 }
 
+.filter-text {
+  display: none; /* Hidden by default, shown in mobile */
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 /* Bands Filter */
 .filter-container {
   position: relative;
@@ -125,6 +132,13 @@
 .bands-filter-icon {
   font-size: 1.3rem;
   line-height: 1;
+}
+
+.bands-filter-text {
+  display: none; /* Hidden by default, shown in mobile */
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .bands-filter-count {
