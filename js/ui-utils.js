@@ -377,4 +377,99 @@ class UIUtils {
       }
     });
   }
+
+  /**
+   * Create search filter input
+   * @param {string} initialValue - Initial search text value
+   * @returns {HTMLElement} Search filter container
+   */
+  static createSearchFilter(initialValue = "") {
+    const container = document.createElement("div");
+    container.className = "filter-container search-filter-container";
+
+    const searchWrapper = document.createElement("div");
+    searchWrapper.className = "search-filter-wrapper";
+
+    const searchIcon = document.createElement("span");
+    searchIcon.className = "search-filter-icon";
+    searchIcon.innerHTML = "🔍";
+    searchIcon.setAttribute("aria-hidden", "true");
+
+    const searchInput = document.createElement("input");
+    searchInput.type = "text";
+    searchInput.className = "search-filter-input";
+    searchInput.placeholder = "Search festivals...";
+    searchInput.value = initialValue;
+    searchInput.setAttribute("aria-label", "Search festivals by name, location, bands, or genres");
+
+    const clearButton = document.createElement("button");
+    clearButton.className = "search-filter-clear";
+    clearButton.innerHTML = "✕";
+    clearButton.title = "Clear search";
+    clearButton.setAttribute("aria-label", "Clear search");
+    clearButton.style.display = initialValue ? "block" : "none";
+
+    searchWrapper.appendChild(searchIcon);
+    searchWrapper.appendChild(searchInput);
+    searchWrapper.appendChild(clearButton);
+    container.appendChild(searchWrapper);
+
+    return container;
+  }
+
+  /**
+   * Add event listeners to search filter
+   * @param {HTMLElement} container - The search filter container
+   * @param {Object} callbacks - Object with callback functions (onSearch, onClear)
+   */
+  static addSearchFilterEventListeners(container, callbacks) {
+    const searchInput = container.querySelector(".search-filter-input");
+    const clearButton = container.querySelector(".search-filter-clear");
+    let searchTimeout = null;
+
+    // Handle input with debounce
+    searchInput.addEventListener("input", (e) => {
+      const value = e.target.value;
+
+      // Show/hide clear button
+      clearButton.style.display = value ? "block" : "none";
+
+      // Clear existing timeout
+      if (searchTimeout) {
+        clearTimeout(searchTimeout);
+      }
+
+      // Set new timeout for search
+      searchTimeout = setTimeout(() => {
+        if (callbacks.onSearch) {
+          callbacks.onSearch(value);
+        }
+      }, 500);
+    });
+
+    // Handle clear button
+    clearButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      searchInput.value = "";
+      clearButton.style.display = "none";
+      searchInput.focus();
+
+      if (callbacks.onClear) {
+        callbacks.onClear();
+      }
+    });
+
+    // Handle Enter key
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        if (searchTimeout) {
+          clearTimeout(searchTimeout);
+        }
+        if (callbacks.onSearch) {
+          callbacks.onSearch(searchInput.value);
+        }
+      }
+    });
+  }
 }

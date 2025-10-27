@@ -11,12 +11,14 @@ class FestivalTimeline {
     this.favoritesManager = new FavoritesManager();
     this.filterManager = new FilterManager();
     this.bandsFilterManager = new BandsFilterManager();
+    this.searchFilterManager = new SearchFilterManager();
     this.bandManager = new BandManager();
 
     // Store globally so map view can reuse them
     window.sharedFavoritesManager = this.favoritesManager;
     window.sharedFilterManager = this.filterManager;
     window.sharedBandsFilterManager = this.bandsFilterManager;
+    window.sharedSearchFilterManager = this.searchFilterManager;
     window.sharedBandManager = this.bandManager;
 
     this.allBands = [];
@@ -30,6 +32,7 @@ class FestivalTimeline {
       await this.loadFestivals();
       this.sortFestivalsByDate();
       this.extractAllBands();
+      this.createSearchFilter();
       this.createFilterButton();
       this.createBandsFilter();
       // Pre-load the festival card template once
@@ -75,6 +78,39 @@ class FestivalTimeline {
       festival.bands.forEach((bandRef) => bandsSet.add(bandRef.name));
     });
     this.allBands = Array.from(bandsSet).sort();
+  }
+
+  createSearchFilter() {
+    const initialSearchText = this.searchFilterManager.getSearchText();
+    const searchFilter = UIUtils.createSearchFilter(initialSearchText);
+    const searchFilterMobile = UIUtils.createSearchFilter(initialSearchText);
+
+    const searchCallbacks = {
+      onSearch: (searchText) => {
+        this.searchFilterManager.setSearchText(searchText);
+        this.applyFilter();
+
+        // Update map if it exists
+        if (window.festivalMapInstance) {
+          window.festivalMapInstance.updateFilters();
+        }
+      },
+      onClear: () => {
+        this.searchFilterManager.clearSearchText();
+        this.applyFilter();
+
+        // Update map if it exists
+        if (window.festivalMapInstance) {
+          window.festivalMapInstance.updateFilters();
+        }
+      },
+    };
+
+    UIUtils.addSearchFilterEventListeners(searchFilter, searchCallbacks);
+    UIUtils.addSearchFilterEventListeners(searchFilterMobile, searchCallbacks);
+
+    this.filterContainer.appendChild(searchFilter);
+    this.filterContainerMobile.appendChild(searchFilterMobile);
   }
 
   createFilterButton() {
@@ -166,6 +202,8 @@ class FestivalTimeline {
     const isFavoritesFilterActive = this.filterManager.isFilterEnabled();
     const selectedBands = this.bandsFilterManager.getSelectedBands();
     const isBandsFilterActive = selectedBands.length > 0;
+    const searchText = this.searchFilterManager.getSearchText().toLowerCase().trim();
+    const isSearchActive = searchText.length > 0;
     const cards = this.timelineContent.querySelectorAll(".festival-card");
 
     cards.forEach((card) => {
@@ -187,6 +225,14 @@ class FestivalTimeline {
       if (isBandsFilterActive && shouldShow) {
         const festivalHasSelectedBands = festival.bands.some((bandRef) => selectedBands.includes(bandRef.name));
         if (!festivalHasSelectedBands) {
+          shouldShow = false;
+        }
+      }
+
+      // Apply search filter (intersection with other filters)
+      if (isSearchActive && shouldShow) {
+        const matchesSearch = this.festivalMatchesSearch(festival, searchText);
+        if (!matchesSearch) {
           shouldShow = false;
         }
       }
@@ -215,6 +261,39 @@ class FestivalTimeline {
 
     // Hide month markers that have no visible cards
     this.updateMonthMarkers();
+    this.updateNoResultsMessage();
+  }
+
+  festivalMatchesSearch(festival, searchText) {
+    // Search in festival name
+    if (festival.name.toLowerCase().includes(searchText)) {
+      return true;
+    }
+
+    // Search in location
+    if (festival.location && festival.location.toLowerCase().includes(searchText)) {
+      return true;
+    }
+
+    // Search in band names and genres
+    for (const bandRef of festival.bands) {
+      // Check band name
+      if (bandRef.name.toLowerCase().includes(searchText)) {
+        return true;
+      }
+
+      // Check band genres
+      const band = this.bandManager.getBandByName(bandRef.name);
+      if (band && band.genres && Array.isArray(band.genres)) {
+        for (const genre of band.genres) {
+          if (genre.toLowerCase().includes(searchText)) {
+            return true;
+          }
+        }
+      }
+    }
+
+    return false;
   }
 
   updateMonthMarkers() {
@@ -240,6 +319,40 @@ class FestivalTimeline {
         marker.style.display = "none";
       }
     });
+  }
+
+  updateNoResultsMessage() {
+    const cards = this.timelineContent.querySelectorAll(".festival-card");
+    const hasVisibleCards = Array.from(cards).some((card) => card.style.display !== "none");
+
+    // Check if filters are active
+    const isAnyFilterActive =
+      this.filterManager.isFilterEnabled() ||
+      this.bandsFilterManager.hasSelectedBands() ||
+      this.searchFilterManager.isSearchActive();
+
+    // Get or create the no results message element
+    let noResultsMessage = this.timelineContent.querySelector(".no-results-message");
+
+    if (!hasVisibleCards && isAnyFilterActive) {
+      // Show no results message
+      if (!noResultsMessage) {
+        noResultsMessage = document.createElement("div");
+        noResultsMessage.className = "no-results-message";
+        noResultsMessage.innerHTML = `
+          <div class="no-results-icon">🎸</div>
+          <h3>No festivals found for the current filters</h3>
+          <p>Try adjusting your search or filter criteria</p>
+        `;
+        this.timelineContent.appendChild(noResultsMessage);
+      }
+      noResultsMessage.style.display = "block";
+    } else {
+      // Hide no results message
+      if (noResultsMessage) {
+        noResultsMessage.style.display = "none";
+      }
+    }
   }
 
   async renderTimeline() {

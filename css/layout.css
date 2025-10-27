@@ -265,3 +265,30 @@ footer em {
   height: 18px;
   fill: currentcolor;
 }
+
+/* No Results Message */
+.no-results-message {
+  display: none;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  color: #999;
+}
+
+.no-results-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.no-results-message h3 {
+  color: #ccc;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.no-results-message p {
+  color: #777;
+  font-size: 1rem;
+}
