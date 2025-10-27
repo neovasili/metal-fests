@@ -87,32 +87,19 @@
   }
 
   .filter-button {
-    font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
-    flex: 1;
-    min-width: 0;
-    width: 100%;
-  }
-
-  .filter-text {
-    display: inline; /* Show text on mobile */
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
   }
 
   .filter-container {
-    float: left;
-    flex: 1;
-    min-width: 0;
-    margin: 0 0.5rem;
-    width: calc(50% - 2rem);
+    margin: 0;
   }
 
   .bands-filter-toggle {
-    width: 100%;
-    font-size: 0.8rem;
-    padding: 0.5rem 0.75rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
   }
 
   .bands-filter-text {

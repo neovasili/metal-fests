@@ -111,7 +111,6 @@ class UIUtils {
     filterButton.className = `filter-button ${isActive ? "active" : ""}`;
     filterButton.innerHTML = `
             <span class="filter-icon">★</span>
-            <span class="filter-text">Favorites Only</span>
         `;
     filterButton.setAttribute("aria-label", isActive ? "Show all festivals" : "Show favorites only");
     filterButton.title = isActive ? "Show all festivals" : "Show favorites only";
@@ -184,11 +183,12 @@ class UIUtils {
     toggleButton.className = "bands-filter-toggle";
     toggleButton.innerHTML = `
             <span class="bands-filter-icon">🎸</span>
-            <span class="bands-filter-text">Filter by Bands (${selectedBands.length})</span>
-            <span class="bands-filter-arrow">▼</span>
+            <span class="bands-filter-count">${selectedBands.length > 0 ? selectedBands.length : ""}</span>
         `;
-    toggleButton.setAttribute("aria-label", "Toggle bands filter");
+    toggleButton.setAttribute("aria-label", `Filter by bands (${selectedBands.length} selected)`);
     toggleButton.setAttribute("aria-expanded", "false");
+    toggleButton.title =
+      selectedBands.length > 0 ? `Filter by bands (${selectedBands.length} selected)` : "Filter by bands";
 
     // Create dropdown
     const dropdown = document.createElement("div");
@@ -228,8 +228,13 @@ class UIUtils {
    */
   static updateBandsFilter(container, allBands, selectedBands) {
     const toggleButton = container.querySelector(".bands-filter-toggle");
-    const text = toggleButton.querySelector(".bands-filter-text");
-    text.textContent = `Filter by Bands (${selectedBands.length})`;
+    const countSpan = toggleButton.querySelector(".bands-filter-count");
+    if (countSpan) {
+      countSpan.textContent = selectedBands.length > 0 ? selectedBands.length : "";
+    }
+    toggleButton.title =
+      selectedBands.length > 0 ? `Filter by bands (${selectedBands.length} selected)` : "Filter by bands";
+    toggleButton.setAttribute("aria-label", `Filter by bands (${selectedBands.length} selected)`);
 
     const bandsList = container.querySelector(".bands-filter-list");
     const searchInput = container.querySelector(".bands-filter-search");
@@ -313,9 +318,6 @@ class UIUtils {
       dropdown.style.display = isOpen ? "none" : "block";
       toggleButton.setAttribute("aria-expanded", !isOpen);
 
-      const arrow = toggleButton.querySelector(".bands-filter-arrow");
-      arrow.textContent = isOpen ? "▼" : "▲";
-
       // Update the bands list when opening the dropdown
       if (!isOpen && callbacks.onDropdownOpen) {
         callbacks.onDropdownOpen();
@@ -353,8 +355,6 @@ class UIUtils {
       if (!container.contains(e.target)) {
         dropdown.style.display = "none";
         toggleButton.setAttribute("aria-expanded", "false");
-        const arrow = toggleButton.querySelector(".bands-filter-arrow");
-        arrow.textContent = "▼";
       }
     });
   }

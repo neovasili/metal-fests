@@ -38,14 +38,16 @@
 .filter-button {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   background: rgb(45 45 45 / 90%);
   color: #ccc;
   border: 2px solid transparent;
-  border-radius: 25px;
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: bold;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
@@ -77,37 +79,35 @@
 }
 
 .filter-icon {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1;
-}
-
-.filter-text {
-  font-family: inherit;
 }
 
 /* Bands Filter */
 .filter-container {
   position: relative;
-  margin-right: 1rem;
+  margin-right: 0;
   z-index: 9999;
 }
 
 .bands-filter-toggle {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
+  justify-content: center;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   background: rgb(45 45 45 / 90%);
   color: #ccc;
   border: 2px solid transparent;
-  border-radius: 25px;
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: bold;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
-  min-width: 200px;
 }
 
 .bands-filter-toggle:hover {
@@ -123,19 +123,30 @@
 }
 
 .bands-filter-icon {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1;
 }
 
-.bands-filter-text {
-  font-family: inherit;
-  flex: 1;
-  text-align: left;
+.bands-filter-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  background: #ff6b00;
+  color: white;
+  border-radius: 9px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
-.bands-filter-arrow {
-  font-size: 0.8rem;
-  transition: transform 0.3s ease;
+.bands-filter-count:empty {
+  display: none;
 }
 
 .bands-filter-dropdown {
