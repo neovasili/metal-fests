@@ -238,8 +238,7 @@ func updateExistingFestivals(apiKey, promptTemplate string, db *model.Database, 
 
 		// Update ticket price if available and different
 		if result.TicketPrice != nil && festival.TicketPrice != *result.TicketPrice {
-			oldPrice := "null"
-			oldPrice = fmt.Sprintf("%.2f€", festival.TicketPrice)
+			oldPrice := fmt.Sprintf("%.2f€", festival.TicketPrice)
 			festival.TicketPrice = *result.TicketPrice
 			stats.UpdatedPrices++
 			updated = true
