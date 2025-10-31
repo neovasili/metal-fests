@@ -6,6 +6,14 @@ import (
 	"github.com/neovasili/metal-fests/internal/model"
 )
 
+func GetFestivals() ([]model.Festival, error) {
+	db, err := readDatabase()
+	if err != nil {
+		return nil, err
+	}
+	return db.Festivals, nil
+}
+
 func UpdateFestivalInDatabase(updatedFestival model.Festival) error {
 	db, err := readDatabase()
 	if err != nil {
