@@ -722,8 +722,8 @@
           "name": "The Vintage Caravan"
         },
         {
-          "key": "cavalera-conspiracy-–-chaos-a.d.",
-          "name": "Cavalera Conspiracy – Chaos A.d."
+          "key": "cavalera-conspiracy-chaos-a.d.",
+          "name": "Cavalera Conspiracy - Chaos A.d."
         },
         {
           "key": "p.o.d.",
@@ -856,7 +856,7 @@
           "name": "Hammer King"
         }
       ],
-      "ticketPrice": 3450
+      "ticketPrice": 140
     },
     {
       "key": "brutal-assault",
@@ -1066,7 +1066,7 @@
           "name": "Amenra"
         }
       ],
-      "ticketPrice": 1000
+      "ticketPrice": 195
     },
     {
       "key": "wacken-open-air",
@@ -1905,7 +1905,7 @@
           "name": "Hevn Iii"
         }
       ],
-      "ticketPrice": 4350
+      "ticketPrice": 435
     },
     {
       "key": "alcatraz-open-air-2026",
@@ -2089,7 +2089,7 @@
           "name": "Black Label Society"
         }
       ],
-      "ticketPrice": 769
+      "ticketPrice": 200
     },
     {
       "key": "rockstadt-extreme-fest-2026",
