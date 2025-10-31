@@ -98,6 +98,7 @@ func searchBandInfo(promptTemplate, bandName string, dryRun bool) (*BandSearchRe
 	if err := json.Unmarshal([]byte(content), &result); err != nil {
 		return nil, int(resp.Usage.TotalTokens), fmt.Errorf("failed to parse OpenAI response: %w", err)
 	}
+	result.Key = generateBandKey(result.Name)
 
 	return &result, int(resp.Usage.TotalTokens), nil
 }
@@ -155,8 +156,8 @@ func addMissingBands(promptTemplate, bandName string, dryRun bool) *UpdateStats 
 	if bandName != "" {
 		found := false
 		for _, band := range festivalBands {
-			if band == bandName {
-				festivalBands = []string{bandName}
+			if band.Name == bandName {
+				festivalBands = []model.BandRef{band}
 				found = true
 				break
 			}
@@ -185,10 +186,10 @@ func addMissingBands(promptTemplate, bandName string, dryRun bool) *UpdateStats 
 	}
 
 	// Process each band
-	for i, bandName := range festivalBands {
-		fmt.Printf("\n[%d/%d] Processing '%s'...\n", i+1, stats.TotalBands, bandName)
+	for i, band := range festivalBands {
+		fmt.Printf("\n[%d/%d] Processing '%s'...\n", i+1, stats.TotalBands, band.Name)
 
-		bandKey := generateBandKey(bandName)
+		bandKey := band.Key
 		existingBand, exists := existingBands[bandKey]
 
 		// Check if band exists and is complete
@@ -199,7 +200,7 @@ func addMissingBands(promptTemplate, bandName string, dryRun bool) *UpdateStats 
 		}
 
 		// Search for band information
-		result, tokens, err := searchBandInfo(promptTemplate, bandName, dryRun)
+		result, tokens, err := searchBandInfo(promptTemplate, band.Name, dryRun)
 		if err != nil {
 			fmt.Printf("  ⚠️  Error: %v\n", err)
 			continue

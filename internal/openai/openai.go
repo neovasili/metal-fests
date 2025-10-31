@@ -58,7 +58,7 @@ func (c *OpenAIClient) AskOpenAI(systemPrompt, userPrompt string, dryRun bool) (
 		return nil, err
 	}
 
-	fmt.Printf("%+v", response)
+	fmt.Printf("%+v", response.OutputText())
 
 	return response, nil
 }

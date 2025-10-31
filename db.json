@@ -10447,6 +10447,47 @@
         }
       ],
       "reviewed": true
+    },
+    {
+      "key": "excrementory-grindfuckers",
+      "name": "Excrementory Grindfuckers",
+      "country": "Germany",
+      "description": "Excrementory Grindfuckers are a German grindcore band from Hanover, formed on May 22, 2001, by Rob and Him as a recording project. They gained popularity by blending grindcore with catchy pop, rock, and schlager melodies, creating a unique sound that resonated within the extreme metal scene. Their debut album, \"Guts, Gore \u0026 Grind,\" released in 2001, featured both original compositions and satirical covers of well-known songs. Over the years, the band has released several albums, including \"Fertig machen, Szene putzen!\" (2004), \"Bitte nicht vor den Gästen\" (2007), \"Headliner der Herzen\" (2010), \"Aus Liebe zum Geld\" (2012), \"Ohne kostet extra\" (2013), \"Rampampampamm! – Weihnachten mit den Grindfuckers\" (2014), \"Vorsprung durch Hektik\" (2016), \"Musik zum Kopfschütteln\" (2019), and their latest EP, \"Die Rückkehr der fleischgewordenen Schnapsidee\" (2023). Known for their energetic live performances, they have played at major metal festivals such as Wacken Open Air and Summer Breeze. Their music is characterized by a mix of grindcore, fun metal, and humorous elements, often parodying popular songs and themes. The current lineup includes Rob (vocals, guitar), Christus (drums), Kai (vocals), Mike (vocals, keyboard), ND (bass), and Piggy (guitar).",
+      "logo": "https://excrementorygrindfuckers.com/images/logo.jpg",
+      "headlineImage": "https://excrementorygrindfuckers.com/images/bandphoto1.jpg",
+      "website": "https://excrementorygrindfuckers.com",
+      "spotify": "",
+      "genres": [
+        "Grindcore",
+        "Fun Metal"
+      ],
+      "members": [
+        {
+          "name": "Rob",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Christus",
+          "role": "Drums"
+        },
+        {
+          "name": "Kai",
+          "role": "Vocals"
+        },
+        {
+          "name": "Mike",
+          "role": "Vocals, Keyboard"
+        },
+        {
+          "name": "ND",
+          "role": "Bass"
+        },
+        {
+          "name": "Piggy",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
     }
   ]
 }

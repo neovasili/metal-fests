@@ -9,6 +9,9 @@ import (
 	"strings"
 	"time"
 
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
+
 	"github.com/neovasili/metal-fests/internal/data"
 	"github.com/neovasili/metal-fests/internal/model"
 	"github.com/neovasili/metal-fests/internal/openai"
@@ -107,10 +110,11 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 			newBands := make([]model.BandRef, 0)
 
 			for _, bandName := range result.Bands {
-				if !containsBand(festival.Bands, bandName) {
+				normalizedBandName := cases.Title(language.English).String(strings.ToLower(bandName))
+				if !containsBand(festival.Bands, normalizedBandName) {
 					// Convert band name to key (lowercase with hyphens)
-					bandKey := bandNameToKey(bandName)
-					newBands = append(newBands, model.BandRef{Key: bandKey, Name: bandName})
+					bandKey := bandNameToKey(normalizedBandName)
+					newBands = append(newBands, model.BandRef{Key: bandKey, Name: normalizedBandName})
 				}
 			}
 

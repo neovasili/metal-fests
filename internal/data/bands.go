@@ -64,23 +64,25 @@ func UpdateBandInDatabase(updatedBand model.Band) error {
 	return nil
 }
 
-func CollectAllFestivalBands() ([]string, error) {
+func CollectAllFestivalBands() ([]model.BandRef, error) {
 	db, err := readDatabase()
 	if err != nil {
 		return nil, err
 	}
 
-	bandSet := make(map[string]bool)
+	bandSet := make(map[string]model.BandRef)
 
 	for _, festival := range db.Festivals {
 		for _, bandRef := range festival.Bands {
-			bandSet[bandRef.Name] = true
+			if _, exists := bandSet[bandRef.Key]; !exists {
+				bandSet[bandRef.Key] = bandRef
+			}
 		}
 	}
 
-	bands := make([]string, 0, len(bandSet))
-	for band := range bandSet {
-		bands = append(bands, band)
+	bands := make([]model.BandRef, 0, len(bandSet))
+	for _, bandRef := range bandSet {
+		bands = append(bands, bandRef)
 	}
 
 	return bands, nil
