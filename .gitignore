@@ -43,7 +43,6 @@ metal-fests-server
 *.dylib
 *.test
 *.out
-go.sum
 
 # Pre-commit cache
 .pre-commit-config.yaml.backup
