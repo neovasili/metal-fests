@@ -1,3 +1,4 @@
 Search the official page {{ FESTIVAL_URL }} for the {{ FESTIVAL_NAME }} {{ FESTIVAL_LOCATION }} (2026 edition)
-ticketPrice only number in € or null
-If 2026 data not found → {"bands":[{"key":"band-name","name":"band name"}],"ticketPrice":null}
+wait for the page full load before data extraction
+ticketPrice only number or null
+If 2026 data not found → {"bands":[],"ticketPrice":null}

@@ -3,51 +3,16 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"flag"
 	"fmt"
-	"github.com/neovasili/metal-fests/internal/model"
-	"io"
-	"net/http"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/neovasili/metal-fests/internal/data"
+	"github.com/neovasili/metal-fests/internal/model"
+	"github.com/neovasili/metal-fests/internal/openai"
 )
-
-type OpenAIRequest struct {
-	Model       string          `json:"model"`
-	Messages    []OpenAIMessage `json:"messages"`
-	Temperature float64         `json:"temperature"`
-	Tools       []OpenAITool    `json:"tools,omitempty"`
-}
-
-type OpenAIMessage struct {
-	Role    string `json:"role"`
-	Content string `json:"content"`
-}
-
-type OpenAITool struct {
-	Type     string             `json:"type"`
-	Function OpenAIToolFunction `json:"function"`
-}
-
-type OpenAIToolFunction struct {
-	Name        string                 `json:"name"`
-	Description string                 `json:"description"`
-	Parameters  map[string]interface{} `json:"parameters,omitempty"`
-}
-
-type OpenAIResponse struct {
-	ID      string `json:"id"`
-	Choices []struct {
-		Message struct {
-			Content string `json:"content"`
-		} `json:"message"`
-	} `json:"choices"`
-	Usage struct {
-		PromptTokens     int `json:"prompt_tokens"`
-		CompletionTokens int `json:"completion_tokens"`
-		TotalTokens      int `json:"total_tokens"`
-	} `json:"usage"`
-}
 
 type FestivalUpdateResult struct {
 	Bands       []string `json:"bands"`
@@ -64,146 +29,69 @@ type UpdateStats struct {
 	CompletionTokens int
 }
 
-func loadPromptFile(filename string) (string, error) {
-	// #nosec G304 - filename comes from validated command-line arguments
-	data, err := os.ReadFile(filename)
-	if err != nil {
-		return "", err
-	}
-	return string(data), nil
-}
+var openaiClient *openai.OpenAIClient
 
-func loadDatabase(filename string) (*model.Database, error) {
-	// #nosec G304 - filename comes from validated command-line arguments
-	data, err := os.ReadFile(filename)
-	if err != nil {
-		return nil, err
-	}
-
-	var db model.Database
-	if err := json.Unmarshal(data, &db); err != nil {
-		return nil, err
-	}
-
-	return &db, nil
-}
-
-func saveDatabase(filename string, db *model.Database) error {
-	data, err := json.MarshalIndent(db, "", "  ")
-	if err != nil {
-		return err
-	}
-
-	return os.WriteFile(filename, data, 0600)
-}
-
-func askOpenAI(apiKey, systemPrompt, userPrompt string) (*OpenAIResponse, error) {
-	reqBody := OpenAIRequest{
-		Model: "gpt-4.1-mini",
-		Messages: []OpenAIMessage{
-			{Role: "system", Content: systemPrompt},
-			{Role: "user", Content: userPrompt},
-		},
-		Temperature: 0.3,
-		Tools: []OpenAITool{
-			{
-				Type: "web_search",
-				Function: OpenAIToolFunction{
-					Name:        "web_search",
-					Description: "Search the web for current information",
-				},
-			},
-		},
-	}
-
-	jsonData, err := json.Marshal(reqBody)
-	if err != nil {
-		return nil, err
-	}
-
-	req, err := http.NewRequest("POST", "https://api.openai.com/v1/chat/completions", bytes.NewBuffer(jsonData))
-	if err != nil {
-		return nil, err
-	}
-
-	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("Authorization", "Bearer "+apiKey)
-
-	client := &http.Client{Timeout: 120 * time.Second}
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, err
-	}
-	defer func() {
-		if err := resp.Body.Close(); err != nil {
-			fmt.Fprintf(os.Stderr, "Failed to close response body: %v\n", err)
-		}
-	}()
-
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return nil, err
-	}
-
-	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("OpenAI API error: %s - %s", resp.Status, string(body))
-	}
-
-	var openAIResp OpenAIResponse
-	if err := json.Unmarshal(body, &openAIResp); err != nil {
-		return nil, err
-	}
-
-	return &openAIResp, nil
-}
-
-func searchFestivalInfo(apiKey string, promptTemplate string, festival model.Festival, dryRun bool) (*FestivalUpdateResult, int, error) {
+func searchFestivalInfo(promptTemplate string, festival model.Festival, dryRun bool) (*FestivalUpdateResult, int, error) {
 	userPrompt := strings.ReplaceAll(promptTemplate, "{{ FESTIVAL_NAME }}", festival.Name)
 	userPrompt = strings.ReplaceAll(userPrompt, "{{ FESTIVAL_LOCATION }}", festival.Location)
 	userPrompt = strings.ReplaceAll(userPrompt, "{{ FESTIVAL_URL }}", festival.Website)
 
-	if dryRun {
-		fmt.Printf("  [DRY-RUN] Would call OpenAI API with prompt for %s\n", festival.Name)
-		// Return empty result in dry-run mode
-		return &FestivalUpdateResult{
-			Bands:       []string{},
-			TicketPrice: nil,
-		}, 0, nil
-	}
-
 	systemPrompt := "You are a data extraction assistant. Always return valid compact JSON only. No markdown, no explanations, no extra text."
 
-	resp, err := askOpenAI(apiKey, systemPrompt, userPrompt)
+	resp, err := openaiClient.AskOpenAI(systemPrompt, userPrompt, dryRun)
 	if err != nil {
 		return nil, 0, err
 	}
 
-	if len(resp.Choices) == 0 {
-		return nil, resp.Usage.TotalTokens, fmt.Errorf("no response from OpenAI")
+	if resp == nil {
+		return nil, 0, fmt.Errorf("no response from OpenAI")
+	}
+	if len(resp.OutputText()) == 0 {
+		return nil, int(resp.Usage.TotalTokens), fmt.Errorf("empty response from OpenAI")
 	}
 
-	content := strings.TrimSpace(resp.Choices[0].Message.Content)
+	content := strings.TrimSpace(resp.OutputText())
 
 	var result FestivalUpdateResult
 	if err := json.Unmarshal([]byte(content), &result); err != nil {
-		return nil, resp.Usage.TotalTokens, fmt.Errorf("failed to parse OpenAI response: %w", err)
+		return nil, int(resp.Usage.TotalTokens), fmt.Errorf("failed to parse OpenAI response: %w", err)
 	}
 
-	return &result, resp.Usage.TotalTokens, nil
+	return &result, int(resp.Usage.TotalTokens), nil
 }
 
-func updateExistingFestivals(apiKey, promptTemplate string, db *model.Database, dryRun bool) *UpdateStats {
+func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName string) *UpdateStats {
+	festivals, err := data.GetFestivals()
+	if err != nil {
+		fmt.Printf("  ⚠️  Error fetching festivals: %v\n", err)
+	}
+
+	// Filter by festival name if provided
+	if festivalName != "" {
+		filteredFestivals := make([]model.Festival, 0)
+		for _, festival := range festivals {
+			if festival.Name == festivalName {
+				filteredFestivals = append(filteredFestivals, festival)
+				break
+			}
+		}
+		if len(filteredFestivals) == 0 {
+			fmt.Printf("  ⚠️  Festival '%s' not found\n", festivalName)
+			return &UpdateStats{}
+		}
+		festivals = filteredFestivals
+	}
+
 	stats := &UpdateStats{
-		TotalFestivals: len(db.Festivals),
+		TotalFestivals: len(festivals),
 	}
 
 	fmt.Printf("Updating %d festivals...\n", stats.TotalFestivals)
 
-	for i := range db.Festivals {
-		festival := &db.Festivals[i]
-		fmt.Printf("\n[%d/%d] Processing %s...\n", i+1, stats.TotalFestivals, festival.Name)
+	for index, festival := range festivals {
+		fmt.Printf("\n[%d/%d] Processing %s...\n", index+1, stats.TotalFestivals, festival.Name)
 
-		result, tokens, err := searchFestivalInfo(apiKey, promptTemplate, *festival, dryRun)
+		result, tokens, err := searchFestivalInfo(promptTemplate, festival, dryRun)
 		if err != nil {
 			fmt.Printf("  ⚠️  Error: %v\n", err)
 			continue
@@ -247,6 +135,10 @@ func updateExistingFestivals(apiKey, promptTemplate string, db *model.Database, 
 
 		if updated {
 			stats.UpdatedFestivals++
+			err = data.UpdateFestivalInDatabase(festival)
+			if err != nil {
+				fmt.Printf("  ⚠️  Error updating festival in database: %v\n", err)
+			}
 		}
 
 		fmt.Printf("  📊 Tokens used: %d\n", tokens)
@@ -304,15 +196,19 @@ func generatePRSummary(stats *UpdateStats) string {
 func main() {
 	// Parse command line flags
 	dryRun := false
-	for _, arg := range os.Args[1:] {
-		if arg == "--dry-run" || arg == "-d" {
-			dryRun = true
-		}
-	}
+	festivalName := ""
+
+	flag.BoolVar(&dryRun, "dry-run", false, "Enable dry run mode")
+	flag.StringVar(&festivalName, "festival", "", "Specify festival name")
+	flag.Parse()
 
 	if dryRun {
 		fmt.Println("🔍 DRY-RUN MODE: No API calls will be made, no files will be modified")
 		fmt.Println()
+	}
+
+	if festivalName != "" {
+		fmt.Printf("🎯 Single festival mode: %s\n\n", festivalName)
 	}
 
 	apiKey := os.Getenv("OPENAI_API_KEY")
@@ -321,41 +217,25 @@ func main() {
 		os.Exit(1)
 	}
 
+	openaiClient = openai.NewOpenAIClient(apiKey)
+
 	// Load prompt template
-	promptTemplate, err := loadPromptFile("scripts/festival_prompt.md")
+	promptTemplate, err := openai.LoadPromptFile("scripts/festival_prompt.md")
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error loading prompt template: %v\n", err)
 		os.Exit(1)
 	}
 
-	// Load database
-	db, err := loadDatabase("db.json")
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Error loading database: %v\n", err)
+	// Update festivals
+	stats := updateExistingFestivals(promptTemplate, dryRun, festivalName)
+
+	// Generate PR summary
+	summary := generatePRSummary(stats)
+	if err := os.WriteFile("festival_update_summary.md", []byte(summary), 0600); err != nil {
+		fmt.Fprintf(os.Stderr, "Error writing summary: %v\n", err)
 		os.Exit(1)
 	}
 
-	// Update festivals
-	stats := updateExistingFestivals(apiKey, promptTemplate, db, dryRun)
-
-	if !dryRun {
-		// Save updated database
-		if err := saveDatabase("db.json", db); err != nil {
-			fmt.Fprintf(os.Stderr, "Error saving database: %v\n", err)
-			os.Exit(1)
-		}
-
-		// Generate PR summary
-		summary := generatePRSummary(stats)
-		if err := os.WriteFile("festival_update_summary.md", []byte(summary), 0600); err != nil {
-			fmt.Fprintf(os.Stderr, "Error writing summary: %v\n", err)
-			os.Exit(1)
-		}
-
-		fmt.Println("\n✅ Festival update completed successfully!")
-		fmt.Printf("📄 Summary written to festival_update_summary.md\n")
-	} else {
-		fmt.Println("\n✅ Dry-run completed successfully!")
-		fmt.Println("📄 No files were modified")
-	}
+	fmt.Println("\n✅ Festival update completed successfully!")
+	fmt.Printf("📄 Summary written to festival_update_summary.md\n")
 }

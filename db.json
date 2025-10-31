@@ -509,7 +509,24 @@
       },
       "poster": "https://www.graspop.be/assets/website/components/header/logo.73035b00.webp",
       "website": "https://graspop.be",
-      "bands": [],
+      "bands": [
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "megadeth",
+          "name": "Megadeth"
+        },
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "breaking-benjamin",
+          "name": "Breaking Benjamin"
+        }
+      ],
       "ticketPrice": 300
     },
     {
