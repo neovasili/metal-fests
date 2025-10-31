@@ -6,6 +6,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"regexp"
 	"strings"
 	"time"
 
@@ -161,10 +162,11 @@ func containsBand(bands []model.BandRef, bandName string) bool {
 }
 
 func bandNameToKey(name string) string {
-	// Convert band name to key format (lowercase with hyphens, & to and)
+	// Convert band name to key format (lowercase with hyphens, & to and, ensure there is no more than one hyphen in a row)
 	key := strings.ToLower(name)
 	key = strings.ReplaceAll(key, "&", "and")
 	key = strings.ReplaceAll(key, " ", "-")
+	key = regexp.MustCompile("-+").ReplaceAllString(key, "-")
 	return key
 }
 
