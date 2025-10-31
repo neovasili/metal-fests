@@ -3,11 +3,14 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/neovasili/metal-fests/internal/model"
 	"os"
 	"path/filepath"
 	"strings"
-	"unicode"
+
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
+
+	"github.com/neovasili/metal-fests/internal/model"
 )
 
 // ANSI color codes for terminal output
@@ -104,91 +107,15 @@ func minInt(a, b, c int) int {
 	return c
 }
 
-// isCapitalizedPerWord checks if text follows capitalized per word pattern
-func isCapitalizedPerWord(text string, allowExceptions bool) bool {
-	exceptions := map[string]bool{
-		"of": true, "the": true, "and": true, "in": true, "a": true,
-		"an": true, "or": true, "but": true, "for": true, "at": true,
-		"by": true, "to": true, "from": true, "with": true,
-	}
-
-	words := strings.Fields(text)
-	if len(words) == 0 {
+// isProperlyCapitalized checks if text matches cases.Title capitalization
+func isProperlyCapitalized(text string) bool {
+	if text == "" {
 		return false
 	}
 
-	for i, word := range words {
-		if word == "" {
-			continue
-		}
-
-		// Skip words that are all digits
-		allDigits := true
-		for _, c := range word {
-			if !unicode.IsDigit(c) {
-				allDigits = false
-				break
-			}
-		}
-		if allDigits {
-			continue
-		}
-
-		// Check if word is an exception (but not the first word)
-		if allowExceptions && i > 0 && exceptions[strings.ToLower(word)] {
-			if strings.ToLower(word) == word {
-				continue
-			}
-		}
-
-		// For non-exception words, check if first letter is capitalized
-		firstLetterIdx := -1
-		for j, c := range word {
-			if unicode.IsLetter(c) {
-				firstLetterIdx = j
-				break
-			}
-		}
-
-		if firstLetterIdx != -1 {
-			firstLetter := []rune(word)[firstLetterIdx]
-			if !unicode.IsUpper(firstLetter) {
-				return false
-			}
-		}
-	}
-
-	return true
-}
-
-// isRoleCapitalized checks if band member role has first word capitalized
-func isRoleCapitalized(role string) bool {
-	if role == "" {
-		return false
-	}
-
-	words := strings.Fields(role)
-	if len(words) == 0 {
-		return false
-	}
-
-	firstWord := words[0]
-
-	// Find first letter
-	firstLetterIdx := -1
-	for i, c := range firstWord {
-		if unicode.IsLetter(c) {
-			firstLetterIdx = i
-			break
-		}
-	}
-
-	if firstLetterIdx == -1 {
-		return true // No letters, skip validation
-	}
-
-	firstLetter := []rune(firstWord)[firstLetterIdx]
-	return unicode.IsUpper(firstLetter)
+	// Use the same capitalization as the band updater
+	expected := cases.Title(language.English).String(text)
+	return text == expected
 }
 
 // validateJSONStructure validates that the file is valid JSON and loads it
@@ -222,33 +149,16 @@ func validateBandNames(data *model.Database) ValidationResult {
 	printInfo("Checking band names in festivals...")
 	totalFestivalBands := 0
 	for _, festival := range data.Festivals {
-		for _, bandRef := range festival.Bands {
+		for range festival.Bands {
 			totalFestivalBands++
-			if !isCapitalizedPerWord(bandRef.Name, true) {
-				printError(fmt.Sprintf("  Festival '%s': Band name '%s' not properly capitalized", festival.Name, bandRef.Name))
-				result.Errors++
-			}
 		}
 	}
 
-	if result.Errors == 0 {
-		printSuccess(fmt.Sprintf("All %d band names in festivals are properly capitalized", totalFestivalBands))
-	}
+	printSuccess(fmt.Sprintf("All %d band names in festivals (band names are not auto-capitalized)", totalFestivalBands))
 
 	// Check band names in bands section
 	printInfo("Checking band names in bands section...")
-	bandsErrors := 0
-	for _, band := range data.Bands {
-		if !isCapitalizedPerWord(band.Name, true) {
-			printError(fmt.Sprintf("  Band '%s' not properly capitalized", band.Name))
-			bandsErrors++
-			result.Errors++
-		}
-	}
-
-	if bandsErrors == 0 {
-		printSuccess(fmt.Sprintf("All %d band names are properly capitalized", len(data.Bands)))
-	}
+	printSuccess(fmt.Sprintf("All %d band names (band names are not auto-capitalized)", len(data.Bands)))
 
 	return result
 }
@@ -263,7 +173,7 @@ func validateGenres(data *model.Database) ValidationResult {
 	for _, band := range data.Bands {
 		for _, genre := range band.Genres {
 			totalGenres++
-			if !isCapitalizedPerWord(genre, false) {
+			if !isProperlyCapitalized(genre) {
 				printError(fmt.Sprintf("  Band '%s': Genre '%s' not properly capitalized", band.Name, genre))
 				result.Errors++
 			}
@@ -287,8 +197,8 @@ func validateMemberRoles(data *model.Database) ValidationResult {
 	for _, band := range data.Bands {
 		for _, member := range band.Members {
 			totalMembers++
-			if !isRoleCapitalized(member.Role) {
-				printError(fmt.Sprintf("  Band '%s', Member '%s': Role '%s' first word not capitalized", band.Name, member.Name, member.Role))
+			if !isProperlyCapitalized(member.Role) {
+				printError(fmt.Sprintf("  Band '%s', Member '%s': Role '%s' not properly capitalized", band.Name, member.Name, member.Role))
 				result.Errors++
 			}
 		}
