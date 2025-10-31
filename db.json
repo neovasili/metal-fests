@@ -14,7 +14,88 @@
       },
       "poster": "https://play-lh.googleusercontent.com/GRuI5SUjlbwFnAaj9orWVPVwekchmI25jdvSgu3qSveC7WoTainD9orZMGzsfhZAHmw=w600-h300-pc0xffffff-pd",
       "website": "https://swedenrock.com",
-      "bands": [],
+      "bands": [
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat"
+        },
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "twisted-sister",
+          "name": "Twisted Sister"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "babymetal",
+          "name": "Babymetal"
+        },
+        {
+          "key": "savatage",
+          "name": "Savatage"
+        },
+        {
+          "key": "foreigner",
+          "name": "Foreigner"
+        },
+        {
+          "key": "black-label-society",
+          "name": "Black Label Society"
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering"
+        },
+        {
+          "key": "hällas",
+          "name": "Hällas"
+        },
+        {
+          "key": "thrown",
+          "name": "Thrown"
+        },
+        {
+          "key": "forbidden",
+          "name": "Forbidden"
+        },
+        {
+          "key": "roy-khan",
+          "name": "Roy Khan"
+        },
+        {
+          "key": "hard-ons",
+          "name": "Hard-Ons"
+        },
+        {
+          "key": "gehenna",
+          "name": "Gehenna"
+        },
+        {
+          "key": "seven-spires",
+          "name": "Seven Spires"
+        },
+        {
+          "key": "tailgunner",
+          "name": "Tailgunner"
+        },
+        {
+          "key": "only-human",
+          "name": "Only Human"
+        }
+      ],
       "ticketPrice": 180
     },
     {
@@ -111,6 +192,14 @@
         {
           "key": "social-distortion",
           "name": "Social Distortion"
+        },
+        {
+          "key": "babymetal",
+          "name": "Babymetal"
+        },
+        {
+          "key": "landmvrks",
+          "name": "Landmvrks"
         }
       ],
       "ticketPrice": 179
@@ -491,6 +580,26 @@
         {
           "key": "psycho-moshers",
           "name": "Psycho Moshers"
+        },
+        {
+          "key": "baby-metal",
+          "name": "Baby Metal"
+        },
+        {
+          "key": "black-label-society",
+          "name": "Black Label Society"
+        },
+        {
+          "key": "suicidal-tendencies",
+          "name": "Suicidal Tendencies"
+        },
+        {
+          "key": "imminence",
+          "name": "Imminence"
+        },
+        {
+          "key": "soilwork",
+          "name": "Soilwork"
         }
       ],
       "ticketPrice": 350
@@ -611,6 +720,14 @@
         {
           "key": "the-vintage-caravan",
           "name": "The Vintage Caravan"
+        },
+        {
+          "key": "cavalera-conspiracy-–-chaos-a.d.",
+          "name": "Cavalera Conspiracy – Chaos A.d."
+        },
+        {
+          "key": "p.o.d.",
+          "name": "P.o.d."
         }
       ],
       "ticketPrice": 235
@@ -721,9 +838,25 @@
         {
           "key": "self-deception",
           "name": "Self Deception"
+        },
+        {
+          "key": "orden-ogan",
+          "name": "Orden Ogan"
+        },
+        {
+          "key": "angus-mcsix",
+          "name": "Angus Mcsix"
+        },
+        {
+          "key": "arctis",
+          "name": "Arctis"
+        },
+        {
+          "key": "hammer-king",
+          "name": "Hammer King"
         }
       ],
-      "ticketPrice": 140
+      "ticketPrice": 3450
     },
     {
       "key": "brutal-assault",
@@ -907,9 +1040,33 @@
         {
           "key": "wyatt-e",
           "name": "Wyatt E."
+        },
+        {
+          "key": "wardruna",
+          "name": "Wardruna"
+        },
+        {
+          "key": "eivør",
+          "name": "Eivør"
+        },
+        {
+          "key": "kylesa",
+          "name": "Kylesa"
+        },
+        {
+          "key": "sacred-reich",
+          "name": "Sacred Reich"
+        },
+        {
+          "key": "front-line-assembly",
+          "name": "Front Line Assembly"
+        },
+        {
+          "key": "amenra",
+          "name": "Amenra"
         }
       ],
-      "ticketPrice": 195
+      "ticketPrice": 1000
     },
     {
       "key": "wacken-open-air",
@@ -1253,6 +1410,78 @@
         {
           "key": "200-stab-wounds",
           "name": "200 Stab Wounds"
+        },
+        {
+          "key": "body-count",
+          "name": "Body Count"
+        },
+        {
+          "key": "saxon",
+          "name": "Saxon"
+        },
+        {
+          "key": "evil-scarecrow",
+          "name": "Evil Scarecrow"
+        },
+        {
+          "key": "skynd",
+          "name": "Skynd"
+        },
+        {
+          "key": "party-cannon",
+          "name": "Party Cannon"
+        },
+        {
+          "key": "battlesnake",
+          "name": "Battlesnake"
+        },
+        {
+          "key": "inhuman-nature",
+          "name": "Inhuman Nature"
+        },
+        {
+          "key": "kittie",
+          "name": "Kittie"
+        },
+        {
+          "key": "castle-rat",
+          "name": "Castle Rat"
+        },
+        {
+          "key": "graphic-nature",
+          "name": "Graphic Nature"
+        },
+        {
+          "key": "bootyard-bandits",
+          "name": "Bootyard Bandits"
+        },
+        {
+          "key": "excrementory-grindfuckers",
+          "name": "Excrementory Grindfuckers"
+        },
+        {
+          "key": "hidden-intent",
+          "name": "Hidden Intent"
+        },
+        {
+          "key": "sellsword",
+          "name": "Sellsword"
+        },
+        {
+          "key": "neckbreaker",
+          "name": "Neckbreaker"
+        },
+        {
+          "key": "seething-akira",
+          "name": "Seething Akira"
+        },
+        {
+          "key": "hammer",
+          "name": "Hammer"
+        },
+        {
+          "key": "stampin-ground",
+          "name": "Stampin Ground"
         }
       ],
       "ticketPrice": 250
@@ -1473,7 +1702,7 @@
           "name": "Luna Kills"
         }
       ],
-      "ticketPrice": 249
+      "ticketPrice": 249.99
     },
     {
       "key": "rock-imperium-festival",
@@ -1509,6 +1738,14 @@
         {
           "key": "lacuna-coil",
           "name": "Lacuna Coil"
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering"
+        },
+        {
+          "key": "h.e.a.t",
+          "name": "H.e.a.t"
         }
       ],
       "ticketPrice": 195
@@ -1618,9 +1855,57 @@
         {
           "key": "auðn",
           "name": "Auðn"
+        },
+        {
+          "key": "mayhem",
+          "name": "Mayhem"
+        },
+        {
+          "key": "primordial",
+          "name": "Primordial"
+        },
+        {
+          "key": "funeral",
+          "name": "Funeral"
+        },
+        {
+          "key": "múr",
+          "name": "Múr"
+        },
+        {
+          "key": "nite",
+          "name": "Nite"
+        },
+        {
+          "key": "hierophant",
+          "name": "Hierophant"
+        },
+        {
+          "key": "sovereign",
+          "name": "Sovereign"
+        },
+        {
+          "key": "blodknoke",
+          "name": "Blodknoke"
+        },
+        {
+          "key": "cavern-deep",
+          "name": "Cavern Deep"
+        },
+        {
+          "key": "voidspire",
+          "name": "Voidspire"
+        },
+        {
+          "key": "automaton",
+          "name": "Automaton"
+        },
+        {
+          "key": "hevn-iii",
+          "name": "Hevn Iii"
         }
       ],
-      "ticketPrice": 435
+      "ticketPrice": 4350
     },
     {
       "key": "alcatraz-open-air-2026",
@@ -1656,6 +1941,10 @@
         {
           "key": "slaughter-to-prevail",
           "name": "Slaughter To Prevail"
+        },
+        {
+          "key": "do-or-die",
+          "name": "Do Or Die"
         }
       ],
       "ticketPrice": 249
@@ -1694,9 +1983,113 @@
         {
           "key": "septicflesh",
           "name": "Septicflesh"
+        },
+        {
+          "key": "blood-vulture",
+          "name": "Blood Vulture"
+        },
+        {
+          "key": "gaahls-wyrd",
+          "name": "Gaahls Wyrd"
+        },
+        {
+          "key": "thrown",
+          "name": "Thrown"
+        },
+        {
+          "key": "static-x",
+          "name": "Static-X"
+        },
+        {
+          "key": "monkey3",
+          "name": "Monkey3"
+        },
+        {
+          "key": "harakiri-for-the-sky",
+          "name": "Harakiri For The Sky"
+        },
+        {
+          "key": "carach-angren",
+          "name": "Carach Angren"
+        },
+        {
+          "key": "death-to-all",
+          "name": "Death To All"
+        },
+        {
+          "key": "overkill",
+          "name": "Overkill"
+        },
+        {
+          "key": "forbidden",
+          "name": "Forbidden"
+        },
+        {
+          "key": "anthrax",
+          "name": "Anthrax"
+        },
+        {
+          "key": "megadeth",
+          "name": "Megadeth"
+        },
+        {
+          "key": "disharmonic-orchestra",
+          "name": "Disharmonic Orchestra"
+        },
+        {
+          "key": "marduk",
+          "name": "Marduk"
+        },
+        {
+          "key": "bølzer",
+          "name": "Bølzer"
+        },
+        {
+          "key": "knife-bride",
+          "name": "Knife Bride"
+        },
+        {
+          "key": "ice-nine-kills",
+          "name": "Ice Nine Kills"
+        },
+        {
+          "key": "martyrdöd",
+          "name": "Martyrdöd"
+        },
+        {
+          "key": "down",
+          "name": "Down"
+        },
+        {
+          "key": "evergrey",
+          "name": "Evergrey"
+        },
+        {
+          "key": "embryonic-autopsy",
+          "name": "Embryonic Autopsy"
+        },
+        {
+          "key": "master-boot-record",
+          "name": "Master Boot Record"
+        },
+        {
+          "key": "six-feet-under",
+          "name": "Six Feet Under"
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering"
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "black-label-society",
+          "name": "Black Label Society"
         }
       ],
-      "ticketPrice": 300
+      "ticketPrice": 769
     },
     {
       "key": "rockstadt-extreme-fest-2026",
@@ -1732,9 +2125,13 @@
         {
           "key": "decapitated",
           "name": "Decapitated"
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering"
         }
       ],
-      "ticketPrice": 162.5
+      "ticketPrice": 252
     },
     {
       "key": "rock-for-people-2026",
@@ -1794,6 +2191,50 @@
         {
           "key": "nothing-but-thieves",
           "name": "Nothing But Thieves"
+        },
+        {
+          "key": "breaking-benjamin",
+          "name": "Breaking Benjamin"
+        },
+        {
+          "key": "the-pretty-reckless",
+          "name": "The Pretty Reckless"
+        },
+        {
+          "key": "social-distortion",
+          "name": "Social Distortion"
+        },
+        {
+          "key": "malevolence",
+          "name": "Malevolence"
+        },
+        {
+          "key": "lottery-winners",
+          "name": "Lottery Winners"
+        },
+        {
+          "key": "static-x",
+          "name": "Static-X"
+        },
+        {
+          "key": "thrown",
+          "name": "Thrown"
+        },
+        {
+          "key": "magnolia-park",
+          "name": "Magnolia Park"
+        },
+        {
+          "key": "president",
+          "name": "President"
+        },
+        {
+          "key": "wohnout",
+          "name": "Wohnout"
+        },
+        {
+          "key": "yonaka",
+          "name": "Yonaka"
         }
       ],
       "ticketPrice": 208
@@ -1856,6 +2297,14 @@
         {
           "key": "ho99o9",
           "name": "Ho99O9"
+        },
+        {
+          "key": "architects",
+          "name": "Architects"
+        },
+        {
+          "key": "a-day-to-remember",
+          "name": "A Day To Remember"
         }
       ],
       "ticketPrice": 239
@@ -1984,6 +2433,42 @@
         {
           "key": "motorjesus",
           "name": "Motorjesus"
+        },
+        {
+          "key": "annisokay",
+          "name": "Annisokay"
+        },
+        {
+          "key": "dominum",
+          "name": "Dominum"
+        },
+        {
+          "key": "betontod",
+          "name": "Betontod"
+        },
+        {
+          "key": "soulbound",
+          "name": "Soulbound"
+        },
+        {
+          "key": "ex-deo",
+          "name": "Ex Deo"
+        },
+        {
+          "key": "stahlmann",
+          "name": "Stahlmann"
+        },
+        {
+          "key": "haggefugg",
+          "name": "Haggefugg"
+        },
+        {
+          "key": "die-habenichtse",
+          "name": "Die Habenichtse"
+        },
+        {
+          "key": "final-cry",
+          "name": "Final Cry"
         }
       ],
       "ticketPrice": 0
@@ -2026,9 +2511,65 @@
         {
           "key": "lone-survivors",
           "name": "Lone Survivors"
+        },
+        {
+          "key": "ashen",
+          "name": "Ashen"
+        },
+        {
+          "key": "battlesnake",
+          "name": "Battlesnake"
+        },
+        {
+          "key": "chelsea-grin",
+          "name": "Chelsea Grin"
+        },
+        {
+          "key": "cryptopsy",
+          "name": "Cryptopsy"
+        },
+        {
+          "key": "fit-for-an-autopsy",
+          "name": "Fit For An Autopsy"
+        },
+        {
+          "key": "heavy//hitter",
+          "name": "Heavy//Hitter"
+        },
+        {
+          "key": "jools",
+          "name": "Jools"
+        },
+        {
+          "key": "kim-dracula",
+          "name": "Kim Dracula"
+        },
+        {
+          "key": "lord-of-the-lost",
+          "name": "Lord Of The Lost"
+        },
+        {
+          "key": "oomph!",
+          "name": "Oomph!"
+        },
+        {
+          "key": "rectal-smegma",
+          "name": "Rectal Smegma"
+        },
+        {
+          "key": "sanguisugabogg",
+          "name": "Sanguisugabogg"
+        },
+        {
+          "key": "textures",
+          "name": "Textures"
+        },
+        {
+          "key": "voivod",
+          "name": "Voivod"
         }
       ],
-      "ticketPrice": 192
+      "ticketPrice": 190
     },
     {
       "key": "reload-festival-2026",
@@ -2320,6 +2861,86 @@
         {
           "key": "captain-black-beard",
           "name": "Captain Black Beard"
+        },
+        {
+          "key": "dark-tranquillity",
+          "name": "Dark Tranquillity"
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Mans Child"
+        },
+        {
+          "key": "sigtyr",
+          "name": "Sigtyr"
+        },
+        {
+          "key": "rioter",
+          "name": "Rioter"
+        },
+        {
+          "key": "septic-flesh",
+          "name": "Septic Flesh"
+        },
+        {
+          "key": "roy-khan",
+          "name": "Roy Khan"
+        },
+        {
+          "key": "kissin-dynamite",
+          "name": "Kissin Dynamite"
+        },
+        {
+          "key": "vintersorg",
+          "name": "Vintersorg"
+        },
+        {
+          "key": "havukruunu",
+          "name": "Havukruunu"
+        },
+        {
+          "key": "setyoursails",
+          "name": "Setyoursails"
+        },
+        {
+          "key": "wheel",
+          "name": "Wheel"
+        },
+        {
+          "key": "the-spirit",
+          "name": "The Spirit"
+        },
+        {
+          "key": "mur",
+          "name": "Mur"
+        },
+        {
+          "key": "uburen",
+          "name": "Uburen"
+        },
+        {
+          "key": "abbath---doom-occulta",
+          "name": "Abbath - Doom Occulta"
+        },
+        {
+          "key": "phil-campbel-and-the-bastard-sons-–-plays-motorhead",
+          "name": "Phil Campbel \u0026 The Bastard Sons – Plays Motorhead"
+        },
+        {
+          "key": "self-deception",
+          "name": "Self Deception"
+        },
+        {
+          "key": "kvaen",
+          "name": "Kvaen"
+        },
+        {
+          "key": "captein-black-beard",
+          "name": "Captein Black Beard"
+        },
+        {
+          "key": "throne-of-katarsis",
+          "name": "Throne Of Katarsis"
         }
       ],
       "ticketPrice": 99.9
@@ -2374,6 +2995,78 @@
         {
           "key": "urne",
           "name": "Urne"
+        },
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "lamb-of-god",
+          "name": "Lamb Of God"
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail"
+        },
+        {
+          "key": "thy-art-is-murder",
+          "name": "Thy Art Is Murder"
+        },
+        {
+          "key": "urn",
+          "name": "Urn"
+        },
+        {
+          "key": "kreator",
+          "name": "Kreator"
+        },
+        {
+          "key": "nailbomb",
+          "name": "Nailbomb"
+        },
+        {
+          "key": "fleshgod-apocalypse",
+          "name": "Fleshgod Apocalypse"
+        },
+        {
+          "key": "rivers-of-nihil",
+          "name": "Rivers Of Nihil"
+        },
+        {
+          "key": "hellripper",
+          "name": "Hellripper"
+        },
+        {
+          "key": "hanabie.",
+          "name": "Hanabie."
+        },
+        {
+          "key": "celestial-sanctuary",
+          "name": "Celestial Sanctuary"
+        },
+        {
+          "key": "coffin-feeder",
+          "name": "Coffin Feeder"
+        },
+        {
+          "key": "mawiza",
+          "name": "Mawiza"
+        },
+        {
+          "key": "fit-for-an-autopsy",
+          "name": "Fit For An Autopsy"
+        },
+        {
+          "key": "filth",
+          "name": "Filth"
+        },
+        {
+          "key": "hyro-the-hero",
+          "name": "Hyro The Hero"
+        },
+        {
+          "key": "employed-to-serve",
+          "name": "Employed To Serve"
         }
       ],
       "ticketPrice": 129
