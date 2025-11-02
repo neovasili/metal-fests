@@ -13168,7 +13168,28 @@
       "genres": [
         "Black Metal"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Claes Arnesson",
+          "role": "Vocals"
+        },
+        {
+          "name": "Andreas Larsson",
+          "role": "Guitars"
+        },
+        {
+          "name": "Markus Harrysson",
+          "role": "Guitars"
+        },
+        {
+          "name": "Marcus Lillerskog",
+          "role": "Bass"
+        },
+        {
+          "name": "David Wiklund",
+          "role": "Drums"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -15937,6 +15958,372 @@
         {
           "name": "Bram Moerenhout",
           "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "knife-bride",
+      "name": "Knife Bride",
+      "country": "United Kingdom",
+      "description": "Knife Bride is a Brighton-based metal band that has rapidly established itself in the UK metal scene with its unique 'Nu-Gothika' sound. Formed by cousins Mollie Buckley (vocals) and Lauren Wise (backing vocals, synth), alongside Sean Windle (guitar, backing vocals), Sean Millsopp (drums, synth), and Craig Glynn (bass), the band blends influences from Spiritbox, Kate Bush, Bring Me The Horizon, and Karnivool to create an immersive musical experience. Their style is characterized by dramatic, visceral, and occasionally romantic elements, often described as 'inky, sensual, and immersive.'\n\nSince their formation, Knife Bride has achieved significant milestones, including airplay on BBC Radio 1 and Kerrang! Radio, and features in Metal Hammer magazine. They have performed at prominent festivals such as Download, 2000trees, and The Great Escape, and have supported acts like WARGASM, Scene Queen, Vukovi, and SKYND across the UK and Europe. Their dynamic live performances have led to sold-out headline shows at Brighton's Green Door Store within two years of their formation. In 2024, they were nominated for the Heavy Music Awards' 'Best UK Breakthrough Artist' and 'Best Breakthrough Live Artist.'\n\nThe band's discography includes singles like \"Territory\" and \"Melancholia,\" with their latest release, \"Worthy,\" unveiled in March 2025. \"Worthy\" is described as an empowering anthem, with vocalist Mollie Clack stating, \"This song is a reminder that you are always worthy of love. Even when you feel yourself morphing into something you don’t recognise. You are inherently worthy.\" Their music is available on platforms such as Apple Music and Spotify.",
+      "logo": "https://www.knifebride.com/images/knife-bride-logo.png",
+      "headlineImage": "https://www.knifebride.com/images/knife-bride-band-photo.jpg",
+      "website": "https://www.knifebride.com",
+      "spotify": "",
+      "genres": [
+        "Nu-Gothika",
+        "Metal",
+        "Alternative Metal"
+      ],
+      "members": [
+        {
+          "name": "Mollie Buckley",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Lauren Wise",
+          "role": "Backing Vocals, Synth"
+        },
+        {
+          "name": "Sean Windle",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Sean Millsopp",
+          "role": "Drums, Synth"
+        },
+        {
+          "name": "Craig Glynn",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "haggefugg",
+      "name": "Haggefugg",
+      "country": "Germany",
+      "description": "Haggefugg is a German medieval rock band formed in Cologne in 2015. The band's name, \"Haggefugg,\" originates from the Crusader era, meaning \"unfit for battle.\" Their music blends traditional medieval instruments like bagpipes and shawms with rock elements, creating a distinctive sound that has been described as \"cheerful medieval rock enriched with characteristic bagpipe inserts.\" Their lyrics often draw from medieval themes, focusing on the pleasures of life and humorous takes on historical motifs. The band released their debut album, \"Metgefühl,\" in November 2016, followed by \"Fass zum Teufel\" in January 2019. Their third album, \"Tanz und Gloria,\" was released on March 1, 2024, featuring 13 energetic tracks and 3 bonus songs. The album explores themes of rejuvenation and the importance of seizing life's moments. Haggefugg has performed at major festivals such as Wacken Open Air, Summer Breeze, and Wave-Gotik-Treffen, and has toured with bands like Subway to Sally, Saltatio Mortis, and Feuerschwanz. Their energetic performances and unique blend of medieval and rock music have garnered them a dedicated fan base.",
+      "logo": "https://de.wikipedia.org/wiki/Haggefugg#/media/Haggefugg_Logo.png",
+      "headlineImage": "https://de.wikipedia.org/wiki/Haggefugg#/media/Haggefugg_TawH_2022.jpg",
+      "website": "https://www.haggefugg.de",
+      "spotify": "",
+      "genres": [
+        "Medieval Rock",
+        "Folk Metal",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "Gregor Krähenkehle (Yannick Delseit)",
+          "role": "Vocals"
+        },
+        {
+          "name": "Dudel Zu Lang (David Haas)",
+          "role": "Bagpipes, Shawms"
+        },
+        {
+          "name": "Martin Lauther (Alexander Berghaus)",
+          "role": "Guitar"
+        },
+        {
+          "name": "Bassbär (Tim Horschmann)",
+          "role": "Bass"
+        },
+        {
+          "name": "Der Meticus (Carsten Röbkes)",
+          "role": "Drums"
+        },
+        {
+          "name": "Fidus Pisack (Patrick Knobloch)",
+          "role": "Bagpipes"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "gudsforladt",
+      "name": "Gudsforladt",
+      "country": "United States",
+      "description": "Gudsforladt is an American black metal band formed in 2016, originating from Salem, Massachusetts, and later relocating to Los Angeles, California. The band is known for its raw and authentic black metal sound, characterized by intense tremolo riffs and atmospheric elements. Their music delves into themes of hate, death, and legends, creating a dark and immersive listening experience. The band's discography includes several releases, such as the EP \"Gudsforladt\" (2016), the full-length album \"Guilt.\" (2016), and \"Friendship, Love and War\" (2023). The current lineup consists of DM, who handles all instruments and vocals. Gudsforladt has been active since 2016 and continues to contribute to the black metal scene with their uncompromising style.",
+      "logo": "https://gudsforladt.bandcamp.com/",
+      "headlineImage": "https://gudsforladt.bandcamp.com/",
+      "website": "https://gudsforladt.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Black Metal"
+      ],
+      "members": [
+        {
+          "name": "Dm",
+          "role": "All instruments and vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "fit-for-an-autopsy",
+      "name": "Fit For An Autopsy",
+      "country": "United States",
+      "description": "Fit For An Autopsy is an American deathcore band from Jersey City, New Jersey, formed in 2008. The band consists of guitarists Will Putney, Pat Sheridan, and Tim Howley; drummer Josean Orta; lead vocalist Joe Badolato; and bassist Peter \"Blue\" Spinazola. They are currently signed to Nuclear Blast and have released seven studio albums since their formation. Their discography includes: 1. \"The Process of Human Extermination\" (2011) 2. \"Hellbound\" (2013) 3. \"Absolute Hope Absolute Hell\" (2015) 4. \"The Great Collapse\" (2017) 5. \"The Sea of Tragic Beasts\" (2019) 6. \"Oh What the Future Holds\" (2022) 7. \"The Nothing That Is\" (2024) The band's music is characterized by aggressive deathcore elements, blending death metal and metalcore influences. They have toured with bands such as Aborted, Whitechapel, Suicide Silence, Emmure, DevilDriver, and Carnifex. Their latest album, \"The Nothing That Is,\" was released on October 25, 2024, through Nuclear Blast. The album was produced by guitarist Will Putney at his Graphic Nature Audio studio in Kinnelon, New Jersey. The band has been praised for their intense live performances and their ability to evolve their sound while maintaining their aggressive style.",
+      "logo": "https://fitforanautopsy.co/images/logo.png",
+      "headlineImage": "https://fitforanautopsy.co/images/album-the-nothing-that-is.jpg",
+      "website": "https://fitforanautopsy.co/",
+      "spotify": "",
+      "genres": [
+        "Deathcore",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Will Putney",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Pat Sheridan",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Tim Howley",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Josean Orta",
+          "role": "Drummer"
+        },
+        {
+          "name": "Joe Badolato",
+          "role": "Lead Vocalist"
+        },
+        {
+          "name": "Peter \"Blue\" Spinazola",
+          "role": "Bassist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "foreigner",
+      "name": "Foreigner",
+      "country": "United States",
+      "description": "Foreigner is a British-American rock band formed in New York City in 1976. The original lineup included vocalist Lou Gramm, guitarist Mick Jones, bassist Ed Gagliardi, drummer Dennis Elliott, keyboardist Al Greenwood, and multi-instrumentalist Ian McDonald, formerly of King Crimson. The band's name reflects the international composition of its members. Foreigner achieved significant commercial success, with worldwide sales exceeding 80 million records, including 38 million in the U.S. Their self-titled debut album, released in 1977, produced hits like \"Feels Like the First Time\" and \"Cold as Ice.\" The 1978 follow-up, \"Double Vision,\" continued their success with tracks such as \"Hot Blooded.\" Over the years, Foreigner's lineup has evolved, with Mick Jones remaining the consistent member. The band's music is characterized by a blend of hard rock, soft rock, and arena rock elements. In 2024, Foreigner was inducted into the Rock and Roll Hall of Fame, recognizing their enduring impact on the rock genre.",
+      "logo": "https://www.foreigneronline.com/_files/ugd/7a0a2e_1e4c8a0a0a0b4b8b8b8b8b8b8b8b8b8.jpg",
+      "headlineImage": "https://www.foreigneronline.com/_files/ugd/7a0a2e_1e4c8a0a0a0b4b8b8b8b8b8b8b8b8b8b8.jpg",
+      "website": "https://www.foreigneronline.com",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Soft Rock",
+        "Arena Rock"
+      ],
+      "members": [
+        {
+          "name": "Mick Jones",
+          "role": "Guitarist, Keyboardist, Backing and Lead Vocals"
+        },
+        {
+          "name": "Kelly Hansen",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Jeff Pilson",
+          "role": "Bassist"
+        },
+        {
+          "name": "Michael Bluestein",
+          "role": "Keyboardist"
+        },
+        {
+          "name": "Chris Frazier",
+          "role": "Drummer"
+        },
+        {
+          "name": "Bruce Watson",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Luis Maldonado",
+          "role": "Guitarist"
+        },
+        {
+          "name": "John Roth",
+          "role": "Guitarist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "heavyhitter",
+      "name": "Heavy//Hitter",
+      "country": "United States",
+      "description": "Heavy//Hitter is a deathcore band from Orlando, Florida, formed in 2019. The band is known for its aggressive and primal approach to deathcore, blending elements of heavy hardcore and beatdown to create a distinctive sound. Their music is characterized by gut-punching vocals, heavy breakdowns, and a raw energy that captures the murky, swampy brutality of their hometown. ([dynamictalent.com](https://www.dynamictalent.com/artists/heavy-hitter/?utm_source=openai))\n\nThe band released their debut EP, \"Street Violence,\" in 2021, which garnered attention in the underground heavy music community. In 2024, they signed with Blue Grape Music and released the \"Moments of Misery\" EP, featuring the single \"No Mercy, No Remorse,\" praised for its intense energy and aggression. ([mhf-mag.com](https://mhf-mag.com/heavy-hitter-announce-coming-to-terms-ep-band-shares-video-for-title-track/?utm_source=openai)) In October 2025, they released their latest EP, \"Coming to Terms,\" produced by Austin Coupe, showcasing their refined sound and continued evolution. ([themosh.net](https://themosh.net/heavyhitter-coming-to-terms-ep/?utm_source=openai))\n\nHeavy//Hitter has toured extensively across the United States, Canada, and Europe, sharing stages with bands like Carnifex. Their live performances are known for their high energy and ability to engage audiences, solidifying their reputation as a rising force in the deathcore scene. ([mhf-mag.com](https://mhf-mag.com/heavy-hitter-announce-coming-to-terms-ep-band-shares-video-for-title-track/?utm_source=openai))\n\nThe current lineup includes Austin Hayes on vocals, Dane Loeprich on guitar, Chris Perez on bass, and Josh Archeval on drums. ([heavyhitterfl.bandcamp.com](https://heavyhitterfl.bandcamp.com/music?utm_source=openai))",
+      "logo": "https://heavyhitterfl.bandcamp.com/",
+      "headlineImage": "https://heavyhitterfl.bandcamp.com/",
+      "website": "https://heavyhitterfl.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Deathcore",
+        "Heavy Hardcore",
+        "Beatdown"
+      ],
+      "members": [
+        {
+          "name": "Austin Hayes",
+          "role": "Vocals"
+        },
+        {
+          "name": "Dane Loeprich",
+          "role": "Guitar"
+        },
+        {
+          "name": "Chris Perez",
+          "role": "Bass"
+        },
+        {
+          "name": "Josh Archeval",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "powerplant",
+      "name": "Powerplant",
+      "country": "Poland",
+      "description": "Powerplant is a Polish instrumental stoner metal band formed in 2017 in Szczecin, West Pomerania. The band is known for its heavy, groove-laden riffs and atmospheric soundscapes, characteristic of the stoner metal genre. Their music is entirely instrumental, allowing listeners to immerse themselves in the intricate compositions without vocal distractions. The current lineup includes Grzegorz \"Grzeźnik\" Zasik on bass, Michał \"Michau\" Stępień on drums, Mateusz \"Mazur\" Mazur on lead guitar, and Kuba \"Świeżak\" Dzierbicki on rhythm guitar. Powerplant has been active since their formation in 2017 and continues to perform and create music that resonates with fans of the stoner metal scene.",
+      "logo": "https://www.metal-archives.com/images/3540/3540480416_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/3540480416_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Power_Plant/3540480416",
+      "spotify": "",
+      "genres": [
+        "Stoner Metal"
+      ],
+      "members": [
+        {
+          "name": "Grzegorz \"Grzeźnik\" Zasik",
+          "role": "Bass"
+        },
+        {
+          "name": "Michał \"Michau\" Stępień",
+          "role": "Drums"
+        },
+        {
+          "name": "Mateusz \"Mazur\" Mazur",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Kuba \"Świeżak\" Dzierbicki",
+          "role": "Rhythm Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "jools",
+      "name": "Jools",
+      "country": "United Kingdom",
+      "description": "Jools is a British rock band from Leicester, England, formed in 2019. The band comprises Mitchell Gordon and Kate Price on vocals, Chris Johnston and Callum Connachie on guitar, Joe Dodd on bass, and Chelsea Wrones on drums. Their music is characterized by a fusion of post-punk, noise rock, and garage punk, drawing influences from bands like The Cure, Pixies, and The Streets. Jools released their debut single, \"Hysterical Starving Naked,\" in November 2019, followed by \"Spineless\" in March 2020. In September 2020, they released \"How Can Some Experience What Pride Is Without Liberation for All,\" which was featured as \"Rockest Record\" on the BBC Radio One Rock Show. Their fourth single, \"Cross-Dressing in a Freudian Slip,\" was released in November 2020. After tours supporting Black Foxxes and Boston Manor, Jools signed with Raw Power Management in April 2022 and joined Hassle Records in March 2024. Their debut album, \"Violent Delights,\" was released in July 2025, showcasing their dynamic and genre-blending sound. The album received critical acclaim, with Kerrang! awarding it a 4/5 rating. Jools' energetic live performances have been highlighted, with their debut at the Glastonbury Festival marking a significant milestone in their career. The band's music is available on major streaming platforms, and they continue to tour, bringing their unique sound to audiences across the UK.",
+      "logo": "https://joolsbandjools.com/images/jools-logo.png",
+      "headlineImage": "https://joolsbandjools.com/images/violent-delights-cover.jpg",
+      "website": "https://joolsbandjools.com/",
+      "spotify": "",
+      "genres": [
+        "Post-Punk",
+        "Noise Rock",
+        "Garage Punk"
+      ],
+      "members": [
+        {
+          "name": "Mitchell Gordon",
+          "role": "Vocals"
+        },
+        {
+          "name": "Kate Price",
+          "role": "Vocals"
+        },
+        {
+          "name": "Chris Johnston",
+          "role": "Guitar"
+        },
+        {
+          "name": "Callum Connachie",
+          "role": "Guitar"
+        },
+        {
+          "name": "Joe Dodd",
+          "role": "Bass"
+        },
+        {
+          "name": "Chelsea Wrones",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hard-ons",
+      "name": "Hard-Ons",
+      "country": "Australia",
+      "description": "The Hard-Ons are an Australian punk rock band formed in 1982 in Punchbowl, New South Wales. The original lineup consisted of Keish de Silva on lead vocals and drums, Peter \"Blackie\" Black on guitar and backing vocals, and Ray Ahn on bass guitar. Initially known as Dead Rats and later The Plebs, they adopted the name Hard-Ons by the end of 1982. Their early performances were at birthday parties and school dances due to age restrictions for pub gigs. On June 20, 1984, they played their first official show at the Vulcan Hotel in Ultimo. In 1985, they released their debut EP, \"Surfin' on My Face,\" which topped the Australian Independent Music Charts. Their music blends punk tempos, hardcore attitude, heavy metal riffs, and surf-pop melodies, creating a unique sound that has resonated with fans over the decades. The band released several studio albums, including \"Smell My Finger\" (1986), \"Dickcheese\" (1988), \"Love Is a Battlefield of Wounded Hearts\" (1989), and \"Yummy!\" (1990). After disbanding in 1994, they reformed in 1997 and have since released additional albums, such as \"I'm Sorry Sir, That Riff's Been Taken\" (2021), \"Ripper '23\" (2023), and \"I Like You a Lot Getting Older\" (2024). The current lineup features Peter \"Blackie\" Black, Ray Ahn, Murray Ruse, and Tim Rogers.",
+      "logo": "https://www.loudersound.com/images/2025/10/Hard-Ons-Logo.jpg",
+      "headlineImage": "https://www.loudersound.com/images/2025/10/Hard-Ons-Blood-Vinyl.jpg",
+      "website": "https://hard-ons.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Punk Rock",
+        "Power Pop",
+        "Hardcore Punk"
+      ],
+      "members": [
+        {
+          "name": "Peter \"Blackie\" Black",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Ray Ahn",
+          "role": "Bass Guitar, Backing Vocals"
+        },
+        {
+          "name": "Murray Ruse",
+          "role": "Drums"
+        },
+        {
+          "name": "Tim Rogers",
+          "role": "Lead Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ashen",
+      "name": "Ashen",
+      "country": "Finland",
+      "description": "Ashen is a Finnish heavy/thrash metal band formed in 1988 in Joensuu, Pohjois-Karjala. The band has maintained a consistent lineup since its inception, featuring Esa Lehtomäki on guitars and vocals, Mikael Oresmaa on vocals and bass, Danholm on drums and noises, and Joé Panetti on backing vocals and bass. Over the years, Ashen has been known for their energetic performances and contributions to the Finnish metal scene. Their music blends elements of heavy and thrash metal, characterized by aggressive guitar riffs and dynamic rhythms. The band has released several demos and albums, with their most recent work continuing to showcase their dedication to the genre. Ashen remains active, performing live and engaging with their fanbase through various channels.",
+      "logo": "https://www.metal-archives.com/images/3540/3540492319_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/3540492319_logo.jpg",
+      "website": "https://www.metal-archives.com/bands/Ashen/3540492319",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "Esa Lehtomäki",
+          "role": "Guitars, Vocals"
+        },
+        {
+          "name": "Mikael Oresmaa",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Danholm",
+          "role": "Drums, Noises"
+        },
+        {
+          "name": "Joé Panetti",
+          "role": "Vocals (backing), Bass"
         }
       ],
       "reviewed": false
