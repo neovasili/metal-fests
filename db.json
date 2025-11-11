@@ -264,6 +264,62 @@
         {
           "key": "high-vis",
           "name": "High Vis"
+        },
+        {
+          "key": "bad-nerves",
+          "name": "Bad Nerves"
+        },
+        {
+          "key": "black-veil-brides",
+          "name": "Black Veil Brides"
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "bloodywood",
+          "name": "Bloodywood"
+        },
+        {
+          "key": "boundaries",
+          "name": "Boundaries"
+        },
+        {
+          "key": "catch-your-breath",
+          "name": "Catch Your Breath"
+        },
+        {
+          "key": "ego-kill-talent",
+          "name": "Ego Kill Talent"
+        },
+        {
+          "key": "gatecreeper",
+          "name": "Gatecreeper"
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan Tx"
+        },
+        {
+          "key": "mouth-culture",
+          "name": "Mouth Culture"
+        },
+        {
+          "key": "return-to-dust",
+          "name": "Return To Dust"
+        },
+        {
+          "key": "set-it-off",
+          "name": "Set It Off"
+        },
+        {
+          "key": "tesseract",
+          "name": "Tesseract"
+        },
+        {
+          "key": "the-story-so-far",
+          "name": "The Story So Far"
         }
       ],
       "ticketPrice": 179
@@ -1058,6 +1114,34 @@
         {
           "key": "the-ocean",
           "name": "The Ocean"
+        },
+        {
+          "key": "sex-pistols-feat-frank-carter",
+          "name": "Sex Pistols Feat Frank Carter"
+        },
+        {
+          "key": "tom-morello",
+          "name": "Tom Morello"
+        },
+        {
+          "key": "mastodon",
+          "name": "Mastodon"
+        },
+        {
+          "key": "black-veil-brides",
+          "name": "Black Veil Brides"
+        },
+        {
+          "key": "return-to-dust",
+          "name": "Return To Dust"
+        },
+        {
+          "key": "six-feet-under",
+          "name": "Six Feet Under"
+        },
+        {
+          "key": "magnolia-park",
+          "name": "Magnolia Park"
         }
       ],
       "ticketPrice": 280
@@ -1683,6 +1767,42 @@
         {
           "key": "uncle-acid-and-the-deadbeats",
           "name": "Uncle Acid \u0026 The Deadbeats"
+        },
+        {
+          "key": "alice-cooper",
+          "name": "Alice Cooper"
+        },
+        {
+          "key": "ankor",
+          "name": "Ankor"
+        },
+        {
+          "key": "black-label-society",
+          "name": "Black Label Society"
+        },
+        {
+          "key": "corrosion-of-conformity",
+          "name": "Corrosion Of Conformity"
+        },
+        {
+          "key": "drowning-pool",
+          "name": "Drowning Pool"
+        },
+        {
+          "key": "extreme",
+          "name": "Extreme"
+        },
+        {
+          "key": "gaerea",
+          "name": "Gaerea"
+        },
+        {
+          "key": "ice-nine-kills",
+          "name": "Ice Nine Kills"
+        },
+        {
+          "key": "lagwagon",
+          "name": "Lagwagon"
         }
       ],
       "ticketPrice": 300
@@ -1779,7 +1899,7 @@
           "name": "P.o.d."
         }
       ],
-      "ticketPrice": 235
+      "ticketPrice": 195
     },
     {
       "key": "masters-of-rock",
@@ -3250,6 +3370,10 @@
         {
           "key": "violent-sin",
           "name": "Violent Sin"
+        },
+        {
+          "key": "the-exploited",
+          "name": "The Exploited"
         }
       ],
       "ticketPrice": 249
@@ -4108,6 +4232,10 @@
         {
           "key": "witch-club-satan",
           "name": "Witch Club Satan"
+        },
+        {
+          "key": "steve'n'seagulls",
+          "name": "Steve'n'seagulls"
         }
       ],
       "ticketPrice": 190
