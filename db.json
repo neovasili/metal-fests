@@ -98,6 +98,90 @@
         {
           "key": "gehennah",
           "name": "Gehennah"
+        },
+        {
+          "key": "helloween",
+          "name": "Helloween"
+        },
+        {
+          "key": "tom-morello",
+          "name": "Tom Morello"
+        },
+        {
+          "key": "social-distortion",
+          "name": "Social Distortion"
+        },
+        {
+          "key": "three-days-grace",
+          "name": "Three Days Grace"
+        },
+        {
+          "key": "saxon",
+          "name": "Saxon"
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium"
+        },
+        {
+          "key": "the-halo-effect",
+          "name": "The Halo Effect"
+        },
+        {
+          "key": "uncle-acid-and-the-deadbeats",
+          "name": "Uncle Acid \u0026 The Deadbeats"
+        },
+        {
+          "key": "evergrey",
+          "name": "Evergrey"
+        },
+        {
+          "key": "the-poodles",
+          "name": "The Poodles"
+        },
+        {
+          "key": "michael-monroe",
+          "name": "Michael Monroe"
+        },
+        {
+          "key": "treat",
+          "name": "Treat"
+        },
+        {
+          "key": "grave",
+          "name": "Grave"
+        },
+        {
+          "key": "self-deception",
+          "name": "Self Deception"
+        },
+        {
+          "key": "robin-mcauley",
+          "name": "Robin Mcauley"
+        },
+        {
+          "key": "lakeview",
+          "name": "Lakeview"
+        },
+        {
+          "key": "ego-kill-talent",
+          "name": "Ego Kill Talent"
+        },
+        {
+          "key": "ström",
+          "name": "Ström"
+        },
+        {
+          "key": "amh",
+          "name": "Amh"
+        },
+        {
+          "key": "jayler",
+          "name": "Jayler"
+        },
+        {
+          "key": "vreid",
+          "name": "Vreid"
         }
       ],
       "ticketPrice": 180
@@ -320,6 +404,50 @@
         {
           "key": "the-story-so-far",
           "name": "The Story So Far"
+        },
+        {
+          "key": "badflower",
+          "name": "Badflower"
+        },
+        {
+          "key": "bilmuri",
+          "name": "Bilmuri"
+        },
+        {
+          "key": "bury-tomorrow",
+          "name": "Bury Tomorrow"
+        },
+        {
+          "key": "dying-wish",
+          "name": "Dying Wish"
+        },
+        {
+          "key": "letlive.",
+          "name": "Letlive."
+        },
+        {
+          "key": "max-grimm",
+          "name": "Max Grimm"
+        },
+        {
+          "key": "palaye-royale",
+          "name": "Palaye Royale"
+        },
+        {
+          "key": "paleface-swiss",
+          "name": "Paleface Swiss"
+        },
+        {
+          "key": "the-garden",
+          "name": "The Garden"
+        },
+        {
+          "key": "the-subways",
+          "name": "The Subways"
+        },
+        {
+          "key": "thornhill",
+          "name": "Thornhill"
         }
       ],
       "ticketPrice": 179
@@ -1160,7 +1288,72 @@
       },
       "poster": "https://hellfest.fr/images/logo.png",
       "website": "https://hellfest.fr",
-      "bands": [],
+      "bands": [
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "deep-purple",
+          "name": "Deep Purple"
+        },
+        {
+          "key": "alice-cooper",
+          "name": "Alice Cooper"
+        },
+        {
+          "key": "bad-omens",
+          "name": "Bad Omens"
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "breaking-benjamin",
+          "name": "Breaking Benjamin"
+        },
+        {
+          "key": "a-perfect-circle",
+          "name": "A Perfect Circle"
+        },
+        {
+          "key": "megadeth",
+          "name": "Megadeth"
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura"
+        },
+        {
+          "key": "ultra-vomit",
+          "name": "Ultra Vomit"
+        },
+        {
+          "key": "igorrr",
+          "name": "Igorrr"
+        },
+        {
+          "key": "acid-bath",
+          "name": "Acid Bath"
+        },
+        {
+          "key": "the-dillinger-escape-plan",
+          "name": "The Dillinger Escape Plan"
+        }
+      ],
       "ticketPrice": 300
     },
     {
@@ -1365,6 +1558,42 @@
         {
           "key": "psycho-mosher",
           "name": "Psycho Mosher"
+        },
+        {
+          "key": "babymetal",
+          "name": "Babymetal"
+        },
+        {
+          "key": "djerv",
+          "name": "Djerv"
+        },
+        {
+          "key": "eyehategod",
+          "name": "Eyehategod"
+        },
+        {
+          "key": "faetooth",
+          "name": "Faetooth"
+        },
+        {
+          "key": "unpeople",
+          "name": "Unpeople"
+        },
+        {
+          "key": "maceration",
+          "name": "Maceration"
+        },
+        {
+          "key": "morild",
+          "name": "Morild"
+        },
+        {
+          "key": "pustulant-flesh",
+          "name": "Pustulant Flesh"
+        },
+        {
+          "key": "rap-martin-rap",
+          "name": "Rap Martin Rap"
         }
       ],
       "ticketPrice": 350
@@ -1805,7 +2034,7 @@
           "name": "Lagwagon"
         }
       ],
-      "ticketPrice": 300
+      "ticketPrice": 319
     },
     {
       "key": "resurrection-fest",
@@ -1899,7 +2128,7 @@
           "name": "P.o.d."
         }
       ],
-      "ticketPrice": 195
+      "ticketPrice": 235
     },
     {
       "key": "masters-of-rock",
@@ -2035,6 +2264,14 @@
         {
           "key": "marilyn-manson",
           "name": "Marilyn Manson"
+        },
+        {
+          "key": "melodius-deite",
+          "name": "Melodius Deite"
+        },
+        {
+          "key": "guiltera",
+          "name": "Guiltera"
         }
       ],
       "ticketPrice": 3450
@@ -2245,9 +2482,33 @@
         {
           "key": "amenra",
           "name": "Amenra"
+        },
+        {
+          "key": "misþyrming",
+          "name": "Misþyrming"
+        },
+        {
+          "key": "nergal",
+          "name": "Nergal"
+        },
+        {
+          "key": "borknagar",
+          "name": "Borknagar"
+        },
+        {
+          "key": "the-laws",
+          "name": "The Laws"
+        },
+        {
+          "key": "tormentor",
+          "name": "Tormentor"
+        },
+        {
+          "key": "witch-club-satan",
+          "name": "Witch Club Satan"
         }
       ],
-      "ticketPrice": 195
+      "ticketPrice": 69.99
     },
     {
       "key": "wacken-open-air",
@@ -3312,6 +3573,66 @@
         {
           "key": "dizmal",
           "name": "Dizmal"
+        },
+        {
+          "key": "mörk",
+          "name": "Mörk"
+        },
+        {
+          "key": "groza",
+          "name": "Groza"
+        },
+        {
+          "key": "tormentor",
+          "name": "Tormentor"
+        },
+        {
+          "key": "firespawn",
+          "name": "Firespawn"
+        },
+        {
+          "key": "carnivore-a.d.",
+          "name": "Carnivore A.d."
+        },
+        {
+          "key": "nihilvm",
+          "name": "Nihilvm"
+        },
+        {
+          "key": "abhorration",
+          "name": "Abhorration"
+        },
+        {
+          "key": "homselvareg",
+          "name": "Homselvareg"
+        },
+        {
+          "key": "ruun",
+          "name": "Ruun"
+        },
+        {
+          "key": "hermit-dreams",
+          "name": "Hermit Dreams"
+        },
+        {
+          "key": "møl",
+          "name": "Møl"
+        },
+        {
+          "key": "arachno",
+          "name": "Arachno"
+        },
+        {
+          "key": "gaddavír",
+          "name": "Gaddavír"
+        },
+        {
+          "key": "feversea",
+          "name": "Feversea"
+        },
+        {
+          "key": "senti",
+          "name": "Senti"
         }
       ],
       "ticketPrice": 4350
@@ -3532,9 +3853,25 @@
         {
           "key": "coroner",
           "name": "Coroner"
+        },
+        {
+          "key": "behemoth",
+          "name": "Behemoth"
+        },
+        {
+          "key": "decapitated",
+          "name": "Decapitated"
+        },
+        {
+          "key": "frontside",
+          "name": "Frontside"
+        },
+        {
+          "key": "hostia",
+          "name": "Hostia"
         }
       ],
-      "ticketPrice": 200
+      "ticketPrice": 769
     },
     {
       "key": "rockstadt-extreme-fest-2026",
