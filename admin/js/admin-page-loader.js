@@ -155,7 +155,14 @@ class AdminPageLoader {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const adminPageLoader = new AdminPageLoader();
-  adminPageLoader.init();
-});
+// Export for use in other modules
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = AdminPageLoader;
+}
+
+if (typeof document !== "undefined") {
+  document.addEventListener("DOMContentLoaded", () => {
+    const adminPageLoader = new AdminPageLoader();
+    adminPageLoader.init();
+  });
+}

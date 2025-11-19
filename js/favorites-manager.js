@@ -79,3 +79,8 @@ class FavoritesManager {
     return this.favorites.size;
   }
 }
+
+// Export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = FavoritesManager;
+}

@@ -63,3 +63,8 @@ class SearchFilterManager {
     return this.searchText.trim().length > 0;
   }
 }
+
+// Export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = SearchFilterManager;
+}

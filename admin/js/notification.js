@@ -59,3 +59,8 @@ if (typeof window !== "undefined") {
   // Create alias for consistency with code that uses notificationManager
   window.notificationManager = window.notification;
 }
+
+// Export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = Notification;
+}

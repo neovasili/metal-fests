@@ -229,3 +229,8 @@ class MultiselectDropdown {
 if (typeof window !== "undefined") {
   window.MultiselectDropdown = MultiselectDropdown;
 }
+
+// Export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = MultiselectDropdown;
+}

@@ -114,3 +114,8 @@ class BandsFilterManager {
     this.saveSelectedBands();
   }
 }
+
+// Export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = BandsFilterManager;
+}

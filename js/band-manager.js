@@ -488,3 +488,8 @@ class BandManager {
 if (typeof window !== "undefined") {
   window.BandManager = BandManager;
 }
+
+// Export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = BandManager;
+}
