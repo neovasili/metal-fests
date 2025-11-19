@@ -5124,6 +5124,253 @@
         }
       ],
       "ticketPrice": 129
+    },
+    {
+      "name": "Area 53 Festival 2026",
+      "dates": {
+        "start": "2026-07-16",
+        "end": "2026-07-18"
+      },
+      "location": "Leoben, Austria",
+      "coordinates": {
+        "lat": 47.3796,
+        "lng": 15.0583
+      },
+      "poster": "",
+      "website": "https://area53festival.at/",
+      "bands": [
+        {
+          "key": "in-flames",
+          "name": "In Flames"
+        },
+        {
+          "key": "saxon",
+          "name": "Saxon"
+        },
+        {
+          "key": "visions-of-atlantis",
+          "name": "Visions Of Atlantis"
+        },
+        {
+          "key": "agathodaimon",
+          "name": "Agathodaimon"
+        },
+        {
+          "key": "vinegar-hill",
+          "name": "Vinegar Hill"
+        },
+        {
+          "key": "bleed-from-within",
+          "name": "Bleed From Within"
+        },
+        {
+          "key": "voivod",
+          "name": "Voivod"
+        },
+        {
+          "key": "self-deception",
+          "name": "Self Deception"
+        },
+        {
+          "key": "igel-vs-shark",
+          "name": "Igel Vs Shark"
+        },
+        {
+          "key": "patriarcha",
+          "name": "Patriarcha"
+        },
+        {
+          "key": "watch-them-fail",
+          "name": "Watch Them Fail"
+        }
+      ],
+      "ticketPrice": null
+    },
+    {
+      "name": "Rock Pod Kameňom 2026",
+      "dates": {
+        "start": "2026-06-25",
+        "end": "2026-06-27"
+      },
+      "location": "Belá nad Cirochou, Slovakia",
+      "coordinates": {
+        "lat": 48.8410,
+        "lng": 22.1370
+      },
+      "poster": "",
+      "website": "https://www.rockpodkamenom.sk/",
+      "bands": [
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation"
+        },
+        {
+          "key": "pendulum",
+          "name": "Pendulum"
+        },
+        {
+          "key": "drowning-pool",
+          "name": "Drowning Pool"
+        },
+        {
+          "key": "sonata-arctica",
+          "name": "Sonata Arctica"
+        },
+        {
+          "key": "korpiklaani",
+          "name": "Korpiklaani"
+        },
+        {
+          "key": "inekafe",
+          "name": "Inekafe"
+        },
+        {
+          "key": "helenine-oci",
+          "name": "Heľenine Oči"
+        },
+        {
+          "key": "konflikt",
+          "name": "Konflikt"
+        }
+      ],
+      "ticketPrice": 84
+    },
+    {
+      "name": "Tons Of Rock 2026",
+      "dates": {
+        "start": "2026-06-24",
+        "end": "2026-06-27"
+      },
+      "location": "Oslo, Norway",
+      "coordinates": {
+        "lat": 59.9074,
+        "lng": 10.7745
+      },
+      "poster": "",
+      "website": "https://www.tonsofrock.no/",
+      "bands": [
+        {
+          "key": "iron-maiden",
+          "name": "Iron Maiden"
+        },
+        {
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon"
+        },
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit"
+        },
+        {
+          "key": "alice-cooper",
+          "name": "Alice Cooper"
+        },
+        {
+          "key": "twisted-sister",
+          "name": "Twisted Sister"
+        },
+        {
+          "key": "anthrax",
+          "name": "Anthrax"
+        },
+        {
+          "key": "mayhem",
+          "name": "Mayhem"
+        },
+        {
+          "key": "dumdum-boys",
+          "name": "Dumdum Boys"
+        },
+        {
+          "key": "raga-rockers",
+          "name": "Raga Rockers"
+        },
+        {
+          "key": "the-carburetors",
+          "name": "The Carburetors"
+        },
+        {
+          "key": "blood-fire-death",
+          "name": "Blood Fire Death"
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan TX"
+        },
+        {
+          "key": "die-spitz",
+          "name": "Die Spitz"
+        },
+        {
+          "key": "queensryche",
+          "name": "Queensrÿche"
+        },
+        {
+          "key": "blood-incantation",
+          "name": "Blood Incantation"
+        },
+        {
+          "key": "yungblud",
+          "name": "Yungblud"
+        },
+        {
+          "key": "the-offspring",
+          "name": "The Offspring"
+        },
+        {
+          "key": "a-perfect-circle",
+          "name": "A Perfect Circle"
+        },
+        {
+          "key": "tom-morello",
+          "name": "Tom Morello"
+        },
+        {
+          "key": "babymetal",
+          "name": "Babymetal"
+        },
+        {
+          "key": "d-a-d",
+          "name": "D-A-D"
+        },
+        {
+          "key": "cavalera",
+          "name": "Cavalera"
+        },
+        {
+          "key": "the-pretty-reckless",
+          "name": "The Pretty Reckless"
+        },
+        {
+          "key": "black-label-society",
+          "name": "Black Label Society"
+        },
+        {
+          "key": "apocalyptica",
+          "name": "Apocalyptica"
+        },
+        {
+          "key": "death-to-all",
+          "name": "Death To All"
+        },
+        {
+          "key": "audrey-horne",
+          "name": "Audrey Horne"
+        },
+        {
+          "key": "elder",
+          "name": "Elder"
+        },
+        {
+          "key": "gatecreeper",
+          "name": "Gatecreeper"
+        },
+        {
+          "key": "gaerea",
+          "name": "Gaerea"
+        }
+      ],
+      "ticketPrice": 419
     }
   ],
   "bands": [
