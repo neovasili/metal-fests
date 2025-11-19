@@ -38,7 +38,7 @@ export default [
     },
   },
   {
-    ignores: ["node_modules/", "build/", "*.min.js", "infra/cdk.out/**"],
+    ignores: ["node_modules/", "build/", "coverage/", "*.min.js", "infra/cdk.out/**"],
   },
   eslintPluginPrettierRecommended,
 ];

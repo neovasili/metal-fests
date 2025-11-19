@@ -27,6 +27,10 @@ cp *.html ./build/
 cp script.js ./build/
 cp db.json ./build/
 
+printf "\n${PURPLE}Remove test files from build folder${RESET}\n"
+
+find ./build -type f -name "*.test.js" -delete
+
 printf "\n${PURPLE}Minifying and obfuscating build files${RESET}\n"
 
 # Save original sizes before minification

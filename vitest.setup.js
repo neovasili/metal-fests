@@ -1,0 +1,43 @@
+// Import all JavaScript classes for testing
+import UIUtils from "./js/ui-utils.js";
+import FavoritesManager from "./js/favorites-manager.js";
+import FilterManager from "./js/filter-manager.js";
+import BandsFilterManager from "./js/bands-filter-manager.js";
+import SearchFilterManager from "./js/search-filter-manager.js";
+import SPARouter from "./js/spa-router.js";
+import BandManager from "./js/band-manager.js";
+import HeaderManager from "./js/header-manager.js";
+import ClientRouter from "./js/router.js";
+import Notification from "./admin/js/notification.js";
+import MultiselectDropdown from "./admin/js/multiselect-dropdown.js";
+import BandReviewManager from "./admin/js/band-review-manager.js";
+import BandReviewedManager from "./admin/js/band-reviewed-manager.js";
+import FestivalCard from "./components/festival-card/festival-card.js";
+import AdminTabs from "./components/admin-tabs/admin-tabs.js";
+import AdminNav from "./components/admin-nav/admin-nav.js";
+import AdminList from "./components/admin-list/admin-list.js";
+import FestivalManager from "./admin/js/managers/FestivalManager.js";
+import AdminBandManager from "./admin/js/managers/BandManager.js";
+import AdminPageLoader from "./admin/js/admin-page-loader.js";
+
+// Make classes globally available
+globalThis.UIUtils = UIUtils;
+globalThis.FavoritesManager = FavoritesManager;
+globalThis.FilterManager = FilterManager;
+globalThis.BandsFilterManager = BandsFilterManager;
+globalThis.SearchFilterManager = SearchFilterManager;
+globalThis.SPARouter = SPARouter;
+globalThis.BandManager = BandManager;
+globalThis.HeaderManager = HeaderManager;
+globalThis.ClientRouter = ClientRouter;
+globalThis.Notification = Notification;
+globalThis.MultiselectDropdown = MultiselectDropdown;
+globalThis.BandReviewManager = BandReviewManager;
+globalThis.BandReviewedManager = BandReviewedManager;
+globalThis.FestivalCard = FestivalCard;
+globalThis.AdminTabs = AdminTabs;
+globalThis.AdminNav = AdminNav;
+globalThis.AdminList = AdminList;
+globalThis.FestivalManager = FestivalManager;
+globalThis.AdminBandManager = AdminBandManager;
+globalThis.AdminPageLoader = AdminPageLoader;

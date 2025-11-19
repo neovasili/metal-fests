@@ -279,3 +279,8 @@ class BandReviewManager {
 if (typeof window !== "undefined") {
   window.BandReviewManager = BandReviewManager;
 }
+
+// Export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = BandReviewManager;
+}
