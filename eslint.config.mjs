@@ -38,7 +38,23 @@ export default [
     },
   },
   {
-    ignores: ["node_modules/", "build/", "coverage/", "*.min.js", "infra/cdk.out/**"],
+    files: ["e2e/**/*.js", "playwright.config.js"],
+    languageOptions: {
+      globals: {
+        process: "readonly",
+      },
+    },
+  },
+  {
+    ignores: [
+      "node_modules/",
+      "build/",
+      "coverage/",
+      "*.min.js",
+      "infra/cdk.out/**",
+      "test-results/",
+      "playwright-report/",
+    ],
   },
   eslintPluginPrettierRecommended,
 ];
