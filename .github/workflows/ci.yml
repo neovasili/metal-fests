@@ -110,7 +110,7 @@ jobs:
 
       - name: Run JavaScript unit tests with coverage
         run: |
-          pnpm test:coverage
+          pnpm test:js:coverage
 
       - name: Upload JavaScript coverage artifacts
         uses: actions/upload-artifact@v4
@@ -131,7 +131,7 @@ jobs:
 
       - name: Run Go unit tests with coverage
         run: |
-          go test -coverprofile=coverage-go.out -covermode=atomic ./internal/...
+          go test -coverprofile=coverage-go.out -covermode=atomic ./...
 
       - name: Upload Go coverage artifacts
         uses: actions/upload-artifact@v4
