@@ -23,6 +23,11 @@ Thumbs.db
 coverage/
 coverage-go.html
 
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
 # Build directories
 dist/
 build/
