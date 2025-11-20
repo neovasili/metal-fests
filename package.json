@@ -6,9 +6,12 @@
   "scripts": {
     "start": "go run server.go",
     "start:prod": "go run server.go -build",
-    "test": "vitest",
+    "test": "pnpm test:js && pnpm test:go",
+    "test:js": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage",
+    "test:js:coverage": "vitest --coverage",
+    "test:go": "go test -v ./...",
+    "test:go:coverage": "go test -coverprofile=coverage-go.out ./... && go tool cover -html=coverage-go.out -o coverage-go.html",
     "lint": "pnpm lint:js && pnpm lint:css && pnpm lint:html && pnpm lint:md && pnpm lint:go",
     "lint:js": "eslint \"**/*.js\" --max-warnings 0 --ignore-pattern \"build/**\"",
     "lint:css": "stylelint \"**/*.css\" --ignore-pattern \"**/build/**\"",
@@ -26,9 +29,6 @@
     "minify:css": "./scripts/minify-css.sh",
     "minify:json": "./scripts/minify-json.sh",
     "build": "./scripts/build.sh"
-    ,
-    "go:test": "go test ./internal/...",
-    "go:cover": "go test -coverprofile=coverage-go.out ./internal/... && go tool cover -html=coverage-go.out -o coverage-go.html"
   },
   "repository": {
     "type": "git",
