@@ -26,6 +26,9 @@
     "minify:css": "./scripts/minify-css.sh",
     "minify:json": "./scripts/minify-json.sh",
     "build": "./scripts/build.sh"
+    ,
+    "go:test": "go test ./internal/...",
+    "go:cover": "go test -coverprofile=coverage-go.out ./internal/... && go tool cover -html=coverage-go.out -o coverage-go.html"
   },
   "repository": {
     "type": "git",
