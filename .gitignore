@@ -21,6 +21,7 @@ Thumbs.db
 
 # Coverage directory used by tools like istanbul
 coverage/
+coverage-go.html
 
 # Build directories
 dist/

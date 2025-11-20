@@ -8,9 +8,13 @@ import (
 	"github.com/neovasili/metal-fests/internal/model"
 )
 
+// dbFilePath allows overriding the database file path for testing
+var dbFilePath = constants.DBFile
+
 // Read current database
 func readDatabase() (*model.Database, error) {
-	dbData, err := os.ReadFile(constants.DBFile)
+	// #nosec G304 - dbFilePath is controlled and can be overridden for testing
+	dbData, err := os.ReadFile(dbFilePath)
 	if err != nil {
 		return nil, err
 	}
@@ -32,7 +36,7 @@ func writeDatabase(db *model.Database) error {
 	// Add trailing newline
 	updatedData = append(updatedData, '\n')
 
-	if err := os.WriteFile(constants.DBFile, updatedData, 0600); err != nil {
+	if err := os.WriteFile(dbFilePath, updatedData, 0600); err != nil {
 		return err
 	}
 	return nil
