@@ -181,6 +181,50 @@ describe("FestivalCard", () => {
       expect(result).toContain("Unknown Band");
       expect(result.match(/band-tag/g).length).toBe(2);
     });
+
+    it("should sort bands by size descending then alphabetically", () => {
+      mockBandManager.hasCompleteInfo.mockReturnValue(false);
+
+      const bands = [
+        { name: "Metallica", size: 2 },
+        { name: "Iron Maiden", size: 3 },
+        { name: "Slayer", size: 1 },
+        { name: "Anthrax", size: 3 },
+      ];
+
+      const result = FestivalCard.createBandTagsHTML(bands, mockBandManager);
+
+      // Extract band names in order they appear
+      const matches = result.match(/>[^<]+</g).map((m) => m.slice(1, -1));
+
+      // Expected order: size 3 first (Anthrax, Iron Maiden alphabetically), then size 2 (Metallica), then size 1 (Slayer)
+      expect(matches[0]).toBe("Anthrax");
+      expect(matches[1]).toBe("Iron Maiden");
+      expect(matches[2]).toBe("Metallica");
+      expect(matches[3]).toBe("Slayer");
+    });
+
+    it("should apply tier classes based on band size", () => {
+      mockBandManager.hasCompleteInfo.mockReturnValue(false);
+
+      const bands = [
+        { name: "Headliner", size: 3 },
+        { name: "Support", size: 2 },
+        { name: "Opener", size: 1 },
+        { name: "Unknown", size: 0 },
+      ];
+
+      const result = FestivalCard.createBandTagsHTML(bands, mockBandManager);
+
+      // Verify tier classes are applied correctly
+      expect(result).toContain('class="band-tag tier-3"');
+      expect(result).toContain('class="band-tag tier-2"');
+      expect(result).toContain('class="band-tag tier-1"');
+
+      // Verify size 0 is treated as tier-1
+      const unknownBandMatch = result.match(/<span class="band-tag tier-1">Unknown<\/span>/);
+      expect(unknownBandMatch).toBeTruthy();
+    });
   });
 
   describe("render", () => {
