@@ -43,10 +43,6 @@ class FestivalEditForm {
   setupEventListeners() {
     const form = this.container.querySelector("#festivalForm");
     const cancelBtn = this.container.querySelector("#cancelBtn");
-    const selectedBands = this.container.querySelector("#selectedBands");
-    const bandsDropdown = this.container.querySelector("#bandsDropdown");
-    const bandsSearch = this.container.querySelector("#bandsSearch");
-    const bandsOptions = this.container.querySelector("#bandsOptions");
 
     if (form) {
       form.addEventListener("submit", (e) => {
@@ -84,34 +80,41 @@ class FestivalEditForm {
       });
     }
 
-    if (selectedBands && bandsDropdown) {
-      selectedBands.addEventListener("click", () => {
-        bandsDropdown.classList.toggle("open");
-      });
+    // Add event listeners for all three tier dropdowns
+    for (let tier = 1; tier <= 3; tier++) {
+      const tierOptions = this.container.querySelector(`#bandsTier${tier}Options`);
+      if (tierOptions) {
+        tierOptions.addEventListener("change", () => {
+          this.updateSelectedBands(tier);
+          this.scheduleAutoSave();
+        });
+      }
 
-      document.addEventListener("click", (e) => {
-        if (!selectedBands.contains(e.target) && !bandsDropdown.contains(e.target)) {
-          bandsDropdown.classList.remove("open");
-        }
-      });
-    }
+      const tierSelected = this.container.querySelector(`#selectedBandsTier${tier}`);
+      const tierDropdown = this.container.querySelector(`#bandsTier${tier}Dropdown`);
+      if (tierSelected && tierDropdown) {
+        tierSelected.addEventListener("click", () => {
+          tierDropdown.classList.toggle("open");
+        });
 
-    if (bandsSearch) {
-      bandsSearch.addEventListener("input", (e) => {
-        this.filterBands(e.target.value);
-      });
-    }
+        document.addEventListener("click", (e) => {
+          if (!tierSelected.contains(e.target) && !tierDropdown.contains(e.target)) {
+            tierDropdown.classList.remove("open");
+          }
+        });
+      }
 
-    if (bandsOptions) {
-      bandsOptions.addEventListener("change", () => {
-        this.updateSelectedBands();
-        this.scheduleAutoSave();
-      });
+      const tierSearch = this.container.querySelector(`#bandsTier${tier}Search`);
+      if (tierSearch) {
+        tierSearch.addEventListener("input", (e) => {
+          this.filterBands(e.target.value, tier);
+        });
+      }
     }
   }
 
-  filterBands(searchTerm) {
-    const options = this.container.querySelectorAll(".multiselect-option");
+  filterBands(searchTerm, tier) {
+    const options = this.container.querySelectorAll(`#bandsTier${tier}Options .multiselect-option`);
     const term = searchTerm.toLowerCase();
 
     options.forEach((option) => {
@@ -120,13 +123,13 @@ class FestivalEditForm {
     });
   }
 
-  updateSelectedBands() {
-    const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
+  updateSelectedBands(tier) {
+    const checkboxes = this.container.querySelectorAll(`#bandsTier${tier}Options input[type="checkbox"]`);
     const selected = Array.from(checkboxes)
       .filter((cb) => cb.checked)
       .map((cb) => cb.value);
 
-    const selectedContainer = this.container.querySelector("#selectedBands");
+    const selectedContainer = this.container.querySelector(`#selectedBandsTier${tier}`);
     if (!selectedContainer) return;
 
     if (selected.length === 0) {
@@ -137,7 +140,7 @@ class FestivalEditForm {
           (band) => `
         <span class="selected-tag">
           ${this.escapeHtml(band)}
-          <button type="button" class="remove-tag" data-band="${this.escapeHtml(band)}">×</button>
+          <button type="button" class="remove-tag" data-band="${this.escapeHtml(band)}" data-tier="${tier}">×</button>
         </span>
       `,
         )
@@ -147,17 +150,18 @@ class FestivalEditForm {
         btn.addEventListener("click", (e) => {
           e.stopPropagation();
           const band = btn.getAttribute("data-band");
-          this.unselectBand(band);
+          const bandTier = btn.getAttribute("data-tier");
+          this.unselectBand(band, bandTier);
         });
       });
     }
   }
 
-  unselectBand(band) {
-    const checkbox = this.container.querySelector(`#bandsOptions input[value="${band}"]`);
+  unselectBand(band, tier) {
+    const checkbox = this.container.querySelector(`#bandsTier${tier}Options input[value="${band}"]`);
     if (checkbox) {
       checkbox.checked = false;
-      this.updateSelectedBands();
+      this.updateSelectedBands(tier);
     }
   }
 
@@ -399,15 +403,19 @@ class FestivalEditForm {
     const form = this.container.querySelector("#festivalForm");
     if (!form) return null;
 
-    const selectedBandNames = Array.from(this.container.querySelectorAll("#bandsOptions input:checked")).map(
-      (cb) => cb.value,
-    );
+    // Collect bands from all three tiers
+    const selectedBands = [];
 
-    // Convert band names to the new structure with key and name
-    const selectedBands = selectedBandNames.map((bandName) => ({
-      key: this.bandsMap.get(bandName) || this.bandNameToKey(bandName),
-      name: bandName,
-    }));
+    for (let tier = 3; tier >= 1; tier--) {
+      const tierCheckboxes = this.container.querySelectorAll(`#bandsTier${tier}Options input:checked`);
+      tierCheckboxes.forEach((cb) => {
+        selectedBands.push({
+          key: this.bandsMap.get(cb.value) || this.bandNameToKey(cb.value),
+          name: cb.value,
+          size: tier,
+        });
+      });
+    }
 
     return {
       key: form.elements.key.value.trim(),
@@ -715,14 +723,43 @@ class FestivalEditForm {
           </div>
 
           <div class="form-group">
-            <label for="festivalBands">Bands</label>
-            <div class="multiselect-container">
-              <div class="multiselect-selected" id="selectedBands">
+            <label>Tier 3 Bands (Headliners)</label>
+            <div class="tier-description">Most important bands - displayed in gold</div>
+            <div class="multiselect-container tier-3-container">
+              <div class="multiselect-selected" id="selectedBandsTier3">
                 <span class="placeholder">Select bands...</span>
               </div>
-              <div class="multiselect-dropdown" id="bandsDropdown">
-                <input type="text" class="multiselect-search" id="bandsSearch" placeholder="Search bands...">
-                <div class="multiselect-options" id="bandsOptions"></div>
+              <div class="multiselect-dropdown" id="bandsTier3Dropdown">
+                <input type="text" class="multiselect-search" id="bandsTier3Search" placeholder="Search bands...">
+                <div class="multiselect-options" id="bandsTier3Options"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Tier 2 Bands (Support Acts)</label>
+            <div class="tier-description">Medium importance bands - displayed in orange</div>
+            <div class="multiselect-container tier-2-container">
+              <div class="multiselect-selected" id="selectedBandsTier2">
+                <span class="placeholder">Select bands...</span>
+              </div>
+              <div class="multiselect-dropdown" id="bandsTier2Dropdown">
+                <input type="text" class="multiselect-search" id="bandsTier2Search" placeholder="Search bands...">
+                <div class="multiselect-options" id="bandsTier2Options"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Tier 1 Bands (Opening Acts)</label>
+            <div class="tier-description">Basic bands - displayed in grey</div>
+            <div class="multiselect-container tier-1-container">
+              <div class="multiselect-selected" id="selectedBandsTier1">
+                <span class="placeholder">Select bands...</span>
+              </div>
+              <div class="multiselect-dropdown" id="bandsTier1Dropdown">
+                <input type="text" class="multiselect-search" id="bandsTier1Search" placeholder="Search bands...">
+                <div class="multiselect-options" id="bandsTier1Options"></div>
               </div>
             </div>
           </div>
@@ -751,13 +788,22 @@ class FestivalEditForm {
 
     this.renderBandsOptions();
 
-    const checkboxes = this.container.querySelectorAll('#bandsOptions input[type="checkbox"]');
-    checkboxes.forEach((cb) => {
-      // Check if the band name exists in the festival's bands array
-      cb.checked = festival.bands?.some((bandRef) => bandRef.name === cb.value) || false;
-    });
-
-    this.updateSelectedBands();
+    // Load bands into the correct tier based on their size
+    // Note: bands with size 0 are treated as tier 1
+    for (let tier = 1; tier <= 3; tier++) {
+      const checkboxes = this.container.querySelectorAll(`#bandsTier${tier}Options input[type="checkbox"]`);
+      checkboxes.forEach((cb) => {
+        // Check if the band exists with the current tier's size
+        // Treat size 0 as tier 1
+        cb.checked =
+          festival.bands?.some((bandRef) => {
+            if (bandRef.name !== cb.value) return false;
+            const bandSize = bandRef.size || 0;
+            return tier === 1 ? bandSize <= 1 : bandSize === tier;
+          }) || false;
+      });
+      this.updateSelectedBands(tier);
+    }
 
     // Re-setup event listeners after render
     this.setupEventListeners();
@@ -782,9 +828,6 @@ class FestivalEditForm {
   }
 
   renderBandsOptions() {
-    const optionsContainer = this.container.querySelector("#bandsOptions");
-    if (!optionsContainer) return;
-
     // Combine reviewed bands with any bands already in the current festival
     // This ensures we don't lose unreviewed bands that were previously selected
     const allBandsToShow = new Set(this.bands);
@@ -801,7 +844,7 @@ class FestivalEditForm {
       });
     }
 
-    optionsContainer.innerHTML = Array.from(allBandsToShow)
+    const bandsHTML = Array.from(allBandsToShow)
       .map(
         (band) => `
       <label class="multiselect-option">
@@ -811,5 +854,13 @@ class FestivalEditForm {
     `,
       )
       .join("");
+
+    // Populate all three tier dropdowns with the same options
+    for (let tier = 1; tier <= 3; tier++) {
+      const optionsContainer = this.container.querySelector(`#bandsTier${tier}Options`);
+      if (optionsContainer) {
+        optionsContainer.innerHTML = bandsHTML;
+      }
+    }
   }
 }
