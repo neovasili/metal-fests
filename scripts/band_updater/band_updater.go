@@ -39,6 +39,8 @@ type UpdateStats struct {
 	SkippedBands     int
 	NotFoundBands    int
 	TotalTokens      int
+	TotalCost        float64
+	UsedModel        string
 	PromptTokens     int
 	CompletionTokens int
 }
@@ -79,31 +81,87 @@ func isBandComplete(band model.Band) bool {
 	return true
 }
 
-func searchBandInfo(promptTemplate, bandName string, dryRun bool) (*BandSearchResult, int, error) {
+func searchBandInfo(promptTemplate, bandName string, dryRun bool) (*BandSearchResult, int, float64, string, error) {
 	userPrompt := strings.ReplaceAll(promptTemplate, "{{ BAND_NAME }}", bandName)
-	systemPrompt := "Metal band data curator. Return valid compact JSON only. No markdown, no explanations, no extra text."
 
-	resp, err := openaiClient.AskOpenAI(systemPrompt, userPrompt, dryRun)
+	usedTokens := 0
+	estimatedCost := 0.0
+	usedModel := ""
+
+	var bandsJsonSchema = map[string]any{
+		"type":                 "object",
+		"additionalProperties": false,
+		"properties": map[string]any{
+			"key":           map[string]any{"type": "string", "additionalProperties": false},
+			"name":          map[string]any{"type": "string", "additionalProperties": false},
+			"country":       map[string]any{"type": "string", "additionalProperties": false},
+			"description":   map[string]any{"type": "string", "additionalProperties": false},
+			"headlineImage": map[string]any{"type": "string", "additionalProperties": false},
+			"logo":          map[string]any{"type": "string", "additionalProperties": false},
+			"genres": map[string]any{
+				"type":                 "array",
+				"items":                map[string]any{"type": "string", "additionalProperties": false},
+				"additionalProperties": false,
+				"minItems":             2,
+				"maxItems":             4,
+			},
+			"website": map[string]any{
+				"type":                 "string",
+				"additionalProperties": false,
+			},
+			"members": map[string]any{
+				"type":                 "array",
+				"additionalProperties": false,
+				"items": map[string]any{
+					"type":                 "object",
+					"additionalProperties": false,
+					"properties": map[string]any{
+						"name": map[string]any{"type": "string", "additionalProperties": false},
+						"role": map[string]any{"type": "string", "additionalProperties": false},
+					},
+					"required": []string{"name", "role"},
+				},
+			},
+		},
+		"required": []string{
+			"key",
+			"name",
+			"country",
+			"description",
+			"headlineImage",
+			"logo",
+			"genres",
+			"website",
+			"members",
+		},
+	}
+
+	resp, err := openaiClient.AskOpenAI(userPrompt, bandsJsonSchema, true, dryRun)
 	if err != nil {
-		return nil, 0, err
+		return nil, usedTokens, estimatedCost, usedModel, err
 	}
 
 	if resp == nil {
-		return nil, 0, fmt.Errorf("no response from OpenAI")
+		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("no response from OpenAI")
 	}
-	if len(resp.OutputText()) == 0 {
-		return nil, int(resp.Usage.TotalTokens), fmt.Errorf("empty response from OpenAI")
+	usedTokens = resp.TotalUsedTokens
+	estimatedCost = resp.EstimatedCost
+	usedModel = string(resp.UsedModel)
+	fmt.Printf("🧠 Used model: %s\n", usedModel)
+	fmt.Printf("📊 Tokens used: %d\n", usedTokens)
+	fmt.Printf("💰 Estimated cost: %.2f €\n", estimatedCost)
+	if len(resp.OutputText) == 0 {
+		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("empty response from OpenAI")
 	}
 
-	content := strings.TrimSpace(resp.OutputText())
-
+	content := strings.TrimSpace(resp.OutputText)
 	var result BandSearchResult
 	if err := json.Unmarshal([]byte(content), &result); err != nil {
-		return nil, int(resp.Usage.TotalTokens), fmt.Errorf("failed to parse OpenAI response: %w", err)
+		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("failed to parse OpenAI response: %w", err)
 	}
 	result.Key = generateBandKey(result.Name)
 
-	return &result, int(resp.Usage.TotalTokens), nil
+	return &result, usedTokens, estimatedCost, usedModel, nil
 }
 
 func mergeBandData(existing *model.Band, updated *BandSearchResult) bool {
@@ -203,13 +261,14 @@ func addMissingBands(promptTemplate, bandName string, dryRun bool) *UpdateStats 
 		}
 
 		// Search for band information
-		result, tokens, err := searchBandInfo(promptTemplate, band.Name, dryRun)
+		result, tokens, cost, usedModel, err := searchBandInfo(promptTemplate, band.Name, dryRun)
+		stats.TotalTokens += tokens
+		stats.TotalCost += cost
+		stats.UsedModel = usedModel
 		if err != nil {
 			fmt.Printf("  ⚠️  Error: %v\n", err)
 			continue
 		}
-
-		stats.TotalTokens += tokens
 
 		// Check if band was found
 		if result.Error != "" {
@@ -264,8 +323,6 @@ func addMissingBands(promptTemplate, bandName string, dryRun bool) *UpdateStats 
 			fmt.Printf("  ✓ Added new band\n")
 			stats.AddedBands++
 		}
-
-		fmt.Printf("  📊 Tokens used: %d\n", tokens)
 	}
 
 	return stats
@@ -284,7 +341,8 @@ func generateSummary(stats *UpdateStats) string {
 	buf.WriteString(fmt.Sprintf("- **Bands Not Found**: %d\n", stats.NotFoundBands))
 	buf.WriteString("\n## 🤖 AI Usage Statistics\n\n")
 	buf.WriteString(fmt.Sprintf("- **Total Tokens**: %d\n", stats.TotalTokens))
-	buf.WriteString("- **Model**: gpt-4.1-mini\n")
+	buf.WriteString(fmt.Sprintf("- **Total Cost**: %.2f €\n", stats.TotalCost))
+	buf.WriteString(fmt.Sprintf("- **Model**: %s\n", stats.UsedModel))
 	buf.WriteString("\n## ⚙️ Automation Details\n\n")
 	buf.WriteString(fmt.Sprintf("- **Run Date**: %s\n", time.Now().Format("2006-01-02 15:04:05 UTC")))
 	buf.WriteString("- **Source**: GitHub Actions Workflow\n")
