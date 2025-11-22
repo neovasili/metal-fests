@@ -153,3 +153,66 @@ func TestUpdateFestivalInDatabase_InvalidJSON(t *testing.T) {
 		t.Errorf("Expected error when reading invalid JSON, got nil")
 	}
 }
+
+func TestUpdateFestivalInDatabase_WithBandSizes(t *testing.T) {
+	tempDir := t.TempDir()
+	dbFile := filepath.Join(tempDir, "db.json")
+	testDB := model.Database{
+		Festivals: []model.Festival{
+			{
+				Key:      "test-fest-2026",
+				Name:     "Test Festival",
+				Location: "Test Location",
+				Bands: []model.BandRef{
+					{Key: "band1", Name: "Band One", Size: 1},
+					{Key: "band2", Name: "Band Two", Size: 2},
+				},
+			},
+		},
+		Bands: []model.Band{},
+	}
+	data, err := json.MarshalIndent(testDB, "", "  ")
+	if err != nil {
+		t.Fatalf("Failed to marshal test database: %v", err)
+	}
+	if err := os.WriteFile(dbFile, append(data, '\n'), 0600); err != nil {
+		t.Fatalf("Failed to write test database: %v", err)
+	}
+	originalDBFile := SetDBFilePathForTesting(dbFile)
+	defer SetDBFilePathForTesting(originalDBFile)
+
+	updatedFestival := model.Festival{
+		Key:      "test-fest-2026",
+		Name:     "Test Festival Updated",
+		Location: "Test Location",
+		Bands: []model.BandRef{
+			{Key: "band1", Name: "Band One", Size: 3},
+			{Key: "band2", Name: "Band Two", Size: 2},
+			{Key: "band3", Name: "Band Three", Size: 1},
+		},
+	}
+	err = UpdateFestivalInDatabase(updatedFestival)
+	if err != nil {
+		t.Fatalf("UpdateFestivalInDatabase failed: %v", err)
+	}
+
+	festivals, err := GetFestivals()
+	if err != nil {
+		t.Fatalf("GetFestivals failed: %v", err)
+	}
+	if len(festivals) != 1 {
+		t.Errorf("Expected 1 festival, got %d", len(festivals))
+	}
+	if len(festivals[0].Bands) != 3 {
+		t.Errorf("Expected 3 bands, got %d", len(festivals[0].Bands))
+	}
+	if festivals[0].Bands[0].Size != 3 {
+		t.Errorf("Expected band1 size 3, got %d", festivals[0].Bands[0].Size)
+	}
+	if festivals[0].Bands[1].Size != 2 {
+		t.Errorf("Expected band2 size 2, got %d", festivals[0].Bands[1].Size)
+	}
+	if festivals[0].Bands[2].Size != 1 {
+		t.Errorf("Expected band3 size 1, got %d", festivals[0].Bands[2].Size)
+	}
+}
