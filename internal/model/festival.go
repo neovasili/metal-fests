@@ -15,6 +15,7 @@ type Festival struct {
 type BandRef struct {
 	Key  string `json:"key"`
 	Name string `json:"name"`
+	Size int    `json:"size"`
 }
 
 type Dates struct {

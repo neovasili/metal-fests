@@ -27,8 +27,8 @@ func TestFestivalJSON(t *testing.T) {
 				Poster:  "https://example.com/poster.jpg",
 				Website: "https://wacken.com",
 				Bands: []BandRef{
-					{Key: "metallica", Name: "Metallica"},
-					{Key: "iron-maiden", Name: "Iron Maiden"},
+					{Key: "metallica", Name: "Metallica", Size: 1},
+					{Key: "iron-maiden", Name: "Iron Maiden", Size: 2},
 				},
 				TicketPrice: 299.99,
 			},
@@ -80,27 +80,59 @@ func TestFestivalJSON(t *testing.T) {
 }
 
 func TestBandRefJSON(t *testing.T) {
-	bandRef := BandRef{
-		Key:  "metallica",
-		Name: "Metallica",
+	tests := []struct {
+		name    string
+		bandRef BandRef
+	}{
+		{
+			name: "BandRef with all fields",
+			bandRef: BandRef{
+				Key:  "metallica",
+				Name: "Metallica",
+				Size: 1,
+			},
+		},
+		{
+			name: "BandRef without size",
+			bandRef: BandRef{
+				Key:  "iron-maiden",
+				Name: "Iron Maiden",
+				Size: 0,
+			},
+		},
+		{
+			name: "BandRef with large size",
+			bandRef: BandRef{
+				Key:  "slayer",
+				Name: "Slayer",
+				Size: 3,
+			},
+		},
 	}
 
-	data, err := json.Marshal(bandRef)
-	if err != nil {
-		t.Fatalf("Failed to marshal BandRef: %v", err)
-	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			data, err := json.Marshal(tt.bandRef)
+			if err != nil {
+				t.Fatalf("Failed to marshal BandRef: %v", err)
+			}
 
-	var unmarshaledBandRef BandRef
-	err = json.Unmarshal(data, &unmarshaledBandRef)
-	if err != nil {
-		t.Fatalf("Failed to unmarshal BandRef: %v", err)
-	}
+			var unmarshaledBandRef BandRef
+			err = json.Unmarshal(data, &unmarshaledBandRef)
+			if err != nil {
+				t.Fatalf("Failed to unmarshal BandRef: %v", err)
+			}
 
-	if unmarshaledBandRef.Key != bandRef.Key {
-		t.Errorf("Key mismatch: got %v, want %v", unmarshaledBandRef.Key, bandRef.Key)
-	}
-	if unmarshaledBandRef.Name != bandRef.Name {
-		t.Errorf("Name mismatch: got %v, want %v", unmarshaledBandRef.Name, bandRef.Name)
+			if unmarshaledBandRef.Key != tt.bandRef.Key {
+				t.Errorf("Key mismatch: got %v, want %v", unmarshaledBandRef.Key, tt.bandRef.Key)
+			}
+			if unmarshaledBandRef.Name != tt.bandRef.Name {
+				t.Errorf("Name mismatch: got %v, want %v", unmarshaledBandRef.Name, tt.bandRef.Name)
+			}
+			if unmarshaledBandRef.Size != tt.bandRef.Size {
+				t.Errorf("Size mismatch: got %v, want %v", unmarshaledBandRef.Size, tt.bandRef.Size)
+			}
+		})
 	}
 }
 
@@ -166,7 +198,7 @@ func TestFestivalJSONTags(t *testing.T) {
 		},
 		Poster:      "poster.jpg",
 		Website:     "https://test.com",
-		Bands:       []BandRef{{Key: "band", Name: "Band"}},
+		Bands:       []BandRef{{Key: "band", Name: "Band", Size: 3}},
 		TicketPrice: 100.0,
 	}
 

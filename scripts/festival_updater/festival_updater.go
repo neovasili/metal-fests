@@ -19,8 +19,8 @@ import (
 )
 
 type FestivalUpdateResult struct {
-	Bands       []string `json:"bands"`
-	TicketPrice *float64 `json:"ticketPrice"`
+	Bands       []model.BandRef `json:"bands"`
+	TicketPrice *float64        `json:"ticketPrice"`
 }
 
 type UpdateStats struct {
@@ -29,39 +29,73 @@ type UpdateStats struct {
 	NewBands         int
 	UpdatedPrices    int
 	TotalTokens      int
+	TotalCost        float64
+	UsedModel        string
 	PromptTokens     int
 	CompletionTokens int
 }
 
 var openaiClient *openai.OpenAIClient
 
-func searchFestivalInfo(promptTemplate string, festival model.Festival, dryRun bool) (*FestivalUpdateResult, int, error) {
+func searchFestivalInfo(promptTemplate string, festival model.Festival, dryRun bool) (*FestivalUpdateResult, int, float64, string, error) {
 	userPrompt := strings.ReplaceAll(promptTemplate, "{{ FESTIVAL_NAME }}", festival.Name)
 	userPrompt = strings.ReplaceAll(userPrompt, "{{ FESTIVAL_LOCATION }}", festival.Location)
 	userPrompt = strings.ReplaceAll(userPrompt, "{{ FESTIVAL_URL }}", festival.Website)
 
-	systemPrompt := "You are a data extraction assistant. Always return valid compact JSON only. No markdown, no explanations, no extra text."
+	usedTokens := 0
+	estimatedCost := 0.0
+	usedModel := ""
 
-	resp, err := openaiClient.AskOpenAI(systemPrompt, userPrompt, dryRun)
+	var festivalJsonSchema = map[string]any{
+		"type":                 "object",
+		"additionalProperties": false,
+		"properties": map[string]any{
+			"bands": map[string]any{
+				"type":                 "array",
+				"additionalProperties": false,
+				"items": map[string]any{
+					"type":                 "object",
+					"additionalProperties": false,
+					"properties": map[string]any{
+						"name": map[string]any{"type": "string", "additionalProperties": false},
+						"size": map[string]any{"type": "integer", "additionalProperties": false},
+					},
+					"required": []string{"name", "size"},
+				},
+			},
+			"ticketPrice": map[string]any{
+				"type":                 []any{"integer", "null"},
+				"additionalProperties": false,
+			},
+		},
+		"required": []string{"bands", "ticketPrice"},
+	}
+
+	resp, err := openaiClient.AskOpenAI(userPrompt, festivalJsonSchema, false, dryRun)
 	if err != nil {
-		return nil, 0, err
+		return nil, usedTokens, estimatedCost, usedModel, err
 	}
 
 	if resp == nil {
-		return nil, 0, fmt.Errorf("no response from OpenAI")
+		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("no response from OpenAI")
 	}
-	if len(resp.OutputText()) == 0 {
-		return nil, int(resp.Usage.TotalTokens), fmt.Errorf("empty response from OpenAI")
+	usedTokens = resp.TotalUsedTokens
+	estimatedCost = resp.EstimatedCost
+	usedModel = string(resp.UsedModel)
+	fmt.Printf("🧠 Used model: %s\n", usedModel)
+	fmt.Printf("📊 Tokens used: %d\n", usedTokens)
+	fmt.Printf("💰 Estimated cost: %.2f €\n", estimatedCost)
+	if len(resp.OutputText) == 0 {
+		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("empty response from OpenAI")
 	}
 
-	content := strings.TrimSpace(resp.OutputText())
-
+	content := strings.TrimSpace(resp.OutputText)
 	var result FestivalUpdateResult
 	if err := json.Unmarshal([]byte(content), &result); err != nil {
-		return nil, int(resp.Usage.TotalTokens), fmt.Errorf("failed to parse OpenAI response: %w", err)
+		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("failed to parse OpenAI response: %w", err)
 	}
 
-	return &result, int(resp.Usage.TotalTokens), nil
+	return &result, usedTokens, estimatedCost, usedModel, nil
 }
 
 func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName string) *UpdateStats {
@@ -95,13 +129,14 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 	for index, festival := range festivals {
 		fmt.Printf("\n[%d/%d] Processing %s...\n", index+1, stats.TotalFestivals, festival.Name)
 
-		result, tokens, err := searchFestivalInfo(promptTemplate, festival, dryRun)
+		result, tokens, cost, usedModel, err := searchFestivalInfo(promptTemplate, festival, dryRun)
+		stats.TotalTokens += tokens
+		stats.TotalCost += cost
+		stats.UsedModel = usedModel
 		if err != nil {
 			fmt.Printf("  ⚠️  Error: %v\n", err)
 			continue
 		}
-
-		stats.TotalTokens += tokens
 
 		updated := false
 
@@ -109,13 +144,21 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 		if len(result.Bands) > 0 {
 			oldBandCount := len(festival.Bands)
 			newBands := make([]model.BandRef, 0)
+			updatedBands := make([]model.BandRef, 0)
 
-			for _, bandName := range result.Bands {
-				normalizedBandName := cases.Title(language.English).String(strings.ToLower(bandName))
-				if !containsBand(festival.Bands, normalizedBandName) {
-					// Convert band name to key (lowercase with hyphens)
-					bandKey := bandNameToKey(normalizedBandName)
-					newBands = append(newBands, model.BandRef{Key: bandKey, Name: normalizedBandName})
+			for _, bandRef := range result.Bands {
+				normalizedBandName := cases.Title(language.English).String(strings.ToLower(bandRef.Name))
+				band := model.BandRef{
+					Key:  bandNameToKey(normalizedBandName),
+					Name: normalizedBandName,
+					Size: bandRef.Size,
+				}
+				if !containsBand(festival.Bands, band.Name) {
+					newBands = append(newBands, model.BandRef{Key: band.Key, Name: band.Name, Size: band.Size})
+				} else {
+					if bandHasBeenUpdated(festival.Bands, band) {
+						updatedBands = append(updatedBands, band)
+					}
 				}
 			}
 
@@ -126,6 +169,14 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 				fmt.Printf("  ✓ Added %d new bands (total: %d → %d)\n", len(newBands), oldBandCount, len(festival.Bands))
 			} else {
 				fmt.Printf("  - No new bands to add\n")
+			}
+
+			if len(updatedBands) > 0 {
+				for _, bandRef := range updatedBands {
+					festival = updateBandData(festival, bandRef)
+				}
+				fmt.Printf("  ✓ Updated %d existing bands\n", len(updatedBands))
+				updated = true
 			}
 		}
 
@@ -145,13 +196,12 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 				fmt.Printf("  ⚠️  Error updating festival in database: %v\n", err)
 			}
 		}
-
-		fmt.Printf("  📊 Tokens used: %d\n", tokens)
 	}
 
 	return stats
 }
 
+// Check if a band is already in the festival's band list
 func containsBand(bands []model.BandRef, bandName string) bool {
 	for _, band := range bands {
 		if band.Name == bandName {
@@ -159,6 +209,33 @@ func containsBand(bands []model.BandRef, bandName string) bool {
 		}
 	}
 	return false
+}
+
+// Check if a band has been updated
+func bandHasBeenUpdated(bands []model.BandRef, band model.BandRef) bool {
+	for _, b := range bands {
+		if b.Key == band.Key {
+			if b.Name != band.Name || b.Size != band.Size {
+				return true
+			}
+		}
+	}
+	return false
+}
+
+// Updates a band data in a festival's band list
+func updateBandData(festival model.Festival, band model.BandRef) model.Festival {
+	for i, b := range festival.Bands {
+		if b.Key == band.Key {
+			festival.Bands[i] = model.BandRef{
+				Key:  band.Key,
+				Name: band.Name,
+				Size: band.Size,
+			}
+			break
+		}
+	}
+	return festival
 }
 
 func bandNameToKey(name string) string {
@@ -182,7 +259,8 @@ func generatePRSummary(stats *UpdateStats) string {
 	buf.WriteString(fmt.Sprintf("- **Ticket Prices Updated**: %d\n", stats.UpdatedPrices))
 	buf.WriteString("\n## 🤖 AI Usage Statistics\n\n")
 	buf.WriteString(fmt.Sprintf("- **Total Tokens**: %d\n", stats.TotalTokens))
-	buf.WriteString("- **Model**: gpt-4.1-mini\n")
+	buf.WriteString(fmt.Sprintf("- **Total Cost**: %.2f €\n", stats.TotalCost))
+	buf.WriteString(fmt.Sprintf("- **Model**: %s\n", stats.UsedModel))
 	buf.WriteString("\n## ⚙️ Automation Details\n\n")
 	buf.WriteString(fmt.Sprintf("- **Run Date**: %s\n", time.Now().Format("2006-01-02 15:04:05 UTC")))
 	buf.WriteString("- **Source**: GitHub Actions Workflow\n")

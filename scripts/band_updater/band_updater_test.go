@@ -347,6 +347,8 @@ func TestGenerateSummary(t *testing.T) {
 				SkippedBands:  4,
 				NotFoundBands: 1,
 				TotalTokens:   5000,
+				TotalCost:     0.15,
+				UsedModel:     "gpt-4o-mini",
 			},
 			contains: []string{
 				"# 🤖 Automated Bands Information Update",
@@ -356,7 +358,8 @@ func TestGenerateSummary(t *testing.T) {
 				"**Bands Skipped**",
 				"**Bands Not Found**: 1",
 				"**Total Tokens**: 5000",
-				"gpt-4.1-mini",
+				"**Total Cost**: 0.15 €",
+				"gpt-4o-mini",
 				"scripts/band_updater.go",
 				"*This PR was automatically generated. Please review the changes before merging.*",
 			},
