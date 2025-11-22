@@ -1118,3 +1118,37 @@ body {
     max-height: 300px;
   }
 }
+
+/* Band Tier Styling */
+.tier-description {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.tier-3-container .multiselect-selected {
+  border-color: gold;
+}
+
+.tier-3-container label {
+  color: gold;
+  font-weight: 600;
+}
+
+.tier-2-container .multiselect-selected {
+  border-color: #ff6b00;
+}
+
+.tier-2-container label {
+  color: #ff6b00;
+  font-weight: 500;
+}
+
+.tier-1-container .multiselect-selected {
+  border-color: darkgrey;
+}
+
+.tier-1-container label {
+  color: darkgrey;
+}

@@ -1027,8 +1027,8 @@
           "size": 2
         },
         {
-          "key": "h‑blockx",
-          "name": "H‑Blockx",
+          "key": "h-blockx",
+          "name": "H-Blockx",
           "size": 2
         },
         {
@@ -2298,533 +2298,533 @@
         "lat": 51.2372,
         "lng": 5.1186
       },
-      "poster": "https://www.graspop.be/assets/website/components/header/logo.73035b00.webp",
+      "poster": "https://www.harati.be/content/img/1284-15896-gmm1-04bc1cea101ef6c2.png",
       "website": "https://graspop.be",
       "bands": [
         {
-          "key": "limp-bizkit",
-          "name": "Limp Bizkit",
-          "size": 0
-        },
-        {
-          "key": "megadeth",
-          "name": "Megadeth",
-          "size": 0
-        },
-        {
-          "key": "within-temptation",
-          "name": "Within Temptation",
-          "size": 0
-        },
-        {
-          "key": "breaking-benjamin",
-          "name": "Breaking Benjamin",
-          "size": 0
-        },
-        {
-          "key": "bring-me-the-horizon",
-          "name": "Bring Me The Horizon",
-          "size": 0
+          "key": "alice-cooper",
+          "name": "Alice Cooper",
+          "size": 1
         },
         {
           "key": "alter-bridge",
           "name": "Alter Bridge",
-          "size": 0
-        },
-        {
-          "key": "lionheart",
-          "name": "Lionheart",
-          "size": 0
-        },
-        {
-          "key": "set-it-off",
-          "name": "Set It Off",
-          "size": 0
-        },
-        {
-          "key": "wind-rose",
-          "name": "Wind Rose",
-          "size": 0
-        },
-        {
-          "key": "oranssi-pazuzu",
-          "name": "Oranssi Pazuzu",
-          "size": 0
-        },
-        {
-          "key": "scowl",
-          "name": "Scowl",
-          "size": 0
-        },
-        {
-          "key": "the-funeral-portrait",
-          "name": "The Funeral Portrait",
-          "size": 0
-        },
-        {
-          "key": "volbeat",
-          "name": "Volbeat",
-          "size": 0
-        },
-        {
-          "key": "moonspell",
-          "name": "Moonspell",
-          "size": 0
-        },
-        {
-          "key": "p.o.d.",
-          "name": "P.o.d.",
-          "size": 0
-        },
-        {
-          "key": "bloodywood",
-          "name": "Bloodywood",
-          "size": 0
-        },
-        {
-          "key": "cult-of-luna",
-          "name": "Cult Of Luna",
-          "size": 0
-        },
-        {
-          "key": "ego-kill-talent",
-          "name": "Ego Kill Talent",
-          "size": 0
-        },
-        {
-          "key": "faetooth",
-          "name": "Faetooth",
-          "size": 0
-        },
-        {
-          "key": "gatecreeper",
-          "name": "Gatecreeper",
-          "size": 0
-        },
-        {
-          "key": "john-coffey",
-          "name": "John Coffey",
-          "size": 0
-        },
-        {
-          "key": "lakeview",
-          "name": "Lakeview",
-          "size": 0
-        },
-        {
-          "key": "magnolia-park",
-          "name": "Magnolia Park",
-          "size": 0
-        },
-        {
-          "key": "president",
-          "name": "President",
-          "size": 0
-        },
-        {
-          "key": "mastodon",
-          "name": "Mastodon",
-          "size": 0
-        },
-        {
-          "key": "static-x",
-          "name": "Static-X",
-          "size": 0
-        },
-        {
-          "key": "accept",
-          "name": "Accept",
-          "size": 0
-        },
-        {
-          "key": "pennywise",
-          "name": "Pennywise",
-          "size": 0
-        },
-        {
-          "key": "sepultura",
-          "name": "Sepultura",
-          "size": 0
-        },
-        {
-          "key": "the-plot-in-you",
-          "name": "The Plot In You",
-          "size": 0
-        },
-        {
-          "key": "we-came-as-romans",
-          "name": "We Came As Romans",
-          "size": 0
-        },
-        {
-          "key": "wolves-in-the-throne-room",
-          "name": "Wolves In The Throne Room",
-          "size": 0
-        },
-        {
-          "key": "babymetal",
-          "name": "Babymetal",
-          "size": 0
-        },
-        {
-          "key": "death-to-all",
-          "name": "Death To All",
-          "size": 0
-        },
-        {
-          "key": "elder",
-          "name": "Elder",
-          "size": 0
-        },
-        {
-          "key": "feuerschwanz",
-          "name": "Feuerschwanz",
-          "size": 0
-        },
-        {
-          "key": "grade-2",
-          "name": "Grade 2",
-          "size": 0
-        },
-        {
-          "key": "kadavar",
-          "name": "Kadavar",
-          "size": 0
-        },
-        {
-          "key": "life-of-agony",
-          "name": "Life Of Agony",
-          "size": 0
-        },
-        {
-          "key": "uada",
-          "name": "Uada",
-          "size": 0
-        },
-        {
-          "key": "septicflesh",
-          "name": "Septicflesh",
-          "size": 0
-        },
-        {
-          "key": "old-man's-child",
-          "name": "Old Man's Child",
-          "size": 0
-        },
-        {
-          "key": "the-dillinger-escape-plan",
-          "name": "The Dillinger Escape Plan",
-          "size": 0
-        },
-        {
-          "key": "loathe",
-          "name": "Loathe",
-          "size": 0
-        },
-        {
-          "key": "possessed",
-          "name": "Possessed",
-          "size": 0
-        },
-        {
-          "key": "sinsaenum",
-          "name": "Sinsaenum",
-          "size": 0
-        },
-        {
-          "key": "three-days-grace",
-          "name": "Three Days Grace",
-          "size": 0
-        },
-        {
-          "key": "the-gathering",
-          "name": "The Gathering",
-          "size": 0
-        },
-        {
-          "key": "bad-omens",
-          "name": "Bad Omens",
-          "size": 0
-        },
-        {
-          "key": "bury-tomorrow",
-          "name": "Bury Tomorrow",
-          "size": 0
-        },
-        {
-          "key": "decapitated",
-          "name": "Decapitated",
-          "size": 0
-        },
-        {
-          "key": "electric-callboy",
-          "name": "Electric Callboy",
-          "size": 0
-        },
-        {
-          "key": "forbidden",
-          "name": "Forbidden",
-          "size": 0
-        },
-        {
-          "key": "guilt-trip",
-          "name": "Guilt Trip",
-          "size": 0
-        },
-        {
-          "key": "kanonenfieber",
-          "name": "Kanonenfieber",
-          "size": 0
-        },
-        {
-          "key": "six-feet-under",
-          "name": "Six Feet Under",
-          "size": 0
-        },
-        {
-          "key": "tx2",
-          "name": "Tx2",
-          "size": 0
-        },
-        {
-          "key": "periphery",
-          "name": "Periphery",
-          "size": 0
-        },
-        {
-          "key": "thornhill",
-          "name": "Thornhill",
-          "size": 0
-        },
-        {
-          "key": "mammoth",
-          "name": "Mammoth",
-          "size": 0
-        },
-        {
-          "key": "primal-fear",
-          "name": "Primal Fear",
-          "size": 0
-        },
-        {
-          "key": "snot",
-          "name": "Snot",
-          "size": 0
-        },
-        {
-          "key": "tom-morello",
-          "name": "Tom Morello",
-          "size": 0
-        },
-        {
-          "key": "letlive.",
-          "name": "Letlive.",
-          "size": 0
-        },
-        {
-          "key": "return-to-dust",
-          "name": "Return To Dust",
-          "size": 0
-        },
-        {
-          "key": "bark",
-          "name": "Bark",
-          "size": 0
-        },
-        {
-          "key": "carpenter-brut",
-          "name": "Carpenter Brut",
-          "size": 0
-        },
-        {
-          "key": "def-leppard",
-          "name": "Def Leppard",
-          "size": 0
-        },
-        {
-          "key": "embryonic-autopsy",
-          "name": "Embryonic Autopsy",
-          "size": 0
-        },
-        {
-          "key": "foreigner",
-          "name": "Foreigner",
-          "size": 0
-        },
-        {
-          "key": "harms-way",
-          "name": "Harms Way",
-          "size": 0
-        },
-        {
-          "key": "kublai-khan-tx",
-          "name": "Kublai Khan Tx",
-          "size": 0
-        },
-        {
-          "key": "a-day-to-remember",
-          "name": "A Day To Remember",
-          "size": 0
-        },
-        {
-          "key": "avatar",
-          "name": "Avatar",
-          "size": 0
-        },
-        {
-          "key": "thrown",
-          "name": "Thrown",
-          "size": 0
-        },
-        {
-          "key": "queensrÿche",
-          "name": "Queensrÿche",
-          "size": 0
-        },
-        {
-          "key": "trivium",
-          "name": "Trivium",
-          "size": 0
-        },
-        {
-          "key": "rain-city-drive",
-          "name": "Rain City Drive",
-          "size": 0
-        },
-        {
-          "key": "sólstafir",
-          "name": "Sólstafir",
-          "size": 0
-        },
-        {
-          "key": "twisted-sister",
-          "name": "Twisted Sister",
-          "size": 0
+          "size": 1
         },
         {
           "key": "architects",
           "name": "Architects",
-          "size": 0
+          "size": 1
         },
         {
-          "key": "battle-beast",
-          "name": "Battle Beast",
-          "size": 0
-        },
-        {
-          "key": "catch-your-breath",
-          "name": "Catch Your Breath",
-          "size": 0
-        },
-        {
-          "key": "drain",
-          "name": "Drain",
-          "size": 0
-        },
-        {
-          "key": "europe",
-          "name": "Europe",
-          "size": 0
-        },
-        {
-          "key": "future-palace",
-          "name": "Future Palace",
-          "size": 0
-        },
-        {
-          "key": "hollywood-undead",
-          "name": "Hollywood Undead",
-          "size": 0
-        },
-        {
-          "key": "lacuna-coil",
-          "name": "Lacuna Coil",
-          "size": 0
-        },
-        {
-          "key": "anthrax",
-          "name": "Anthrax",
-          "size": 0
-        },
-        {
-          "key": "wargasm",
-          "name": "Wargasm",
-          "size": 0
-        },
-        {
-          "key": "sabaton",
-          "name": "Sabaton",
-          "size": 0
-        },
-        {
-          "key": "venom",
-          "name": "Venom",
-          "size": 0
-        },
-        {
-          "key": "mouth-culture",
-          "name": "Mouth Culture",
-          "size": 0
-        },
-        {
-          "key": "rivers-of-nihil",
-          "name": "Rivers Of Nihil",
-          "size": 0
-        },
-        {
-          "key": "tesseract",
-          "name": "Tesseract",
-          "size": 0
-        },
-        {
-          "key": "uncle-acid-and-the-deadbeats",
-          "name": "Uncle Acid \u0026 The Deadbeats",
-          "size": 0
-        },
-        {
-          "key": "alice-cooper",
-          "name": "Alice Cooper",
-          "size": 0
-        },
-        {
-          "key": "ankor",
-          "name": "Ankor",
-          "size": 0
+          "key": "bad-omens",
+          "name": "Bad Omens",
+          "size": 1
         },
         {
           "key": "black-label-society",
           "name": "Black Label Society",
-          "size": 0
+          "size": 1
         },
         {
-          "key": "corrosion-of-conformity",
-          "name": "Corrosion Of Conformity",
-          "size": 0
+          "key": "bring-me-the-horizon",
+          "name": "Bring Me The Horizon",
+          "size": 1
         },
         {
-          "key": "drowning-pool",
-          "name": "Drowning Pool",
-          "size": 0
-        },
-        {
-          "key": "extreme",
-          "name": "Extreme",
-          "size": 0
-        },
-        {
-          "key": "gaerea",
-          "name": "Gaerea",
-          "size": 0
+          "key": "electric-callboy",
+          "name": "Electric Callboy",
+          "size": 1
         },
         {
           "key": "ice-nine-kills",
           "name": "Ice Nine Kills",
-          "size": 0
+          "size": 1
+        },
+        {
+          "key": "lacuna-coil",
+          "name": "Lacuna Coil",
+          "size": 1
+        },
+        {
+          "key": "limp-bizkit",
+          "name": "Limp Bizkit",
+          "size": 1
+        },
+        {
+          "key": "sabaton",
+          "name": "Sabaton",
+          "size": 1
+        },
+        {
+          "key": "sepultura",
+          "name": "Sepultura",
+          "size": 1
+        },
+        {
+          "key": "three-days-grace",
+          "name": "Three Days Grace",
+          "size": 1
+        },
+        {
+          "key": "trivium",
+          "name": "Trivium",
+          "size": 1
+        },
+        {
+          "key": "volbeat",
+          "name": "Volbeat",
+          "size": 1
+        },
+        {
+          "key": "within-temptation",
+          "name": "Within Temptation",
+          "size": 1
+        },
+        {
+          "key": "megadeth",
+          "name": "Megadeth",
+          "size": 1
+        },
+        {
+          "key": "breaking-benjamin",
+          "name": "Breaking Benjamin",
+          "size": 1
+        },
+        {
+          "key": "lionheart",
+          "name": "Lionheart",
+          "size": 1
+        },
+        {
+          "key": "set-it-off",
+          "name": "Set It Off",
+          "size": 1
+        },
+        {
+          "key": "wind-rose",
+          "name": "Wind Rose",
+          "size": 1
+        },
+        {
+          "key": "oranssi-pazuzu",
+          "name": "Oranssi Pazuzu",
+          "size": 1
+        },
+        {
+          "key": "scowl",
+          "name": "Scowl",
+          "size": 1
+        },
+        {
+          "key": "the-funeral-portrait",
+          "name": "The Funeral Portrait",
+          "size": 1
+        },
+        {
+          "key": "moonspell",
+          "name": "Moonspell",
+          "size": 1
+        },
+        {
+          "key": "p.o.d.",
+          "name": "P.o.d.",
+          "size": 1
+        },
+        {
+          "key": "bloodywood",
+          "name": "Bloodywood",
+          "size": 1
+        },
+        {
+          "key": "cult-of-luna",
+          "name": "Cult Of Luna",
+          "size": 1
+        },
+        {
+          "key": "ego-kill-talent",
+          "name": "Ego Kill Talent",
+          "size": 1
+        },
+        {
+          "key": "faetooth",
+          "name": "Faetooth",
+          "size": 1
+        },
+        {
+          "key": "gatecreeper",
+          "name": "Gatecreeper",
+          "size": 1
+        },
+        {
+          "key": "john-coffey",
+          "name": "John Coffey",
+          "size": 1
+        },
+        {
+          "key": "lakeview",
+          "name": "Lakeview",
+          "size": 1
+        },
+        {
+          "key": "magnolia-park",
+          "name": "Magnolia Park",
+          "size": 1
+        },
+        {
+          "key": "president",
+          "name": "President",
+          "size": 1
+        },
+        {
+          "key": "mastodon",
+          "name": "Mastodon",
+          "size": 1
+        },
+        {
+          "key": "static-x",
+          "name": "Static-X",
+          "size": 1
+        },
+        {
+          "key": "accept",
+          "name": "Accept",
+          "size": 1
+        },
+        {
+          "key": "pennywise",
+          "name": "Pennywise",
+          "size": 1
+        },
+        {
+          "key": "the-plot-in-you",
+          "name": "The Plot In You",
+          "size": 1
+        },
+        {
+          "key": "we-came-as-romans",
+          "name": "We Came As Romans",
+          "size": 1
+        },
+        {
+          "key": "wolves-in-the-throne-room",
+          "name": "Wolves In The Throne Room",
+          "size": 1
+        },
+        {
+          "key": "babymetal",
+          "name": "Babymetal",
+          "size": 1
+        },
+        {
+          "key": "death-to-all",
+          "name": "Death To All",
+          "size": 1
+        },
+        {
+          "key": "elder",
+          "name": "Elder",
+          "size": 1
+        },
+        {
+          "key": "feuerschwanz",
+          "name": "Feuerschwanz",
+          "size": 1
+        },
+        {
+          "key": "grade-2",
+          "name": "Grade 2",
+          "size": 1
+        },
+        {
+          "key": "kadavar",
+          "name": "Kadavar",
+          "size": 1
+        },
+        {
+          "key": "life-of-agony",
+          "name": "Life Of Agony",
+          "size": 1
+        },
+        {
+          "key": "uada",
+          "name": "Uada",
+          "size": 1
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh",
+          "size": 1
+        },
+        {
+          "key": "old-man's-child",
+          "name": "Old Man's Child",
+          "size": 1
+        },
+        {
+          "key": "the-dillinger-escape-plan",
+          "name": "The Dillinger Escape Plan",
+          "size": 1
+        },
+        {
+          "key": "loathe",
+          "name": "Loathe",
+          "size": 1
+        },
+        {
+          "key": "possessed",
+          "name": "Possessed",
+          "size": 1
+        },
+        {
+          "key": "sinsaenum",
+          "name": "Sinsaenum",
+          "size": 1
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering",
+          "size": 1
+        },
+        {
+          "key": "bury-tomorrow",
+          "name": "Bury Tomorrow",
+          "size": 1
+        },
+        {
+          "key": "decapitated",
+          "name": "Decapitated",
+          "size": 1
+        },
+        {
+          "key": "forbidden",
+          "name": "Forbidden",
+          "size": 1
+        },
+        {
+          "key": "guilt-trip",
+          "name": "Guilt Trip",
+          "size": 1
+        },
+        {
+          "key": "kanonenfieber",
+          "name": "Kanonenfieber",
+          "size": 1
+        },
+        {
+          "key": "six-feet-under",
+          "name": "Six Feet Under",
+          "size": 1
+        },
+        {
+          "key": "tx2",
+          "name": "Tx2",
+          "size": 1
+        },
+        {
+          "key": "periphery",
+          "name": "Periphery",
+          "size": 1
+        },
+        {
+          "key": "thornhill",
+          "name": "Thornhill",
+          "size": 1
+        },
+        {
+          "key": "mammoth",
+          "name": "Mammoth",
+          "size": 1
+        },
+        {
+          "key": "primal-fear",
+          "name": "Primal Fear",
+          "size": 1
+        },
+        {
+          "key": "snot",
+          "name": "Snot",
+          "size": 1
+        },
+        {
+          "key": "tom-morello",
+          "name": "Tom Morello",
+          "size": 1
+        },
+        {
+          "key": "letlive.",
+          "name": "Letlive.",
+          "size": 1
+        },
+        {
+          "key": "return-to-dust",
+          "name": "Return To Dust",
+          "size": 1
+        },
+        {
+          "key": "bark",
+          "name": "Bark",
+          "size": 1
+        },
+        {
+          "key": "carpenter-brut",
+          "name": "Carpenter Brut",
+          "size": 1
+        },
+        {
+          "key": "def-leppard",
+          "name": "Def Leppard",
+          "size": 1
+        },
+        {
+          "key": "embryonic-autopsy",
+          "name": "Embryonic Autopsy",
+          "size": 1
+        },
+        {
+          "key": "foreigner",
+          "name": "Foreigner",
+          "size": 1
+        },
+        {
+          "key": "harms-way",
+          "name": "Harms Way",
+          "size": 1
+        },
+        {
+          "key": "kublai-khan-tx",
+          "name": "Kublai Khan Tx",
+          "size": 1
+        },
+        {
+          "key": "a-day-to-remember",
+          "name": "A Day To Remember",
+          "size": 1
+        },
+        {
+          "key": "avatar",
+          "name": "Avatar",
+          "size": 1
+        },
+        {
+          "key": "thrown",
+          "name": "Thrown",
+          "size": 1
+        },
+        {
+          "key": "queensryche",
+          "name": "Queensrÿche",
+          "size": 1
+        },
+        {
+          "key": "rain-city-drive",
+          "name": "Rain City Drive",
+          "size": 1
+        },
+        {
+          "key": "sólstafir",
+          "name": "Sólstafir",
+          "size": 1
+        },
+        {
+          "key": "twisted-sister",
+          "name": "Twisted Sister",
+          "size": 1
+        },
+        {
+          "key": "battle-beast",
+          "name": "Battle Beast",
+          "size": 1
+        },
+        {
+          "key": "catch-your-breath",
+          "name": "Catch Your Breath",
+          "size": 1
+        },
+        {
+          "key": "drain",
+          "name": "Drain",
+          "size": 1
+        },
+        {
+          "key": "europe",
+          "name": "Europe",
+          "size": 1
+        },
+        {
+          "key": "future-palace",
+          "name": "Future Palace",
+          "size": 1
+        },
+        {
+          "key": "hollywood-undead",
+          "name": "Hollywood Undead",
+          "size": 1
+        },
+        {
+          "key": "anthrax",
+          "name": "Anthrax",
+          "size": 1
+        },
+        {
+          "key": "wargasm",
+          "name": "Wargasm",
+          "size": 1
+        },
+        {
+          "key": "venom",
+          "name": "Venom",
+          "size": 1
+        },
+        {
+          "key": "mouth-culture",
+          "name": "Mouth Culture",
+          "size": 1
+        },
+        {
+          "key": "rivers-of-nihil",
+          "name": "Rivers Of Nihil",
+          "size": 1
+        },
+        {
+          "key": "tesseract",
+          "name": "Tesseract",
+          "size": 1
+        },
+        {
+          "key": "uncle-acid-and-the-deadbeats",
+          "name": "Uncle Acid \u0026 The Deadbeats",
+          "size": 1
+        },
+        {
+          "key": "ankor",
+          "name": "Ankor",
+          "size": 1
+        },
+        {
+          "key": "corrosion-of-conformity",
+          "name": "Corrosion Of Conformity",
+          "size": 1
+        },
+        {
+          "key": "drowning-pool",
+          "name": "Drowning Pool",
+          "size": 1
+        },
+        {
+          "key": "extreme",
+          "name": "Extreme",
+          "size": 1
+        },
+        {
+          "key": "gaerea",
+          "name": "Gaerea",
+          "size": 1
         },
         {
           "key": "lagwagon",
           "name": "Lagwagon",
-          "size": 0
+          "size": 1
         }
       ],
       "ticketPrice": 319
@@ -3128,7 +3128,7 @@
           "size": 2
         }
       ],
-      "ticketPrice": 3450
+      "ticketPrice": 345
     },
     {
       "key": "brutal-assault",
@@ -3614,13 +3614,13 @@
           "size": 0
         },
         {
-          "key": "blood-fire-death-–-a-tribute-to-bathory",
-          "name": "Blood Fire Death – A Tribute To Bathory",
+          "key": "blood-fire-death-a-tribute-to-bathory",
+          "name": "Blood Fire Death - A Tribute To Bathory",
           "size": 2
         },
         {
-          "key": "h‑blockx",
-          "name": "H‑Blockx",
+          "key": "h-blockx",
+          "name": "HBlockx",
           "size": 2
         }
       ],
@@ -3638,9 +3638,14 @@
         "lat": 38.6372,
         "lng": -0.8657
       },
-      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09ctI_UejVHK9a-iFQ9P2J0C6-Zp9a_dPKg\u0026s",
+      "poster": "https://www.hellpress.com/wp-content/uploads/2024/07/leyendas-del-rock-2025-696x392.jpg",
       "website": "https://www.leyendasdelrockfestival.com",
       "bands": [
+        {
+          "key": "black-label-society",
+          "name": "Black Label Society",
+          "size": 3
+        },
         {
           "key": "helloween",
           "name": "Helloween",
@@ -3657,13 +3662,18 @@
           "size": 3
         },
         {
-          "key": "godsmack",
-          "name": "Godsmack",
+          "key": "savatage",
+          "name": "Savatage",
+          "size": 3
+        },
+        {
+          "key": "dark-tranquillity",
+          "name": "Dark Tranquillity",
           "size": 2
         },
         {
-          "key": "warcry",
-          "name": "Warcry",
+          "key": "godsmack",
+          "name": "Godsmack",
           "size": 2
         },
         {
@@ -3672,34 +3682,14 @@
           "size": 2
         },
         {
-          "key": "nothing-more",
-          "name": "Nothing More",
-          "size": 0
+          "key": "warcry",
+          "name": "Warcry",
+          "size": 2
         },
         {
           "key": "deicide",
           "name": "Deicide",
           "size": 2
-        },
-        {
-          "key": "dark-tranquillity",
-          "name": "Dark Tranquillity",
-          "size": 2
-        },
-        {
-          "key": "of-mice-and-men",
-          "name": "Of Mice \u0026 Men",
-          "size": 0
-        },
-        {
-          "key": "black-label-society",
-          "name": "Black Label Society",
-          "size": 3
-        },
-        {
-          "key": "savatage",
-          "name": "Savatage",
-          "size": 3
         },
         {
           "key": "heaven-shall-burn",
@@ -3745,6 +3735,16 @@
           "key": "latzen",
           "name": "Latzen",
           "size": 2
+        },
+        {
+          "key": "nothing-more",
+          "name": "Nothing More",
+          "size": 1
+        },
+        {
+          "key": "of-mice-and-men",
+          "name": "Of Mice \u0026 Men",
+          "size": 1
         },
         {
           "key": "chelsea-grin",
@@ -4760,7 +4760,7 @@
         "lat": 59.9139,
         "lng": 10.7522
       },
-      "poster": "",
+      "poster": "https://i0.wp.com/www.rockinspain.es/wp-content/uploads/2025/08/Inferno-Metal-Festival-2026.jpg",
       "website": "https://www.infernofestival.net/",
       "bands": [
         {
@@ -4777,11 +4777,6 @@
           "key": "samael",
           "name": "Samael",
           "size": 3
-        },
-        {
-          "key": "old-mans-child",
-          "name": "Old Man'S Child",
-          "size": 0
         },
         {
           "key": "incantation",
@@ -4807,11 +4802,6 @@
           "key": "funeral",
           "name": "Funeral",
           "size": 3
-        },
-        {
-          "key": "múr",
-          "name": "Múr",
-          "size": 0
         },
         {
           "key": "nite",
@@ -4899,24 +4889,9 @@
           "size": 3
         },
         {
-          "key": "attan",
-          "name": "Attan",
-          "size": 0
-        },
-        {
-          "key": "uma",
-          "name": "Uma",
-          "size": 0
-        },
-        {
-          "key": "dizmal",
-          "name": "Dizmal",
-          "size": 0
-        },
-        {
-          "key": "mörk",
-          "name": "Mörk",
-          "size": 0
+          "key": "mûr",
+          "name": "Mûr",
+          "size": 3
         },
         {
           "key": "groza",
@@ -4989,14 +4964,39 @@
           "size": 2
         },
         {
-          "key": "mûr",
-          "name": "Mûr",
-          "size": 3
-        },
-        {
           "key": "mork",
           "name": "Mork",
           "size": 2
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Man'S Child",
+          "size": 1
+        },
+        {
+          "key": "múr",
+          "name": "Múr",
+          "size": 1
+        },
+        {
+          "key": "attan",
+          "name": "Attan",
+          "size": 1
+        },
+        {
+          "key": "uma",
+          "name": "Uma",
+          "size": 1
+        },
+        {
+          "key": "dizmal",
+          "name": "Dizmal",
+          "size": 1
+        },
+        {
+          "key": "mörk",
+          "name": "Mörk",
+          "size": 1
         },
         {
           "key": "cult-of-luna",
@@ -5059,7 +5059,7 @@
           "size": 1
         }
       ],
-      "ticketPrice": 4350
+      "ticketPrice": 435
     },
     {
       "key": "alcatraz-open-air-2026",
@@ -5073,63 +5073,63 @@
         "lat": 50.826,
         "lng": 3.264
       },
-      "poster": "",
+      "poster": "https://www.gigview.be/sites/default/files/logo%27s%20festivals/2020/alcatraz-2020.png",
       "website": "https://www.alcatraz.be/en/",
       "bands": [
         {
           "key": "arch-enemy",
           "name": "Arch Enemy",
-          "size": 0
-        },
-        {
-          "key": "alestorm",
-          "name": "Alestorm",
-          "size": 0
-        },
-        {
-          "key": "powerwolf",
-          "name": "Powerwolf",
-          "size": 0
-        },
-        {
-          "key": "savatage",
-          "name": "Savatage",
-          "size": 0
-        },
-        {
-          "key": "slaughter-to-prevail",
-          "name": "Slaughter To Prevail",
-          "size": 0
-        },
-        {
-          "key": "do-or-die",
-          "name": "Do Or Die",
-          "size": 0
+          "size": 1
         },
         {
           "key": "electric-callboy",
           "name": "Electric Callboy",
-          "size": 0
+          "size": 1
+        },
+        {
+          "key": "slaughter-to-prevail",
+          "name": "Slaughter To Prevail",
+          "size": 1
+        },
+        {
+          "key": "alestorm",
+          "name": "Alestorm",
+          "size": 1
+        },
+        {
+          "key": "powerwolf",
+          "name": "Powerwolf",
+          "size": 1
+        },
+        {
+          "key": "savatage",
+          "name": "Savatage",
+          "size": 1
+        },
+        {
+          "key": "do-or-die",
+          "name": "Do Or Die",
+          "size": 1
         },
         {
           "key": "cult-of-luna",
           "name": "Cult Of Luna",
-          "size": 0
+          "size": 1
         },
         {
           "key": "devastatiön",
           "name": "Devastatiön",
-          "size": 0
+          "size": 1
         },
         {
           "key": "violent-sin",
           "name": "Violent Sin",
-          "size": 0
+          "size": 1
         },
         {
           "key": "the-exploited",
           "name": "The Exploited",
-          "size": 0
+          "size": 1
         }
       ],
       "ticketPrice": 219
@@ -5350,7 +5350,7 @@
           "size": 1
         }
       ],
-      "ticketPrice": 769
+      "ticketPrice": 269
     },
     {
       "key": "rockstadt-extreme-fest-2026",
@@ -5563,7 +5563,7 @@
           "size": 1
         }
       ],
-      "ticketPrice": 1050
+      "ticketPrice": 105
     },
     {
       "key": "rock-for-people-2026",
@@ -5691,12 +5691,12 @@
           "size": 1
         },
         {
-          "key": "static‑x",
-          "name": "Static‑X",
+          "key": "static-x",
+          "name": "Static-X",
           "size": 2
         }
       ],
-      "ticketPrice": 5190
+      "ticketPrice": 219
     },
     {
       "key": "jera-on-air-2026",
@@ -5710,12 +5710,12 @@
         "lat": 51.4033,
         "lng": 5.9344
       },
-      "poster": "",
+      "poster": "https://www.jambase.com/wp-content/uploads/2025/01/jera-on-air-2025-featured.jpg",
       "website": "https://www.jeraonair.nl",
       "bands": [
         {
-          "key": "the-offspring",
-          "name": "The Offspring",
+          "key": "architects",
+          "name": "Architects",
           "size": 1
         },
         {
@@ -5724,9 +5724,14 @@
           "size": 1
         },
         {
+          "key": "the-offspring",
+          "name": "The Offspring",
+          "size": 1
+        },
+        {
           "key": "rise-against",
           "name": "Rise Against",
-          "size": 0
+          "size": 1
         },
         {
           "key": "all-time-low",
@@ -5736,41 +5741,36 @@
         {
           "key": "bury-tomorrow",
           "name": "Bury Tomorrow",
-          "size": 0
+          "size": 1
         },
         {
           "key": "ignite",
           "name": "Ignite",
-          "size": 0
+          "size": 1
         },
         {
           "key": "imminence",
           "name": "Imminence",
-          "size": 0
+          "size": 1
         },
         {
           "key": "malevolence",
           "name": "Malevolence",
-          "size": 0
+          "size": 1
         },
         {
           "key": "magnolia-park",
           "name": "Magnolia Park",
-          "size": 0
+          "size": 1
         },
         {
-          "key": "wargasm-uk",
+          "key": "wargasm",
           "name": "Wargasm",
-          "size": 0
+          "size": 1
         },
         {
           "key": "ho99o9",
           "name": "Ho99O9",
-          "size": 0
-        },
-        {
-          "key": "architects",
-          "name": "Architects",
           "size": 1
         },
         {
@@ -6079,12 +6079,27 @@
         "lat": 48.2833,
         "lng": -3.5833
       },
-      "poster": "",
+      "poster": "https://info-festival.net/wp-content/uploads/2025/04/motocultor-visuel-2026.jpg",
       "website": "https://www.motocultor-festival.com",
       "bands": [
         {
-          "key": "within-temptation",
-          "name": "Within Temptation",
+          "key": "200-stab-wounds",
+          "name": "200 Stab Wounds",
+          "size": 1
+        },
+        {
+          "key": "cold-snap",
+          "name": "Cold Snap",
+          "size": 1
+        },
+        {
+          "key": "godsmack",
+          "name": "Godsmack",
+          "size": 1
+        },
+        {
+          "key": "lone-survivors",
+          "name": "Lone Survivors",
           "size": 1
         },
         {
@@ -6093,24 +6108,19 @@
           "size": 1
         },
         {
+          "key": "within-temptation",
+          "name": "Within Temptation",
+          "size": 1
+        },
+        {
           "key": "nanowar-of-steel",
           "name": "Nanowar Of Steel",
-          "size": 0
+          "size": 1
         },
         {
           "key": "uuhai",
           "name": "Uuhai",
-          "size": 0
-        },
-        {
-          "key": "cold-snap",
-          "name": "Cold Snap",
-          "size": 0
-        },
-        {
-          "key": "lone-survivors",
-          "name": "Lone Survivors",
-          "size": 0
+          "size": 1
         },
         {
           "key": "ashen",
@@ -6140,7 +6150,7 @@
         {
           "key": "heavy//hitter",
           "name": "Heavy//Hitter",
-          "size": 0
+          "size": 1
         },
         {
           "key": "jools",
@@ -6268,18 +6278,8 @@
           "size": 1
         },
         {
-          "key": "200-stab-wounds",
-          "name": "200 Stab Wounds",
-          "size": 1
-        },
-        {
           "key": "death-angel",
           "name": "Death Angel",
-          "size": 1
-        },
-        {
-          "key": "godsmack",
-          "name": "Godsmack",
           "size": 1
         },
         {
@@ -6350,7 +6350,7 @@
         {
           "key": "steve'n'seagulls",
           "name": "Steve'n'seagulls",
-          "size": 0
+          "size": 1
         }
       ],
       "ticketPrice": 217
@@ -6658,18 +6658,18 @@
         "lat": 59.6548,
         "lng": 5.5339
       },
-      "poster": "",
+      "poster": "https://es.concerts-metal.com/images/fest/1598469171.webp",
       "website": "https://www.karmoygeddon.no/",
       "bands": [
+        {
+          "key": "dark-tranquillity",
+          "name": "Dark Tranquillity",
+          "size": 3
+        },
         {
           "key": "accept",
           "name": "Accept",
           "size": 3
-        },
-        {
-          "key": "insomnium",
-          "name": "Insomnium",
-          "size": 2
         },
         {
           "key": "annisokay",
@@ -6677,9 +6677,9 @@
           "size": 2
         },
         {
-          "key": "septicflesh",
-          "name": "Septicflesh",
-          "size": 0
+          "key": "insomnium",
+          "name": "Insomnium",
+          "size": 2
         },
         {
           "key": "hardcore-superstar",
@@ -6697,19 +6697,9 @@
           "size": 2
         },
         {
-          "key": "abbath",
-          "name": "Abbath",
-          "size": 0
-        },
-        {
           "key": "infected-rain",
           "name": "Infected Rain",
           "size": 2
-        },
-        {
-          "key": "phil-campbell-and-the-bastard-sons",
-          "name": "Phil Campbell And The Bastard Sons",
-          "size": 0
         },
         {
           "key": "old-mans-child",
@@ -6730,11 +6720,6 @@
           "key": "wolfheart",
           "name": "Wolfheart",
           "size": 2
-        },
-        {
-          "key": "ambush-sweden",
-          "name": "Ambush",
-          "size": 0
         },
         {
           "key": "saor",
@@ -6777,21 +6762,6 @@
           "size": 2
         },
         {
-          "key": "captain-black-beard",
-          "name": "Captain Black Beard",
-          "size": 0
-        },
-        {
-          "key": "dark-tranquillity",
-          "name": "Dark Tranquillity",
-          "size": 3
-        },
-        {
-          "key": "old-mans-child",
-          "name": "Old Mans Child",
-          "size": 0
-        },
-        {
           "key": "sigtyr",
           "name": "Sigtyr",
           "size": 2
@@ -6812,11 +6782,6 @@
           "size": 2
         },
         {
-          "key": "kissin-dynamite",
-          "name": "Kissin Dynamite",
-          "size": 0
-        },
-        {
           "key": "vintersorg",
           "name": "Vintersorg",
           "size": 2
@@ -6825,11 +6790,6 @@
           "key": "havukruunu",
           "name": "Havukruunu",
           "size": 2
-        },
-        {
-          "key": "setyoursails",
-          "name": "Setyoursails",
-          "size": 0
         },
         {
           "key": "wheel",
@@ -6850,11 +6810,6 @@
           "key": "uburen",
           "name": "Uburen",
           "size": 2
-        },
-        {
-          "key": "abbath---doom-occulta",
-          "name": "Abbath - Doom Occulta",
-          "size": 0
         },
         {
           "key": "phil-campbel-and-the-bastard-sons-–-plays-motorhead",
@@ -6885,9 +6840,54 @@
           "key": "clawfinger",
           "name": "Clawfinger",
           "size": 2
+        },
+        {
+          "key": "septicflesh",
+          "name": "Septicflesh",
+          "size": 1
+        },
+        {
+          "key": "abbath",
+          "name": "Abbath",
+          "size": 1
+        },
+        {
+          "key": "phil-campbell-and-the-bastard-sons",
+          "name": "Phil Campbell And The Bastard Sons",
+          "size": 1
+        },
+        {
+          "key": "old-mans-child",
+          "name": "Old Mans Child",
+          "size": 1
+        },
+        {
+          "key": "kissin-dynamite",
+          "name": "Kissin Dynamite",
+          "size": 1
+        },
+        {
+          "key": "ambush-sweden",
+          "name": "Ambush",
+          "size": 1
+        },
+        {
+          "key": "setyoursails",
+          "name": "Setyoursails",
+          "size": 1
+        },
+        {
+          "key": "captain-black-beard",
+          "name": "Captain Black Beard",
+          "size": 1
+        },
+        {
+          "key": "abbath---doom-occulta",
+          "name": "Abbath - Doom Occulta",
+          "size": 1
         }
       ],
-      "ticketPrice": 999
+      "ticketPrice": 199
     },
     {
       "key": "dynamo-metalfest-2026",
@@ -7083,7 +7083,7 @@
       "ticketPrice": 159
     },
     {
-      "key": "",
+      "key": "tons-of-rock",
       "name": "Tons Of Rock 2026",
       "dates": {
         "start": "2026-06-24",
@@ -7258,10 +7258,10 @@
           "size": 1
         }
       ],
-      "ticketPrice": 4399
+      "ticketPrice": 439
     },
     {
-      "key": "",
+      "key": "rock-pod-kamenom",
       "name": "Rock Pod Kameňom 2026",
       "dates": {
         "start": "2026-06-25",
@@ -7317,174 +7317,6 @@
         }
       ],
       "ticketPrice": 84
-    },
-    {
-      "key": "",
-      "name": "Tons Of Rock 2026",
-      "dates": {
-        "start": "2026-06-24",
-        "end": "2026-06-27"
-      },
-      "location": "Oslo, Norway",
-      "coordinates": {
-        "lat": 59.9074,
-        "lng": 10.7745
-      },
-      "poster": "",
-      "website": "https://www.tonsofrock.no/",
-      "bands": [
-        {
-          "key": "iron-maiden",
-          "name": "Iron Maiden",
-          "size": 0
-        },
-        {
-          "key": "bring-me-the-horizon",
-          "name": "Bring Me The Horizon",
-          "size": 0
-        },
-        {
-          "key": "limp-bizkit",
-          "name": "Limp Bizkit",
-          "size": 0
-        },
-        {
-          "key": "alice-cooper",
-          "name": "Alice Cooper",
-          "size": 0
-        },
-        {
-          "key": "twisted-sister",
-          "name": "Twisted Sister",
-          "size": 0
-        },
-        {
-          "key": "anthrax",
-          "name": "Anthrax",
-          "size": 0
-        },
-        {
-          "key": "mayhem",
-          "name": "Mayhem",
-          "size": 0
-        },
-        {
-          "key": "dumdum-boys",
-          "name": "Dumdum Boys",
-          "size": 0
-        },
-        {
-          "key": "raga-rockers",
-          "name": "Raga Rockers",
-          "size": 0
-        },
-        {
-          "key": "the-carburetors",
-          "name": "The Carburetors",
-          "size": 0
-        },
-        {
-          "key": "blood-fire-death",
-          "name": "Blood Fire Death",
-          "size": 0
-        },
-        {
-          "key": "kublai-khan-tx",
-          "name": "Kublai Khan TX",
-          "size": 0
-        },
-        {
-          "key": "die-spitz",
-          "name": "Die Spitz",
-          "size": 0
-        },
-        {
-          "key": "queensryche",
-          "name": "Queensrÿche",
-          "size": 0
-        },
-        {
-          "key": "blood-incantation",
-          "name": "Blood Incantation",
-          "size": 0
-        },
-        {
-          "key": "yungblud",
-          "name": "Yungblud",
-          "size": 0
-        },
-        {
-          "key": "the-offspring",
-          "name": "The Offspring",
-          "size": 0
-        },
-        {
-          "key": "a-perfect-circle",
-          "name": "A Perfect Circle",
-          "size": 0
-        },
-        {
-          "key": "tom-morello",
-          "name": "Tom Morello",
-          "size": 0
-        },
-        {
-          "key": "babymetal",
-          "name": "Babymetal",
-          "size": 0
-        },
-        {
-          "key": "d-a-d",
-          "name": "D-A-D",
-          "size": 0
-        },
-        {
-          "key": "cavalera",
-          "name": "Cavalera",
-          "size": 0
-        },
-        {
-          "key": "the-pretty-reckless",
-          "name": "The Pretty Reckless",
-          "size": 0
-        },
-        {
-          "key": "black-label-society",
-          "name": "Black Label Society",
-          "size": 0
-        },
-        {
-          "key": "apocalyptica",
-          "name": "Apocalyptica",
-          "size": 0
-        },
-        {
-          "key": "death-to-all",
-          "name": "Death To All",
-          "size": 0
-        },
-        {
-          "key": "audrey-horne",
-          "name": "Audrey Horne",
-          "size": 0
-        },
-        {
-          "key": "elder",
-          "name": "Elder",
-          "size": 0
-        },
-        {
-          "key": "gatecreeper",
-          "name": "Gatecreeper",
-          "size": 0
-        },
-        {
-          "key": "gaerea",
-          "name": "Gaerea",
-          "size": 0
-        }
-      ],
-      "ticketPrice": 419
     }
   ],
   "bands": [
