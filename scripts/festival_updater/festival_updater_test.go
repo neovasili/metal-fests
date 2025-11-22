@@ -154,6 +154,8 @@ func TestGeneratePRSummary(t *testing.T) {
 				NewBands:         10,
 				UpdatedPrices:    2,
 				TotalTokens:      3000,
+				TotalCost:        0.10,
+				UsedModel:        "gpt-4o-mini",
 			},
 			contains: []string{
 				"# 🤖 Automated Festival Information Update",
@@ -162,7 +164,8 @@ func TestGeneratePRSummary(t *testing.T) {
 				"**New Bands Added**: 10",
 				"**Ticket Prices Updated**: 2",
 				"**Total Tokens**: 3000",
-				"gpt-4.1-mini",
+				"**Total Cost**: 0.10 €",
+				"gpt-4o-mini",
 				"scripts/festival_updater.go",
 				"*This PR was automatically generated. Please review the changes before merging.*",
 			},
@@ -228,6 +231,142 @@ func TestGeneratePRSummary(t *testing.T) {
 				if !strings.Contains(summary, substr) {
 					t.Errorf("generatePRSummary() missing expected substring: %q", substr)
 				}
+			}
+		})
+	}
+}
+
+func TestBandHasBeenUpdated(t *testing.T) {
+	tests := []struct {
+		name     string
+		bands    []model.BandRef
+		band     model.BandRef
+		expected bool
+	}{
+		{
+			name: "Band size changed",
+			bands: []model.BandRef{
+				{Key: "metallica", Name: "Metallica", Size: 1},
+				{Key: "iron-maiden", Name: "Iron Maiden", Size: 2},
+			},
+			band:     model.BandRef{Key: "metallica", Name: "Metallica", Size: 3},
+			expected: true,
+		},
+		{
+			name: "Band name changed",
+			bands: []model.BandRef{
+				{Key: "metallica", Name: "Metallica", Size: 1},
+			},
+			band:     model.BandRef{Key: "metallica", Name: "Metallica!", Size: 1},
+			expected: true,
+		},
+		{
+			name: "Band unchanged",
+			bands: []model.BandRef{
+				{Key: "metallica", Name: "Metallica", Size: 1},
+			},
+			band:     model.BandRef{Key: "metallica", Name: "Metallica", Size: 1},
+			expected: false,
+		},
+		{
+			name: "Band not in list",
+			bands: []model.BandRef{
+				{Key: "metallica", Name: "Metallica", Size: 1},
+			},
+			band:     model.BandRef{Key: "slayer", Name: "Slayer", Size: 2},
+			expected: false,
+		},
+		{
+			name:     "Empty band list",
+			bands:    []model.BandRef{},
+			band:     model.BandRef{Key: "metallica", Name: "Metallica", Size: 1},
+			expected: false,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := bandHasBeenUpdated(tt.bands, tt.band)
+			if result != tt.expected {
+				t.Errorf("bandHasBeenUpdated() = %v, want %v", result, tt.expected)
+			}
+		})
+	}
+}
+
+func TestUpdateBandData(t *testing.T) {
+	tests := []struct {
+		name             string
+		festival         model.Festival
+		band             model.BandRef
+		expectedBandSize int
+		expectedBandName string
+	}{
+		{
+			name: "Update existing band size",
+			festival: model.Festival{
+				Key:  "wacken-2026",
+				Name: "Wacken 2026",
+				Bands: []model.BandRef{
+					{Key: "metallica", Name: "Metallica", Size: 1},
+					{Key: "iron-maiden", Name: "Iron Maiden", Size: 2},
+				},
+			},
+			band:             model.BandRef{Key: "metallica", Name: "Metallica", Size: 3},
+			expectedBandSize: 3,
+			expectedBandName: "Metallica",
+		},
+		{
+			name: "Update existing band name",
+			festival: model.Festival{
+				Key:  "wacken-2026",
+				Name: "Wacken 2026",
+				Bands: []model.BandRef{
+					{Key: "metallica", Name: "Metalica", Size: 1},
+				},
+			},
+			band:             model.BandRef{Key: "metallica", Name: "Metallica", Size: 1},
+			expectedBandSize: 1,
+			expectedBandName: "Metallica",
+		},
+		{
+			name: "Update band in middle of list",
+			festival: model.Festival{
+				Key:  "test-fest",
+				Name: "Test Fest",
+				Bands: []model.BandRef{
+					{Key: "band1", Name: "Band 1", Size: 1},
+					{Key: "band2", Name: "Band 2", Size: 2},
+					{Key: "band3", Name: "Band 3", Size: 3},
+				},
+			},
+			band:             model.BandRef{Key: "band2", Name: "Band Two", Size: 5},
+			expectedBandSize: 5,
+			expectedBandName: "Band Two",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := updateBandData(tt.festival, tt.band)
+
+			// Find the updated band in the result
+			found := false
+			for _, b := range result.Bands {
+				if b.Key == tt.band.Key {
+					found = true
+					if b.Size != tt.expectedBandSize {
+						t.Errorf("Band size = %v, want %v", b.Size, tt.expectedBandSize)
+					}
+					if b.Name != tt.expectedBandName {
+						t.Errorf("Band name = %v, want %v", b.Name, tt.expectedBandName)
+					}
+					break
+				}
+			}
+
+			if !found {
+				t.Errorf("Band with key %q not found in updated festival", tt.band.Key)
 			}
 		})
 	}
