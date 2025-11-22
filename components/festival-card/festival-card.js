@@ -65,13 +65,35 @@ class FestivalCard {
       return '<span class="band-tag">Coming soon...</span>';
     }
 
-    return bands
+    // Sort bands by size (descending) then alphabetically
+    const sortedBands = [...bands].sort((a, b) => {
+      // Primary sort: size descending (biggest first)
+      if (b.size !== a.size) {
+        return b.size - a.size;
+      }
+      // Secondary sort: alphabetical ascending
+      return a.name.localeCompare(b.name);
+    });
+
+    return sortedBands
       .map((bandRef) => {
         const hasCompleteInfo = bandManager.hasCompleteInfo(bandRef.name);
         const bandData = bandManager.getBandByName(bandRef.name);
         const clickableClass = hasCompleteInfo ? " clickable" : "";
         const dataKey = hasCompleteInfo && bandData ? ` data-band-key="${bandData.key}"` : "";
-        return `<span class="band-tag${clickableClass}"${dataKey}>${bandRef.name}</span>`;
+
+        // Determine tier based on size (0 and 1 = tier-1, 2 = tier-2, 3 = tier-3)
+        const size = bandRef.size || 0;
+        let tierClass = "";
+        if (size >= 3) {
+          tierClass = " tier-3";
+        } else if (size === 2) {
+          tierClass = " tier-2";
+        } else {
+          tierClass = " tier-1";
+        }
+
+        return `<span class="band-tag${tierClass}${clickableClass}"${dataKey}>${bandRef.name}</span>`;
       })
       .join("");
   }
