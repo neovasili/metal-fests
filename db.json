@@ -7083,7 +7083,7 @@
       "ticketPrice": 159
     },
     {
-      "key": "",
+      "key": "tons-of-rock",
       "name": "Tons Of Rock 2026",
       "dates": {
         "start": "2026-06-24",
@@ -7261,7 +7261,7 @@
       "ticketPrice": 4399
     },
     {
-      "key": "",
+      "key": "rock-pod-kamenom",
       "name": "Rock Pod Kameňom 2026",
       "dates": {
         "start": "2026-06-25",
@@ -7317,174 +7317,6 @@
         }
       ],
       "ticketPrice": 84
-    },
-    {
-      "key": "",
-      "name": "Tons Of Rock 2026",
-      "dates": {
-        "start": "2026-06-24",
-        "end": "2026-06-27"
-      },
-      "location": "Oslo, Norway",
-      "coordinates": {
-        "lat": 59.9074,
-        "lng": 10.7745
-      },
-      "poster": "",
-      "website": "https://www.tonsofrock.no/",
-      "bands": [
-        {
-          "key": "iron-maiden",
-          "name": "Iron Maiden",
-          "size": 0
-        },
-        {
-          "key": "bring-me-the-horizon",
-          "name": "Bring Me The Horizon",
-          "size": 0
-        },
-        {
-          "key": "limp-bizkit",
-          "name": "Limp Bizkit",
-          "size": 0
-        },
-        {
-          "key": "alice-cooper",
-          "name": "Alice Cooper",
-          "size": 0
-        },
-        {
-          "key": "twisted-sister",
-          "name": "Twisted Sister",
-          "size": 0
-        },
-        {
-          "key": "anthrax",
-          "name": "Anthrax",
-          "size": 0
-        },
-        {
-          "key": "mayhem",
-          "name": "Mayhem",
-          "size": 0
-        },
-        {
-          "key": "dumdum-boys",
-          "name": "Dumdum Boys",
-          "size": 0
-        },
-        {
-          "key": "raga-rockers",
-          "name": "Raga Rockers",
-          "size": 0
-        },
-        {
-          "key": "the-carburetors",
-          "name": "The Carburetors",
-          "size": 0
-        },
-        {
-          "key": "blood-fire-death",
-          "name": "Blood Fire Death",
-          "size": 0
-        },
-        {
-          "key": "kublai-khan-tx",
-          "name": "Kublai Khan TX",
-          "size": 0
-        },
-        {
-          "key": "die-spitz",
-          "name": "Die Spitz",
-          "size": 0
-        },
-        {
-          "key": "queensryche",
-          "name": "Queensrÿche",
-          "size": 0
-        },
-        {
-          "key": "blood-incantation",
-          "name": "Blood Incantation",
-          "size": 0
-        },
-        {
-          "key": "yungblud",
-          "name": "Yungblud",
-          "size": 0
-        },
-        {
-          "key": "the-offspring",
-          "name": "The Offspring",
-          "size": 0
-        },
-        {
-          "key": "a-perfect-circle",
-          "name": "A Perfect Circle",
-          "size": 0
-        },
-        {
-          "key": "tom-morello",
-          "name": "Tom Morello",
-          "size": 0
-        },
-        {
-          "key": "babymetal",
-          "name": "Babymetal",
-          "size": 0
-        },
-        {
-          "key": "d-a-d",
-          "name": "D-A-D",
-          "size": 0
-        },
-        {
-          "key": "cavalera",
-          "name": "Cavalera",
-          "size": 0
-        },
-        {
-          "key": "the-pretty-reckless",
-          "name": "The Pretty Reckless",
-          "size": 0
-        },
-        {
-          "key": "black-label-society",
-          "name": "Black Label Society",
-          "size": 0
-        },
-        {
-          "key": "apocalyptica",
-          "name": "Apocalyptica",
-          "size": 0
-        },
-        {
-          "key": "death-to-all",
-          "name": "Death To All",
-          "size": 0
-        },
-        {
-          "key": "audrey-horne",
-          "name": "Audrey Horne",
-          "size": 0
-        },
-        {
-          "key": "elder",
-          "name": "Elder",
-          "size": 0
-        },
-        {
-          "key": "gatecreeper",
-          "name": "Gatecreeper",
-          "size": 0
-        },
-        {
-          "key": "gaerea",
-          "name": "Gaerea",
-          "size": 0
-        }
-      ],
-      "ticketPrice": 419
     }
   ],
   "bands": [
