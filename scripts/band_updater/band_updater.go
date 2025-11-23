@@ -136,7 +136,7 @@ func searchBandInfo(promptTemplate, bandName string, dryRun bool) (*BandSearchRe
 		},
 	}
 
-	resp, err := openaiClient.AskOpenAI(userPrompt, bandsJsonSchema, true, dryRun)
+	resp, err := openaiClient.AskOpenAI(userPrompt, bandsJsonSchema, openai.PrimaryModel, dryRun)
 	if err != nil {
 		return nil, usedTokens, estimatedCost, usedModel, err
 	}
@@ -149,7 +149,7 @@ func searchBandInfo(promptTemplate, bandName string, dryRun bool) (*BandSearchRe
 	usedModel = string(resp.UsedModel)
 	fmt.Printf("🧠 Used model: %s\n", usedModel)
 	fmt.Printf("📊 Tokens used: %d\n", usedTokens)
-	fmt.Printf("💰 Estimated cost: %.2f €\n", estimatedCost)
+	fmt.Printf("💰 Estimated cost: $%.2f\n", estimatedCost)
 	if len(resp.OutputText) == 0 {
 		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("empty response from OpenAI")
 	}
