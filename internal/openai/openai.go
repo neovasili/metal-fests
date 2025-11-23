@@ -11,6 +11,7 @@ import (
 	"github.com/openai/openai-go/v3"
 	"github.com/openai/openai-go/v3/option"
 	"github.com/openai/openai-go/v3/responses"
+	"github.com/openai/openai-go/v3/shared"
 
 	"github.com/neovasili/metal-fests/internal/model"
 )
@@ -19,9 +20,16 @@ var modelPricing = map[string]struct {
 	InputPerMillion  float64
 	OutputPerMillion float64
 }{
-	openai.ChatModelGPT4_1: {InputPerMillion: 3.0, OutputPerMillion: 6.0}, // $3 input / $6 output
-	openai.ChatModelGPT4o:  {InputPerMillion: 2.5, OutputPerMillion: 5.0}, // $2.5 input / $5 output
+	openai.ChatModelGPT4o:      {InputPerMillion: 2.50, OutputPerMillion: 10.00},
+	openai.ChatModelGPT4oMini:  {InputPerMillion: 0.15, OutputPerMillion: 0.60},
+	openai.ChatModelGPT4_1:     {InputPerMillion: 2.00, OutputPerMillion: 8.00},
+	openai.ChatModelGPT4_1Mini: {InputPerMillion: 0.60, OutputPerMillion: 2.40},
 }
+
+const (
+	PrimaryModel  = openai.ChatModelGPT4oMini
+	FallbackModel = openai.ChatModelGPT4_1
+)
 
 type OpenAIClient struct {
 	client        openai.Client
@@ -35,7 +43,6 @@ func NewOpenAIClient(apiKey string) *OpenAIClient {
 	return &OpenAIClient{
 		client: client,
 		responsesBase: responses.ResponseNewParams{
-			Model:       openai.ChatModelGPT4o,
 			Input:       responses.ResponseNewParamsInputUnion{},
 			Temperature: openai.Float(0.0),
 			Tools: []responses.ToolUnionParam{
@@ -80,7 +87,7 @@ func isRateLimitError(err error) bool {
 	return false
 }
 
-func (c *OpenAIClient) AskOpenAI(userPrompt string, jsonSchema map[string]any, useMiniModel bool, dryRun bool) (*model.AskOpenAIResponse, error) {
+func (c *OpenAIClient) AskOpenAI(userPrompt string, jsonSchema map[string]any, modelToUse shared.ResponsesModel, dryRun bool) (*model.AskOpenAIResponse, error) {
 	ctx := context.Background()
 	request := c.responsesBase
 	inputText := userPrompt
@@ -95,10 +102,7 @@ func (c *OpenAIClient) AskOpenAI(userPrompt string, jsonSchema map[string]any, u
 	request.Input = responses.ResponseNewParamsInputUnion{
 		OfString: openai.String(inputText),
 	}
-
-	if useMiniModel {
-		request.Model = openai.ChatModelGPT4oMini
-	}
+	request.Model = modelToUse
 
 	if dryRun {
 		// Print the request as JSON to stdout
@@ -115,7 +119,7 @@ func (c *OpenAIClient) AskOpenAI(userPrompt string, jsonSchema map[string]any, u
 	response, err := c.client.Responses.New(ctx, request)
 	if err != nil {
 		if isRateLimitError(err) {
-			usedModel = openai.ChatModelGPT4_1 // Fallback to GPT-4.1
+			usedModel = FallbackModel
 			request.Model = usedModel
 			response, err = c.client.Responses.New(ctx, request)
 			if err != nil {

@@ -136,7 +136,7 @@ func searchBandInfo(promptTemplate, bandName string, dryRun bool) (*BandSearchRe
 		},
 	}
 
-	resp, err := openaiClient.AskOpenAI(userPrompt, bandsJsonSchema, true, dryRun)
+	resp, err := openaiClient.AskOpenAI(userPrompt, bandsJsonSchema, openai.PrimaryModel, dryRun)
 	if err != nil {
 		return nil, usedTokens, estimatedCost, usedModel, err
 	}
@@ -149,7 +149,7 @@ func searchBandInfo(promptTemplate, bandName string, dryRun bool) (*BandSearchRe
 	usedModel = string(resp.UsedModel)
 	fmt.Printf("🧠 Used model: %s\n", usedModel)
 	fmt.Printf("📊 Tokens used: %d\n", usedTokens)
-	fmt.Printf("💰 Estimated cost: %.2f €\n", estimatedCost)
+	fmt.Printf("💰 Estimated cost: $%.2f\n", estimatedCost)
 	if len(resp.OutputText) == 0 {
 		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("empty response from OpenAI")
 	}
@@ -341,7 +341,7 @@ func generateSummary(stats *UpdateStats) string {
 	buf.WriteString(fmt.Sprintf("- **Bands Not Found**: %d\n", stats.NotFoundBands))
 	buf.WriteString("\n## 🤖 AI Usage Statistics\n\n")
 	buf.WriteString(fmt.Sprintf("- **Total Tokens**: %d\n", stats.TotalTokens))
-	buf.WriteString(fmt.Sprintf("- **Total Cost**: %.2f €\n", stats.TotalCost))
+	buf.WriteString(fmt.Sprintf("- **Total Cost**: $%.2f\n", stats.TotalCost))
 	buf.WriteString(fmt.Sprintf("- **Model**: %s\n", stats.UsedModel))
 	buf.WriteString("\n## ⚙️ Automation Details\n\n")
 	buf.WriteString(fmt.Sprintf("- **Run Date**: %s\n", time.Now().Format("2006-01-02 15:04:05 UTC")))
