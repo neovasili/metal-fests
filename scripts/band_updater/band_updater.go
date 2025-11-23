@@ -341,7 +341,7 @@ func generateSummary(stats *UpdateStats) string {
 	buf.WriteString(fmt.Sprintf("- **Bands Not Found**: %d\n", stats.NotFoundBands))
 	buf.WriteString("\n## 🤖 AI Usage Statistics\n\n")
 	buf.WriteString(fmt.Sprintf("- **Total Tokens**: %d\n", stats.TotalTokens))
-	buf.WriteString(fmt.Sprintf("- **Total Cost**: $%.2f\n", stats.TotalCost))
+	buf.WriteString(fmt.Sprintf("- **Total Cost**: %.2f €\n", stats.TotalCost))
 	buf.WriteString(fmt.Sprintf("- **Model**: %s\n", stats.UsedModel))
 	buf.WriteString("\n## ⚙️ Automation Details\n\n")
 	buf.WriteString(fmt.Sprintf("- **Run Date**: %s\n", time.Now().Format("2006-01-02 15:04:05 UTC")))

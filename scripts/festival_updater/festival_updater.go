@@ -157,16 +157,24 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 			stats.TotalTokens += tokens
 			stats.TotalCost += cost
 			stats.UsedModel = usedModel
+			if err != nil {
+				fmt.Printf("  ⚠️  Error: %v\n", err)
+				continue
+			}
+			if result == nil {
+				fmt.Println("  ℹ️  Dry-run mode: skipping update")
+				continue
+			}
 			// If no bands or ticket price found, retry with fallback model
 			if len(result.Bands) == 0 && result.TicketPrice == nil {
 				result, tokens, cost, usedModel, err = searchFestivalInfo(promptTemplate, festival, true, dryRun)
 				stats.TotalTokens += tokens
 				stats.TotalCost += cost
 				stats.UsedModel = usedModel
-			}
-			if err != nil {
-				fmt.Printf("  ⚠️  Error: %v\n", err)
-				continue
+				if err != nil {
+					fmt.Printf("  ⚠️  Error: %v\n", err)
+					continue
+				}
 			}
 		}
 
@@ -291,7 +299,7 @@ func generatePRSummary(stats *UpdateStats) string {
 	buf.WriteString(fmt.Sprintf("- **Ticket Prices Updated**: %d\n", stats.UpdatedPrices))
 	buf.WriteString("\n## 🤖 AI Usage Statistics\n\n")
 	buf.WriteString(fmt.Sprintf("- **Total Tokens**: %d\n", stats.TotalTokens))
-	buf.WriteString(fmt.Sprintf("- **Total Cost**: $%.2f\n", stats.TotalCost))
+	buf.WriteString(fmt.Sprintf("- **Total Cost**: %.2f €\n", stats.TotalCost))
 	buf.WriteString(fmt.Sprintf("- **Model**: %s\n", stats.UsedModel))
 	buf.WriteString("\n## ⚙️ Automation Details\n\n")
 	buf.WriteString(fmt.Sprintf("- **Run Date**: %s\n", time.Now().Format("2006-01-02 15:04:05 UTC")))
