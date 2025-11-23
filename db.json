@@ -977,31 +977,6 @@
           "size": 0
         },
         {
-          "key": "bad omens",
-          "name": "Bad Omens",
-          "size": 3
-        },
-        {
-          "key": "electric callboy",
-          "name": "Electric Callboy",
-          "size": 3
-        },
-        {
-          "key": "ice nine kills",
-          "name": "Ice Nine Kills",
-          "size": 2
-        },
-        {
-          "key": "three days grace",
-          "name": "Three Days Grace",
-          "size": 2
-        },
-        {
-          "key": "tom morello",
-          "name": "Tom Morello",
-          "size": 2
-        },
-        {
           "key": "badflower",
           "name": "Badflower",
           "size": 2
@@ -1012,28 +987,8 @@
           "size": 2
         },
         {
-          "key": "bury tomorrow",
-          "name": "Bury Tomorrow",
-          "size": 2
-        },
-        {
-          "key": "dying wish",
-          "name": "Dying Wish",
-          "size": 2
-        },
-        {
-          "key": "ecca vandal",
-          "name": "Ecca Vandal",
-          "size": 2
-        },
-        {
           "key": "h-blockx",
           "name": "H-Blockx",
-          "size": 2
-        },
-        {
-          "key": "high vis",
-          "name": "High Vis",
           "size": 2
         },
         {
@@ -1042,188 +997,8 @@
           "size": 2
         },
         {
-          "key": "max grimm",
-          "name": "Max Grimm",
-          "size": 2
-        },
-        {
-          "key": "palaye royale",
-          "name": "Palaye Royale",
-          "size": 2
-        },
-        {
-          "key": "paleface swiss",
-          "name": "Paleface Swiss",
-          "size": 2
-        },
-        {
-          "key": "the garden",
-          "name": "The Garden",
-          "size": 2
-        },
-        {
-          "key": "the pretty reckless",
-          "name": "The Pretty Reckless",
-          "size": 2
-        },
-        {
-          "key": "the subways",
-          "name": "The Subways",
-          "size": 2
-        },
-        {
           "key": "thornhill",
           "name": "Thornhill",
-          "size": 2
-        },
-        {
-          "key": "iron maiden",
-          "name": "Iron Maiden",
-          "size": 3
-        },
-        {
-          "key": "the offspring",
-          "name": "The Offspring",
-          "size": 3
-        },
-        {
-          "key": "a perfect circle",
-          "name": "A Perfect Circle",
-          "size": 2
-        },
-        {
-          "key": "alter bridge",
-          "name": "Alter Bridge",
-          "size": 2
-        },
-        {
-          "key": "hollywood undead",
-          "name": "Hollywood Undead",
-          "size": 2
-        },
-        {
-          "key": "social distortion",
-          "name": "Social Distortion",
-          "size": 2
-        },
-        {
-          "key": "bad nerves",
-          "name": "Bad Nerves",
-          "size": 2
-        },
-        {
-          "key": "black veil brides",
-          "name": "Black Veil Brides",
-          "size": 2
-        },
-        {
-          "key": "blood incantation",
-          "name": "Blood Incantation",
-          "size": 2
-        },
-        {
-          "key": "breaking benjamin",
-          "name": "Breaking Benjamin",
-          "size": 2
-        },
-        {
-          "key": "catch your breath",
-          "name": "Catch Your Breath",
-          "size": 2
-        },
-        {
-          "key": "ego kill talent",
-          "name": "Ego Kill Talent",
-          "size": 2
-        },
-        {
-          "key": "kublai khan tx",
-          "name": "Kublai Khan Tx",
-          "size": 2
-        },
-        {
-          "key": "mouth culture",
-          "name": "Mouth Culture",
-          "size": 2
-        },
-        {
-          "key": "return to dust",
-          "name": "Return To Dust",
-          "size": 2
-        },
-        {
-          "key": "set it off",
-          "name": "Set It Off",
-          "size": 2
-        },
-        {
-          "key": "the story so far",
-          "name": "The Story So Far",
-          "size": 2
-        },
-        {
-          "key": "limp bizkit",
-          "name": "Limp Bizkit",
-          "size": 3
-        },
-        {
-          "key": "linkin park",
-          "name": "Linkin Park",
-          "size": 3
-        },
-        {
-          "key": "papa roach",
-          "name": "Papa Roach",
-          "size": 3
-        },
-        {
-          "key": "the hives",
-          "name": "The Hives",
-          "size": 2
-        },
-        {
-          "key": "within temptation",
-          "name": "Within Temptation",
-          "size": 2
-        },
-        {
-          "key": "danko jones",
-          "name": "Danko Jones",
-          "size": 2
-        },
-        {
-          "key": "don broco",
-          "name": "Don Broco",
-          "size": 2
-        },
-        {
-          "key": "magnolia park",
-          "name": "Magnolia Park",
-          "size": 2
-        },
-        {
-          "key": "slay squad",
-          "name": "Slay Squad",
-          "size": 2
-        },
-        {
-          "key": "the butcher sisters",
-          "name": "The Butcher Sisters",
-          "size": 2
-        },
-        {
-          "key": "the funeral portrait",
-          "name": "The Funeral Portrait",
-          "size": 2
-        },
-        {
-          "key": "the plot in you",
-          "name": "The Plot In You",
-          "size": 2
-        },
-        {
-          "key": "we came as romans",
-          "name": "We Came As Romans",
           "size": 2
         }
       ],

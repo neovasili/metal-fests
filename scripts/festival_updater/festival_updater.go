@@ -181,7 +181,7 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 		}
 
 		// Update ticket price if available and different
-		if result.TicketPrice != nil && festival.TicketPrice != *result.TicketPrice {
+		if result.TicketPrice != nil && festival.TicketPrice == 0 {
 			oldPrice := fmt.Sprintf("%.2f€", festival.TicketPrice)
 			festival.TicketPrice = *result.TicketPrice
 			stats.UpdatedPrices++
