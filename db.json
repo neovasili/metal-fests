@@ -649,32 +649,32 @@
         {
           "key": "linkin-park",
           "name": "Linkin Park",
-          "size": 0
+          "size": 3
         },
         {
           "key": "papa-roach",
           "name": "Papa Roach",
-          "size": 0
+          "size": 3
         },
         {
           "key": "architects",
           "name": "Architects",
-          "size": 2
+          "size": 1
         },
         {
           "key": "babymetal",
           "name": "Babymetal",
-          "size": 2
+          "size": 1
         },
         {
           "key": "trivium",
           "name": "Trivium",
-          "size": 2
+          "size": 1
         },
         {
           "key": "within-temptation",
           "name": "Within Temptation",
-          "size": 0
+          "size": 1
         },
         {
           "key": "bad-omens",
@@ -719,22 +719,22 @@
         {
           "key": "iron-maiden",
           "name": "Iron Maiden",
-          "size": 0
+          "size": 3
         },
         {
           "key": "the-offspring",
           "name": "The Offspring",
-          "size": 0
+          "size": 3
         },
         {
           "key": "a-perfect-circle",
           "name": "A Perfect Circle",
-          "size": 0
+          "size": 2
         },
         {
           "key": "hollywood-undead",
           "name": "Hollywood Undead",
-          "size": 0
+          "size": 2
         },
         {
           "key": "social-distortion",
@@ -744,12 +744,12 @@
         {
           "key": "the-hives",
           "name": "The Hives",
-          "size": 0
+          "size": 1
         },
         {
           "key": "alter-bridge",
           "name": "Alter Bridge",
-          "size": 0
+          "size": 2
         },
         {
           "key": "tom-morello",
@@ -764,12 +764,12 @@
         {
           "key": "breaking-benjamin",
           "name": "Breaking Benjamin",
-          "size": 0
+          "size": 1
         },
         {
           "key": "bush",
           "name": "Bush",
-          "size": 2
+          "size": 1
         },
         {
           "key": "h-blockx",
@@ -784,17 +784,17 @@
         {
           "key": "mehnersmoos",
           "name": "Mehnersmoos",
-          "size": 2
+          "size": 1
         },
         {
           "key": "ecca-vandal",
           "name": "Ecca Vandal",
-          "size": 0
+          "size": 2
         },
         {
           "key": "sondaschule",
           "name": "Sondaschule",
-          "size": 2
+          "size": 1
         },
         {
           "key": "basement",
@@ -804,7 +804,7 @@
         {
           "key": "president",
           "name": "President",
-          "size": 2
+          "size": 1
         },
         {
           "key": "wargasm",
@@ -824,72 +824,72 @@
         {
           "key": "bad-nerves",
           "name": "Bad Nerves",
-          "size": 0
+          "size": 1
         },
         {
           "key": "black-veil-brides",
           "name": "Black Veil Brides",
-          "size": 0
+          "size": 1
         },
         {
           "key": "blood-incantation",
           "name": "Blood Incantation",
-          "size": 0
+          "size": 1
         },
         {
           "key": "bloodywood",
           "name": "Bloodywood",
-          "size": 2
+          "size": 1
         },
         {
           "key": "boundaries",
           "name": "Boundaries",
-          "size": 2
+          "size": 1
         },
         {
           "key": "catch-your-breath",
           "name": "Catch Your Breath",
-          "size": 0
+          "size": 1
         },
         {
           "key": "ego-kill-talent",
           "name": "Ego Kill Talent",
-          "size": 0
+          "size": 1
         },
         {
           "key": "gatecreeper",
           "name": "Gatecreeper",
-          "size": 2
+          "size": 1
         },
         {
           "key": "kublai-khan-tx",
           "name": "Kublai Khan Tx",
-          "size": 0
+          "size": 1
         },
         {
           "key": "mouth-culture",
           "name": "Mouth Culture",
-          "size": 0
+          "size": 1
         },
         {
           "key": "return-to-dust",
           "name": "Return To Dust",
-          "size": 0
+          "size": 1
         },
         {
           "key": "set-it-off",
           "name": "Set It Off",
-          "size": 0
+          "size": 1
         },
         {
           "key": "tesseract",
           "name": "Tesseract",
-          "size": 2
+          "size": 1
         },
         {
           "key": "the-story-so-far",
           "name": "The Story So Far",
-          "size": 0
+          "size": 1
         },
         {
           "key": "babymetal",
@@ -899,7 +899,7 @@
         {
           "key": "ankor",
           "name": "Ankor",
-          "size": 2
+          "size": 1
         },
         {
           "key": "bush",
@@ -909,37 +909,37 @@
         {
           "key": "danko-jones",
           "name": "Danko Jones",
-          "size": 0
+          "size": 1
         },
         {
           "key": "don-broco",
           "name": "Don Broco",
-          "size": 0
+          "size": 1
         },
         {
           "key": "drain",
           "name": "Drain",
-          "size": 2
+          "size": 1
         },
         {
           "key": "loathe",
           "name": "Loathe",
-          "size": 2
+          "size": 1
         },
         {
           "key": "magnolia-park",
           "name": "Magnolia Park",
-          "size": 0
+          "size": 2
         },
         {
           "key": "malevolence",
           "name": "Malevolence",
-          "size": 2
+          "size": 1
         },
         {
           "key": "mastodon",
           "name": "Mastodon",
-          "size": 2
+          "size": 3
         },
         {
           "key": "mehnersmoos",
@@ -949,57 +949,32 @@
         {
           "key": "slay-squad",
           "name": "Slay Squad",
-          "size": 0
+          "size": 1
         },
         {
           "key": "the-butcher-sisters",
           "name": "The Butcher Sisters",
-          "size": 0
+          "size": 1
         },
         {
           "key": "the-funeral-portrait",
           "name": "The Funeral Portrait",
-          "size": 0
+          "size": 1
         },
         {
           "key": "the-plot-in-you",
           "name": "The Plot In You",
-          "size": 0
+          "size": 1
         },
         {
           "key": "tx2",
           "name": "Tx2",
-          "size": 2
+          "size": 1
         },
         {
           "key": "we-came-as-romans",
           "name": "We Came As Romans",
-          "size": 0
-        },
-        {
-          "key": "bad omens",
-          "name": "Bad Omens",
-          "size": 3
-        },
-        {
-          "key": "electric callboy",
-          "name": "Electric Callboy",
-          "size": 3
-        },
-        {
-          "key": "ice nine kills",
-          "name": "Ice Nine Kills",
-          "size": 2
-        },
-        {
-          "key": "three days grace",
-          "name": "Three Days Grace",
-          "size": 2
-        },
-        {
-          "key": "tom morello",
-          "name": "Tom Morello",
-          "size": 2
+          "size": 1
         },
         {
           "key": "badflower",
@@ -1012,28 +987,8 @@
           "size": 2
         },
         {
-          "key": "bury tomorrow",
-          "name": "Bury Tomorrow",
-          "size": 2
-        },
-        {
-          "key": "dying wish",
-          "name": "Dying Wish",
-          "size": 2
-        },
-        {
-          "key": "ecca vandal",
-          "name": "Ecca Vandal",
-          "size": 2
-        },
-        {
           "key": "h-blockx",
           "name": "H-Blockx",
-          "size": 2
-        },
-        {
-          "key": "high vis",
-          "name": "High Vis",
           "size": 2
         },
         {
@@ -1042,188 +997,13 @@
           "size": 2
         },
         {
-          "key": "max grimm",
-          "name": "Max Grimm",
-          "size": 2
-        },
-        {
-          "key": "palaye royale",
-          "name": "Palaye Royale",
-          "size": 2
-        },
-        {
-          "key": "paleface swiss",
-          "name": "Paleface Swiss",
-          "size": 2
-        },
-        {
-          "key": "the garden",
-          "name": "The Garden",
-          "size": 2
-        },
-        {
-          "key": "the pretty reckless",
-          "name": "The Pretty Reckless",
-          "size": 2
-        },
-        {
-          "key": "the subways",
-          "name": "The Subways",
-          "size": 2
-        },
-        {
           "key": "thornhill",
           "name": "Thornhill",
           "size": 2
         },
         {
-          "key": "iron maiden",
-          "name": "Iron Maiden",
-          "size": 3
-        },
-        {
-          "key": "the offspring",
-          "name": "The Offspring",
-          "size": 3
-        },
-        {
-          "key": "a perfect circle",
-          "name": "A Perfect Circle",
-          "size": 2
-        },
-        {
-          "key": "alter bridge",
-          "name": "Alter Bridge",
-          "size": 2
-        },
-        {
-          "key": "hollywood undead",
-          "name": "Hollywood Undead",
-          "size": 2
-        },
-        {
-          "key": "social distortion",
-          "name": "Social Distortion",
-          "size": 2
-        },
-        {
-          "key": "bad nerves",
-          "name": "Bad Nerves",
-          "size": 2
-        },
-        {
-          "key": "black veil brides",
-          "name": "Black Veil Brides",
-          "size": 2
-        },
-        {
-          "key": "blood incantation",
-          "name": "Blood Incantation",
-          "size": 2
-        },
-        {
-          "key": "breaking benjamin",
-          "name": "Breaking Benjamin",
-          "size": 2
-        },
-        {
-          "key": "catch your breath",
-          "name": "Catch Your Breath",
-          "size": 2
-        },
-        {
-          "key": "ego kill talent",
-          "name": "Ego Kill Talent",
-          "size": 2
-        },
-        {
-          "key": "kublai khan tx",
-          "name": "Kublai Khan Tx",
-          "size": 2
-        },
-        {
-          "key": "mouth culture",
-          "name": "Mouth Culture",
-          "size": 2
-        },
-        {
-          "key": "return to dust",
-          "name": "Return To Dust",
-          "size": 2
-        },
-        {
-          "key": "set it off",
-          "name": "Set It Off",
-          "size": 2
-        },
-        {
-          "key": "the story so far",
-          "name": "The Story So Far",
-          "size": 2
-        },
-        {
-          "key": "limp bizkit",
-          "name": "Limp Bizkit",
-          "size": 3
-        },
-        {
-          "key": "linkin park",
-          "name": "Linkin Park",
-          "size": 3
-        },
-        {
-          "key": "papa roach",
-          "name": "Papa Roach",
-          "size": 3
-        },
-        {
-          "key": "the hives",
-          "name": "The Hives",
-          "size": 2
-        },
-        {
-          "key": "within temptation",
-          "name": "Within Temptation",
-          "size": 2
-        },
-        {
-          "key": "danko jones",
-          "name": "Danko Jones",
-          "size": 2
-        },
-        {
-          "key": "don broco",
-          "name": "Don Broco",
-          "size": 2
-        },
-        {
-          "key": "magnolia park",
-          "name": "Magnolia Park",
-          "size": 2
-        },
-        {
-          "key": "slay squad",
-          "name": "Slay Squad",
-          "size": 2
-        },
-        {
-          "key": "the butcher sisters",
-          "name": "The Butcher Sisters",
-          "size": 2
-        },
-        {
-          "key": "the funeral portrait",
-          "name": "The Funeral Portrait",
-          "size": 2
-        },
-        {
-          "key": "the plot in you",
-          "name": "The Plot In You",
-          "size": 2
-        },
-        {
-          "key": "we came as romans",
-          "name": "We Came As Romans",
+          "key": "max-grimm",
+          "name": "Max Grimm",
           "size": 2
         }
       ],

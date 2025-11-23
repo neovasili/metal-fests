@@ -37,7 +37,7 @@ type UpdateStats struct {
 
 var openaiClient *openai.OpenAIClient
 
-func searchFestivalInfo(promptTemplate string, festival model.Festival, dryRun bool) (*FestivalUpdateResult, int, float64, string, error) {
+func searchFestivalInfo(promptTemplate string, festival model.Festival, useFallbackModel bool, dryRun bool) (*FestivalUpdateResult, int, float64, string, error) {
 	userPrompt := strings.ReplaceAll(promptTemplate, "{{ FESTIVAL_NAME }}", festival.Name)
 	userPrompt = strings.ReplaceAll(userPrompt, "{{ FESTIVAL_LOCATION }}", festival.Location)
 	userPrompt = strings.ReplaceAll(userPrompt, "{{ FESTIVAL_URL }}", festival.Website)
@@ -71,7 +71,12 @@ func searchFestivalInfo(promptTemplate string, festival model.Festival, dryRun b
 		"required": []string{"bands", "ticketPrice"},
 	}
 
-	resp, err := openaiClient.AskOpenAI(userPrompt, festivalJsonSchema, false, dryRun)
+	modelToUse := openai.PrimaryModel
+	if useFallbackModel {
+		modelToUse = openai.FallbackModel
+	}
+
+	resp, err := openaiClient.AskOpenAI(userPrompt, festivalJsonSchema, modelToUse, dryRun)
 	if err != nil {
 		return nil, usedTokens, estimatedCost, usedModel, err
 	}
@@ -84,7 +89,7 @@ func searchFestivalInfo(promptTemplate string, festival model.Festival, dryRun b
 	usedModel = string(resp.UsedModel)
 	fmt.Printf("🧠 Used model: %s\n", usedModel)
 	fmt.Printf("📊 Tokens used: %d\n", usedTokens)
-	fmt.Printf("💰 Estimated cost: %.2f €\n", estimatedCost)
+	fmt.Printf("💰 Estimated cost: $%.2f\n", estimatedCost)
 	if len(resp.OutputText) == 0 {
 		return nil, usedTokens, estimatedCost, usedModel, fmt.Errorf("empty response from OpenAI")
 	}
@@ -98,7 +103,7 @@ func searchFestivalInfo(promptTemplate string, festival model.Festival, dryRun b
 	return &result, usedTokens, estimatedCost, usedModel, nil
 }
 
-func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName string) *UpdateStats {
+func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName string, openaiResponseFilePath string) *UpdateStats {
 	festivals, err := data.GetFestivals()
 	if err != nil {
 		fmt.Printf("  ⚠️  Error fetching festivals: %v\n", err)
@@ -129,13 +134,48 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 	for index, festival := range festivals {
 		fmt.Printf("\n[%d/%d] Processing %s...\n", index+1, stats.TotalFestivals, festival.Name)
 
-		result, tokens, cost, usedModel, err := searchFestivalInfo(promptTemplate, festival, dryRun)
-		stats.TotalTokens += tokens
-		stats.TotalCost += cost
-		stats.UsedModel = usedModel
-		if err != nil {
-			fmt.Printf("  ⚠️  Error: %v\n", err)
-			continue
+		var result = &FestivalUpdateResult{}
+		var tokens int
+		var cost float64
+		var usedModel string
+		if openaiResponseFilePath != "" && festivalName != "" {
+			// Load OpenAI response from file for testing
+			// #nosec G304 -- This is a command-line script where the file path is provided by the user
+			content, err := os.ReadFile(openaiResponseFilePath)
+			if err != nil {
+				fmt.Printf("  ⚠️  Error reading OpenAI response file: %v\n", err)
+				continue
+			}
+			fmt.Println(string(content))
+			if err := json.Unmarshal(content, result); err != nil {
+				fmt.Printf("  ⚠️  Error parsing OpenAI response file: %v\n", err)
+				continue
+			}
+			fmt.Printf("🧠 Loaded OpenAI response from file: %s\n", openaiResponseFilePath)
+		} else {
+			result, tokens, cost, usedModel, err = searchFestivalInfo(promptTemplate, festival, false, dryRun)
+			stats.TotalTokens += tokens
+			stats.TotalCost += cost
+			stats.UsedModel = usedModel
+			if err != nil {
+				fmt.Printf("  ⚠️  Error: %v\n", err)
+				continue
+			}
+			if result == nil {
+				fmt.Println("  ℹ️  Dry-run mode: skipping update")
+				continue
+			}
+			// If no bands or ticket price found, retry with fallback model
+			if len(result.Bands) == 0 && result.TicketPrice == nil {
+				result, tokens, cost, usedModel, err = searchFestivalInfo(promptTemplate, festival, true, dryRun)
+				stats.TotalTokens += tokens
+				stats.TotalCost += cost
+				stats.UsedModel = usedModel
+				if err != nil {
+					fmt.Printf("  ⚠️  Error: %v\n", err)
+					continue
+				}
+			}
 		}
 
 		updated := false
@@ -181,7 +221,7 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 		}
 
 		// Update ticket price if available and different
-		if result.TicketPrice != nil && festival.TicketPrice != *result.TicketPrice {
+		if result.TicketPrice != nil && festival.TicketPrice == 0 {
 			oldPrice := fmt.Sprintf("%.2f€", festival.TicketPrice)
 			festival.TicketPrice = *result.TicketPrice
 			stats.UpdatedPrices++
@@ -281,9 +321,11 @@ func main() {
 	// Parse command line flags
 	dryRun := false
 	festivalName := ""
+	openaiResponseFilePath := ""
 
 	flag.BoolVar(&dryRun, "dry-run", false, "Enable dry run mode")
 	flag.StringVar(&festivalName, "festival", "", "Specify festival name")
+	flag.StringVar(&openaiResponseFilePath, "openai-response", "", "Specify OpenAI response file path for testing")
 	flag.Parse()
 
 	if dryRun {
@@ -311,7 +353,7 @@ func main() {
 	}
 
 	// Update festivals
-	stats := updateExistingFestivals(promptTemplate, dryRun, festivalName)
+	stats := updateExistingFestivals(promptTemplate, dryRun, festivalName, openaiResponseFilePath)
 
 	// Generate PR summary
 	summary := generatePRSummary(stats)

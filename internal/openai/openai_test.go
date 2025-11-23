@@ -39,7 +39,7 @@ func TestEstimateCost(t *testing.T) {
 			model:     openai.ChatModelGPT4o,
 			inTokens:  1000,
 			outTokens: 500,
-			expected:  0.0025 + 0.0025, // (1000/1M * 2.5) + (500/1M * 5) = 0.005
+			expected:  0.0025 + 0.0050, // (1000/1M * 2.5) + (500/1M * 10.0) = 0.0075
 		},
 		{
 			name:      "GPT-4.1 with 2000 input and 1000 output tokens",
