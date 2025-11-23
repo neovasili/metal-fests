@@ -71,7 +71,7 @@
           "size": 0
         },
         {
-          "key": "hällas",
+          "key": "hllas",
           "name": "Hällas",
           "size": 0
         },
@@ -156,7 +156,7 @@
           "size": 0
         },
         {
-          "key": "uncle-acid-and-the-deadbeats",
+          "key": "uncle-acid-the-deadbeats",
           "name": "Uncle Acid \u0026 The Deadbeats",
           "size": 0
         },
@@ -206,7 +206,7 @@
           "size": 0
         },
         {
-          "key": "ström",
+          "key": "strm",
           "name": "Ström",
           "size": 0
         },
@@ -519,7 +519,7 @@
           "size": 1
         },
         {
-          "key": "letlive.",
+          "key": "letlive",
           "name": "Letlive.",
           "size": 1
         },
@@ -992,7 +992,7 @@
           "size": 2
         },
         {
-          "key": "letlive.",
+          "key": "letlive",
           "name": "Letlive.",
           "size": 2
         },
@@ -1025,7 +1025,7 @@
       "website": "https://downloadfestival.co.uk",
       "bands": [
         {
-          "key": "guns-n'-roses",
+          "key": "guns-n-roses",
           "name": "Guns N' Roses",
           "size": 0
         },
@@ -1170,7 +1170,7 @@
           "size": 0
         },
         {
-          "key": "letlive.",
+          "key": "letlive",
           "name": "Letlive.",
           "size": 0
         },
@@ -1190,12 +1190,12 @@
           "size": 0
         },
         {
-          "key": "p.o.d.",
+          "key": "pod",
           "name": "P.o.d.",
           "size": 0
         },
         {
-          "key": "røry",
+          "key": "rry",
           "name": "Røry",
           "size": 0
         },
@@ -1490,7 +1490,7 @@
           "size": 0
         },
         {
-          "key": "zero-9:36",
+          "key": "zero-936",
           "name": "Zero 9:36",
           "size": 0
         }
@@ -1824,8 +1824,8 @@
           "size": 0
         },
         {
-          "key": "p-o-d",
-          "name": "P.O.D.",
+          "key": "pod",
+          "name": "P.o.d.",
           "size": 0
         },
         {
@@ -1839,12 +1839,12 @@
           "size": 0
         },
         {
-          "key": "president-metal-band",
+          "key": "president",
           "name": "President",
           "size": 0
         },
         {
-          "key": "queensryche",
+          "key": "queensrche",
           "name": "Queensrÿche",
           "size": 0
         },
@@ -1964,7 +1964,7 @@
           "size": 0
         },
         {
-          "key": "p.o.d.",
+          "key": "pod",
           "name": "P.o.d.",
           "size": 0
         },
@@ -2207,7 +2207,7 @@
           "size": 1
         },
         {
-          "key": "p.o.d.",
+          "key": "pod",
           "name": "P.o.d.",
           "size": 1
         },
@@ -2337,7 +2337,7 @@
           "size": 1
         },
         {
-          "key": "old-man's-child",
+          "key": "old-mans-child",
           "name": "Old Man's Child",
           "size": 1
         },
@@ -2432,7 +2432,7 @@
           "size": 1
         },
         {
-          "key": "letlive.",
+          "key": "letlive",
           "name": "Letlive.",
           "size": 1
         },
@@ -2492,7 +2492,7 @@
           "size": 1
         },
         {
-          "key": "queensryche",
+          "key": "queensrche",
           "name": "Queensrÿche",
           "size": 1
         },
@@ -2502,7 +2502,7 @@
           "size": 1
         },
         {
-          "key": "sólstafir",
+          "key": "slstafir",
           "name": "Sólstafir",
           "size": 1
         },
@@ -2572,7 +2572,7 @@
           "size": 1
         },
         {
-          "key": "uncle-acid-and-the-deadbeats",
+          "key": "uncle-acid-the-deadbeats",
           "name": "Uncle Acid \u0026 The Deadbeats",
           "size": 1
         },
@@ -2655,8 +2655,8 @@
           "size": 0
         },
         {
-          "key": "p-o-d",
-          "name": "P.O.D.",
+          "key": "pod",
+          "name": "P.o.d.",
           "size": 0
         },
         {
@@ -2710,17 +2710,17 @@
           "size": 2
         },
         {
-          "key": "cavalera-conspiracy-chaos-a.d.",
+          "key": "cavalera-conspiracy-chaos-ad",
           "name": "Cavalera Conspiracy - Chaos A.d.",
           "size": 0
         },
         {
-          "key": "p.o.d.",
+          "key": "pod",
           "name": "P.o.d.",
           "size": 2
         },
         {
-          "key": "cavalera-conspiracy-–-chaos-a.d.",
+          "key": "cavalera-conspiracy-chaos-ad",
           "name": "Cavalera Conspiracy – Chaos A.d.",
           "size": 2
         }
@@ -2823,7 +2823,7 @@
           "size": 2
         },
         {
-          "key": "brainstorm-metal-band",
+          "key": "brainstorm",
           "name": "Brainstorm",
           "size": 0
         },
@@ -2903,7 +2903,7 @@
           "size": 0
         },
         {
-          "key": "kissin´-dynamite",
+          "key": "kissin-dynamite",
           "name": "Kissin´ Dynamite",
           "size": 2
         }
@@ -3077,7 +3077,7 @@
         },
         {
           "key": "old-mans-child",
-          "name": "Old Man'S Child",
+          "name": "Old Man's Child",
           "size": 0
         },
         {
@@ -3116,7 +3116,7 @@
           "size": 0
         },
         {
-          "key": "tryptikon",
+          "key": "triptykon",
           "name": "Triptykon",
           "size": 0
         },
@@ -3141,7 +3141,7 @@
           "size": 0
         },
         {
-          "key": "eivør",
+          "key": "eivr",
           "name": "Eivør",
           "size": 0
         },
@@ -3166,7 +3166,7 @@
           "size": 0
         },
         {
-          "key": "misþyrming",
+          "key": "misyrming",
           "name": "Misþyrming",
           "size": 0
         },
@@ -3274,7 +3274,7 @@
           "size": 2
         },
         {
-          "key": "europe-metal-band",
+          "key": "europe",
           "name": "Europe",
           "size": 0
         },
@@ -3399,8 +3399,8 @@
           "size": 2
         },
         {
-          "key": "h-blockx",
-          "name": "HBlockx",
+          "key": "hblockx",
+          "name": "Hblockx",
           "size": 2
         }
       ],
@@ -3522,7 +3522,7 @@
           "size": 1
         },
         {
-          "key": "of-mice-and-men",
+          "key": "of-mice-men",
           "name": "Of Mice \u0026 Men",
           "size": 1
         },
@@ -3620,7 +3620,7 @@
           "size": 0
         },
         {
-          "key": "of-mice-and-men",
+          "key": "of-mice-men",
           "name": "Of Mice \u0026 Men",
           "size": 0
         },
@@ -4093,7 +4093,7 @@
           "size": 3
         },
         {
-          "key": "brainstorm-metal-band",
+          "key": "brainstorm",
           "name": "Brainstorm",
           "size": 0
         },
@@ -4208,12 +4208,12 @@
           "size": 3
         },
         {
-          "key": "setyøursails",
+          "key": "setyursails",
           "name": "Setyøursails",
           "size": 3
         },
         {
-          "key": "møl",
+          "key": "ml",
           "name": "Møl",
           "size": 3
         },
@@ -4301,7 +4301,7 @@
           "size": 1
         },
         {
-          "key": "queensryche",
+          "key": "queensrche",
           "name": "Queensrÿche",
           "size": 0
         },
@@ -4316,7 +4316,7 @@
           "size": 1
         },
         {
-          "key": "h.e.a.t",
+          "key": "heat",
           "name": "H.e.a.t",
           "size": 1
         },
@@ -4564,7 +4564,7 @@
           "size": 3
         },
         {
-          "key": "auðn",
+          "key": "aun",
           "name": "Auðn",
           "size": 3
         },
@@ -4624,7 +4624,7 @@
           "size": 3
         },
         {
-          "key": "old-man's-child",
+          "key": "old-mans-child",
           "name": "Old Man's Child",
           "size": 3
         },
@@ -4659,7 +4659,7 @@
           "size": 3
         },
         {
-          "key": "forsmán",
+          "key": "forsmn",
           "name": "Forsmán",
           "size": 3
         },
@@ -4669,7 +4669,7 @@
           "size": 3
         },
         {
-          "key": "mûr",
+          "key": "mr",
           "name": "Mûr",
           "size": 3
         },
@@ -4689,7 +4689,7 @@
           "size": 2
         },
         {
-          "key": "carnivore-a.d.",
+          "key": "carnivore-ad",
           "name": "Carnivore A.d.",
           "size": 2
         },
@@ -4719,7 +4719,7 @@
           "size": 2
         },
         {
-          "key": "møl",
+          "key": "ml",
           "name": "Møl",
           "size": 2
         },
@@ -4729,7 +4729,7 @@
           "size": 2
         },
         {
-          "key": "gaddavír",
+          "key": "gaddavr",
           "name": "Gaddavír",
           "size": 2
         },
@@ -4750,11 +4750,11 @@
         },
         {
           "key": "old-mans-child",
-          "name": "Old Man'S Child",
+          "name": "Old Man's Child",
           "size": 1
         },
         {
-          "key": "múr",
+          "key": "mr",
           "name": "Múr",
           "size": 1
         },
@@ -4774,7 +4774,7 @@
           "size": 1
         },
         {
-          "key": "mörk",
+          "key": "mrk",
           "name": "Mörk",
           "size": 1
         },
@@ -4897,7 +4897,7 @@
           "size": 1
         },
         {
-          "key": "devastatiön",
+          "key": "devastatin",
           "name": "Devastatiön",
           "size": 1
         },
@@ -5025,7 +5025,7 @@
           "size": 1
         },
         {
-          "key": "bølzer",
+          "key": "blzer",
           "name": "Bølzer",
           "size": 0
         },
@@ -5040,7 +5040,7 @@
           "size": 1
         },
         {
-          "key": "martyrdöd",
+          "key": "martyrdd",
           "name": "Martyrdöd",
           "size": 1
         },
@@ -5085,7 +5085,7 @@
           "size": 3
         },
         {
-          "key": "letlive.",
+          "key": "letlive",
           "name": "Letlive.",
           "size": 0
         },
@@ -5125,7 +5125,7 @@
           "size": 0
         },
         {
-          "key": "bölzer",
+          "key": "blzer",
           "name": "Bölzer",
           "size": 1
         }
@@ -5401,7 +5401,7 @@
           "size": 0
         },
         {
-          "key": "babymetal",
+          "key": "baby-metal",
           "name": "Baby Metal",
           "size": 0
         },
@@ -5550,7 +5550,7 @@
         },
         {
           "key": "ho99o9",
-          "name": "Ho99O9",
+          "name": "Ho99o9",
           "size": 1
         },
         {
@@ -5597,13 +5597,13 @@
           "size": 2
         },
         {
-          "key": "p-o-d",
-          "name": "P.O.D.",
+          "key": "pod",
+          "name": "P.o.d.",
           "size": 0
         },
         {
           "key": "stam1na",
-          "name": "Stam1Na",
+          "name": "Stam1na",
           "size": 0
         },
         {
@@ -5612,7 +5612,7 @@
           "size": 2
         },
         {
-          "key": "queensryche",
+          "key": "queensrche",
           "name": "Queensrÿche",
           "size": 0
         },
@@ -5677,7 +5677,7 @@
           "size": 2
         },
         {
-          "key": "p.o.d.",
+          "key": "pod",
           "name": "P.o.d.",
           "size": 2
         },
@@ -5928,7 +5928,7 @@
           "size": 1
         },
         {
-          "key": "heavy//hitter",
+          "key": "heavyhitter",
           "name": "Heavy//Hitter",
           "size": 1
         },
@@ -5948,7 +5948,7 @@
           "size": 1
         },
         {
-          "key": "oomph!",
+          "key": "oomph",
           "name": "Oomph!",
           "size": 1
         },
@@ -5988,7 +5988,7 @@
           "size": 1
         },
         {
-          "key": "bruit≤",
+          "key": "bruit",
           "name": "Bruit≤",
           "size": 1
         },
@@ -6043,7 +6043,7 @@
           "size": 1
         },
         {
-          "key": "svinkels-family-and-friends",
+          "key": "svinkels-family-friends",
           "name": "Svinkels Family \u0026 Friends",
           "size": 1
         },
@@ -6088,7 +6088,7 @@
           "size": 1
         },
         {
-          "key": "steve’n’seagulls",
+          "key": "stevenseagulls",
           "name": "Steve’n’seagulls",
           "size": 1
         },
@@ -6103,7 +6103,7 @@
           "size": 1
         },
         {
-          "key": "heavy-//-hitter",
+          "key": "heavy-hitter",
           "name": "Heavy // Hitter",
           "size": 1
         },
@@ -6128,7 +6128,7 @@
           "size": 1
         },
         {
-          "key": "steve'n'seagulls",
+          "key": "stevenseagulls",
           "name": "Steve'n'seagulls",
           "size": 1
         }
@@ -6314,7 +6314,7 @@
           "size": 2
         },
         {
-          "key": "dödsrit",
+          "key": "ddsrit",
           "name": "Dödsrit",
           "size": 2
         },
@@ -6364,7 +6364,7 @@
           "size": 2
         },
         {
-          "key": "mütterlein",
+          "key": "mtterlein",
           "name": "Mütterlein",
           "size": 2
         },
@@ -6399,7 +6399,7 @@
           "size": 2
         },
         {
-          "key": "waldgeflüster",
+          "key": "waldgeflster",
           "name": "Waldgeflüster",
           "size": 0
         },
@@ -6414,7 +6414,7 @@
           "size": 2
         },
         {
-          "key": "bacht’n-de-vulle-moane",
+          "key": "bachtn-de-vulle-moane",
           "name": "Bacht’n De Vulle Moane",
           "size": 2
         },
@@ -6592,7 +6592,7 @@
           "size": 2
         },
         {
-          "key": "phil-campbel-and-the-bastard-sons-–-plays-motorhead",
+          "key": "phil-campbel-the-bastard-sons-plays-motorhead",
           "name": "Phil Campbel \u0026 The Bastard Sons – Plays Motorhead",
           "size": 2
         },
@@ -6647,7 +6647,7 @@
           "size": 1
         },
         {
-          "key": "ambush-sweden",
+          "key": "ambush",
           "name": "Ambush",
           "size": 1
         },
@@ -6662,7 +6662,7 @@
           "size": 1
         },
         {
-          "key": "abbath---doom-occulta",
+          "key": "abbath-doom-occulta",
           "name": "Abbath - Doom Occulta",
           "size": 1
         }
@@ -6780,7 +6780,7 @@
           "size": 0
         },
         {
-          "key": "hanabie.",
+          "key": "hanabie",
           "name": "Hanabie.",
           "size": 0
         },
@@ -6934,7 +6934,7 @@
         },
         {
           "key": "kublai-khan-tx",
-          "name": "Kublai Khan TX",
+          "name": "Kublai Khan Tx",
           "size": 0
         },
         {
@@ -6943,7 +6943,7 @@
           "size": 1
         },
         {
-          "key": "queensryche",
+          "key": "queensrche",
           "name": "Queensrÿche",
           "size": 0
         },
@@ -7086,7 +7086,7 @@
           "size": 0
         },
         {
-          "key": "helenine-oci",
+          "key": "heenine-oi",
           "name": "Heľenine Oči",
           "size": 0
         },
@@ -7246,7 +7246,7 @@
       "reviewed": true
     },
     {
-      "key": "dödsrit",
+      "key": "ddsrit",
       "name": "Dödsrit",
       "country": "Sweden",
       "description": "Dödsrit is a Swedish black metal band formed in 2017 by Christoffer Öster, the former guitarist of the hardcore punk band Totem Skin. Initially conceived as a solo project, Dödsrit evolved into a full band in 2018, incorporating members from the Netherlands. The band's music is characterized by a fusion of atmospheric black metal and raw crust punk, creating a sound that is both intense and melancholic. Their debut self-titled album was released in 2017, followed by \"Spirit Crusher\" in 2018, \"Mortal Coil\" in 2021, and \"Nocturnal Will\" in 2024. The latter album showcases the band's evolution, blending black metal with traditional metal influences and expansive song structures. Notable tracks include \"Apathetic Tongues,\" \"Shallow Graves,\" and \"A Drowning Voice.\" Dödsrit has performed at prominent festivals such as Brutal Assault and Roadburn, and they are set to embark on a North American tour in November 2025.",
@@ -7771,7 +7771,7 @@
       "reviewed": false
     },
     {
-      "key": "babymetal",
+      "key": "baby-metal",
       "name": "Baby Metal",
       "country": "Japan",
       "description": "Babymetal is a Japanese band formed in Tokyo in 2010, known for their unique fusion of heavy metal and J-pop, a genre often referred to as \"kawaii metal.\" The group initially began as a sub-unit of the idol group Sakura Gakuin, featuring Suzuka Nakamoto as \"Su-metal\" (lead vocals, dancing) and Moa Kikuchi as \"Moametal\" (backing vocals, dancing). In 2013, they became an independent act following Su-metal's departure from Sakura Gakuin. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Babymetal))\n\nTheir self-titled debut album, \"Babymetal,\" was released in 2014, featuring tracks that date back to their origins in 2010. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Babymetal_%28album%29)) Over the years, Babymetal has released several albums, including \"Metal Resistance\" (2016), \"Metal Galaxy\" (2019), and \"The Other One\" (2023). In 2025, they released \"Metal Forth,\" celebrating their 15th anniversary with collaborations from artists like Poppy, Electric Callboy, Slaughter to Prevail, Bloodywood, Polyphia, Spiritbox, and Tom Morello. ([metalforth.com](https://www.metalforth.com/))\n\nIn 2024, Momoko Okazaki joined as \"Momometal,\" completing the current lineup. The band's energetic performances and distinctive style have garnered a global fanbase, with notable achievements such as headlining and selling out the O2 Arena in London in May 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Babymetal))",
@@ -8370,8 +8370,8 @@
       "reviewed": false
     },
     {
-      "key": "p-o-d",
-      "name": "P.O.D.",
+      "key": "pod",
+      "name": "P.o.d.",
       "country": "United States",
       "description": "P.O.D. (Payable on Death) is an American Christian nu metal band formed in 1992 in San Diego, California. The lineup consists of vocalist Sonny Sandoval, bassist Traa Daniels, lead guitarist Marcos Curiel, and drummer Wuv Bernardo. Over their career, they've sold over 12 million records worldwide and received three Grammy Award nominations. Their third studio album, \"The Fundamental Elements of Southtown\" (1999), achieved platinum certification, marking their mainstream breakthrough. The follow-up, \"Satellite\" (2001), went triple platinum, featuring hits like \"Alive\" and \"Youth of the Nation.\" In 2003, Curiel departed due to personal differences, replaced by Jason Truby. Curiel rejoined in 2006, and the band released \"When Angels \u0026 Serpents Dance\" in 2008. Their tenth album, \"Circles,\" was released in 2018. In 2021, Wuv Bernardo took a hiatus from the band. ([en.wikipedia.org](https://en.wikipedia.org/wiki/P.O.D.))",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/P.O.D._at_Hellfest_2013.jpg/800px-P.O.D._at_Hellfest_2013.jpg",
@@ -8480,7 +8480,7 @@
       "reviewed": false
     },
     {
-      "key": "neckbreaker",
+      "key": "neckbreakker",
       "name": "Neckbreakker",
       "country": "Denmark",
       "description": "Neckbreakker is a Danish death metal band formed in 2020 in Silkeborg, Denmark. The band consists of Christoffer Kofoed (vocals), Joakim Kaspersen and Johan Lundvig (guitars), Sebastian Knoblauch (bass), and Anton “Hajn” Bregendorf (drums). Initially known as Nakkeknaekker, they changed their name to Neckbreakker in 2024. In 2023, they released their debut demo, \"Demo 2023,\" featuring tracks like \"Crush Sionism,\" \"Rats,\" and \"The Flight of the P.U.M.A.\" The band gained significant attention after signing with Nuclear Blast Records and announcing their debut album, \"Within The Viscera,\" set for release on December 6, 2024. The album includes tracks such as \"Horizon Of Spikes,\" \"Putrefied Body Fluid,\" \"Shackled To A Corpse,\" \"Nephilim,\" \"Purgatory Rites,\" \"Unholy Inquisition,\" \"Absorption,\" \"SILO,\" and \"Face Splitting Madness.\" The lead single, \"Horizon Of Spikes,\" was released in September 2024, followed by \"Shackled To A Corpse\" in October 2024. Neckbreakker's music is characterized by aggressive guitar riffs, intense drumming, and guttural vocals, embodying the raw energy of death metal. Their dynamic performances and commitment to the genre have quickly established them as a promising act in the metal scene.",
@@ -9301,7 +9301,7 @@
       "reviewed": false
     },
     {
-      "key": "europe-metal-band",
+      "key": "europe",
       "name": "Europe",
       "country": "Sweden",
       "description": "Europe is a Swedish rock band formed in Upplands Väsby in 1979. The original lineup consisted of lead vocalist Joey Tempest, guitarist John Norum, bassist Peter Olsson, and drummer Tony Reno. They gained significant attention in Sweden after winning the inaugural Rock-SM (Swedish Rock Championships) in 1982. Their international breakthrough came with the release of their third album, \"The Final Countdown,\" in 1986, which featured the iconic title track that topped charts worldwide. The band's style has evolved over the years, incorporating elements of arena rock, hard rock, glam metal, blues rock, and heavy metal. After a brief hiatus in the early 1990s, Europe reunited in 1999 and has since released several albums, including \"Start from the Dark\" (2004), \"Secret Society\" (2006), \"Last Look at Eden\" (2009), \"Bag of Bones\" (2012), \"War of Kings\" (2015), \"Walk the Earth\" (2017), and \"Secret Society\" (2020). The band's current lineup includes Joey Tempest (vocals), John Norum (guitar), John Levén (bass), Mic Michaeli (keyboards), and Ian Haugland (drums).",
@@ -9584,7 +9584,7 @@
       "reviewed": false
     },
     {
-      "key": "tryptikon",
+      "key": "triptykon",
       "name": "Triptykon",
       "country": "Switzerland",
       "description": "Triptykon is a Swiss extreme metal band formed in 2008 by Thomas Gabriel Fischer, the founder of Hellhammer and Celtic Frost. The band's name, derived from the Greek word for \"triptych,\" signifies Fischer's third musical endeavor. Triptykon's music is characterized by a fusion of doom, gothic, black, death, and avant-garde metal elements, creating a dark and atmospheric sound.\n\nTheir debut album, \"Eparistera Daimones,\" released in March 2010, received critical acclaim for its depth and intensity. The album features artwork by H.R. Giger and includes tracks like \"Myopic Empire,\" which originated from a demo by Celtic Frost. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Eparistera_Daimones))\n\nIn April 2014, Triptykon released their second album, \"Melana Chasmata,\" which continued their exploration of dark and complex musical landscapes. The album was well-received, further solidifying the band's reputation in the metal community. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Triptykon))\n\nThe current lineup includes Thomas Gabriel Fischer on vocals and rhythm guitar, Victor \"V. Santura\" Bullok on lead guitar and vocals, Vanja Slajh on bass and backing vocals, and Hannes Grossmann on drums and percussion. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Triptykon))\n\nTriptykon's official website is [www.triptykon.net](http://www.triptykon.net/), where fans can find more information about the band and their discography.\n\nFor streaming their music, Triptykon is available on platforms like SoundCloud. ([soundcloud.com](https://soundcloud.com/tryptikon-1))\n\nTheir music is also available on Spotify.\n\nTriptykon's music is available on Spotify.\n\nThe band's genres include doom metal, gothic metal, black metal, and death metal.\n\nThe current lineup includes Thomas Gabriel Fischer on vocals and rhythm guitar, Victor \"V. Santura\" Bullok on lead guitar and vocals, Vanja Slajh on bass and backing vocals, and Hannes Grossmann on drums and percussion. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Triptykon))\n\nFor more information, visit their official website at [www.triptykon.net](http://www.triptykon.net/).",
@@ -9796,7 +9796,7 @@
       "reviewed": false
     },
     {
-      "key": "ambush-sweden",
+      "key": "ambush",
       "name": "Ambush",
       "country": "Sweden",
       "description": "Ambush is a Swedish heavy metal band formed in 2013 in Växjö, Sweden. The band draws inspiration from classic heavy metal acts such as Judas Priest, Accept, and Iron Maiden, blending traditional metal roots with high-octane energy and raw emotion. Their music is characterized by blistering riffs, soaring solos, and powerful lyrics. Ambush's discography includes the following albums:\n\n- \"Firestorm\" (2014)\n- \"Desecrator\" (2015)\n- \"Infidel\" (2020)\n- \"Evil In All Dimensions\" (2025)\n\nThe band has also released singles such as \"Natural Born Killers\" (2014), \"Hellbiter\" (2019), and \"Barabbas\" (2022). They have performed at various European festivals, including Muskelrock, and have toured alongside acts like Enforcer and Cobra Spell. ([thenwothm.com](https://thenwothm.com/2025/04/24/ambush-drop-new-single-announce-album-evil-in-all-dimensions/))\n\nIn 2025, Ambush signed with Napalm Records and released their fourth album, \"Evil In All Dimensions,\" on September 5, 2025. The album features tracks like \"Evil In All Dimensions,\" \"Maskirovka,\" \"Iron Sign,\" \"The Night I Took Your Life,\" \"I Fear The Blood,\" \"Come Angel of Night,\" \"The Reaper,\" \"Bending The Steel,\" and \"Heavy Metal Brethren.\" ([thenwothm.com](https://thenwothm.com/2025/04/24/ambush-drop-new-single-announce-album-evil-in-all-dimensions/))\n\nThe current lineup consists of:\n\n- Oskar Jacobsson (vocals)\n- Karl Dotzek (guitar)\n- Olof Engqvist (guitar)\n- Oskar Andersson (bass)\n- Linus Fritzson (drums)\n\nFor more information, visit their official website.",
@@ -9867,7 +9867,7 @@
       "reviewed": true
     },
     {
-      "key": "setyoursails",
+      "key": "setyursails",
       "name": "Setyøursails",
       "country": "Germany",
       "description": "Setyøursails is a German metalcore band from Cologne, formed in 2017 by vocalist Jules Mitch and guitarist André Alves Rodrigues. They debuted with the self-produced album \"Enough\" in 2018, followed by \"Nightfall\" in 2022, which received critical acclaim and featured collaborations with artists like Rudi Schwarzer of Annisokay and Andy Doerner of Caliban. Their third album, \"Bad Blood,\" released in April 2024, showcases a blend of metalcore, melodic hardcore, and post-hardcore elements, addressing themes such as mental health, personal struggles, and societal issues. The band has toured extensively across Europe, supporting acts like Annisokay, Emil Bulls, and Cypecore, and performing at festivals including Full Force and Summer Breeze. In 2025, they embarked on their first headlining tour in Germany and played at the Wacken Open Air festival.",
@@ -10623,7 +10623,7 @@
       "reviewed": false
     },
     {
-      "key": "of-mice-and-men",
+      "key": "of-mice-men",
       "name": "Of Mice \u0026 Men",
       "country": "United States",
       "description": "Formed in 2009 in Costa Mesa, California, Of Mice \u0026 Men is an American rock band known for their dynamic blend of metalcore, hard rock, and nu metal. The group was founded by former Attack Attack! vocalist Austin Carlile and bassist Jaxin Hall. Over the years, the lineup has evolved, with current members including drummer Valentino Arteaga, guitarists Phil Manansala and Alan Ashby, and bassist and lead vocalist Aaron Pauley. The band's self-titled debut album was released in 2010, showcasing their metalcore roots. Their subsequent albums, such as \"The Flood\" (2011) and \"Restoring Force\" (2014), incorporated elements of nu metal and hard rock, reflecting their evolving sound. In 2019, they released \"Earthandsky,\" marking a return to their metalcore origins. In 2023, they released \"Tether,\" followed by the single \"Another Miracle\" in 2025, signaling a new chapter with Century Media Records. The band's music often explores themes of resilience, mental health, and human connection, resonating deeply with fans. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Of_Mice_%26_Men_%28band%29))",
@@ -10945,7 +10945,7 @@
     },
     {
       "key": "old-mans-child",
-      "name": "Old Man'S Child",
+      "name": "Old Man's Child",
       "country": "Norway",
       "description": "Old Man's Child is a Norwegian black metal band formed in 1993 in Oslo. The project was initiated by guitarist and vocalist Galder (born Thomas Rune Andersen), who had previously been part of the death/thrash band Requiem. After Requiem's dissolution in 1992, Galder shifted his focus to black metal, leading to the formation of Old Man's Child. The band's music is characterized by a blend of symphonic and melodic black metal elements, often exploring themes of Satanism, evil, sorrow, misanthropy, and death. Galder has remained the sole constant member throughout the band's history, with various musicians contributing over the years. Notably, drummer Tjodalv, who had been part of the original lineup, rejoined the band in 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Old_Man%27s_Child))\n\nOld Man's Child's discography includes several full-length albums:\n\n- **Born of the Flickering** (1996): The debut album, released through Hot Records, features tracks like \"Demons of the Thorncastle\" and \"Swallowed by a Buried One.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Born_of_the_Flickering))\n\n- **The Pagan Prosperity** (1997): Released via Century Media, this album includes songs such as \"The Millennium King\" and \"Behind the Mask.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Pagan_Prosperity))\n\n- **Ill-Natured Spiritual Invasion** (1998): This album continues the band's exploration of dark themes, with tracks like \"Towards Eternity.\" ([metal-archives.com](https://www.metal-archives.com/albums/Old_Man%27s_Child/Ill-Natured_Spiritual_Invasion/1342))\n\n- **Revelation 666: The Curse of Damnation** (2000): Features songs like \"Phantoms of Mortem Tales\" and \"Hominis Nocturna.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Revelation_666_%E2%80%93_The_Curse_of_Damnation))\n\n- **In Defiance of Existence** (2003): Continues the band's legacy with tracks such as \"The Spawn of Lost Creation.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Slaves_of_the_World))\n\n- **Vermin** (2005): Includes songs like \"Enslaved and Condemned\" and \"The Plague of Sorrow.\" ([metal-archives.com](https://www.metal-archives.com/albums/Old_Man%27s_Child/Vermin/90982))\n\n- **Slaves of the World** (2009): Features tracks like \"Slaves of the World\" and \"Saviours of Doom.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Slaves_of_the_World))\n\nIn August 2024, Galder departed from Dimmu Borgir after nearly 25 years to focus on Old Man's Child. He announced plans to finalize a new album and begin touring with the band. In March 2025, Galder announced that Tjodalv would be returning to the band to tour in the summer. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Old_Man%27s_Child))\n\nThe band's official website is [oldmanschild.tk](http://www.oldmanschild.tk/), and they have a presence on SoundCloud at [soundcloud.com/oldmanschildofficial](https://soundcloud.com/oldmanschildofficial).",
       "logo": "https://www.metal-archives.com/images/3/6/2/3/362_logo.jpg",
@@ -11416,7 +11416,7 @@
       "reviewed": false
     },
     {
-      "key": "queensryche",
+      "key": "queensrche",
       "name": "Queensrÿche",
       "country": "United States",
       "description": "Queensrÿche is an American progressive metal band formed in 1980 in Bellevue, Washington. Initially known as Cross+Fire and later The Mob, they adopted the name Queensrÿche in 1982. The original lineup featured guitarists Michael Wilton and Chris DeGarmo, bassist Eddie Jackson, drummer Scott Rockenfield, and lead vocalist Geoff Tate. The band is renowned for its intricate compositions and thematic depth, blending heavy metal with progressive elements. Their 1983 self-titled EP garnered significant attention, leading to a contract with EMI Records. Their 1988 concept album \"Operation: Mindcrime\" is widely regarded as one of the greatest in metal history, offering a narrative of corruption and revolution. The 1990 album \"Empire\" marked their commercial peak, featuring the hit \"Silent Lucidity.\" Over the years, lineup changes occurred, with DeGarmo departing in 1998 and Tate leaving in 2012. Todd La Torre joined as lead vocalist in 2012, and Casey Grillo became the drummer in 2017. Queensrÿche continues to tour and record, with their latest album, \"Digital Noise Alliance,\" released in 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Queensr%C3%BFche))",
@@ -12862,7 +12862,7 @@
       "reviewed": true
     },
     {
-      "key": "brainstorm-metal-band",
+      "key": "brainstorm",
       "name": "Brainstorm",
       "country": "Germany",
       "description": "Brainstorm is a German power metal band formed in 1989 in Heidenheim, Baden-Württemberg. The founding members include guitarists Torsten Ihlenfeld and Milan Loncaric, and drummer Dieter Bernert. They released their first demo, \"Hand of Doom,\" in 1990, followed by \"Heart of Hate\" in 1992. Their debut album, \"Hungry,\" was released in 1997, establishing them as a prominent act in the German metal scene. The band's lineup solidified with the addition of lead vocalist Andy B. Franck in 1999. Over the years, Brainstorm has released several albums, including \"Metus Mortis\" (2001), \"Soul Temptation\" (2003), and \"Wall of Skulls\" (2021). Their music is characterized by a blend of heavy and power metal elements, often exploring dark themes. In 2025, they released \"Plague of Rats,\" produced by Seeb Levermann, marking a significant milestone in their career. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Brainstorm_%28German_band%29))",
@@ -14448,7 +14448,7 @@
       "reviewed": false
     },
     {
-      "key": "wargasm-uk",
+      "key": "wargasm",
       "name": "Wargasm",
       "country": "United Kingdom",
       "description": "Wargasm is a British electronic rock duo from London, formed in 2018 by Sam Matlock and Milkie Way. Matlock, previously part of Dead!, and Way, a former concert photographer, bonded over a shared love of nu metal acts like Limp Bizkit. Initially writing pop-punk songs, they shifted towards a fusion of rap and nu metal, leading to the formation of Wargasm in August 2019. The band's music is characterized by a blend of electro-punk, digital hardcore, nu metal, and post-hardcore elements. Their debut mixtape, \"Explicit: The Mixxxtape,\" released in September 2022, charted at No. 19 on the UK Rock \u0026 Metal Albums Chart. In October 2023, they released their first full-length album, \"Venom,\" which peaked at No. 88 on the UK Albums Chart. The duo has been recognized with several accolades, including the New Noise Award at the 2022 Kerrang! Awards and Best UK Breakthrough Band at the 2021 Heavy Music Awards. Their energetic performances and distinctive sound have established them as a prominent act in the modern rock scene.",
@@ -14656,7 +14656,7 @@
     },
     {
       "key": "stam1na",
-      "name": "Stam1Na",
+      "name": "Stam1na",
       "country": "Finland",
       "description": "Stam1na is a Finnish metal band formed in 1996 in Lemi, South Karelia. Initially a trio, the lineup expanded over the years to include bassist Kai-Pekka \"Kaikka\" Kangasmäki in 2005 and keyboardist Emil \"Hippi\" Lähteenmäki in 2009. Their music is characterized by a blend of thrash metal with progressive, death, alternative, and punk influences, all performed in Finnish. The band is known for using seven-string guitars on most albums, with some tracks composed for eight-string guitars on their eighth album, \"Taival\". Their self-titled debut album, released in 2005, reached No. 13 on the Finnish album charts. Subsequent albums, such as \"Uudet kymmenen käskyä\" (2006) and \"Raja\" (2008), achieved even greater success, topping the charts in Finland. In 2012, \"Nocebo\" topped the Finnish album chart and was certified gold on the day of its release. Their sixth album, \"SLK\", was released in February 2014. In 2016, they released \"Elokuutio\", followed by \"Taival\" in 2018. Their eighth studio album, \"Taival\", was released in 2018. The band has also toured internationally, including performances on the 70,000 Tons of Metal cruise in 2017 and as part of the \"Arctic Circle Alliance\" with Skálmöld and Omnium Gatherum (2017-2018).",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Stam1na_logo.svg/800px-Stam1na_logo.svg",
@@ -14834,7 +14834,7 @@
       "reviewed": false
     },
     {
-      "key": "president-metal-band",
+      "key": "president",
       "name": "President",
       "country": "United Kingdom",
       "description": "President (stylized as PRESIDENT) is an anonymous English metal band formed in 2025. The band emerged with a mysterious image, featuring a frontman known as The President, who is described as having silver hair and wearing an eerie, lifelike mask. The lineup includes Heist (guitarist), Protest (bassist), and Vice (drummer). Their debut single, \"In the Name of the Father,\" was released on May 15, 2025, followed by \"Fearless\" on June 5, 2025. The band's debut EP, \"King of Terrors,\" was released on September 26, 2025, showcasing their blend of alternative metal with electronic and cinematic elements. The EP includes tracks like \"Rage,\" which is described as a \"swirling, synth-laden cut,\" and \"Destroy Me,\" released on September 4, 2025. The band has been praised for their theatrical live performances, including their debut at the Download Festival in June 2025. They are set to headline the TakeDown Festival 2026 in April 2026.",
@@ -16149,7 +16149,7 @@
     },
     {
       "key": "heat",
-      "name": "H.E.A.T",
+      "name": "H.e.a.t",
       "country": "Sweden",
       "description": "H.E.A.T is a Swedish hard rock band formed in Upplands Väsby in 2007, originating from the merging of the bands Dream and Trading Fate. The lineup consists of lead vocalist Kenny Leckremo, guitarist Dave Dalone, keyboardist Jona Tee, bassist Jimmy Jay, and drummer Don Crash. Their music is heavily influenced by classic melodic rock groups like Whitesnake, characterized by dynamic melodies and energetic performances. The band has released several studio albums, including their self-titled debut in 2008, 'Freedom Rock' in 2010, 'Address the Nation' in 2012, 'Tearing Down the Walls' in 2014, 'Into the Great Unknown' in 2017, 'H.E.A.T II' in 2020, and 'Force Majeure' in 2022. In 2025, they released their eighth studio album, 'Welcome to the Future', featuring singles like 'Disaster', 'Bad Time for Love', and 'Running to You'. The album has been praised as their strongest to date, showcasing their innovative and dynamic sound.",
       "logo": "https://www.heatsweden.com/wp-content/uploads/2025/04/heat_logo.png",
@@ -16257,7 +16257,7 @@
     },
     {
       "key": "hevn-iii",
-      "name": "Hevn III",
+      "name": "Hevn Iii",
       "country": "Norway",
       "description": "Hevn III is a Norwegian black metal trio formed in Oslo in 2020. The band emerged from the shadows of Norway’s underground scene, delivering a relentless sonic assault that channels raw, primal aggression. Their music delves into themes of hatred, magic, misanthropy, and the philosophical musings of Blake, Nietzsche, and Crowley, crafting a soundscape that is both chaotic and deeply unsettling. Hevn III's debut album, \"Hevn III,\" was released on November 22, 2024, under Polypus Records. The album plunges listeners into a world where dissonance reigns, with every riff resonating with venomous intent. The band's live performances are noted for their sheer intensity, harking back to an era when black metal was raw, dissonant, and unfiltered. The current lineup consists of Likrøyk on bass, Orkan on drums, and Sortblot on guitar and vocals. Hevn III is currently signed to Polypus Records.",
       "logo": "https://hevniii.bandcamp.com/",
@@ -16285,7 +16285,7 @@
     },
     {
       "key": "pod",
-      "name": "P.O.D.",
+      "name": "P.o.d.",
       "country": "United States",
       "description": "P.O.D. (Payable on Death) is an American Christian nu metal band formed in 1992 in San Diego, California. The band consists of vocalist Sonny Sandoval, bassist Traa Daniels, lead guitarist Marcos Curiel, and drummer Noah \"Wuv\" Bernardo. They have sold over 12 million records worldwide and have been nominated for three Grammy Awards. Their music blends elements of nu metal, alternative metal, and rap metal, often incorporating themes of faith and spirituality. Their third studio album, \"The Fundamental Elements of Southtown,\" released in 1999, achieved platinum certification by the RIAA. Their fourth album, \"Satellite,\" released in 2001, continued their success with hits like \"Alive\" and \"Youth of the Nation,\" which contributed to the album's triple platinum status. In 2024, they released their eleventh studio album, \"Veritas,\" marking the first album without drummer Wuv Bernardo, who went on hiatus in 2021. The album features guest appearances from Randy Blythe, Tatiana Shmayluk, and Cove Reber.",
       "logo": "https://www.tboyrecords.com/wp-content/uploads/2024/05/pod-logo.png",
@@ -16924,7 +16924,7 @@
     },
     {
       "key": "angus-mcsix",
-      "name": "Angus McSix",
+      "name": "Angus Mcsix",
       "country": "International",
       "description": "Angus McSix is an international power metal band formed in August 2021 by Swiss singer Thomas Winkler and German producer, vocalist, and guitarist Sebastian \"Seeb\" Levermann. The formation of the band followed Winkler's departure from Gloryhammer, with Levermann reaching out to collaborate on a new power metal supergroup. The name \"Angus McSix\" is a continuation of Winkler's previous stage character, Angus McFife, symbolizing an upgraded and more powerful version of the character. To complete the lineup, the duo enlisted Italian guitarist Thalia Bellazecca and former Rhapsody of Fire drummer Manu Lotter. The band's debut studio album, \"Angus McSix and the Sword of Power,\" was released on April 21, 2023, through Napalm Records. The album continues the narrative of the fictional Scottish crown prince Angus McFife XIII, who returns from the realm of the dead as a stronger version of himself, now known as Angus McSix. The album achieved significant success, reaching number ten on the German album charts, number 16 in Switzerland, and number 26 in Austria, marking it as one of the most successful debuts for a power metal band in those countries. In January 2025, Winkler announced his departure from the band to focus on family, with Sam Nyman stepping in as the new vocalist portraying Prince Adam McSix. Additionally, Lotter departed, and Gerit Lamm joined as the new drummer. The band released a new single, \"6666,\" in January 2025, and another single, \"The Fire of Yore,\" in September 2025, featuring actor and musician Uwe Ochsenknecht in the official video. The band's music is characterized by a blend of late 1990s power metal and modern disco elements, drawing comparisons to bands like Sonata Arctica and Blind Guardian. The vocals are powerful and clear, often compared to Rob Halford or Ronnie James Dio, with song structures primarily in classic verse form.",
       "logo": "https://angusmcsix.net/wp-content/uploads/2023/04/Angus-McSix-Logo.png",
@@ -17263,7 +17263,7 @@
     },
     {
       "key": "dartagnan",
-      "name": "DArtagnan",
+      "name": "Dartagnan",
       "country": "Germany",
       "description": "DArtagnan is a German folk rock band from Nuremberg, formed in 2015. The band's name references the 17th-century French soldier Charles de Batz de Castelmore d'Artagnan, made famous by Alexandre Dumas in his novel \"The Three Musketeers.\" The group was founded by singer Benjamin Metzner, who also plays the mandolin, bagpipes, and flute; guitarist and background singer Felix Fischer; and guitarist and singer Tim Bernard. Metzner and Fischer, friends since their youth, previously played together in the medieval rock band Feuerschwanz. In December 2017, Fischer departed from both Feuerschwanz and DArtagnan, citing personal differences. He was replaced by Gustavo Strauss, who introduced the violin to the band's sound. DArtagnan describes their musical style as \"musketeer rock,\" blending modern rock sounds with folk rhythms and lyrics celebrating love of life, compassion, friendship, camaraderie, and courage. Their discography includes: 1. \"Seit an Seit\" (2016) 2. \"Verehrt und verdammt\" (2017) 3. \"In jener Nacht\" (2019) 4. \"Feuer \u0026 Flamme\" (2021) 5. \"Felsenfest\" (2022) 6. \"Herzblut\" (2024) The band has also collaborated with Candice Night from Blackmore's Night on the single \"We're Gonna Be Drinking\" from \"Felsenfest\" (2022).",
       "logo": "https://www.dartagnan.de/wp-content/uploads/2019/04/dartagnan_logo.png",
@@ -18770,7 +18770,7 @@
     },
     {
       "key": "lord-of-the-lost",
-      "name": "Lord of the Lost",
+      "name": "Lord Of The Lost",
       "country": "Germany",
       "description": "Lord of the Lost is a German dark rock band from Hamburg, formed in 2007 by singer and frontman Chris Harms. Initially a solo project, Harms expanded the lineup to create a full band, releasing their debut single \"Dry the Rain\" in 2009 and their first album \"Fears\" in 2010 under the independent label Out of Line. Their music spans genres including gothic metal, industrial metal, gothic rock, industrial rock, and glam rock. The band has been influenced by artists such as Rammstein, Nine Inch Nails, Marilyn Manson, and Lady Gaga. In 2023, they represented Germany in the Eurovision Song Contest with the song \"Blood \u0026 Glitter.\" Their discography includes albums like \"Antagony\" (2011), \"Die Tomorrow\" (2012), \"From the Flame Into the Fire\" (2014), \"Empyrean\" (2016), \"Thornstar\" (2018), \"Judas\" (2021), \"Blood \u0026 Glitter\" (2022), \"Weapons of Mass Seduction\" (2023), \"Opvs Noir Vol. 1\" (2025), and \"Opvs Noir Vol. 2\" (2025). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Lord_of_the_Lost?utm_source=openai))",
       "logo": "https://lordofthelost.de/wp-content/uploads/2023/03/lotl_logo.png",
@@ -20212,7 +20212,7 @@
       "members": [
         {
           "name": "Frederik Moos",
-          "role": "Rapper (MadFred)"
+          "role": "Rapper (Madfred)"
         },
         {
           "name": "Tobias Mehner",
@@ -20380,7 +20380,7 @@
       "members": [
         {
           "name": "Jean-Noël Scherrer",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Julien Peultier",
@@ -20575,7 +20575,7 @@
       "members": [
         {
           "name": "Jan Fenger Christensen",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Trong Minh Le",
@@ -20708,7 +20708,7 @@
       "members": [
         {
           "name": "Not Specified",
-          "role": "Not specified"
+          "role": "Not Specified"
         }
       ],
       "reviewed": false
@@ -20759,19 +20759,19 @@
       "members": [
         {
           "name": "Nate Barcalow",
-          "role": "Lead vocals, keyboards"
+          "role": "Lead Vocals, Keyboards"
         },
         {
           "name": "Randy \"R2k\" Strohmeyer",
-          "role": "Lead guitar, backing vocals"
+          "role": "Lead Guitar, Backing Vocals"
         },
         {
           "name": "Alex \"Grizz\" Linares",
-          "role": "Rhythm guitar"
+          "role": "Rhythm Guitar"
         },
         {
           "name": "Alex Pappas",
-          "role": "Drums, percussion"
+          "role": "Drums, Percussion"
         },
         {
           "name": "Kenny Finn",
@@ -20797,7 +20797,7 @@
       "members": [
         {
           "name": "Rob Damiani",
-          "role": "Lead Vocals and Electronics"
+          "role": "Lead Vocals And Electronics"
         },
         {
           "name": "Simon Delaney",
@@ -20805,11 +20805,11 @@
         },
         {
           "name": "Tom Doyle",
-          "role": "Bass and Programming"
+          "role": "Bass And Programming"
         },
         {
           "name": "Matt Donnelly",
-          "role": "Drums and Backing Vocals"
+          "role": "Drums And Backing Vocals"
         }
       ],
       "reviewed": false
@@ -20911,7 +20911,7 @@
         },
         {
           "name": "Maxx Danziger",
-          "role": "Drums, Backing and Lead Vocals"
+          "role": "Drums, Backing And Lead Vocals"
         }
       ],
       "reviewed": false
@@ -21260,11 +21260,11 @@
       "members": [
         {
           "name": "Gavin Rossdale",
-          "role": "Lead vocalist and rhythm guitarist"
+          "role": "Lead Vocalist And Rhythm Guitarist"
         },
         {
           "name": "Chris Traynor",
-          "role": "Lead guitarist"
+          "role": "Lead Guitarist"
         },
         {
           "name": "Corey Britz",
@@ -21546,7 +21546,7 @@
       "members": [
         {
           "name": "Omega",
-          "role": "All instruments"
+          "role": "All Instruments"
         },
         {
           "name": "Wraath",
@@ -21572,31 +21572,31 @@
       "members": [
         {
           "name": "Mick Jones",
-          "role": "Lead and rhythm guitars, keyboards, backing and lead vocals"
+          "role": "Lead And Rhythm Guitars, Keyboards, Backing And Lead Vocals"
         },
         {
           "name": "Jeff Pilson",
-          "role": "Bass, backing vocals, keyboards"
+          "role": "Bass, Backing Vocals, Keyboards"
         },
         {
           "name": "Michael Bluestein",
-          "role": "Keyboards, keytar, backing vocals"
+          "role": "Keyboards, Keytar, Backing Vocals"
         },
         {
           "name": "Bruce Watson",
-          "role": "Lead and rhythm guitars, backing vocals"
+          "role": "Lead And Rhythm Guitars, Backing Vocals"
         },
         {
           "name": "Chris Frazier",
-          "role": "Drums, percussion"
+          "role": "Drums, Percussion"
         },
         {
           "name": "Luis Maldonado",
-          "role": "Rhythm and lead guitars, backing vocals, bass (2021–2025); lead vocals (2025–present)"
+          "role": "Rhythm And Lead Guitars, Backing Vocals, Bass (2021–2025); Lead Vocals (2025–Present)"
         },
         {
           "name": "John Roth",
-          "role": "Rhythm and lead guitars, bass, backing vocals (2025–present)"
+          "role": "Rhythm And Lead Guitars, Bass, Backing Vocals (2025–Present)"
         }
       ],
       "reviewed": false
@@ -21621,7 +21621,7 @@
         },
         {
           "name": "István",
-          "role": "All instruments"
+          "role": "All Instruments"
         }
       ],
       "reviewed": false
@@ -21735,7 +21735,7 @@
       "members": [
         {
           "name": "Magnus",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Aril",
@@ -21993,7 +21993,7 @@
       "members": [
         {
           "name": "Hatskrømt",
-          "role": "All instruments, Vocals (2021-present)"
+          "role": "All Instruments, Vocals (2021-Present)"
         }
       ],
       "reviewed": false
@@ -22054,7 +22054,7 @@
       "members": [
         {
           "name": "Frank Regan",
-          "role": "Vocalist and Guitarist"
+          "role": "Vocalist And Guitarist"
         },
         {
           "name": "Dom Wallace",
@@ -22135,7 +22135,7 @@
         },
         {
           "name": "Leevi Luoto",
-          "role": "Vocals and Bass"
+          "role": "Vocals And Bass"
         },
         {
           "name": "Tuomas Kurikka",
@@ -22170,7 +22170,7 @@
       "members": [
         {
           "name": "Leo Moracchioli",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Hannah Boulton",
@@ -22186,7 +22186,7 @@
         },
         {
           "name": "Truls Haugen",
-          "role": "Vocals and Drums"
+          "role": "Vocals And Drums"
         }
       ],
       "reviewed": false
@@ -22319,7 +22319,7 @@
         },
         {
           "name": "Dj Muggs",
-          "role": "DJ"
+          "role": "Dj"
         },
         {
           "name": "Eric Bobo",
@@ -22477,15 +22477,15 @@
       "members": [
         {
           "name": "Vratko Rohoň",
-          "role": "vocals, guitar"
+          "role": "Vocals, Guitar"
         },
         {
           "name": "Jozef \"Dodo\" Praženec",
-          "role": "drums"
+          "role": "Drums"
         },
         {
           "name": "Vlado Bis",
-          "role": "bass, backing vocals"
+          "role": "Bass, Backing Vocals"
         }
       ],
       "reviewed": false
@@ -22659,19 +22659,19 @@
       "members": [
         {
           "name": "John Doe",
-          "role": "vocals"
+          "role": "Vocals"
         },
         {
           "name": "Jane Smith",
-          "role": "guitar"
+          "role": "Guitar"
         },
         {
           "name": "Alex Johnson",
-          "role": "bass"
+          "role": "Bass"
         },
         {
           "name": "Emily Davis",
-          "role": "drums"
+          "role": "Drums"
         }
       ],
       "reviewed": false
@@ -22837,11 +22837,11 @@
       "members": [
         {
           "name": "A.a.k.",
-          "role": "Everything (2024-present)"
+          "role": "Everything (2024-Present)"
         },
         {
           "name": "Scum",
-          "role": "Everything (2024-present)"
+          "role": "Everything (2024-Present)"
         }
       ],
       "reviewed": false
@@ -23455,7 +23455,7 @@
         },
         {
           "name": "Sture (Sture Dingsøyr)",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Strom (Stian Bakketeig)",
@@ -23515,15 +23515,15 @@
       "members": [
         {
           "name": "Gérard Baste",
-          "role": "MC"
+          "role": "Mc"
         },
         {
           "name": "Mr. Xavier (Xanax)",
-          "role": "MC"
+          "role": "Mc"
         },
         {
           "name": "Dj Pone",
-          "role": "DJ"
+          "role": "Dj"
         }
       ],
       "reviewed": false
@@ -23618,7 +23618,7 @@
       "members": [
         {
           "name": "Vlado Saric",
-          "role": "Vocalist and Songwriter"
+          "role": "Vocalist And Songwriter"
         },
         {
           "name": "Mitchell Black",
@@ -23630,7 +23630,7 @@
         },
         {
           "name": "Shawn 'Red Curl' Mayer",
-          "role": "Guitarist and Supporting Vocalist"
+          "role": "Guitarist And Supporting Vocalist"
         }
       ],
       "reviewed": false
@@ -23656,15 +23656,15 @@
         },
         {
           "name": "Zack Anderson",
-          "role": "Guitars (2019–present), Bass (2011–2019)"
+          "role": "Guitars (2019–Present), Bass (2011–2019)"
         },
         {
           "name": "André Kvarnström",
-          "role": "Drums (2014–present)"
+          "role": "Drums (2014–Present)"
         },
         {
           "name": "Kristoffer Schander",
-          "role": "Bass (2019–present)"
+          "role": "Bass (2019–Present)"
         }
       ],
       "reviewed": false
@@ -23719,11 +23719,11 @@
       "members": [
         {
           "name": "Shannon Fulgham",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Dan Walker",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Bill Dougherty",
@@ -23757,7 +23757,7 @@
       "members": [
         {
           "name": "Eirik Waadeland",
-          "role": "Guitar and Vocals"
+          "role": "Guitar And Vocals"
         },
         {
           "name": "Magnus Heitun Tungen",
@@ -23786,11 +23786,11 @@
       "members": [
         {
           "name": "Tobias Reim",
-          "role": "Bass, Vocals (backing)"
+          "role": "Bass, Vocals (Backing)"
         },
         {
           "name": "Albert Baker",
-          "role": "Drums, Vocals (backing)"
+          "role": "Drums, Vocals (Backing)"
         },
         {
           "name": "Alex Mccallum",
@@ -24010,7 +24010,7 @@
       "members": [
         {
           "name": "Christoph \"Lupus\" Lindemann",
-          "role": "Guitarist and Lead Vocalist"
+          "role": "Guitarist And Lead Vocalist"
         },
         {
           "name": "Christoph \"Tiger\" Bartelt",
@@ -24022,7 +24022,7 @@
         },
         {
           "name": "Jascha Kreft",
-          "role": "Guitarist and Keyboardist"
+          "role": "Guitarist And Keyboardist"
         }
       ],
       "reviewed": false
@@ -24179,19 +24179,19 @@
       "members": [
         {
           "name": "Parker Cannon",
-          "role": "Lead vocals"
+          "role": "Lead Vocals"
         },
         {
           "name": "Kevin Geyer",
-          "role": "Lead guitar, backing vocals"
+          "role": "Lead Guitar, Backing Vocals"
         },
         {
           "name": "Will Levy",
-          "role": "Rhythm guitar, backing vocals"
+          "role": "Rhythm Guitar, Backing Vocals"
         },
         {
           "name": "Ryan Torf",
-          "role": "Drums, percussion"
+          "role": "Drums, Percussion"
         }
       ],
       "reviewed": false
@@ -24284,7 +24284,7 @@
       "members": [
         {
           "name": "Aðalbjörn \"Addi\" Tryggvason",
-          "role": "Guitar, vocals"
+          "role": "Guitar, Vocals"
         },
         {
           "name": "Sæþór Maríus \"Pjúddi\" Sæþórsson",
@@ -24296,7 +24296,7 @@
         },
         {
           "name": "Hallgrímur Jón \"Grimsi\" Hallgrímsson",
-          "role": "Drums, backing vocals"
+          "role": "Drums, Backing Vocals"
         }
       ],
       "reviewed": false
@@ -24561,11 +24561,11 @@
       "members": [
         {
           "name": "Samy Elbanna",
-          "role": "Lead and Rhythm Guitars, Lead Vocals"
+          "role": "Lead And Rhythm Guitars, Lead Vocals"
         },
         {
           "name": "Arttu Lesonen",
-          "role": "Lead and Rhythm Guitars, Backing Vocals"
+          "role": "Lead And Rhythm Guitars, Backing Vocals"
         },
         {
           "name": "Mirko Lehtinen",
@@ -24691,15 +24691,15 @@
       "members": [
         {
           "name": "Richard",
-          "role": "Vocals and Bass"
+          "role": "Vocals And Bass"
         },
         {
           "name": "Lolo Carmona",
-          "role": "Guitars and Backing Vocals"
+          "role": "Guitars And Backing Vocals"
         },
         {
           "name": "Ángel \"Beerkiller\"",
-          "role": "Drums and Backing Vocals"
+          "role": "Drums And Backing Vocals"
         }
       ],
       "reviewed": false
@@ -25444,7 +25444,7 @@
       "members": [
         {
           "name": "The Black Hermit",
-          "role": "All instruments, Vocals (2020-present)"
+          "role": "All Instruments, Vocals (2020-Present)"
         }
       ],
       "reviewed": false
@@ -25686,7 +25686,7 @@
       "members": [
         {
           "name": "Conrad \"Cronos\" Lant",
-          "role": "Vocals and Bass"
+          "role": "Vocals And Bass"
         },
         {
           "name": "Stuart \"Rage\" Dixon",
@@ -25837,7 +25837,7 @@
         },
         {
           "name": "Christian Andrés Almanza",
-          "role": "Vocals (on \"Sympathy\")"
+          "role": "Vocals (On \"Sympathy\")"
         }
       ],
       "reviewed": false
@@ -25863,11 +25863,11 @@
         },
         {
           "name": "Ics Vortex",
-          "role": "Vocals and Bass"
+          "role": "Vocals And Bass"
         },
         {
           "name": "Lars A. Nedland",
-          "role": "Keyboards and Vocals"
+          "role": "Keyboards And Vocals"
         },
         {
           "name": "Bjørn Dugstad Rønnow",
@@ -26534,7 +26534,7 @@
       "members": [
         {
           "name": "Astathica",
-          "role": "All instruments, Vocals, Drum programming"
+          "role": "All Instruments, Vocals, Drum Programming"
         }
       ],
       "reviewed": false
@@ -26614,7 +26614,7 @@
       "members": [
         {
           "name": "Mike Dalsgaard",
-          "role": "Guitars, Vocals (backing)"
+          "role": "Guitars, Vocals (Backing)"
         },
         {
           "name": "Filip Dursun",
@@ -26910,7 +26910,7 @@
       "members": [
         {
           "name": "James Kent",
-          "role": "Composer/Producer/Multi-instrumentalist"
+          "role": "Composer/Producer/Multi-Instrumentalist"
         }
       ],
       "reviewed": false
@@ -26978,7 +26978,7 @@
         },
         {
           "name": "Nuno Bettencourt",
-          "role": "Guitar, Keyboards, Piano, Backing and Lead Vocals, Brass and Orchestration Arrangements"
+          "role": "Guitar, Keyboards, Piano, Backing And Lead Vocals, Brass And Orchestration Arrangements"
         },
         {
           "name": "Pat Badger",
@@ -27008,23 +27008,23 @@
       "members": [
         {
           "name": "Eddie Guz",
-          "role": "Lead Vocals (2001–present)"
+          "role": "Lead Vocals (2001–Present)"
         },
         {
           "name": "Chris Marchand",
-          "role": "Lead Guitar (2015–present)"
+          "role": "Lead Guitar (2015–Present)"
         },
         {
           "name": "Anders \"Rock\" Søbakk",
-          "role": "Guitar (2023–present)"
+          "role": "Guitar (2023–Present)"
         },
         {
           "name": "Chris Nitro",
-          "role": "Drums (2001–present)"
+          "role": "Drums (2001–Present)"
         },
         {
           "name": "King O'men",
-          "role": "Bass (2001–present)"
+          "role": "Bass (2001–Present)"
         }
       ],
       "reviewed": false
@@ -27305,11 +27305,11 @@
         },
         {
           "name": "Ryan Phillips",
-          "role": "Lead guitar"
+          "role": "Lead Guitar"
         },
         {
           "name": "Adam Russell",
-          "role": "Bass guitar"
+          "role": "Bass Guitar"
         },
         {
           "name": "Josh Wills",
@@ -27387,7 +27387,7 @@
       "members": [
         {
           "name": "Thomas V. Jäger",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Mika Häkki",
@@ -27581,7 +27581,7 @@
         },
         {
           "name": "Alec \"Acle\" Kahney",
-          "role": "Lead Guitar and Producer"
+          "role": "Lead Guitar And Producer"
         },
         {
           "name": "James Monteith",
@@ -27589,11 +27589,11 @@
         },
         {
           "name": "Amos Williams",
-          "role": "Bass and Backing Vocals"
+          "role": "Bass And Backing Vocals"
         },
         {
           "name": "Jay Postones",
-          "role": "Drums and Percussion"
+          "role": "Drums And Percussion"
         }
       ],
       "reviewed": false
@@ -28306,7 +28306,7 @@
       "members": [
         {
           "name": "James Joseph",
-          "role": "Guitar and Vocals"
+          "role": "Guitar And Vocals"
         },
         {
           "name": "James Biss",
@@ -28431,11 +28431,11 @@
       "members": [
         {
           "name": "Odin",
-          "role": "Guitars (lead), Vocals"
+          "role": "Guitars (Lead), Vocals"
         },
         {
           "name": "Hypnoticvs",
-          "role": "Guitars (rhythm), Bass"
+          "role": "Guitars (Rhythm), Bass"
         },
         {
           "name": "Ziechenbart",
@@ -28589,7 +28589,7 @@
       "members": [
         {
           "name": "Harry Armstrong",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Kieran Murphy",
@@ -28657,7 +28657,7 @@
         },
         {
           "name": "Duff Mckagan",
-          "role": "Bassist, Backing and Occasional Lead Vocals"
+          "role": "Bassist, Backing And Occasional Lead Vocals"
         },
         {
           "name": "Dizzy Reed",
@@ -28669,7 +28669,7 @@
         },
         {
           "name": "Melissa Reese",
-          "role": "Synthesizers, Keyboards, Backing Vocals, Sub-bass, Programming, Percussion"
+          "role": "Synthesizers, Keyboards, Backing Vocals, Sub-Bass, Programming, Percussion"
         },
         {
           "name": "Isaac Carpenter",
@@ -28790,7 +28790,7 @@
       "members": [
         {
           "name": "Gabriel Almazán",
-          "role": "Vocals and Guitar"
+          "role": "Vocals And Guitar"
         },
         {
           "name": "Sebastián Rojas",
@@ -28970,7 +28970,7 @@
       "members": [
         {
           "name": "V. Einride",
-          "role": "All instruments, Lyrics, Songwriting"
+          "role": "All Instruments, Lyrics, Songwriting"
         },
         {
           "name": "K.r.",
@@ -29204,7 +29204,7 @@
       "members": [
         {
           "name": "Shayan",
-          "role": "Guitarist and Vocalist"
+          "role": "Guitarist And Vocalist"
         },
         {
           "name": "Sully",
@@ -29300,7 +29300,7 @@
       "members": [
         {
           "name": "Mariusz \"Demon\" Dzwonek",
-          "role": "Rhythm guitar, backing vocals"
+          "role": "Rhythm Guitar, Backing Vocals"
         },
         {
           "name": "Wojciech \"Novak\" Nowak",
@@ -29308,11 +29308,11 @@
         },
         {
           "name": "Marcin \"Auman\" Rdest",
-          "role": "Lead vocals"
+          "role": "Lead Vocals"
         },
         {
           "name": "Dariusz \"Daron\" Kupis",
-          "role": "Lead guitar"
+          "role": "Lead Guitar"
         },
         {
           "name": "Tomasz \"Toma\" Ochab",
@@ -29614,15 +29614,15 @@
         },
         {
           "name": "Tomáš Durkáč",
-          "role": "Bass and Backing Vocals"
+          "role": "Bass And Backing Vocals"
         },
         {
           "name": "Pavol Balčák",
-          "role": "Drums and Backing Vocals"
+          "role": "Drums And Backing Vocals"
         },
         {
           "name": "Igor Polorecký",
-          "role": "Guitar and Backing Vocals"
+          "role": "Guitar And Backing Vocals"
         },
         {
           "name": "Gregor Chalupecký",
@@ -29846,11 +29846,11 @@
       "members": [
         {
           "name": "Sid Ryan",
-          "role": "Bass and Lead Vocals"
+          "role": "Bass And Lead Vocals"
         },
         {
           "name": "Jack Chatfield",
-          "role": "Guitar and Vocals"
+          "role": "Guitar And Vocals"
         },
         {
           "name": "Jacob Hull",
@@ -30077,19 +30077,19 @@
       "members": [
         {
           "name": "Kim Sasabone",
-          "role": "Lead vocalist"
+          "role": "Lead Vocalist"
         },
         {
           "name": "Denise Van Rijswijk",
-          "role": "Female vocalist"
+          "role": "Female Vocalist"
         },
         {
           "name": "Robin Pors",
-          "role": "Male vocalist"
+          "role": "Male Vocalist"
         },
         {
           "name": "Donny Latupeirissa",
-          "role": "Male vocalist"
+          "role": "Male Vocalist"
         }
       ],
       "reviewed": false
@@ -30146,11 +30146,11 @@
       "members": [
         {
           "name": "Duratror",
-          "role": "Guitars (rhythm), Drum Sequencing"
+          "role": "Guitars (Rhythm), Drum Sequencing"
         },
         {
           "name": "Vornoth",
-          "role": "Vocals, Guitars (lead), Bass"
+          "role": "Vocals, Guitars (Lead), Bass"
         }
       ],
       "reviewed": false
@@ -30323,7 +30323,7 @@
         },
         {
           "name": "Apollyon",
-          "role": "Bass and Vocals"
+          "role": "Bass And Vocals"
         },
         {
           "name": "Faust",
