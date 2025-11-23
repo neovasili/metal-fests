@@ -1718,12 +1718,12 @@
           "size": 1
         },
         {
-          "key": "p.o.d.",
+          "key": "pod",
           "name": "P.o.d.",
           "size": 1
         },
         {
-          "key": "voilà",
+          "key": "voil",
           "name": "Voilà",
           "size": 1
         }
@@ -2174,7 +2174,7 @@
           "size": 3
         },
         {
-          "key": "(0)",
+          "key": "0",
           "name": "(0)",
           "size": 3
         },
@@ -2194,7 +2194,7 @@
           "size": 3
         },
         {
-          "key": "håndgemeng",
+          "key": "hndgemeng",
           "name": "Håndgemeng",
           "size": 3
         },
@@ -3371,12 +3371,12 @@
           "size": 1
         },
         {
-          "key": "see-you-in-hell!",
+          "key": "see-you-in-hell",
           "name": "See You In Hell!",
           "size": 1
         },
         {
-          "key": "ill-niño",
+          "key": "ill-nio",
           "name": "Ill Niño",
           "size": 1
         },
@@ -3797,7 +3797,7 @@
           "size": 3
         },
         {
-          "key": "d+t",
+          "key": "dt",
           "name": "D+T",
           "size": 3
         },
@@ -4704,7 +4704,7 @@
           "size": 3
         },
         {
-          "key": "w.a.s.p.",
+          "key": "wasp",
           "name": "W.a.s.p.",
           "size": 3
         },
@@ -5320,7 +5320,7 @@
           "size": 3
         },
         {
-          "key": "old-man’s-child",
+          "key": "old-mans-child",
           "name": "Old Man’s Child",
           "size": 3
         }
