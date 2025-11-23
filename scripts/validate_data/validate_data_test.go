@@ -208,3 +208,71 @@ func TestColorize(t *testing.T) {
 		})
 	}
 }
+
+func TestGenerateBandKey(t *testing.T) {
+	tests := []struct {
+		name     string
+		bandName string
+		expected string
+	}{
+		{
+			name:     "Simple band name",
+			bandName: "Metallica",
+			expected: "metallica",
+		},
+		{
+			name:     "Band name with spaces",
+			bandName: "Iron Maiden",
+			expected: "iron-maiden",
+		},
+		{
+			name:     "Band name with special characters",
+			bandName: "AC/DC",
+			expected: "acdc",
+		},
+		{
+			name:     "Band name with ampersand and spaces",
+			bandName: "Earth, Wind & Fire",
+			expected: "earth-wind-fire",
+		},
+		{
+			name:     "Band name with dots",
+			bandName: "P.O.D.",
+			expected: "pod",
+		},
+		{
+			name:     "Band name with apostrophes",
+			bandName: "Old Man's Child",
+			expected: "old-mans-child",
+		},
+		{
+			name:     "Band name with consecutive spaces",
+			bandName: "My  Band   Name",
+			expected: "my-band-name",
+		},
+		{
+			name:     "Band name with leading/trailing spaces",
+			bandName: "  Band Name  ",
+			expected: "band-name",
+		},
+		{
+			name:     "Band name with numbers",
+			bandName: "Stam1Na",
+			expected: "stam1na",
+		},
+		{
+			name:     "Band name with multiple special chars",
+			bandName: "!@#$Test%^&*Band()",
+			expected: "testband",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			result := generateBandKey(tt.bandName)
+			if result != tt.expected {
+				t.Errorf("generateBandKey(%q) = %q, want %q", tt.bandName, result, tt.expected)
+			}
+		})
+	}
+}

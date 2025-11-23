@@ -2,9 +2,11 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 
 	"golang.org/x/text/cases"
@@ -57,6 +59,28 @@ func printError(text string) {
 
 func printInfo(text string) {
 	fmt.Printf("%s %s\n", colorize("ℹ", ColorBlue), text)
+}
+
+// generateBandKey generates a URL-friendly key from a band name
+func generateBandKey(bandName string) string {
+	// Convert to lowercase
+	key := strings.ToLower(bandName)
+
+	// Remove special characters
+	reg := regexp.MustCompile(`[^a-z0-9\s-]`)
+	key = reg.ReplaceAllString(key, "")
+
+	// Replace spaces with hyphens
+	key = strings.ReplaceAll(key, " ", "-")
+
+	// Remove consecutive hyphens
+	reg = regexp.MustCompile(`-+`)
+	key = reg.ReplaceAllString(key, "-")
+
+	// Trim hyphens from start and end
+	key = strings.Trim(key, "-")
+
+	return key
 }
 
 // levenshteinDistance calculates the Levenshtein distance between two strings
@@ -140,47 +164,83 @@ func validateJSONStructure(filePath string) (bool, *model.Database) {
 }
 
 // validateBandNames validates band names in both festivals and bands sections
-func validateBandNames(data *model.Database) ValidationResult {
+func validateBandNames(data *model.Database, fix bool) ValidationResult {
 	printHeader("BAND NAME CAPITALIZATION")
 
 	result := ValidationResult{}
+	fixed := 0
 
 	// Check band names in festivals
 	printInfo("Checking band names in festivals...")
-	totalFestivalBands := 0
-	for _, festival := range data.Festivals {
-		for range festival.Bands {
-			totalFestivalBands++
+	for i, festival := range data.Festivals {
+		for j, band := range festival.Bands {
+			expected := cases.Title(language.English).String(band.Name)
+			if band.Name != expected {
+				if fix {
+					printInfo(fmt.Sprintf("  Festival '%s', Band: Fixing '%s' → '%s'", festival.Name, band.Name, expected))
+					data.Festivals[i].Bands[j].Name = expected
+					fixed++
+				} else {
+					printError(fmt.Sprintf("  Festival '%s', Band: '%s' not properly capitalized (should be '%s')", festival.Name, band.Name, expected))
+					result.Errors++
+				}
+			}
 		}
 	}
 
-	printSuccess(fmt.Sprintf("All %d band names in festivals (band names are not auto-capitalized)", totalFestivalBands))
-
 	// Check band names in bands section
 	printInfo("Checking band names in bands section...")
-	printSuccess(fmt.Sprintf("All %d band names (band names are not auto-capitalized)", len(data.Bands)))
-
-	return result
-}
-
-// validateGenres validates music genre capitalization
-func validateGenres(data *model.Database) ValidationResult {
-	printHeader("MUSIC GENRE CAPITALIZATION")
-
-	result := ValidationResult{}
-	totalGenres := 0
-
-	for _, band := range data.Bands {
-		for _, genre := range band.Genres {
-			totalGenres++
-			if !isProperlyCapitalized(genre) {
-				printError(fmt.Sprintf("  Band '%s': Genre '%s' not properly capitalized", band.Name, genre))
+	for i, band := range data.Bands {
+		expected := cases.Title(language.English).String(band.Name)
+		if band.Name != expected {
+			if fix {
+				printInfo(fmt.Sprintf("  Band: Fixing '%s' → '%s'", band.Name, expected))
+				data.Bands[i].Name = expected
+				fixed++
+			} else {
+				printError(fmt.Sprintf("  Band: '%s' not properly capitalized (should be '%s')", band.Name, expected))
 				result.Errors++
 			}
 		}
 	}
 
-	if result.Errors == 0 {
+	if fix && fixed > 0 {
+		printSuccess(fmt.Sprintf("Fixed %d band name(s)", fixed))
+	} else if result.Errors == 0 {
+		printSuccess("All band names are properly capitalized")
+	}
+
+	return result
+}
+
+// validateGenres validates music genre capitalization
+func validateGenres(data *model.Database, fix bool) ValidationResult {
+	printHeader("MUSIC GENRE CAPITALIZATION")
+
+	result := ValidationResult{}
+	totalGenres := 0
+	fixed := 0
+
+	for i, band := range data.Bands {
+		for j, genre := range band.Genres {
+			totalGenres++
+			if !isProperlyCapitalized(genre) {
+				expected := cases.Title(language.English).String(genre)
+				if fix {
+					printInfo(fmt.Sprintf("  Band '%s': Fixing genre '%s' → '%s'", band.Name, genre, expected))
+					data.Bands[i].Genres[j] = expected
+					fixed++
+				} else {
+					printError(fmt.Sprintf("  Band '%s': Genre '%s' not properly capitalized (should be '%s')", band.Name, genre, expected))
+					result.Errors++
+				}
+			}
+		}
+	}
+
+	if fix && fixed > 0 {
+		printSuccess(fmt.Sprintf("Fixed %d genre(s)", fixed))
+	} else if result.Errors == 0 {
 		printSuccess(fmt.Sprintf("All %d genre entries are properly capitalized", totalGenres))
 	}
 
@@ -188,31 +248,91 @@ func validateGenres(data *model.Database) ValidationResult {
 }
 
 // validateMemberRoles validates band member role capitalization
-func validateMemberRoles(data *model.Database) ValidationResult {
+func validateMemberRoles(data *model.Database, fix bool) ValidationResult {
 	printHeader("BAND MEMBER ROLE CAPITALIZATION")
 
 	result := ValidationResult{}
 	totalMembers := 0
+	fixed := 0
 
-	for _, band := range data.Bands {
-		for _, member := range band.Members {
+	for i, band := range data.Bands {
+		for j, member := range band.Members {
 			totalMembers++
 			if !isProperlyCapitalized(member.Role) {
-				printError(fmt.Sprintf("  Band '%s', Member '%s': Role '%s' not properly capitalized", band.Name, member.Name, member.Role))
-				result.Errors++
+				expected := cases.Title(language.English).String(member.Role)
+				if fix {
+					printInfo(fmt.Sprintf("  Band '%s', Member '%s': Fixing role '%s' → '%s'", band.Name, member.Name, member.Role, expected))
+					data.Bands[i].Members[j].Role = expected
+					fixed++
+				} else {
+					printError(fmt.Sprintf("  Band '%s', Member '%s': Role '%s' not properly capitalized (should be '%s')", band.Name, member.Name, member.Role, expected))
+					result.Errors++
+				}
 			}
 		}
 	}
 
-	if result.Errors == 0 {
+	if fix && fixed > 0 {
+		printSuccess(fmt.Sprintf("Fixed %d member role(s)", fixed))
+	} else if result.Errors == 0 {
 		printSuccess(fmt.Sprintf("All %d member roles are properly capitalized", totalMembers))
 	}
 
 	return result
 }
 
+// validateBandKeys validates that band keys are compliant with the generateBandKey format
+func validateBandKeys(data *model.Database, fix bool) ValidationResult {
+	printHeader("BAND KEY COMPLIANCE")
+
+	result := ValidationResult{}
+	fixed := 0
+
+	// Check band keys in festivals
+	printInfo("Checking band keys in festivals...")
+	for i, festival := range data.Festivals {
+		for j, band := range festival.Bands {
+			expected := generateBandKey(band.Name)
+			if band.Key != expected {
+				if fix {
+					printInfo(fmt.Sprintf("  Festival '%s', Band '%s': Fixing key '%s' → '%s'", festival.Name, band.Name, band.Key, expected))
+					data.Festivals[i].Bands[j].Key = expected
+					fixed++
+				} else {
+					printError(fmt.Sprintf("  Festival '%s', Band '%s': Key '%s' not compliant (should be '%s')", festival.Name, band.Name, band.Key, expected))
+					result.Errors++
+				}
+			}
+		}
+	}
+
+	// Check band keys in bands section
+	printInfo("Checking band keys in bands section...")
+	for i, band := range data.Bands {
+		expected := generateBandKey(band.Name)
+		if band.Key != expected {
+			if fix {
+				printInfo(fmt.Sprintf("  Band '%s': Fixing key '%s' → '%s'", band.Name, band.Key, expected))
+				data.Bands[i].Key = expected
+				fixed++
+			} else {
+				printError(fmt.Sprintf("  Band '%s': Key '%s' not compliant (should be '%s')", band.Name, band.Key, expected))
+				result.Errors++
+			}
+		}
+	}
+
+	if fix && fixed > 0 {
+		printSuccess(fmt.Sprintf("Fixed %d band key(s)", fixed))
+	} else if result.Errors == 0 {
+		printSuccess("All band keys are compliant")
+	}
+
+	return result
+}
+
 // detectDuplicates detects potential duplicate band names using Levenshtein distance
-func detectDuplicates(data *model.Database, threshold int) ValidationResult {
+func detectDuplicates(data *model.Database, threshold int, hideWarnings bool) ValidationResult {
 	printHeader("DUPLICATE DETECTION (Levenshtein Distance)")
 
 	result := ValidationResult{}
@@ -277,7 +397,9 @@ func detectDuplicates(data *model.Database, threshold int) ValidationResult {
 			distance := levenshteinDistance(lower1, lower2)
 
 			if distance <= threshold {
-				printWarning(fmt.Sprintf("  Potential duplicate (distance=%d): '%s' (%s) ↔ '%s' (%s)", distance, name1, source1, name2, source2))
+				if !hideWarnings {
+					printWarning(fmt.Sprintf("  Potential duplicate (distance=%d): '%s' (%s) ↔ '%s' (%s)", distance, name1, source1, name2, source2))
+				}
 				result.Warnings++
 				duplicatesFound++
 			}
@@ -287,15 +409,34 @@ func detectDuplicates(data *model.Database, threshold int) ValidationResult {
 	if duplicatesFound == 0 {
 		printSuccess("No potential duplicates detected")
 	} else {
-		printInfo(fmt.Sprintf("Found %d potential duplicate(s)", duplicatesFound))
+		if hideWarnings {
+			printInfo(fmt.Sprintf("Found %d potential duplicate(s) (use without --hide-warnings to see details)", duplicatesFound))
+		} else {
+			printInfo(fmt.Sprintf("Found %d potential duplicate(s)", duplicatesFound))
+		}
 	}
 
 	return result
 }
 
 func main() {
+	// Parse command line flags
+	fix := flag.Bool("fix", false, "Automatically fix formatting issues")
+	hideWarnings := flag.Bool("hide-warnings", false, "Hide warning details (e.g., duplicate band list)")
+	flag.Parse()
+
 	fmt.Printf("\n%s\n", colorize("🎸 Metal Festivals Database Validator", ColorBold+ColorCyan))
 	fmt.Printf("%s\n", colorize(strings.Repeat("=", 80), ColorBold))
+
+	if *fix {
+		printInfo("🔧 Fix mode enabled: Formatting issues will be automatically corrected")
+		fmt.Println()
+	}
+
+	if *hideWarnings {
+		printInfo("🔇 Hide warnings mode enabled: Warning details will be hidden")
+		fmt.Println()
+	}
 
 	// Determine file path
 	execPath, err := os.Executable()
@@ -326,24 +467,58 @@ func main() {
 	totalErrors := 0
 	totalWarnings := 0
 
-	result := validateBandNames(data)
+	result := validateBandNames(data, *fix)
 	totalErrors += result.Errors
 	totalWarnings += result.Warnings
 
-	result = validateGenres(data)
+	result = validateGenres(data, *fix)
 	totalErrors += result.Errors
 	totalWarnings += result.Warnings
 
-	result = validateMemberRoles(data)
+	result = validateMemberRoles(data, *fix)
 	totalErrors += result.Errors
 	totalWarnings += result.Warnings
 
-	result = detectDuplicates(data, 2)
+	result = validateBandKeys(data, *fix)
 	totalErrors += result.Errors
 	totalWarnings += result.Warnings
+
+	result = detectDuplicates(data, 2, *hideWarnings)
+	totalErrors += result.Errors
+	totalWarnings += result.Warnings
+
+	// Save fixed data if in fix mode
+	if *fix {
+		printHeader("SAVING CHANGES")
+		jsonData, err := json.MarshalIndent(data, "", "  ")
+		if err != nil {
+			printError(fmt.Sprintf("Error marshaling JSON: %v", err))
+			os.Exit(1)
+		}
+
+		// #nosec G306 - db.json needs to be readable by other processes
+		if err := os.WriteFile(dbPath, jsonData, 0644); err != nil {
+			printError(fmt.Sprintf("Error writing file: %v", err))
+			os.Exit(1)
+		}
+
+		printSuccess("Changes saved successfully to db.json")
+	}
 
 	// Print summary
 	printHeader("VALIDATION SUMMARY")
+
+	if *fix {
+		if totalErrors == 0 && totalWarnings == 0 {
+			fmt.Printf("%s\n", colorize("✅ All validations passed! No issues found.", ColorBold+ColorGreen))
+		} else {
+			fmt.Printf("%s\n", colorize("✅ All fixable issues have been corrected!", ColorBold+ColorGreen))
+			if totalWarnings > 0 {
+				fmt.Printf("%s\n", colorize(fmt.Sprintf("⚠️  Found %d warning(s) (not auto-fixable)", totalWarnings), ColorBold+ColorYellow))
+			}
+		}
+		os.Exit(0)
+	}
 
 	if totalErrors == 0 && totalWarnings == 0 {
 		fmt.Printf("%s\n", colorize("✅ All validations passed! No issues found.", ColorBold+ColorGreen))
@@ -352,6 +527,7 @@ func main() {
 
 	if totalErrors > 0 {
 		fmt.Printf("%s\n", colorize(fmt.Sprintf("❌ Found %d error(s)", totalErrors), ColorBold+ColorRed))
+		fmt.Printf("%s\n", colorize("💡 Tip: Run with --fix flag to automatically correct these issues", ColorBlue))
 	}
 	if totalWarnings > 0 {
 		fmt.Printf("%s\n", colorize(fmt.Sprintf("⚠️  Found %d warning(s)", totalWarnings), ColorBold+ColorYellow))
