@@ -1779,32 +1779,51 @@ PUT /api/bands/{key} - Updates band
 
 ### Proposed API with DynamoDB
 
+For complete API specifications, see:
+
+- **[Public API Design](API_DESIGN.md)**: Public read-only endpoints (GET operations)
+- **[Admin API Design](ADMIN_API_DESIGN.md)**: Admin endpoints (POST, PUT, DELETE operations) with Cognito + SAML authentication
+
+#### Public API Endpoints (Read-Only)
+
 ```text
 # Bands
 GET /api/bands - Returns all bands metadata
 GET /api/bands/{key} - Returns specific band details
-POST /api/bands - Creates new band
-PUT /api/bands/{key} - Updates band
-DELETE /api/bands/{key} - Deletes band (if not referenced)
 GET /api/bands/reviewed - Returns only reviewed bands
 GET /api/bands/unreviewed - Returns bands needing review
-POST /api/bands/validate - Validates band references array
 GET /api/bands/{key}/festivals - Returns festivals featuring this band
 
 # Genres
 GET /api/genres - Returns all genres
 GET /api/genres/{key} - Returns specific genre details
-POST /api/genres - Creates new genre
-PUT /api/genres/{key} - Updates genre
 GET /api/genres/{key}/bands - Returns bands in this genre
 
 # Roles
 GET /api/roles - Returns all roles
 GET /api/roles/{key} - Returns specific role details
-POST /api/roles - Creates new role
-PUT /api/roles/{key} - Updates role
 GET /api/roles/{key}/members - Returns band members with this role
 ```
+
+#### Admin API Endpoints (Authentication Required)
+
+```text
+# Bands
+POST /api/admin/bands - Creates new band
+PUT /api/admin/bands/{key} - Updates band
+DELETE /api/admin/bands/{key} - Deletes band (if not referenced)
+POST /api/admin/bands/validate - Validates band references array
+
+# Genres
+POST /api/admin/genres - Creates new genre
+PUT /api/admin/genres/{key} - Updates genre
+
+# Roles
+POST /api/admin/roles - Creates new role
+PUT /api/admin/roles/{key} - Updates role
+```
+
+See **[Admin API Design](ADMIN_API_DESIGN.md)** for authentication flow, permission models, and detailed specifications.
 
 ## Benefits of This Design
 
@@ -1899,3 +1918,9 @@ func UpdateFestivalEditionWithBandValidation(ctx context.Context, client *dynamo
     return nil
 }
 ```
+
+## Related Documentation
+
+- **[Festivals Data Model](DYNAMODB_FESTIVALS_DATA_MODEL.md)**: Complete festivals schema and referential integrity patterns
+- **[Public API Design](API_DESIGN.md)**: Public read-only API specifications
+- **[Admin API Design](ADMIN_API_DESIGN.md)**: Admin API with Cognito + SAML authentication

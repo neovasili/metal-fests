@@ -1298,17 +1298,31 @@ PUT /api/festivals/{key} - Updates festival
 
 ### Proposed API with DynamoDB
 
+For complete API specifications, see:
+
+- **[Public API Design](API_DESIGN.md)**: Public read-only endpoints (GET operations)
+- **[Admin API Design](ADMIN_API_DESIGN.md)**: Admin endpoints (POST, PUT, DELETE operations) with Cognito + SAML authentication
+
+#### Public API Endpoints (Read-Only)
+
 ```text
 GET /api/festivals - Returns all festivals with latest editions
 GET /api/festivals/upcoming - Returns upcoming festivals from current date
 GET /api/festivals/{key} - Returns festival details with all editions
 GET /api/festivals/{key}/editions - Returns all editions for a festival
 GET /api/festivals/{key}/editions/{year} - Returns specific edition
-PUT /api/festivals/{key} - Updates festival general information
-PUT /api/festivals/{key}/editions/{year} - Updates or creates edition
-POST /api/festivals - Creates new festival
-DELETE /api/festivals/{key}/editions/{year} - Deletes specific edition
 ```
+
+#### Admin API Endpoints (Authentication Required)
+
+```text
+POST /api/admin/festivals - Creates new festival
+PUT /api/admin/festivals/{key} - Updates festival general information
+PUT /api/admin/festivals/{key}/editions/{year} - Updates or creates edition
+DELETE /api/admin/festivals/{key}/editions/{year} - Deletes specific edition
+```
+
+See **[Admin API Design](ADMIN_API_DESIGN.md)** for authentication flow, permission models, and detailed specifications.
 
 ## Benefits of This Design
 
@@ -1324,6 +1338,8 @@ DELETE /api/festivals/{key}/editions/{year} - Deletes specific edition
 ## Related Documentation
 
 - **[Bands Data Model](DYNAMODB_BANDS_DATA_MODEL.md)**: Complete bands schema and referential integrity patterns
+- **[Public API Design](API_DESIGN.md)**: Public read-only API specifications
+- **[Admin API Design](ADMIN_API_DESIGN.md)**: Admin API with Cognito + SAML authentication
 
 ## Future Enhancements
 
