@@ -51,10 +51,13 @@
   - [API Adaptations](#api-adaptations)
     - [Current API](#current-api)
     - [Proposed API with DynamoDB](#proposed-api-with-dynamodb)
+      - [Public API Endpoints (Read-Only)](#public-api-endpoints-read-only)
+      - [Admin API Endpoints (Authentication Required)](#admin-api-endpoints-authentication-required)
   - [Benefits of This Design](#benefits-of-this-design)
   - [Integration with Festivals](#integration-with-festivals)
     - [Consistency Rules](#consistency-rules)
     - [Transaction Example](#transaction-example)
+  - [Related Documentation](#related-documentation)
 
 ## Overview
 

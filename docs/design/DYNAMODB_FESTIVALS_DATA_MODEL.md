@@ -39,6 +39,8 @@
   - [API Adaptations](#api-adaptations)
     - [Current API](#current-api)
     - [Proposed API with DynamoDB](#proposed-api-with-dynamodb)
+      - [Public API Endpoints (Read-Only)](#public-api-endpoints-read-only)
+      - [Admin API Endpoints (Authentication Required)](#admin-api-endpoints-authentication-required)
   - [Benefits of This Design](#benefits-of-this-design)
   - [Related Documentation](#related-documentation)
   - [Future Enhancements](#future-enhancements)
