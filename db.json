@@ -24332,7 +24332,24 @@
         "Death Metal",
         "Groove Metal"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Jury",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Miro",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Palo",
+          "role": "Bassist"
+        },
+        {
+          "name": "Jano",
+          "role": "Drummer"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -24419,7 +24436,24 @@
         "Speed Metal",
         "Black Metal"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Stefan \"Roeck\" Schwenger",
+          "role": "Bass"
+        },
+        {
+          "name": "Markus \"Mokkai\" Nulle",
+          "role": "Drums"
+        },
+        {
+          "name": "Nikolaus \"Nikko\" Schaffranek",
+          "role": "Guitars (lead)"
+        },
+        {
+          "name": "Ross Thompson",
+          "role": "Vocals (lead)"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -31787,7 +31821,24 @@
         "Groove Metal",
         "Alternative Rock"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Ditto",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Sergio",
+          "role": "Drums"
+        },
+        {
+          "name": "Marcos",
+          "role": "Guitar"
+        },
+        {
+          "name": "Guach",
+          "role": "Guitar"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -34134,6 +34185,2226 @@
         {
           "name": "Daniel García",
           "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "phantom-elite",
+      "name": "Phantom Elite",
+      "country": "Netherlands/Germany",
+      "description": "Phantom Elite is an international metal band formed in 2016, known for their dynamic fusion of symphonic, progressive, and heavy metal elements. The band was founded by vocalist Marina La Torraca, guitarist and bassist Max van Esch, and drummer Joeri Warmerdam. Their debut album, \"Wasteland,\" released in 2018, showcased their unique sound and established their presence in the metal scene. ([frontiers.it](https://www.frontiers.it/album/5644?utm_source=openai)) In 2021, they released \"Titanium,\" produced by former After Forever guitarist Sander Gommans, further solidifying their reputation with its powerful rhythms and stunning vocals. ([frontiers.it](https://www.frontiers.it/album/5644?utm_source=openai)) Their third album, \"Blue Blood,\" released on March 17, 2023, marked a significant evolution in their sound, blending power, progressive, symphonic, and metalcore elements into a hybrid style with massive hooks and bombastic rhythms. ([metal-temple.com](https://metal-temple.com/review/phantom-elite-blue-blood/?utm_source=openai)) In May 2025, they released the EP \"MANTIS,\" featuring tracks like \"Sangre Mala\" and \"Slow Burn,\" which continued to push their musical boundaries. ([crypticrock.com](https://crypticrock.com/phantom-elite-mantis-ep-review/?utm_source=openai)) In August 2025, the band announced an indefinite hiatus following Marina La Torraca's departure. ([chaoszine.net](https://chaoszine.net/phantom-elite-reveal-lineup-change-and-a-new-status-of-the-band/?utm_source=openai))",
+      "logo": "https://www.phantom-elite.com/images/logo.png",
+      "headlineImage": "https://www.phantom-elite.com/images/press/phantom-elite-mantis-ep.jpg",
+      "website": "https://www.phantom-elite.com/",
+      "spotify": "",
+      "genres": [
+        "Symphonic Metal",
+        "Progressive Metal",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Marina La Torraca",
+          "role": "Vocals"
+        },
+        {
+          "name": "Max Van Esch",
+          "role": "Guitars, Bass, Keyboards"
+        },
+        {
+          "name": "Joeri Warmerdam",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "triskelyon",
+      "name": "Triskelyon",
+      "country": "Canada",
+      "description": "Triskelyon is a Canadian melodic thrash metal project founded in late 2021 by Geoff Waye, guitarist for Artach and Category VI. Initially conceived as a studio-only endeavor, the band released a self-titled 3-track EP in January 2022, featuring contributions from vocalists Pete Healey and Marlee Ryley (Hyperia) and drum programming by Raul Marques (Burning Torment). Their debut full-length album, \"Downfall,\" was released on October 28, 2022, under Moribund Records. The album showcases a range of male and female guest vocalists from bands like Oberon, Hyperia, Category VI, and Incidium, and includes guest bass appearances from members of Afterforever and Category VI. Lyrically, \"Downfall\" presents a post-apocalyptic view of nature's resurgence in a deteriorating world, aligning with 1980s thrash traditions that emphasize doomsday and socially conscious themes. ([triskelyon.bandcamp.com](https://triskelyon.bandcamp.com/album/downfall?utm_source=openai))",
+      "logo": "https://triskelyon.bandcamp.com/album/downfall",
+      "headlineImage": "https://triskelyon.bandcamp.com/album/downfall",
+      "website": "https://triskelyon.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Melodic Thrash Metal",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Geoff Waye",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Pete Healey",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Marlee Ryley",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Raul Marques",
+          "role": "Drum Programmer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "vanir",
+      "name": "Vanir",
+      "country": "Denmark",
+      "description": "Vanir is a Danish melodic death metal band formed in 2009 in Roskilde, Denmark. Initially rooted in Viking and folk metal, their sound has evolved over the years, incorporating elements of black and death metal. The band's lyrics often draw inspiration from Norse mythology and historical events, reflecting a fascination with Scandinavian heritage and the tales of the Vikings. ([vanir.dk](https://vanir.dk/biography?utm_source=openai))\n\nSince their inception, Vanir has released seven full-length albums. Their latest, \"Epitome,\" was released on February 16, 2024, via Mighty Music. The album delves into themes from the Danish Middle Ages, focusing on the struggles for the throne and the battles that ensued. Notable tracks include \"Twisting The Knife,\" inspired by the Stockholm Bloodbath of 1520, and \"Fall of Arkona,\" which recounts the 1169 siege of Arkona. ([metalshockfinland.com](https://metalshockfinland.com/2024/02/17/vanir-release-new-album-epitome-out-now/?utm_source=openai))\n\nThe current lineup of Vanir includes:\n\n- Martin Rubini (vocals)\n- Kirk Backarach (guitar)\n- Michael Lundquist (guitar)\n- Mikael Christensen (bass)\n- Jon Elmquist Schmidt (drums)\n- Stefan Dujardin (keyboards)\n\nFor more information, you can visit their official website at [vanir.dk](https://vanir.dk/).",
+      "logo": "https://vanir.dk/wp-content/uploads/2024/02/Vanir-Logo.png",
+      "headlineImage": "https://vanir.dk/wp-content/uploads/2024/02/Vanir-Epitome-Album-Cover.jpg",
+      "website": "https://vanir.dk/",
+      "spotify": "",
+      "genres": [
+        "Melodic Death Metal",
+        "Viking Metal",
+        "Black Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Martin Rubini",
+          "role": "Vocals"
+        },
+        {
+          "name": "Kirk Backarach",
+          "role": "Guitar"
+        },
+        {
+          "name": "Michael Lundquist",
+          "role": "Guitar"
+        },
+        {
+          "name": "Mikael Christensen",
+          "role": "Bass"
+        },
+        {
+          "name": "Jon Elmquist Schmidt",
+          "role": "Drums"
+        },
+        {
+          "name": "Stefan Dujardin",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "basaalt",
+      "name": "Basaalt",
+      "country": "France",
+      "description": "Basaalt is an emerging alternative groove metal band from Vannes, France, formed in 2022. The group quickly gained recognition with their energetic performances and distinctive sound, blending melodic and powerful elements with electronic influences. Their debut EP, \"You Can Decide How It Ends,\" released on September 15, 2023, showcases their dynamic style and has been well-received by fans and critics alike. The band has actively participated in the French metal scene, performing at notable events such as the Re-Animator Festival in Saint-Nolff in May 2024 and the Hellfest Open Air in June 2024. In January 2025, Basaalt announced lineup changes, with Yoann joining as the new bassist. The band continues to evolve, preparing for future releases and live performances, including an appearance at the Motocultor Festival in 2026.",
+      "logo": "https://basaalt.bandcamp.com/logo.png",
+      "headlineImage": "https://breizhmetal.bzh/wp-content/uploads/2024/06/Basaalt-Hellfest-2024.jpg",
+      "website": "https://basaalt.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Alternative Groove Metal",
+        "Metalcore"
+      ],
+      "members": [
+        {
+          "name": "Alexis Oger",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jérémie Stagnara",
+          "role": "Guitar"
+        },
+        {
+          "name": "Thomas Le Bayon",
+          "role": "Drums"
+        },
+        {
+          "name": "Antoine Herpin",
+          "role": "Bass"
+        },
+        {
+          "name": "Yoann",
+          "role": "Bass (joined January 2025)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "therapy",
+      "name": "Therapy?",
+      "country": "Northern Ireland",
+      "description": "Therapy? is a Northern Irish rock band formed in 1989 in Larne, County Antrim, by guitarist-vocalist Andy Cairns and drummer-vocalist Fyfe Ewing. Initially, Cairns played bass on their first demo, but bassist Michael McKeegan soon joined, solidifying the lineup. The band's early sound was influenced by indie rock acts like The Jesus Lizard and Big Black, as well as new beat disco artists such as Erotic Dissidents. Their 1992 major-label debut, \"Nurse,\" featured the single \"Teethgrinder,\" which gained significant attention. The 1994 album \"Troublegum\" marked their commercial peak, earning them appearances at major UK festivals and solidifying their reputation in the rock scene. Over the years, Therapy? has undergone lineup changes, with Ewing departing in 1996 and being replaced by Graham Hopkins, followed by Neil Cooper in 2002. Cellist Martin McCarrick joined in 1996 but left in 2004, after which the band returned to a three-piece format. Their discography includes 16 studio albums, with \"Disquiet\" (2015), \"Cleave\" (2018), and \"Hard Cold Fire\" (2023) being their most recent releases. Known for their energetic performances and blending of alternative metal, noise rock, and alternative rock, Therapy? continues to tour and record, maintaining a dedicated fan base worldwide.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Therapy%3F_logo.svg/800px-Therapy%3F_logo.svg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Therapy%3F_2017.jpg/800px-Therapy%3F_2017.jpg",
+      "website": "https://www.therapyquestionmark.co.uk",
+      "spotify": "",
+      "genres": [
+        "Alternative Metal",
+        "Noise Rock",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Andy Cairns",
+          "role": "Guitarist and Lead Vocalist"
+        },
+        {
+          "name": "Michael Mckeegan",
+          "role": "Bassist and Backing Vocalist"
+        },
+        {
+          "name": "Neil Cooper",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "turbonegro",
+      "name": "Turbonegro",
+      "country": "Norway",
+      "description": "Turbonegro is a Norwegian rock band formed in Oslo in 1989, known for their unique blend of glam rock, punk rock, and hard rock, a style they describe as \"deathpunk.\" The band was initially active from 1989 to 1998 and reformed in 2002, continuing to influence the rock scene with their energetic performances and distinctive sound.\n\n**History and Style**\n\nThe band was formed by Thomas Seltzer (Happy-Tom), Vegard Heskestad, Pål Bøttger Kjærnes (Pål Pot Pamparius), Rune Grønn (Rune Rebellion), Pål Erik Carlin, and Tor-Kristian \"TK\" Jenssen. Their debut single, \"Route Zero,\" and the \"Turboloid\" EP were released in 1989. In 1990, after a brief U.S. tour, the band reformed with new members, including vocalist Harald Fossberg and bassist Bengt Calmeyer (Bingo), leading to the release of their first full-length album, \"Hot Cars \u0026 Spent Contraceptives,\" in 1992. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Turbonegro?utm_source=openai))\n\nIn 1993, Fossberg departed due to health issues and was replaced by Hank von Helvete. The band adopted a new look, embracing denim and mustaches, and released \"Never Is Forever\" in 1994, a tribute to Blue Öyster Cult. Their 1996 album, \"Ass Cobra,\" marked a significant shift in their musical direction, incorporating elements of glam rock and punk. The 1998 album \"Apocalypse Dudes\" is often hailed as their most successful, blending 1970s punk and glam influences. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Turbonegro?utm_source=openai))\n\nAfter a hiatus, Turbonegro reformed in 2002 with new vocalist Tony Sylvester, releasing \"Scandinavian Leather\" in 2003. They continued to release albums, including \"Retox\" (2007), \"Sexual Harassment\" (2012), and \"RockNRoll Machine\" (2018). In 2021, former frontman Hank von Helvete passed away at the age of 49. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Turbonegro?utm_source=openai))\n\n**Discography**\n\n- \"Hot Cars \u0026 Spent Contraceptives\" (1992)\n- \"Never Is Forever\" (1994)\n- \"Ass Cobra\" (1996)\n- \"Apocalypse Dudes\" (1998)\n- \"Scandinavian Leather\" (2003)\n- \"Party Animals\" (2005)\n- \"Retox\" (2007)\n- \"Sexual Harassment\" (2012)\n- \"RockNRoll Machine\" (2018)\n\n**Genres**\n\n- Glam Rock\n- Punk Rock\n- Hard Rock\n\n**Website**\n\n[Turbonegro Official Website](https://www.turbonegro.com)\n\n**Current Members**\n\n- Thomas Seltzer (Happy-Tom) – Bass\n- Knut Schreiner (Euroboy) – Lead Guitar\n- Rune Grønn (Rune Rebellion) – Rhythm Guitar\n- Anthony Madsen-Sylvester (The Duke of Nothing) – Vocals\n- Tommy Akerholdt (Tommy Manboy) – Drums\n- Haakon-Marius Pettersen (Crown Prince Haakon-Marius) – Keyboards\n\n**Headline Image**\n\n![Turbonegro Band](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Turbonegro_2019.jpg/800px-Turbonegro_2019.jpg)\n\n**Logo**\n\n![Turbonegro Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Turbonegro_logo.svg/800px-Turbonegro_logo.svg.png)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Turbonegro_logo.svg/800px-Turbonegro_logo.svg.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Turbonegro_2019.jpg/800px-Turbonegro_2019.jpg",
+      "website": "https://www.turbonegro.com",
+      "spotify": "",
+      "genres": [
+        "Glam Rock",
+        "Punk Rock",
+        "Hard Rock"
+      ],
+      "members": [
+        {
+          "name": "Thomas Seltzer (Happy-Tom)",
+          "role": "Bass"
+        },
+        {
+          "name": "Knut Schreiner (Euroboy)",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Rune Grønn (Rune Rebellion)",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Anthony Madsen-Sylvester (The Duke Of Nothing)",
+          "role": "Vocals"
+        },
+        {
+          "name": "Tommy Akerholdt (Tommy Manboy)",
+          "role": "Drums"
+        },
+        {
+          "name": "Haakon-Marius Pettersen (Crown Prince Haakon-Marius)",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "skindred",
+      "name": "Skindred",
+      "country": "United Kingdom",
+      "description": "Skindred is a Welsh band formed in Newport in 1998, renowned for their unique fusion of heavy metal, reggae, punk, hip hop, and electronica, a style they refer to as \"ragga metal.\" The band was established by vocalist Benji Webbe, who previously led the group Dub War. After Dub War's disbandment in 1999, Webbe formed Skindred with guitarist Mikey Demus, bassist Daniel Pugsley, and drummer Arya Goggin. Their debut album, \"Babylon,\" released in 2002, showcased their innovative sound and set the stage for their rise in the metal scene. Over the years, Skindred has released several albums, including \"Roots Rock Riot\" (2007), \"Shark Bites and Dog Fights\" (2009), \"Union Black\" (2011), \"Kill the Power\" (2014), \"Volume\" (2015), \"Big Tings\" (2018), and \"Smile\" (2023). Their energetic live performances have earned them accolades such as \"Best Live Band\" at the 2011 UK Metal Hammer Golden Gods Awards and the \"Devotion Award\" at the 2011 Kerrang! Awards. In August 2023, \"Smile\" peaked at number two on the UK Albums Chart, marking a significant milestone in their career. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Skindred?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Skindred_2018.jpg/800px-Skindred_2018.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Skindred_2018.jpg/800px-Skindred_2018.jpg",
+      "website": "https://www.skindred.net",
+      "spotify": "",
+      "genres": [
+        "Alternative Metal",
+        "Reggae Rock",
+        "Nu Metal"
+      ],
+      "members": [
+        {
+          "name": "Benji Webbe",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Mikey Demus",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Arya Goggin",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "pothamus",
+      "name": "Pothamus",
+      "country": "Belgium",
+      "description": "Pothamus is a Belgian sludge/post-metal trio formed in 2013 in Mechelen. The band comprises Mattias M. Van Hulle (drums, vocals, Surpeti), Michael Lombarts (bass), and Sam Coussens (guitar, vocals). They are known for their unique blend of repetitive riffs, floating drones, tribal percussion, and abrasive bass lines, creating an immersive experience that transcends the ordinary. ([pelagic-records.com](https://pelagic-records.com/artist/pothamus/?utm_source=openai))\n\nIn 2020, Pothamus released their debut full-length album, \"Raya,\" through Consouling Sounds. The album received critical acclaim, leading to performances at renowned Belgian venues such as Ancienne Belgique, Trix, and Vooruit, as well as international festivals like ArcTanGent, ESNS, and Motocultor. ([pelagic-records.com](https://pelagic-records.com/artist/pothamus/?utm_source=openai))\n\nTheir sophomore album, \"Abur,\" was released on February 14, 2025, via Pelagic Records. The album features six tracks: \"Zhikarta,\" \"Ravus,\" \"De-varium,\" \"Svartuum Avur,\" \"Ykavus,\" and \"Abur.\" \"Abur\" continues the band's exploration of themes such as nature, animism, and interconnectedness, blending eastern philosophy and western esotericism into a unique musical experience. ([doomed-nation.com](https://doomed-nation.com/belgian-cosmic-sludge-power-trio-pothamus-unleash-sophomore-album-abur-out-today-via-pelagic-records/?utm_source=openai))\n\nPothamus's music is characterized by its ritualistic sound, incorporating instruments like the Surpeti—a drone instrument from the Indian subcontinent traditionally used for mantra singing—and dual vocals to create a rich and immersive atmosphere. ([pelagic-records.com](https://pelagic-records.com/artist/pothamus/?utm_source=openai))\n\nThe band has been recognized for their captivating live performances, which offer a mesmerizing journey through their unique universe, inviting audiences to explore the depths of both sound and meaning. ([pelagic-records.com](https://pelagic-records.com/artist/pothamus/?utm_source=openai))",
+      "logo": "https://pothamus.bandcamp.com/album/abur",
+      "headlineImage": "https://pothamus.bandcamp.com/album/abur",
+      "website": "https://pothamus.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Sludge Metal",
+        "Post-Metal",
+        "Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Mattias M. Van Hulle",
+          "role": "Drums, Vocals, Surpeti"
+        },
+        {
+          "name": "Michael Lombarts",
+          "role": "Bass"
+        },
+        {
+          "name": "Sam Coussens",
+          "role": "Guitar, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "unleashed",
+      "name": "Unleashed",
+      "country": "Sweden",
+      "description": "Unleashed is a pioneering Swedish death metal band formed in 1989 by vocalist and bassist Johnny Hedlund in Stockholm. The band's music is characterized by themes of Viking culture, Norse mythology, and pre-Christian traditions, setting them apart in the death metal scene. They are often regarded as one of the \"big four\" of Swedish death metal, alongside Dismember, Entombed, and Grave. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Unleashed_%28band%29?utm_source=openai))\n\nTheir discography includes 15 studio albums, with their latest, \"Fire Upon Your Lands,\" released on August 15, 2025. ([label.napalmrecords.com](https://label.napalmrecords.com/unleashed?utm_source=openai)) The current lineup consists of Johnny Hedlund (vocals, bass), Fredrik Folkare (lead guitar), Tomas Måsgard (rhythm guitar), and Anders Schultz (drums). ([bnrmetal.com](https://www.bnrmetal.com/v5/band/band/Unle?utm_source=openai))\n\nUnleashed's music is known for its brutal, unwavering death metal style, featuring aggressive riffs and growling vocals. Their lyrics often explore themes of Viking heritage, anti-Christianity, and Norse mythology, reflecting a deep connection to their cultural roots. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Unleashed_%28band%29?utm_source=openai))\n\nThe band's official website is [unleashed.se](https://www.unleashed.se/).",
+      "logo": "https://www.unleashed.se/images/unleashed_logo.png",
+      "headlineImage": "https://www.unleashed.se/images/unleashed_band_photo.jpg",
+      "website": "https://www.unleashed.se/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Viking Metal"
+      ],
+      "members": [
+        {
+          "name": "Johnny Hedlund",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Fredrik Folkare",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Tomas Måsgard",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Anders Schultz",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "symfobia",
+      "name": "Symfobia",
+      "country": "Slovakia",
+      "description": "Symfobia is a Slovakian symphonic metal band formed in 2007 by keyboardist František Molnár. The band is known for its orchestral arrangements, prominent guitar solos, and choir parts, distinguishing them in the Slovak metal scene. Notably, Symfobia features two female-fronted singers, allowing for creative vocal experimentation and enhancing the monumentality of their songs. ([symfobiaband.sk](https://symfobiaband.sk/biography/?utm_source=openai))\n\nTheir debut album, \"Way of the Queen,\" was released in December 2015, followed by \"The Smog of Tomorrow\" in March 2019. The latter explores themes such as technology dependence, consumer society, loss of critical thinking, and environmental misconduct. ([metal-archives.com](https://www.metal-archives.com/albums/Symfobia/The_Smog_of_Tomorrow/762834?utm_source=openai))\n\nIn January 2025, Symfobia released a new single titled \"Liar,\" marking their first new material in four years. ([vampster.com](https://vampster.com/news/symfobia-melden-sich-mit-neuer-symphonic-metal-single-liar-zurueck/?utm_source=openai))\n\nThe current lineup includes vocalist Hana Zaujecová, guitarists Simon Lasák and Peter Varga, keyboardist František Molnár, bassist Alica Fusková, and drummer Viliam Putz. ([vampster.com](https://vampster.com/news/symfobia-melden-sich-mit-neuer-symphonic-metal-single-liar-zurueck/?utm_source=openai))\n\nSymfobia has performed with renowned metal bands such as Nightwish, Arch Enemy, Therion, and Sabaton, and has appeared at major music festivals in Slovakia and the Czech Republic, including Topfest, Masters of Rock, and Rock pod Kameňom. ([symfobiaband.sk](https://symfobiaband.sk/biography/?utm_source=openai))",
+      "logo": "https://symfobiaband.sk/wp-content/uploads/2020/08/symfobia_logo.png",
+      "headlineImage": "https://symfobiaband.sk/wp-content/uploads/2020/08/symfobia_band.jpg",
+      "website": "https://symfobiaband.sk/",
+      "spotify": "",
+      "genres": [
+        "Symphonic Metal",
+        "Melodic Metal",
+        "Gothic Metal",
+        "Power Metal"
+      ],
+      "members": [
+        {
+          "name": "Hana Zaujecová",
+          "role": "Vocals"
+        },
+        {
+          "name": "Simon Lasák",
+          "role": "Guitar"
+        },
+        {
+          "name": "Peter Varga",
+          "role": "Guitar"
+        },
+        {
+          "name": "František Molnár",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Alica Fusková",
+          "role": "Bass"
+        },
+        {
+          "name": "Viliam Putz",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "uli-jon-roth",
+      "name": "Uli Jon Roth",
+      "country": "Germany",
+      "description": "Uli Jon Roth is a renowned German guitarist and composer, best known for his tenure with the hard rock band Scorpions from 1973 to 1978. During his time with Scorpions, Roth was the lead guitarist, main songwriter, and occasional lead vocalist, contributing significantly to the band's success in Europe and Japan. After departing from Scorpions, he formed Electric Sun in 1978, releasing three albums: \"Earthquake\" (1979), \"Fire Wind\" (1981), and \"Beyond the Astral Skies\" (1985). These works showcased his fusion of hard rock, psychedelic rock, and progressive rock, reflecting his classical influences. In his solo career, Roth has continued to explore neoclassical metal, releasing albums such as \"Under a Dark Sky\" (2008) and \"Scorpions Revisited\" (2015), where he revisited his favorite tracks from his Scorpions era. He is also known for his Sky Guitar, a custom-designed instrument with additional frets, and for founding the Sky Academy seminars. Roth's innovative playing style has influenced many guitarists, including Yngwie Malmsteen and Kirk Hammett. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Uli_Jon_Roth?utm_source=openai))",
+      "logo": "https://www.ulijonroth.com/wp-content/uploads/2025/06/PICTURES-OF-DESTINY-7.jpg",
+      "headlineImage": "https://www.ulijonroth.com/wp-content/uploads/2025/06/PICTURES-OF-DESTINY-7.jpg",
+      "website": "https://www.ulijonroth.com/",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Psychedelic Rock",
+        "Progressive Rock",
+        "Neoclassical Metal"
+      ],
+      "members": [
+        {
+          "name": "Uli Jon Roth",
+          "role": "Guitarist, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "elkeliset",
+      "name": "Eläkeläiset",
+      "country": "Finland",
+      "description": "Eläkeläiset, meaning \"The Pensioners\" in Finnish, is a Finnish humppa band formed in 1993. The band is known for their energetic performances and humorous approach to music, often transforming popular rock and pop songs into fast-paced humppa or slow jenkka styles with Finnish lyrics. Their unique style has garnered them a dedicated following, particularly in Finland and German-speaking countries. Over the years, Eläkeläiset has released numerous albums, including \"Humppakäräjät\" (1994), \"Humpan Kuninkaan Hovissa\" (1995), \"In Humppa We Trust\" (1996), and \"Humppaelämää\" (2004). They have also performed at major international music festivals, such as Wacken Open Air and Tuska Open Air, showcasing their distinctive blend of humor and musicality. The current lineup consists of Onni Waris (keyboard, vocals), Petteri Halonen (keyboard, guitar, vocals), Lassi Kinnunen (accordion, vocals), Martti Waris (bass, vocals), and Tapio Santaharju (drums, vocals).",
+      "logo": "https://www.humppa.com/images/logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/El%C3%A4kel%C3%A4iset_at_Ilosaarirock_2013.jpg/800px-El%C3%A4kel%C3%A4iset_at_Ilosaarirock_2013.jpg",
+      "website": "http://www.humppa.com/",
+      "spotify": "",
+      "genres": [
+        "Humppa",
+        "Jenkka"
+      ],
+      "members": [
+        {
+          "name": "Onni Waris",
+          "role": "Keyboard, Vocals"
+        },
+        {
+          "name": "Petteri Halonen",
+          "role": "Keyboard, Guitar, Vocals"
+        },
+        {
+          "name": "Lassi Kinnunen",
+          "role": "Accordion, Vocals"
+        },
+        {
+          "name": "Martti Waris",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Tapio Santaharju",
+          "role": "Drums, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "nickelsdorfer-bhmische",
+      "name": "Nickelsdorfer Böhmische",
+      "country": "Austria",
+      "description": "Nickelsdorfer Böhmische, formerly known as Wendi's Böhmische Blasmusik, is a renowned Austrian brass band with a rich history dating back to 1976. Founded by Karl Gonter, the ensemble has been a staple in Austrian music culture, performing at various festivals and events. In 2025, the band underwent a significant change when frontman Werner Wendelin retired, leading to the rebranding of the group to Nickelsdorfer Böhmische. ([krone.at](https://www.krone.at/3957016?utm_source=openai)) Despite this transition, the band continues to captivate audiences with their energetic performances, including appearances at major events like the Nova Rock Festival. ([morecore.de](https://www.morecore.de/news/nova-rock-festival-2026-vier-neue-bands-angekuendigt/?utm_source=openai))",
+      "logo": "https://www.novarock.at/wp-content/uploads/2025/12/novarock2026_bands_nickelsdorferboehmische_logo.jpg",
+      "headlineImage": "https://www.novarock.at/wp-content/uploads/2025/12/novarock2026_bands_nickelsdorferboehmische.jpg",
+      "website": "https://www.novarock.at/en/news/",
+      "spotify": "",
+      "genres": [
+        "Brass Band",
+        "Blasmusik",
+        "Traditional Austrian Music"
+      ],
+      "members": [
+        {
+          "name": "Werner Wendelin",
+          "role": "Former Frontman (Retired in 2025)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "bizkit-park",
+      "name": "Bizkit Park",
+      "country": "Belgium",
+      "description": "Bizkit Park is a Belgian tribute band dedicated to celebrating the nu-metal genre, which emerged in the late 1990s and early 2000s. The band pays homage to iconic acts such as Limp Bizkit, Korn, System of a Down, Linkin Park, Slipknot, Papa Roach, Deftones, and Disturbed. Their performances are characterized by energetic renditions of classic tracks, capturing the raw intensity and rebellious spirit of the era. Over the years, Bizkit Park has graced numerous stages, including notable festivals like Alcatraz Open Air, Graspop, Pukkelpop, and Lokerse Feesten. In 2024, they sold out a concert at the Ancienne Belgique (AB) in Brussels, a testament to their growing popularity. The band's lineup features seasoned musicians who bring a wealth of experience to their live shows, ensuring an authentic and high-energy experience for fans. Their official website provides information on upcoming performances and booking details. ([bizkitpark.be](https://www.bizkitpark.be/?utm_source=openai))",
+      "logo": "https://www.bizkitpark.be/images/logo.png",
+      "headlineImage": "https://www.bizkitpark.be/images/bizkitpark.jpg",
+      "website": "https://www.bizkitpark.be/",
+      "spotify": "",
+      "genres": [
+        "Nu-Metal",
+        "Alternative Metal",
+        "Rap Metal"
+      ],
+      "members": [
+        {
+          "name": "Niko Van Driessche",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Waldo",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Jeroen Heijda",
+          "role": "Drummer"
+        },
+        {
+          "name": "Sam",
+          "role": "Bassist"
+        },
+        {
+          "name": "Joris",
+          "role": "DJ/Turntablist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "kerry-king",
+      "name": "Kerry King",
+      "country": "United States",
+      "description": "Kerry King is an American musician, best known as the co-lead guitarist and primary songwriter for the thrash metal band Slayer. Born on June 3, 1964, in Los Angeles, California, King co-founded Slayer in 1981 alongside guitarist Jeff Hanneman. The band quickly rose to prominence with their aggressive musical style and provocative lyrics, becoming one of the most influential acts in the thrash metal genre. King's distinctive guitar playing and songwriting were central to Slayer's identity, contributing to the release of twelve studio albums, including classics like \"Reign in Blood\" (1986) and \"Seasons in the Abyss\" (1990). After Slayer's disbandment in 2019, King embarked on a solo career, releasing his debut album \"From Hell I Rise\" on May 17, 2024. The album features contributions from notable musicians such as Mark Osegueda of Death Angel on vocals, Phil Demmel of Vio-lence and former Machine Head on guitar, Kyle Sanders of Hellyeah on bass, and former Slayer drummer Paul Bostaph. The album's sound has been described as similar to Slayer, showcasing King's signature thrash metal style. ([en.wikipedia.org](https://en.wikipedia.org/wiki/From_Hell_I_Rise?utm_source=openai)) King's music often explores themes of evil, Satanism, and death, reflecting his anti-religious views. He is known for his extensive tattoos and distinctive appearance, which have become iconic in the metal community. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Kerry_King?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Kerry_King_2019.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Kerry_King_2019.jpg",
+      "website": "https://www.kerrykingmusic.com",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Kerry King",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Mark Osegueda",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Phil Demmel",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Kyle Sanders",
+          "role": "Bassist"
+        },
+        {
+          "name": "Paul Bostaph",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "fear-factory",
+      "name": "Fear Factory",
+      "country": "United States",
+      "description": "Fear Factory is an American industrial metal band formed in Los Angeles in 1989. The band has released ten full-length albums, evolving through a succession of sounds, all in its main style of industrial metal. Over the years, the band has seen frequent changes in its lineup, with lead vocalist Burton C. Bell the only consistent member for 31 years until his departure in 2020. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fear_Factory?utm_source=openai))\n\nThe band's origins can be traced to an outfit formed by guitarist Dino Cazares—formerly of The Douche Lords—and drummer Raymond Herrera in Los Angeles, California. Their first lineup was completed with the addition of bassist Dave Gibney and vocalist Burton C. Bell (ex-Hate Face), who was allegedly recruited by an impressed Cazares, who overheard him singing \"New Year's Day\" by U2. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fear_Factory?utm_source=openai))\n\nIn 1991, Fear Factory recorded a series of cuts with producer Ross Robinson in Blackie Lawless's studio. Afterward, the band members were unhappy with the terms of their recording contract, and they refused to sign. The band retained the rights to the songs, many of which they re-recorded in 1992 with a different producer, Colin Richardson, for inclusion on their debut release Soul of a New Machine. Meanwhile, Ross Robinson obtained the rights to the recording, which he used to promote himself as a producer. The album was released in 2002 by Roadrunner Records under the title Concrete after the band's breakup. The release was controversial because the album was issued without the approval of Fear Factory. Robinson ended up suing the band, which Bell jokingly said in 2021 that it was foreshadowing \"the entire career of Fear Factory.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fear_Factory?utm_source=openai))\n\nSoul of a New Machine is the debut album studio by American industrial metal band Fear Factory, released on August 25, 1992, by Roadrunner Records. Although it was Fear Factory's first album to be released, it was actually their second album recorded. The demo album, Concrete was recorded in 1991 but not released until 11 years later. Soul of a New Machine is a combination of death metal and industrial metal with other elements such as grindcore. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Soul_of_a_New_Machine?utm_source=openai))\n\nThe band's third studio album, Obsolete (July 1998), was reportedly completed earlier than planned by canceling an appearance at the Dynamo Open Air Festival. Obsolete was similar in sound to Demanufacture, emphasizing progressive metal elements. For the first time, the album featured Christian Olde Wolbers writing and recording full time with the band. It also featured Cazares' debut use of 7-string Ibanez guitars tuned to A tuning (A, D, G, C, F, A, D), and paved the way for a lower-tuned sound than previously. The album is also notable for Rhys Fulber's increased involvement with the band. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fear_Factory?utm_source=openai))\n\nIn early 2001, Fear Factory was asked to headline SnoCore Rock. The success of Obsolete and \"Cars\" was a turning point for the band; Roadrunner Records was now keen on capitalizing on the band's sales potential and pressured the band to record more accessible material for the follow-up album, titled Digimortal, which was released in April 2001. Few weeks before its release, they were touring in Europe with One Minute Silence. They went on a long headlining North American tour during 2001, then played in much larger European festivals like Bizarre Festival, Pukkelpop, Lowlands Festival and Leeds \u0026 Reading Festival. They then went on the first Roadrunner Roadrage tour in North America, toured Europe with Devin Townsend and Godflesh and played in Japan, Australia and New Zealand. Digimortal made the Top 40 on the Billboard album charts, the Top 20 in Canada and the Top 10 of the Australian album charts. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fear_Factory?utm_source=openai))\n\nIn 2009, Bell and Cazares announced the reconciliation of their friendship, and the formation of a new project with Byron Stroud on bass and drummer Gene Hoglan of Testament, Death, Strapping Young Lad, Dark Angel, and Dethklok. On April 28, this project was announced to be a new version of Fear Factory without Herrera and Wolbers. When asked about their exclusion, Bell said, \"[Fear Factory is] like a business and I'm just reorganizing...We won't talk about [their exclusion]\". ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fear_Factory?utm_source=openai))\n\nThe Industrialist is the eighth studio album by American industrial metal band Fear Factory, released on June 5, 2012. A remixed and remastered version of the album, titled Re-Industrialized, was released on June 23, 2023, featuring live drums recorded with Mike Heller, who appears on the band's subsequent albums. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Industrialist?utm_source=openai))\n\nFear Factory's innovative approach towards and hybridization of the genres industrial metal, death metal, and alternative metal has had a lasting impact on other artists coming later, the band putting a stamp on metal music ever since the release of their first album in 1992. Fear Factory is noteworthy among contemporaries for its lyrical focus on science fiction, with much of the band's music telling a single story spanning several concept albums. The band has been called a \"stepping stone\", leading mainstream listeners to venture into less-known, more extreme bands, and are consistently appreciated. Despite the heavy use of ambient and sampling sounds, the band has never had an official keyboardist in their lineup; they instead employ session/touring members. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fear_Factory?utm_source=openai))\n\nWhile not often associated with djent, Fear Factory is seen as precursors to the genre and style of guitar playing, with CVLT Nation even coining the term \"proto-djent\" to describe the band. Dino Cazares used a technique of palm muting to make up for the band not being able to afford samplers, explaining: \"I really developed a good technique with palm muting – stopping and starting with my palm, and creating a certain accent by just palm muting. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Fear_Factory?utm_source=openai))",
+      "logo": "https://fearfactory.com/wp-content/uploads/2023/06/FF_Logo.png",
+      "headlineImage": "https://fearfactory.com/wp-content/uploads/2023/06/FF_Re-Industrialized_Album_Art.jpg",
+      "website": "https://fearfactory.com/",
+      "spotify": "",
+      "genres": [
+        "Industrial Metal",
+        "Groove Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Dino Cazares",
+          "role": "Guitars, Backing Vocals"
+        },
+        {
+          "name": "Tony Campos",
+          "role": "Bass, Backing Vocals"
+        },
+        {
+          "name": "Milo Silvestro",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Pete Webber",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "divlje-jagode",
+      "name": "Divlje Jagode",
+      "country": "Croatia",
+      "description": "Divlje Jagode, meaning \"Wild Strawberries,\" is a Croatian hard rock and heavy metal band formed in 1977. Originating from Zagreb, the group has been a significant presence in the former Yugoslavia's music scene. The band was founded by guitarist Sead \"Zele\" Lipovača, who remains the leader and only constant member throughout its history. The original lineup included vocalist Anto \"Toni\" Janković, bassist Nihad Jusufhodžić, drummer Adonis Dokuzović, and keyboardist Mustafa \"Muc\" Ismailovski. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Divlje_Jagode?utm_source=openai))\n\nTheir self-titled debut album, released in 1979, showcased their hard rock style and featured popular ballads like \"Jedina moja\" and \"Mojoj ljubavi.\" The 1981 album \"Stakleni hotel\" marked a shift towards heavy metal, solidifying their reputation in the genre. In 1982, Janković amicably left the band, and Alen Islamović took over as the lead vocalist and bassist. Under Islamović's leadership, Divlje Jagode achieved mainstream success with albums such as \"Motori\" (1982), \"Čarobnjaci\" (1983), and \"Vatra\" (1985). The 1986 move to London and the release of the \"Wild Strawberries\" album aimed at international markets, but the band's popularity remained strongest in the Balkans. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Divlje_Jagode?utm_source=openai))\n\nAfter a hiatus, Lipovača reformed the band in 1994 with vocalist Zlatan \"Ćeha\" Čehić. The 2003 album \"Od neba do neba\" marked a resurgence in popularity. Since 2013, the lineup has included vocalist Livio Berak, with Janković returning as an official member in 2019. Their 2020 album \"Jukebox\" featured collaborations with former members and new material. In 2022, they released their first live album, \"Live in Beograd,\" capturing a performance in Belgrade. Their latest studio album, \"Prati moje stare tragove,\" was released in 2024, followed by a promotional tour across former Yugoslav republics. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Divlje_Jagode?utm_source=openai))\n\nThroughout their career, Divlje Jagode have sold around 4 million records, making them one of the most successful rock bands in the region. Their music blends hard rock and heavy metal with elements of Balkan folk, creating a distinctive sound that resonates with audiences.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Divlje_Jagode_2022.jpg/800px-Divlje_Jagode_2022.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Divlje_Jagode_2022.jpg/800px-Divlje_Jagode_2022.jpg",
+      "website": "https://www.divlje-jagode.com",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Sead \"Zele\" Lipovača",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Anto \"Toni\" Janković",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Livio Berak",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Damjan Deurić",
+          "role": "Keyboards"
+        },
+        {
+          "name": "András Ispán",
+          "role": "Bass"
+        },
+        {
+          "name": "Emil Kranjčić",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "benediction",
+      "name": "Benediction",
+      "country": "United Kingdom",
+      "description": "Benediction is a British death metal band formed in Birmingham in 1989. They are known for their intense and classic death metal sound, drawing comparisons to several Floridian bands of the time. ([bnrmetal.com](https://bnrmetal.com/v5/band/band/Bene?utm_source=openai)) Their first album, \"Subconscious Terror,\" was released in 1990. The band's latest album, \"Ravage of Empires,\" was released in April 2025. ([bnrmetal.com](https://bnrmetal.com/v5/band/band/Bene?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Benediction_band_logo.jpg/800px-Benediction_band_logo.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Benediction_band.jpg/800px-Benediction_band.jpg",
+      "website": "https://www.benedictionband.com/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Extreme Metal"
+      ],
+      "members": [
+        {
+          "name": "Darren Brookes",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Peter Rew",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Dave Ingram",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Gio Durst",
+          "role": "Drummer"
+        },
+        {
+          "name": "Nik Sampson",
+          "role": "Bassist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ronker",
+      "name": "Ronker",
+      "country": "Belgium",
+      "description": "RONKER is a Belgian noise-rock band formed in 2020 in the Denderstreek region. Their music is a fusion of hardcore, post-punk, noise, and alternative metal, characterized by raw energy and aggressive soundscapes. The band released their debut album, \"Fear Is a Funny Thing, Now Smile Like a Big Boy,\" in 2024, which received positive reviews for its unpolished and playful approach. In November 2025, they announced their second album, \"Respect The Hustle, I Won’t Be Your Dog Forever,\" set for release on January 30, 2026, featuring the lead single \"No Sweat.\" ([clickrollboom.co.uk](https://www.clickrollboom.co.uk/news/ronker-announce-new-album-respect-the-hustle-i-wont-be-your-dog-forever-will-be-released-30th-jan-2025-via-labelman?utm_source=openai)) The current lineup includes Jasper De Petter (vocals/guitar), Bram Delcourt (bass), Jens Van Den Borre (guitar), and Matteo Beyney (drums). ([clickrollboom.co.uk](https://www.clickrollboom.co.uk/news/ronker-announce-new-album-respect-the-hustle-i-wont-be-your-dog-forever-will-be-released-30th-jan-2025-via-labelman?utm_source=openai))",
+      "logo": "https://www.clickrollboom.co.uk/wp-content/uploads/2025/11/ronker-logo.png",
+      "headlineImage": "https://www.clickrollboom.co.uk/wp-content/uploads/2025/11/ronker-no-sweat.jpg",
+      "website": "https://www.clickrollboom.co.uk/ronker",
+      "spotify": "",
+      "genres": [
+        "Hardcore",
+        "Post-Punk",
+        "Noise Rock",
+        "Alternative Metal"
+      ],
+      "members": [
+        {
+          "name": "Jasper De Petter",
+          "role": "Vocals/Guitar"
+        },
+        {
+          "name": "Bram Delcourt",
+          "role": "Bass"
+        },
+        {
+          "name": "Jens Van Den Borre",
+          "role": "Guitar"
+        },
+        {
+          "name": "Matteo Beyney",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "focus",
+      "name": "Focus",
+      "country": "Austria",
+      "description": "Focus was an Austrian progressive metal band formed in Graz, Styria, in 1998. Initially known as Drowned, the band underwent a name change to Focus in 1998. Their music blended elements of progressive metal and rock, creating a distinctive sound that resonated within the metal community. The lineup included Andreas Kober on bass, Georg Bauer on drums, Stefan Fink on lead guitar, René Stöcklmair on rhythm guitar, and Jakob Erwa on vocals. Despite their promising start, Focus disbanded in 2000 after a brief but impactful period in the metal scene. ([metal-archives.com](https://www.metal-archives.com/bands/Focus/3540425796?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/3540/3540425796_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/3540425796_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Focus/3540425796",
+      "spotify": "",
+      "genres": [
+        "Progressive Metal",
+        "Progressive Rock"
+      ],
+      "members": [
+        {
+          "name": "Andreas Kober",
+          "role": "Bass"
+        },
+        {
+          "name": "Georg Bauer",
+          "role": "Drums"
+        },
+        {
+          "name": "Stefan Fink",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "René Stöcklmair",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Jakob Erwa",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "joey-valence-brae",
+      "name": "Joey Valence \u0026 Brae",
+      "country": "United States",
+      "description": "Joey Valence \u0026 Brae are an American hip-hop duo from State College, Pennsylvania, consisting of rappers Joseph Bertolino (Joey Valence) and Braedan Lugue (Brae). They met during their freshman year at Pennsylvania State University and began creating music together. Their debut single, \"Crank It Up,\" was released in 2021, followed by the EP \"The Underground Sound\" in February 2022. In April 2022, they released \"Punk Tactics,\" which went viral on social media and was compared to the music of the Beastie Boys. Their debut album, \"Punk Tactics,\" was released on September 8, 2023, followed by \"No Hands\" on June 7, 2024, featuring collaborations with Z-Trip, Terror Reid, and Danny Brown. Their third album, \"Hyperyouth,\" was released on August 15, 2025, featuring guest appearances from TiaCorine, Rebecca Black, and JPEGMafia. The duo is known for their energetic performances and unique blend of hip-hop, punk, and electronic music. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Joey_Valence_%26_Brae?utm_source=openai))",
+      "logo": "https://www.jvbsucks.com/images/logo.png",
+      "headlineImage": "https://www.jvbsucks.com/images/joey-valence-brae.jpg",
+      "website": "https://www.jvbsucks.com/",
+      "spotify": "",
+      "genres": [
+        "Hip-Hop",
+        "Punk Rap",
+        "Rap Rock",
+        "Experimental Hip-Hop"
+      ],
+      "members": [
+        {
+          "name": "Joseph Bertolino",
+          "role": "Rapper"
+        },
+        {
+          "name": "Braedan Lugue",
+          "role": "Rapper"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dymytry",
+      "name": "Dymytry",
+      "country": "Czech Republic",
+      "description": "Dymytry is a Czech metal band formed in 2003 in Prague by guitarist Jiří \"Dymo\" Urban. The band's name is inspired by a Russian locomotive, reflecting their powerful and relentless musical style. They are known for their unique \"psy-core\" genre, characterized by aggressive guitar riffs, dynamic rhythms, and compelling vocals. Dymytry's performances are marked by the use of insect-themed masks, adding a distinctive visual element to their shows. Over the years, the band has released nine studio albums, including \"Neser\" (2010), \"Neonarcis\" (2012), \"Homodlak\" (2014), \"Agronaut\" (2016), \"Revolter\" (2019), \"Revolt\" (2022), \"Pharmageddon\" (2022), \"Five Angry Men\" (2024), and \"V Dobrým I Zlým\" (2024). They have also produced eight EPs, four live albums, and two compilation sets. Dymytry has toured extensively, sharing stages with bands like Pantera, Lordi, and Hämatom, and performed at major festivals such as Masters of Rock. In November 2023, they celebrated their 20th anniversary with a sold-out concert at Prague's O2 Arena, attended by 13,000 fans. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dymytry?utm_source=openai))",
+      "logo": "https://www.dymytry.cz/images/logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Dymytry_band_2017.jpg/800px-Dymytry_band_2017.jpg",
+      "website": "https://www.dymytry.cz",
+      "spotify": "",
+      "genres": [
+        "Psy-Core",
+        "Alternative Metal",
+        "Groove Metal"
+      ],
+      "members": [
+        {
+          "name": "Jiří \"Dymo\" Urban",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Artur \"R2r\" Michajlov",
+          "role": "Bassist"
+        },
+        {
+          "name": "Jan \"Gorgy\" Görgel",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Miloš \"Mildor\" Meier",
+          "role": "Drummer"
+        },
+        {
+          "name": "Václav \"Noid\" Bárta",
+          "role": "Vocalist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-haunted",
+      "name": "The Haunted",
+      "country": "Sweden",
+      "description": "The Haunted is a Swedish heavy metal band formed in Gothenburg in 1996. The original lineup consisted of Patrik Jensen (guitar), Jonas Björler (bass), Adrian Erlandsson (drums), Anders Björler (guitar), and Peter Dolving (vocals). Both Björler brothers and Erlandsson were previously members of the influential melodic death metal band At the Gates. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Haunted_%28Swedish_band%29?utm_source=openai))\n\nTheir self-titled debut album, \"The Haunted,\" was released in 1998 under Earache Records. The album received critical acclaim, being named \"Album of the Year\" by Terrorizer Magazine. The Haunted gained a strong live reputation, performing extensively in Sweden and internationally, including a UK tour with Napalm Death. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Haunted_%28Swedish_band%29?utm_source=openai))\n\nIn 2000, the band released \"The Haunted Made Me Do It,\" which showcased a more melodic approach, aligning with the Gothenburg style of melodic death metal. The album topped the CMJ Loud Rock Radio Chart for four weeks and won a Swedish Grammy for Best Hard Rock Album. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Haunted_%28Swedish_band%29?utm_source=openai))\n\nAfter a period of lineup changes, including the return of vocalist Peter Dolving in 2003, The Haunted released \"One Kill Wonder\" in 2003, which also topped the CMJ Loud Rock Radio Chart. The band continued to evolve, releasing \"The Dead Eye\" in 2006, which featured a more sinister vocal style and technical musical performance. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Haunted_%28Swedish_band%29?utm_source=openai))\n\nIn 2014, The Haunted released \"Exit Wounds,\" marking a return to their thrash metal roots. The band continued to tour and release new material, including \"Strength in Numbers\" in 2017. In 2025, they released their tenth studio album, \"Songs of Last Resort,\" which received positive reviews for its structured aggression and adherence to the Gothenburg melodic metal tradition. ([atmostfear-entertainment.com](https://www.atmostfear-entertainment.com/music/releases/the-haunted-songs-of-last-resort-delivers-structured-aggression-after-prolonged-silence/?utm_source=openai))\n\nThe Haunted's music is characterized by a blend of thrash metal, melodic death metal, and groove metal, reflecting their roots in the Swedish metal scene.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Haunted_2017.jpg/800px-The_Haunted_2017.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Haunted_2017.jpg/800px-The_Haunted_2017.jpg",
+      "website": "https://www.the-haunted.com",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Melodic Death Metal",
+        "Groove Metal"
+      ],
+      "members": [
+        {
+          "name": "Patrik Jensen",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Jonas Björler",
+          "role": "Bassist"
+        },
+        {
+          "name": "Adrian Erlandsson",
+          "role": "Drummer"
+        },
+        {
+          "name": "Marco Aro",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Ola Englund",
+          "role": "Guitarist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "alfahanne",
+      "name": "Alfahanne",
+      "country": "Sweden",
+      "description": "Alfahanne is a Swedish metal band formed in 2010 in Eskilstuna, known for their unique \"Alfapocalyptic Rock\" style that blends black metal with classic rock, punk, and goth influences. The lineup comprises Pehr Skjoldhammer (vocals and guitar), Fredrik Sööberg (guitar), Niklas Åström (drums), Jimmy Wiberg (bass), and Stefan Eriksson (keyboards). The band debuted with the \"Grym\" split 7” with Shining in 2013, followed by their first full-length album, \"Alfapokalyps,\" in 2014. Their second album, \"Blod Eld Alfa,\" released in 2015, featured guest vocals from artists like Erlend Hjelvik (Kvelertak), Niklas Kvarforth (Shining), Spellgoth (Horna, Baptism), and Nattfursth (Sorhin). In 2017, they released \"Det Nya Svarta,\" and in 2019, \"Atomvinter.\" Their latest album, \"Vår Tid Är Nu,\" was released in 2024. ([darkessencerecords.no](https://darkessencerecords.no/artists/alfahanne/?utm_source=openai))",
+      "logo": "https://darkessencerecords.no/wp-content/uploads/2023/11/Alfahanne-logo.png",
+      "headlineImage": "https://darkessencerecords.no/wp-content/uploads/2023/11/Alfahanne-2023.jpg",
+      "website": "https://www.facebook.com/alfahanneofficial",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Classic Rock",
+        "Punk",
+        "Goth"
+      ],
+      "members": [
+        {
+          "name": "Pehr Skjoldhammer",
+          "role": "Vocals and Guitar"
+        },
+        {
+          "name": "Fredrik Sööberg",
+          "role": "Guitar"
+        },
+        {
+          "name": "Niklas Åström",
+          "role": "Drums"
+        },
+        {
+          "name": "Jimmy Wiberg",
+          "role": "Bass"
+        },
+        {
+          "name": "Stefan Eriksson",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "knife-bride",
+      "name": "Knife Bride",
+      "country": "United Kingdom",
+      "description": "Knife Bride is a dynamic metal band from Brighton, England, known for their unique 'Nu-Gothika' sound—a fusion of gothic and metal elements. Formed in 2023, the band comprises lead vocalist Mollie Clack, guitarist and backing vocalist Sean Windle, drummer and synth player Sean Millsopp, bassist Craig Glynn, and backing vocalist and synth player Lauren Wise. Their music draws inspiration from artists like Spiritbox, Kate Bush, Bring Me The Horizon, and Karnivool, blending dark, cinematic themes with powerful rock and metal riffs. This distinctive style has led to performances at prominent UK festivals such as Download, 2000trees, and The Great Escape. They have also supported acts like WARGASM and Scene Queen at iconic venues, including The O2 Kentish Town Forum and Bristol’s Marble Factory. In 2024, Knife Bride released singles like 'Territory' and 'Melancholia,' receiving airplay on BBC Radio 1 and Kerrang! Radio. Their 2025 single, 'Worthy,' continues to showcase their evolving sound and thematic depth. ([knifebride.com](https://www.knifebride.com/about?utm_source=openai))",
+      "logo": "https://www.knifebride.com/images/knife_bride_logo.png",
+      "headlineImage": "https://www.knifebride.com/images/knife_bride_band_photo.jpg",
+      "website": "https://www.knifebride.com",
+      "spotify": "",
+      "genres": [
+        "Nu-Gothika",
+        "Metalcore",
+        "Alternative Metal"
+      ],
+      "members": [
+        {
+          "name": "Mollie Clack",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Sean Windle",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Sean Millsopp",
+          "role": "Drums, Synth"
+        },
+        {
+          "name": "Craig Glynn",
+          "role": "Bass"
+        },
+        {
+          "name": "Lauren Wise",
+          "role": "Backing Vocals, Synth"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "i-prevail",
+      "name": "I Prevail",
+      "country": "United States",
+      "description": "I Prevail is an American rock band formed in Southfield, Michigan, in 2013. They gained prominence with a metal cover of Taylor Swift's \"Blank Space,\" which was certified platinum in the U.S. Their discography includes four studio albums: \"Lifelines\" (2016), \"Trauma\" (2019), \"True Power\" (2022), and \"Violent Nature\" (2025). The band's musical style blends post-hardcore, metalcore, pop-punk, hard rock, and nu metal, incorporating elements of metal, alternative, electronic, hip hop, trap, and pop. Notable singles include \"Breaking Down\" and \"Hurricane,\" both successful on rock radio. \"Bow Down\" was nominated for a Grammy Award for Best Metal Performance in 2019, and \"Trauma\" was nominated for Best Rock Album the same year. In May 2025, the band announced the departure of vocalist Brian Burkheiser, with rhythm guitarist Dylan Bowman taking over clean vocals. ([revolvermag.com](https://www.revolvermag.com/music/i-prevail-split-with-vocalist-brian-burkheiser/?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/I_Prevail_Logo.svg/800px-I_Prevail_Logo.svg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/I_Prevail_2022.jpg/800px-I_Prevail_2022.jpg",
+      "website": "https://www.iprevailband.com",
+      "spotify": "",
+      "genres": [
+        "Post-Hardcore",
+        "Metalcore",
+        "Pop-Punk",
+        "Hard Rock"
+      ],
+      "members": [
+        {
+          "name": "Eric Vanlerberghe",
+          "role": "Unclean Vocals"
+        },
+        {
+          "name": "Steve Menoian",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Dylan Bowman",
+          "role": "Rhythm Guitar, Clean Vocals"
+        },
+        {
+          "name": "Gabe Helguera",
+          "role": "Drums, Percussion"
+        },
+        {
+          "name": "Jon Eberhard",
+          "role": "Bass, Keyboards, Percussion, Backing Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "wendis-bhmische-blasmusik",
+      "name": "Wendi's Böhmische Blasmusik",
+      "country": "Austria",
+      "description": "Wendi's Böhmische Blasmusik ist ein traditionsreiches Blasorchester aus Nickelsdorf im Burgenland, Österreich. Gegründet wurde die Kapelle 1976 von Werner \"Wendi\" Wendelin, der bis zu seinem Ruhestand im Jahr 2023 als Kapellmeister fungierte. ([bvz.at](https://www.bvz.at/neusiedl/kapellmeisterruhestand-boehmische-blasmusik-wendi-nimmt-abschied-488413507?utm_source=openai)) Unter seiner Leitung entwickelte sich das Ensemble zu einer festen Größe in der böhmisch-mährischen Blasmusikszene.\n\nDie Musik von Wendi's Böhmische Blasmusik zeichnet sich durch authentische Interpretationen klassischer Stücke aus, die das kulturelle Erbe des Burgenlands widerspiegeln. Im Laufe der Jahre veröffentlichte die Kapelle mehrere Alben, darunter \"Nach altem Rezept ... aus dem Burgenland\" (2013) und \"Erinnerungsstücke aus dem Burgenland\" (2019). ([blasmusik-shop.de](https://www.blasmusik-shop.de/Nach-altem-Rezept-aus-dem-Burgenland?utm_source=openai)) Diese Produktionen enthalten sowohl traditionelle als auch weniger bekannte Werke der böhmisch-mährischen Blasmusik.\n\nIm Jahr 2023 verabschiedete sich Kapellmeister Werner Wendelin nach 47 Jahren von der Bühne. ([bvz.at](https://www.bvz.at/neusiedl/kapellmeisterruhestand-boehmische-blasmusik-wendi-nimmt-abschied-488413507?utm_source=openai)) Sein Nachfolger als Kapellmeister wurde Robert Steiner. ([blasmusik.at](https://www.blasmusik.at/media/4440/blasmusikzeitung-juli-august-2018.pdf?utm_source=openai)) Die Kapelle setzt weiterhin ihre musikalische Reise fort und bleibt ein wichtiger Botschafter der Blasmusik im Burgenland.\n\nFür aktuelle Informationen und kommende Veranstaltungen besuchen Sie bitte die offizielle Website von Wendi's Böhmischer Blasmusik.",
+      "logo": "https://www.wbb.at/images/logo.png",
+      "headlineImage": "https://www.wbb.at/images/aktuelles/2025/281/Spendenaufruf.jpg",
+      "website": "https://www.wbb.at",
+      "spotify": "",
+      "genres": [
+        "Blasmusik",
+        "Volksmusik",
+        "Böhmisch-Mährische Blasmusik"
+      ],
+      "members": [
+        {
+          "name": "Robert Steiner",
+          "role": "Kapellmeister"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "gojira",
+      "name": "Gojira",
+      "country": "France",
+      "description": "Gojira is a French heavy metal band formed in 1996 in Ondres, Landes, France. Originally named Godzilla, the band changed their name to Gojira in 2001. The lineup consists of brothers Joe Duplantier (vocals, guitar) and Mario Duplantier (drums), Christian Andreu (guitar), and Jean-Michel Labadie (bass). Gojira is renowned for their technical death metal style, blending elements of groove metal, progressive metal, and post-metal. Their lyrics often explore themes of spirituality, philosophy, and environmentalism. The band has released several critically acclaimed albums, including \"From Mars to Sirius\" (2005), \"The Way of All Flesh\" (2008), \"L'Enfant Sauvage\" (2012), \"Magma\" (2016), and \"Fortitude\" (2021). \"Magma\" marked a significant evolution in their sound, incorporating more accessible elements without compromising their raw intensity. In 2025, Gojira was awarded the Grammy for Best Metal Performance. ([loudersound.com](https://www.loudersound.com/features/gojira-magma-album-interview-2016?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gojira_Logo.svg/800px-Gojira_Logo.svg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gojira_2017.jpg/800px-Gojira_2017.jpg",
+      "website": "https://www.gojira-music.com",
+      "spotify": "",
+      "genres": [
+        "Technical Death Metal",
+        "Groove Metal",
+        "Progressive Metal",
+        "Post-Metal"
+      ],
+      "members": [
+        {
+          "name": "Joe Duplantier",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Mario Duplantier",
+          "role": "Drums"
+        },
+        {
+          "name": "Christian Andreu",
+          "role": "Guitar"
+        },
+        {
+          "name": "Jean-Michel Labadie",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "conjurer",
+      "name": "Conjurer",
+      "country": "United Kingdom",
+      "description": "Conjurer is a British metal band from Rugby, Warwickshire, formed in 2014. The band is known for their heavy and atmospheric sound, blending elements of sludge metal, post-metal, and doom metal. They signed with Nuclear Blast Records in 2019. ([nuclearblast.com](https://www.nuclearblast.com/pages/conjurer?utm_source=openai))\n\nTheir discography includes:\n\n- **Mire** (2018): Their debut full-length album, released to critical acclaim. ([nuclearblast.com](https://www.nuclearblast.com/pages/conjurer?utm_source=openai))\n\n- **Páthos** (2022): Their second album, further solidifying their reputation in the metal scene. ([nuclearblast.com](https://www.nuclearblast.com/pages/conjurer?utm_source=openai))\n\n- **Unself** (2025): Their third album, released on October 24, 2025. ([metalsucks.net](https://www.metalsucks.net/2025/08/13/conjurer-announce-new-album-unself-first-single-hang-them-in-your-head-out-now/?utm_source=openai))\n\nThe current lineup consists of:\n\n- Brady Deeprose – guitars, vocals\n\n- Dan Nightingale – guitars, vocals\n\n- Conor Marshall – bass\n\n- Noah See – drums\n\nFor more information, visit their official website: ([nuclearblast.com](https://www.nuclearblast.com/pages/conjurer?utm_source=openai))",
+      "logo": "https://www.nuclearblast.com/media/Conjurer_Logo.png",
+      "headlineImage": "https://www.nuclearblast.com/media/Conjurer_Páthos_Album_Art.jpg",
+      "website": "https://www.nuclearblast.com/pages/conjurer",
+      "spotify": "",
+      "genres": [
+        "Sludge Metal",
+        "Post-Metal",
+        "Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Brady Deeprose",
+          "role": "Guitars, Vocals"
+        },
+        {
+          "name": "Dan Nightingale",
+          "role": "Guitars, Vocals"
+        },
+        {
+          "name": "Conor Marshall",
+          "role": "Bass"
+        },
+        {
+          "name": "Noah See",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "sofian-medjmedj",
+      "name": "Sofian Medjmedj",
+      "country": "Czech Republic",
+      "description": "Sofian Medjmedj is a Czech singer, composer, and producer known for his dynamic blend of pop, R\u0026B, and soul music. Born with roots in both Czechia and Algeria, he has captivated audiences with his authenticity, openness, and exceptional melodic sense. His musical journey began with recording covers on YouTube, drawing inspiration from artists like Justin Bieber and Linkin Park. This online presence led to a significant collaboration with Ben Cristovao, resulting in the single \"TV Shows,\" recorded at the renowned Abbey Road Studios in London. In October 2018, Sofian released his solo debut single, \"Čekám na zázrak,\" marking his emergence as a solo artist. Over the years, he has continued to evolve, releasing singles such as \"Slzy\" in 2023, showcasing his growth and versatility. His performances have garnered attention, including a notable appearance at the 22nd annual Colours of Ostrava festival, where he performed to an audience of approximately three thousand. In 2025, Sofian embarked on a tour across Slovakia, performing in cities like Bratislava, Trnava, and Prešov, further solidifying his presence in the Central European music scene. His music is available on various streaming platforms, including SoundCloud and Apple Music, where listeners can explore his diverse discography.",
+      "logo": "https://www.colours.cz/wp-content/uploads/2025/06/sofian-medjmedj-logo.jpg",
+      "headlineImage": "https://www.colours.cz/wp-content/uploads/2025/06/sofian-medjmedj-colours-of-ostrava-2025.jpg",
+      "website": "https://www.colours.cz/en/ucinkujici/sofian-medj-medj-colours/",
+      "spotify": "",
+      "genres": [
+        "Pop",
+        "R\u0026B",
+        "Soul"
+      ],
+      "members": [
+        {
+          "name": "Sofian Medjmedj",
+          "role": "Vocals, Composer, Producer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "severe-torture",
+      "name": "Severe Torture",
+      "country": "Netherlands",
+      "description": "Severe Torture is a Dutch death metal band formed in 1997 in Boxtel, North Brabant. The original lineup consisted of guitarist Thijs van Laarhoven, bassist Patrick Boleij, drummer Seth van de Loo, vocalist Erik de Windt, and guitarist Jelle Schuurmans. In 1998, they released their debut demo, \"Baptized in Virginal Liquid,\" which sold approximately 600 copies worldwide. Following this, Erik de Windt departed to join Sinister, and Dennis Schreurs replaced him as the vocalist. The band then recorded a two-song demo that garnered positive reactions, leading to their first European tour in 2000. They signed with Fadeless Records and released their debut album, \"Feasting on Blood,\" in October 2000. This was followed by \"Misanthropic Carnage\" in 2002, \"Fall of the Despised\" in 2005, \"Sworn Vengeance\" in 2007, and \"Slaughtered\" in 2010. After a hiatus, they returned with the EP \"Fisting the Sockets\" in 2022 and their latest album, \"Torn from the Jaws of Death,\" in 2024. Their music is characterized by brutal death metal elements, featuring aggressive guitar riffs, blast beat drumming, and guttural vocals. Lyrically, they explore themes such as gore, anti-Christianity, misanthropy, vengeance, and death. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Severe_Torture?utm_source=openai))",
+      "logo": "https://severetorture.bandcamp.com/",
+      "headlineImage": "https://severetorture.bandcamp.com/",
+      "website": "https://www.severetorture.com",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Brutal Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Dennis Schreurs",
+          "role": "Vocals"
+        },
+        {
+          "name": "Thijs Van Laarhoven",
+          "role": "Guitar"
+        },
+        {
+          "name": "Patrick Boleij",
+          "role": "Bass"
+        },
+        {
+          "name": "Marvin Vriesde",
+          "role": "Guitar"
+        },
+        {
+          "name": "Damiën Kerpentier",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "matanzick",
+      "name": "Matanzick",
+      "country": "Norway",
+      "description": "Matanzick is a Norwegian heavy metal band formed in 2010 in Elverum, Innlandet. The band quickly gained a reputation for their aggressive sound and intense performances, blending elements of heavy, thrash, and groove metal. Their music is characterized by hard-hitting lyrics and dynamic compositions. In 2014, they released their debut album, \"Scars of Insanity,\" which showcased their raw energy and musical prowess. In 2023, Matanzick released their second album, \"Pandemonium,\" which received critical acclaim for its dynamic atmosphere. ([gigplanet.no](https://www.gigplanet.no/band/matanzick?utm_source=openai)) The current lineup consists of Tore Lunner (vocals, guitars), Fredrik Vindfallet (bass), Pål Gundersen (drums), and Terje André Rønningen (lead guitars). ([metal-archives.com](https://www.metal-archives.com/bands/Matanzick/3540528367?utm_source=openai)) Their music is available on platforms like Spotify and Apple Music. ([music.apple.com](https://music.apple.com/us/artist/matanzick/794526470?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/3540/5283_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/5283_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Matanzick/3540528367",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Thrash Metal",
+        "Groove Metal"
+      ],
+      "members": [
+        {
+          "name": "Tore Lunner",
+          "role": "Vocals, Guitars"
+        },
+        {
+          "name": "Fredrik Vindfallet",
+          "role": "Bass"
+        },
+        {
+          "name": "Pål Gundersen",
+          "role": "Drums"
+        },
+        {
+          "name": "Terje André Rønningen",
+          "role": "Lead Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "mr-hurley-die-pulveraffen",
+      "name": "Mr. Hurley \u0026 Die Pulveraffen",
+      "country": "Germany",
+      "description": "Mr. Hurley \u0026 Die Pulveraffen ist eine deutsche Folk-Band aus Osnabrück, die 2009 gegründet wurde und aus vier Geschwistern besteht: Simon Erichsen (Mr. Hurley), Christoph Erichsen (Buckteeth Bannock), Johannes Erichsen (Der einäugige Morgan) und Esther Erichsen (Pegleg Peggy). ([de.wikipedia.org](https://de.wikipedia.org/wiki/Mr._Hurley_%26_die_Pulveraffen?utm_source=openai)) Die Band versteht sich als frühneuzeitlich inspirierte Piratenband und spielt vor allem auf Mittelaltermärkten, Festivals und Hafenfesten. Sie tritt regelmäßig auf dem Mittelalterlich Phantasie Spectaculum (MPS) auf und hat auch auf großen Festivals wie dem Wacken Open Air, dem Summer Breeze Open Air und dem Rockharz Festival gespielt. ([de.wikipedia.org](https://de.wikipedia.org/wiki/Mr._Hurley_%26_die_Pulveraffen?utm_source=openai))\n\nMusikalisch kombiniert die Band traditionelle Shantys mit modernen Folk- und Rock-Elementen und bezeichnet ihren Stil als \"Grog'n'Roll\" oder \"AggroShanty\". Sie sind bekannt für ihre humorvollen Texte und energiegeladenen Live-Auftritte. ([oszillopedia.de](https://oszillopedia.de/bands/mr-hurley-die-pulveraffen?utm_source=openai))\n\nDie Diskografie umfasst mehrere Studioalben, darunter \"Affentheater\" (2012), \"Grog 'n' Roll\" (2013), \"Voodoo\" (2015), \"Tortuga\" (2017), \"Leviathan\" (2019), \"Seemannsgrab\" (2021) und \"Leuchtturm\" (2023). Mit \"Tortuga\" erreichte die Band Platz 5, mit \"Leviathan\" Platz 7, mit \"Seemannsgrab\" Platz 3 und mit \"Leuchtturm\" Platz 3 der deutschen Albumcharts. ([de.wikipedia.org](https://de.wikipedia.org/wiki/Mr._Hurley_%26_die_Pulveraffen?utm_source=openai))\n\nIm September 2025 veröffentlichten sie ihr neuestes Album \"S.O.S.\", das Platz 4 der deutschen Albumcharts erreichte. ([de.wikipedia.org](https://de.wikipedia.org/wiki/Mr._Hurley_%26_die_Pulveraffen?utm_source=openai))\n\nDie aktuelle Besetzung besteht aus den vier Geschwistern:\n\n- Mr. Hurley (Simon Erichsen): Gesang, Gitarre, Mandoline, Cello\n- Buckteeth Bannock (Christoph Erichsen): Gesang, Akkordeon, Klavier, Flöten\n- Der einäugige Morgan (Johannes Erichsen): Gesang, Cajón, Schlagwerk, Bodhrán, Klavier\n- Pegleg Peggy (Esther Erichsen): Gesang, Bass, Kontrabass\n\nFür weitere Informationen besuchen Sie die offizielle Website der Band: ([pulveraffen.de](https://www.pulveraffen.de/?utm_source=openai))",
+      "logo": "https://www.pulveraffen.de/wp-content/uploads/2023/09/Logo.png",
+      "headlineImage": "https://www.pulveraffen.de/wp-content/uploads/2023/09/Leuchtturm-Albumcover.jpg",
+      "website": "https://www.pulveraffen.de/",
+      "spotify": "",
+      "genres": [
+        "Folk",
+        "Piratenmusik",
+        "Mittelalter-Rock"
+      ],
+      "members": [
+        {
+          "name": "Mr. Hurley (Simon Erichsen)",
+          "role": "Gesang, Gitarre, Mandoline, Cello"
+        },
+        {
+          "name": "Buckteeth Bannock (Christoph Erichsen)",
+          "role": "Gesang, Akkordeon, Klavier, Flöten"
+        },
+        {
+          "name": "Der Einäugige Morgan (Johannes Erichsen)",
+          "role": "Gesang, Cajón, Schlagwerk, Bodhrán, Klavier"
+        },
+        {
+          "name": "Pegleg Peggy (Esther Erichsen)",
+          "role": "Gesang, Bass, Kontrabass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "angelus-apatrida",
+      "name": "Angelus Apatrida",
+      "country": "Spain",
+      "description": "Angelus Apatrida is a Spanish thrash metal band formed in Albacete in 2000. The band was established by members from two local groups, aiming to create a unified musical project that encompassed their diverse influences. Initially, they recorded two demos: \"Lost in the Realms of Orchinodaemon\" in 2001 and \"Unknown Human Being\" in 2003, showcasing a style reminiscent of European power metal. Following lineup changes, including the departure of vocalist Alberto Gayoso and drummer Alberto Izquierdo, the band adopted a heavier sound, drawing inspiration from thrash metal pioneers like Overkill, Megadeth, Slayer, Anthrax, Metallica, Annihilator, and Pantera. Their debut album, \"Evil Unleashed,\" was self-released in 2006, followed by \"Give 'Em War\" in 2007. In 2009, they signed with Century Media Records, releasing \"Clockwork\" in 2010, which received critical acclaim and charted in Spain, Portugal, and Greece. Subsequent albums include \"The Call\" (2012), \"Hidden Evolution\" (2015), \"Cabaret de la Guillotine\" (2018), and \"Angelus Apatrida\" (2021). Their latest release, \"Aftermath,\" came out in 2023. The current lineup consists of Guillermo Izquierdo (vocals, lead and rhythm guitars), David G. Álvarez (lead and rhythm guitars), José J. Izquierdo (bass guitar), and Víctor Valera (drums). Known for their energetic performances, Angelus Apatrida has played at major festivals such as Hellfest, Graspop, Resurrection Fest, and Rock Fest. ([eternal-terror.com](https://eternal-terror.com/2023/08/13/angelus-apatrida-announce-new-album-new-single-out/?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/3540/354030_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/354030_photo.jpg",
+      "website": "http://www.angelusapatrida.com",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Guillermo Izquierdo",
+          "role": "Vocals, Lead and Rhythm Guitars"
+        },
+        {
+          "name": "David G. Álvarez",
+          "role": "Lead and Rhythm Guitars"
+        },
+        {
+          "name": "José J. Izquierdo",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "Víctor Valera",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hermit-dreams",
+      "name": "Hermit Dreams",
+      "country": "Norway",
+      "description": "Hermit Dreams is an experimental death/doom metal band from Norway, formed by seasoned musicians from various national metal acts. The band delves into themes of loneliness, anxiety, fear, transience, wonder, and confusion, blending traditional death metal heaviness with elements of doom and progressive metal. Their unique sound incorporates unconventional instruments such as banjo, cello, upright bass, and theremin, alongside harsh vocals and pummeling drums, creating an unsettling yet mesmerizing atmosphere. Their debut album, \"Desperate Anomies,\" was released on December 5, 2025, through Chaos Records. ([hermitdreams.com](https://hermitdreams.com/?utm_source=openai))",
+      "logo": "https://hermitdreams.com/images/logo.jpg",
+      "headlineImage": "https://hermitdreams.com/images/band-photo.jpg",
+      "website": "https://hermitdreams.com/",
+      "spotify": "",
+      "genres": [
+        "Experimental Death Metal",
+        "Doom Metal",
+        "Progressive Metal"
+      ],
+      "members": [
+        {
+          "name": "Eirik Waadeland",
+          "role": "Vocals"
+        },
+        {
+          "name": "Eyvind W. Axelsen",
+          "role": "Cello, Upright Bass, Bass Guitar"
+        },
+        {
+          "name": "Martin Storm-Olsen",
+          "role": "Banjo, Guitar"
+        },
+        {
+          "name": "Bjørn Tore Erlandsen",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "vogelfrey",
+      "name": "Vogelfrey",
+      "country": "Germany",
+      "description": "Vogelfrey is a German folk metal band from Hamburg, formed in 2004. The band blends medieval themes with modern metal elements, creating a unique sound they describe as \"Medieval Dance Metal.\" Their music features a mix of hard-hitting guitar riffs, virtuosic violin melodies, and pounding electronic elements. Vogelfrey's lyrics often combine biting irony with contemporary language, bringing fresh energy to the folk metal scene. They have released several albums, including \"Wiegenfest\" (2010), \"Zwölf Schritte zum Strick\" (2012), \"Sturm und Klang\" (2015), \"In Ekstase\" (2017), \"Nachtwache\" (2019), and \"Titanium\" (2022). Their latest album, \"Make Mittelalter Great Again,\" was released on November 14, 2025, showcasing their evolution and commitment to their distinctive style. The band has performed at major festivals such as Wacken Open Air, Rockharz Open Air, and Summer Breeze, and has supported acts like Corvus Corax and Ingrimm.",
+      "logo": "https://vogelfrey.de/images/logo.png",
+      "headlineImage": "https://vogelfrey.de/images/album_cover_make_mittelalter_great_again.jpg",
+      "website": "https://vogelfrey.de/",
+      "spotify": "",
+      "genres": [
+        "Folk Metal",
+        "Medieval Rock",
+        "Metal",
+        "Folk Rock"
+      ],
+      "members": [
+        {
+          "name": "Jannik Schmidt",
+          "role": "Vocals, Schalmei"
+        },
+        {
+          "name": "Dominik Schmidt",
+          "role": "Drums"
+        },
+        {
+          "name": "Christopher Plünnecke",
+          "role": "Bass"
+        },
+        {
+          "name": "Dennis Walkusch",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Johanna Heesch",
+          "role": "Cello"
+        },
+        {
+          "name": "Alexander Suck",
+          "role": "Violin"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "voil",
+      "name": "Voilà",
+      "country": "United States",
+      "description": "VOILÀ is a Los Angeles-based pop duo formed in January 2018 by Gus Ross, a former busker from London, and Luke Eisner, a model from Wisconsin. The duo met while attending the Thornton School of Music in California and quickly gained recognition for their stadium-ready pop/rock sound, characterized by massive choruses and catchy verses. In 2018, they were featured as one of BBC Introducing Solent's \"Ones to Watch,\" which helped elevate their profile. They released their debut EP, \"Déjà Vu,\" in 2019, followed by their first full-length album, \"Long Story Short,\" in 2020. Their music is available on platforms like Apple Music. ([music.apple.com](https://music.apple.com/us/artist/voil%C3%A0/1333272109?utm_source=openai))",
+      "logo": "https://music.apple.com/us/artist/voil%C3%A0/1333272109",
+      "headlineImage": "https://music.apple.com/us/artist/voil%C3%A0/1333272109",
+      "website": "https://music.apple.com/us/artist/voil%C3%A0/1333272109",
+      "spotify": "",
+      "genres": [
+        "Pop",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "Gus Ross",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Luke Eisner",
+          "role": "Vocals, Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "terrifier",
+      "name": "Terrifier",
+      "country": "Canada",
+      "description": "Terrifier is a Canadian thrash metal band formed in 2012 in Kelowna, British Columbia. Originally known as Skull Hammer, the band rebranded to Terrifier in 2012 and released their debut album, \"Destroyers of the Faith,\" the same year. Their music is characterized by high-speed thrash metal reminiscent of bands like Annihilator and Exciter. In 2017, they released \"Weapons of Thrash Destruction,\" followed by \"Trample the Weak, Devour the Dead\" in 2023. ([metal-roos.com.au](https://metal-roos.com.au/terrifier-trample-the-weak-devour-the-dead-album-review/?utm_source=openai))",
+      "logo": "https://terrifier-tym.bandcamp.com/",
+      "headlineImage": "https://terrifier-tym.bandcamp.com/",
+      "website": "https://terrifier-tym.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Speed Metal"
+      ],
+      "members": [
+        {
+          "name": "Chase Thibodeau",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Kyle Sheppard",
+          "role": "Drums"
+        },
+        {
+          "name": "Rene Wilkinson",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "rose-tattoo",
+      "name": "Rose Tattoo",
+      "country": "Australia",
+      "description": "Rose Tattoo is an Australian rock band formed in Sydney in 1976, renowned for their hard rock and blues rock sound. The band was initially led by slide guitarist Peter Wells, who had previously been the bassist for heavy metal band Buffalo. The original lineup included vocalist Tony Lake, rhythm guitarist Leigh Johnston, bassist Ian Rilen, and drummer Michael Vandersluys. Over time, the lineup evolved, with notable members such as vocalist Angry Anderson, guitarist Mick Cocks, and drummer Dallas \"Digger\" Royall joining the ranks. ([historyofaussiemusic.blogspot.com](https://historyofaussiemusic.blogspot.com/2013/09/rose-tattoo.html?utm_source=openai))\n\nRose Tattoo's music is characterized by a blend of hard rock and blues rock, with influences from bands like The Rolling Stones and Faces. Their self-titled debut album, released in 1978, featured tracks like \"Bad Boy for Love\" and \"Rock 'n' Roll Outlaw,\" which became iconic in the Australian rock scene. The album was produced by Harry Vanda and George Young, who also worked with AC/DC. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Rose_Tattoo_%28Rose_Tattoo_album%29?utm_source=openai))\n\nThroughout their career, Rose Tattoo has released several albums, including \"Assault \u0026 Battery\" (1981), \"Scarred for Life\" (1982), \"Southern Stars\" (1984), \"Beats from a Single Drum\" (1986), \"Pain\" (2002), \"Blood Brothers\" (2007), and \"Outlaws\" (2020). The band has undergone various lineup changes over the years, with members departing and returning, but Angry Anderson has remained a constant presence as the lead vocalist. Their music continues to resonate with fans, and they are celebrated for their energetic performances and contributions to the Australian rock genre. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Rose_Tattoo?utm_source=openai))",
+      "logo": "https://www.rosetattoo.com.au/wp-content/uploads/2019/11/rose-tattoo-logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rose_Tattoo_band.jpg/800px-Rose_Tattoo_band.jpg",
+      "website": "https://www.rosetattoo.com.au",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Blues Rock"
+      ],
+      "members": [
+        {
+          "name": "Angry Anderson",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Paul Demarco",
+          "role": "Drums"
+        },
+        {
+          "name": "Steve King",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "Mick Arnold",
+          "role": "Slide Guitar"
+        },
+        {
+          "name": "Ronnie Simmons",
+          "role": "Lead Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "sirenia",
+      "name": "Sirenia",
+      "country": "Norway",
+      "description": "Sirenia is a Norwegian gothic metal band formed in 2001 by Morten Veland, the former guitarist and vocalist of Tristania. The band's music is characterized by a blend of gothic and symphonic metal elements, featuring melodic instrumentals, synthesizers, distorted guitars, and a diverse range of vocals, including female and male clean vocals, male death vocals, choirs, and violins. Their lyrics often explore themes of human existence, emotion, and mental states. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Sirenia_%28band%29?utm_source=openai))\n\nSince their formation, Sirenia has released several albums, each showcasing their evolving sound:\n\n- **At Sixes and Sevens** (2002): The debut album that established their gothic metal foundation.\n- **An Elixir for Existence** (2004): Continued their exploration of atmospheric and symphonic elements.\n- **Nine Destinies and a Downfall** (2007): Marked a shift towards a more symphonic metal style.\n- **The Enigma of Life** (2011): Featured a more accessible sound with some tracks in Spanish.\n- **Perils of the Deep Blue** (2013): Introduced new vocal styles and guest appearances.\n- **Arcane Astral Aeons** (2018): Continued their symphonic metal journey with guest appearances.\n- **Riddles, Ruins \u0026 Revelations** (2021): Incorporated synth-pop elements into their symphonic metal style.\n- **1977** (2023): Explored a retro auditory arcade with 70s and 80s pop rock stylings. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Sirenia_%28band%29?utm_source=openai))\n\nThe current lineup includes Morten Veland (vocals, guitars, bass, synth, programming), Emmanuelle Zoldan (vocals), Nils Courbaron (solo guitar), and Michael Brush (drums). ([sirenia.no](https://sirenia.no/band-info/?utm_source=openai))\n\nSirenia has toured extensively across Europe, Latin America, North America, Asia, and Australia, performing at major festivals alongside acts like Ozzy Osbourne, Iron Maiden, Aerosmith, and Korn. ([sirenia.no](https://sirenia.no/band-info/?utm_source=openai))",
+      "logo": "https://www.sirenia.no/images/sirenia_logo.png",
+      "headlineImage": "https://www.sirenia.no/images/sirenia_band_picture.jpg",
+      "website": "https://www.sirenia.no",
+      "spotify": "",
+      "genres": [
+        "Gothic Metal",
+        "Symphonic Metal"
+      ],
+      "members": [
+        {
+          "name": "Morten Veland",
+          "role": "Vocals, Guitars, Bass, Synth, Programming"
+        },
+        {
+          "name": "Emmanuelle Zoldan",
+          "role": "Vocals"
+        },
+        {
+          "name": "Nils Courbaron",
+          "role": "Solo Guitar"
+        },
+        {
+          "name": "Michael Brush",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hmatom",
+      "name": "Hämatom",
+      "country": "Germany",
+      "description": "Hämatom is a German metal band formed in 2004 in Speichersdorf, Franconia. The band is known for their elaborate masks and pseudonyms based on the four cardinal directions: \"Nord\" (Thorsten Scharf) as vocalist, \"Ost\" (Jacek Zyla) on guitar, \"Süd\" (Frank Jooss) on drums, and \"West\" (Peter Haag) on bass. Their early music was influenced by European fairy tales, but over time, their lyrics have evolved to address societal, religious, and socio-critical themes. They have released eleven studio albums, with \"Wir sind Gott\" (2016) reaching No. 5 on the German charts. In August 2023, the band announced the passing of bassist \"West\" due to an unknown illness. In May 2024, Annika \"Rose\" Jaschke joined the band as the new bassist. Their latest album, \"Für dich,\" was released in 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/H%C3%A4matom?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/H%C3%A4matom_2016.jpg/800px-H%C3%A4matom_2016.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/H%C3%A4matom_2016.jpg/800px-H%C3%A4matom_2016.jpg",
+      "website": "https://www.haematom.de",
+      "spotify": "",
+      "genres": [
+        "Groove Metal",
+        "Thrash Metal",
+        "Neue Deutsche Härte"
+      ],
+      "members": [
+        {
+          "name": "Thorsten \"Nord\" Scharf",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Jacek \"Ost\" Zyla",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Annika \"Rose\" Jaschke",
+          "role": "Bassist"
+        },
+        {
+          "name": "Frank \"Süd\" Jooss",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hackneyed",
+      "name": "Hackneyed",
+      "country": "Germany",
+      "description": "Hackneyed was a German death metal band formed in 2006 in Abtsgmünd, Baden-Württemberg. The band gained attention for its youthful lineup, with members averaging between 14 and 16 years old at the time of their formation. Their music was characterized by extreme death metal influences, drawing comparisons to bands like Cannibal Corpse and Decapitated. ([music.apple.com](https://music.apple.com/cz/artist/hackneyed/282461314?utm_source=openai))\n\nTheir debut album, \"Death Prevails,\" was released in 2008 under Nuclear Blast Records. The album featured tracks such as \"Unseen Enemy,\" \"Gut Candy,\" and \"Neon Sun.\" ([fr.wikipedia.org](https://fr.wikipedia.org/wiki/Death_Prevails?utm_source=openai)) In 2009, they released their second album, \"Burn After Reaping,\" also under Nuclear Blast. The album included songs like \"Deatholution\" and \"Worlds Collide.\" ([it.wikipedia.org](https://it.wikipedia.org/wiki/Burn_After_Reaping?utm_source=openai)) Their third album, \"Carnival Cadavre,\" was released in 2011 under Lifeforce Records. The album featured tracks such as \"City of Pyramids\" and \"Carnival Cadavre.\" ([heavymetal.dk](https://heavymetal.dk/anmeldelse/hackneyed-carnival-cadavre?utm_source=openai)) Their fourth and final album, \"Inhabitants of Carcosa,\" was released in 2015 under CoMa Tone Records. The album included songs like \"The Flaw of Flesh\" and \"In Carcosa (The Yellow King).\" ([time-for-metal.eu](https://time-for-metal.eu/hackneyed-inhabitants-of-carcosa/?utm_source=openai))\n\nHackneyed disbanded in 2016 after a decade of activity. Their final performance was on October 1, 2016, at the Farewell Show in Aalen, marking the end of their musical journey. ([metal.de](https://www.metal.de/news/hackneyed-aufloesung-bekannt-gegeben-63411/?utm_source=openai))\n\nThe band's lineup included:\n\n- Philipp Mazal – Vocals\n- Devin Cox – Guitar\n- Philipp Fink – Guitar\n- Fabian Fink – Bass\n- Tim Cox – Drums\n\nFor more information, you can visit their official website at [www.hackneyed.de](http://www.hackneyed.de/).",
+      "logo": "https://www.hackneyed.de/images/hackneyed_logo.jpg",
+      "headlineImage": "https://www.hackneyed.de/images/hackneyed_rockharz_2016_17.jpg",
+      "website": "http://www.hackneyed.de/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Extreme Metal"
+      ],
+      "members": [
+        {
+          "name": "Philipp Mazal",
+          "role": "Vocals"
+        },
+        {
+          "name": "Devin Cox",
+          "role": "Guitar"
+        },
+        {
+          "name": "Philipp Fink",
+          "role": "Guitar"
+        },
+        {
+          "name": "Fabian Fink",
+          "role": "Bass"
+        },
+        {
+          "name": "Tim Cox",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "katerfahrt",
+      "name": "Katerfahrt",
+      "country": "Germany",
+      "description": "Katerfahrt is a German band that delivers a unique blend of \"Spiced Pirate Folk,\" combining elements of folk, rock, and pirate-themed music. Formed by six members, they infuse their performances with energy and enthusiasm, creating an atmosphere reminiscent of a lively tavern. Their music features instruments like violin, flute, and acoustic guitar, supported by a driving rhythm section of drums and bass. The band is known for their humorous and ironic lyrics, which they deliver with raw, unpolished vocals, adding to the authenticity of their pirate persona. Katerfahrt's songs often narrate tales of seafaring adventures, pirate life, and, of course, rum. They have been active in the German music scene, performing at various festivals and venues, and have announced their \"Seemannsgarn Tour 2026,\" with dates across Germany, including cities like Wuppertal, Hannover, Hamburg, Bremen, Leipzig, Berlin, Düsseldorf, Kassel, Weinheim, and Nürnberg. Their official website provides more information about their music, upcoming events, and merchandise.",
+      "logo": "https://katerfahrt.de/wp-content/uploads/2023/12/Katerfahrt-Logo.png",
+      "headlineImage": "https://katerfahrt.de/wp-content/uploads/2023/12/Katerfahrt-Band-Image.jpg",
+      "website": "https://katerfahrt.de/",
+      "spotify": "",
+      "genres": [
+        "Folk",
+        "Rock",
+        "Pirate Metal"
+      ],
+      "members": [
+        {
+          "name": "Kraken Kalle",
+          "role": "Vocals"
+        },
+        {
+          "name": "Eric Klepto",
+          "role": "Guitar, Background Vocals"
+        },
+        {
+          "name": "Lars Krachen",
+          "role": "Bass, Background Vocals"
+        },
+        {
+          "name": "Pittermanns Pit",
+          "role": "Drums"
+        },
+        {
+          "name": "Pegel Paule",
+          "role": "Flute, Background Vocals"
+        },
+        {
+          "name": "Anni K. Nonen",
+          "role": "Violin, Background Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "sphere",
+      "name": "Sphere",
+      "country": "Poland",
+      "description": "Sphere is a Polish death metal band formed in 2002 in Warsaw. Known for their brutal and uncompromising sound, they have been a steadfast force in the death metal underground. The band released their first demo, \"Spiritual Dope,\" in 2004, earning acclaim within the underground community. Their debut full-length album, \"Damned Souls Rituals,\" was released on January 20, 2007, via Empire Records, selling nearly 5,000 copies. The album received widespread acclaim, with an average critical score exceeding 85%. In 2024, Sphere released \"Inferno,\" a concept-driven album inspired by Dante Alighieri’s \"Divine Comedy,\" exploring the nine circles of hell. The album featured guest appearances from Dallas Toler-Wade (ex-Nile, Narcotic Wasteland) and Sven de Caluwe (Aborted, Coffin Feeder). ([damnedsphere.pl](https://www.damnedsphere.pl/?utm_source=openai))",
+      "logo": "https://www.damnedsphere.pl/images/logo.png",
+      "headlineImage": "https://www.damnedsphere.pl/images/slider/slider1.jpg",
+      "website": "https://www.damnedsphere.pl/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Brutal Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Marius Strand",
+          "role": "Guitars/Vocals"
+        },
+        {
+          "name": "Bjørn Dugstad Rønnow",
+          "role": "Drums"
+        },
+        {
+          "name": "Isak Haugan",
+          "role": "Vocals"
+        },
+        {
+          "name": "Ulrik Nilsen",
+          "role": "Guitars"
+        },
+        {
+          "name": "Thor Øyvind Gaarder",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "chaosbay",
+      "name": "Chaosbay",
+      "country": "Germany",
+      "description": "Chaosbay is a progressive metalcore band from Berlin and Kaiserslautern, Germany, formed in 2012. The band was established by frontman Jan Listing, who, after a year abroad in Ireland, sought to create more complex and meaningful music. ([gigradar.uk](https://gigradar.uk/2020/04/02/discoverthis-chaosbay/?utm_source=openai)) Their sound is characterized by a fusion of heavy riffs, intricate song structures, and catchy melodies, drawing comparisons to bands like Periphery, Karnivool, TesseracT, Opeth, Porcupine Tree, and Dream Theater. ([en.timezone-records.com](https://en.timezone-records.com/pages/chaosbay?utm_source=openai))\n\nSince their inception, Chaosbay has released several notable works:\n\n- **\"Vasilisa\" (2015):** Their first full-length concept album, showcasing their evolving sound.\n\n- **\"Asylum\" (2020):** A concept album addressing themes like racism, xenophobia, and moral decay in the age of capitalism. ([en.timezone-records.com](https://en.timezone-records.com/pages/chaosbay?utm_source=openai))\n\n- **\"Boxes\" (2021):** An EP featuring five new tracks that continue their exploration of complex musical landscapes.\n\n- **\"Are You Afraid?\" (2024):** Their latest album, delving into societal challenges and personal fears. ([time-for-metal.eu](https://time-for-metal.eu/chaosbay-veroeffentlichen-neue-single-maniac-in-the-mirror/?utm_source=openai))\n\nThe current lineup includes:\n\n- **Jan Listing** – Vocals and Guitar\n\n- **Alexander Langner** – Guitar\n\n- **Matthias Heising** – Bass\n\n- **Patrick Bernath** – Drums\n\nChaosbay has toured extensively across Germany, performing headlining shows and supporting acts like Annisokay, Vended, Deez Nuts, Clutch, and Emil Bulls. They have also graced major metal festivals such as Wacken Open Air and Summerbreeze Open Air. ([circularwave.eu](https://circularwave.eu/artists/chaosbay?utm_source=openai))\n\nTheir official website is [chaosbay.com](https://www.chaosbay.com/), where fans can find more information about upcoming tours, merchandise, and their latest releases.",
+      "logo": "https://www.chaosbay.com/images/chaosbay_logo.png",
+      "headlineImage": "https://www.chaosbay.com/images/chaosbay_band_photo.jpg",
+      "website": "https://www.chaosbay.com/",
+      "spotify": "",
+      "genres": [
+        "Progressive Metalcore",
+        "Alternative Metal",
+        "Djent"
+      ],
+      "members": [
+        {
+          "name": "Jan Listing",
+          "role": "Vocals and Guitar"
+        },
+        {
+          "name": "Alexander Langner",
+          "role": "Guitar"
+        },
+        {
+          "name": "Matthias Heising",
+          "role": "Bass"
+        },
+        {
+          "name": "Patrick Bernath",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "lake-malice",
+      "name": "Lake Malice",
+      "country": "United Kingdom",
+      "description": "Lake Malice is an alternative metal duo from Brighton, UK, formed by vocalist Alice Guala and guitarist Blake Cornwall. Their music uniquely blends hyperpop and metalcore, drawing inspiration from Japanese anime and personal experiences. Since their debut in 2021, they've gained significant recognition, earning nominations at the Heavy Music Awards for 'Best UK Breakthrough Artist' and 'Best Breakthrough Live Artist'. ([lakemalice.com](https://www.lakemalice.com/about?utm_source=openai)) Their debut EP, \"Post-Genesis,\" released in October 2023, features tracks like \"Blossom,\" \"Black Turbine,\" \"Bloodbath,\" \"Power Game,\" \"Mitsuko,\" and \"Stop The Party.\" ([distortedsoundmag.com](https://distortedsoundmag.com/lake-malice-announce-debut-ep-post-genesis/?utm_source=openai)) The duo has toured extensively, supporting acts such as Enter Shikari, Skindred, Bloodywood, Vukovi, As Everything Unfolds, and Vended across the UK and Europe. They've also performed at festivals like The Great Escape, 2000 Trees, and Download Festival. ([lakemalice.com](https://www.lakemalice.com/about?utm_source=openai)) In December 2023, they headlined their first UK show at The Black Heart in London, which sold out quickly, leading to a full UK headline tour in March 2024. ([kerrang.com](https://www.kerrang.com/in-pictures-lake-malices-first-ever-uk-headline-show?utm_source=openai)) Their music is available on major streaming platforms, including Spotify. ([lakemalice.com](https://www.lakemalice.com/about?utm_source=openai))",
+      "logo": "https://www.lakemalice.com/images/logo.png",
+      "headlineImage": "https://www.lakemalice.com/images/press/LM-Press-Image.jpg",
+      "website": "https://www.lakemalice.com",
+      "spotify": "",
+      "genres": [
+        "Alternative Metal",
+        "Hyperpop",
+        "Metalcore"
+      ],
+      "members": [
+        {
+          "name": "Alice Guala",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Blake Cornwall",
+          "role": "Guitarist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "yngwie-malmsteen",
+      "name": "Yngwie Malmsteen",
+      "country": "Sweden",
+      "description": "Yngwie Malmsteen, born Lars Johan Yngve Lannerbäck on June 30, 1963, in Stockholm, Sweden, is a virtuoso guitarist renowned for pioneering the neoclassical metal genre. Influenced by classical composers like Bach and Vivaldi, Malmsteen's playing style integrates classical techniques into heavy metal, creating a distinctive sound that has influenced countless musicians. He began his musical journey in the late 1970s, playing in local bands and recording demos. In 1982, he joined the band Steeler, contributing to their self-titled album. The following year, he became a member of Alcatrazz, recording the album \"No Parole from Rock 'n' Roll\" in 1983. In 1984, Malmsteen embarked on a solo career with the release of \"Rising Force,\" which received critical acclaim and a Grammy nomination for Best Rock Instrumental Performance. Over the years, he has released 22 studio albums, including notable works like \"Marching Out\" (1985), \"Trilogy\" (1986), and \"Odyssey\" (1988). His 1997 album, \"Concerto Suite for Electric Guitar and Orchestra,\" showcases his classical influences by performing with the Czech Philharmonic Orchestra. Malmsteen's technical proficiency and unique fusion of classical and metal elements have solidified his status as a leading figure in the neoclassical metal genre.",
+      "logo": "https://www.yngwiemalmsteen.net/images/logo.png",
+      "headlineImage": "https://www.yngwiemalmsteen.net/images/press/press1.jpg",
+      "website": "https://www.yngwiemalmsteen.net/",
+      "spotify": "",
+      "genres": [
+        "Neoclassical Metal",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Yngwie Malmsteen",
+          "role": "Guitarist, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "black-flood-diesel",
+      "name": "Black Flood Diesel",
+      "country": "United States",
+      "description": "Black Flood Diesel (BFD) is an American heavy metal band formed in 2000 by founding members Bender, G. Diesel, and A. Day. The band quickly gained recognition in the Midwest metal scene, sharing stages with notable acts such as Staind, System of a Down, Mudvayne, and Mushroomhead. They have performed at major venues like First Avenue in Minneapolis and have been featured in events like the Ultimate Fighting Championship. ([first-avenue.com](https://first-avenue.com/performer/black-flood-diesel/?utm_source=openai))",
+      "logo": "https://first-avenue.com/wp-content/uploads/2023/10/BFD-Logo.png",
+      "headlineImage": "https://first-avenue.com/wp-content/uploads/2023/10/Black-Flood-Diesel-Press-Photo.jpg",
+      "website": "https://first-avenue.com/performer/black-flood-diesel/",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Alternative Metal"
+      ],
+      "members": [
+        {
+          "name": "Bender",
+          "role": "Vocals"
+        },
+        {
+          "name": "G. Diesel",
+          "role": "Guitar"
+        },
+        {
+          "name": "A. Day",
+          "role": "Bass"
+        },
+        {
+          "name": "Dalton",
+          "role": "Drums"
+        },
+        {
+          "name": "Eric G.",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "storm-seeker",
+      "name": "Storm Seeker",
+      "country": "Germany",
+      "description": "Storm Seeker is a German pirate folk metal band formed in 2013 in Düsseldorf and Neuss. Founded by brothers Marius and Timo Bornfleth, the band blends traditional folk instruments like the hurdy-gurdy, cello, and flutes with metal elements, creating a distinctive sound that evokes maritime adventures and pirate lore. Their music is characterized by a mix of boisterous folk melodies and powerful metal riffs, often accompanied by epic themes of seafaring and piracy. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Storm_Seeker_%28band%29?utm_source=openai))\n\nTheir discography includes the EP \"Pirate Scum\" (2016) and the albums \"Beneath in the Cold\" (2019), \"Guns Don't Cry\" (2021), \"Calm Seas Vol. 1\" (2021), \"Nautic Force\" (2023), and \"Set the Sails\" (2025). ([folk-metal.nl](https://www.folk-metal.nl/bands/s/storm-seeker/?utm_source=openai))\n\nThe current lineup features:\n\n- **Sean Graham** – Lead Vocals\n- **Marius \"Olaf Abor\" Bornfleth** – Drums, Vocals\n- **Tim \"Ughar der Schrecklich Durstige\" Braatz** – Keyboards, Accordion\n- **Fabienne \"Fabi\" Kirschke** – Hurdy-Gurdy, Recorder, Vocals\n- **Paul \"Paulie\" Martens** – Guitar, Vocals\n\nFor more information, visit their official website at [storm-seeker.com](https://www.storm-seeker.com/).",
+      "logo": "https://www.storm-seeker.com/images/storm-seeker-logo.png",
+      "headlineImage": "https://www.storm-seeker.com/images/storm-seeker-band-photo.jpg",
+      "website": "https://www.storm-seeker.com/",
+      "spotify": "",
+      "genres": [
+        "Folk Metal",
+        "Pirate Metal"
+      ],
+      "members": [
+        {
+          "name": "Sean Graham",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Marius \"Olaf Abor\" Bornfleth",
+          "role": "Drums, Vocals"
+        },
+        {
+          "name": "Tim \"Ughar Der Schrecklich Durstige\" Braatz",
+          "role": "Keyboards, Accordion"
+        },
+        {
+          "name": "Fabienne \"Fabi\" Kirschke",
+          "role": "Hurdy-Gurdy, Recorder, Vocals"
+        },
+        {
+          "name": "Paul \"Paulie\" Martens",
+          "role": "Guitar, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-royston-club",
+      "name": "The Royston Club",
+      "country": "United Kingdom",
+      "description": "The Royston Club is a Welsh indie rock band formed in Wrexham in 2019. The lineup consists of Tom Faithfull (lead vocals, rhythm guitar), Ben Matthias (lead guitar), Dave Tute (bass), and Sam Jones (drums). The band began by performing covers together in secondary school, and after Matthias started writing original songs, they added Jones on drums in late 2018. They named the band after the \"Royston Club,\" an old man’s club in Acrefair, a place Matthias frequently visited during his childhood. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Royston_Club?utm_source=openai))\n\nTheir debut single, \"Shawshank,\" was released in March 2019, followed by \"Waster\" and \"Kerosene\" later that year. In 2020, they released their debut EP, \"This State I’m In,\" recorded at Parr Street Studios in Liverpool. Their debut album, \"Shaking Hips and Crashing Cars,\" was released on 2 June 2023, reaching number 16 on the UK Albums Chart. Their second album, \"Songs for the Spine,\" was released on 8 August 2025, produced by Richard Turvey. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Songs_for_the_Spine?utm_source=openai))\n\nThe Royston Club has gained recognition for their energetic performances and anthemic indie rock sound, drawing comparisons to bands like The Strokes and The Courteeners. They have supported acts such as Jamie Webster, Blossoms, and The Academic, and have headlined their own tours. They have also performed at major festivals, including Latitude Festival. ([latitudefestival.com](https://www.latitudefestival.com/artists/the-royston-club/?utm_source=openai))\n\nTheir music is available on various streaming platforms, including Spotify and Bandcamp. ([theroystonclub.bandcamp.com](https://theroystonclub.bandcamp.com/?utm_source=openai))",
+      "logo": "https://theroystonclub.com/wp-content/uploads/2021/11/royston-club-logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Royston_Club_2024.jpg/800px-The_Royston_Club_2024.jpg",
+      "website": "https://theroystonclub.com",
+      "spotify": "",
+      "genres": [
+        "Indie Rock",
+        "Guitar Pop"
+      ],
+      "members": [
+        {
+          "name": "Tom Faithfull",
+          "role": "Lead Vocals, Rhythm Guitar"
+        },
+        {
+          "name": "Ben Matthias",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Dave Tute",
+          "role": "Bass"
+        },
+        {
+          "name": "Sam Jones",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "brunhilde",
+      "name": "Brunhilde",
+      "country": "Germany",
+      "description": "Brunhilde is a German metal band formed in Fürth in 2013, known for their dynamic fusion of punk and alternative metal. The band was founded by vocalist Caro Loy and guitarist Kurt Bauereiß, who have been collaborating musically since around 2010 and also operate their own Streetlife Studio. The name \"Brunhilde\" is inspired by the character Broomhilda from Quentin Tarantino's film \"Django Unchained,\" reflecting the band's bold and rebellious spirit. ([de.wikipedia.org](https://de.wikipedia.org/wiki/Brunhilde_%28Band%29?utm_source=openai))\n\nBrunhilde's discography includes several studio albums:\n\n- **Dollhouse** (2015): The debut album that introduced their raw and energetic sound.\n\n- **Behind My Mind** (2017): Continued to build on their distinctive style.\n\n- **To Cut a Long Story Short** (2021): Showcased their evolving musical direction.\n\n- **27** (2022): A concept album inspired by the \"27 Club,\" exploring the lives of individuals who died at that age.\n\n- **In Love Yours Hate** (2025): Their fifth album, released on July 4, 2025, featuring tracks like \"In Love Yours Hate,\" \"Are You Blind,\" and \"Gossip Girl.\" ([arrowlordsofmetal.nl](https://arrowlordsofmetal.nl/brunhilde-announce-new-album-in-love-yours-hate/?utm_source=openai))\n\nThe band's music is characterized by a powerful blend of metal, punk, and hard rock, highlighted by Caro Loy's expressive vocals and Kurt Bauereiß's striking guitar work. Their energetic performances and unpretentious style have earned them a dedicated following in the rock and metal scenes. ([brunhilde.de](https://www.brunhilde.de/?utm_source=openai))\n\nAs of mid-2024, bassist Marisa Gruna joined the live lineup, contributing to the band's dynamic sound. ([de.wikipedia.org](https://de.wikipedia.org/wiki/Brunhilde_%28Band%29?utm_source=openai))\n\nFor more information, visit their official website at [www.brunhilde.de](https://www.brunhilde.de/).",
+      "logo": "https://www.brunhilde.de/images/logo.png",
+      "headlineImage": "https://www.brunhilde.de/images/press/brunhilde_band_2021.jpg",
+      "website": "https://www.brunhilde.de/",
+      "spotify": "",
+      "genres": [
+        "Punk",
+        "Alternative Metal"
+      ],
+      "members": [
+        {
+          "name": "Caro Loy",
+          "role": "Vocals"
+        },
+        {
+          "name": "Kurt Bauereiß",
+          "role": "Guitar"
+        },
+        {
+          "name": "Marisa Gruna",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ricky-warwick",
+      "name": "Ricky Warwick",
+      "country": "United Kingdom",
+      "description": "Ricky Warwick is a Northern Irish singer and guitarist renowned for his contributions to hard rock and heavy metal. Born on July 11, 1966, in Newtownards, County Down, Northern Ireland, Warwick began his musical journey in the late 1980s. He first gained prominence as the lead vocalist and guitarist for The Almighty, a Scottish hard rock band formed in 1988. The band's early works, such as \"Blood, Fire \u0026 Love\" (1989) and \"Soul Destruction\" (1991), showcased their heavy metal and hard rock influences. Despite lineup changes, The Almighty continued to release music, including the self-titled \"The Almighty\" (2000) and \"Psycho-Narco\" (2001). In 2006, Warwick joined Circus Diablo, a supergroup featuring members from The Cult and Guns N' Roses, contributing to their self-titled album. That same year, he became the lead vocalist and guitarist for Thin Lizzy, participating in their 2011 European tour commemorating the 25th anniversary of Phil Lynott's death. In December 2012, Warwick co-founded Black Star Riders, a band formed by former members of Thin Lizzy to create new material. Their debut album, \"All Hell Breaks Loose,\" was released in 2013, followed by \"The Killer Instinct\" in 2015. As a solo artist, Warwick has released several albums, including \"Tattoos \u0026 Alibis\" (2003), \"Love Many Trust Few\" (2005), \"Belfast Confetti\" (2009), and \"When Life Was Hard and Fast\" (2021). His 2025 album, \"Blood Ties,\" features collaborations with Billy Duffy of The Cult, Lita Ford, and Charlie Starr of Blackberry Smoke. Warwick's music is characterized by a blend of hard rock and heavy metal, with influences from punk rock and country. His dynamic performances and songwriting have solidified his reputation in the rock music scene.",
+      "logo": "https://www.rickywarwick.com/images/logo.png",
+      "headlineImage": "https://www.rickywarwick.com/images/press/press-1.jpg",
+      "website": "https://www.rickywarwick.com/",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Heavy Metal",
+        "Punk Rock",
+        "Country"
+      ],
+      "members": [
+        {
+          "name": "Ricky Warwick",
+          "role": "Vocals, Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ministry",
+      "name": "Ministry",
+      "country": "United States",
+      "description": "Ministry is an American industrial metal band formed in Chicago, Illinois, in 1981 by producer, singer, and instrumentalist Al Jourgensen. Initially a synth-pop outfit, the band evolved into one of the pioneers of industrial rock and industrial metal in the late 1980s. Their aggressive music, politically charged lyrics, and chaotic live shows have left an indelible mark on the industrial music scene. The band's lineup has changed frequently, with Jourgensen remaining the sole original member. Notable past members include vocalists Nivek Ogre and Chris Connelly, guitarists Mike Scaccia and Tommy Victor, and bassists Paul Barker and Tony Campos. Ministry's discography includes sixteen studio albums, with \"With Sympathy\" (1983) marking their debut. Their 1992 album \"Psalm 69: The Way to Succeed and the Way to Suck Eggs\" achieved mainstream success, earning a Grammy nomination. After a hiatus in 2008, the band reunited in 2011, releasing \"Relapse\" in 2012 and \"From Beer to Eternity\" in 2013. In 2018, they released \"AmeriKKKant,\" followed by \"Moral Hygiene\" in 2021. In 2024, Ministry released \"Hopiumforthemasses,\" a collection of re-recorded material from their early days, ahead of their final studio album planned for 2026. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ministry_%28band%29?utm_source=openai))",
+      "logo": "https://ministryband.com/wp-content/uploads/2021/07/ministry-logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Ministry_Hellfest_2017.jpg/1200px-Ministry_Hellfest_2017.jpg",
+      "website": "https://ministryband.com",
+      "spotify": "",
+      "genres": [
+        "Industrial Metal",
+        "Industrial Rock",
+        "Thrash Metal",
+        "Synth-Pop"
+      ],
+      "members": [
+        {
+          "name": "Al Jourgensen",
+          "role": "Vocals, Various Instruments"
+        },
+        {
+          "name": "John Bechdel",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Cesar Soto",
+          "role": "Guitar"
+        },
+        {
+          "name": "Roy Mayorga",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul D'amour",
+          "role": "Bass"
+        },
+        {
+          "name": "Monte Pittman",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "wraith",
+      "name": "Wraith",
+      "country": "United States",
+      "description": "Wraith is an American blackened thrash and speed metal band formed in 2016 in Indiana. Initially conceived as a one-man project by guitarist and vocalist Matt Sokol, the band has since evolved into a full-fledged ensemble. The current lineup includes Matt Sokol (vocals, guitar), Jason Schultz (guitar), Chris Petkus (bass), and Mike Szymendera (drums). Wraith's music is characterized by aggressive riffs, rapid tempos, and themes exploring dystopian landscapes, religion, and war. Their debut full-length album, \"Fueled By Fear,\" was released on June 28, 2024, under Prosthetic Records. The album was self-produced by the band in Griffith, Indiana, with engineering, mixing, and mastering handled by CJ Rayson. Thematically, \"Fueled By Fear\" delves into a dystopian landscape where the boundaries between fiction and reality are blurred, and global and political tensions form a powder keg of fraught possibilities. ([prostheticrecords.com](https://prostheticrecords.com/news/wraith-signs-to-prosthetic-records-and-announce-new-album-fueled-by-fear-lead-single-and-music-video-heathens-touch-out-now/?utm_source=openai)) The band has been active in the live music scene, performing at various venues and festivals, and continues to build a reputation for their energetic performances and commitment to the metal genre.",
+      "logo": "https://www.prostheticrecords.com/wp-content/uploads/2024/05/Wraith_Logo.png",
+      "headlineImage": "https://www.prostheticrecords.com/wp-content/uploads/2024/05/Wraith_FueledByFear_AlbumArt.jpg",
+      "website": "https://www.prostheticrecords.com/artists/wraith/",
+      "spotify": "",
+      "genres": [
+        "Blackened Thrash Metal",
+        "Speed Metal",
+        "Black Metal"
+      ],
+      "members": [
+        {
+          "name": "Matt Sokol",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Jason Schultz",
+          "role": "Guitar"
+        },
+        {
+          "name": "Chris Petkus",
+          "role": "Bass"
+        },
+        {
+          "name": "Mike Szymendera",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "korn",
+      "name": "Korn",
+      "country": "United States",
+      "description": "Korn is an American nu metal band from Bakersfield, California, formed in 1993. The original lineup consisted of James \"Munky\" Shaffer (guitar), Reginald \"Fieldy\" Arvizu (bass), and David Silveria (drums), all former members of the band L.A.P.D. They were later joined by Jonathan Davis (vocals) and Brian \"Head\" Welch (guitar). Korn is widely recognized for pioneering the nu metal genre, blending heavy metal with elements of hip-hop, alternative rock, and funk.\n\nTheir self-titled debut album, \"Korn,\" was released in 1994, followed by \"Life Is Peachy\" in 1996, which debuted at number three on the Billboard 200 chart. Their third album, \"Follow the Leader\" (1998), marked their mainstream breakthrough, debuting at number one on the Billboard 200. The band's subsequent albums, including \"Issues\" (1999), \"Untouchables\" (2002), \"Take a Look in the Mirror\" (2003), \"See You on the Other Side\" (2005), \"Untitled\" (2007), \"Korn III: Remember Who You Are\" (2010), \"The Path of Totality\" (2011), \"The Paradigm Shift\" (2013), \"The Serenity of Suffering\" (2016), \"The Nothing\" (2019), and \"Requiem\" (2022), have solidified their position in the rock and metal scenes.\n\nThroughout their career, Korn has sold over 40 million records worldwide and has been awarded two Grammy Awards. Their music is characterized by downtuned guitars, groove-heavy rhythms, and dark, introspective lyrics. The band's influence extends to numerous artists and bands across various genres.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Korn_logo.svg/1200px-Korn_logo.svg.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Korn_at_Rock_am_Ring_2022.jpg/1200px-Korn_at_Rock_am_Ring_2022.jpg",
+      "website": "https://www.korn.com",
+      "spotify": "",
+      "genres": [
+        "Nu Metal",
+        "Alternative Metal"
+      ],
+      "members": [
+        {
+          "name": "Jonathan Davis",
+          "role": "Lead Vocals, Bagpipes"
+        },
+        {
+          "name": "James \"Munky\" Shaffer",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Brian \"Head\" Welch",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Ray Luzier",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "electric-bassboy",
+      "name": "Electric Bassboy",
+      "country": "Germany",
+      "description": "Electric Bassboy is the DJ alias of the German electronicore band Electric Callboy, formed in 2010 in Castrop-Rauxel, Germany. Initially known as Eskimo Callboy, the band underwent a name change in 2022 to Electric Callboy. They are renowned for their energetic fusion of metalcore and electronic music, often referred to as \"electronicore.\" Their music is characterized by heavy guitar riffs, electronic elements, and humorous, party-centric lyrics. The band has released several successful albums, including \"Tekkno\" in 2022, which topped the German charts. In addition to their main performances, Electric Callboy occasionally performs DJ sets under the name Electric Bassboy, blending live vocals and guitar with electronic beats to create a high-energy, dancefloor-focused experience. Their DJ sets have been featured at major festivals like Rock am Ring and Rock im Park in 2025, where they showcased remixes of their popular tracks, such as \"We Got the Moves\" and \"Elevator Operator.\"",
+      "logo": "https://www.electriccallboy.com/images/logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Electric_Callboy_2024.jpg/800px-Electric_Callboy_2024.jpg",
+      "website": "https://www.electriccallboy.com",
+      "spotify": "",
+      "genres": [
+        "Electronicore",
+        "Metalcore",
+        "Post-Hardcore"
+      ],
+      "members": [
+        {
+          "name": "Kevin Ratajczak",
+          "role": "Lead Vocals, Keyboards, Programming"
+        },
+        {
+          "name": "Daniel \"Danskimo\" Haniß",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Pascal Schillo",
+          "role": "Rhythm Guitar, Backing Vocals"
+        },
+        {
+          "name": "Daniel Klossek",
+          "role": "Bass, Backing Vocals"
+        },
+        {
+          "name": "Nico Sallach",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Frank Zummo",
+          "role": "Drums (Touring Member)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "divided",
+      "name": "Divided",
+      "country": "Hungary",
+      "description": "Divided is a Hungarian metal band formed in 2014, known for their unique 'arenacore' style that blends elements of 1980s arena rock with modern synthwave, pop hooks, electronica, and industrial influences. Their debut album, \"Modulus,\" released in November 2017, features 12 original tracks that evoke a dystopian future through strong vibes and diverse moods. Their second album, \"Behind Your Neon Eyes,\" released in July 2020, shifts to a more vibrant, neon-lit aesthetic reminiscent of the late '80s, incorporating arena rock-oriented songs and warm, analog synth sounds characteristic of the retrowave movement. Known for their dynamic live performances, Divided's shows are enhanced by sci-fi-themed visuals and synchronized VJ scenes, creating an immersive experience for their audience. ([dividedband.com](https://dividedband.com/biography?utm_source=openai))",
+      "logo": "https://dividedband.com/images/logo.png",
+      "headlineImage": "https://dividedband.com/images/album_modulus.jpg",
+      "website": "https://dividedband.com",
+      "spotify": "",
+      "genres": [
+        "Modern Melodic Metal",
+        "Synthwave",
+        "Pop Hooks",
+        "Electronica"
+      ],
+      "members": [
+        {
+          "name": "Gábor \"Gabe\" Varga",
+          "role": "Vocals"
+        },
+        {
+          "name": "Zoltán \"Zoli\" Tóth",
+          "role": "Guitar"
+        },
+        {
+          "name": "Miklós \"Miki\" Kovács",
+          "role": "Bass"
+        },
+        {
+          "name": "László \"Laci\" Horváth",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "nita-strauss",
+      "name": "Nita Strauss",
+      "country": "United States",
+      "description": "Nita Strauss is an American guitarist renowned for her dynamic performances and technical prowess. Born Vinita Sandhya Strauss on December 7, 1986, in Los Angeles, California, she began her musical journey at the age of 13. Strauss first gained prominence as a member of the all-female tribute band The Iron Maidens, where she adopted the stage name \"Mega Murray,\" emulating Iron Maiden's guitarist Dave Murray. Her exceptional skill and stage presence led to collaborations with various rock and metal ensembles, including Femme Fatale and Consume the Fire. In 2014, she joined Alice Cooper's touring band, replacing Orianthi, and remained with the group until 2022. During this period, Strauss also embarked on a solo career, releasing her debut instrumental album, \"Controlled Chaos,\" in 2018. The album showcased her versatility and solidified her status as a leading guitarist in the rock and metal scenes. In 2022, she joined Demi Lovato's touring band, contributing to the pop star's \"Holy Fvck Tour.\" Strauss returned to Alice Cooper's band in 2023, continuing to perform with him. In July 2023, she released her second solo album, \"The Call of the Void,\" featuring collaborations with artists such as Alissa White-Gluz, Lzzy Hale, and David Draiman. The album received critical acclaim for its innovative compositions and powerful performances. Strauss's contributions to the music industry have been recognized with numerous accolades, including being named the first female signature artist with Ibanez guitars and becoming the first female rock solo artist in 32 years to top Billboard's Mainstream Rock chart. Her dynamic style and technical proficiency continue to inspire musicians and fans worldwide.",
+      "logo": "https://nitastrauss.com/wp-content/uploads/2020/11/nita-strauss-logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Nita_Strauss_2018.jpg/800px-Nita_Strauss_2018.jpg",
+      "website": "https://nitastrauss.com",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Hard Rock",
+        "Instrumental Rock"
+      ],
+      "members": [
+        {
+          "name": "Nita Strauss",
+          "role": "Guitarist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-laws",
+      "name": "The Laws",
+      "country": "United States",
+      "description": "\"The Laws\" is a heavy metal band hailing from Kailua Kona, Hawaii, United States. Formed in the early 1990s, the band has been known for their energetic performances and distinctive sound that blends elements of traditional heavy metal with modern influences. Over the years, they have released several albums, each showcasing their evolution as artists. Their music often features powerful guitar riffs, dynamic drumming, and compelling vocals, resonating with fans of classic metal while appealing to newer generations. The band has toured extensively, building a dedicated fan base both locally and internationally. Their discography includes notable releases that have been well-received by critics and listeners alike.",
+      "logo": "https://www.metal-archives.com/images/112692_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/112692_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/The_Laws/112692",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "Tobias Jansson",
+          "role": "Vocals"
+        },
+        {
+          "name": "Björn Larsson",
+          "role": "Guitars"
+        },
+        {
+          "name": "Peter Östlund",
+          "role": "Guitars"
+        },
+        {
+          "name": "Jimmie Ninja Frödin",
+          "role": "Bass"
+        },
+        {
+          "name": "Johan Rudberg",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "obituary",
+      "name": "Obituary",
+      "country": "United States",
+      "description": "Obituary is a pioneering death metal band from Tampa, Florida, formed in 1984. Originally known as Executioner, they changed their name to Xecutioner in 1986 and finally to Obituary in 1988. The band's lineup consists of vocalist John Tardy, drummer Donald Tardy, rhythm guitarist Trevor Peres, bassist Terry Butler, and lead guitarist Ken Andrews. Obituary is renowned for their heavy groove guitar riffs, pounding drums, and John Tardy's distinctive guttural vocals, which have become a signature sound in the death metal genre. Their music is characterized by slower tempos and catchy rhythms, setting them apart from many of their contemporaries. They have released eleven studio albums, including seminal works like \"Cause of Death\" (1990) and \"The End Complete\" (1992). Their most recent album, \"Dying of Everything,\" was released in 2023. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Obituary_%28band%29?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Obituary_band_logo.svg/800px-Obituary_band_logo.svg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Obituary_band_2017.jpg/800px-Obituary_band_2017.jpg",
+      "website": "http://www.obituary.cc",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Groove Metal"
+      ],
+      "members": [
+        {
+          "name": "John Tardy",
+          "role": "Vocals"
+        },
+        {
+          "name": "Donald Tardy",
+          "role": "Drums"
+        },
+        {
+          "name": "Trevor Peres",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Terry Butler",
+          "role": "Bass"
+        },
+        {
+          "name": "Ken Andrews",
+          "role": "Lead Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ne-obliviscaris",
+      "name": "Ne Obliviscaris",
+      "country": "Australia",
+      "description": "Ne Obliviscaris is an Australian progressive metal band formed in Melbourne in April 2003. The group was established by vocalist Marc \"Xenoyr\" Campbell and bassist Adam Cooper, later expanding to include violinist and clean vocalist Tim Charles, guitarists Matt Klavins and Benjamin Baret, bassist Martino Garattoni, and drummer Daniel Presland. Their music blends elements of extreme metal with classical, jazz, avant-garde, and flamenco influences, creating a distinctive sound that has garnered international acclaim.\n\nThe band's discography includes four studio albums: \"Portal of I\" (2012), \"Citadel\" (2014), \"Urn\" (2017), and \"Exul\" (2023). \"Exul\" was released on 24 March 2023, featuring the single \"Equus,\" which was accompanied by a music video. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Exul?utm_source=openai)) In August 2024, they celebrated the 10th anniversary of \"Citadel\" by releasing a remastered edition. ([neobliviscarissom.bandcamp.com](https://neobliviscarissom.bandcamp.com/?utm_source=openai))\n\nThroughout their career, Ne Obliviscaris has undergone several lineup changes. Notably, in January 2025, founding member Marc \"Xenoyr\" Campbell departed from the band after 22 years, with James Dorton of Black Crown Initiate stepping in as the new harsh vocalist. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ne_Obliviscaris_%28band%29?utm_source=openai))\n\nThe band's official website is [https://neobliviscaris.com.au](https://neobliviscaris.com.au).",
+      "logo": "https://neobliviscaris.com.au/wp-content/uploads/2023/03/Ne-Obliviscaris-Logo.png",
+      "headlineImage": "https://neobliviscaris.com.au/wp-content/uploads/2023/03/Exul-Album-Artwork.jpg",
+      "website": "https://neobliviscaris.com.au",
+      "spotify": "",
+      "genres": [
+        "Progressive Metal",
+        "Extreme Metal"
+      ],
+      "members": [
+        {
+          "name": "Tim Charles",
+          "role": "Violinist and Clean Vocals"
+        },
+        {
+          "name": "Matt Klavins",
+          "role": "Rhythm Guitarist"
+        },
+        {
+          "name": "Benjamin Baret",
+          "role": "Lead Guitarist"
+        },
+        {
+          "name": "Martino Garattoni",
+          "role": "Bassist"
+        },
+        {
+          "name": "Daniel Presland",
+          "role": "Drummer"
+        },
+        {
+          "name": "James Dorton",
+          "role": "Harsh Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "charlotte-wessels",
+      "name": "Charlotte Wessels",
+      "country": "Netherlands",
+      "description": "Charlotte Wessels is a Dutch singer, songwriter, and producer renowned for her contributions to the symphonic metal genre. Born on May 13, 1987, in Zwolle, Netherlands, she began her musical journey with jazz and classical vocal training. At 16, she joined the gothic metal band To Elysium, marking the start of her professional career. In 2005, she co-founded Delain with former Within Temptation keyboardist Martijn Westerholt, serving as the lead vocalist and primary lyricist. Under her leadership, Delain released several successful albums, including \"Lucidity\" (2006), \"April Rain\" (2009), \"We Are the Others\" (2012), \"The Human Contradiction\" (2014), \"Moonbathers\" (2016), and \"Apocalypse \u0026 Chill\" (2020). In February 2021, Wessels departed from Delain to pursue a solo career. She launched her solo project with the album \"Tales from Six Feet Under\" in September 2021, followed by \"Tales from Six Feet Under, Vol. II\" in October 2022. In September 2024, she released \"The Obsession,\" her first full studio album under Napalm Records, which delves into her experiences with obsessive-compulsive disorder through songs about fear and obsession. The album features collaborations with former Delain bandmates and guest vocalists such as Simone Simons (Epica) and Alissa White-Gluz (Arch Enemy). Wessels' music is characterized by a dynamic range, blending symphonic metal with elements of pop and synth rock, showcasing her versatility as an artist. ([charlottewessels.nl](https://charlottewessels.nl/about?utm_source=openai))",
+      "logo": "https://charlottewessels.nl/wp-content/uploads/2021/06/Charlotte-Wessels-Logo.png",
+      "headlineImage": "https://charlottewessels.nl/wp-content/uploads/2024/09/Charlotte-Wessels-The-Obsession-Album-Cover.jpg",
+      "website": "https://charlottewessels.nl",
+      "spotify": "",
+      "genres": [
+        "Symphonic Metal",
+        "Gothic Metal",
+        "Pop Rock",
+        "Synth Rock"
+      ],
+      "members": [
+        {
+          "name": "Charlotte Wessels",
+          "role": "Vocals, All instruments (2020–present)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "today-is-the-day",
+      "name": "Today Is The Day",
+      "country": "United States",
+      "description": "Today Is the Day is an American noise rock and experimental metal band formed in Nashville, Tennessee, in 1992. Founded by guitarist and vocalist Steve Austin, the band has been known for its diverse sound, blending elements of noise music, avant-garde metal, grindcore, post-hardcore, and alternative rock. Their music often features dissonance, sampling, and psychedelic overtones, with lyrical themes exploring depression, warfare, violence, altered states of consciousness, and mental disorders.\n\nThe band's debut release was the self-financed demo EP \"How to Win Friends and Influence People\" in 1992, which led to a contract with Amphetamine Reptile Records. Their first full-length album, \"Supernova,\" was released in 1993. In 1994, they released \"Willpower,\" followed by their self-titled album in 1996. In 1997, they signed with Relapse Records and released \"Temple of the Morning Star,\" which marked a shift towards a more extreme and brutal sound, incorporating grindcore and black metal influences. This evolution continued with the double album \"Sadness Will Prevail\" in 2002, regarded as their most ambitious and experimental record. Their 2004 album, \"Kiss the Pig,\" presented a more compact and impactful approach. In 2007, they released \"Axis of Eden,\" the last album to feature bassist Chris Debari and the only one to feature drummer Derek Roddy. The band has continued to evolve, releasing \"No Good to Anyone\" in 2020 and \"Never Give In\" in 2025, showcasing their uncompromising style.\n\nThroughout their career, Today Is the Day has been associated with noise rock and various subgenres of heavy metal, including avant-garde metal, math metal, doom metal, post-metal, extreme metal, and grindcore. They are often credited with pioneering the fusion of noise rock and metal, a style sometimes referred to as \"noise metal.\" Their experimental approach has influenced numerous bands in the metal and alternative rock scenes.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Today_Is_the_Day_2003.jpg/800px-Today_Is_the_Day_2003.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Today_Is_the_Day_2003.jpg/800px-Today_Is_the_Day_2003.jpg",
+      "website": "https://todayistheday.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Noise Rock",
+        "Avant-Garde Metal",
+        "Grindcore",
+        "Post-Hardcore"
+      ],
+      "members": [
+        {
+          "name": "Steve Austin",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Thomas Jack",
+          "role": "Bass, Keyboards"
+        },
+        {
+          "name": "Colin Frecknall",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dritte-wahl",
+      "name": "Dritte Wahl",
+      "country": "Germany",
+      "description": "Dritte Wahl is a German punk rock band from Rostock, formed in 1986. Their music blends Deutschpunk with metal influences, delivering direct, politically charged lyrics in German. The band gained national recognition in the early 1990s with songs addressing social issues, such as \"Macht die Augen auf,\" which commented on the 1992 Rostock-Lichtenhagen riots. Over the years, Dritte Wahl has released multiple studio albums, including \"Fasching in Bonn\" (1992), \"Auge um Auge\" (1994), \"Nimm drei\" (1996), \"Strahlen\" (1998), \"Delikat\" (1999), \"Halt mich fest\" (2001), \"Fortschritt\" (2005), \"Gib Acht!\" (2010), \"Geblitzdingst\" (2015), \"10\" (2017), \"3D\" (2020), and \"Urlaub in der Bredouille\" (2023). The band continues to tour extensively, maintaining a strong presence in the German punk scene. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dritte_Wahl?utm_source=openai))",
+      "logo": "https://www.dritte-wahl.de/wp-content/uploads/2023/12/Dritte-Wahl-Logo.png",
+      "headlineImage": "https://www.dritte-wahl.de/wp-content/uploads/2023/12/Urlaub-in-der-Bredouille-Albumcover.jpg",
+      "website": "https://www.dritte-wahl.de",
+      "spotify": "",
+      "genres": [
+        "Punk Rock",
+        "Deutschpunk",
+        "Crossover"
+      ],
+      "members": [
+        {
+          "name": "Gunnar Schröder",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Stefan Ladwig",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Jörn \"Krel\" Schröder",
+          "role": "Drums"
+        },
+        {
+          "name": "Holger H.",
+          "role": "Keyboard, Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dubioza-kolektiv",
+      "name": "Dubioza Kolektiv",
+      "country": "Bosnia and Herzegovina",
+      "description": "Dubioza Kolektiv is a Bosnian avant-garde dub rock band formed in 2003 in Sarajevo and Zenica. The group emerged from the merger of two musical ensembles: Ornament from Sarajevo and Gluho doba from Zenica. The founding members include Brano Jakubović (sampling, keyboards, acoustic guitar), Vedran Mujagić (bass guitar), Almir Hasanbegović (vocals), and Adis Zvekić (vocals). Over the years, the lineup expanded to include Armin Bušatlić (guitar), Senad Šuta (drums), Orhan Maslo (percussion), Mario Ševarac (saxophone), and Jernej Šavel (guitar).\n\nDubioza Kolektiv is renowned for their eclectic musical style, blending elements of hip hop, ska, reggae, dub, rock, punk, electronic music, and Balkan sounds. Their lyrics are socially and politically conscious, often addressing themes like corruption, social justice, and freedom of information. The band's multilingual approach, incorporating Bosnian and English, has broadened their appeal beyond the Balkans.\n\nTheir discography includes several studio albums: \"Dubioza Kolektiv\" (2004), \"Dubnamite\" (2006), \"Firma Ilegal\" (2008), \"5 do 12\" (2010), \"Wild Wild East\" (2011), \"Apsurdistan\" (2013), \"Happy Machine\" (2015), \"Pjesmice za djecu i odrasle\" (2017), \"#fakenews\" (2020), and \"Agrikultura\" (2022). Notably, \"Firma Ilegal\" (2008) marked a significant point in their career, featuring the song \"Blam,\" which was used in the film \"Na Putu\" by Jasmila Žbanić. The album \"5 do 12\" (2010) continued this trajectory, with the band making it available for free download on their website, reflecting their commitment to accessible music distribution.\n\nDubioza Kolektiv has gained international recognition, performing at major festivals such as Glastonbury in 2015 and South by Southwest in 2016. Their energetic live performances and distinctive style have earned them a dedicated global fanbase.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Dubioza_Kolektiv_2023.jpg/800px-Dubioza_Kolektiv_2023.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Dubioza_Kolektiv_2023.jpg/800px-Dubioza_Kolektiv_2023.jpg",
+      "website": "https://dubioza.org",
+      "spotify": "",
+      "genres": [
+        "Rap Rock",
+        "Reggae",
+        "Ska",
+        "Dub"
+      ],
+      "members": [
+        {
+          "name": "Brano Jakubović",
+          "role": "Sampling, keyboards, acoustic guitar"
+        },
+        {
+          "name": "Vedran Mujagić",
+          "role": "Bass guitar"
+        },
+        {
+          "name": "Almir Hasanbegović",
+          "role": "Vocals"
+        },
+        {
+          "name": "Adis Zvekić",
+          "role": "Vocals"
+        },
+        {
+          "name": "Armin Bušatlić",
+          "role": "Guitar"
+        },
+        {
+          "name": "Senad Šuta",
+          "role": "Drums"
+        },
+        {
+          "name": "Orhan Maslo",
+          "role": "Percussion"
+        },
+        {
+          "name": "Mario Ševarac",
+          "role": "Saxophone"
+        },
+        {
+          "name": "Jernej Šavel",
+          "role": "Guitar"
         }
       ],
       "reviewed": false
