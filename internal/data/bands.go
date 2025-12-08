@@ -2,6 +2,11 @@ package data
 
 import (
 	"fmt"
+	"regexp"
+	"strings"
+
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 
 	"github.com/neovasili/metal-fests/internal/model"
 )
@@ -86,4 +91,31 @@ func CollectAllFestivalBands() ([]model.BandRef, error) {
 	}
 
 	return bands, nil
+}
+
+// NormalizeBandName normalizes the band name to Title Case
+func NormalizeBandName(bandName string) string {
+	return cases.Title(language.English).String(strings.ToLower(bandName))
+}
+
+// GenerateBandKey generates a URL-friendly key from a band name
+func GenerateBandKey(bandName string) string {
+	// Convert to lowercase
+	key := strings.ToLower(bandName)
+
+	// Remove special characters
+	reg := regexp.MustCompile(`[^a-z0-9\s-]`)
+	key = reg.ReplaceAllString(key, "")
+
+	// Replace spaces with hyphens
+	key = strings.ReplaceAll(key, " ", "-")
+
+	// Remove consecutive hyphens
+	reg = regexp.MustCompile(`-+`)
+	key = reg.ReplaceAllString(key, "-")
+
+	// Trim hyphens from start and end
+	key = strings.Trim(key, "-")
+
+	return key
 }

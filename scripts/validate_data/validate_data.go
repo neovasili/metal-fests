@@ -6,12 +6,9 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"regexp"
 	"strings"
 
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
-
+	modelData "github.com/neovasili/metal-fests/internal/data"
 	"github.com/neovasili/metal-fests/internal/model"
 )
 
@@ -58,29 +55,7 @@ func printError(text string) {
 }
 
 func printInfo(text string) {
-	fmt.Printf("%s %s\n", colorize("ℹ", ColorBlue), text)
-}
-
-// generateBandKey generates a URL-friendly key from a band name
-func generateBandKey(bandName string) string {
-	// Convert to lowercase
-	key := strings.ToLower(bandName)
-
-	// Remove special characters
-	reg := regexp.MustCompile(`[^a-z0-9\s-]`)
-	key = reg.ReplaceAllString(key, "")
-
-	// Replace spaces with hyphens
-	key = strings.ReplaceAll(key, " ", "-")
-
-	// Remove consecutive hyphens
-	reg = regexp.MustCompile(`-+`)
-	key = reg.ReplaceAllString(key, "-")
-
-	// Trim hyphens from start and end
-	key = strings.Trim(key, "-")
-
-	return key
+	fmt.Printf("%s %s\n", colorize("i", ColorBlue), text)
 }
 
 // levenshteinDistance calculates the Levenshtein distance between two strings
@@ -138,7 +113,7 @@ func isProperlyCapitalized(text string) bool {
 	}
 
 	// Use the same capitalization as the band updater
-	expected := cases.Title(language.English).String(text)
+	expected := modelData.NormalizeBandName(text)
 	return text == expected
 }
 
@@ -174,7 +149,7 @@ func validateBandNames(data *model.Database, fix bool) ValidationResult {
 	printInfo("Checking band names in festivals...")
 	for i, festival := range data.Festivals {
 		for j, band := range festival.Bands {
-			expected := cases.Title(language.English).String(band.Name)
+			expected := modelData.NormalizeBandName(band.Name)
 			if band.Name != expected {
 				if fix {
 					printInfo(fmt.Sprintf("  Festival '%s', Band: Fixing '%s' → '%s'", festival.Name, band.Name, expected))
@@ -191,7 +166,7 @@ func validateBandNames(data *model.Database, fix bool) ValidationResult {
 	// Check band names in bands section
 	printInfo("Checking band names in bands section...")
 	for i, band := range data.Bands {
-		expected := cases.Title(language.English).String(band.Name)
+		expected := modelData.NormalizeBandName(band.Name)
 		if band.Name != expected {
 			if fix {
 				printInfo(fmt.Sprintf("  Band: Fixing '%s' → '%s'", band.Name, expected))
@@ -225,7 +200,7 @@ func validateGenres(data *model.Database, fix bool) ValidationResult {
 		for j, genre := range band.Genres {
 			totalGenres++
 			if !isProperlyCapitalized(genre) {
-				expected := cases.Title(language.English).String(genre)
+				expected := modelData.NormalizeBandName(genre)
 				if fix {
 					printInfo(fmt.Sprintf("  Band '%s': Fixing genre '%s' → '%s'", band.Name, genre, expected))
 					data.Bands[i].Genres[j] = expected
@@ -259,7 +234,7 @@ func validateMemberRoles(data *model.Database, fix bool) ValidationResult {
 		for j, member := range band.Members {
 			totalMembers++
 			if !isProperlyCapitalized(member.Role) {
-				expected := cases.Title(language.English).String(member.Role)
+				expected := modelData.NormalizeBandName(member.Role)
 				if fix {
 					printInfo(fmt.Sprintf("  Band '%s', Member '%s': Fixing role '%s' → '%s'", band.Name, member.Name, member.Role, expected))
 					data.Bands[i].Members[j].Role = expected
@@ -292,7 +267,7 @@ func validateBandKeys(data *model.Database, fix bool) ValidationResult {
 	printInfo("Checking band keys in festivals...")
 	for i, festival := range data.Festivals {
 		for j, band := range festival.Bands {
-			expected := generateBandKey(band.Name)
+			expected := modelData.GenerateBandKey(band.Name)
 			if band.Key != expected {
 				if fix {
 					printInfo(fmt.Sprintf("  Festival '%s', Band '%s': Fixing key '%s' → '%s'", festival.Name, band.Name, band.Key, expected))
@@ -309,7 +284,7 @@ func validateBandKeys(data *model.Database, fix bool) ValidationResult {
 	// Check band keys in bands section
 	printInfo("Checking band keys in bands section...")
 	for i, band := range data.Bands {
-		expected := generateBandKey(band.Name)
+		expected := modelData.GenerateBandKey(band.Name)
 		if band.Key != expected {
 			if fix {
 				printInfo(fmt.Sprintf("  Band '%s': Fixing key '%s' → '%s'", band.Name, band.Key, expected))

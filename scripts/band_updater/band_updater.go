@@ -10,9 +10,6 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
-
 	"github.com/neovasili/metal-fests/internal/data"
 	"github.com/neovasili/metal-fests/internal/model"
 	"github.com/neovasili/metal-fests/internal/openai"
@@ -277,14 +274,14 @@ func addMissingBands(promptTemplate, bandName string, dryRun bool) *UpdateStats 
 			continue
 		}
 
-		result.Name = cases.Title(language.English).String(result.Name)
+		result.Name = data.NormalizeBandName(result.Name)
 
 		// Ensure music genres and band members roles are properly capitalized
 		for i := range result.Genres {
-			result.Genres[i] = cases.Title(language.English).String(result.Genres[i])
+			result.Genres[i] = data.NormalizeBandName(result.Genres[i])
 		}
 		for i := range result.Members {
-			result.Members[i].Name = cases.Title(language.English).String(result.Members[i].Name)
+			result.Members[i].Name = data.NormalizeBandName(result.Members[i].Name)
 		}
 
 		if exists {

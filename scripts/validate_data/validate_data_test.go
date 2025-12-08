@@ -5,6 +5,8 @@ import (
 
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
+
+	"github.com/neovasili/metal-fests/internal/data"
 )
 
 func TestLevenshteinDistance(t *testing.T) {
@@ -269,7 +271,7 @@ func TestGenerateBandKey(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			result := generateBandKey(tt.bandName)
+			result := data.GenerateBandKey(tt.bandName)
 			if result != tt.expected {
 				t.Errorf("generateBandKey(%q) = %q, want %q", tt.bandName, result, tt.expected)
 			}
