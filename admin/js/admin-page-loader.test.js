@@ -120,10 +120,11 @@ describe("AdminPageLoader", () => {
     });
 
     it("should save tab to localStorage", () => {
-      const setItemSpy = vi.spyOn(Storage.prototype, "setItem");
+      const setItemSpy = vi.spyOn(localStorage, "setItem");
       adminPageLoader.handleTabChange("reviewed");
 
       expect(setItemSpy).toHaveBeenCalledWith("adminActiveTab", "reviewed");
+      setItemSpy.mockRestore();
     });
 
     it("should update band manager when present", () => {
@@ -141,12 +142,13 @@ describe("AdminPageLoader", () => {
 
   describe("getActiveTab", () => {
     it("should return saved tab from localStorage", () => {
-      const getItemSpy = vi.spyOn(Storage.prototype, "getItem").mockReturnValueOnce("reviewed");
+      const getItemSpy = vi.spyOn(localStorage, "getItem").mockReturnValueOnce("reviewed");
 
       const result = adminPageLoader.getActiveTab();
 
       expect(result).toBe("reviewed");
       expect(getItemSpy).toHaveBeenCalledWith("adminActiveTab");
+      getItemSpy.mockRestore();
     });
   });
 

@@ -1,3 +1,24 @@
+// Setup localStorage mock if not available
+if (typeof localStorage === "undefined" || !localStorage.setItem) {
+  const localStorageMock = (() => {
+    let store = {};
+    return {
+      getItem: (key) => store[key] || null,
+      setItem: (key, value) => {
+        store[key] = value.toString();
+      },
+      removeItem: (key) => {
+        delete store[key];
+      },
+      clear: () => {
+        store = {};
+      },
+    };
+  })();
+  global.localStorage = localStorageMock;
+  globalThis.localStorage = localStorageMock;
+}
+
 // Import all JavaScript classes for testing
 import UIUtils from "./js/ui-utils.js";
 import FavoritesManager from "./js/favorites-manager.js";

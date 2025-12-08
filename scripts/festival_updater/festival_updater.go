@@ -6,12 +6,8 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"regexp"
 	"strings"
 	"time"
-
-	"golang.org/x/text/cases"
-	"golang.org/x/text/language"
 
 	"github.com/neovasili/metal-fests/internal/data"
 	"github.com/neovasili/metal-fests/internal/model"
@@ -21,6 +17,15 @@ import (
 type FestivalUpdateResult struct {
 	Bands       []model.BandRef `json:"bands"`
 	TicketPrice *float64        `json:"ticketPrice"`
+}
+
+type FestivalChange struct {
+	Name         string
+	NewBands     []string
+	UpdatedBands []string
+	OldPrice     float64
+	NewPrice     float64
+	PriceUpdated bool
 }
 
 type UpdateStats struct {
@@ -33,6 +38,7 @@ type UpdateStats struct {
 	UsedModel        string
 	PromptTokens     int
 	CompletionTokens int
+	Changes          []FestivalChange
 }
 
 var openaiClient *openai.OpenAIClient
@@ -179,6 +185,9 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 		}
 
 		updated := false
+		festivalChange := FestivalChange{
+			Name: festival.Name,
+		}
 
 		// Update bands if new ones found
 		if len(result.Bands) > 0 {
@@ -187,17 +196,19 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 			updatedBands := make([]model.BandRef, 0)
 
 			for _, bandRef := range result.Bands {
-				normalizedBandName := cases.Title(language.English).String(strings.ToLower(bandRef.Name))
+				normalizedBandName := data.NormalizeBandName(bandRef.Name)
 				band := model.BandRef{
-					Key:  bandNameToKey(normalizedBandName),
+					Key:  data.GenerateBandKey(normalizedBandName),
 					Name: normalizedBandName,
 					Size: bandRef.Size,
 				}
 				if !containsBand(festival.Bands, band.Name) {
 					newBands = append(newBands, model.BandRef{Key: band.Key, Name: band.Name, Size: band.Size})
+					festivalChange.NewBands = append(festivalChange.NewBands, band.Name)
 				} else {
 					if bandHasBeenUpdated(festival.Bands, band) {
 						updatedBands = append(updatedBands, band)
+						festivalChange.UpdatedBands = append(festivalChange.UpdatedBands, band.Name)
 					}
 				}
 			}
@@ -222,6 +233,9 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 
 		// Update ticket price if available and different
 		if result.TicketPrice != nil && festival.TicketPrice == 0 {
+			festivalChange.OldPrice = festival.TicketPrice
+			festivalChange.NewPrice = *result.TicketPrice
+			festivalChange.PriceUpdated = true
 			oldPrice := fmt.Sprintf("%.2f€", festival.TicketPrice)
 			festival.TicketPrice = *result.TicketPrice
 			stats.UpdatedPrices++
@@ -231,6 +245,7 @@ func updateExistingFestivals(promptTemplate string, dryRun bool, festivalName st
 
 		if updated {
 			stats.UpdatedFestivals++
+			stats.Changes = append(stats.Changes, festivalChange)
 			err = data.UpdateFestivalInDatabase(festival)
 			if err != nil {
 				fmt.Printf("  ⚠️  Error updating festival in database: %v\n", err)
@@ -278,15 +293,6 @@ func updateBandData(festival model.Festival, band model.BandRef) model.Festival 
 	return festival
 }
 
-func bandNameToKey(name string) string {
-	// Convert band name to key format (lowercase with hyphens, & to and, ensure there is no more than one hyphen in a row)
-	key := strings.ToLower(name)
-	key = strings.ReplaceAll(key, "&", "and")
-	key = strings.ReplaceAll(key, " ", "-")
-	key = regexp.MustCompile("-+").ReplaceAllString(key, "-")
-	return key
-}
-
 func generatePRSummary(stats *UpdateStats) string {
 	var buf bytes.Buffer
 
@@ -305,6 +311,35 @@ func generatePRSummary(stats *UpdateStats) string {
 	buf.WriteString(fmt.Sprintf("- **Run Date**: %s\n", time.Now().Format("2006-01-02 15:04:05 UTC")))
 	buf.WriteString("- **Source**: GitHub Actions Workflow\n")
 	buf.WriteString("- **Script**: `scripts/festival_updater.go`\n")
+
+	// Add detailed changes section if there are any updates
+	if len(stats.Changes) > 0 {
+		buf.WriteString("\n<details>\n<summary>📋 Detailed Festival Changes</summary>\n\n")
+		for _, change := range stats.Changes {
+			buf.WriteString(fmt.Sprintf("### %s\n\n", change.Name))
+
+			if len(change.NewBands) > 0 {
+				buf.WriteString(fmt.Sprintf("- **New Bands Added** (%d):\n", len(change.NewBands)))
+				for _, band := range change.NewBands {
+					buf.WriteString(fmt.Sprintf("  - %s\n", band))
+				}
+			}
+
+			if len(change.UpdatedBands) > 0 {
+				buf.WriteString(fmt.Sprintf("- **Existing Bands Updated** (%d):\n", len(change.UpdatedBands)))
+				for _, band := range change.UpdatedBands {
+					buf.WriteString(fmt.Sprintf("  - %s\n", band))
+				}
+			}
+
+			if change.PriceUpdated {
+				buf.WriteString(fmt.Sprintf("- **Ticket Price Updated**: %.2f€ → %.2f€\n", change.OldPrice, change.NewPrice))
+			}
+
+			buf.WriteString("\n")
+		}
+		buf.WriteString("</details>\n")
+	}
 
 	if stats.UpdatedFestivals == 0 {
 		buf.WriteString("\n---\n")
