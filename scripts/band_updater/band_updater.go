@@ -32,6 +32,7 @@ type BandSearchResult struct {
 type UpdateStats struct {
 	TotalBands       int
 	AddedBands       int
+	AddedBandsList   []string
 	UpdatedBands     int
 	SkippedBands     int
 	NotFoundBands    int
@@ -319,6 +320,7 @@ func addMissingBands(promptTemplate, bandName string, dryRun bool) *UpdateStats 
 			existingBands[newBand.Key] = &newBand
 			fmt.Printf("  ✓ Added new band\n")
 			stats.AddedBands++
+			stats.AddedBandsList = append(stats.AddedBandsList, newBand.Name)
 		}
 	}
 
@@ -344,6 +346,15 @@ func generateSummary(stats *UpdateStats) string {
 	buf.WriteString(fmt.Sprintf("- **Run Date**: %s\n", time.Now().Format("2006-01-02 15:04:05 UTC")))
 	buf.WriteString("- **Source**: GitHub Actions Workflow\n")
 	buf.WriteString("- **Script**: `scripts/band_updater.go`\n")
+
+	// Add detailed list of added bands if there are any
+	if len(stats.AddedBandsList) > 0 {
+		buf.WriteString("\n<details>\n<summary>📋 Added Bands</summary>\n\n")
+		for _, bandName := range stats.AddedBandsList {
+			buf.WriteString(fmt.Sprintf("- %s\n", bandName))
+		}
+		buf.WriteString("\n</details>\n")
+	}
 
 	if stats.AddedBands == 0 && stats.UpdatedBands == 0 {
 		buf.WriteString("\n---\n")

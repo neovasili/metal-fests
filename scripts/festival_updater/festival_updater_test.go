@@ -4,6 +4,7 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/neovasili/metal-fests/internal/data"
 	"github.com/neovasili/metal-fests/internal/model"
 )
 
@@ -91,12 +92,12 @@ func TestBandNameToKey(t *testing.T) {
 		{
 			name:     "Band name with ampersand",
 			bandName: "Foo & Bar",
-			expected: "foo-and-bar",
+			expected: "foo-bar",
 		},
 		{
 			name:     "Band name with multiple ampersands",
 			bandName: "A & B & C",
-			expected: "a-and-b-and-c",
+			expected: "a-b-c",
 		},
 		{
 			name:     "Band name with consecutive spaces",
@@ -126,15 +127,15 @@ func TestBandNameToKey(t *testing.T) {
 		{
 			name:     "Complex band name",
 			bandName: "Foo & Bar  Baz",
-			expected: "foo-and-bar-baz",
+			expected: "foo-bar-baz",
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			result := bandNameToKey(tt.bandName)
+			result := data.GenerateBandKey(tt.bandName)
 			if result != tt.expected {
-				t.Errorf("bandNameToKey(%q) = %q, want %q", tt.bandName, result, tt.expected)
+				t.Errorf("data.GenerateBandKey(%q) = %q, want %q", tt.bandName, result, tt.expected)
 			}
 		})
 	}
