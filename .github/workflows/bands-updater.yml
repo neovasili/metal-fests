@@ -30,6 +30,7 @@ jobs:
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
+        id: create-pr
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: 🎸 Update bands information (automated)"
@@ -43,3 +44,11 @@ jobs:
             automated
             bands-data
             enhancement
+
+      - name: Close and reopen PR to trigger workflows
+        if: steps.create-pr.outputs.pull-request-number != ''
+        run: |
+          gh pr close ${{ steps.create-pr.outputs.pull-request-number }}
+          gh pr reopen ${{ steps.create-pr.outputs.pull-request-number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
