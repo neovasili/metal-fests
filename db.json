@@ -281,7 +281,7 @@
         {
           "key": "bad-omens",
           "name": "Bad Omens",
-          "size": 2
+          "size": 3
         },
         {
           "key": "volbeat",
@@ -291,7 +291,7 @@
         {
           "key": "electric-callboy",
           "name": "Electric Callboy",
-          "size": 2
+          "size": 3
         },
         {
           "key": "ice-nine-kills",
@@ -316,7 +316,7 @@
         {
           "key": "sabaton",
           "name": "Sabaton",
-          "size": 2
+          "size": 3
         },
         {
           "key": "iron-maiden",
@@ -331,17 +331,17 @@
         {
           "key": "a-perfect-circle",
           "name": "A Perfect Circle",
-          "size": 1
+          "size": 3
         },
         {
           "key": "hollywood-undead",
           "name": "Hollywood Undead",
-          "size": 2
+          "size": 3
         },
         {
           "key": "social-distortion",
           "name": "Social Distortion",
-          "size": 1
+          "size": 3
         },
         {
           "key": "babymetal",
@@ -361,7 +361,7 @@
         {
           "key": "alter-bridge",
           "name": "Alter Bridge",
-          "size": 1
+          "size": 3
         },
         {
           "key": "tom-morello",
@@ -371,12 +371,12 @@
         {
           "key": "finch",
           "name": "Finch",
-          "size": 1
+          "size": 3
         },
         {
           "key": "breaking-benjamin",
           "name": "Breaking Benjamin",
-          "size": 1
+          "size": 2
         },
         {
           "key": "bush",
@@ -401,7 +401,7 @@
         {
           "key": "sondaschule",
           "name": "Sondaschule",
-          "size": 1
+          "size": 2
         },
         {
           "key": "ecca-vandal",
@@ -416,7 +416,7 @@
         {
           "key": "president",
           "name": "President",
-          "size": 1
+          "size": 2
         },
         {
           "key": "wargasm",
@@ -431,72 +431,72 @@
         {
           "key": "bad-nerves",
           "name": "Bad Nerves",
-          "size": 1
+          "size": 2
         },
         {
           "key": "black-veil-brides",
           "name": "Black Veil Brides",
-          "size": 2
+          "size": 1
         },
         {
           "key": "blood-incantation",
           "name": "Blood Incantation",
-          "size": 1
+          "size": 2
         },
         {
           "key": "bloodywood",
           "name": "Bloodywood",
-          "size": 1
+          "size": 2
         },
         {
           "key": "boundaries",
           "name": "Boundaries",
-          "size": 1
+          "size": 2
         },
         {
           "key": "catch-your-breath",
           "name": "Catch Your Breath",
-          "size": 1
+          "size": 2
         },
         {
           "key": "ego-kill-talent",
           "name": "Ego Kill Talent",
-          "size": 1
+          "size": 2
         },
         {
           "key": "gatecreeper",
           "name": "Gatecreeper",
-          "size": 1
+          "size": 2
         },
         {
           "key": "kublai-khan-tx",
           "name": "Kublai Khan Tx",
-          "size": 1
+          "size": 2
         },
         {
           "key": "mouth-culture",
           "name": "Mouth Culture",
-          "size": 1
+          "size": 2
         },
         {
           "key": "return-to-dust",
           "name": "Return To Dust",
-          "size": 1
+          "size": 2
         },
         {
           "key": "set-it-off",
           "name": "Set It Off",
-          "size": 1
+          "size": 2
         },
         {
           "key": "tesseract",
           "name": "Tesseract",
-          "size": 1
+          "size": 2
         },
         {
           "key": "the-story-so-far",
           "name": "The Story So Far",
-          "size": 1
+          "size": 2
         },
         {
           "key": "badflower",
@@ -591,7 +591,7 @@
         {
           "key": "mastodon",
           "name": "Mastodon",
-          "size": 2
+          "size": 1
         },
         {
           "key": "slay-squad",
@@ -659,22 +659,22 @@
         {
           "key": "architects",
           "name": "Architects",
-          "size": 1
+          "size": 2
         },
         {
           "key": "babymetal",
           "name": "Babymetal",
-          "size": 1
+          "size": 2
         },
         {
           "key": "trivium",
           "name": "Trivium",
-          "size": 1
+          "size": 2
         },
         {
           "key": "within-temptation",
           "name": "Within Temptation",
-          "size": 1
+          "size": 2
         },
         {
           "key": "bad-omens",
@@ -694,7 +694,7 @@
         {
           "key": "ice-nine-kills",
           "name": "Ice Nine Kills",
-          "size": 1
+          "size": 2
         },
         {
           "key": "landmarks",
@@ -704,12 +704,12 @@
         {
           "key": "marteria",
           "name": "Marteria",
-          "size": 1
+          "size": 2
         },
         {
           "key": "three-days-grace",
           "name": "Three Days Grace",
-          "size": 1
+          "size": 2
         },
         {
           "key": "sabaton",
@@ -729,37 +729,37 @@
         {
           "key": "a-perfect-circle",
           "name": "A Perfect Circle",
-          "size": 1
+          "size": 2
         },
         {
           "key": "hollywood-undead",
           "name": "Hollywood Undead",
-          "size": 1
+          "size": 2
         },
         {
           "key": "social-distortion",
           "name": "Social Distortion",
-          "size": 1
+          "size": 2
         },
         {
           "key": "the-hives",
           "name": "The Hives",
-          "size": 1
+          "size": 2
         },
         {
           "key": "alter-bridge",
           "name": "Alter Bridge",
-          "size": 1
+          "size": 2
         },
         {
           "key": "tom-morello",
           "name": "Tom Morello",
-          "size": 1
+          "size": 2
         },
         {
           "key": "finch",
           "name": "Finch",
-          "size": 1
+          "size": 2
         },
         {
           "key": "breaking-benjamin",
@@ -819,7 +819,7 @@
         {
           "key": "landmvrks",
           "name": "Landmvrks",
-          "size": 1
+          "size": 2
         },
         {
           "key": "bad-nerves",
@@ -1705,27 +1705,27 @@
         {
           "key": "madsen",
           "name": "Madsen",
-          "size": 2
+          "size": 1
         },
         {
           "key": "querbeat",
           "name": "Querbeat",
-          "size": 2
+          "size": 1
         },
         {
           "key": "bad-nerves",
           "name": "Bad Nerves",
-          "size": 2
+          "size": 1
         },
         {
           "key": "pod",
           "name": "P.o.d.",
-          "size": 2
+          "size": 1
         },
         {
           "key": "voil",
           "name": "Voilà",
-          "size": 2
+          "size": 1
         },
         {
           "key": "nickelsdorfer-bhmische",
@@ -1740,12 +1740,12 @@
         {
           "key": "black-label-society",
           "name": "Black Label Society",
-          "size": 2
+          "size": 1
         },
         {
           "key": "skindred",
           "name": "Skindred",
-          "size": 2
+          "size": 1
         },
         {
           "key": "wendis-bhmische-blasmusik",
@@ -2098,6 +2098,11 @@
         {
           "key": "freak-kitchen",
           "name": "Freak Kitchen",
+          "size": 1
+        },
+        {
+          "key": "the-gathering",
+          "name": "The Gathering",
           "size": 1
         }
       ],
@@ -2509,7 +2514,7 @@
         {
           "key": "alter-bridge",
           "name": "Alter Bridge",
-          "size": 3
+          "size": 2
         },
         {
           "key": "architects",
@@ -2524,7 +2529,7 @@
         {
           "key": "black-label-society",
           "name": "Black Label Society",
-          "size": 3
+          "size": 2
         },
         {
           "key": "bring-me-the-horizon",
@@ -2539,7 +2544,7 @@
         {
           "key": "ice-nine-kills",
           "name": "Ice Nine Kills",
-          "size": 3
+          "size": 2
         },
         {
           "key": "lacuna-coil",
@@ -2564,7 +2569,7 @@
         {
           "key": "three-days-grace",
           "name": "Three Days Grace",
-          "size": 3
+          "size": 2
         },
         {
           "key": "trivium",
@@ -2679,7 +2684,7 @@
         {
           "key": "mastodon",
           "name": "Mastodon",
-          "size": 3
+          "size": 2
         },
         {
           "key": "static-x",
@@ -2689,7 +2694,7 @@
         {
           "key": "accept",
           "name": "Accept",
-          "size": 3
+          "size": 2
         },
         {
           "key": "pennywise",
@@ -2849,7 +2854,7 @@
         {
           "key": "tom-morello",
           "name": "Tom Morello",
-          "size": 3
+          "size": 2
         },
         {
           "key": "letlive",
@@ -2884,7 +2889,7 @@
         {
           "key": "foreigner",
           "name": "Foreigner",
-          "size": 3
+          "size": 2
         },
         {
           "key": "harms-way",
@@ -2899,7 +2904,7 @@
         {
           "key": "a-day-to-remember",
           "name": "A Day To Remember",
-          "size": 3
+          "size": 2
         },
         {
           "key": "avatar",
@@ -2964,7 +2969,7 @@
         {
           "key": "anthrax",
           "name": "Anthrax",
-          "size": 3
+          "size": 2
         },
         {
           "key": "wargasm",
@@ -3148,6 +3153,51 @@
           "key": "cavalera-chaos-ad",
           "name": "Cavalera – Chaos A.d.",
           "size": 2
+        },
+        {
+          "key": "nevertel",
+          "name": "Nevertel",
+          "size": 1
+        },
+        {
+          "key": "black-maracas",
+          "name": "Black Maracas",
+          "size": 1
+        },
+        {
+          "key": "fallen-at-dawn",
+          "name": "Fallen At Dawn",
+          "size": 1
+        },
+        {
+          "key": "blaze-the-trail",
+          "name": "Blaze The Trail",
+          "size": 1
+        },
+        {
+          "key": "nukore",
+          "name": "Nukore",
+          "size": 1
+        },
+        {
+          "key": "oslo-ovnies",
+          "name": "Oslo Ovnies",
+          "size": 1
+        },
+        {
+          "key": "pants-off",
+          "name": "Pants Off",
+          "size": 1
+        },
+        {
+          "key": "madmess",
+          "name": "Madmess",
+          "size": 1
+        },
+        {
+          "key": "krudd",
+          "name": "Kruddö",
+          "size": 1
         }
       ],
       "ticketPrice": 235
@@ -3300,7 +3350,7 @@
         {
           "key": "hammer-king",
           "name": "Hammer King",
-          "size": 3
+          "size": 2
         },
         {
           "key": "arch-enemy",
@@ -3320,7 +3370,7 @@
         {
           "key": "melodius-deite",
           "name": "Melodius Deite",
-          "size": 3
+          "size": 1
         },
         {
           "key": "guiltera",
@@ -3335,7 +3385,7 @@
         {
           "key": "matanzick",
           "name": "Matanzick",
-          "size": 3
+          "size": 2
         },
         {
           "key": "symfobia",
@@ -3558,7 +3608,7 @@
         {
           "key": "triptykon",
           "name": "Triptykon",
-          "size": 0
+          "size": 2
         },
         {
           "key": "vader",
@@ -3758,6 +3808,36 @@
         {
           "key": "avulsed",
           "name": "Avulsed",
+          "size": 2
+        },
+        {
+          "key": "five-the-hierophant",
+          "name": "Five The Hierophant",
+          "size": 2
+        },
+        {
+          "key": "sylvaine",
+          "name": "Sylvaine",
+          "size": 2
+        },
+        {
+          "key": "sleepytime-gorilla-museum",
+          "name": "Sleepytime Gorilla Museum",
+          "size": 2
+        },
+        {
+          "key": "slow-crush",
+          "name": "Slow Crush",
+          "size": 2
+        },
+        {
+          "key": "nevermore",
+          "name": "Nevermore",
+          "size": 2
+        },
+        {
+          "key": "gadget",
+          "name": "Gadget",
           "size": 2
         }
       ],
@@ -3986,7 +4066,7 @@
         {
           "key": "uli-jon-roth",
           "name": "Uli Jon Roth",
-          "size": 2
+          "size": 3
         },
         {
           "key": "arch-enemy",
@@ -4264,7 +4344,7 @@
         {
           "key": "black-label-society",
           "name": "Black Label Society",
-          "size": 2
+          "size": 3
         },
         {
           "key": "helloween",
@@ -4284,7 +4364,7 @@
         {
           "key": "savatage",
           "name": "Savatage",
-          "size": 2
+          "size": 3
         },
         {
           "key": "dark-tranquillity",
@@ -4299,22 +4379,22 @@
         {
           "key": "sepultura",
           "name": "Sepultura",
-          "size": 2
+          "size": 3
         },
         {
           "key": "warcry",
           "name": "Warcry",
-          "size": 2
+          "size": 3
         },
         {
           "key": "deicide",
           "name": "Deicide",
-          "size": 2
+          "size": 3
         },
         {
           "key": "heaven-shall-burn",
           "name": "Heaven Shall Burn",
-          "size": 2
+          "size": 3
         },
         {
           "key": "nothingmore",
@@ -4329,7 +4409,7 @@
         {
           "key": "mushroomhead",
           "name": "Mushroomhead",
-          "size": 2
+          "size": 3
         },
         {
           "key": "eihwar",
@@ -4339,7 +4419,7 @@
         {
           "key": "dark-moor",
           "name": "Dark Moor",
-          "size": 2
+          "size": 3
         },
         {
           "key": "hardline",
@@ -4349,12 +4429,12 @@
         {
           "key": "chez-kane",
           "name": "Chez Kane",
-          "size": 2
+          "size": 3
         },
         {
           "key": "latzen",
           "name": "Latzen",
-          "size": 2
+          "size": 3
         },
         {
           "key": "nothing-more",
@@ -4374,42 +4454,42 @@
         {
           "key": "ten56",
           "name": "Ten56",
-          "size": 2
+          "size": 3
         },
         {
           "key": "orbit-culture",
           "name": "Orbit Culture",
-          "size": 2
+          "size": 3
         },
         {
           "key": "northlane",
           "name": "Northlane",
-          "size": 2
+          "size": 3
         },
         {
           "key": "saratoga",
           "name": "Saratoga",
-          "size": 2
+          "size": 3
         },
         {
           "key": "cabal",
           "name": "Cabal",
-          "size": 2
+          "size": 3
         },
         {
           "key": "saurom",
           "name": "Saurom",
-          "size": 2
+          "size": 3
         },
         {
           "key": "the-baboon-show",
           "name": "The Baboon Show",
-          "size": 2
+          "size": 3
         },
         {
           "key": "gods",
           "name": "Gods",
-          "size": 2
+          "size": 3
         },
         {
           "key": "dt",
@@ -4419,12 +4499,12 @@
         {
           "key": "eshwar",
           "name": "Eshwar",
-          "size": 2
+          "size": 3
         },
         {
           "key": "chelsea",
           "name": "Chelsea",
-          "size": 2
+          "size": 3
         },
         {
           "key": "dyscarnate",
@@ -4445,6 +4525,11 @@
           "key": "mice",
           "name": "Mice",
           "size": 2
+        },
+        {
+          "key": "doro",
+          "name": "Doro",
+          "size": 3
         }
       ],
       "ticketPrice": 168
@@ -5238,7 +5323,7 @@
         {
           "key": "triskel",
           "name": "Triskel",
-          "size": 1
+          "size": 2
         },
         {
           "key": "rockin-ladies",
@@ -5314,6 +5399,121 @@
           "key": "black-star",
           "name": "Black Star",
           "size": 1
+        },
+        {
+          "key": "hitten",
+          "name": "Hitten",
+          "size": 2
+        },
+        {
+          "key": "airbourne",
+          "name": "Airbourne",
+          "size": 2
+        },
+        {
+          "key": "all-that-remains",
+          "name": "All That Remains",
+          "size": 2
+        },
+        {
+          "key": "rhapsody-of-fire",
+          "name": "Rhapsody Of Fire",
+          "size": 2
+        },
+        {
+          "key": "decapitated",
+          "name": "Decapitated",
+          "size": 2
+        },
+        {
+          "key": "fm",
+          "name": "Fm",
+          "size": 2
+        },
+        {
+          "key": "in-flames",
+          "name": "In Flames",
+          "size": 2
+        },
+        {
+          "key": "soen",
+          "name": "Soen",
+          "size": 2
+        },
+        {
+          "key": "amaranthe",
+          "name": "Amaranthe",
+          "size": 2
+        },
+        {
+          "key": "leprous",
+          "name": "Leprous",
+          "size": 2
+        },
+        {
+          "key": "municipal-waste",
+          "name": "Municipal Waste",
+          "size": 2
+        },
+        {
+          "key": "death-angel",
+          "name": "Death Angel",
+          "size": 2
+        },
+        {
+          "key": "mind-driller",
+          "name": "Mind Driller",
+          "size": 2
+        },
+        {
+          "key": "king-diamond",
+          "name": "King Diamond",
+          "size": 2
+        },
+        {
+          "key": "blind-guardian",
+          "name": "Blind Guardian",
+          "size": 2
+        },
+        {
+          "key": "scorpions",
+          "name": "Scorpions",
+          "size": 2
+        },
+        {
+          "key": "till-lindemann",
+          "name": "Till Lindemann",
+          "size": 2
+        },
+        {
+          "key": "stryper",
+          "name": "Stryper",
+          "size": 2
+        },
+        {
+          "key": "leprous",
+          "name": "Leprous",
+          "size": 2
+        },
+        {
+          "key": "municipal-waste",
+          "name": "Municipal Waste",
+          "size": 2
+        },
+        {
+          "key": "death-angel",
+          "name": "Death Angel",
+          "size": 2
+        },
+        {
+          "key": "hitten",
+          "name": "Hitten",
+          "size": 2
+        },
+        {
+          "key": "mind-driller",
+          "name": "Mind Driller",
+          "size": 2
         }
       ],
       "ticketPrice": 195
@@ -5594,12 +5794,12 @@
         {
           "key": "in-flames",
           "name": "In Flames",
-          "size": 3
+          "size": 2
         },
         {
           "key": "godsmack",
           "name": "Godsmack",
-          "size": 3
+          "size": 2
         },
         {
           "key": "heaven-shall-burn",
@@ -5619,12 +5819,12 @@
         {
           "key": "holocausto-canibal",
           "name": "Holocausto Canibal",
-          "size": 2
+          "size": 1
         },
         {
           "key": "filii-nigrantium-infernalium",
           "name": "Filii Nigrantium Infernalium",
-          "size": 2
+          "size": 1
         },
         {
           "key": "rivetskull",
@@ -6414,6 +6614,26 @@
           "key": "saxon",
           "name": "Saxon",
           "size": 1
+        },
+        {
+          "key": "carpenter-brut",
+          "name": "Carpenter Brut",
+          "size": 1
+        },
+        {
+          "key": "aa-williams",
+          "name": "A.a. Williams",
+          "size": 1
+        },
+        {
+          "key": "priest",
+          "name": "Priest",
+          "size": 1
+        },
+        {
+          "key": "kent-osborne",
+          "name": "Kent Osborne",
+          "size": 1
         }
       ],
       "ticketPrice": 269
@@ -6647,6 +6867,11 @@
           "key": "marilyn-manson",
           "name": "Marilyn Manson",
           "size": 3
+        },
+        {
+          "key": "alestorm",
+          "name": "Alestorm",
+          "size": 1
         }
       ],
       "ticketPrice": 105
@@ -6922,12 +7147,12 @@
         {
           "key": "papa-roach",
           "name": "Papa Roach",
-          "size": 2
+          "size": 3
         },
         {
           "key": "the-offspring",
           "name": "The Offspring",
-          "size": 2
+          "size": 3
         },
         {
           "key": "rise-against",
@@ -6937,7 +7162,7 @@
         {
           "key": "all-time-low",
           "name": "All Time Low",
-          "size": 2
+          "size": 3
         },
         {
           "key": "bury-tomorrow",
@@ -6977,7 +7202,7 @@
         {
           "key": "a-day-to-remember",
           "name": "A Day To Remember",
-          "size": 2
+          "size": 3
         }
       ],
       "ticketPrice": 239
@@ -7015,17 +7240,17 @@
         {
           "key": "trivium",
           "name": "Trivium",
-          "size": 2
+          "size": 3
         },
         {
           "key": "pod",
           "name": "P.o.d.",
-          "size": 2
+          "size": 3
         },
         {
           "key": "stam1na",
           "name": "Stam1na",
-          "size": 2
+          "size": 3
         },
         {
           "key": "blood-incantation",
@@ -7283,167 +7508,167 @@
         {
           "key": "airbourne",
           "name": "Airbourne",
-          "size": 1
+          "size": 3
         },
         {
           "key": "avatar",
           "name": "Avatar",
-          "size": 1
+          "size": 3
         },
         {
           "key": "black-label-society",
           "name": "Black Label Society",
-          "size": 1
+          "size": 3
         },
         {
           "key": "crypta",
           "name": "Crypta",
-          "size": 1
+          "size": 3
         },
         {
           "key": "danko-jones",
           "name": "Danko Jones",
-          "size": 1
+          "size": 3
         },
         {
           "key": "die-apokalyptischen-reiter",
           "name": "Die Apokalyptischen Reiter",
-          "size": 1
+          "size": 3
         },
         {
           "key": "dogma",
           "name": "Dogma",
-          "size": 1
+          "size": 3
         },
         {
           "key": "doro",
           "name": "Doro",
-          "size": 1
+          "size": 3
         },
         {
           "key": "drone",
           "name": "Drone",
-          "size": 1
+          "size": 3
         },
         {
           "key": "ensiferum",
           "name": "Ensiferum",
-          "size": 1
+          "size": 3
         },
         {
           "key": "feuerschwanz",
           "name": "Feuerschwanz",
-          "size": 1
+          "size": 3
         },
         {
           "key": "fiddlers-green",
           "name": "Fiddler’s Green",
-          "size": 1
+          "size": 3
         },
         {
           "key": "hmatom",
           "name": "Hämatom",
-          "size": 1
+          "size": 3
         },
         {
           "key": "harakiri-for-the-sky",
           "name": "Harakiri For The Sky",
-          "size": 1
+          "size": 3
         },
         {
           "key": "heavysaurus",
           "name": "Heavysaurus",
-          "size": 1
+          "size": 3
         },
         {
           "key": "hiraes",
           "name": "Hiraes",
-          "size": 1
+          "size": 3
         },
         {
           "key": "kreator",
           "name": "Kreator",
-          "size": 1
+          "size": 3
         },
         {
           "key": "majestica",
           "name": "Majestica",
-          "size": 1
+          "size": 3
         },
         {
           "key": "mittel-alta",
           "name": "Mittel Alta",
-          "size": 1
+          "size": 3
         },
         {
           "key": "necrotted",
           "name": "Necrotted",
-          "size": 1
+          "size": 3
         },
         {
           "key": "pod",
           "name": "P.o.d.",
-          "size": 1
+          "size": 3
         },
         {
           "key": "paradise-lost",
           "name": "Paradise Lost",
-          "size": 1
+          "size": 3
         },
         {
           "key": "rauhbein",
           "name": "Rauhbein",
-          "size": 1
+          "size": 3
         },
         {
           "key": "rodeo-5000",
           "name": "Rodeo 5000",
-          "size": 1
+          "size": 3
         },
         {
           "key": "sagenbringer",
           "name": "Sagenbringer",
-          "size": 1
+          "size": 3
         },
         {
           "key": "soen",
           "name": "Soen",
-          "size": 1
+          "size": 3
         },
         {
           "key": "steve-n-seagulls",
           "name": "Steve N Seagulls",
-          "size": 1
+          "size": 3
         },
         {
           "key": "tailgunner",
           "name": "Tailgunner",
-          "size": 1
+          "size": 3
         },
         {
           "key": "the-haunted",
           "name": "The Haunted",
-          "size": 1
+          "size": 3
         },
         {
           "key": "tungsten",
           "name": "Tungsten",
-          "size": 1
+          "size": 3
         },
         {
           "key": "walls-of-jericho",
           "name": "Walls Of Jericho",
-          "size": 1
+          "size": 3
         },
         {
           "key": "warmen",
           "name": "Warmen",
-          "size": 1
+          "size": 3
         },
         {
           "key": "watch-me-rise",
           "name": "Watch Me Rise",
-          "size": 1
+          "size": 3
         }
       ],
       "ticketPrice": 194
@@ -7466,7 +7691,7 @@
         {
           "key": "200-stab-wounds",
           "name": "200 Stab Wounds",
-          "size": 1
+          "size": 3
         },
         {
           "key": "cold-snap",
@@ -7476,7 +7701,7 @@
         {
           "key": "godsmack",
           "name": "Godsmack",
-          "size": 1
+          "size": 3
         },
         {
           "key": "lone-survivors",
@@ -7486,7 +7711,7 @@
         {
           "key": "slaughter-to-prevail",
           "name": "Slaughter To Prevail",
-          "size": 2
+          "size": 3
         },
         {
           "key": "within-temptation",
@@ -7511,12 +7736,12 @@
         {
           "key": "battlesnake",
           "name": "Battlesnake",
-          "size": 1
+          "size": 3
         },
         {
           "key": "chelsea-grin",
           "name": "Chelsea Grin",
-          "size": 2
+          "size": 3
         },
         {
           "key": "cryptopsy",
@@ -7546,12 +7771,12 @@
         {
           "key": "lord-of-the-lost",
           "name": "Lord Of The Lost",
-          "size": 2
+          "size": 3
         },
         {
           "key": "oomph",
           "name": "Oomph!",
-          "size": 1
+          "size": 3
         },
         {
           "key": "rectal-smegma",
@@ -7561,12 +7786,12 @@
         {
           "key": "sanguisugabogg",
           "name": "Sanguisugabogg",
-          "size": 1
+          "size": 3
         },
         {
           "key": "textures",
           "name": "Textures",
-          "size": 2
+          "size": 3
         },
         {
           "key": "voivod",
@@ -7576,112 +7801,112 @@
         {
           "key": "alcest",
           "name": "Alcest",
-          "size": 2
+          "size": 3
         },
         {
           "key": "basaalt",
           "name": "Basaalt",
-          "size": 3
+          "size": 2
         },
         {
           "key": "bloodbath",
           "name": "Bloodbath",
-          "size": 1
+          "size": 2
         },
         {
           "key": "bruit",
           "name": "Bruit≤",
-          "size": 3
+          "size": 2
         },
         {
           "key": "cage-fight",
           "name": "Cage Fight",
-          "size": 2
+          "size": 3
         },
         {
           "key": "emperor",
           "name": "Emperor",
-          "size": 2
+          "size": 3
         },
         {
           "key": "ill-nino",
           "name": "Ill Nino",
-          "size": 3
+          "size": 2
         },
         {
           "key": "john-cxnnor",
           "name": "John Cxnnor",
-          "size": 3
+          "size": 2
         },
         {
           "key": "mass-hysteria",
           "name": "Mass Hysteria",
-          "size": 2
+          "size": 3
         },
         {
           "key": "miracle-of-sound",
           "name": "Miracle Of Sound",
-          "size": 2
+          "size": 3
         },
         {
           "key": "monde-de-merde",
           "name": "Monde De Merde",
-          "size": 3
+          "size": 2
         },
         {
           "key": "nevermore",
           "name": "Nevermore",
-          "size": 3
+          "size": 2
         },
         {
           "key": "sacred-reich",
           "name": "Sacred Reich",
-          "size": 3
+          "size": 2
         },
         {
           "key": "shady-fat-kats",
           "name": "Shady Fat Kats",
-          "size": 3
+          "size": 2
         },
         {
           "key": "svinkels-family-friends",
           "name": "Svinkels Family \u0026 Friends",
-          "size": 3
+          "size": 2
         },
         {
           "key": "urne",
           "name": "Urne",
-          "size": 2
+          "size": 3
         },
         {
           "key": "visions-of-atlantis",
           "name": "Visions Of Atlantis",
-          "size": 2
+          "size": 3
         },
         {
           "key": "death-angel",
           "name": "Death Angel",
-          "size": 1
+          "size": 3
         },
         {
           "key": "kittie",
           "name": "Kittie",
-          "size": 1
+          "size": 3
         },
         {
           "key": "municipal-waste",
           "name": "Municipal Waste",
-          "size": 1
+          "size": 3
         },
         {
           "key": "master-boot-record",
           "name": "Master Boot Record",
-          "size": 2
+          "size": 3
         },
         {
           "key": "soen",
           "name": "Soen",
-          "size": 2
+          "size": 3
         },
         {
           "key": "frog-leap",
@@ -7746,7 +7971,7 @@
         {
           "key": "eihwar",
           "name": "Eihwar",
-          "size": 2
+          "size": 3
         },
         {
           "key": "gaerea",
@@ -7756,7 +7981,7 @@
         {
           "key": "guineapig",
           "name": "Guineapig",
-          "size": 2
+          "size": 3
         },
         {
           "key": "heretoir",
@@ -7766,7 +7991,7 @@
         {
           "key": "iotunn",
           "name": "Iotunn",
-          "size": 2
+          "size": 3
         },
         {
           "key": "judas-priest",
@@ -7806,7 +8031,7 @@
         {
           "key": "skaphos",
           "name": "Skaphos",
-          "size": 2
+          "size": 3
         },
         {
           "key": "emporor",
@@ -7919,7 +8144,7 @@
         {
           "key": "zsk",
           "name": "Zsk",
-          "size": 2
+          "size": 1
         },
         {
           "key": "dominum",
@@ -7929,17 +8154,17 @@
         {
           "key": "deafheaven",
           "name": "Deafheaven",
-          "size": 2
+          "size": 1
         },
         {
           "key": "vended",
           "name": "Vended",
-          "size": 2
+          "size": 1
         },
         {
           "key": "gutalax",
           "name": "Gutalax",
-          "size": 2
+          "size": 1
         },
         {
           "key": "black-label-society",
@@ -8538,7 +8763,7 @@
         {
           "key": "overkill",
           "name": "Overkill",
-          "size": 1
+          "size": 3
         },
         {
           "key": "death-angel",
@@ -8588,7 +8813,7 @@
         {
           "key": "nailbomb",
           "name": "Nailbomb",
-          "size": 1
+          "size": 3
         },
         {
           "key": "fleshgod-apocalypse",
@@ -8603,7 +8828,7 @@
         {
           "key": "hellripper",
           "name": "Hellripper",
-          "size": 1
+          "size": 3
         },
         {
           "key": "hanabie",
@@ -8673,7 +8898,7 @@
         {
           "key": "castle-rat",
           "name": "Castle Rat",
-          "size": 1
+          "size": 3
         },
         {
           "key": "insanity-alert",
@@ -8693,52 +8918,52 @@
         {
           "key": "fear-factory",
           "name": "Fear Factory",
-          "size": 1
+          "size": 3
         },
         {
           "key": "paradise-lost",
           "name": "Paradise Lost",
-          "size": 1
+          "size": 3
         },
         {
           "key": "ministry",
           "name": "Ministry",
-          "size": 1
+          "size": 3
         },
         {
           "key": "kublai-khan-tx",
           "name": "Kublai Khan Tx",
-          "size": 1
+          "size": 3
         },
         {
           "key": "ne-obliviscaris",
           "name": "Ne Obliviscaris",
-          "size": 1
+          "size": 3
         },
         {
           "key": "conjurer",
           "name": "Conjurer",
-          "size": 1
+          "size": 3
         },
         {
           "key": "wraith",
           "name": "Wraith",
-          "size": 1
+          "size": 3
         },
         {
           "key": "terrifier",
           "name": "Terrifier",
-          "size": 1
+          "size": 3
         },
         {
           "key": "phantom-elite",
           "name": "Phantom Elite",
-          "size": 1
+          "size": 3
         },
         {
           "key": "pothamus",
           "name": "Pothamus",
-          "size": 1
+          "size": 3
         },
         {
           "key": "within-temptation",
@@ -8748,7 +8973,7 @@
         {
           "key": "gojira",
           "name": "Gojira",
-          "size": 2
+          "size": 3
         },
         {
           "key": "i-prevail",
@@ -8793,37 +9018,37 @@
         {
           "key": "ronker",
           "name": "Ronker",
-          "size": 2
+          "size": 3
         },
         {
           "key": "kerry-king",
           "name": "Kerry King",
-          "size": 1
+          "size": 3
         },
         {
           "key": "primus",
           "name": "Primus",
-          "size": 2
+          "size": 3
         },
         {
           "key": "sanguisugabogg",
           "name": "Sanguisugabogg",
-          "size": 2
+          "size": 3
         },
         {
           "key": "revocation",
           "name": "Revocation",
-          "size": 2
+          "size": 3
         },
         {
           "key": "self-deception",
           "name": "Self Deception",
-          "size": 2
+          "size": 3
         },
         {
           "key": "necrot",
           "name": "Necrot",
-          "size": 2
+          "size": 3
         }
       ],
       "ticketPrice": 159
@@ -8861,37 +9086,37 @@
         {
           "key": "alice-cooper",
           "name": "Alice Cooper",
-          "size": 2
+          "size": 3
         },
         {
           "key": "twisted-sister",
           "name": "Twisted Sister",
-          "size": 2
+          "size": 3
         },
         {
           "key": "anthrax",
           "name": "Anthrax",
-          "size": 2
+          "size": 3
         },
         {
           "key": "mayhem",
           "name": "Mayhem",
-          "size": 2
+          "size": 3
         },
         {
           "key": "dumdum-boys",
           "name": "Dumdum Boys",
-          "size": 1
+          "size": 3
         },
         {
           "key": "raga-rockers",
           "name": "Raga Rockers",
-          "size": 1
+          "size": 3
         },
         {
           "key": "the-carburetors",
           "name": "The Carburetors",
-          "size": 1
+          "size": 3
         },
         {
           "key": "blood-fire-death",
@@ -8901,27 +9126,27 @@
         {
           "key": "kublai-khan-tx",
           "name": "Kublai Khan Tx",
-          "size": 1
+          "size": 3
         },
         {
           "key": "die-spitz",
           "name": "Die Spitz",
-          "size": 1
+          "size": 3
         },
         {
           "key": "queensrche",
           "name": "Queensrÿche",
-          "size": 1
+          "size": 3
         },
         {
           "key": "blood-incantation",
           "name": "Blood Incantation",
-          "size": 1
+          "size": 3
         },
         {
           "key": "yungblud",
           "name": "Yungblud",
-          "size": 0
+          "size": 3
         },
         {
           "key": "the-offspring",
@@ -8931,12 +9156,12 @@
         {
           "key": "a-perfect-circle",
           "name": "A Perfect Circle",
-          "size": 0
+          "size": 3
         },
         {
           "key": "tom-morello",
           "name": "Tom Morello",
-          "size": 0
+          "size": 3
         },
         {
           "key": "babymetal",
@@ -8956,12 +9181,12 @@
         {
           "key": "the-pretty-reckless",
           "name": "The Pretty Reckless",
-          "size": 0
+          "size": 3
         },
         {
           "key": "black-label-society",
           "name": "Black Label Society",
-          "size": 0
+          "size": 3
         },
         {
           "key": "apocalyptica",
@@ -8971,7 +9196,7 @@
         {
           "key": "death-to-all",
           "name": "Death To All",
-          "size": 0
+          "size": 3
         },
         {
           "key": "audrey-horne",
@@ -8981,17 +9206,17 @@
         {
           "key": "elder",
           "name": "Elder",
-          "size": 0
+          "size": 3
         },
         {
           "key": "gatecreeper",
           "name": "Gatecreeper",
-          "size": 0
+          "size": 3
         },
         {
           "key": "gaerea",
           "name": "Gaerea",
-          "size": 0
+          "size": 3
         },
         {
           "key": "bfd",
@@ -9006,22 +9231,22 @@
         {
           "key": "the-hives",
           "name": "The Hives",
-          "size": 1
+          "size": 3
         },
         {
           "key": "sepultura",
           "name": "Sepultura",
-          "size": 1
+          "size": 3
         },
         {
           "key": "leprous",
           "name": "Leprous",
-          "size": 1
+          "size": 3
         },
         {
           "key": "dogstar",
           "name": "Dogstar",
-          "size": 1
+          "size": 3
         },
         {
           "key": "black-debbath",
@@ -9051,12 +9276,42 @@
         {
           "key": "slay-squad",
           "name": "Slay Squad",
-          "size": 1
+          "size": 3
         },
         {
           "key": "ego-kill-talent",
           "name": "Ego Kill Talent",
-          "size": 1
+          "size": 3
+        },
+        {
+          "key": "eivr",
+          "name": "Eivør",
+          "size": 3
+        },
+        {
+          "key": "storm",
+          "name": "Storm",
+          "size": 3
+        },
+        {
+          "key": "the-funeral-portrait",
+          "name": "The Funeral Portrait",
+          "size": 3
+        },
+        {
+          "key": "ddr",
+          "name": "Ddr",
+          "size": 3
+        },
+        {
+          "key": "pain",
+          "name": "Pain",
+          "size": 3
+        },
+        {
+          "key": "blood-red-throne",
+          "name": "Blood Red Throne",
+          "size": 3
         }
       ],
       "ticketPrice": 439
