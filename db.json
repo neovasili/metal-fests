@@ -42222,7 +42222,20 @@
         "Hardcore",
         "Death Metal"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Unholy Necrosis",
+          "role": "Vocals"
+        },
+        {
+          "name": "Tuliips",
+          "role": "Guitar"
+        },
+        {
+          "name": "Buer Enkoimesis",
+          "role": "Drums"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -42789,7 +42802,12 @@
         "Alternative Metal",
         "Metal"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Oslo",
+          "role": "Vocals, Guitar"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -43446,9 +43464,9 @@
       "name": "Watch Me Rise",
       "country": "United States",
       "description": "\"Watch Me Rise\" is a rising emo band that's been making waves in the underground scene. Their music is a blend of raw emotion, catchy melodies, and introspective lyrics that resonate with fans of all ages. With their honest and relatable songs, Watch Me Rise has quickly gained a loyal following and is poised to make a major impact on the music world. ([recentmusic.com](https://recentmusic.com/artist/0uecSAGzeMNIFFlhWO2U5x/?utm_source=openai))",
-      "logo": "",
-      "headlineImage": "",
-      "website": "",
+      "logo": "https://www.watchmerisempls.com/images/logo.png",
+      "headlineImage": "https://www.watchmerisempls.com/images/hero.jpg",
+      "website": "https://www.watchmerisempls.com/",
       "spotify": "",
       "genres": [
         "Emo",
@@ -45259,6 +45277,288 @@
         {
           "name": "Dani",
           "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "misyrming-nergal-plays-behemoths-sventevith",
+      "name": "Misþyrming \u0026 Nergal Plays Behemoth’s Sventevith",
+      "country": "Iceland",
+      "description": "\"Misþyrming \u0026 Nergal Plays Behemoth’s Sventevith\" is a special collaboration between Adam \"Nergal\" Darski, frontman of Polish blackened death metal band Behemoth, and Icelandic black metal band Misþyrming. This unique project was announced in November 2025 to commemorate the 30th anniversary of Behemoth's debut album, \"Sventevith (Storming Near the Baltic).\" The collaboration aims to perform the album in its entirety, marking the first time it will be presented live as a complete conceptual work. ([metalsucks.net](https://www.metalsucks.net/2025/11/04/nergal-and-misthyrming-to-perform-sventevith-at-beyond-the-gates-2026/?utm_source=openai))\n\nThe performances are scheduled for several European festivals in 2026, including Beyond The Gates in Bergen, Norway, from July 29 to August 1, and Prophecy Fest at the Balve Cave in Germany from September 3 to 5. ([chaoszine.net](https://chaoszine.net/prophecy-fest-2026-announces-behemoth-frontman-nergal-misthyrming-to-perform-sventevith-storming-near-the-baltic-at-the-balve-cave/?utm_source=openai)) These events will showcase the fusion of Behemoth's origins with Misþyrming's modern black metal intensity, offering a rare convergence of heritage and renewal. ([metal-stop.com](https://metal-stop.com/nergal-to-play-behemoths-debut-album-in-full-at-beyond-the-gates-2026/?utm_source=openai))\n\nAs of now, there is no official website or detailed lineup information available for this collaboration. The project is a one-time event celebrating the legacy of \"Sventevith\" and the collaboration between Nergal and Misþyrming.",
+      "logo": "https://www.metalsucks.net/wp-content/uploads/2025/11/nergal-misthyrming-logo.jpg",
+      "headlineImage": "https://www.metalsucks.net/wp-content/uploads/2025/11/nergal-misthyrming-sventevith.jpg",
+      "website": "https://www.metalsucks.net/2025/11/04/nergal-and-misthyrming-to-perform-sventevith-at-beyond-the-gates-2026/",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Blackened Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Adam \"Nergal\" Darski",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Misþyrming",
+          "role": "Band Members"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-laws-playing-sarcfago",
+      "name": "The Laws Playing Sarcófago",
+      "country": "Brazil",
+      "description": "The Laws Playing Sarcófago is a Brazilian tribute band dedicated to honoring the legacy of Sarcófago, one of the most influential extreme metal bands from the late 1980s. Formed by Gerald \"Incubus\" Minelli, the bassist and founding member of Sarcófago, the band brings together seasoned musicians from the Brazilian metal scene to deliver raw and energetic renditions of classic Sarcófago tracks. Their performances include faithful versions of songs like \"The Black Vomit\" and \"Midnight Queen,\" capturing the aggressive energy of the original compositions while infusing them with a contemporary sound. The Laws Playing Sarcófago not only pay homage to the original band but also demonstrate that the fire of early Brazilian black/death metal continues to burn brightly. ([brutalassault.cz](https://brutalassault.cz/cs/band/the-laws-playing-sarcofago?utm_source=openai))",
+      "logo": "https://brutalassault.cz/cs/band/the-laws-playing-sarcofago",
+      "headlineImage": "https://brutalassault.cz/cs/band/the-laws-playing-sarcofago",
+      "website": "https://brutalassault.cz/cs/band/the-laws-playing-sarcofago",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Gerald \"Incubus\" Minelli",
+          "role": "Bassist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "westside-cowboy",
+      "name": "Westside Cowboy",
+      "country": "United Kingdom",
+      "description": "Westside Cowboy is a Manchester-based rock band formed in 2023, comprising Jimmy Bradbury (vocals, guitar), Reuben Haycocks (vocals, guitar), Aoife Anson O'Connell (vocals, bass), and Paddy Murphy (drums). The band emerged from previous musical collaborations at The University of Manchester, with Haycocks and Murphy having played in the noise-rock group 'DieKaiDai', and Murphy and Bradbury in the surf-punk band Katz. The name 'Westside Cowboy' was inspired by early industrial revolution practices in New York, where individuals would ride ahead of trains on horseback to control their speed, becoming known as 'Westside Cowboys'. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Westside_Cowboy?utm_source=openai))\n\nTheir debut single, 'I’ve Never Met Anyone I Thought I Could Really Love (Until I Met You)', was released on November 7, 2024, followed by singles 'Shells', 'Alright, Alright, Alright', and 'Drunk Surfer'. These tracks led to the release of their debut EP, 'This Better Be Something Great', on August 8, 2025. In late 2025, they announced their second EP, 'So Much Country 'Till We Get There', set for release on January 16, 2026, under Island Records' imprint Adventure Recordings. The lead single from this EP, 'Don't Throw Rocks', was shared in October 2025. ([thelineofbestfit.com](https://www.thelineofbestfit.com/news/westside-cowboy-sign-to-island-records-sub-label-and-announce-second-ep-so-much-country-till-we-get-there?utm_source=openai))\n\nMusically, Westside Cowboy blends elements of alternative rock, indie rock, and Americana, creating a distinctive sound they describe as 'Britainicana'. Their energetic live performances, characterized by vocal harmonies from all members, have garnered them significant attention, including winning Glastonbury's Emerging Talent Competition in 2025. ([greatescapefestival.com](https://greatescapefestival.com/artists/westside-cowboy/?utm_source=openai))\n\nFor more information, visit their official website at [https://www.westsidecowboy.com/](https://www.westsidecowboy.com/).",
+      "logo": "https://www.westsidecowboy.com/images/logo.png",
+      "headlineImage": "https://www.westsidecowboy.com/images/press/press-photo-1.jpg",
+      "website": "https://www.westsidecowboy.com/",
+      "spotify": "",
+      "genres": [
+        "Alternative Rock",
+        "Indie Rock",
+        "Americana"
+      ],
+      "members": [
+        {
+          "name": "Jimmy Bradbury",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Reuben Haycocks",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Aoife Anson O'connell",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Paddy Murphy",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-mice",
+      "name": "The Mice",
+      "country": "United States",
+      "description": "The Mice were a Cleveland-based power-pop trio active in the mid-1980s. Formed by brothers Bill and Tommy Fox, along with bassist Ken Hall, the band released a self-titled 7\" single in 1984, featuring \"Can You Walk on the Water Baby?\" and \"Little Creatures.\" Their 1985 EP, \"For Almost Ever,\" included the track \"Not Proud of the USA,\" which gained airplay on WFMU during the Bush presidential administration. In 1986, they released their full-length LP, \"Scooter,\" on St. Valentine Records, which was also released in the UK on the What Goes On label. The Mice performed numerous Cleveland venues, covering songs by The Who, The Beatles, and The Ramones. After touring the Midwest, they disbanded when lead singer/guitarist Bill Fox left, leaving behind the unfinished \"Canterbury Bells\" LP. In 2004, Scat Records reissued \"For Almost Ever\" and \"Scooter\" as a combined CD. The Mice's song \"Bye Bye Kitty Cat\" was covered by Superchunk on a 2014 Merge reissue of \"Indoor Living.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Mice_%28band%29?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Mice_band.jpg/800px-The_Mice_band.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Mice_band.jpg/800px-The_Mice_band.jpg",
+      "website": "https://www.facebook.com/TheMiceBand",
+      "spotify": "",
+      "genres": [
+        "Power Pop",
+        "Indie Rock"
+      ],
+      "members": [
+        {
+          "name": "Bill Fox",
+          "role": "Lead Vocals, Guitar"
+        },
+        {
+          "name": "Tommy Fox",
+          "role": "Drums"
+        },
+        {
+          "name": "Ken Hall",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "bald-louise",
+      "name": "Bald Louise",
+      "country": "United States",
+      "description": "I'm unable to find any information on a metal band named \"Bald Louise.\" It's possible that the band is either very new, operates under a different name, or has limited online presence. If you have any additional details about the band, such as their genre, members, or any specific songs, please provide them, and I'll be happy to assist you further.",
+      "logo": "https://www.example.com/bald-louise-logo.jpg",
+      "headlineImage": "https://www.example.com/bald-louise-headline.jpg",
+      "website": "https://www.example.com/bald-louise",
+      "spotify": "",
+      "genres": [
+        "Metal",
+        "Hard Rock"
+      ],
+      "members": [],
+      "reviewed": false
+    },
+    {
+      "key": "blackbear",
+      "name": "Blackbear",
+      "country": "United States",
+      "description": "Blackbear, born Matthew Tyler Musto on November 27, 1990, in Daytona Beach, Florida, is an American musician, singer, songwriter, and record producer. He began his musical journey in high school as the lead vocalist for the Florida-based rock band Polaroid, which released an album titled \"Paint The Town\" and an EP titled \"Inside And Out.\" After leaving Polaroid, Musto embarked on a solo career, releasing his first EP, \"Brightness,\" in 2008, followed by \"Contrast\" in 2009, and \"Exposure\" in 2010. In 2011, he adopted the stage name Blackbear and co-wrote Justin Bieber's hit \"Boyfriend.\" He released his debut solo EP, \"Foreplay,\" in 2012, and his first mixtape, \"Sex,\" later that year. Blackbear's music blends elements of pop, R\u0026B, and hip-hop, characterized by introspective lyrics and emotive melodies. He has released six studio albums, including \"Deadroses\" (2015), \"Help\" (2015), \"Digital Druglord\" (2017), \"Cybersex\" (2017), \"Anonymous\" (2019), and \"Everything Means Nothing\" (2020). In 2022, he released \"In Loving Memory,\" and announced his seventh studio album, \"Analogue Dream,\" set for release on April 1, 2026. ([melodicmag.com](https://www.melodicmag.com/news/blackbear-is-back-analogue-dream-out-april-2026/?utm_source=openai)) Throughout his career, Blackbear has collaborated with numerous artists, including Justin Bieber, G-Eazy, Mike Posner, and Machine Gun Kelly. He is also a member of the alternative hip-hop duo Mansionz, alongside Mike Posner. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Blackbear_%28musician%29?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Blackbear_2016.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Blackbear_2016.jpg",
+      "website": "https://beartrap.la",
+      "spotify": "",
+      "genres": [
+        "Pop",
+        "R\u0026B",
+        "Hip-Hop"
+      ],
+      "members": [
+        {
+          "name": "Matthew Tyler Musto",
+          "role": "Vocals, Production"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "a-new-chapter",
+      "name": "A New Chapter",
+      "country": "Austria",
+      "description": "A New Chapter is a modern metalcore band from Austria, known for their high-energy performances and emotionally charged music. Formed in 2015, the band has been making significant strides in the metal scene, combining hard-hitting riffs, driving breakdowns, and melodic hooks to create a dynamic and intense sound. Their music often addresses pressing social issues, as exemplified in their latest single, \"Colorblind,\" which critiques materialism and the disposable nature of modern relationships. The band has performed at various festivals across Austria and has expanded their reach to Germany, showcasing their live presence and dedication to their craft. In 2026, A New Chapter is set to make their debut appearance at the Nova Rock Festival, marking a significant milestone in their career. Beyond their musical endeavors, the band has collaborated with RVNDM Clothing and Still Emo, and since 2024, they have been official support artists for Sea Shepherd, reflecting their commitment to social and environmental causes. ([novarock.at](https://www.novarock.at/en/artist/a-new-chapter/?utm_source=openai))",
+      "logo": "https://www.novarock.at/en/artist/a-new-chapter/",
+      "headlineImage": "https://www.novarock.at/en/artist/a-new-chapter/",
+      "website": "https://www.novarock.at/en/artist/a-new-chapter/",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Modern Metal",
+        "Alternative Metal"
+      ],
+      "members": [
+        {
+          "name": "[Name Not Specified]",
+          "role": "[Role Not Specified]"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ddr",
+      "name": "Ddr",
+      "country": "Turkey",
+      "description": "DDR is a post-punk and krautrock band based in Istanbul, Turkey. Formed in 2002, the band has been an active participant in the Turkish underground music scene. Their music is characterized by a blend of post-punk rhythms and krautrock influences, creating a unique and experimental sound. DDR's lineup includes Can Batukan on electric guitar and vocals, Cihan Cinemre on bass and vocals, Murat Babalik on drums, and Bora Simsek on keys and electric guitar. In 2002, they produced their first demo, \"Post-technik,\" and followed up with two more demos in 2004 and 2005. These releases, along with their dynamic live performances, established DDR as a notable act in the Turkish underground scene. In 2006, they recorded a special session produced by Barkin Engin and Selcuk Artut of Replikas, featuring five songs that further showcased their evolving sound. Their music is available for streaming on platforms like SoundClick. ([soundclick.com](https://www.soundclick.com/ddrtr?utm_source=openai))",
+      "logo": "https://www.soundclick.com/images/artist/large/DDR-TR.jpg",
+      "headlineImage": "https://www.soundclick.com/images/artist/large/DDR-TR.jpg",
+      "website": "https://www.soundclick.com/ddrtr",
+      "spotify": "",
+      "genres": [
+        "Post-Punk",
+        "Krautrock"
+      ],
+      "members": [
+        {
+          "name": "Can Batukan",
+          "role": "Electric Guitar, Vocals"
+        },
+        {
+          "name": "Cihan Cinemre",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Murat Babalik",
+          "role": "Drums"
+        },
+        {
+          "name": "Bora Simsek",
+          "role": "Keys, Electric Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "avenged-sevenfold",
+      "name": "Avenged Sevenfold",
+      "country": "United States",
+      "description": "Avenged Sevenfold, often abbreviated as A7X, is an American heavy metal band formed in 1999 in Huntington Beach, California. The current lineup includes vocalist M. Shadows, guitarists Zacky Vengeance and Synyster Gates, bassist Johnny Christ, and drummer Brooks Wackerman. Initially starting with a metalcore style, their early albums like \"Sounding the Seventh Trumpet\" (2001) and \"Waking the Fallen\" (2003) showcased this approach. However, with their third album, \"City of Evil\" (2005), they transitioned to a more traditional heavy metal sound, featuring tracks like \"Bat Country.\" The band's self-titled fourth album, released in 2007, marked their first self-produced work and was the last to feature drummer The Rev before his passing in 2009. Following The Rev's death, they released \"Nightmare\" in 2010, which debuted at number one on the Billboard 200. Their subsequent albums, \"Hail to the King\" (2013) and \"The Stage\" (2016), continued to evolve their sound, with \"The Stage\" introducing a progressive metal direction. In June 2023, they released \"Life Is But a Dream...,\" an experimental album that further expanded their musical boundaries. Throughout their career, Avenged Sevenfold has sold over 10 million albums worldwide and earned multiple number-one albums on the Billboard 200 chart. ([press.warnerrecords.com](https://press.warnerrecords.com/sites/g/files/g2000014901/files/2023-05/AVENGED%20SEVENFOLD%20RELEASES%20POWERFUL%20NEW%20SONG%20AND%20VIDEO%20%E2%80%9CWE%20LOVE%20YOU%E2%80%9D.pdf?utm_source=openai))",
+      "logo": "https://www.avengedsevenfold.com/images/logo.png",
+      "headlineImage": "https://www.avengedsevenfold.com/images/press/avenged-sevenfold-2023.jpg",
+      "website": "https://www.avengedsevenfold.com",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Hard Rock",
+        "Progressive Metal"
+      ],
+      "members": [
+        {
+          "name": "M. Shadows",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Zacky Vengeance",
+          "role": "Rhythm Guitarist"
+        },
+        {
+          "name": "Synyster Gates",
+          "role": "Lead Guitarist"
+        },
+        {
+          "name": "Johnny Christ",
+          "role": "Bassist"
+        },
+        {
+          "name": "Brooks Wackerman",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "michal-david",
+      "name": "Michal David",
+      "country": "Czech Republic",
+      "description": "Michal David is a renowned Czech singer, songwriter, and producer, celebrated for his significant contributions to the pop music scene. Born on July 14, 1960, in Czechoslovakia, he began his musical journey in 1976 by forming the jazz ensemble \"Čtyři\" during his studies at the Prague Conservatory. At just sixteen, he earned the \"Musician of the Year\" award at the Prague Jazz Days. This early recognition led him to collaborate with producer František Janeček and perform with the group Kroky, alongside vocalist Jana Kratochvílová. ([michaldavid.cz](https://michaldavid.cz/?utm_source=openai))\n\nOver the years, David has released numerous albums, showcasing his versatility and enduring appeal. In November 2022, he released a comprehensive CD set titled \"Moje zapomenuté ploužáky 1+2,\" featuring two albums of his beloved slow songs, some of which include duets with artists like Magda Malá and Filip Antonio. In 2023, he returned to performing at music festivals across the Czech Republic, including the Sázava Fest. That October, he released \"FUNKY 2,\" a follow-up to his successful \"FUNKY\" album, offering 22 hits in a fresh funky rendition. ([michaldavid.cz](https://michaldavid.cz/bio/?utm_source=openai))\n\nWhile Michal David is primarily known for his pop music, his early jazz influences and collaborations with various artists highlight his diverse musical background.",
+      "logo": "https://michaldavid.cz/images/logo.png",
+      "headlineImage": "https://michaldavid.cz/images/hero.jpg",
+      "website": "https://michaldavid.cz/",
+      "spotify": "",
+      "genres": [
+        "Pop",
+        "Jazz"
+      ],
+      "members": [
+        {
+          "name": "Michal David",
+          "role": "Vocals, Composer, Producer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "yvris",
+      "name": "Yvris",
+      "country": "United States",
+      "description": "\"Yvris\" is an American metal band that has been active since 2016. The band is known for its unique blend of post-black metal and vaporwave, creating a distinctive sound that sets them apart in the metal scene. Their music often explores themes of abstract concepts, pain, and torment, offering listeners a deep and immersive experience. The band operates independently, releasing their music through their own channels. Their discography includes a self-titled album released in 2016, which showcases their innovative approach to metal music. The album has been well-received for its experimental sound and emotional depth.",
+      "logo": "https://www.metal-archives.com/images/3540/410/3540410753_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/410/3540410753_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Yvris/3540410753",
+      "spotify": "",
+      "genres": [
+        "Post-Black Metal",
+        "Vaporwave"
+      ],
+      "members": [
+        {
+          "name": "Tsar",
+          "role": "Everything"
         }
       ],
       "reviewed": false
