@@ -283,6 +283,7 @@ func addMissingBands(promptTemplate, bandName string, dryRun bool) *UpdateStats 
 		}
 		for i := range result.Members {
 			result.Members[i].Name = data.NormalizeBandName(result.Members[i].Name)
+			result.Members[i].Role = data.NormalizeBandName(result.Members[i].Role)
 		}
 
 		if exists {
