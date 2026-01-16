@@ -2,8 +2,8 @@ name: Festival Information Update
 
 on:
   schedule:
-    # Run every sunday at 6 AM UTC
-    - cron: "0 6 * * 0"
+    # Run every saturday at 6 AM UTC
+    - cron: "0 6 * * 6"
   workflow_dispatch: # Allow manual triggering
 
 permissions:
