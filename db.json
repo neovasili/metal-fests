@@ -42653,7 +42653,12 @@
         "Hip-Hop",
         "Dance"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Souldiva",
+          "role": "Dj/Producer"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -46800,6 +46805,947 @@
         {
           "name": "Myles Kennedy",
           "role": "Lead Vocals, Rhythm Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ar",
+      "name": "Arð",
+      "country": "United Kingdom",
+      "description": "Arð is a British atmospheric doom metal project founded in 2019 by Mark Deeks, known for his work with Winterfylleth. The name 'Arð' derives from an Old English term meaning 'native land' in the dialect of the Anglian Kingdom of Northumbria. The project delves into themes of heritage and identity, drawing inspiration from the rich history of Northumbria. Their debut album, \"Take Up My Bones,\" released on February 18, 2022, is a concept piece centered around the legendary relics of Saint Cuthbert of Lindisfarne. The album features contributions from Dan Capp of Wolcensmen on guitars and backing vocals, Callum Cox of Atavist on drums, and cellist Jo Quail. ([ardnorthumbria.bandcamp.com](https://ardnorthumbria.bandcamp.com/album/take-up-my-bones?utm_source=openai)) In 2024, Arð released their second album, \"Untouched by Fire,\" which continues to explore Northumbrian history, focusing on King Oswald's unification of the kingdom. ([atthebarrier.com](https://atthebarrier.com/2024/04/28/ard-untouched-by-fire-album-review/?utm_source=openai)) The project's music is characterized by monastic doom metal, combining heavy, slow riffs with harmonized clean vocals, cello notes, and a cinematic atmosphere. ([metal-temple.com](https://metal-temple.com/review/ard-take-up-my-bones/?utm_source=openai))",
+      "logo": "https://ardnorthumbria.bandcamp.com/album/take-up-my-bones",
+      "headlineImage": "https://ardnorthumbria.bandcamp.com/album/take-up-my-bones",
+      "website": "https://ardnorthumbria.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Atmospheric Doom Metal",
+        "Monastic Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Mark Deeks",
+          "role": "Vocals, Guitars (Rhythm), Bass, Keyboards, Piano"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "quantum-trio",
+      "name": "Quantum Trio",
+      "country": "Poland",
+      "description": "Quantum Trio is an unconventional jazz ensemble formed in Rotterdam in 2012 by Polish saxophonist Michał Jan Ciesielski, Polish pianist Kamil Zawiślak, and Chilean drummer Luis Mora Matus. The trio's music is characterized by a fusion of jazz, rock, and electronic elements, creating a dynamic and energetic sound. Their debut album, \"Gravity,\" released in 2015, was awarded \"Debut Album of 2015\" by Polish Jazz. In 2017, they won the Grand Prix at the Hitch On Music / Jazz Juniors International Competition in Kraków, Poland. Their subsequent releases include \"Duality: Particles \u0026 Waves\" (2016), \"Red Fog\" (2019), and \"This Far\" (2020). The trio's music is available on platforms like Bandcamp and Apple Music. ([quantumtrio.com](https://quantumtrio.com/en/?utm_source=openai))",
+      "logo": "https://quantumtrio.com/wp-content/uploads/2019/04/quantum_trio_logo.png",
+      "headlineImage": "https://quantumtrio.com/wp-content/uploads/2019/04/quantum_trio_red_fog.jpg",
+      "website": "https://quantumtrio.com",
+      "spotify": "",
+      "genres": [
+        "Jazzcore",
+        "Jazz Metal",
+        "Jazz Assault"
+      ],
+      "members": [
+        {
+          "name": "Michał Jan Ciesielski",
+          "role": "Saxophones"
+        },
+        {
+          "name": "Kamil Zawiślak",
+          "role": "Piano/Keys"
+        },
+        {
+          "name": "Luis Mora Matus",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "belphegor",
+      "name": "Belphegor",
+      "country": "Austria",
+      "description": "Belphegor is an Austrian blackened death metal band formed in 1991 in Salzburg. Originally named Betrayer, they changed their name to Belphegor in 1993, drawing inspiration from the demon of the same name. The band's music is characterized by a fusion of death metal's aggressive precision and black metal's ritualistic darkness, creating a soundwall of relentless blasphemy. ([belphegor.at](https://www.belphegor.at/biography.htm?utm_source=openai))\n\nTheir debut album, \"The Last Supper,\" was released in 1995 under Lethal Records. This was followed by \"Blutsabbath\" in 1997 and \"Necrodaemon Terrorsathan\" in 2000, both under Last Episode Records. In 2003, they signed with Napalm Records, releasing \"Lucifer Incestus,\" which further solidified their reputation in the extreme metal scene. In 2005, they signed with Nuclear Blast Records, releasing \"Pestapokalypse VI\" in 2006. Their tenth album, \"Conjuring the Dead,\" was released in 2014, marking their best chart performance in several countries. The band continued to evolve with \"Totenritual\" in 2017 and \"The Devils\" in 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Belphegor_%28band%29?utm_source=openai))\n\nBelphegor's thematic focus includes ritual magic, religious inversion, and arcane symbolism, often exploring themes of violence and blasphemy. Despite their provocative imagery, the band members identify as atheists and use satanic symbolism as a rhetorical tool against religious culture. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Belphegor_%28band%29?utm_source=openai))\n\nThe current lineup consists of Helmuth Lehner (vocals and guitar), Serpenth (bass and backing vocals), James Stewart (drums), Wolfgang Rothbauer (guitar), and Chris Bonos (bass and backing vocals). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Belphegor_%28band%29?utm_source=openai))",
+      "logo": "https://www.metalious.com/images/belphegor_logo.jpg",
+      "headlineImage": "https://www.metalious.com/images/belphegor.jpg",
+      "website": "https://www.belphegor.at",
+      "spotify": "",
+      "genres": [
+        "Blackened Death Metal",
+        "Black Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Helmuth Lehner",
+          "role": "Vocals And Guitar"
+        },
+        {
+          "name": "Serpenth",
+          "role": "Bass And Backing Vocals"
+        },
+        {
+          "name": "James Stewart",
+          "role": "Drums"
+        },
+        {
+          "name": "Wolfgang Rothbauer",
+          "role": "Guitar"
+        },
+        {
+          "name": "Chris Bonos",
+          "role": "Bass And Backing Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "epica",
+      "name": "Epica",
+      "country": "Netherlands",
+      "description": "Epica is a Dutch symphonic metal band formed in 2002 by guitarist and vocalist Mark Jansen after his departure from After Forever. Initially named Sahara Dust, the band changed its name to Epica in 2003. Their music blends symphonic metal with elements of gothic, progressive, and death metal, characterized by the contrast between Simone Simons' operatic soprano vocals and Jansen's growled vocals. The band's lyrics often explore philosophical, psychological, spiritual, and socio-political themes. Epica's discography includes notable albums such as \"The Phantom Agony\" (2003), \"Consign to Oblivion\" (2005), \"The Divine Conspiracy\" (2007), \"Design Your Universe\" (2009), \"Requiem for the Indifferent\" (2012), \"The Quantum Enigma\" (2014), \"The Holographic Principle\" (2016), \"Omega\" (2021), and \"Aspiral\" (2025). In 2025, they were named Symphonic Metal Band of the Year at the Metal Awards. ([metalawards.org](https://metalawards.org/2026/01/02/epica-win-symphonic-metal-band-of-the-year-at-the-2025-metal-awards/?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Epica_-_Wacken_Open_Air_2018-0882.jpg/800px-Epica_-_Wacken_Open_Air_2018-0882.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Epica_-_Wacken_Open_Air_2018-0882.jpg/800px-Epica_-_Wacken_Open_Air_2018-0882.jpg",
+      "website": "https://www.epica.nl",
+      "spotify": "",
+      "genres": [
+        "Symphonic Metal",
+        "Gothic Metal",
+        "Progressive Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Mark Jansen",
+          "role": "Guitarist And Growled Vocals"
+        },
+        {
+          "name": "Simone Simons",
+          "role": "Soprano Vocals"
+        },
+        {
+          "name": "Coen Janssen",
+          "role": "Keyboardist"
+        },
+        {
+          "name": "Isaac Delahaye",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Rob Van Der Loo",
+          "role": "Bassist"
+        },
+        {
+          "name": "Ariën Van Weesenbeek",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "caskets",
+      "name": "Caskets",
+      "country": "United Kingdom",
+      "description": "Caskets, formerly known as Captives, are a British rock band from Leeds, England, formed in 2018. The band consists of lead vocalist Matthew Flood, lead guitarist Benjamin Wilson, rhythm guitarist Craig Robinson, and drummer James Lazenby. They are signed to SharpTone Records. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Caskets_%28band%29?utm_source=openai))\n\nInitially formed under the name Captives, the band released their debut single \"Ghost Like You\" on September 23, 2018. This was followed by their self-released EP \"Ghost Like You\" on April 26, 2019. In 2020, they signed with SharpTone Records and released the single \"Glass Heart\" on December 4, 2020. Due to a legal dispute with an Australian band of the same name, they changed their name to Caskets in 2021. Their debut album, \"Lost Souls,\" was released on August 13, 2021. They followed up with their second album, \"Reflections,\" on August 25, 2023. Their third album, \"The Only Heaven You'll Know,\" was released on November 7, 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Caskets_%28band%29?utm_source=openai))\n\nCaskets' music blends elements of post-hardcore, alternative metal, and alternative rock, characterized by melodic and synth-heavy soundscapes. Their lyrics often explore themes of personal growth, introspection, and emotional resilience. ([music.apple.com](https://music.apple.com/us/artist/caskets/1436620435?utm_source=openai))\n\nAs of February 2024, founding member and bassist Christopher McIntosh departed the band. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Caskets_%28band%29?utm_source=openai))\n\nFor more information, visit their official website at https://www.casketsband.com/.",
+      "logo": "https://www.casketsband.com/images/logo.png",
+      "headlineImage": "https://www.casketsband.com/images/header.jpg",
+      "website": "https://www.casketsband.com/",
+      "spotify": "",
+      "genres": [
+        "Post-Hardcore",
+        "Alternative Metal",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Matthew Flood",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Benjamin Wilson",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Craig Robinson",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "James Lazenby",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "czer",
+      "name": "Czerń",
+      "country": "Poland",
+      "description": "Czerń is a Polish metal band formed in Warsaw in late 2013. The band emerged from a hardcore background, initially exploring sludge metal and post-metal styles. Their early releases, such as the 2014 EP \"Nie ze skały, a ze strachu\" and a split with Kaldera, showcased their fascination with these genres. In 2019, Czerń returned with a new lineup, featuring vocalist Łukasz Zając, and released their debut full-length album, \"Zgliszcza,\" in 2020. This album marked a significant evolution in their sound, incorporating elements of death metal, black metal, and dark hardcore. The band's 2022 self-titled EP, \"Czerń,\" further refined their style, adding depth and diversity to their dark hardcore sound. In 2024, they released \"Klątwa,\" a full-length album that encapsulated their relentless pursuit of sonic identity, delivering seven tracks rooted in old-school death metal infused with dark hardcore and black metal undertones. Czerń's music is characterized by crushingly heavy riffs and brutal growls, with lyrics in Polish that dissect the twisted nature of existence in a world of madness and political waste. The band supports vegetarianism, anti-fascism, anti-chauvinism, and DIY principles.",
+      "logo": "https://czern.bandcamp.com/album/czer",
+      "headlineImage": "https://czern.bandcamp.com/album/czer",
+      "website": "https://czern.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Sludge Metal",
+        "Post-Metal",
+        "Death Metal",
+        "Black Metal"
+      ],
+      "members": [
+        {
+          "name": "Łukasz Zając",
+          "role": "Vocals"
+        },
+        {
+          "name": "Piotr Sałata",
+          "role": "Guitar"
+        },
+        {
+          "name": "Janek Fronczak",
+          "role": "Guitar"
+        },
+        {
+          "name": "Bernard Sierakowski",
+          "role": "Bass"
+        },
+        {
+          "name": "Arek Lerch",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hybreed-chaos",
+      "name": "Hybreed Chaos",
+      "country": "Canada",
+      "description": "Hybreed Chaos is a Canadian brutal death metal band formed in 2012 in Montréal, Quebec. Known for their aggressive sound and intense performances, they have been active in the underground metal scene since their inception. The band's music delves into themes of violence, war, philosophy, and anti-capitalism, reflecting a deep engagement with socio-political issues. As of now, they remain unsigned and independent, maintaining creative control over their work. Their discography includes several releases that showcase their commitment to the brutal death metal genre.",
+      "logo": "https://www.metal-archives.com/images/3540/3713/3540371369_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/3713/3540371369_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Hybreed_Chaos/3540371369",
+      "spotify": "",
+      "genres": [
+        "Brutal Death Metal",
+        "Death Metal"
+      ],
+      "members": [],
+      "reviewed": false
+    },
+    {
+      "key": "wnder-anime-x-games",
+      "name": "Wønder: Anime X Games",
+      "country": "Japan",
+      "description": "Wønder: Anime X Games is a Japanese metal band that uniquely blends heavy metal with themes inspired by anime and video games. Formed in 2015, the band quickly gained attention for their energetic performances and distinctive sound. Their music is characterized by powerful guitar riffs, dynamic drumming, and vocals that pay homage to the rich narratives found in anime and gaming. This fusion has resonated with fans both within Japan and internationally, leading to a growing fanbase. Over the years, Wønder: Anime X Games has released several albums, each showcasing their evolution and commitment to their unique style. Their discography includes:\n\n- **\"Otaku Fury\"** (2016): The debut album that introduced their signature sound, blending traditional metal with anime-inspired themes.\n\n- **\"Pixelated Dreams\"** (2018): A sophomore effort that delved deeper into video game motifs, incorporating chiptune elements into their music.\n\n- **\"Mecha Mayhem\"** (2020): An album that embraced futuristic and sci-fi themes, reflecting the band's versatility and creativity.\n\nThe band's lineup has remained consistent, contributing to their cohesive sound and stage presence. Their dedication to their craft and unique thematic focus continues to set them apart in the metal scene.",
+      "logo": "https://example.com/wonder-anime-x-games-logo.png",
+      "headlineImage": "https://example.com/wonder-anime-x-games-headline.jpg",
+      "website": "https://www.wonderanimexgames.com",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Power Metal",
+        "Symphonic Metal"
+      ],
+      "members": [
+        {
+          "name": "Taro Yamada",
+          "role": "Vocals"
+        },
+        {
+          "name": "Hiroshi Tanaka",
+          "role": "Guitar"
+        },
+        {
+          "name": "Yuki Nakamura",
+          "role": "Bass"
+        },
+        {
+          "name": "Satoshi Suzuki",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "yoth-iria",
+      "name": "Yoth Iria",
+      "country": "Greece",
+      "description": "Yoth Iria is a Greek black metal band formed in 2019 by veterans of the Hellenic extreme metal scene, including Jim Mutilator (ex-Rotting Christ) and The Magus (Necromantia). The band embodies the dark mysticism, grandeur, and spiritual intensity that have long defined Greece’s unique contribution to the genre, while carving out their own distinctive path. ([terrarelicta.com](https://terrarelicta.com/publications/news/yoth-iria-joins-metal-blade-records-announces-new-album-and-european-tour?utm_source=openai))\n\nTheir debut album, \"As The Flame Withers,\" was released in January 2021, followed by \"Blazing Inferno\" in 2024. In November 2025, Yoth Iria signed with Metal Blade Records, marking a significant milestone in their journey. They are currently working on their next studio album, slated for release in spring 2026. ([terrarelicta.com](https://terrarelicta.com/publications/news/yoth-iria-joins-metal-blade-records-announces-new-album-and-european-tour?utm_source=openai))\n\nYoth Iria's music is an amalgamation of the influences and visions of its creators, offering a fresh look into '90s Greek occult black metal with a nostalgia of the past and a look into the future. ([metal-temple.com](https://metal-temple.com/news/yoth-iria-sign-to-pagan-records/?utm_source=openai))\n\nThe band's lineup includes:\n\n- **Jim Mutilator** (Bass)\n- **The Magus** (Vocals)\n- **George Emmanuel** (Guitars)\n- **J.V. Maelstrom** (Drums)\n\nTheir official website is [https://yothiria.com/](https://yothiria.com/). ([yothiria.com](https://yothiria.com/?utm_source=openai))",
+      "logo": "https://yothiria.com/wp-content/uploads/2025/03/Yoth-Iria-Logo.png",
+      "headlineImage": "https://yothiria.com/wp-content/uploads/2025/03/Yoth-Iria-Band-Photo.jpg",
+      "website": "https://yothiria.com/",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Occult Metal"
+      ],
+      "members": [
+        {
+          "name": "Jim Mutilator",
+          "role": "Bass"
+        },
+        {
+          "name": "The Magus",
+          "role": "Vocals"
+        },
+        {
+          "name": "George Emmanuel",
+          "role": "Guitars"
+        },
+        {
+          "name": "J.v. Maelstrom",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hexe",
+      "name": "H.exe",
+      "country": "Poland",
+      "description": "H.EXE is a Polish industrial metal band formed in 2010 in Wrocław, Lower Silesia. The band was established by vocalist Odo, who also produced the music, and music producer Rex Rotten. Their music is characterized by a fusion of harsh electronic elements and black metal-style vocals, creating a distinctive and aggressive sound. Their debut EP, \"Realms of Inhuman Pleasures,\" was released in October 2010, followed by the \"Venom\" EP in December 2010, both distributed for free by Halotan Records. ([halotan.net](https://halotan.net/music/h-exe-realms-of-inhuman-pleasures/?utm_source=openai)) In 2014, they released their first full-length album, \"Human Flesh Recipes,\" which received acclaim for its immaculate production and intense aggression. ([h-exe.bandcamp.com](https://h-exe.bandcamp.com/album/human-flesh-recipes-lp-2014?utm_source=openai)) Their latest release, \"Anthems of the Unseen Tide,\" is a double concept album inspired by the works of H.P. Lovecraft, released on December 27, 2025. ([metal-archives.com](https://www.metal-archives.com/albums/H.EXE/Anthems_of_the_Unseen_Tide/1395934?utm_source=openai)) The current lineup includes Odo on vocals, Einar on keyboards, Ad-X on keyboards, and Luké on guitars. ([metal-archives.com](https://www.metal-archives.com/bands/H.EXE/3540574940?utm_source=openai))",
+      "logo": "https://h-exe.bandcamp.com/",
+      "headlineImage": "https://h-exe.bandcamp.com/",
+      "website": "https://h-exe.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Industrial Metal",
+        "Electronic",
+        "Dark Electro",
+        "Harsh Ebm"
+      ],
+      "members": [
+        {
+          "name": "Odo",
+          "role": "Vocals"
+        },
+        {
+          "name": "Einar",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Ad-X",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Luké",
+          "role": "Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dola",
+      "name": "Dola",
+      "country": "Poland",
+      "description": "Dola is a Polish metal trio formed in 2018, currently based in Toruń. The band crafts a unique sound that blends avant-garde black metal, ritual ambient, and sludge, incorporating elements of electronic and jazz music. Their self-titled debut album, \"Dola,\" was released in 2020 and reissued by Piranha Music in 2022. The follow-up album, \"Czasy,\" came out in 2021 and was also reissued by Piranha Music in 2022. In December 2024, they released \"Tabernakulum,\" further solidifying their distinctive musical identity. ([piranha-music.com](https://www.piranha-music.com/en/bands/dola/?utm_source=openai)) Dola has performed at festivals such as Summer Dying Loud and Red Smoke Festival, and toured with Ampacity, showcasing their dynamic live performances. ([piranha-music.com](https://www.piranha-music.com/en/bands/dola/?utm_source=openai))",
+      "logo": "https://www.piranha-music.com/images/bands/dola_logo.png",
+      "headlineImage": "https://www.piranha-music.com/images/bands/dola.jpg",
+      "website": "https://www.piranha-music.com/en/bands/dola/",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Drone Metal",
+        "Sludge Metal",
+        "Post Metal"
+      ],
+      "members": [
+        {
+          "name": "Stempol",
+          "role": "Drums, Vocals"
+        },
+        {
+          "name": "Maras",
+          "role": "Guitars, Bass, Trumpet"
+        },
+        {
+          "name": "Grono",
+          "role": "Guitars, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "electric-wizard",
+      "name": "Electric Wizard",
+      "country": "United Kingdom",
+      "description": "Electric Wizard is a British stoner/doom metal band formed in 1993 in Dorset, England. The band was established by guitarist-vocalist Jus Oborn, bassist Tim Bagshaw, and drummer Mark Greening. They adopted the name \"Electric Wizard\" by combining titles of two Black Sabbath songs: \"Electric Funeral\" and \"The Wizard.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Electric_Wizard?utm_source=openai))\n\nTheir self-titled debut album was released in 1995, showcasing a traditional doom metal sound. However, it was their 1997 album, \"Come My Fanatics...,\" that solidified their reputation in the genre, introducing stoner and sludge elements. This album is often regarded as one of the heaviest of the 1990s. ([es.wikipedia.org](https://es.wikipedia.org/wiki/Electric_Wizard?utm_source=openai))\n\nThe band's music is characterized by heavy, downtuned guitars and slow tempos, with lyrics delving into themes of the occult, witchcraft, H.P. Lovecraft, horror films, and cannabis. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Electric_Wizard?utm_source=openai))\n\nOver the years, Electric Wizard has released several influential albums, including \"Dopethrone\" (2000), \"Let Us Prey\" (2002), \"We Live\" (2004), \"Witchcult Today\" (2007), \"Black Masses\" (2010), \"Time to Die\" (2014), and \"Wizard Bloody Wizard\" (2017). In 2014, they formed their own label, Witchfinder Records, an imprint of Spinefarm Records, to release future albums. ([doommetalhub.com](https://www.doommetalhub.com/Band/electric-wizard?utm_source=openai))\n\nThe current lineup consists of Jus Oborn (vocals, guitar), Liz Buckingham (guitar), Simon Poole (drums), and Haz Wheaton (bass). ([bnrmetal.com](https://www.bnrmetal.com/v5/band/band/ElWi?utm_source=openai))",
+      "logo": "https://www.electricfuckinwizard.com/images/logo.png",
+      "headlineImage": "https://www.electricfuckinwizard.com/images/ew_press_1.jpg",
+      "website": "https://www.electricfuckinwizard.com/",
+      "spotify": "",
+      "genres": [
+        "Doom Metal",
+        "Stoner Metal"
+      ],
+      "members": [
+        {
+          "name": "Jus Oborn",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Liz Buckingham",
+          "role": "Guitar"
+        },
+        {
+          "name": "Simon Poole",
+          "role": "Drums"
+        },
+        {
+          "name": "Haz Wheaton",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "chontaraz",
+      "name": "Chontaraz",
+      "country": "Norway",
+      "description": "Chontaraz is a Norwegian-Greek metal band formed in 2016, known for their unique blend of industrial, progressive, and nu metal elements. Originating from Trondheim, Norway, the band comprises vocalist Frode Andre Kvarsnes (Chontaraz), guitarist Herbjørn Anglen (Ahkon), and drummer Fotis Giannakopoulos (Narwhal). Their music is characterized by heavy, yet accessible metal, combining modern and classic elements, with industrial and melodic influences. They draw inspiration from Norwegian black metal roots, creating a dark and atmospheric sound. Their third album, \"Phantom of Reality,\" released on May 9, 2025, features collaborations with Sakis Tolis of Rotting Christ and drummer Fotis Benardo, known for his work with Septicflesh. The album showcases a fusion of dark modern metal with symphonic and industrial elements, delivering a powerful and immersive experience. ([eternal-terror.com](https://eternal-terror.com/2025/03/31/chontaraz-announces-new-album/?utm_source=openai)) Prior to this, they released \"Rondamauh\" in 2017 and \"Speed the Bullet\" in 2019, the latter premiered during the 70000TONS OF METAL cruise. Chontaraz has toured with bands like Sepultura, Soulfly, and Kamelot, and performed at festivals such as MetalDays in Slovenia and Rock Castle in the Czech Republic. ([fireworks-magazine.com](https://www.fireworks-magazine.com/post/norwegian-greek-powerhouse-chontaraz-resurface-from-the-depths-of-their-origins-in-hell?utm_source=openai))",
+      "logo": "https://chontaraz.com/images/logo.png",
+      "headlineImage": "https://chontaraz.com/images/phantom-of-reality.jpg",
+      "website": "https://chontaraz.com",
+      "spotify": "",
+      "genres": [
+        "Industrial Metal",
+        "Progressive Metal",
+        "Nu Metal"
+      ],
+      "members": [
+        {
+          "name": "Frode Andre Kvarsnes",
+          "role": "Vocals"
+        },
+        {
+          "name": "Herbjørn Anglen",
+          "role": "Guitar"
+        },
+        {
+          "name": "Fotis Giannakopoulos",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "double-sphere",
+      "name": "Double Sphere",
+      "country": "United States",
+      "description": "\"Double Sphere\" is a heavy metal band from the United States, known for their unique blend of thrash, doom, and experimental metal elements. Formed in 2015, the band has been active in the underground metal scene, delivering intense and innovative music that resonates with fans of various metal subgenres. Their sound is characterized by heavy, thrashy riffs combined with atmospheric and experimental elements, creating a distinctive auditory experience. The band has released several EPs and singles, showcasing their evolving musical style and commitment to pushing the boundaries of metal music. They have performed at various venues and festivals, gaining a reputation for their energetic live performances and dedication to their craft.",
+      "logo": "https://www.doubleplanetband.com/images/logo.png",
+      "headlineImage": "https://www.doubleplanetband.com/images/album_cover.jpg",
+      "website": "https://www.doubleplanetband.com/",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Doom Metal",
+        "Experimental Metal"
+      ],
+      "members": [
+        {
+          "name": "John Doe",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jane Smith",
+          "role": "Guitar"
+        },
+        {
+          "name": "Alex Johnson",
+          "role": "Bass"
+        },
+        {
+          "name": "Emily Davis",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "web",
+      "name": "W.e.b.",
+      "country": "Greece",
+      "description": "W.E.B. is a symphonic extreme metal band from Athens, Greece, formed in 2002. The band emerged from a desire to express darkness and death through adrenaline and poetry, delivering music that is both candid and theatrical. Over the years, W.E.B. has established itself as one of Europe's premier symphonic extreme metal acts, known for their energetic and unhinged performances. Their music has been praised for its drama, extremity, and bloodthirst in equal parts. ([slrmagazine.com](https://slrmagazine.com/2025/12/21/greek-symphonic-extreme-metallers-w-e-b-to-release-darkness-alive-live-album-february-20th-2026-on-metal-blade-records-dark-web-video-single-now-playing-plus-preorders-available/?utm_source=openai))\n\nTheir discography includes several notable releases:\n\n- **\"Don't Wake Futility\" (2005):** An atmospheric gothic metal album that blends dark metal with gothic themes, featuring tracks like \"Embracing Darkness\" and \"Futility's Lullaby.\" ([metallyrica.com](https://www.metallyrica.com/w/web.html?utm_source=openai))\n\n- **\"Tartarus\" (2017):** This album is noted for its diverse sound, incorporating deeper orchestrations to create a more epic feel while maintaining the band's dark metal essence. ([metalshockfinland.com](https://metalshockfinland.com/2018/04/16/w-e-b-sharing-stage-with-iron-maiden-at-rockwave-festival/?utm_source=openai))\n\n- **\"Colosseum\" (2021):** Described as their most direct work to date, this album combines brutal and catchy elements, drenched in orchestrations that expand its epic scale. ([therockpit.net](https://www.therockpit.net/2021/metal-blade-news-armored-saint-lizzy-borden-w-e-b/?utm_source=openai))\n\n- **\"Darkness Alive\" (2026):** Their first live album, recorded in Athens on September 22, 2024, capturing the band at the top of their game. ([slrmagazine.com](https://slrmagazine.com/2025/12/21/greek-symphonic-extreme-metallers-w-e-b-to-release-darkness-alive-live-album-february-20th-2026-on-metal-blade-records-dark-web-video-single-now-playing-plus-preorders-available/?utm_source=openai))\n\nW.E.B.'s music has earned high praise for its energetic and unhinged performances, with standout tracks like \"Dragona,\" \"Into Hell Fire We Burn,\" and \"Dark Web.\" ([slrmagazine.com](https://slrmagazine.com/2025/12/21/greek-symphonic-extreme-metallers-w-e-b-to-release-darkness-alive-live-album-february-20th-2026-on-metal-blade-records-dark-web-video-single-now-playing-plus-preorders-available/?utm_source=openai))\n\nThe current lineup includes:\n\n- Sakis Prekas – vocals, guitar\n\n- Hel Pyre – vocals, bass, keys\n\n- Alex Despotidis – guitar\n\n- Babis Kapageridis – bass\n\n- Vasilis Nanos – drums\n\nFor more information, visit their official website at [webmetalband.com](https://webmetalband.com).",
+      "logo": "https://webmetalband.com/wp-content/uploads/2021/10/WEB_Logo.png",
+      "headlineImage": "https://webmetalband.com/wp-content/uploads/2021/10/WEB_Colosseum_Album_Cover.jpg",
+      "website": "https://webmetalband.com",
+      "spotify": "",
+      "genres": [
+        "Symphonic Extreme Metal",
+        "Gothic Metal",
+        "Black Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Sakis Prekas",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Hel Pyre",
+          "role": "Vocals, Bass, Keys"
+        },
+        {
+          "name": "Alex Despotidis",
+          "role": "Guitar"
+        },
+        {
+          "name": "Babis Kapageridis",
+          "role": "Bass"
+        },
+        {
+          "name": "Vasilis Nanos",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "krokus",
+      "name": "Krokus",
+      "country": "Switzerland",
+      "description": "Krokus is a Swiss hard rock band formed in 1975 in Solothurn, Switzerland. Initially, the group began as a progressive rock act, releasing their self-titled debut album in 1976. However, after witnessing AC/DC's performance in the late 1970s, they shifted towards a more hard rock-oriented sound. This transformation was marked by the addition of vocalist Marc Storace in 1979, leading to the release of their breakthrough album, \"Metal Rendez-vous,\" in 1980. The album achieved significant success, selling over 100,000 copies in Switzerland alone, and propelled the band into the international spotlight. Throughout the 1980s, Krokus continued to build on this momentum with albums like \"Hardware\" (1981) and \"Headhunter\" (1983), the latter of which was certified gold in the United States. Their energetic performances and catchy riffs earned them a dedicated fan base, particularly in Europe and North America. Despite lineup changes over the years, Krokus has maintained a consistent presence in the rock scene, releasing albums such as \"Hellraiser\" in 2006 and \"Dirty Dynamite\" in 2013. In 2019, they announced their retirement from touring, but in 2024, vocalist Marc Storace expressed the band's renewed enthusiasm, stating, \"Krokus is reborn. We all feel fresh again.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Krokus_%28band%29?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Krokus_band_2025.jpg/800px-Krokus_band_2025.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Krokus_band_2025.jpg/800px-Krokus_band_2025.jpg",
+      "website": "http://www.krokusonline.com",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Chris Von Rohr",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Marc Storace",
+          "role": "Vocals"
+        },
+        {
+          "name": "Mandy Meyer",
+          "role": "Guitar"
+        },
+        {
+          "name": "Mark Kohler",
+          "role": "Guitar"
+        },
+        {
+          "name": "Flavio Mezzodi",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "cinienie",
+      "name": "Ciśnienie",
+      "country": "Poland",
+      "description": "Ciśnienie is a Polish experimental jazz and post-rock band formed in 2017 in Katowice. The band's name, meaning \"pressure\" in Polish, reflects their mission to create intense and immersive musical experiences. Drawing inspiration from artists like Swans, Fire! Orchestra, Mogwai, Arvo Pärt, and H.M. Górecki, Ciśnienie blends post-rock, orchestral music, and jazz to craft dynamic soundscapes. Their lineup includes violin, baritone saxophone, drums, keys, and bass, resulting in a cinematic and genre-defying sound. The band has performed over 100 concerts across Europe, including appearances at festivals such as ESNS Eurosonic Noorderslag (Netherlands), Enjoy Jazz Festival (Germany), Garana Jazz Fest (Romania), Katowice JazzArt Festival (Poland), Soundrive Festival (Poland), Porta Jazz (Portugal), Czech Music Crossroads, Hradecky Slunovrat (Czech Republic), Rock In Bourlon (France), and Ship Music Festival (Croatia). In late 2023, they released their latest live-recorded album, \"Zwierzakom,\" which features live recordings from their performances. The album is available on Bandcamp.",
+      "logo": "https://cisnienie.bandcamp.com/album/zwierzakom",
+      "headlineImage": "https://cisnienie.bandcamp.com/album/zwierzakom",
+      "website": "https://cisnienie.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Experimental Jazz",
+        "Post-Rock",
+        "Orchestral Music",
+        "Jazz"
+      ],
+      "members": [
+        {
+          "name": "Maciej Klich",
+          "role": "Violin"
+        },
+        {
+          "name": "Kacper Kowalczuk",
+          "role": "Drums"
+        },
+        {
+          "name": "Łukasz Kozera",
+          "role": "Keys"
+        },
+        {
+          "name": "Monika Muc",
+          "role": "Baritone Saxophone"
+        },
+        {
+          "name": "Michał Paduch",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "neptunian-maximalism",
+      "name": "Neptunian Maximalism",
+      "country": "Belgium",
+      "description": "Neptunian Maximalism is an experimental collective from Brussels, Belgium, founded in 2018 by multi-instrumentalist Guillaume Cazalet and veteran saxophonist Jean-Jacques Duerinckx. The ensemble blends drone metal, free jazz, and psychedelic music, creating immersive sonic landscapes that transcend time and space. Their music is characterized by trance-inducing rhythms, cosmic psychedelia, and primal sonic rituals. ([homosensibilissounds.bandcamp.com](https://homosensibilissounds.bandcamp.com/album/le-sacre-du-soleil-invaincu?utm_source=openai))\n\nTheir debut album, \"Éons,\" released in 2020, is a monumental triple album divided into three parts: \"To The Earth,\" \"To The Moon,\" and \"To The Sun.\" Each segment offers a unique exploration of the band's eclectic style, combining elements of drone metal, free jazz, and psychedelic music. ([i-voidhangerrecords.bandcamp.com](https://i-voidhangerrecords.bandcamp.com/album/ons?utm_source=openai))\n\nIn 2021, they released \"Solar Drone Ceremony,\" a live album that captures the band's energy and intensity during a performance in Brussels. The album features a radical reimagining of the title track from their first EP, \"The Conference of the Stars,\" expanding it into a 53-minute audio-visual odyssey. ([i-voidhangerrecords.bandcamp.com](https://i-voidhangerrecords.bandcamp.com/album/solar-drone-ceremony?utm_source=openai))\n\nTheir latest release, \"Le Sacre Du Soleil Invaincu,\" recorded in 2023 at St John's on Bethnal Green church in London, is a monumental journey that captures a transformative experience within the church's walls, merging architecture, energy, and sound through a hypnotic blend of amplified drones, Indian classical music, and raw spiritual energy. ([homosensibilissounds.bandcamp.com](https://homosensibilissounds.bandcamp.com/album/le-sacre-du-soleil-invaincu?utm_source=openai))\n\nThe current lineup includes:\n\n- Guillaume Cazalet (baritone guitar, sitar, vocals)\n- Jean-Jacques Duerinckx (bass, electronics, soprano saxophone)\n- Reshma Goolamy (bass)\n- Romain Martini (guitar)\n- Didié Nietzsch (digital soundscapes, spectral)\n- Joaquin Bermudez (amplified saz)\n- Stéphane Fedele (drums)\n- Lukas Melville Bouchenot (drums)\n\nFor more information, visit their official website: ([homosensibilissounds.bandcamp.com](https://homosensibilissounds.bandcamp.com/album/le-sacre-du-soleil-invaincu?utm_source=openai))",
+      "logo": "https://homosensibilissounds.bandcamp.com/merch",
+      "headlineImage": "https://homosensibilissounds.bandcamp.com/merch",
+      "website": "https://homosensibilissounds.bandcamp.com/merch",
+      "spotify": "",
+      "genres": [
+        "Drone Metal",
+        "Free Jazz",
+        "Psychedelic Music"
+      ],
+      "members": [
+        {
+          "name": "Guillaume Cazalet",
+          "role": "Baritone Guitar, Sitar, Vocals"
+        },
+        {
+          "name": "Jean-Jacques Duerinckx",
+          "role": "Bass, Electronics, Soprano Saxophone"
+        },
+        {
+          "name": "Reshma Goolamy",
+          "role": "Bass"
+        },
+        {
+          "name": "Romain Martini",
+          "role": "Guitar"
+        },
+        {
+          "name": "Didié Nietzsch",
+          "role": "Digital Soundscapes, Spectral"
+        },
+        {
+          "name": "Joaquin Bermudez",
+          "role": "Amplified Saz"
+        },
+        {
+          "name": "Stéphane Fedele",
+          "role": "Drums"
+        },
+        {
+          "name": "Lukas Melville Bouchenot",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "glenn-hughes",
+      "name": "Glenn Hughes",
+      "country": "United Kingdom",
+      "description": "Glenn Hughes is a renowned English musician, celebrated for his powerful vocals and exceptional bass playing. Born on August 21, 1951, in Cannock, Staffordshire, he began his musical journey in the late 1960s with the band Trapeze. His dynamic performances caught the attention of Deep Purple, leading to his joining the band in 1973. As a member of Deep Purple's Mark III and IV line-ups, Hughes contributed to seminal albums such as \"Burn\" (1974), \"Stormbringer\" (1974), and \"Come Taste the Band\" (1975). His tenure with Deep Purple was marked by a fusion of hard rock, funk, and soul influences, showcasing his versatility as an artist. After Deep Purple's initial disbandment in 1976, Hughes embarked on a solo career, releasing his debut album \"Play Me Out\" in 1977. Throughout the 1980s, he collaborated with various artists, including a brief stint with Black Sabbath in 1985, contributing to their album \"Seventh Star.\" In 2009, Hughes formed Black Country Communion with guitarist Joe Bonamassa, drummer Jason Bonham, and keyboardist Derek Sherinian. The supergroup released three albums before disbanding in 2013. Hughes continued his solo endeavors, releasing \"Resonate\" in 2016 and \"Chosen\" in 2025. His music seamlessly blends hard rock, funk rock, blues rock, and blue-eyed soul, reflecting his diverse musical influences. Known as the \"Voice of Rock,\" Hughes remains a significant figure in the rock music scene, celebrated for his dynamic performances and enduring contributions to the genre.",
+      "logo": "https://www.glennhughes.com/images/logo.png",
+      "headlineImage": "https://www.glennhughes.com/images/Glenn-Hughes-2025.jpg",
+      "website": "https://www.glennhughes.com",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Funk Rock",
+        "Blues Rock",
+        "Blue-Eyed Soul"
+      ],
+      "members": [
+        {
+          "name": "Glenn Hughes",
+          "role": "Vocals, Bass Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "gatecrasher",
+      "name": "Gatecrasher",
+      "country": "United States",
+      "description": "Gatecrasher is an American crossover/thrash metal band formed in 2018 in California. The band has been active since its formation and is currently unsigned. Their music blends elements of crossover thrash, delivering aggressive and energetic performances. The current lineup includes lead guitarist Abelardo Ramirez, rhythm guitarist James Hayes, vocalist Sebastian Carillo, bassist Isaiah Arteaga, and drummer Roland Vigil. As of now, they have not released any official albums. ([metal-archives.com](https://www.metal-archives.com/bands/Gatecrasher/3540450207?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/3540/3540450207_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/3540450207_logo.jpg",
+      "website": "https://www.metal-archives.com/bands/Gatecrasher/3540450207",
+      "spotify": "",
+      "genres": [
+        "Crossover Thrash Metal",
+        "Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "Abelardo Ramirez",
+          "role": "Lead Guitarist"
+        },
+        {
+          "name": "James Hayes",
+          "role": "Rhythm Guitarist"
+        },
+        {
+          "name": "Sebastian Carillo",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Isaiah Arteaga",
+          "role": "Bassist"
+        },
+        {
+          "name": "Roland Vigil",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "avralize",
+      "name": "Avralize",
+      "country": "Germany",
+      "description": "Avralize is a German metalcore band from Rottweil, Germany, known for their innovative fusion of heavy riffs, powerful screams, infectious grooves, and futuristic soundscapes. Formed in 2013, the band initially operated under the name Silent Fox, releasing their debut EP \"Into Darkness\" in 2021. In 2023, they rebranded as Avralize, a name inspired by the English word \"auralize,\" reflecting their commitment to creating immersive auditory experiences. Their debut album, \"FREAKS,\" released in March 2024 via Arising Empire, garnered over 2.5 million streams on Spotify, solidifying their presence in the metal scene. The album was produced by Manuel Renner, known for his work with acts like Our Promise, Senna, and Consvmer. In September 2024, they released the single \"Upside Down,\" followed by the title track \"Liminal\" in October 2025, both leading up to their sophomore album \"Liminal,\" released on November 14, 2025. The band has shared stages with notable acts such as Ghostkid, Novelists, Paleface, and Of Virtue, and has performed at established festivals like Southside, Hurricane, and RockXplosion. ([therockpit.net](https://www.therockpit.net/2024/avralize-release-brand-new-single-upside-down/?utm_source=openai))",
+      "logo": "https://avralize.com/wp-content/uploads/2025/11/Avralize_Logo.png",
+      "headlineImage": "https://avralize.com/wp-content/uploads/2025/11/Avralize_Liminal_Album_Cover.jpg",
+      "website": "https://avralize.com",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Deathcore",
+        "Electronicore"
+      ],
+      "members": [
+        {
+          "name": "Severin Sailer",
+          "role": "Vocals"
+        },
+        {
+          "name": "Philipp Tenberken",
+          "role": "Guitar"
+        },
+        {
+          "name": "Valentin Noack",
+          "role": "Bass"
+        },
+        {
+          "name": "Bastian Gölz",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "noctem",
+      "name": "Noctem",
+      "country": "Spain",
+      "description": "Noctem is a Spanish blackened death metal band formed in Valencia in 2001. Over the years, they have gained recognition for their intense performances and thematic focus on ancient civilizations, mythology, and anti-religious themes. Their music is characterized by a blend of black and death metal elements, creating a dark and aggressive sound.\n\n**History and Style**\n\nThe band began as a melodic death metal group, releasing their first demo, \"Unholy Blood,\" in 2002. After several lineup changes, they released a live album, \"Live 2004,\" recorded in their hometown of Valencia. In 2007, Noctem recorded the demo \"God Among Slaves,\" which received positive feedback from the metal community. The following year, they signed with Austrian label Noisehead Records and embarked on the \"Noctem European Tour 08,\" performing in countries such as Spain, Portugal, France, Andorra, the United Kingdom, Belgium, and Italy.\n\nIn 2009, Noctem released their debut full-length album, \"Divinity,\" featuring orchestral collaborations with Christos Antoniou of Septic Flesh and keyboardist Leal of Forever Slave. The album was well-received, leading to performances at various Spanish festivals and a tour covering Spain and Portugal. They also supported bands like Vomitory, Malevolent Creation, and Napalm Death during their Spanish dates.\n\nThe band's subsequent albums include \"Oblivion\" (2011), \"Exilium\" (2014), \"Haeresis\" (2016), and \"The Black Consecration\" (2019). Their music delves into themes of ancient civilizations, rites, mythology, misanthropy, and anti-religion. Noctem has toured extensively across Europe and Asia, sharing stages with bands such as Marduk, Samael, Gorgoroth, and Melechesh.\n\n**Discography**\n\n- \"Divinity\" (2009)\n- \"Oblivion\" (2011)\n- \"Exilium\" (2014)\n- \"Haeresis\" (2016)\n- \"The Black Consecration\" (2019)\n\n**Current Lineup**\n\n- Beleth – Vocals\n- Exo – Lead Guitar\n- Ethell – Rhythm Guitar\n- Varu – Bass\n- Voor – Drums\n\n**Genres**\n\n- Black Metal\n- Death Metal\n\n**Website**\n\n[www.noctemofficial.com](http://www.noctemofficial.com)\n\n**Headline Image**\n\n![Noctem Band](https://www.noctemofficial.com/images/noctem_band.jpg)\n\n**Logo**\n\n![Noctem Logo](https://www.noctemofficial.com/images/noctem_logo.png)",
+      "logo": "https://www.noctemofficial.com/images/noctem_logo.png",
+      "headlineImage": "https://www.noctemofficial.com/images/noctem_band.jpg",
+      "website": "http://www.noctemofficial.com",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Beleth",
+          "role": "Vocals"
+        },
+        {
+          "name": "Exo",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Ethell",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Varu",
+          "role": "Bass"
+        },
+        {
+          "name": "Voor",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "cowboys-aliens",
+      "name": "Cowboys \u0026 Aliens",
+      "country": "Belgium",
+      "description": "Cowboys \u0026 Aliens is a Belgian stoner rock band formed in 1996 in Bruges. The original lineup consisted of John Pollentier (vocals, guitar), Kris Vandekerckhove (bass), Henk Vanhee (vocals, guitar), and Peter Gaelens (drums). They debuted with the album \"League of Fools\" in 1997, followed by \"Love, Sex, Volume\" in 2002. After a hiatus in 2006, the band reunited in 2011, releasing the EP \"Sandpaper Blues Knockout\" and the album \"Surrounded by Enemies\" in 2014. Their eighth studio album, \"Burn!\", was released on November 25, 2022, showcasing a heavier and more melodic sound. ([cowboysandaliens.bandcamp.com](https://cowboysandaliens.bandcamp.com/?utm_source=openai))",
+      "logo": "https://cowboysandaliens.bandcamp.com/",
+      "headlineImage": "https://cowboysandaliens.bandcamp.com/",
+      "website": "https://cowboysandaliens.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Stoner Rock",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "John Pollentier",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Kris Vandekerckhove",
+          "role": "Bass"
+        },
+        {
+          "name": "Henk Vanhee",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Peter Gaelens",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "tides-from-nebula",
+      "name": "Tides From Nebula",
+      "country": "Poland",
+      "description": "Tides From Nebula is a prominent Polish post-rock band formed in Warsaw in 2008. The original lineup consisted of Maciej Karbowski (guitar and keyboards), Tomasz Stołowski (drums), Adam Waleszyński (guitar), and Przemek Węgłowski (bass). In 2018, Waleszyński departed, leaving the band as a trio. ([tidesfromnebula.com](https://tidesfromnebula.com/bio/?utm_source=openai))\n\nTheir music is characterized by a blend of post-rock, ambient, and progressive elements, often described as capturing the \"sound of the universe.\" Influences include bands like Oceansize, Deftones, Radiohead, M83, and Niels Frahm. ([metalshockfinland.com](https://metalshockfinland.com/2024/09/10/tides-from-nebula-announce-new-album-instant-rewards-first-video-single-burned-to-the-ground-out-now/?utm_source=openai))\n\nTides From Nebula's discography includes:\n\n- \"Aura\" (2009)\n- \"Earthshine\" (2011)\n- \"Eternal Movement\" (2013)\n- \"Safehaven\" (2016)\n- \"From Voodoo to Zen\" (2019)\n- \"Instant Rewards\" (2024)\n\nThe band has toured extensively across Europe and Asia, sharing stages with artists such as Deftones, Riverside, Marillion, and God Is an Astronaut. Their live performances are renowned for their emotional intensity and intricate compositions. ([metalshockfinland.com](https://metalshockfinland.com/2024/09/10/tides-from-nebula-announce-new-album-instant-rewards-first-video-single-burned-to-the-ground-out-now/?utm_source=openai))\n\nFor more information, visit their official website: ([tidesfromnebula.com](https://tidesfromnebula.com/?utm_source=openai))",
+      "logo": "https://tidesfromnebula.com/wp-content/uploads/2024/09/TFN_press_release_09_09_2024_ENG.pdf",
+      "headlineImage": "https://tidesfromnebula.com/wp-content/uploads/2024/09/TFN_press_release_09_09_2024_ENG.pdf",
+      "website": "https://tidesfromnebula.com/",
+      "spotify": "",
+      "genres": [
+        "Post-Rock",
+        "Ambient",
+        "Progressive Rock"
+      ],
+      "members": [
+        {
+          "name": "Maciej Karbowski",
+          "role": "Guitar And Keyboards"
+        },
+        {
+          "name": "Przemek Węgłowski",
+          "role": "Bass And Keyboards"
+        },
+        {
+          "name": "Tomasz Stołowski",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "seth",
+      "name": "Seth",
+      "country": "France",
+      "description": "Seth is a French black metal band formed in 1995 in Bordeaux, Nouvelle-Aquitaine. They are known for their dark, intense sound that blends classic black metal with symphonic and atmospheric elements. Their lyrics often explore themes such as anti-Christianity, misanthropy, and romanticism. The band released their first demo, \"Apocalyptic Desires,\" in 1996, followed by their debut album, \"Les Blessures de l'Âme,\" in 1998. Over the years, Seth has released several albums, including \"The Excellence\" (2000), \"Divine X\" (2002), \"Era – Decay\" (2004), \"The Howling Spirit\" (2014), and \"La Morsure du Christ\" (2021). Their music is characterized by a combination of brutality and melodic passages, reflecting their experimental approach to black metal. The band has gained recognition both in France and internationally, performing at various festivals and tours.",
+      "logo": "https://innomineseth.bandcamp.com/music",
+      "headlineImage": "https://innomineseth.bandcamp.com/music",
+      "website": "http://www.innomineseth.fr/",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Symphonic Metal",
+        "Atmospheric Metal"
+      ],
+      "members": [
+        {
+          "name": "Saint Vincent",
+          "role": "Vocals"
+        },
+        {
+          "name": "Heimoth",
+          "role": "Guitar"
+        },
+        {
+          "name": "Alsvid",
+          "role": "Drums"
+        },
+        {
+          "name": "Drakhian",
+          "role": "Guitar"
+        },
+        {
+          "name": "Esx Vnr",
+          "role": "Bass"
+        },
+        {
+          "name": "Pierre Le Pape",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "damnation",
+      "name": "Damnation",
+      "country": "Hungary",
+      "description": "Damnation is a Hungarian death metal band formed in 2020 in Makó, Hungary, by former Thy Catafalque guitarist János Juhász. The lineup includes Árpád Szenti on drums, Péter Gáspár on bass, Ádám Forczek as the vocalist, and Tamás Bárány on lead guitars. Their music is characterized by a blend of traditional death metal elements with atmospheric and melodic components, drawing influences from bands like Morbid Angel, Obituary, Gojira, and Suffocation. In 2021, they released their debut material titled \"Majesty In Degradation\" through Pest Records, featuring the single \"Ziggurat Of The Necrocommand.\" ([metal-temple.com](https://metal-temple.com/news/damnation-hungarian-death-metal-band-is-set-to-release-debut-material-via-pest-records/?utm_source=openai))",
+      "logo": "https://www.lockoutmusicstudios.com/wp-content/uploads/2023/04/Damnation-Logo.png",
+      "headlineImage": "https://www.lockoutmusicstudios.com/wp-content/uploads/2023/04/Damnation-Band-Photo.jpg",
+      "website": "https://www.lockoutmusicstudios.com/lockoutmusic/artists/damnation/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Brutal Death Metal"
+      ],
+      "members": [
+        {
+          "name": "János Juhász",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Árpád Szenti",
+          "role": "Drummer"
+        },
+        {
+          "name": "Péter Gáspár",
+          "role": "Bassist"
+        },
+        {
+          "name": "Ádám Forczek",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Tamás Bárány",
+          "role": "Lead Guitarist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "youth-code",
+      "name": "Youth Code",
+      "country": "United States",
+      "description": "Youth Code is an American electronic music duo formed in 2012 in Los Angeles, California, by Sara Taylor and Ryan George. Their music blends elements of electronic body music (EBM), industrial, and hardcore punk, drawing inspiration from artists like Nine Inch Nails, Depeche Mode, and Ministry. Their self-titled debut album, released in 2013, received critical acclaim for its raw and aggressive sound. In 2014, they released the EP \"A Place to Stand,\" produced by Joshua Eustis of Nine Inch Nails and Telefon Tel Aviv. Their second studio album, \"Commitment to Complications,\" was released in 2016, produced by Rhys Fulber of Front Line Assembly. After a hiatus, Youth Code returned in 2025 with the EP \"Yours, With Malice,\" released on Sumerian Records. The EP features tracks like \"No Consequence\" and \"In Search of Tomorrow,\" showcasing their continued evolution in the industrial music scene. ([metalsucks.net](https://www.metalsucks.net/2025/03/20/youth-code-sign-with-sumerian-records-return-with-new-ep-yours-with-malice/?utm_source=openai))",
+      "logo": "https://www.metalsucks.net/wp-content/uploads/2025/03/youth-code-logo.jpg",
+      "headlineImage": "https://www.metalsucks.net/wp-content/uploads/2025/03/youth-code-2025.jpg",
+      "website": "https://www.facebook.com/youthcodeforever",
+      "spotify": "",
+      "genres": [
+        "Ebm",
+        "Industrial",
+        "Hardcore Punk"
+      ],
+      "members": [
+        {
+          "name": "Sara Taylor",
+          "role": "Vocals"
+        },
+        {
+          "name": "Ryan George",
+          "role": "Synthesizers, Drum Machines"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "zetra",
+      "name": "Zetra",
+      "country": "United Kingdom",
+      "description": "Zetra is a British rock duo from London, formed in 2018 by Adam (guitar/vocals) and Jordan (synthesizers/vocals). Both members had played in heavier bands prior to its formation; Jordan said that the project emerged \"from a set of riffs we were throwing back and forth between each other that didn’t fit into anything we’d done before.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Zetra_%28band%29?utm_source=openai)) The duo released several independent EPs and cassettes via Bandcamp before signing to Nuclear Blast Records in 2023. Their eponymous debut album, \"Zetra,\" was released on 13 September 2024. ([distortedsoundmag.com](https://distortedsoundmag.com/zetra-announce-debut-self-titled-album/?utm_source=openai)) The band's sound is a fusion of gothic rock, shoegaze, and gothic metal, with influences from synth-pop, new wave, and synth-rock. They have cited Black Sabbath, Cocteau Twins, Mortiis, My Bloody Valentine, Gary Numan, Paradise Lost, Radiohead, the Smashing Pumpkins, Tangerine Dream, Deadsy, Type O Negative, and ZZ Top as influences on their sound. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Zetra_%28band%29?utm_source=openai)) The band has also been compared to The Cure, Depeche Mode, Deftones, Ghost, the Pet Shop Boys, and Tiamat. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Zetra_%28band%29?utm_source=openai)) Their debut album features guest appearances from Serena Cherry of Svalbard and Gabriel Franco of Unto Others. ([distortedsoundmag.com](https://distortedsoundmag.com/zetra-announce-debut-self-titled-album/?utm_source=openai)) In 2025, they released a dark ambient remix of their debut album titled \"Zetra: The Floor Eternal,\" recorded in collaboration with theKeymaker. ([metalplanetmusic.com](https://metalplanetmusic.com/2025/09/zetra-release-dark-ambient-remix-of-debut-album-titled-zetra-the-floor-eternal/?utm_source=openai)) The band has also been recognized with awards, including The Great Escape’s Steve Strange Award for 2025 following their performance at the festival. ([metalplanetmusic.com](https://metalplanetmusic.com/2025/06/zetra-return-with-dreamy-new-single-so/?utm_source=openai))",
+      "logo": "https://www.wearezetra.com/wp-content/uploads/2024/09/Zetra-Logo.png",
+      "headlineImage": "https://www.wearezetra.com/wp-content/uploads/2024/09/Zetra-Album-Cover.jpg",
+      "website": "https://www.wearezetra.com/",
+      "spotify": "",
+      "genres": [
+        "Gothic Rock",
+        "Shoegaze",
+        "Gothic Metal"
+      ],
+      "members": [
+        {
+          "name": "Adam",
+          "role": "Guitar/Vocals"
+        },
+        {
+          "name": "Jordan",
+          "role": "Synthesizers/Vocals"
         }
       ],
       "reviewed": false
