@@ -26,8 +26,6 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   overflow-x: hidden;
-  overscroll-behavior: none;
-  overscroll-behavior-y: none;
   position: relative;
 }
 
