@@ -65583,7 +65583,28 @@
         "Metal",
         "Hard Rock"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Griffin Taylor",
+          "role": "Vocals"
+        },
+        {
+          "name": "Simon Crahan",
+          "role": "Drums"
+        },
+        {
+          "name": "Cole Espeland",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Connor Grodzicki",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Jeremiah Pugh",
+          "role": "Bass"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -66307,6 +66328,526 @@
         {
           "name": "Kristofer Dommin",
           "role": "Vocals/Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "chaotian",
+      "name": "Chaotian",
+      "country": "Denmark",
+      "description": "Chaotian is a death metal band from Copenhagen, Denmark, formed in 2017. The band consists of Andreas Nordgreen (drums and vocals), Søren Willatzen (guitars and vocals), and Mads Køie Nielsen (bass). They are known for their brutal and atmospheric sound, drawing influences from classic death metal bands like Morbid Angel, Incantation, and Immolation. Their debut album, \"Effigies of Obsolescence,\" released in 2022, features tracks such as \"Gangrene Dream,\" \"Into Megatopheth,\" and \"Adipocere Feast.\" In 2024, they released a split album with Deiquisitor, titled \"Chaotian / Deiquisitor,\" showcasing their relentless and visceral style. ([wonderboxmetal.com](https://wonderboxmetal.com/2022/06/22/chaotian-effigies-of-obsolescence-review/?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/3540/441069/3540441069_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/441069/3540441069_logo.jpg",
+      "website": "https://chaotian.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Brutal Death Metal",
+        "Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Andreas Nordgreen",
+          "role": "Drums, Vocals"
+        },
+        {
+          "name": "Søren Willatzen",
+          "role": "Guitars, Vocals"
+        },
+        {
+          "name": "Mads Køie Nielsen",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "cryptic-shift",
+      "name": "Cryptic Shift",
+      "country": "United Kingdom",
+      "description": "Cryptic Shift is an English extreme metal band formed in Leeds, West Yorkshire, in 2013. The band began as Crÿptic Shift in 2011, initially as a four-piece heavy metal group. They released their debut demo, \"Old Chapel Demos,\" in 2014. Following lineup changes, including the departure of vocalist Rob Castle and the addition of guitarist Henry Parker, the band rebranded as Cryptic Shift in 2015. That year, they released the \"Beyond the Celestial Demo\" and a split EP with Beastial Invasion. Their debut full-length album, \"Visitations from Enceladus,\" was released on May 4, 2020, through Blood Harvest Records. The album received critical acclaim, with Metal Hammer naming it the 13th best metal album of 2020. In 2026, they released their second album, \"Overspace \u0026 Supertime,\" which continues their exploration of progressive death metal themes. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Cryptic_Shift?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/3540383275_logo.jpg",
+      "headlineImage": "https://www.metal-rules.com/wp-content/uploads/2026/03/Cryptic-Shift-Overspace-Supertime.jpg",
+      "website": "https://www.facebook.com/crypticshift/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Thrash Metal",
+        "Technical Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Xander Bradley",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Joss Farrington",
+          "role": "Guitar"
+        },
+        {
+          "name": "John Riley",
+          "role": "Bass"
+        },
+        {
+          "name": "Ryan Sheperson",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ragana",
+      "name": "Ragana",
+      "country": "United States",
+      "description": "Ragana is an American black metal duo formed in 2011 in Olympia, Washington, by Maria Stocke and Noel D.K. Gilson. The band's name, derived from the Latvian and Lithuanian word for \"witch,\" reflects their thematic focus on witchcraft and nature. Initially part of the DIY punk scene, Ragana relocated to Oakland, California, in 2014, before returning to Olympia in 2024. Their music is characterized by a blend of black metal and doom metal, often described as \"blackened doom metal.\" The duo alternates roles on drums, guitar, and vocals, creating a dynamic and emotionally charged sound. Their discography includes five studio albums: \"All's Lost\" (2012), \"Unbecoming\" (2013), \"Wash Away\" (2015), \"You Take Nothing\" (2017), and \"Desolation's Flower\" (2023). \"Desolation's Flower\" received critical acclaim, earning Pitchfork's \"Best New Music\" honor and being named the third-best metal album of 2023 by Rolling Stone. In 2025, Ragana released \"Ash Souvenir,\" a collaborative album with drone artist Drowse. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ragana_%28band%29?utm_source=openai))",
+      "logo": "https://www.ragana.org/images/logo.png",
+      "headlineImage": "https://www.ragana.org/images/press/press_photo_1.jpg",
+      "website": "http://www.ragana.org",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Maria Stocke",
+          "role": "Vocals, Guitar, Drums"
+        },
+        {
+          "name": "Noel D.k. Gilson",
+          "role": "Vocals, Guitar, Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ahab",
+      "name": "Ahab",
+      "country": "Germany",
+      "description": "Ahab is a German funeral doom metal band formed in 2004 by Midnattsol guitarists Christian Hector and Daniel Droste. The band draws its name from Captain Ahab, the central character in Herman Melville's 1851 novel \"Moby-Dick,\" and their music is heavily inspired by nautical literature. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ahab_%28band%29?utm_source=openai))\n\nThe band's debut demo, \"The Oath,\" was released in April 2005, featuring the track \"The Stream\" along with two new songs and an outro. Their first full-length album, \"The Call of the Wretched Sea,\" was released in 2006, followed by \"The Divinity of Oceans\" in 2009. In 2012, they released \"The Giant,\" and in 2015, \"The Boats of the Glen Carrig,\" a concept album based on William Hope Hodgson's novel. Their most recent album, \"The Coral Tombs,\" was released on January 13, 2023, taking listeners on a journey with Captain Nemo and Professor Aronnax through the depths of the sea. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ahab_%28band%29?utm_source=openai))\n\nAhab's music is characterized by slow, atmospheric compositions that draw heavily from nautical lore, creating an immersive and melancholic experience. ([en.debaser.it](https://en.debaser.it/ahab?utm_source=openai))\n\nThe current lineup includes Daniel Droste (vocals, guitars, keyboards), Christian Hector (guitars), Cornelius Althammer (drums), and Stephan Wandernoth (bass). Former members include Stephan Adolph (bass, guitars, vocals). ([metal-archives.com](https://www.metal-archives.com/bands/Ahab/35791?utm_source=openai))\n\nFor more information, visit their official website at [ahab-doom.de](https://ahab-doom.de/).",
+      "logo": "https://www.metal-archives.com/images/35791_logo.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ahab_band.jpg/260px-Ahab_band.jpg",
+      "website": "https://ahab-doom.de/",
+      "spotify": "",
+      "genres": [
+        "Funeral Doom Metal",
+        "Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Daniel Droste",
+          "role": "Vocals, Guitars, Keyboards"
+        },
+        {
+          "name": "Christian Hector",
+          "role": "Guitars"
+        },
+        {
+          "name": "Cornelius Althammer",
+          "role": "Drums"
+        },
+        {
+          "name": "Stephan Wandernoth",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "doodseskader",
+      "name": "Doodseskader",
+      "country": "Belgium",
+      "description": "Doodseskader is a Belgian duo formed in 2020, consisting of bassist/vocalist Tim De Gieter and drummer/vocalist Sigfried Burroughs. The band is known for its experimental fusion of sludge, post-metal, nu-metal, and hip-hop, creating a raw and intense sound that defies traditional genre boundaries. Their music is characterized by heavy riffs, disruptive beats, and dark, unfiltered lyrics. ([flufffest.net](https://flufffest.net/band/doodeseskader?utm_source=openai))\n\nTheir discography includes the following releases:\n\n\n\n**Year One**  \nReleased on November 18, 2022, this full-length album features tracks like \"1745,\" \"Bloemen noch kransen,\" and \"It's Not an Addiction If You Don't Feel like Quitting.\" ([metal-archives.com](https://www.metal-archives.com/albums/Doodseskader/Year_One/1079149?utm_source=openai))\n\n\n\n\n**Year Two**  \nReleased on March 8, 2024, this album includes songs such as \"Pastel Prison,\" \"The Sheer Horror of the Human Condition,\" and \"Innocence (An Offering).\" ([metal-archives.com](https://www.metal-archives.com/albums/Doodseskader/Year_Two/1203553?utm_source=openai))\n\n\n\n\n**Plastic Skin / Warm Flesh**  \nA single released on June 7, 2024, showcasing the band's evolving sound. ([metal-archives.com](https://www.metal-archives.com/albums/Doodseskader/Plastic_Skin_-_Warm_Flesh/1264259?utm_source=openai))\n\n\n\n\n**Who Will Poor The Blood On Me / Bathroom**  \nA single released on November 2, 2023, featuring the tracks \"Who Will Poor the Blood on Me\" and a cover of Montell Fish's \"Bathroom.\" ([metal-archives.com](https://www.metal-archives.com/albums/Doodseskader/Who_Will_Poor_The_Blood_On_Me_-_Bathroom/1186016?utm_source=openai))\n\n\n\n\n**Still Haven't Killed Myself**  \nA single released on May 23, 2022, featuring the track \"Still Haven't Killed Myself.\" ([metal-archives.com](https://www.metal-archives.com/albums/Doodseskader/Still_Haven%27t_Killed_Myself/1043025?utm_source=openai))\n\n\nDoodseskader's dynamic performances have earned them spots at notable festivals, including Fluff Fest in 2023 and Jera On Air in 2025. ([flufffest.net](https://flufffest.net/band/doodeseskader?utm_source=openai)) Their innovative approach continues to captivate audiences, solidifying their place in the contemporary metal scene.",
+      "logo": "https://doodseskader.com/wp-content/uploads/2023/07/logo.png",
+      "headlineImage": "https://flufffest.net/wp-content/uploads/2023/07/Doodseskader.jpg",
+      "website": "https://doodseskader.com",
+      "spotify": "",
+      "genres": [
+        "Sludge Metal",
+        "Post-Metal",
+        "Nu-Metal",
+        "Hip-Hop"
+      ],
+      "members": [
+        {
+          "name": "Tim De Gieter",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Sigfried Burroughs",
+          "role": "Drums, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "lady-kate",
+      "name": "Lady Kate",
+      "country": "Czechia",
+      "description": "Lady Kate is a symphonic metal band from Jihlava, Czechia, formed in 2007. The band has experienced several lineup changes over the years, with the current members being:\n\n- **Aneta Herknerová** (vocals)\n- **Ondřej Němec** (drums)\n- **Jaroslav Jelínek** (guitars)\n\nTheir discography includes the album \"The Power of Music\" released in 2011 and the EP \"...Forever\" from 2009. Their most recent release is the album \"See The Signs,\" which came out in 2022. ([music.apple.com](https://music.apple.com/us/album/see-the-signs/1609648007?utm_source=openai))\n\nFor more information, you can visit their official website at [www.ladykate.cz](http://www.ladykate.cz/).",
+      "logo": "https://www.ladykate.cz/images/logo.png",
+      "headlineImage": "https://www.ladykate.cz/images/album_cover.jpg",
+      "website": "http://www.ladykate.cz/",
+      "spotify": "",
+      "genres": [
+        "Symphonic Metal",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Aneta Herknerová",
+          "role": "Vocals"
+        },
+        {
+          "name": "Ondřej Němec",
+          "role": "Drums"
+        },
+        {
+          "name": "Jaroslav Jelínek",
+          "role": "Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "daniel-krob-band",
+      "name": "Daniel Krob Band",
+      "country": "Czech Republic",
+      "description": "Daniel Krob is a renowned Czech guitarist, composer, and producer, best known for his contributions to the heavy metal scene through his work with bands like Arakain and Kreyson. In 2015, he formed the Daniel Krob Band, releasing the album \"Rock Koně\" in December of that year. ([fobiazine.net](https://www.fobiazine.net/news_detail/11965/daniel-krob-band-krest-cd-rock-kone?utm_source=openai)) The band's music is characterized by a blend of hard rock and heavy metal elements, featuring Czech lyrics that reflect personal stories and broader themes. In 2023, Krob expanded his musical endeavors by joining the band Ikara, contributing to their debut album \"Ikara,\" which includes 12 original tracks. ([ikara-band.cz](https://ikara-band.cz/?utm_source=openai))",
+      "logo": "https://www.fobiazine.net/images/news/2015/12/08/rock_kone.jpg",
+      "headlineImage": "https://www.fobiazine.net/images/news/2015/12/08/rock_kone.jpg",
+      "website": "https://www.fobiazine.net/news_detail/11965/daniel-krob-band-krest-cd-rock-kone",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Daniel Krob",
+          "role": "Guitarist, Composer, Producer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dom-zy",
+      "name": "Dom Zły",
+      "country": "Poland",
+      "description": "Dom Zły is a Polish metal band formed in 2017 in Puławy, Lublin. The band's lineup includes Grzegorz Kustra (drums), Grzegorz Napora (guitars), Łukasz Wrótniak (guitars), Mariusz Antas (bass), and Ania Truszkowska (vocals). Their music blends elements of post-black metal and crust punk, creating a sound characterized by melancholy, aggression, and a \"blackened\" aura. Lyrically, their songs often explore themes of inner struggle and negativity. Dom Zły's discography includes the self-titled EP \"Dom Zły\" (2017), the full-length album \"Rytuał\" (2019), and the EP \"Śnisz bory tak gęste\" (2021). In 2024, they released their second full-length album, \"Ku pogrzebaniu serc,\" which received critical acclaim and was nominated for a Fryderyk award in 2025. ([off-festival.pl](https://off-festival.pl/en/line-up/dom-zly-2/?utm_source=openai)) The band has performed at notable festivals, including the OFF Festival in 2025. ([off-festival.pl](https://off-festival.pl/en/line-up/dom-zly-2/?utm_source=openai))",
+      "logo": "https://off-festival.pl/wp-content/uploads/2025/07/dom-zly-logo.png",
+      "headlineImage": "https://off-festival.pl/wp-content/uploads/2025/07/dom-zly.jpg",
+      "website": "https://www.facebook.com/domzlyband",
+      "spotify": "",
+      "genres": [
+        "Post-Black Metal",
+        "Crust Punk"
+      ],
+      "members": [
+        {
+          "name": "Grzegorz Kustra",
+          "role": "Drums"
+        },
+        {
+          "name": "Grzegorz Napora",
+          "role": "Guitars"
+        },
+        {
+          "name": "Łukasz Wrótniak",
+          "role": "Guitars"
+        },
+        {
+          "name": "Mariusz Antas",
+          "role": "Bass"
+        },
+        {
+          "name": "Ania Truszkowska",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "warning-vision",
+      "name": "Warning Vision",
+      "country": "Czechia",
+      "description": "Warning Vision is a progressive metal band from Brno, South Moravian Region, Czechia, formed in 2011. The band is known for its intricate compositions and dynamic performances, blending elements of progressive metal with melodic and symphonic influences. Their music often features complex time signatures, atmospheric keyboards, and expressive vocals, appealing to fans of bands like Dream Theater and Symphony X. In October 2022, Warning Vision released their debut full-length album, \"Soudný den,\" which translates to \"Judgment Day.\" The album showcases the band's evolution, offering a mix of heavy riffs and melodic passages across nine tracks, including \"Soudný den,\" \"Nezhasínej,\" and \"Jsem jako stín.\" The lineup consists of Dušan Bilík on bass, Luděk Struhař on drums, Hans on guitars, Lukáš Krejsa on keyboards, and Marcela Paul on vocals. The band remains unsigned and continues to perform and record independently.",
+      "logo": "https://www.metal-archives.com/images/3540/5239/3540523912_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/5239/3540523912_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Warning_Vision/3540523912",
+      "spotify": "",
+      "genres": [
+        "Progressive Metal",
+        "Symphonic Metal"
+      ],
+      "members": [
+        {
+          "name": "Dušan Bilík",
+          "role": "Bass"
+        },
+        {
+          "name": "Luděk Struhař",
+          "role": "Drums"
+        },
+        {
+          "name": "Hans",
+          "role": "Guitars"
+        },
+        {
+          "name": "Lukáš Krejsa",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Marcela Paul",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "domnum",
+      "name": "Domnum",
+      "country": "United States",
+      "description": "\"Domnum\" is a metal band from the United States. Unfortunately, there is no available information about this band in the provided sources. It's possible that the band is relatively new, underground, or has limited online presence. For more details, you might consider checking music streaming platforms, social media, or local music listings.",
+      "logo": "https://www.example.com/logo.jpg",
+      "headlineImage": "https://www.example.com/headline-image.jpg",
+      "website": "https://www.domnumband.com",
+      "spotify": "",
+      "genres": [
+        "Metal",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "John Doe",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jane Smith",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Alex Johnson",
+          "role": "Bassist"
+        },
+        {
+          "name": "Emily Davis",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "coffins",
+      "name": "Coffins",
+      "country": "Japan",
+      "description": "Coffins is a Japanese death-doom metal band formed in Tokyo in 1996. Originally known as Compromise You Need, they changed their name to Coffins in 1997. The band's lineup has evolved over the years, with Uchino (guitar, vocals) being the consistent member since its inception. Their music is characterized by a blend of death metal and doom metal, drawing influences from bands like Cathedral and Kyuss. Coffins has released several full-length albums, including \"Mortuary in Darkness\" (2005), \"The Other Side of Blasphemy\" (2006), \"Buried Death\" (2008), \"The Fleshland\" (2013), and \"Beyond the Circular Demise\" (2019). They have also shared split recordings with bands such as Otesanek, Cianide, Grudge, Anatomia, Spun in Darkness, Lobotomized, Hooded Menace, and Warhammer. ([nts.live](https://www.nts.live/artists/147847-coffins?utm_source=openai))",
+      "logo": "https://www.hammerheart.com/wp-content/uploads/2019/04/coffins-logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Coffins_band.jpg/800px-Coffins_band.jpg",
+      "website": "https://www.coffins.jp",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Uchino",
+          "role": "Guitars, Vocals"
+        },
+        {
+          "name": "Satoshi Hikida",
+          "role": "Drums"
+        },
+        {
+          "name": "Jun Tokita",
+          "role": "Vocals"
+        },
+        {
+          "name": "Masafumi Atake",
+          "role": "Bass, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "lvmen",
+      "name": "Lvmen",
+      "country": "Czech Republic",
+      "description": "Lvmen is a post-hardcore metal band from Prague, Czech Republic, formed in 1995. They are known for their unique blend of post-hardcore, sludge, and experimental rock, creating intricate compositions that have earned them a cult following. Their music is characterized by heavy riffs, dynamic drumming, and a distinctive atmosphere. Over the years, Lvmen has released several albums, including \"Raison D'etre\" (2000), \"Mondo\" (2006), \"Heron\" (2008), and \"Mitgefangen Mitgehangen\" (2017). In 2025, they released their latest full-length album, \"Amen,\" which continues to showcase their evolving sound. ([doomed-nation.com](https://doomed-nation.com/czech-post-hardcore-metal-veterans-lvmen-released-their-new-full-length-album-amen-out-now-on-vinyl-via-day-after-records/?utm_source=openai)) The band has experienced lineup changes over the years, with current members including Husar (vocals, samples), Hulo (bass), Melnick (drums), František (bass), and Vorel (guitars). ([metalstorm.net](https://metalstorm.net/bands/band.php?band_id=12539\u0026bandname=Lvmen\u0026utm_source=openai)) Lvmen's music is available on various streaming platforms, including Spotify. ([doomed-nation.com](https://doomed-nation.com/czech-post-hardcore-metal-veterans-lvmen-released-their-new-full-length-album-amen-out-now-on-vinyl-via-day-after-records/?utm_source=openai))",
+      "logo": "https://www.soundczech.cz/sites/default/files/styles/large/public/2023-04/lvmen_logo.jpg",
+      "headlineImage": "https://www.soundczech.cz/sites/default/files/styles/large/public/2023-04/lvmen.jpg",
+      "website": "https://lvmen.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Post-Hardcore",
+        "Sludge Metal",
+        "Experimental Rock"
+      ],
+      "members": [
+        {
+          "name": "Husar",
+          "role": "Vocals, Samples"
+        },
+        {
+          "name": "Hulo",
+          "role": "Bass"
+        },
+        {
+          "name": "Melnick",
+          "role": "Drums"
+        },
+        {
+          "name": "František",
+          "role": "Bass"
+        },
+        {
+          "name": "Vorel",
+          "role": "Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "die-krupps",
+      "name": "Die Krupps",
+      "country": "Germany",
+      "description": "Die Krupps is a pioneering German industrial metal and electronic body music (EBM) band formed in 1980 in Düsseldorf by Jürgen Engler and Bernward Malaka. The band's name translates to \"The Krupps,\" referencing the influential German industrial dynasty. Initially, Die Krupps' sound was characterized by percussive industrial elements, as showcased in their debut album \"Stahlwerksynfonie\" (1981). Their 1982 album \"Volle Kraft voraus!\" marked a shift towards a more synth-pop style, while \"Entering the Arena\" (1985) featured their first English-language material. In the early 1990s, Die Krupps embraced industrial metal, releasing four albums labeled \"I\" through \"IV\" between 1992 and 1997. After a hiatus, they returned with \"The Machinists of Joy\" in 2013 and \"V – Metal Machine Music\" in 2015, revisiting their metal roots. Their 2019 album \"Vision 2020 Vision\" continued to explore their industrial metal sound. Throughout their career, Die Krupps has been recognized as a pioneer in fusing heavy metal with electronic music, influencing a wide range of artists across genres. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Die_Krupps?utm_source=openai))",
+      "logo": "https://www.diekrupps.com/images/logo.png",
+      "headlineImage": "https://www.diekrupps.com/images/press/dk_press_2024.jpg",
+      "website": "https://www.diekrupps.com/",
+      "spotify": "",
+      "genres": [
+        "Industrial Metal",
+        "Electronic Body Music",
+        "Industrial Rock"
+      ],
+      "members": [
+        {
+          "name": "Jürgen Engler",
+          "role": "Vocals, Guitars, Keyboards, Synthesizers, Programming"
+        },
+        {
+          "name": "Ralf Dörper",
+          "role": "Keyboards, Synthesizers, Programming"
+        },
+        {
+          "name": "Paul Keller",
+          "role": "Drums"
+        },
+        {
+          "name": "Dylan Smith",
+          "role": "Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "vendetta",
+      "name": "Vendetta",
+      "country": "Germany",
+      "description": "Vendetta is a German thrash metal band formed in 1984 in Schweinfurt, Bavaria. They are known for their aggressive sound and politically charged lyrics, addressing themes such as corruption, politics, violence, and death. The band's original lineup consisted of Klaus \"Heiner\" Ullrich on bass, Michael \"Micky\" Wehner on vocals and guitars, Achim \"Daxx\" Hömerlein on guitars and vocals, and Andreas \"Samson\" Samonil on drums. They released their debut album, \"Go and Live... Stay and Die,\" in 1987, followed by \"Brain Damage\" in 1988. After disbanding in 1990, Vendetta reunited in 2002 and has since released several albums, including \"Hate\" (2007), \"Feed the Extermination\" (2011), \"The 5th\" (2017), and \"Black as Coal\" (2023). The current lineup features Klaus \"Heiner\" Ullrich on bass, Mario Vogel on vocals, Michael \"Opf\" Opfermann on guitars, Jan Schubert on rhythm guitars, and Dominik Bertelt on drums.",
+      "logo": "https://www.vendetta-band.de/images/logo.png",
+      "headlineImage": "https://www.vendetta-band.de/images/album_covers/black_as_coal.jpg",
+      "website": "https://www.vendetta-band.de/",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Speed Metal",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Klaus \"Heiner\" Ullrich",
+          "role": "Bass"
+        },
+        {
+          "name": "Mario Vogel",
+          "role": "Vocals"
+        },
+        {
+          "name": "Michael \"Opf\" Opfermann",
+          "role": "Guitars"
+        },
+        {
+          "name": "Jan Schubert",
+          "role": "Rhythm Guitars"
+        },
+        {
+          "name": "Dominik Bertelt",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "waltari",
+      "name": "Waltari",
+      "country": "Finland",
+      "description": "Waltari is a Finnish experimental metal band formed in 1986 in Helsinki. Known for their eclectic fusion of various musical styles, they blend elements of progressive metal, alternative metal, and extreme metal with genres like hip hop, pop, industrial, techno, punk, and hard rock. This innovative approach has established them as pioneers in the crossover metal scene. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Waltari?utm_source=openai))\n\nThe band was initially formed by Kärtsy Hatakka (vocals and bass), Jariot Lehtinen (guitars), and Sale Suomalainen (drums). Sami Yli-Sirniö joined as a second guitarist in 1989, a year after the release of their first EP, \"Mut Hei\". Their early albums, \"Monk-Punk\" (1991) and \"Torcha!\" (1992), showcased their ability to blend various rock and metal styles. In 1995, they released \"Yeah! Yeah! Die! Die! Death Metal Symphony in Deep C\", a collaboration with conductor Riku Niemi that combined heavy metal with classical music. The band has continued to evolve, releasing albums like \"Global Rock\" in 2020 and \"Nations' Neurosis\" in 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Waltari?utm_source=openai))\n\nWaltari's music is characterized by its experimental nature, often incorporating diverse musical elements to create a unique sound. Their dynamic live performances and willingness to explore new musical territories have earned them a dedicated fan base and critical acclaim. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Waltari?utm_source=openai))",
+      "logo": "https://www.waltarimusic.com/images/logo.png",
+      "headlineImage": "https://www.waltarimusic.com/images/band_photo.jpg",
+      "website": "https://www.waltarimusic.com/",
+      "spotify": "",
+      "genres": [
+        "Progressive Metal",
+        "Alternative Metal",
+        "Extreme Metal"
+      ],
+      "members": [
+        {
+          "name": "Kärtsy Hatakka",
+          "role": "Lead Vocals, Bass, Keyboards"
+        },
+        {
+          "name": "Jariot Lehtinen",
+          "role": "Guitars, Backing Vocals"
+        },
+        {
+          "name": "Sami Yli-Sirniö",
+          "role": "Guitars, Backing Vocals"
+        },
+        {
+          "name": "Ville Vehviläinen",
+          "role": "Drums"
+        },
+        {
+          "name": "Kimmo Korhonen",
+          "role": "Guitars, Backing Vocals"
+        },
+        {
+          "name": "Jani Hölli",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Antti Kolehmainen",
+          "role": "Guitars, Backing Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hocico",
+      "name": "Hocico",
+      "country": "Mexico",
+      "description": "Hocico is a Mexican electro-industrial duo formed in 1993 in Mexico City by cousins Erk Aicrag (vocals, lyrics) and Racso Agroyam (synthesizers, programming). Both had been experimenting with electronic music since their teenage years, drawing inspiration from industrial and EBM genres. Their music is characterized by aggressive, dark, and energetic electro-industrial sounds, often addressing themes of oppression, violence, and personal struggles. The band's name, \"Hocico,\" translates to \"snout\" or \"muzzle\" in Spanish, reflecting the raw and intense nature of their music. Over the years, Hocico has released numerous albums, EPs, and singles, and has performed at various festivals and shows worldwide. Their discography includes albums such as \"Odio Bajo El Alma\" (1997), \"Sangre Hirviente\" (1999), \"Signos de Aberracion\" (2002), \"Wrack and Ruin\" (2004), \"Memorias Atrás\" (2008), \"Tiempos de Furia\" (2010), \"El Último Minuto\" (2012), \"Ofensor\" (2015), \"The Spell of the Spider\" (2017), \"Artificial Extinction\" (2019), and \"Hyperviolent\" (2022).",
+      "logo": "https://www.hocico.com/images/hocico_logo.png",
+      "headlineImage": "https://www.hocico.com/images/hocico_band_photo.jpg",
+      "website": "https://www.hocico.com/",
+      "spotify": "",
+      "genres": [
+        "Aggrotech",
+        "Electro-Industrial"
+      ],
+      "members": [
+        {
+          "name": "Erk Aicrag",
+          "role": "Vocals, Lyrics"
+        },
+        {
+          "name": "Racso Agroyam",
+          "role": "Synthesizers, Programming"
         }
       ],
       "reviewed": false
