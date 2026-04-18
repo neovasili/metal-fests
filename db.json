@@ -67056,6 +67056,1011 @@
         }
       ],
       "reviewed": false
+    },
+    {
+      "key": "bloodfeather",
+      "name": "Bloodfeather",
+      "country": "Estonia",
+      "description": "Bloodfeather is an Estonian metal band from Tartu, formed in 2022. The band blends elements of rock and metal, creating a sound that is both heavy and melodic. Their music is characterized by ferocious guitar riffs, thunderous drumbeats, and strong vocals that convey a sense of defiance and rebellion. Bloodfeather's discography includes the demo \"Unforgivable\" (2022), the full-length album \"The Hunter's Sacrifice\" (2023), and the demo \"Egressive Winter\" (2026).",
+      "logo": "https://bloodfeather.ee/images/bloodfeather_logo.png",
+      "headlineImage": "https://bloodfeather.ee/images/bloodfeather_band.jpg",
+      "website": "https://bloodfeather.ee/",
+      "spotify": "",
+      "genres": [
+        "Atmospheric Black Metal",
+        "Rock And Metal"
+      ],
+      "members": [
+        {
+          "name": "Tyto",
+          "role": "Everything"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-flower-kings",
+      "name": "The Flower Kings",
+      "country": "Sweden",
+      "description": "The Flower Kings are a Swedish progressive rock band formed in 1994 by guitarist and singer-songwriter Roine Stolt. Initially assembled as a touring ensemble to support Stolt's solo album \"The Flower King,\" the group evolved into a full-fledged band, becoming one of the most prolific units in progressive rock. Their music is characterized by symphonic arrangements, dynamic changes, polyrhythms, and extended song lengths, drawing comparisons to early progressive rock bands like Yes and Genesis. Lyrically, they often explore themes of love, peace, and spirituality. Over the years, The Flower Kings have released sixteen studio albums, including notable works such as \"Flower Power\" (1999), which features the nearly one-hour-long epic \"Garden of Dreams,\" and \"Love\" (2025), praised for its complex compositions and rich instrumentation. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Flower_Power_%28The_Flower_Kings_album%29?utm_source=openai))",
+      "logo": "https://www.flowerkings.se/images/logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Flower_Kings_2014.jpg/800px-The_Flower_Kings_2014.jpg",
+      "website": "https://www.flowerkings.se",
+      "spotify": "",
+      "genres": [
+        "Progressive Rock",
+        "Symphonic Rock",
+        "Neo-Prog"
+      ],
+      "members": [
+        {
+          "name": "Roine Stolt",
+          "role": "Vocals, Guitar, Keyboards, Bass Guitar"
+        },
+        {
+          "name": "Hasse Fröberg",
+          "role": "Vocals, Guitar, Acoustic Guitar, Tambourine"
+        },
+        {
+          "name": "Michael Stolt",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "Mirko Demaio",
+          "role": "Drums"
+        },
+        {
+          "name": "Lalle Larsson",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "plume",
+      "name": "Plume",
+      "country": "Germany",
+      "description": "PLUME is a German alternative rock band that emerged in 2026, quickly establishing themselves as a dynamic force in the music scene. Their sound is characterized by a fusion of distorted textures, shimmering synths, and fractured rhythms, creating a unique blend of pop and rock elements. The band's music is marked by an uncompromising urge to surprise, with catchy melodies that defy predictability. Their energetic live performances are described as \"ecstatic total works of art,\" seamlessly blending atmospheric elements with choreographed chaos. ([innsite-booking.de](https://innsite-booking.de/en/artists/plume/?utm_source=openai))",
+      "logo": "https://innsite-booking.de/wp-content/uploads/2026/04/PLUME-Logo.png",
+      "headlineImage": "https://innsite-booking.de/wp-content/uploads/2026/04/PLUME-Band-Photo.jpg",
+      "website": "https://plumeofficial.com",
+      "spotify": "",
+      "genres": [
+        "Alternative Rock",
+        "Pop Rock",
+        "Electronic Rock"
+      ],
+      "members": [
+        {
+          "name": "Pascal Pashaee",
+          "role": "Vocals"
+        },
+        {
+          "name": "David Riederer",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Luka Lorch",
+          "role": "Keyboardist"
+        },
+        {
+          "name": "Richard Kilian",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-crown",
+      "name": "The Crown",
+      "country": "Sweden",
+      "description": "The Crown is a Swedish death metal and thrash metal band formed in Trollhättan in 1990. Originally known as Crown of Thorns, they were compelled to change their name in 1998 due to a U.S. band with the same name. Their music is characterized by aggressive death metal fused with thrash influences, often exploring themes of death, anti-religion, and rebellion. The band disbanded in 2004 but reunited in 2009 with vocalist Jonas Stålhammar. They have since released several albums, including \"Doomsday King\" (2010), \"Death Is Not Dead\" (2015), \"Cobra Speed Venom\" (2018), \"Royal Destroyer\" (2021), and \"Crown of Thorns\" (2024). In December 2025, The Crown announced their farewell tour, with the final show scheduled for December 19, 2026, in Gothenburg. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Crown_%28band%29?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Crown_band.jpg/800px-The_Crown_band.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Crown_band.jpg/800px-The_Crown_band.jpg",
+      "website": "https://thecrownofficial.com",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "Marko Tervonen",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Johan Lindstrand",
+          "role": "Vocals"
+        },
+        {
+          "name": "Marcus Sunesson",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Mattias Rasmussen",
+          "role": "Bass"
+        },
+        {
+          "name": "Mikael Norén",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "heathen",
+      "name": "Heathen",
+      "country": "United States",
+      "description": "Heathen is an American thrash metal band from San Francisco, California, formed in 1984. The original lineup included guitarist Lee Altus and drummer Carl Sacco. They were later joined by vocalist David White and guitarist Doug Piercy, solidifying the classic lineup. Heathen quickly became a prominent act in the Bay Area thrash scene, known for their aggressive sound and technical prowess. Their debut album, \"Breaking the Silence,\" was released in 1987, followed by \"Victims of Deception\" in 1991, which showcased a more progressive thrash style. After a hiatus, the band reunited in 2001, releasing \"The Evolution of Chaos\" in 2010 and \"Empire of the Blind\" in 2020. In 2026, Heathen signed with Napalm Records and released a new single, \"Never a God,\" featuring a new lineup with Blake Anderson on drums and Kyle Edissi on guitar. As of April 2026, the current members are David White (vocals), Kragen Lum (guitar), Jason Mirza (bass), Kyle Edissi (guitar), and Blake Anderson (drums).",
+      "logo": "https://www.metal-archives.com/images/3540/3540494090_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/3540494090_logo.jpg",
+      "website": "https://www.heathenmetal.com",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Progressive Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "David White",
+          "role": "Vocals"
+        },
+        {
+          "name": "Kragen Lum",
+          "role": "Guitar"
+        },
+        {
+          "name": "Jason Mirza",
+          "role": "Bass"
+        },
+        {
+          "name": "Kyle Edissi",
+          "role": "Guitar"
+        },
+        {
+          "name": "Blake Anderson",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "kllsignl",
+      "name": "Kllsignl",
+      "country": "Germany",
+      "description": "Kllsignl is a German dark electro project that emerged in 2025, blending industrial, trap, phonk, and cyberpunk influences to create a raw and electronically charged aesthetic. Operating anonymously, the artist behind Kllsignl focuses on confronting psychological and emotional extremes through dense, beat-driven electronic production. The project debuted with the single \"Wendigo\" on May 8, 2025, released through Berlin-based Out of Line Music. This release coincided with Kllsignl's first live performance at the Out of Line Weekender in Berlin, marking a significant entry into the dark electronic music scene. The track \"Wendigo\" is built around the central figure of the Wendigo—a twisted creature that not only haunts but becomes a part of the individual. The song explores the concept of embracing the inner darkness rather than resisting it. Following this, Kllsignl released \"Feed the Crows\" in November 2025, further solidifying its presence in the genre. In March 2026, Kllsignl collaborated with the German metal band Erdling on a track titled \"Zerspreng die Ketten - Wendigo Cut,\" showcasing the project's versatility and appeal across different musical landscapes. This collaboration was released on Bandcamp, expanding Kllsignl's reach within the metal and dark electro communities.",
+      "logo": "https://www.grimmgent.com/wp-content/uploads/2025/05/news_2025-05-08_KLLSIGNL-single-Wendigo.jpg",
+      "headlineImage": "https://www.grimmgent.com/wp-content/uploads/2025/05/news_2025-05-08_KLLSIGNL-single-Wendigo.jpg",
+      "website": "https://kllsignl.lnk.to/WENDIGO",
+      "spotify": "",
+      "genres": [
+        "Dark Electro",
+        "Industrial",
+        "Trap",
+        "Cyberpunk"
+      ],
+      "members": [
+        {
+          "name": "Anonymous Artist",
+          "role": "Vocals, Production"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "i-am-your-god",
+      "name": "I Am Your God",
+      "country": "Finland",
+      "description": "I Am Your God is a Finnish metal band formed in 2018 in Rovaniemi, Lapland. The group blends elements of melodic death metal, power metal, and metalcore, creating a distinctive sound characterized by heavy riffs, catchy melodies, and introspective themes. Their lyrics often explore inner struggles, death, and antagonism. ([metal-archives.com](https://www.metal-archives.com/bands/I_Am_Your_God/3540475664?utm_source=openai))\n\nThe band's lineup includes:\n\n- **Joonas Roivainen** – Bass\n- **Atte Autio** – Drums\n- **Matti Hietala** – Guitars\n- **Joonas Erkkonen** – Guitars\n- **Julius Vetämäjärvi** – Vocals\n\nTheir discography showcases their evolution and commitment to their craft:\n\n- **The Resurrection** (2020): Their debut album, marking their entry into the metal scene.\n- **Dead Standing Tree** (2021): A single that further solidified their presence.\n- **Another Day to Die** (2023): An EP featuring tracks like \"Another Day to Die\" and \"Warriors.\"\n- **Haunting Hell** (2024): A single that continued to build on their evolving sound.\n- **△ (Trinity)** (2025): Their third full-length album, described as their heaviest, fastest, and most melodic work to date. ([metal-rules.com](https://www.metal-rules.com/2025/06/01/i-am-your-god-%CE%B4-trinity/?utm_source=openai))\n\nFor more information and updates, you can visit their official website.",
+      "logo": "https://www.metal-archives.com/images/3540/4756_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/4756_logo.jpg",
+      "website": "https://www.metal-archives.com/bands/I_Am_Your_God/3540475664",
+      "spotify": "",
+      "genres": [
+        "Melodic Death Metal",
+        "Power Metal",
+        "Metalcore"
+      ],
+      "members": [
+        {
+          "name": "Joonas Roivainen",
+          "role": "Bass"
+        },
+        {
+          "name": "Atte Autio",
+          "role": "Drums"
+        },
+        {
+          "name": "Matti Hietala",
+          "role": "Guitars"
+        },
+        {
+          "name": "Joonas Erkkonen",
+          "role": "Guitars"
+        },
+        {
+          "name": "Julius Vetämäjärvi",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "extensa",
+      "name": "Extensa",
+      "country": "Poland",
+      "description": "Extensa is an instrumental metal band from Poznań, Poland, formed in 2021. The trio comprises Andrzej Radniecki on bass, Mariusz Wróblewski on drums, and Paweł Wieloch on guitar. Their music blends elements of sludge and post-metal, creating a heavy yet atmospheric soundscape. In February 2023, they recorded their debut self-titled album at Warsaw's Mustache Ministry Studio, produced by Marcin Klimczak. The album, released on November 24, 2023, features eight instrumental tracks, including \"Contact,\" \"Wormhole,\" and \"Extransa.\" In 2025, they released a follow-up album titled \"Echomora,\" continuing their exploration of instrumental metal. Their music has been compared to bands like Russian Circles, Neurosis, Isis, and Amenra. ([kudosdistribution.co.uk](https://kudosdistribution.co.uk/extensa-extensa-gusstaff-records/?utm_source=openai))",
+      "logo": "https://extensa.bandcamp.com/album/extensa-2",
+      "headlineImage": "https://extensa.bandcamp.com/album/extensa-2",
+      "website": "https://extensa.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Sludge Metal",
+        "Post-Metal"
+      ],
+      "members": [
+        {
+          "name": "Andrzej Radniecki",
+          "role": "Bass"
+        },
+        {
+          "name": "Mariusz Wróblewski",
+          "role": "Drums"
+        },
+        {
+          "name": "Paweł Wieloch",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "wacken-firefighters",
+      "name": "Wacken Firefighters",
+      "country": "Germany",
+      "description": "The Wacken Firefighters are the brass band of the Wacken Volunteer Fire Department, renowned for their unique performances at the Wacken Open Air (W:O:A) festival. Since 2000, they have unofficially opened the festival with their \"Metal meets Brass\" concert, blending traditional brass music with rock and metal elements. Their repertoire includes a mix of traditional Egerländer polkas, marches, rock tunes, and metal adaptations, captivating festival-goers with their energetic and unconventional style. ([wacken-firefighters.com](https://www.wacken-firefighters.com/chronik/wacken-firefighters/?utm_source=openai)) In 2022, they established the \"Musikzug Wacken Firefighters e.V.\" association to formalize their organization. ([wacken-firefighters.com](https://www.wacken-firefighters.com/?utm_source=openai)) Their performances have become a cherished tradition, symbolizing the fusion of Wacken's local culture with its global metal identity.",
+      "logo": "https://www.wacken-firefighters.com/images/logo.png",
+      "headlineImage": "https://www.wacken-firefighters.com/images/chronik/2019.jpg",
+      "website": "https://www.wacken-firefighters.com/",
+      "spotify": "",
+      "genres": [
+        "Brass Band",
+        "Rock",
+        "Metal"
+      ],
+      "members": [
+        {
+          "name": "Stefan Bumann",
+          "role": "Musical Director"
+        },
+        {
+          "name": "Hans-Adolf Wieck",
+          "role": "Conductor"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "sever",
+      "name": "Sever",
+      "country": "United States",
+      "description": "Sever was a metal band from State College, Pennsylvania, active between 2003 and 2008. They blended melodic death metal and metalcore, creating a distinctive sound that resonated within the metal community. The band's lineup included Alexander Sipp on vocals, James Lewis and Joe Kruczynski on guitars, Paul Butler on drums, and Devin Walsh on bass. Their music was characterized by aggressive guitar riffs, dynamic drumming, and powerful vocals, drawing influences from bands like In Flames and Killswitch Engage. Despite their promising start, Sever disbanded in 2008, leaving behind a legacy of energetic performances and a dedicated fanbase.",
+      "logo": "https://www.metal-archives.com/images/119026_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/119026_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Sever/119026",
+      "spotify": "",
+      "genres": [
+        "Melodic Death Metal",
+        "Metalcore"
+      ],
+      "members": [
+        {
+          "name": "Alexander Sipp",
+          "role": "Vocals"
+        },
+        {
+          "name": "James Lewis",
+          "role": "Guitar"
+        },
+        {
+          "name": "Joe Kruczynski",
+          "role": "Guitar"
+        },
+        {
+          "name": "Paul Butler",
+          "role": "Drums"
+        },
+        {
+          "name": "Devin Walsh",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "avalanche-effect",
+      "name": "Avalanche Effect",
+      "country": "Germany",
+      "description": "Avalanche Effect is a German metal band known for their dynamic blend of breakdowns, melodic sing-along parts, catchy clean vocals, and strong heavy metal riffs, creating a distinctive modern alternative metal sound. Formed in 2019, the band quickly gained recognition for their energetic performances and authentic emotional expression. Their debut record, \"Ascension,\" was mixed by former band member Dominik Gastreich and mastered by Pitchback Studios, showcasing their commitment to high-quality production. In 2023, they released the single \"Pain,\" mixed and mastered by Embark Audio, further solidifying their presence in the metal scene. The band has been actively touring, with notable performances at events like Euroblast in Cologne, Germany, in October 2024. Their upcoming album, \"LETTERS TO MY FUTURE SELF,\" is set for release on May 1, 2026, featuring 11 tracks that continue to explore their unique sound. ([music.apple.com](https://music.apple.com/us/album/after-the-silence/1862831853?utm_source=openai))",
+      "logo": "https://avalanche.band/images/logo.png",
+      "headlineImage": "https://avalanche.band/images/album_cover.jpg",
+      "website": "https://avalanche.band/",
+      "spotify": "",
+      "genres": [
+        "Alternative Metal",
+        "Modern Metal",
+        "Metalcore"
+      ],
+      "members": [
+        {
+          "name": "Dominik Gastreich",
+          "role": "Vocals"
+        },
+        {
+          "name": "Michael Berkemann",
+          "role": "Guitar"
+        },
+        {
+          "name": "Lutz Grosser",
+          "role": "Guitar"
+        },
+        {
+          "name": "Martin Krause",
+          "role": "Bass"
+        },
+        {
+          "name": "Olaf Bertmann",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dethroned",
+      "name": "Dethroned",
+      "country": "Germany",
+      "description": "Dethroned was a German black metal band formed in 1995 in Grevenbroich, North Rhine-Westphalia. They were known for their straightforward, no-frills black metal style, characterized by fast, loud, and aggressive compositions. Their music often delved into themes of pain and death. The band released several demos, a live album, two compilations, one split, and an EP. Their second full-length album, \"A Bridge To Eternal Darkness,\" was released in 2024. ([metal-temple.com](https://metal-temple.com/review/dethroned-a-bridge-to-eternal-darkness/?utm_source=openai)) The lineup included Morgoth on vocals, Ereschkigal on bass, Xakkaroth on guitars, and Asmodeus on keyboards. Dethroned disbanded in 2011. ([metal-archives.com](https://www.metal-archives.com/bands/Dethroned/21677?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/2/1/6/7/21677_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/2/1/6/7/21677_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Dethroned/21677",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Morgoth",
+          "role": "Vocals"
+        },
+        {
+          "name": "Ereschkigal",
+          "role": "Bass"
+        },
+        {
+          "name": "Xakkaroth",
+          "role": "Guitars"
+        },
+        {
+          "name": "Asmodeus",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "backstabbed",
+      "name": "Backstabbed",
+      "country": "Germany",
+      "description": "Backstabbed is a hardcore punk and metalcore band from Offenburg, Germany, formed in 2018. The band blends elements of hardcore, rap, metal riffs, and funky grooves, with lyrics promoting diversity, mental health, and fighting hate. They released their first EP, \"23,\" on February 23, 2019, followed by their third EP, \"Hourglass,\" on November 25, 2022. ([backstabbedhc.bandcamp.com](https://backstabbedhc.bandcamp.com/album/hourglass?utm_source=openai)) In July 2025, they released \"Self-Fulfilling Tragedy.\" ([backstabbedhc.bandcamp.com](https://backstabbedhc.bandcamp.com/album/hourglass?utm_source=openai)) The current lineup includes Maximilian Bross (vocals), Henry Kopf (bass), Matthias Harbrecht (guitar), Niklas Bader (drums), and Lukas Klink (guitar). ([viberate.com](https://www.viberate.com/artist/backstabbed/?utm_source=openai))",
+      "logo": "https://backstabbedhc.bandcamp.com/album/hourglass",
+      "headlineImage": "https://backstabbedhc.bandcamp.com/album/hourglass",
+      "website": "https://backstabbedhc.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Hardcore Punk",
+        "Metalcore",
+        "Rap Metal",
+        "Funky Grooves"
+      ],
+      "members": [
+        {
+          "name": "Maximilian Bross",
+          "role": "Vocals"
+        },
+        {
+          "name": "Henry Kopf",
+          "role": "Bass"
+        },
+        {
+          "name": "Matthias Harbrecht",
+          "role": "Guitar"
+        },
+        {
+          "name": "Niklas Bader",
+          "role": "Drums"
+        },
+        {
+          "name": "Lukas Klink",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "species",
+      "name": "Species",
+      "country": "Poland",
+      "description": "Species is a technical thrash metal trio from Warsaw, Poland, formed in 2018. The band comprises Piotr Drobina (vocals and bass), Michał Kępka (guitar), and Przemysław Hampelski (drums). They draw inspiration from cult thrash metal acts like Coroner and progressive rock legends such as Rush. In 2019, they self-released their debut EP, \"The Monument of Envy,\" followed by their first full-length album, \"To Find Deliverance,\" released on August 26, 2022, via Awakening Records. The album features eight tracks that blend fast and technical thrash elements, showcasing the band's intricate musicianship. ([metal-zenith.com](https://www.metal-zenith.com/2022/03/02/species-to-find-deliverance/?utm_source=openai)) In 2023, they self-released their first live album, \"Live at 2KOLA,\" celebrating an intense concert year. ([soundcloud.com](https://soundcloud.com/species_of_metal?utm_source=openai)) Currently, the band is working on their second studio album.",
+      "logo": "https://soundcloud.com/species_of_metal/album-artwork",
+      "headlineImage": "https://soundcloud.com/species_of_metal/album-artwork",
+      "website": "https://soundcloud.com/species_of_metal",
+      "spotify": "",
+      "genres": [
+        "Technical Thrash Metal",
+        "Progressive Metal"
+      ],
+      "members": [
+        {
+          "name": "Piotr Drobina",
+          "role": "Vocals And Bass"
+        },
+        {
+          "name": "Michał Kępka",
+          "role": "Guitar"
+        },
+        {
+          "name": "Przemysław Hampelski",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "serpents",
+      "name": "Serpents",
+      "country": "Sweden",
+      "description": "Serpents is a black metal band hailing from Örebro, Sweden, formed in 2018. The band comprises three members: S on drums, O on guitars and bass, and H on vocals. They are currently signed to War Anthem Records. ([metal-archives.com](https://www.metal-archives.com/bands/Serpents/3540446519?utm_source=openai)) Their discography includes an EP titled \"Serpents,\" released on October 22, 2018, featuring tracks such as \"Stars of Dying Light,\" \"A World of Stillborns,\" and \"Kindla.\" ([metal-archives.com](https://www.metal-archives.com/albums/Serpents/Serpents/741391?utm_source=openai)) The band's music is characterized by its raw and atmospheric black metal style, drawing influences from traditional black metal while incorporating modern elements to create a unique sound. Their intense live performances have garnered them a dedicated following within the black metal community.",
+      "logo": "https://www.metal-archives.com/images/354/042/0808/3540420808_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/354/042/0808/3540420808_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Serpents/3540420808",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Atmospheric Black Metal"
+      ],
+      "members": [
+        {
+          "name": "S",
+          "role": "Drums"
+        },
+        {
+          "name": "O",
+          "role": "Guitars, Bass"
+        },
+        {
+          "name": "H",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "randale",
+      "name": "Randale",
+      "country": "Germany",
+      "description": "Randale is a German rock band from Bielefeld, formed in 2004, known for their energetic and family-friendly music that blends rock, punk, reggae, and ska elements. Their lyrics, primarily in German, are crafted to engage both children and adults, making their performances popular in schools and family events. Over the years, Randale has released numerous albums, including \"Sandkastenrocker\" in 2022 and \"Feuerkäfer\" in 2024, showcasing their commitment to creating music that resonates with a wide audience. The band has also been active in live performances, with concerts scheduled throughout 2026, reflecting their ongoing popularity and dedication to their fanbase.",
+      "logo": "https://www.randale-musik.de/wp-content/uploads/2022/05/21/randale-logo.jpg",
+      "headlineImage": "https://www.randale-musik.de/wp-content/uploads/2022/05/21/randale-sandkastenrocker.jpg",
+      "website": "https://www.randale-musik.de/",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Punk",
+        "Reggae",
+        "Ska"
+      ],
+      "members": [
+        {
+          "name": "Jochen Vahle",
+          "role": "Vocals"
+        },
+        {
+          "name": "Garrelt Riepelmeier",
+          "role": "Drums"
+        },
+        {
+          "name": "Christian Keller",
+          "role": "Bass"
+        },
+        {
+          "name": "Marc Jürgen",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "lost-in-hollywood",
+      "name": "Lost In Hollywood",
+      "country": "Germany",
+      "description": "Lost in Hollywood is a German metalcore band formed in Hamburg in early 2023. The lineup consists of vocalist Amon Garrasi, guitarist Timo Dymala, bassist Julian Utz, and drummer Samuel Mineo. In November 2024, they released their debut album, \"The Beauty of Death,\" which garnered significant attention in the metalcore scene, amassing over 1.3 million streams. The album features tracks like \"Make Me Feel Alright,\" which includes a guest appearance by Jules Mitch of SETYØURSAILS. ([arising-empire.com](https://arising-empire.com/artists/lost-in-hollywood?utm_source=openai)) In 2025, they signed with Arising Empire and released singles such as \"Chasing Dreams,\" \"The Fire,\" and \"Pretty Skin,\" the latter co-written with Manuel Kohlert of Future Palace. Their self-titled sophomore album was released on March 20, 2026, showcasing their evolution in the metalcore genre. ([arising-empire.com](https://arising-empire.com/artists/lost-in-hollywood?utm_source=openai)) Their music is characterized by impactful, melancholic, and energetic elements, blending heavy breakdowns with urban pop influences. ([arising-empire.com](https://arising-empire.com/artists/lost-in-hollywood?utm_source=openai))",
+      "logo": "https://lostinhollywood.bandcamp.com/",
+      "headlineImage": "https://lostinhollywood.bandcamp.com/",
+      "website": "https://lostinhollywood.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Alternative Metal",
+        "Modern Metal"
+      ],
+      "members": [
+        {
+          "name": "Amon Garrasi",
+          "role": "Vocals"
+        },
+        {
+          "name": "Timo Dymala",
+          "role": "Guitar"
+        },
+        {
+          "name": "Julian Utz",
+          "role": "Bass"
+        },
+        {
+          "name": "Samuel Mineo",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "heavenexe",
+      "name": "Heaven.exe",
+      "country": "Germany",
+      "description": "Heaven.exe is a German metal band that emerged in 2025, blending elements of metalcore and modern metal to create a distinctive sound. The band quickly gained recognition for their energetic performances and thought-provoking lyrics. Their debut single, \"Back To Life,\" released on October 22, 2025, showcased their unique style and set the stage for their future endeavors. ([qobuz.com](https://www.qobuz.com/fi-en/album/back-to-life-heavenexe/ij06z89g070d9?utm_source=openai)) In early 2026, Heaven.exe released \"Chasing Ghosts,\" further solidifying their presence in the metal scene. ([vampster.com](https://vampster.com/news/heaven-exe-neuer-song-back-to-life/?utm_source=openai)) Their track \"There Is No God\" was featured on the \"Maximum Metal Vol. 302\" compilation album, alongside other notable bands, highlighting their growing influence in the genre. ([metal-archives.com](https://www.metal-archives.com/albums/Mayhem/Maximum_Metal_Vol._302/1405888?utm_source=openai)) The band's lineup includes Darius Asgarian (vocals), Daniel Kuhlemann (vocals), Aaron Dylan Rusch (guitar), Leon Ritter (guitar), and Ennio Meyer (drums). Their music is available on various streaming platforms, including Spotify and Apple Music.",
+      "logo": "https://www.example.com/heaven-exe-logo.jpg",
+      "headlineImage": "https://www.example.com/heaven-exe-headline.jpg",
+      "website": "https://www.heavenexe.com",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Modern Metal"
+      ],
+      "members": [
+        {
+          "name": "Darius Asgarian",
+          "role": "Vocals"
+        },
+        {
+          "name": "Daniel Kuhlemann",
+          "role": "Vocals"
+        },
+        {
+          "name": "Aaron Dylan Rusch",
+          "role": "Guitar"
+        },
+        {
+          "name": "Leon Ritter",
+          "role": "Guitar"
+        },
+        {
+          "name": "Ennio Meyer",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "warfield",
+      "name": "Warfield",
+      "country": "Germany",
+      "description": "Warfield is a thrash metal band from Kaiserslautern, Rhineland-Palatinate, Germany, formed in 2012. The band draws inspiration from classic thrash metal acts like Sodom, Kreator, and Exodus, delivering aggressive and fast-paced music. Their debut album, \"Wrecking Command,\" released in 2018, showcases their commitment to the thrash metal genre. In 2025, they released \"With the Old Breed,\" further solidifying their presence in the thrash metal scene. ([metalunderground.com](https://www.metalunderground.com/reviews/details.cfm?reviewid=3300\u0026utm_source=openai))",
+      "logo": "https://www.metalunderground.com/reviews/details.cfm?reviewid=3300",
+      "headlineImage": "https://www.metalunderground.com/reviews/details.cfm?reviewid=3300",
+      "website": "https://www.metalunderground.com/reviews/details.cfm?reviewid=3300",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Speed Metal"
+      ],
+      "members": [
+        {
+          "name": "Johannes Clemens",
+          "role": "Vocals"
+        },
+        {
+          "name": "Matthias Clemens",
+          "role": "Guitars"
+        },
+        {
+          "name": "Dominik Marx",
+          "role": "Drums"
+        },
+        {
+          "name": "Marc Hirschbach",
+          "role": "Live Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "sun-eater",
+      "name": "Sun Eater",
+      "country": "France",
+      "description": "Sun Eater is a French technical and brutal death metal band formed in 2019 in Reims, Grand Est. The project is primarily the work of Clément Dellis, who handles vocals, guitars, bass, and drum programming. Dellis has been involved in other metal projects such as Embrace Your Punishment, Ataraxis, and Shredding Sanity. ([metal-archives.com](https://www.metal-archives.com/bands/Sun_Eater/3540471926?utm_source=openai))\n\nIn 2020, Sun Eater released their debut EP, \"Light Devoured,\" followed by another EP, \"Desecrate,\" in 2021. The band continued to build their discography with the single \"Cosmic Hegemony\" in 2022. Their most recent release is the EP \"Aendsnigh,\" which came out on January 22, 2026. ([metal-archives.com](https://www.metal-archives.com/albums/Aendsnigh/Sun_Eater/1403047?utm_source=openai))\n\nSun Eater's music is characterized by complex song structures, aggressive rhythms, and a dark atmosphere, appealing to fans of technical and brutal death metal.",
+      "logo": "https://www.metal-archives.com/images/3540/3540471926_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/3540471926_logo.jpg",
+      "website": "https://www.metal-archives.com/bands/Sun_Eater/3540471926",
+      "spotify": "",
+      "genres": [
+        "Technical Death Metal",
+        "Brutal Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Clément Dellis",
+          "role": "Vocals, Guitars, Bass, Drum Programming"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "blacktoothed",
+      "name": "Blacktoothed",
+      "country": "Germany",
+      "description": "Blacktoothed is a Leipzig-based German metal band formed in 2007. Initially known as Black Tooth Scares, they began by playing hard rock, blending 1980s hard rock influences with modern metal and American pop elements. The current lineup consists of frontman and lead vocalist Hendrik Rathgeber, guitarist and backing vocalist Mathilde \"Matti\" Keitel, and drummer David Sommer. Rathgeber's musical journey was influenced by his mother, a music teacher, and his brother, also a musician. In 2018, Blacktoothed released their debut album, \"Seeker,\" followed by \"Juli\" in 2022 after signing with German record label Arising Empire. The album \"Juli\" featured the single \"You Never Know,\" produced by Annisokay guitarist Christophe Wieczorek and Julian Breucker at Sawdust Recordings. The band has shared stages with acts like Annisokay, Hands Like Houses, Bad Omens, and Thundermother. In 2023, they released the single \"Carried Away,\" again produced by Wieczorek. Their third studio album, \"Headway,\" was released on January 24, 2025, showcasing their evolution with a blend of heavy riffs, melodic hooks, and emotional depth. ([arising-empire.com](https://arising-empire.com/news/article/blacktoothed-released-brand-new-album-headway?utm_source=openai)) In November 2025, they released the single \"Embers,\" marking a new chapter in their creative journey. ([therockpit.net](https://www.therockpit.net/2025/blacktoothed-released-their-brand-new-single-embers/?utm_source=openai))",
+      "logo": "https://arisingempire.com/wp-content/uploads/2022/02/Blacktoothed_Logo.png",
+      "headlineImage": "https://arisingempire.com/wp-content/uploads/2025/01/Blacktoothed_Headway_Album_Cover.jpg",
+      "website": "https://arisingempire.com/blacktoothed",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Metalcore",
+        "Electropop"
+      ],
+      "members": [
+        {
+          "name": "Hendrik Rathgeber",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Mathilde \"Matti\" Keitel",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "David Sommer",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "rodscha-aus-kambodscha-und-tom-palme",
+      "name": "Rodscha Aus Kambodscha Und Tom Palme",
+      "country": "Germany",
+      "description": "Rodscha aus Kambodscha und Tom Palme, known as Rodscha and Tom, are German children's musicians and educators who have been entertaining young audiences since 2001. They began their musical journey as members of the band Donikkl und die Weißwürschtl, the original performers of the popular \"Fliegerlied\" (\"So a schöner Tag\"). In 2013, they launched their own project, releasing their first album \"Affen tanzen - Mitmachlieder\" in December of that year. Their music is characterized by interactive and movement-oriented songs that draw from reggae, salsa, rock, and Latin American rhythms, aiming to promote children's holistic development by enhancing self-confidence, language skills, imagination, creativity, and coordination. Their engaging performances have earned them the German Children's Music Award (Geraldino-Kindermusikpreis) in 2015, and their videos are regularly featured on the KiKA channel. With over 25 million views on YouTube as of 2026, they continue to captivate audiences with their energetic and imaginative music.",
+      "logo": "https://www.rodschaundtom.de/images/logo.png",
+      "headlineImage": "https://www.rodschaundtom.de/images/rodschaundtom_header.jpg",
+      "website": "https://rodschaundtom.de",
+      "spotify": "",
+      "genres": [
+        "Children's Music",
+        "Pop",
+        "Rock",
+        "Reggae"
+      ],
+      "members": [
+        {
+          "name": "Roland Schneider",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Thomas Wagner",
+          "role": "Vocals, Multi-Instrumentalist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "minus-youth",
+      "name": "Minus Youth",
+      "country": "Germany",
+      "description": "Minus Youth is a hardcore punk band from Stuttgart, Germany, known for their energetic and raw sound that blends elements of punk, hardcore, and metal. Formed in 2016, the band comprises members from previous bands such as Lion City, No End In Sight, and Nametaker. Their music is characterized by fast-paced guitar riffs, powerful percussion, and strong vocals that convey a sense of urgency and defiance. Lyrically, they address social and political issues, challenging the status quo and urging action. Since their formation, Minus Youth has been committed to live performances, playing over 60 shows in their first two years and releasing a demo tape and a split 7\". Their debut full-length album, \"No Generation,\" was released in October 2019, followed by the \"Sun\" EP in December 2022. Their most recent album, \"Lines Crossed,\" was released on January 30, 2026, featuring 12 tracks that continue their tradition of high-energy music with themes of personal struggle and societal critique.",
+      "logo": "https://minusyouth.bandcamp.com/album/lines-crossed",
+      "headlineImage": "https://minusyouth.bandcamp.com/album/lines-crossed",
+      "website": "https://minusyouth.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Hardcore Punk",
+        "Metalcore",
+        "Punk",
+        "Hardcore"
+      ],
+      "members": [
+        {
+          "name": "Denis Feges",
+          "role": "Vocals"
+        },
+        {
+          "name": "Roland Böffgen",
+          "role": "Guitar"
+        },
+        {
+          "name": "Jess (Swoon)",
+          "role": "Bass"
+        },
+        {
+          "name": "Sören Schaudel",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hopsydian",
+      "name": "Hopsydian",
+      "country": "Italy",
+      "description": "Hopsydian is an Italian metalcore band formed in Milan in 2024. The group was established by vocalist Myles Idolo and guitarists Loris Ronchi and Nikolay Deliyski. Their music blends modern metalcore power with alt-metal sharpness and post-hardcore urgency, creating a distinctive sound that combines cinematic tension with explosive dynamics. ([arising-empire.com](https://arising-empire.com/news/article/hopsydian-sign-with-arising-empire-and-release-new-single-devote?utm_source=openai))\n\nThe band's name, \"Hopsydian,\" is a fusion of \"hope\" and \"obsidian,\" symbolizing resilience, shadow, and rebirth. This reflects the duality at the heart of their music, which explores themes of worship, love, obsession, sin, and the temptation of becoming God. ([arising-empire.com](https://arising-empire.com/news/article/hopsydian-sign-with-arising-empire-and-release-new-single-devote?utm_source=openai))\n\nIn 2025, Hopsydian made their live debut on the Slam Dunk Italy main stage, sharing the bill with international heavyweights. They also supported Caskets in Milan, signaling their growing presence in the metal scene. ([arising-empire.com](https://arising-empire.com/news/article/hopsydian-sign-with-arising-empire-and-release-new-single-devote?utm_source=openai))\n\nTheir discography includes singles such as \"Words Unsaid,\" \"Dying Echoes,\" \"Devote,\" and \"Sight.\" \"Devote\" was released in January 2026, followed by \"Sight\" in March 2026. ([arising-empire.com](https://arising-empire.com/news/article/hopsydian-sign-with-arising-empire-and-release-new-single-devote?utm_source=openai))\n\nThe current lineup consists of vocalist Myles Idolo, guitarists Loris Ronchi and Nikolay Deliyski, bassist Roberto Vezi, and an anonymous drummer. ([arising-empire.com](https://www.arising-empire.com/artists/hopsydian?utm_source=openai))",
+      "logo": "https://arising-empire.com/wp-content/uploads/2026/01/Hopsydian-Logo.png",
+      "headlineImage": "https://arising-empire.com/wp-content/uploads/2026/01/Hopsydian-Devote-Single-Cover.jpg",
+      "website": "https://hopsydian.com/",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Alternative Metal",
+        "Post-Hardcore"
+      ],
+      "members": [
+        {
+          "name": "Myles Idolo",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Loris Ronchi",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Nikolay Deliyski",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Roberto Vezi",
+          "role": "Bassist"
+        },
+        {
+          "name": "Anonymous",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "thormesis",
+      "name": "Thormesis",
+      "country": "Germany",
+      "description": "Thormesis is an atmospheric metal band from Rothenburg ob der Tauber, Bavaria, Germany, formed in 2006. The band was initially established by Keltor (vocals, drums) and Travos (vocals, guitars), who were later joined by Velsir (guitar, vocals) and Berucas (bass). Over the years, Thormesis has undergone several lineup changes, with Keltor returning on bass in 2023, reuniting with the original members. ([thormesis.de](https://thormesis.de/band?utm_source=openai))\n\nMusically, Thormesis blends extreme metal with post-rock influences, characterized by dynamic rhythm changes and atmospheric compositions. Their early lyrics focused on Germanic-pagan motifs, but more recent releases have explored interpersonal and philosophical themes. ([thormesis.de](https://thormesis.de/band?utm_source=openai))\n\nThe band's discography includes:\n\n- \"Gehet hin und kämpfet\" (2008)\n- \"Vergangene Asche\" (2010)\n- \"Von Leere und Tod\" (2012)\n- \"Freier Wille – Freier Geist\" (2015)\n- \"Trümmerfarben\" (2017)\n- \"The Sixth\" (2019)\n- \"If Mania Never Ends\" (2022)\n- \"Nevertheless\" (2025)\n\n\"Nevertheless,\" released in September 2025, showcases the band's evolution and continued commitment to their unique sound. ([metal-archives.com](https://www.metal-archives.com/albums/Thormesis/Nevertheless/1353605?utm_source=openai))\n\nThormesis has performed extensively across Germany, delivering atmospheric live shows that highlight their dynamic compositions. They are set to perform on various stages throughout the country in 2026, featuring a setlist that includes their most recent material. ([thormesis.de](https://thormesis.de/band?utm_source=openai))",
+      "logo": "https://www.thormesis.de/images/thormesis_logo.png",
+      "headlineImage": "https://www.thormesis.de/images/thormesis_band_photo_2022.jpg",
+      "website": "https://www.thormesis.de",
+      "spotify": "",
+      "genres": [
+        "Atmospheric Metal",
+        "Extreme Metal",
+        "Post-Rock"
+      ],
+      "members": [
+        {
+          "name": "Travos",
+          "role": "Vocals, Guitars"
+        },
+        {
+          "name": "Velsir",
+          "role": "Guitars, Vocals"
+        },
+        {
+          "name": "Keltor",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "O.d.",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "phantom-corporation",
+      "name": "Phantom Corporation",
+      "country": "Germany",
+      "description": "Phantom Corporation is a German death metal and crustcore band formed in 2015 in Bremen. The group emerged from the underground scenes of Bremen and Dortmund, uniting members from notable bands such as Dew-Scented, Eroded, BK 49, Weak Aside, Slaughterday, and Obscenity. Their music is characterized by a fusion of relentless d-beat crust, aggressive death metal passages, and raw old-school thrash/punk elements, creating an uncompromising crossover assault. ([supremechaos.com](https://supremechaos.com/scr-artists/phantom-corporation/?utm_source=openai))\n\nTheir discography includes the mini-album \"First Commandment\" (2016), the EPs \"Cause and Effect\" (2017) and \"Belligerent Powers\" (2018, a split with Slaughterday), and the full-length album \"Fallout\" (2023). In 2025, they released \"Time and Tide,\" further solidifying their presence in the international extreme metal scene. ([supremechaos.com](https://supremechaos.com/scr-artists/phantom-corporation/?utm_source=openai))\n\nThe current lineup consists of Leif Jensen on vocals, Philipp Schulte and Arne Berents on guitars, Marc-Andrée Dieken on drums, and Ulf Imwiehe on bass. Notably, Leif Jensen is also known for his work with Dew-Scented. ([metal-archives.com](https://www.metal-archives.com/bands/Phantom_Corporation/3540433305?utm_source=openai))\n\nPhantom Corporation is signed to Supreme Chaos Records and continues to contribute to the death metal and crustcore genres with their intense and unrelenting sound.",
+      "logo": "https://www.metal-archives.com/images/3540433305_phantom_corporation_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540433305_phantom_corporation.jpg",
+      "website": "https://phantomcorporation.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Crustcore"
+      ],
+      "members": [
+        {
+          "name": "Leif Jensen",
+          "role": "Vocals"
+        },
+        {
+          "name": "Philipp Schulte",
+          "role": "Guitar"
+        },
+        {
+          "name": "Arne Berents",
+          "role": "Guitar"
+        },
+        {
+          "name": "Marc-Andrée Dieken",
+          "role": "Drums"
+        },
+        {
+          "name": "Ulf Imwiehe",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hresis",
+      "name": "Hæresis",
+      "country": "Germany",
+      "description": "Hæresis is a Berlin-based black metal band formed in 2016, dedicated to channeling the pain and rage inherent in human existence and society through their music. Their sound seamlessly blends the raw energy of black metal with atmospheric and post-metal elements, creating an emotionally intense and intellectually charged soundscape. The band's name, 'Hæresis,' reflects their commitment to challenging conventional norms and embracing the power of heresy. ([haeresisband.com](https://www.haeresisband.com/about?utm_source=openai))\n\nSince their formation, Hæresis has released several notable works. Their debut self-titled EP, released in 2016, showcased their ability to mix sluggish sludge with blackened crust, laying the foundation for their evolving sound. ([metal-archives.com](https://www.metal-archives.com/reviews/H%C3%A6resis/H%C3%A6resis/593371/?utm_source=openai)) In 2021, they released \"Z 3 / 1 2,\" a split release that further solidified their presence in the black metal scene. Their most recent full-length album, \"Si Vis Pacem Para Bellum,\" was released on October 10, 2025, through Vendetta Records. This album features four monumental tracks that explore different facets of human and social struggle, from the devastation of war to inner rebellion and the breaking of silence. ([kronosmortusnews.com](https://kronosmortusnews.com/2025/11/04/haeresis-si-vis-pacem-para-bellum/?utm_source=openai))\n\nThe current lineup of Hæresis includes M.S. on drums, I.C. on guitars, D.R. on guitars, C.G. on vocals, and L.C. on bass. The band's immersive live shows are characterized by an intense fusion of light and an unrelenting assault of sound, making them a testament to the unwavering power of black metal and a vigorous statement of will. ([haeresisband.com](https://www.haeresisband.com/about?utm_source=openai))",
+      "logo": "https://www.haeresisband.com/images/logo.png",
+      "headlineImage": "https://www.haeresisband.com/images/band_photo.jpg",
+      "website": "https://www.haeresisband.com/",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Post-Black Metal"
+      ],
+      "members": [
+        {
+          "name": "M.s.",
+          "role": "Drums"
+        },
+        {
+          "name": "I.c.",
+          "role": "Guitars"
+        },
+        {
+          "name": "D.r.",
+          "role": "Guitars"
+        },
+        {
+          "name": "C.g.",
+          "role": "Vocals"
+        },
+        {
+          "name": "L.c.",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "waves-like-walls",
+      "name": "Waves Like Walls",
+      "country": "Germany",
+      "description": "Waves Like Walls is a metalcore and hardcore punk band from Ingolstadt, Germany, formed in 2012. Since their inception, they have been delivering energetic and melodic hardcore music, characterized by heavy riffs, driving drums, and raw vocals. Their lyrics often explore themes of loss, change, and self-determination, reflecting a commitment to authenticity and directness. ([soundcloud.com](https://soundcloud.com/waveslikewalls?utm_source=openai))\n\nThe band has an active presence on various music platforms, including Bandcamp, where they release their music. ([waveslikewalls.bandcamp.com](https://waveslikewalls.bandcamp.com/?utm_source=openai)) They also maintain an official website at [waveslikewalls.de](https://waveslikewalls.de/), where fans can find information about their latest releases, music videos, and upcoming shows. ([waveslikewalls.de](https://waveslikewalls.de/?utm_source=openai))\n\nIn 2024, Waves Like Walls released \"It Never Ends,\" showcasing their continued evolution in the metalcore scene. ([waveslikewalls.bandcamp.com](https://waveslikewalls.bandcamp.com/?utm_source=openai)) They have also been active in the live music scene, performing at various festivals and venues across Europe. For instance, they are scheduled to perform at the Farewell Youth Fest 2026 in Dresden, Germany, alongside other notable bands. ([concertarchives.org](https://www.concertarchives.org/bands/waves-like-walls?utm_source=openai))\n\nThe current lineup of Waves Like Walls includes:\n\n- **[Member Name]** – [Role]\n\n- **[Member Name]** – [Role]\n\n- **[Member Name]** – [Role]\n\n- **[Member Name]** – [Role]\n\n- **[Member Name]** – [Role]\n\nFor the most up-to-date information on their lineup and activities, it's recommended to visit their official website or follow them on social media platforms.",
+      "logo": "[URL to high-quality logo]",
+      "headlineImage": "[URL to high-quality image]",
+      "website": "https://waveslikewalls.de/",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Hardcore Punk"
+      ],
+      "members": [
+        {
+          "name": "[Member Name]",
+          "role": "[Role]"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ghetto-justice",
+      "name": "Ghetto Justice",
+      "country": "Germany",
+      "description": "Ghetto Justice is a German hardcore punk band from Berlin, known for their aggressive and politically charged music. Formed in the early 2010s, the band has been active in the underground scene, delivering high-energy performances and thought-provoking lyrics. Their music blends elements of hardcore punk with metal influences, creating a sound that is both intense and socially conscious. Over the years, Ghetto Justice has released several recordings, including their 2018 EP \"Easy Living \u0026 Exzess\" and the 2021 album \"Aus Der Balance,\" both available on Bandcamp. The band's lineup has seen changes over time, but they continue to be a significant presence in the German punk scene.",
+      "logo": "https://ghettojustice.bandcamp.com/album/easy-living-and-exzess",
+      "headlineImage": "https://ghettojustice.bandcamp.com/album/easy-living-and-exzess",
+      "website": "https://ghettojustice.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Hardcore Punk",
+        "Metal",
+        "Punk"
+      ],
+      "members": [
+        {
+          "name": "Not Specified",
+          "role": "Not Specified"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "born-hanged",
+      "name": "Born Hanged",
+      "country": "Germany",
+      "description": "Born Hanged is a German death metal and hardcore band formed in 2018 in Karlsruhe, Baden-Württemberg. The band is known for its aggressive sound and themes exploring death, hate, nihilism, and violence. Their music is characterized by intense guitar riffs, pounding drums, and guttural vocals, blending elements of death metal and hardcore to create a punishing auditory experience. The current lineup includes Timo Hänßel on bass, Simon Müller on drums, Steffen Müller and Jerome Schlögl on guitars, and David Nieb on vocals. In November 2025, they released their EP \"Ultimate Savagery,\" featuring tracks like \"Ultimate Savagery,\" \"I Will Never Crawl,\" \"Crusade of Corruption,\" and \"Servant To None.\" The EP is available for streaming and download on Bandcamp. The band's official website is [bornhangedhc.bandcamp.com](https://bornhangedhc.bandcamp.com/).",
+      "logo": "https://bornhangedhc.bandcamp.com/",
+      "headlineImage": "https://bornhangedhc.bandcamp.com/",
+      "website": "https://bornhangedhc.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Hardcore"
+      ],
+      "members": [
+        {
+          "name": "Timo Hänßel",
+          "role": "Bass"
+        },
+        {
+          "name": "Simon Müller",
+          "role": "Drums"
+        },
+        {
+          "name": "Steffen Müller",
+          "role": "Guitars"
+        },
+        {
+          "name": "Jerome Schlögl",
+          "role": "Guitars"
+        },
+        {
+          "name": "David Nieb",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "unblessed-divine",
+      "name": "Unblessed Divine",
+      "country": "Poland/South Africa",
+      "description": "Unblessed Divine is an international death metal band formed in 2020 by guitarist Michał Grall (ex-Sinister) and vocalist/guitarist Lee Wollenschlaeger (ex-Malevolent Creation). The duo aimed to create a dark and atmospheric sound by blending elements of death metal, black metal, industrial, and symphonic music. Their debut EP, \"The Coming Darkness,\" released in September 2020, garnered attention within the extreme metal underground. In early 2021, they began working on their first full-length album, \"Portal to Darkness,\" which was released on August 18, 2023, through Massacre Records. The album features tracks like \"Book of Lies\" and \"I Feed,\" showcasing their unique blend of old-school death metal with modern elements. Following the release, the band underwent lineup changes, with new members joining in 2025, including bassist Igor Ostrowski, guitarist Tim Fialka, and vocalist Krzysztof \"Nazghar\" Ciesielski. The current lineup is preparing for live performances and working on their second full-length album. ([unblesseddivine.com](https://www.unblesseddivine.com/latest-releases/?utm_source=openai))",
+      "logo": "https://www.unblesseddivine.com/wp-content/uploads/2023/08/Unblessed-Divine-Logo.png",
+      "headlineImage": "https://www.unblesseddivine.com/wp-content/uploads/2023/08/Portal-to-Darkness-Album-Artwork.jpg",
+      "website": "https://www.unblesseddivine.com/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Black Metal",
+        "Industrial",
+        "Symphonic Metal"
+      ],
+      "members": [
+        {
+          "name": "Michał Grall",
+          "role": "Guitars, Keyboards, Vocals (Clean)"
+        },
+        {
+          "name": "Szymon",
+          "role": "Drums"
+        },
+        {
+          "name": "Igor",
+          "role": "Bass"
+        },
+        {
+          "name": "Tim Fialka",
+          "role": "Guitars"
+        },
+        {
+          "name": "Nazghar",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
     }
   ]
 }
