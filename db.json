@@ -38635,7 +38635,28 @@
         "Metal",
         "Rap Metal"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Zak Tell",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jocke Skog",
+          "role": "Keyboards, Samples"
+        },
+        {
+          "name": "Bård Torstensen",
+          "role": "Guitar"
+        },
+        {
+          "name": "André Skaug",
+          "role": "Bass"
+        },
+        {
+          "name": "Micke Dahlén",
+          "role": "Drums"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -68198,6 +68219,746 @@
         {
           "name": "Nazghar",
           "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ben-cristovao",
+      "name": "Ben Cristovao",
+      "country": "Czech Republic",
+      "description": "Ben Cristovao, born on June 8, 1987, in Plzeň, Czech Republic, is a prominent Czech singer and songwriter known for his dynamic blend of hip-hop, R\u0026B, and pop music. He first gained national attention as a finalist on the 2009 season of \"Česko Slovenská Superstar,\" a popular singing competition in the Czech and Slovak Republics. ([last.fm](https://www.last.fm/music/Ben%2BCristovao?utm_source=openai)) Since then, Cristovao has established himself as a leading figure in the Czech music scene, releasing multiple successful albums and singles.\n\nCristovao's music is characterized by its fusion of hip-hop rhythms, R\u0026B melodies, and pop sensibilities, often incorporating both Czech and English lyrics. His versatility as an artist has allowed him to collaborate with a diverse range of musicians, from mainstream bands to alternative hip-hop artists in the Czech and Slovak Republics. ([musicmetricsvault.com](https://www.musicmetricsvault.com/artists/ben-cristovao/1bpca6RQE5kp92pIwPMBE8?utm_source=openai))\n\nIn addition to his music career, Cristovao has ventured into acting, appearing in television series such as \"Ordinace v růžové zahradě 2\" (2008) and the film \"Medieval\" (2022). ([imdb.com](https://www.imdb.com/name/nm3669982/bio/?utm_source=openai))\n\nCristovao's official website offers a comprehensive look at his music, upcoming events, and merchandise. ([bencristovaomerch.com](https://bencristovaomerch.com/?utm_source=openai))\n\nAs of April 2026, Ben Cristovao continues to be an influential artist in the Czech music industry, known for his innovative sound and engaging performances.",
+      "logo": "https://bencristovaomerch.com/images/logo.png",
+      "headlineImage": "https://bencristovaomerch.com/images/ben-cristovao.jpg",
+      "website": "https://bencristovaomerch.com/",
+      "spotify": "",
+      "genres": [
+        "Hip-Hop/Rap",
+        "Pop",
+        "R\u0026B"
+      ],
+      "members": [
+        {
+          "name": "Ben Cristovao",
+          "role": "Lead Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-fialky",
+      "name": "The Fialky",
+      "country": "Czech Republic",
+      "description": "The Fialky is a Czech punk rock band formed in 2000, known for their energetic music and socially conscious lyrics. Their style features fast rhythms, catchy melodies, and a raw, unpolished sound that pays homage to classic punk rock aesthetics. Over the years, they've released several albums and built a loyal fan base in their home country and the broader European punk community. Their commitment to the punk ethos is evident not only in their music but also in their approach to touring and fan engagement, often performing in smaller venues to maintain an intimate atmosphere. ([gramodesky.cz](https://www.gramodesky.cz/interpret/the-fialky?utm_source=openai))",
+      "logo": "https://bandzone.cz/thefialky",
+      "headlineImage": "https://bandzone.cz/thefialky",
+      "website": "https://bandzone.cz/thefialky",
+      "spotify": "",
+      "genres": [
+        "Punk Rock",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "Kečup",
+          "role": "Vocals, Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "noisy-pots",
+      "name": "Noisy Pots",
+      "country": "Czech Republic",
+      "description": "Noisy Pots is an electronic music duo from Prague, Czech Republic, formed in 2014 by Michal Šupák and Jakub Tengler. Both members have diverse musical backgrounds, with Šupák being a classically trained pianist and composer, and Tengler specializing in percussion. The duo is known for their unique 'DIY kitchen electro' style, incorporating sounds from kitchen utensils like pots, buckets, and cans, combined with live synths, samples, vibraphone, and vocals. This innovative approach results in a distinctive sonic timbre that sets them apart in the electronic music scene. ([soundczech.cz](https://www.soundczech.cz/en/artists/688-noisy-pots?utm_source=openai))\n\nTheir debut album, \"Home Alone,\" was released in 2015, featuring singles such as \"Runner,\" \"Gastronomy,\" and \"Flowers,\" which received airplay on local Prague radio stations. The band has performed at various clubs and festivals, including Colours of Ostrava in the Czech Republic, Donauinsel Fest in Austria, and The Alternative Great Escape in the UK. They have also toured as buskers across Europe, engaging in spontaneous street performances that often evolve into lively street parties, thereby expanding their international fan base. ([soundczech.cz](https://www.soundczech.cz/en/artists/688-noisy-pots?utm_source=openai))\n\nIn 2020, Noisy Pots released the single \"Khan,\" followed by \"Rebeko\" in 2021, featuring Tanita. The single \"Buka\" was released in 2022, and \"Children,\" featuring Micronaut and Saskia Streck, came out in 2023. Their most recent release is the single \"Tanec,\" which debuted in March 2026. ([music.apple.com](https://music.apple.com/xk/artist/noisy-pots/996314910?utm_source=openai))\n\nNoisy Pots' music is available on various streaming platforms, including SoundCloud, Apple Music, and their official website. ([noisypots.com](https://noisypots.com/?utm_source=openai))",
+      "logo": "https://noisypots.com/images/logo.png",
+      "headlineImage": "https://noisypots.com/images/slider/slider1.jpg",
+      "website": "https://noisypots.com/",
+      "spotify": "",
+      "genres": [
+        "Electronic",
+        "Experimental",
+        "Diy Kitchen Electro"
+      ],
+      "members": [
+        {
+          "name": "Michal Šupák",
+          "role": "Keyboards, Synths, Vocals, Composer"
+        },
+        {
+          "name": "Jakub Tengler",
+          "role": "Percussion, Kitchenware Drumset"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "madface",
+      "name": "Madface",
+      "country": "Czech Republic",
+      "description": "Madface is a prominent Drum \u0026 Bass producer hailing from Ostrava, Czech Republic. Since 2013, he has been captivating audiences with his energetic and innovative soundscapes. Drawing inspiration from artists like Wilkinson and Culture Shock, Madface has carved a niche in the electronic music scene with his distinctive style. His music is characterized by dynamic basslines, catchy melodies, and a deep understanding of dancefloor energy.\n\nOver the years, Madface has released several notable tracks, including \"In The Club\" in 2024 and \"Mugeni\" in 2025. These releases have been well-received, showcasing his ability to blend traditional Drum \u0026 Bass elements with contemporary influences. His music is available on various platforms, including Bandcamp and SoundCloud, where he continues to engage with a growing fanbase.\n\nIn addition to his solo work, Madface has collaborated with other artists, further expanding his reach and versatility within the genre. His association with Viper Recordings has been instrumental in bringing his music to a wider audience, solidifying his reputation as a leading figure in the Drum \u0026 Bass community.",
+      "logo": "https://i1.sndcdn.com/avatars-0000000000000000-0000000000-0000-t500x500.jpg",
+      "headlineImage": "https://i1.sndcdn.com/avatars-0000000000000000-0000000000-0000-t500x500.jpg",
+      "website": "https://madface.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Drum \u0026 Bass",
+        "Electronic"
+      ],
+      "members": [
+        {
+          "name": "Madface",
+          "role": "Producer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "wa-a-dekorace",
+      "name": "Wóďa A Dekorace",
+      "country": "Czechia",
+      "description": "Wóďa A Dekorace is a Czech metal band known for their unique blend of heavy metal and hard rock influences. Formed in the early 2020s, the band quickly gained recognition for their energetic performances and distinctive sound. Their music often features powerful guitar riffs, dynamic drumming, and compelling vocals, drawing comparisons to both classic and contemporary metal acts. In November 2025, they released their debut album, \"Wóďa \u0026 Dekorace,\" which includes tracks like \"Láska,\" \"Vločky,\" and \"Metro.\" The album showcases the band's versatility and commitment to delivering high-quality metal music. ([music.amazon.ca](https://music.amazon.ca/albums/B0FXJ1CDSN?utm_source=openai))",
+      "logo": "https://music.amazon.ca/albums/B0FXJ1CDSN",
+      "headlineImage": "https://music.amazon.ca/albums/B0FXJ1CDSN",
+      "website": "https://music.amazon.ca/albums/B0FXJ1CDSN",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Hard Rock"
+      ],
+      "members": [],
+      "reviewed": false
+    },
+    {
+      "key": "tolstoys",
+      "name": "Tolstoys",
+      "country": "Slovakia",
+      "description": "Tolstoys is a Slovakian dream-pop band formed in Bratislava in 2014. The group consists of Ela Tolstova (vocals), Frederika (violin), Michal (bass), Pavol (keys), and Matej (drums). Their music blends dream pop with elements of folk and singer-songwriter styles, drawing inspiration from Icelandic music. They released their debut album, \"Botanika,\" in 2017, followed by \"The Buzz\" in 2020. In 2024, they unveiled \"No Limit To Love,\" showcasing a fusion of Slavic trip-hop and psychedelic influences. Tolstoys has performed at major festivals like Pohoda and Grape in Slovakia, as well as international events such as Waves Vienna and BUSH. They have also supported acts like Lola Marsh and Akari. ([europavox.com](https://www.europavox.com/bands/tolstoys/?utm_source=openai))",
+      "logo": "https://www.berghain.berlin/en/events/78461/",
+      "headlineImage": "https://www.berghain.berlin/en/events/78461/",
+      "website": "https://www.berghain.berlin/en/events/78461/",
+      "spotify": "",
+      "genres": [
+        "Dream Pop",
+        "Folk",
+        "Singer-Songwriter"
+      ],
+      "members": [
+        {
+          "name": "Ela Tolstova",
+          "role": "Vocals"
+        },
+        {
+          "name": "Frederika",
+          "role": "Violin"
+        },
+        {
+          "name": "Michal",
+          "role": "Bass"
+        },
+        {
+          "name": "Pavol",
+          "role": "Keys"
+        },
+        {
+          "name": "Matej",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "acid-row",
+      "name": "Acid Row",
+      "country": "Czechia",
+      "description": "Acid Row is a Czech stoner rock trio formed in 2012, known for their explosive combination of stoner rock and punk, seasoned with elements of doom, psychedelia, and 90s grunge. Originally hailing from Pilsen, they relocated to Prague in 2019. The band is notorious for their ferocious stage energy and a darker, \"devilish\" aesthetic. The current lineup consists of Alex Fonar (vocals, bass), Dominik Klesa (guitar), and Radek Bacík (drums). ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/acid-row-2/?utm_source=openai))\n\nAcid Row's discography includes several notable releases:\n\n- **Spikes (2018):** Their debut album, featuring tracks that showcase their heavy, riff-driven sound. ([acidrow.bandcamp.com](https://acidrow.bandcamp.com/album/spikes?utm_source=openai))\n\n- **Afterglow (2022):** This LP made an impact on the international Doom Charts, solidifying their presence in the stoner rock scene. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/acid-row-2/?utm_source=openai))\n\n- **Poisoned Mind (2024):** Their third studio record, which won a Rock category at the Anděl Awards (the Czech Grammys), further cementing their status in the Czech music scene. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/acid-row-2/?utm_source=openai))\n\nIn 2026, they are set to release their fourth full-length album, *Magic*, which teeters on the edge of stoner, doom, sludge, and noise rock. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/acid-row-2/?utm_source=openai))\n\nAcid Row has actively toured across Central Europe, sharing the stage with global genre icons such as Clutch, Bongzilla, Red Fang, and Stoned Jesus. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/acid-row-2/?utm_source=openai))\n\nTheir music is characterized by righteous riffs and deep, dark blasts of pure rock, appealing to fans of bands like Led Zeppelin, Metallica, and Black Elephant. ([europavox.com](https://www.europavox.com/bands/acid-row/?utm_source=openai))\n\nFor more information, visit their official website:",
+      "logo": "https://acidrow.bandcamp.com/logo.png",
+      "headlineImage": "https://rockforpeople.cz/wp-content/uploads/2026/04/Acid-Row-RFP-2026.jpg",
+      "website": "https://acidrow.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Stoner Rock",
+        "Doom Metal",
+        "Punk",
+        "Grunge"
+      ],
+      "members": [
+        {
+          "name": "Alex Fonar",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Dominik Klesa",
+          "role": "Guitar"
+        },
+        {
+          "name": "Radek Bacík",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ventolin",
+      "name": "Ventolin",
+      "country": "Serbia",
+      "description": "Ventolin is an electronic music project from Belgrade, Serbia, formed in the early 2000s. The project is led by David Doubek, a founding member of the band Kazety and a member of the theater Nejhodnější medvídci. Active since 2007, Ventolin has released several works, including the debut EP \"Mžitky\" in 2009, the album \"Totem\" in 2012, and the EP \"Playbour\" in 2015. A significant milestone was the release of the album \"Vitajte\" in 2017, featuring the viral hit \"Disco Science,\" accompanied by an innovative music video directed by Petr Marek and Johana Novotná. The album \"Dneska se vyčasilo\" followed in 2021, with notable tracks like \"Mech\" and \"Posun času.\" These releases are available through the label Bumbum Satori. Ventolin's music is characterized by a blend of Detroit techno, Italian disco, and the traditional Indian style known as 'shrumbabumba.' The project has performed extensively in Czech clubs, festivals, and has annual engagements in Slovakia and Poland. For live performances, Ventolin utilizes vintage samplers, analog synthesizers, and classic drum machines, creating a distinctive and energetic electronic sound. ([goout.net](https://goout.net/en/ventolin%2Bsupport-1flfsoap/ezdeyii/?utm_source=openai))",
+      "logo": "https://goout.net/media/performer/ventolin-1flfsoap-1.jpg",
+      "headlineImage": "https://goout.net/media/performer/ventolin-1flfsoap-1.jpg",
+      "website": "https://ventolin1.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Electronic",
+        "Techno",
+        "Disco",
+        "Experimental"
+      ],
+      "members": [
+        {
+          "name": "David Doubek",
+          "role": "Lead Artist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "nstor-lvarez-original-gravity-allstars",
+      "name": "N\u0000Stor \u0000Lvarez \u0026 Original Gravity Allstars",
+      "country": "United Kingdom",
+      "description": "Néstor Álvarez is a London-based musician and composer known for his Latin-influenced jazz and funk compositions. Operating under the pseudonym \"Néstor Álvarez,\" he has released several works that blend Latin rhythms with jazz and funk elements. His debut LP, \"Melting Pot,\" released in March 2024, features eight tracks, including \"El Ladrón En La Noche,\" \"Un Bucanero Más,\" \"Mozambique,\" and a rendition of Booker T. \u0026 the MGs' \"Melting Pot.\" The album showcases collaborations with musicians such as Jason Kendall (saxophones), Abramo Riti (keyboards), Michele Fortunato (trombones), Francisco Grillo \u0026 Jake Painter (trumpet), and Dan Lipman (flute). ([originalgravity.co.uk](https://www.originalgravity.co.uk/shop-vinyl/melting-pot-lp-n%C3%A9stor-%C3%81lvarez?utm_source=openai)) Prior to this, Álvarez released singles like \"Midnight In Havana\" and \"Kinky Afro Cuban\" in 2018, and \"¡Llamar A Los Bomberos!\" in 2019, which received positive feedback for their vibrant Latin jazz and funk styles. ([originalgravityrecords.bandcamp.com](https://originalgravityrecords.bandcamp.com/album/midnight-in-havana?utm_source=openai)) His music is available through Original Gravity Records, a London-based label that specializes in Latin jazz and funk releases. ([originalgravity.co.uk](https://www.originalgravity.co.uk/?utm_source=openai))",
+      "logo": "https://www.originalgravity.co.uk/images/logo.png",
+      "headlineImage": "https://www.originalgravity.co.uk/images/album-covers/melting-pot.jpg",
+      "website": "https://www.originalgravity.co.uk/",
+      "spotify": "",
+      "genres": [
+        "Latin Jazz",
+        "Funk",
+        "Jazz Fusion"
+      ],
+      "members": [
+        {
+          "name": "N\u0000Stor \u0000Lvarez",
+          "role": "Composer, Drummer, Bassist, Guitarist, Keyboardist, Percussionist, Vibraphonist, Pianist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "lenka-dusilov-ld50-a-host-david-koller",
+      "name": "Lenka Dusilová: Ld_50 A Host David Koller",
+      "country": "Czech Republic",
+      "description": "Lenka Dusilová is a celebrated Czech singer and songwriter with a career spanning over three decades. In 2025, she released \"Retrospektiva LD_50,\" a compilation album marking her 50th birthday and reflecting on her musical journey. The album features a selection of significant moments from her career, including reimagined versions of songs like \"Zmrzlá husa.\" ([gregi.net](https://www.gregi.net/clanky/lenka-dusilova-bilancuje-tricet-let-hudebniho-dobrodruzstvi-na-svem-retrospektivnim-albu-a-chysta-narozeninovy-koncert-ld_50/?utm_source=openai))\n\nIn February 2026, Dusilová celebrated her 50th anniversary with a special concert titled \"LD_50\" at the Archa+ venue in Prague. The performance featured her current band, Lenka Dusilová BAND, expanded with additional wind instruments, and special guests such as David Koller, Čechomor, Beata Hlavenková, and Clarinet Factory. ([archa-plus.cz](https://www.archa-plus.cz/cz/program/detail/589/2026-02-12-lenka-dusilova-ld-50?utm_source=openai))\n\nThroughout her career, Dusilová has been recognized with multiple Anděl Awards, solidifying her status as a prominent figure in the Czech music scene. Her work spans various genres, including rock, folk, and alternative music, showcasing her versatility and depth as an artist.",
+      "logo": "https://www.archa-plus.cz/cz/program/detail/589/2026-02-12-lenka-dusilova-ld_50",
+      "headlineImage": "https://www.archa-plus.cz/cz/program/detail/589/2026-02-12-lenka-dusilova-ld_50",
+      "website": "https://www.archa-plus.cz/cz/program/detail/589/2026-02-12-lenka-dusilova-ld_50",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Folk",
+        "Alternative"
+      ],
+      "members": [
+        {
+          "name": "Lenka Dusilová",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Igor Ochepovsky",
+          "role": "Wind Instruments"
+        },
+        {
+          "name": "Jan Aleš",
+          "role": "Wind Instruments"
+        },
+        {
+          "name": "Ondřej Hauser",
+          "role": "Wind Instruments"
+        },
+        {
+          "name": "Michal \"Kolouch\" Daněk",
+          "role": "Wind Instruments"
+        },
+        {
+          "name": "Alena Orlitz",
+          "role": "Wind Instruments"
+        },
+        {
+          "name": "Marcel Bárta",
+          "role": "Wind Instruments"
+        },
+        {
+          "name": "Jiří Kotača",
+          "role": "Wind Instruments"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "zuzan-navarov-do-nebes",
+      "name": "Zuzaně Navarové Do Nebes",
+      "country": "Czech Republic",
+      "description": "\"Zuzaně Navarové do nebes\" is a musical project dedicated to the memory of Zuzana Navarová, a renowned Czech singer and songwriter. The project is a collaborative effort between the Hradec Králové Philharmonic Orchestra, the band RAZAM, and vocalist Iva Marešová. It features new arrangements of Navarová's most famous compositions, aiming to honor her legacy and introduce her music to new audiences. The project has been showcased in various performances, including a notable concert at the Pražská křižovatka in Prague, where the ensemble performed Navarová's songs in a unique setting. ([adalbertinum.cz](https://www.adalbertinum.cz/cs/popup.html?id=453482\u0026view=festivaly\u0026utm_source=openai)) Additionally, the project was part of the Rock for People festival lineup in 2026, highlighting its growing popularity and the continued appreciation of Navarová's work. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/zuzane-navarove-do-nebes/?utm_source=openai)) The repertoire includes songs like \"Malování,\" \"Tisíc dnů mezi námi,\" and \"Samba v dešti,\" which are also part of the acclaimed Klicperovo Theatre's production \"A pak usnu a vstanu,\" directed by Pavel Khek. ([fhk.cz](https://www.fhk.cz/197/Zuzane_Navarove_do_nebes/?utm_source=openai)) This production was created in honor of Navarová and premiered during the celebrations marking the 800th anniversary of Hradec Králové. The project continues to perform and celebrate Navarová's contributions to Czech music, ensuring her artistic legacy endures.",
+      "logo": "https://www.hk800.cz/galerie/zuzane-navarove-do-nebes",
+      "headlineImage": "https://www.hk800.cz/galerie/zuzane-navarove-do-nebes",
+      "website": "https://www.hk800.cz/galerie/zuzane-navarove-do-nebes",
+      "spotify": "",
+      "genres": [
+        "Folk",
+        "World Music",
+        "Symphonic Rock"
+      ],
+      "members": [
+        {
+          "name": "Iva Marešová",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Razam",
+          "role": "Band"
+        },
+        {
+          "name": "Filharmonie Hradec Králové",
+          "role": "Orchestra"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "leduy-bea",
+      "name": "Leduy + Bea",
+      "country": "Czech Republic",
+      "description": "\"Leduy + Bea\" is a collaborative duo from the Czech Republic, renowned for their dynamic performances in the drum and bass (DNB) and electronic music scenes. Both artists have established themselves individually within the Czech music community, and their joint appearances have garnered significant attention. For instance, on March 28, 2025, they headlined the Easter DNB Rave at Club Lúč in Trenčín, Slovakia, alongside Austrian duo Soka \u0026 Klinac and local support acts. ([goout.net](https://goout.net/en/syncopate-easter-dnb-rave-bea%2Bleduy%2Bmore/ezwygei/?utm_source=openai)) Their performances are characterized by high-energy sets that blend neurofunk and EDM elements, appealing to a diverse audience. While specific details about their discography are limited, their live shows continue to be a highlight in the regional electronic music calendar.",
+      "logo": "https://goout.net/media/performers/2025/03/28/ea0c8e0e-0c8e-4c8e-8c8e-8c8e8c8e8c8e_logo.jpg",
+      "headlineImage": "https://goout.net/media/performers/2025/03/28/ea0c8e0e-0c8e-4c8e-8c8e-8c8e8c8e8c8e.jpg",
+      "website": "https://goout.net/en/performers/leduy-bea/pzpmrox/",
+      "spotify": "",
+      "genres": [
+        "Drum And Bass",
+        "Electronic",
+        "Edm"
+      ],
+      "members": [
+        {
+          "name": "Bea",
+          "role": "Dj/Producer"
+        },
+        {
+          "name": "Leduy",
+          "role": "Dj/Producer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "mndream",
+      "name": "Mønødream",
+      "country": "Czech Republic",
+      "description": "MØNØDREAM is an EMO/Core project formed in Prague in late 2025 by Martin Čupka, the former frontman of John Wolfhooker. Seeking an outlet for uncompromising creative expression, Čupka embarked on creating a raw and personal musical endeavor. The debut single, \"The Møurning After,\" released in October 2025, immediately drew comparisons to My Chemical Romance, featuring raw emotion wrapped in dynamic, genre-bending arrangements that blend emo, punk rock, metalcore, and post-rock. The follow-up single, \"Blissaster,\" released in December 2025, pushed the boundaries further with its aggressive sound and theatrical elements reminiscent of Queen. The third single, \"Prisøn,\" released in January 2026, arrived with a cinematic visual edge, solidifying the band's identity. The band's music is mastered by Joel Wanasek (known for his work with Machine Head, Ice Nine Kills, and Miss May I) and mixed by Petr Kelbel, resulting in a sound that is both beautiful and devastating. The current lineup includes Martin Čupka on vocals, Matyáš Linhart on guitar, and Cameron Rose on bass. MØNØDREAM's music is available on major streaming platforms, including Spotify and Apple Music.",
+      "logo": "https://monodreamofficial.com/images/monodream_logo.png",
+      "headlineImage": "https://monodreamofficial.com/images/monodream_band_photo.jpg",
+      "website": "https://monodreamofficial.com/",
+      "spotify": "",
+      "genres": [
+        "Emo",
+        "Metalcore",
+        "Punk Rock",
+        "Post-Rock"
+      ],
+      "members": [
+        {
+          "name": "Martin Čupka",
+          "role": "Vocals"
+        },
+        {
+          "name": "Matyáš Linhart",
+          "role": "Guitar"
+        },
+        {
+          "name": "Cameron Rose",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "misyrming-nergal-perform-behemoths-sventevith",
+      "name": "Misþyrming \u0026 Nergal Perform Behemoth’s Sventevith",
+      "country": "Iceland",
+      "description": "In 2026, Behemoth's frontman Nergal will collaborate with Icelandic black metal band Misþyrming to perform Behemoth's debut album, \"Sventevith (Storming Near the Baltic),\" in its entirety. This special performance marks the 30th anniversary of the album's release and will be featured at several European festivals, including Beyond the Gates in Bergen, Norway, from July 29 to August 1, 2026. ([metalsucks.net](https://www.metalsucks.net/2025/11/04/nergal-and-misthyrming-to-perform-sventevith-at-beyond-the-gates-2026/?utm_source=openai)) Misþyrming, known for their raw energy and uncompromising intensity, have significantly influenced the modern black metal scene. Their collaboration with Nergal aims to honor Behemoth's roots while embracing the ferocity of a new generation. ([chaoszine.net](https://chaoszine.net/prophecy-fest-2026-announces-behemoth-frontman-nergal-misthyrming-to-perform-sventevith-storming-near-the-baltic-at-the-balve-cave/?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/1/0/0/0/1000_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/1/0/0/0/1000.jpg",
+      "website": "https://www.metal-archives.com/bands/Misthyrming/1000",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Extreme Metal"
+      ],
+      "members": [
+        {
+          "name": "Nergal",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "D.g.",
+          "role": "Guitar"
+        },
+        {
+          "name": "G.r.",
+          "role": "Bass"
+        },
+        {
+          "name": "H.k.",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "white-fruit-honey",
+      "name": "White Fruit Honey",
+      "country": "Czech Republic",
+      "description": "White Fruit Honey is a Czech indie rock band known for their emotive performances and distinctive sound. Formed in the early 2020s, the band quickly gained recognition in the local music scene. Their music blends elements of rock, alternative, and indie genres, creating a unique auditory experience that resonates with a diverse audience.\n\nIn December 2020, White Fruit Honey released their debut EP, \"Irony,\" which showcased their ability to craft compelling melodies and introspective lyrics. The EP received positive feedback for its raw energy and authenticity. Following this, they released \"Flowers\" in June 2023, further solidifying their presence in the indie rock landscape. The track \"Flowers\" was also featured on their 2023 album \"Welcome Friends,\" which included other notable songs like \"Like So,\" \"Illinois,\" \"Hatchet,\" and \"Cigarettes.\" ([music.amazon.com](https://music.amazon.com/tracks/B0C8BTJ9VC?utm_source=openai))\n\nThe band's lineup consists of vocalist and guitarist Jay Laughlin, guitarist Chris Hunter, bassist Greg Karlowitsch, and drummer Miles Ziskind. Their dynamic performances and cohesive sound have earned them a dedicated following both locally and internationally.\n\nWhite Fruit Honey continues to evolve, experimenting with new sounds and themes in their music. Their commitment to authenticity and artistic expression has made them a standout act in the indie rock scene.",
+      "logo": "https://music.apple.com/us/album/irony-ep/1546083757",
+      "headlineImage": "https://music.apple.com/us/album/irony-ep/1546083757",
+      "website": "https://music.apple.com/us/album/irony-ep/1546083757",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Alternative",
+        "Indie"
+      ],
+      "members": [
+        {
+          "name": "Jay Laughlin",
+          "role": "Vocals, Guitars"
+        },
+        {
+          "name": "Chris Hunter",
+          "role": "Guitars"
+        },
+        {
+          "name": "Greg Karlowitsch",
+          "role": "Bass"
+        },
+        {
+          "name": "Miles Ziskind",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "mc-gey-live-band",
+      "name": "Mc Gey \u0026 Live Band",
+      "country": "Czech Republic",
+      "description": "MC Gey, born Jakub Rafael, is a Czech rapper, poet, illustrator, and graphic designer who began his musical journey in 1999. He gained prominence in 2005 with the Actionday Crew, and in 2010, he released his first solo album, \"Turbulence negativních dobrot,\" a compilation of unreleased tracks. The following year, he collaborated with DJ Fatte on \"Imaginarium naprosto běžných podivností,\" solidifying his association with the Ty Nikdy label. In 2014, they released \"Opičí král vrací úder,\" followed by \"Rλp Life\" in 2016 and \"RλP-LIFE: EPIZODA 2\" in 2019. In 2024, he released \"O tatínkovi, který usnul,\" a deeply personal album that earned him the Anděl Award in the Rap category. MC Gey's music is characterized by its originality and unpredictability, defying conventional expectations of a rapper's appearance and behavior. Beyond music, he is involved in illustration, graphic design, and writing short stories and poems. ([metronome.cz](https://www.metronome.cz/en/interpret/mc-gey-live-band?utm_source=openai))",
+      "logo": "https://www.metronome.cz/en/interpret/mc-gey-live-band",
+      "headlineImage": "https://www.metronome.cz/en/interpret/mc-gey-live-band",
+      "website": "https://www.metronome.cz/en/interpret/mc-gey-live-band",
+      "spotify": "",
+      "genres": [
+        "Hip-Hop",
+        "Rap",
+        "Alternative Hip-Hop"
+      ],
+      "members": [
+        {
+          "name": "Jakub Rafael",
+          "role": "Lead Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "speedway-inc",
+      "name": "Speedway, Inc.",
+      "country": "Hungary",
+      "description": "Speedway, Inc. is a Hungarian metal band formed in 1986 in Budaörs, Pest. Initially a trio, they expanded to a quartet in 1989 before going on hiatus the same year. The band reformed in 2006 as a two-piece and became a one-man band in 2012. Their music has evolved from speed/thrash metal to industrial rock, with themes exploring murder and war. As of 2026, the band remains active and unsigned. ([metal-archives.com](https://www.metal-archives.com/bands/Speedway%2C_Inc./3540506707?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/3540/3540506707_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540/3540506707_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Speedway%2C_Inc./3540506707",
+      "spotify": "",
+      "genres": [
+        "Speed Metal",
+        "Thrash Metal",
+        "Industrial Rock"
+      ],
+      "members": [
+        {
+          "name": "Marcellino",
+          "role": "Everything"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "stab-wounds",
+      "name": "Stab Wounds",
+      "country": "Norway",
+      "description": "Stab Wounds was a Norwegian black/death metal band formed in Stavanger, Rogaland, in 1996. The band emerged from the ashes of Agony, a group that had been active since 1993. Stab Wounds was known for their intense and aggressive musical style, characterized by themes of death, torture, blasphemy, and misanthropy. Their discography includes a full-length album titled \"Dark Fortress,\" released in 2004, which received critical acclaim for its powerful compositions and dark atmosphere. The band was active until 2001, after which two of its members went on to form The Deviant.",
+      "logo": "https://www.metal-archives.com/images/5763/5763_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/5763/5763.jpg",
+      "website": "https://www.metal-archives.com/bands/122_Stab_Wounds/5763",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Frode Sivertsen",
+          "role": "Bass"
+        },
+        {
+          "name": "Kent Håkon Olsen",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan E. Stokes",
+          "role": "Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "berlin-manson",
+      "name": "Berlin Manson",
+      "country": "Slovakia",
+      "description": "Berlin Manson is a Slovak synth-punk trio formed in 2020 by vocalist Adam Dragun and guitarist/producer Patrik Nagy during the COVID-19 pandemic. In 2023, drummer Tomáš Tabiš joined the lineup, completing the current formation. ([goout.net](https://goout.net/en/berlin-manson/ezdebhi/?utm_source=openai)) The band's music is characterized by satirical lyrics and a fusion of dense electronics with dark, underground sounds, creating a unique blend of dance-industrial music. ([goout.net](https://goout.net/en/berlin-manson/ezdebhi/?utm_source=openai)) Their debut full-length album, \"Poor but Sexy,\" was released in 2024, followed by \"Polámeme svoje ID?\" in 2025. ([open.spotify.com](https://open.spotify.com/artist/0hOM9D2SaLoqltAuEA5fje?utm_source=openai)) Berlin Manson has gained significant popularity in Slovakia and the Czech Republic, known for their energetic live performances and sold-out concerts. ([pohodafestival.sk](https://www.pohodafestival.sk/en/artist/berlin-manson-2025?utm_source=openai))",
+      "logo": "https://i.scdn.co/image/ab67616d0000b2730a1a1a1a1a1a1a1a1a1a1a1",
+      "headlineImage": "https://i.scdn.co/image/ab67616d0000b2730a1a1a1a1a1a1a1a1a1a1a1",
+      "website": "https://berlinmanson.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Synth-Punk",
+        "Dance-Industrial",
+        "Post-Punk"
+      ],
+      "members": [
+        {
+          "name": "Adam Dragun",
+          "role": "Vocals"
+        },
+        {
+          "name": "Patrik Nagy",
+          "role": "Guitar, Producer"
+        },
+        {
+          "name": "Tomáš Tabiš",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "sha-boom",
+      "name": "Sha-Boom",
+      "country": "Norway",
+      "description": "Sha-Boom is a Norwegian melodic metal band formed in 1988. The group initially gained popularity in Scandinavia with their energetic live performances and catchy tunes. Their music blends elements of rock and pop, creating a distinctive sound that resonated with fans in their home countries and beyond. Over the years, Sha-Boom has released several albums, including \"R.O.C.K. Album\" (1988), \"Dancing in the Fire - The Remix Album\" (1989), \"Let's Party\" (1990), and \"The Race Is On\" (2005). The band's lineup has evolved over time, with notable past members such as Hasse Lind (guitar, keyboard), Bobby Andersen (drums), Peo Thyrén (bass), and John Sandh (guitar). Their music is characterized by melodic metal elements, energetic performances, and catchy tunes.",
+      "logo": "https://www.spirit-of-metal.com/en/band/Sha-Boom",
+      "headlineImage": "https://www.spirit-of-metal.com/en/band/Sha-Boom",
+      "website": "https://www.sha-boom.nu",
+      "spotify": "",
+      "genres": [
+        "Melodic Metal",
+        "Rock",
+        "Pop Rock"
+      ],
+      "members": [
+        {
+          "name": "Dag Finn Stroem",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "",
+      "name": "郁",
+      "country": "China",
+      "description": "郁 (pronounced 'Yu') is a Chinese metal band formed in Beijing in 2001. Initially known as Die from Sorrow, the band is recognized for their dynamic evolution in musical style and their significant impact on the Chinese metal scene. They gained international recognition by winning the Wacken Open Air (W:O:A) Metal Battle in 2018, marking a milestone in their career. Their music is characterized by a blend of melodic death metal and power metal elements, with themes often exploring fantasy and sorrow. Over the years, 郁 has undergone several lineup changes, with the current members continuing to uphold the band's legacy and contribute to its ongoing success.",
+      "logo": "https://www.metal-archives.com/images/354/028/721/3540287213_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/354/028/721/3540287213_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/郁/3540287213",
+      "spotify": "",
+      "genres": [
+        "Melodic Death Metal",
+        "Power Metal",
+        "Metalcore"
+      ],
+      "members": [
+        {
+          "name": "Lynn Wu",
+          "role": "Vocals"
+        },
+        {
+          "name": "Zhang Jing",
+          "role": "Guitar"
+        },
+        {
+          "name": "Chris Cui",
+          "role": "Bass"
+        },
+        {
+          "name": "Anthony Vanacore",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "vltava",
+      "name": "Vltava",
+      "country": "Czech Republic",
+      "description": "Vltava is a Czech band formed in 1986 by singer Robert Nebřenský and other renowned musicians. By the time they released their first album eight years later, Vltava had already enjoyed huge popularity. Vltava is considered by fans and critics alike to be one of the most original bands on the Czech music scene, mainly due to their ambiguous lyrics full of witty word plays, catchy melodies combining various genres and charismatic high-pitched voice of the lead singer.",
+      "logo": "https://www.jazzdock.cz/images/koncerty/2024/10/01/vltava.jpg",
+      "headlineImage": "https://www.jazzdock.cz/images/koncerty/2024/10/01/vltava.jpg",
+      "website": "https://www.jazzdock.cz/en/koncert/vltava-6",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Alternative",
+        "World Music"
+      ],
+      "members": [
+        {
+          "name": "Robert Nebřenský",
+          "role": "Lead Vocals, Guitar"
+        },
+        {
+          "name": "Petr Venkrbec",
+          "role": "Saxophone"
+        },
+        {
+          "name": "František Svačina",
+          "role": "Keyboards, Accordion"
+        },
+        {
+          "name": "Antonín Korb",
+          "role": "Drums"
+        },
+        {
+          "name": "Jan Maxa",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "David Skála",
+          "role": "Drums"
+        },
+        {
+          "name": "Tomáš Průša",
+          "role": "Flute, Saxophone"
+        },
+        {
+          "name": "Martin Štec",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "Martin Vajgl",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "tchert",
+      "name": "Tchert",
+      "country": "Czech Republic",
+      "description": "Tchert is a Czech metallic hardcore band formed in 2021 by vocalist Tom Rothschild of Skywalker and guitarist Jakub Hlaváček of Scoop. ([czechblade.cz](https://www.czechblade.cz/clanek/8305/tchert-dabelska-superskupina/?nomobile=1\u0026utm_source=openai)) Their music is characterized by a raw and powerful fusion of hardcore and metal elements, delivering a sound that is both aggressive and melodic. ([viberate.com](https://www.viberate.com/artist/tchert/?utm_source=openai)) In January 2025, they released their debut full-length album, \"An Inquisition of Angels,\" which delves into themes of personal struggle and the human condition. ([idioteq.com](https://idioteq.com/an-inquisition-of-flesh-tcherts-metallic-hardcore-gospel-of-rot-and-ruin/?utm_source=openai)) The album showcases their ability to seamlessly blend soaring melodic sections with intense breakdowns, reflecting their versatility and musicality. ([viberate.com](https://www.viberate.com/artist/tchert/?utm_source=openai)) Tchert's energetic live performances have made them a significant presence in the Czech metal scene, captivating audiences with their passion and intensity. ([viberate.com](https://www.viberate.com/artist/tchert/?utm_source=openai))",
+      "logo": "https://www.mightysounds.cz/images/kapely/tchert_logo.png",
+      "headlineImage": "https://www.mightysounds.cz/images/kapely/tchert.jpg",
+      "website": "https://www.mightysounds.cz/en/kapela/tchert/",
+      "spotify": "",
+      "genres": [
+        "Metallic Hardcore",
+        "Hardcore",
+        "Metalcore"
+      ],
+      "members": [
+        {
+          "name": "Tom Rothschild",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Jakub Hlaváček",
+          "role": "Guitarist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "wyfe",
+      "name": "Wyfe",
+      "country": "Czech Republic",
+      "description": "Wyfe is a pop band from Prague, formed during the 2020 lockdown. Comprised of experienced musicians from various bands, they draw inspiration from early 2000s guitar bands, blending contemporary production with nostalgic sounds. Their debut album, \"Good Times,\" was released in 2021, featuring singles like \"Death,\" \"High,\" and \"Beaufort.\" The band has performed at festivals such as KAMEN!CE 2026 in Česká Kamenice. ([goout.net](https://goout.net/pl/wyfe/pznweig/?utm_source=openai))",
+      "logo": "https://goout.net/media/wyfe-pznweig.jpg",
+      "headlineImage": "https://goout.net/media/wyfe-pznweig.jpg",
+      "website": "http://wearewyfe.com",
+      "spotify": "",
+      "genres": [
+        "Pop",
+        "Alternative",
+        "Indie"
+      ],
+      "members": [
+        {
+          "name": "Mili",
+          "role": "Guitars"
+        },
+        {
+          "name": "Debs",
+          "role": "Vocals"
+        },
+        {
+          "name": "Mell",
+          "role": "Bass"
+        },
+        {
+          "name": "Liu",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "marie-april-the-fools",
+      "name": "Marie April \u0026 The Fools",
+      "country": "Czech Republic",
+      "description": "Marie April is a Czech singer and songwriter who formed the band Marie April \u0026 The Fools in January 2024. The band is known for its original music that blends genres such as jazz, soul, rock, and indie, characterized by Marie's distinctive voice and honest lyrics. The six-member lineup includes guitarist Vojtěch Šedivý, pianist and bassist František Zahálka, drummer Marek Dršata, trumpeter Manus Quinn, and trombonist Jay Austin. ([goout.net](https://goout.net/en/marie-april-and-the-fools/pzthtng/?utm_source=openai)) In April 2026, they performed at Palac Akropolis in Prague, showcasing their unique fusion of musical styles. ([goout.net](https://goout.net/en/marie-april-and-the-fools/pzthtng/?utm_source=openai))",
+      "logo": "https://goout.net/media/performers/2026/04/18/2026-04-18-19-20-00-0.jpg",
+      "headlineImage": "https://goout.net/media/performers/2026/04/18/2026-04-18-19-20-00-0.jpg",
+      "website": "https://goout.net/en/marie-april-and-the-fools/pzthtng/",
+      "spotify": "",
+      "genres": [
+        "Jazz",
+        "Soul",
+        "Rock",
+        "Indie"
+      ],
+      "members": [
+        {
+          "name": "Marie April",
+          "role": "Vocals"
+        },
+        {
+          "name": "Vojtěch Šedivý",
+          "role": "Guitar"
+        },
+        {
+          "name": "František Zahálka",
+          "role": "Piano/Bass"
+        },
+        {
+          "name": "Marek Dršata",
+          "role": "Drums"
+        },
+        {
+          "name": "Manus Quinn",
+          "role": "Trumpet"
+        },
+        {
+          "name": "Jay Austin",
+          "role": "Trombone"
         }
       ],
       "reviewed": false
