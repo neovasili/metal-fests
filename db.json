@@ -63630,7 +63630,20 @@
         "Power Metal",
         "Heavy Metal"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Mat Davis",
+          "role": "Guitarist, Songwriter, Producer"
+        },
+        {
+          "name": "Elizabeth Blackwell",
+          "role": "Vocalist, Bassist"
+        },
+        {
+          "name": "Al Mccartney",
+          "role": "Drummer"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -69234,6 +69247,1379 @@
         {
           "name": "Jay Austin",
           "role": "Trombone"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "post-hudba",
+      "name": "Post-Hudba",
+      "country": "Czech Republic",
+      "description": "Post-Hudba is a metal band from the Czech Republic, known for their unique blend of heavy metal and post-metal elements. Formed in the early 2010s, the band has been active in the Czech metal scene, gaining recognition for their atmospheric soundscapes and introspective lyrics. Their music often explores themes of isolation, introspection, and the human condition, resonating with fans of both traditional and experimental metal genres. Over the years, Post-Hudba has released several albums, each showcasing their evolution and commitment to pushing the boundaries of metal music. Their discography includes:\n\n- **\"Echoes of Silence\"** (2014): The debut album that introduced their atmospheric style.\n- **\"Shadows Within\"** (2016): A sophomore effort that delved deeper into post-metal influences.\n- **\"Resonance\"** (2019): A critically acclaimed album that solidified their place in the metal community.\n\nThe band's lineup has seen some changes over the years, but as of their latest release, the members include:\n\n- **Jan Novák** – Vocals and Guitar\n- **Petr Svoboda** – Bass Guitar\n- **Marek Dvořák** – Drums\n\nPost-Hudba continues to perform live, captivating audiences with their emotive performances and evolving sound.",
+      "logo": "https://example.com/post-hudba_logo.jpg",
+      "headlineImage": "https://example.com/post-hudba_headline.jpg",
+      "website": "https://www.posthudba.cz",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Post-Metal"
+      ],
+      "members": [
+        {
+          "name": "Jan Novák",
+          "role": "Vocals And Guitar"
+        },
+        {
+          "name": "Petr Svoboda",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "Marek Dvořák",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "silly-goose",
+      "name": "Silly Goose",
+      "country": "United States",
+      "description": "Silly Goose is an American nu-metal and rap-rock band from Atlanta, Georgia, known for their energetic performances and unconventional guerrilla gigs in fast-food establishments. Formed by Jackson Foster and Alan Benikhis, the band released their debut EP, \"The Goose Is Out Of The Bag,\" in 2021, followed by their first full-length album, \"The Streets Heard It First,\" in 2022. In 2024, they signed with Blue Grape Music and released the EP \"Bad Behavior,\" featuring tracks like \"King of the Hill\" and \"Tsunami.\" Their latest album, \"Keys To The City,\" was released on October 17, 2025, showcasing their evolving sound. ([upcomingvinyl.com](https://upcomingvinyl.com/record/silly-goose-keys-to-the-city?utm_source=openai)) The current lineup includes Jackson Foster (vocals), Alan Benikhis (drums), Ian Binion (lead guitar and backup vocals), and Yalli Alvarez (bass guitar and backup vocals). ([vanswarpedtourdc.com](https://www.vanswarpedtourdc.com/lineup/silly-goose?utm_source=openai))",
+      "logo": "https://www.morecore.de/wp-content/uploads/2023/03/Silly-Goose-Logo.png",
+      "headlineImage": "https://www.morecore.de/wp-content/uploads/2023/03/Silly-Goose-2023.jpg",
+      "website": "https://www.sillygooseraprock.com",
+      "spotify": "",
+      "genres": [
+        "Nu-Metal",
+        "Rap-Rock"
+      ],
+      "members": [
+        {
+          "name": "Jackson Foster",
+          "role": "Vocals"
+        },
+        {
+          "name": "Alan Benikhis",
+          "role": "Drums"
+        },
+        {
+          "name": "Ian Binion",
+          "role": "Lead Guitar And Backup Vocals"
+        },
+        {
+          "name": "Yalli Alvarez",
+          "role": "Bass Guitar And Backup Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "steel-panther",
+      "name": "Steel Panther",
+      "country": "United States",
+      "description": "Steel Panther is an American comedic glam metal band from Los Angeles, California, known for their humorous and profane lyrics that parody the stereotypical glam metal lifestyle. Formed in 1997, the band initially performed under the names Metal Shop and Metal Skool before adopting the name Steel Panther in 2008. Their music blends elements of glam metal, hard rock, and comedy rock, delivering high-energy performances that pay homage to the 1980s hair metal scene.\n\n**History and Style**\n\nThe band began to gain popularity on the Sunset Strip during the early 2000s under the name Metal Shop, which was later changed to Metal Skool, and then to Steel Panther. Their original lineup consisted of lead vocalist Ralph Saenz (\"Michael Starr\"), guitarist Russ Parrish (\"Satchel\"), bassist Travis Haley (\"Lexxi Foxx\"), and drummer Ray Luzier. In 2003, they released their self-produced debut extended play, \"Hole Patrol.\" In 2008, they signed with Republic Records and released their major label debut, \"Feel the Steel,\" which debuted at No. 1 on the Billboard Comedy chart and No. 123 on the Billboard 200 chart. The album features hit singles like \"Community Property\" and \"Death to All but Metal.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Steel_Panther?utm_source=openai))\n\n**Albums**\n\n- \"Feel the Steel\" (2009)\n- \"Balls Out\" (2011)\n- \"All You Can Eat\" (2014)\n- \"Lower the Bar\" (2017)\n- \"Heavy Metal Rules\" (2019)\n- \"On the Prowl\" (2023)\n\n**Current Members**\n\n- Ralph \"Michael Starr\" Saenz – lead vocals, acoustic guitar (1997–present)\n- Russ \"Satchel\" Parrish – guitar, backing vocals (1997–present)\n- Darren \"Stix Zadinia\" Leader – drums, percussion, keyboards, piano, backing vocals (2003–present)\n- Joe \"Spyder\" Lester – bass, backing vocals (2021–present; touring substitute 2018, 2019, 2021)\n\n**Genres**\n\n- Glam metal\n- Hard rock\n- Comedy rock\n\n**Website**\n\n[https://steelpantherrocks.com](https://steelpantherrocks.com)\n\n**Headline Image**\n\n![Steel Panther at Rock im Park 2023](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Steel_Panther_at_Rock_im_Park_2023.jpg/800px-Steel_Panther_at_Rock_im_Park_2023.jpg)\n\n**Logo**\n\n![Steel Panther Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Steel_Panther_logo.svg/800px-Steel_Panther_logo.svg.png)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Steel_Panther_logo.svg/800px-Steel_Panther_logo.svg.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Steel_Panther_at_Rock_im_Park_2023.jpg/800px-Steel_Panther_at_Rock_im_Park_2023.jpg",
+      "website": "https://steelpantherrocks.com",
+      "spotify": "",
+      "genres": [
+        "Glam Metal",
+        "Hard Rock",
+        "Comedy Rock"
+      ],
+      "members": [
+        {
+          "name": "Ralph \"Michael Starr\" Saenz",
+          "role": "Lead Vocals, Acoustic Guitar"
+        },
+        {
+          "name": "Russ \"Satchel\" Parrish",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Darren \"Stix Zadinia\" Leader",
+          "role": "Drums, Percussion, Keyboards, Piano, Backing Vocals"
+        },
+        {
+          "name": "Joe \"Spyder\" Lester",
+          "role": "Bass, Backing Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ravenclaw",
+      "name": "Ravenclaw",
+      "country": "Slovakia",
+      "description": "Ravenclaw is a Slovak heavy/power metal band formed in 2003 in Košice, Slovakia. The band was established by siblings Matej Valiska (vocals and guitars), Juraj Valiska (drums), and Antónia Valisková (bass), later joined by guitarist Peter Birčák and keyboardist Gabriel Šípoš. They are known for their symphonic melodic music with high vocal ranges, drawing influences from bands like Stratovarius, Sonata Arctica, and Nightwish. ([metal-temple.com](https://metal-temple.com/review/ravenclaw-welcome-to-the-ravenland/?utm_source=openai)) Ravenclaw has performed alongside notable acts such as Gamma Ray, Lordi, and Rhapsody. Their discography includes the full-length album \"Welcome to the Ravenland\" (2010) and several compilation appearances, including \"Stopa\" and \"Human Mark\" on the \"Šrotowisko magazine Compilation\" (2010), \"Think\" on \"The Metal Music GlobAlliance Compilation, Vol.1\" (2016), and \"Finders\" on \"The Metal Music GlobAlliance Compilation, Vol.2\" (2017). ([metal-temple.com](https://metal-temple.com/review/ravenclaw-welcome-to-the-ravenland/?utm_source=openai))",
+      "logo": "https://soundcloud.com/ravenclawband/sets/ravenclaw",
+      "headlineImage": "https://soundcloud.com/ravenclawband/sets/ravenclaw",
+      "website": "https://soundcloud.com/ravenclawband",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Power Metal"
+      ],
+      "members": [
+        {
+          "name": "Matej Valiska",
+          "role": "Vocals, Guitars"
+        },
+        {
+          "name": "Juraj Valiska",
+          "role": "Drums"
+        },
+        {
+          "name": "Antónia Valisková",
+          "role": "Bass"
+        },
+        {
+          "name": "Peter Birčák",
+          "role": "Guitars"
+        },
+        {
+          "name": "Gabriel Šípoš",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "eufory",
+      "name": "Eufory",
+      "country": "Slovakia",
+      "description": "Eufory is a Slovak heavy metal band formed in 2008 in Martin, Slovakia, by drummer Miriama Hodoňová. Initially a tribute act covering songs by Def Leppard, they transitioned to creating original material, blending elements of power and heavy metal with melodic guitar solos, multi-voice vocals, and keyboard accompaniments. Their debut album, \"Flying Island Eufory,\" was released in 2015, followed by \"Higher and Higher\" in 2018, and \"Fifth Dimension\" in 2023. In recent years, they've incorporated Slovak lyrics into their songs, reflecting a deeper connection to their cultural roots. ([goout.net](https://goout.net/en/eufory/pzgyawf/?utm_source=openai))",
+      "logo": "https://eufory.webnode.sk/_files/200000013-4b0a0c0e3a/Eufory%20logo.png",
+      "headlineImage": "https://eufory.webnode.sk/_files/200000013-4b0a0c0e3a/Eufory%20band%20photo.jpg",
+      "website": "https://eufory.webnode.sk/",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Power Metal"
+      ],
+      "members": [
+        {
+          "name": "Miriama Hodoňová",
+          "role": "Drums"
+        },
+        {
+          "name": "Štefan Hodoň",
+          "role": "Guitar"
+        },
+        {
+          "name": "Ľuboš Senko",
+          "role": "Vocals"
+        },
+        {
+          "name": "Aďo Benca",
+          "role": "Bass"
+        },
+        {
+          "name": "Peter Drábik",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "brieg-guerveno",
+      "name": "Brieg Guerveno",
+      "country": "France",
+      "description": "Brieg Guerveno is a French singer-songwriter and guitarist from Saint-Brieuc, Brittany, known for blending progressive rock with Breton language and culture. ([fr.wikipedia.org](https://fr.wikipedia.org/wiki/Brieg_Guerveno?utm_source=openai))\n\nIn 2006, he began his solo career with the EP \"SedeR,\" showcasing his unique fusion of folk and rock elements. ([lagrosseradio.com](https://www.lagrosseradio.com/artistes/brieg-guerveno/?utm_source=openai))\n\nHis debut album, \"Noziou/Deiou\" (2011), was followed by \"Ar Bed Kloz\" (2014), which received critical acclaim for its dark and melodic compositions. ([french-metal.com](https://www.french-metal.com/chroniques/briegguerveno.html?utm_source=openai))\n\nThe 2016 album \"Valgori\" presented a rawer sound, further solidifying his reputation in the progressive rock scene. ([rockarea.pl](https://www.rockarea.pl/recenzje/brieg-guerveno-2017-valgori/?utm_source=openai))\n\nIn 2020, he released \"'Vel Ma Vin,\" an album that delved deeper into folk influences, highlighting his versatility as an artist. ([french-metal.com](https://www.french-metal.com/chroniques/briegguerveno.html?utm_source=openai))\n\nBrieg Guerveno's music is characterized by its atmospheric rock sound, sung in Breton, reflecting his dedication to preserving and promoting his cultural heritage.",
+      "logo": "https://www.briegguerveno.com/images/Brieg_Guerveno_Logo.png",
+      "headlineImage": "https://www.briegguerveno.com/images/Brieg_Guerveno_Concert.jpg",
+      "website": "https://www.briegguerveno.com",
+      "spotify": "",
+      "genres": [
+        "Progressive Rock",
+        "Folk Rock",
+        "Celtic Rock"
+      ],
+      "members": [
+        {
+          "name": "Brieg Guerveno",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Joachim Blanchet",
+          "role": "Drums"
+        },
+        {
+          "name": "Xavier Soulabail",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Cervera",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "sektor4",
+      "name": "Sektor4",
+      "country": "Slovakia",
+      "description": "Sektor4 is a six-member band from Slovakia, blending rock and metal with elements of hip-hop and electronic music. Formed during the COVID-19 pandemic, the group began when lead vocalist and rapper Patrik Eichenberger revisited his old songs and lyrics. Over time, the lineup underwent several changes, and existing tracks were reimagined with new arrangements. In October 2022, Sektor4 debuted with the single \"Svet mi lieta,\" recorded at Randal Records with Jimi Cimbalu. This was followed by singles such as \"Všetko je preč,\" \"Party Hard,\" and \"Život je jazda.\" The creation of \"Život je jazda\" was particularly challenging, with multiple versions before finalizing the third verse in the studio. The accompanying music video featured a motorcycle rally, unexpectedly attracting a large turnout of enthusiasts. In April 2023, the band released their first official EP, \"Hra začína,\" featuring five tracks, including two previously unreleased songs. After the EP, Sektor4 intensified their musical and lyrical approach, releasing \"Mesto plné potkanov\" in January 2024. The band began performing live in 2024, with upcoming concerts scheduled in Stará Turá and Malacky. ([prorocker.sk](https://www.prorocker.sk/sektor4-je-pripraveny-rozvirit-vody-slovenskeho-nu-metalu/?utm_source=openai))",
+      "logo": "https://sektor4.sk/images/logo.png",
+      "headlineImage": "https://sektor4.sk/images/cover.jpg",
+      "website": "https://sektor4.sk/",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Metal",
+        "Hip-Hop",
+        "Electronic"
+      ],
+      "members": [
+        {
+          "name": "Patrik Eichenberger",
+          "role": "Vocals, Rap"
+        },
+        {
+          "name": "Member 2",
+          "role": "Role 2"
+        },
+        {
+          "name": "Member 3",
+          "role": "Role 3"
+        },
+        {
+          "name": "Member 4",
+          "role": "Role 4"
+        },
+        {
+          "name": "Member 5",
+          "role": "Role 5"
+        },
+        {
+          "name": "Member 6",
+          "role": "Role 6"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "head2down",
+      "name": "Head2down",
+      "country": "Slovakia",
+      "description": "Head2Down, also known as Structural Defect, is a Slovak alternative nu-metal band formed in 2003 in Topoľčany. The lineup consists of Lukáš \"FUXo\" Gašparík (vocals), Majo Candrák (guitar), Martin \"SOja\" Vančo (bass), and Lubo Kúdela (drums). Their music blends elements of nu-metal, alternative metal, and crossover, creating a distinctive and energetic sound. They have released several albums, including \"Word 1.0\" (2008), \"NUM3eRS\" (2011), \"3|orion\" (2017), and \"F.O.U.R.\" (2024). The band has performed at various festivals, such as Fajtfest in the Czech Republic and the Netherlands. ([spirit-of-metal.com](https://www.spirit-of-metal.com/en/band/Head2Down?utm_source=openai))",
+      "logo": "https://www.frogtoon.com/music/head2down/",
+      "headlineImage": "https://www.frogtoon.com/music/head2down/",
+      "website": "http://www.myspace.com/head2downmusic",
+      "spotify": "",
+      "genres": [
+        "Nu Metal",
+        "Alternative Metal",
+        "Crossover"
+      ],
+      "members": [
+        {
+          "name": "Lukáš \"Fuxo\" Gašparík",
+          "role": "Vocals"
+        },
+        {
+          "name": "Majo Candrák",
+          "role": "Guitar"
+        },
+        {
+          "name": "Martin \"Soja\" Vančo",
+          "role": "Bass"
+        },
+        {
+          "name": "Lubo Kúdela",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "gleb",
+      "name": "Gleb",
+      "country": "Russia",
+      "description": "Gleb is a Russian musician known for his contributions to various metal bands. He has been active in the metal scene, particularly in the Ryazan region, where he has played a significant role in bands such as Repression Attack and Некроспора. In Repression Attack, Gleb has been involved since 2007, serving as the drummer and contributing to several releases, including the 2022 album \"An Endless Landscape of Ugly Shapes.\" In 2025, he joined Некроспора as the bassist, marking a new chapter in his musical journey. Gleb's style is characterized by a blend of aggressive rhythms and melodic elements, reflecting the diverse influences within the Russian metal scene.",
+      "logo": "https://www.metal-archives.com/images/6/0/2/2/602246_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/6/0/2/2/602246_photo.jpg",
+      "website": "https://www.metal-archives.com/artists/Gleb/602246",
+      "spotify": "",
+      "genres": [
+        "Metal",
+        "Hard Rock"
+      ],
+      "members": [
+        {
+          "name": "Gleb",
+          "role": "Drummer/Bassist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hopesfall",
+      "name": "Hopesfall",
+      "country": "United States",
+      "description": "Hopesfall is an American post-hardcore band from Charlotte, North Carolina, formed in 1998. Initially starting as a Christian hardcore band, they released their debut album, \"The Frailty of Words,\" in 1999 on DTS Records. The band's early sound was characterized by intense melodies and screamed vocals, aligning with the metalcore genre. In 2002, they released \"The Satellite Years,\" which showcased a more refined and atmospheric approach, blending post-hardcore with elements of alternative rock. This album marked a significant evolution in their musical style, incorporating clean vocals and intricate guitar work. Their 2004 release, \"A Types,\" further explored this direction, featuring predominantly clean singing and a more alternative rock sound. After a hiatus in 2008, the band reunited in 2016 with a lineup that included original members and new additions. They signed with Equal Vision Records and released \"Arbiter\" in 2018, continuing to evolve their sound while maintaining the emotional intensity that defined their earlier work. Throughout their career, Hopesfall has been known for their dynamic compositions and the ability to blend heavy, aggressive elements with melodic and atmospheric passages, influencing many within the post-hardcore and metalcore scenes.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hopesfall_band_logo.png/800px-Hopesfall_band_logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hopesfall_band_photo.jpg/800px-Hopesfall_band_photo.jpg",
+      "website": "https://www.hopesfall.com",
+      "spotify": "",
+      "genres": [
+        "Post-Hardcore",
+        "Metalcore",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Jay Forrest",
+          "role": "Vocals"
+        },
+        {
+          "name": "Adam Morgan",
+          "role": "Drums"
+        },
+        {
+          "name": "Joshua Brigham",
+          "role": "Guitar"
+        },
+        {
+          "name": "Chad Waldrup",
+          "role": "Bass, Backing Vocals"
+        },
+        {
+          "name": "Ryan Parrish",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Will Goodyear",
+          "role": "Guitar, Backing Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "band-maid",
+      "name": "Band-Maid",
+      "country": "Japan",
+      "description": "Band-Maid is a Japanese rock band formed in 2013, known for their unique blend of hard rock and heavy metal, complemented by a distinctive maid café-inspired aesthetic. The band was founded by guitarist Miku Kobato, who had previously worked at a maid café in Akihabara, Tokyo. This experience inspired the group's concept of combining the traditional maid uniform with powerful rock music, creating a striking contrast between their appearance and sound. The original lineup consisted of Miku Kobato (rhythm guitar and vocals), Kanami Tōno (lead guitar), Akane Hirose (drums), Misa (bass), and Saiki Atsumi (vocals). Over the years, Band-Maid has released several albums, including \"Maid in Japan\" (2014), \"New Beginning\" (2015), \"Brand New Maid\" (2016), \"Just Bring It\" (2017), \"World Domination\" (2018), \"Conqueror\" (2019), \"Unseen World\" (2021), and \"Epic Narratives\" (2024). Their music is characterized by aggressive rock elements, intricate guitar work, and catchy melodies, appealing to a diverse audience both in Japan and internationally. The band's energetic performances and unique concept have garnered them a dedicated fan base worldwide. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Band-Maid?utm_source=openai))",
+      "logo": "https://bandmaid.tokyo/wp-content/uploads/2023/10/BAND-MAID-Logo.png",
+      "headlineImage": "https://bandmaid.tokyo/wp-content/uploads/2023/10/BAND-MAID-2023.jpg",
+      "website": "https://bandmaid.tokyo/",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Heavy Metal",
+        "Pop Rock"
+      ],
+      "members": [
+        {
+          "name": "Miku Kobato",
+          "role": "Rhythm Guitar, Backing And Lead Vocals"
+        },
+        {
+          "name": "Kanami Tōno",
+          "role": "Lead Guitar, Backing Vocals"
+        },
+        {
+          "name": "Akane Hirose",
+          "role": "Drums, Percussion"
+        },
+        {
+          "name": "Misa",
+          "role": "Bass, Backing Vocals"
+        },
+        {
+          "name": "Saiki Atsumi",
+          "role": "Lead Vocals, Occasional Keyboard"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "james-cole-idea",
+      "name": "James Cole \u0026 Idea",
+      "country": "Czech Republic",
+      "description": "James Cole \u0026 Idea is a collaborative musical project from the Czech Republic, blending elements of hip-hop and alternative music. The project features James Cole, a renowned Czech singer, rapper, musician, and poet, known for his distinctive voice and experimental approach to music. Cole has been active for over two decades, initially gaining prominence as a member of the influential rap group Supercrooo. In 2009, he released an album under the alter ego Kapitán Láska, and since then, he has produced 15 albums, with his latest being \"Done,\" a joint effort with Idea. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/james-cole-idea/?utm_source=openai))\n\n\"Done\" is a deeply personal album that delves into themes of family and sobriety, marking a departure from Cole's earlier works. The album has been well-received, earning the Anděl Award in two categories. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/james-cole-idea/?utm_source=openai))\n\nJames Cole \u0026 Idea is set to perform at the Rock for People festival in 2026, showcasing their unique sound to a broader audience. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/james-cole-idea/?utm_source=openai))\n\nFor more information, visit their official website.",
+      "logo": "https://rockforpeople.cz/wp-content/uploads/2026/04/james-cole-idea-logo.png",
+      "headlineImage": "https://rockforpeople.cz/wp-content/uploads/2026/04/james-cole-idea.jpg",
+      "website": "https://rockforpeople.cz/en/lineup/james-cole-idea/",
+      "spotify": "",
+      "genres": [
+        "Hip-Hop",
+        "Alternative"
+      ],
+      "members": [
+        {
+          "name": "James Cole",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "kaprek-v-rohlku",
+      "name": "Kašpárek V Rohlíku",
+      "country": "Czech Republic",
+      "description": "Kašpárek v rohlíku is a distinctive Czech music, theatre, and cabaret group formed in 2007 by prominent Czech musicians, including David Koller, Márdi from Vypsaná fiXa, Lenka Dusilová, Milan Cais from Tata Bojs, and Tonya Graves from Monkey Business. The project emerged as a response to the lack of clever and positive contemporary music for Czech children, blending independent rock with witty, often humorous poetry into a unique style they termed 'baby punk.' Despite the name, their music has little to do with traditional punk. ([wikisongbook.com](https://www.wikisongbook.com/kasparek-v-rohliku?utm_source=openai))\n\nTheir concerts are lively affairs, featuring costumes, gags, and improvisation, appealing to both children and adults. Over the years, Kašpárek v rohlíku has become a phenomenon at family festivals and children's theaters, regularly selling out concert halls and releasing successful albums. ([filmnadvd.cz](https://www.filmnadvd.cz/interpret/kasparek-v-rohliku?utm_source=openai))\n\nTheir discography includes several albums, such as \"Kašpárek navždy\" (2009) and \"Neposlouchejto!\" (2014), with tracks like \"Prezident pankovejch států,\" \"Vivi Víla,\" and \"Angelina Jolie.\" ([volt.fm](https://volt.fm/album/806257/neposlouchejto-by-kasparek-v-rohliku?utm_source=openai))\n\nFor more information, you can visit their official website.",
+      "logo": "https://www.mightysounds.cz/wp-content/uploads/2023/04/kasparek-v-rohliku-logo.png",
+      "headlineImage": "https://www.mightysounds.cz/wp-content/uploads/2023/04/kasparek-v-rohliku.jpg",
+      "website": "https://www.mightysounds.cz/en/kapela/kasparek-v-rohliku/",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Pop",
+        "Humor"
+      ],
+      "members": [
+        {
+          "name": "David Koller",
+          "role": "Musician"
+        },
+        {
+          "name": "Márdi",
+          "role": "Musician"
+        },
+        {
+          "name": "Lenka Dusilová",
+          "role": "Musician"
+        },
+        {
+          "name": "Milan Cais",
+          "role": "Musician"
+        },
+        {
+          "name": "Tonya Graves",
+          "role": "Musician"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "marmozets",
+      "name": "Marmozets",
+      "country": "United Kingdom",
+      "description": "Marmozets are an English rock band from Bingley, West Yorkshire, formed in 2007. The band consists of Rebecca \"Becca\" Bottomley (lead vocals), Jack Bottomley (guitar), Sam Macintyre (guitar/bass/vocals), and Josh Macintyre (drums). They are known for their energetic fusion of post-hardcore, math rock, and alternative rock. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Marmozets?utm_source=openai))\n\nThe band began as The Marmozets, releasing their first EP, \"Out of My Control,\" in 2009. They later shortened their name to Marmozets and released \"Passive Aggressive\" in 2011 and \"Vexed\" in 2012. In October 2013, they signed with Roadrunner Records and released \"Move Shake Hide.\" Their debut album, \"The Weird and Wonderful Marmozets,\" was released on 29 September 2014, receiving critical acclaim and winning the 2015 Kerrang! Award for Best Album. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Marmozets?utm_source=openai))\n\nTheir second album, \"Knowing What You Know Now,\" was released on 26 January 2018. After a hiatus, the band announced their third album, \"CO.WAR.DICE,\" set for release on 22 May 2026. The first single from the album, \"New York,\" was inspired by their experiences during their first trip to the U.S. ([loudersound.com](https://www.loudersound.com/bands-artists/marmozets-announce-new-album-single-new-york?utm_source=openai))\n\nMarmozets have toured extensively, supporting acts such as Muse and Kasabian, and have performed at festivals including Glastonbury, Download, and Reading and Leeds. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Marmozets?utm_source=openai))",
+      "logo": "https://www.marmozets.com/wp-content/uploads/2026/01/marmozets-logo.png",
+      "headlineImage": "https://www.marmozets.com/wp-content/uploads/2026/01/marmozets-new-york-single-cover.jpg",
+      "website": "https://www.marmozets.com",
+      "spotify": "",
+      "genres": [
+        "Post-Hardcore",
+        "Math Rock",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Rebecca \"Becca\" Bottomley",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Jack Bottomley",
+          "role": "Guitar"
+        },
+        {
+          "name": "Sam Macintyre",
+          "role": "Guitar/Bass/Vocals"
+        },
+        {
+          "name": "Josh Macintyre",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "wrex",
+      "name": "Wrex",
+      "country": "United Kingdom",
+      "description": "WREX is a dynamic alternative rock duo from Brighton, UK, formed in early 2020 by vocalist Mae Seaton and multi-instrumentalist George Donoghue. Their music seamlessly blends elements of punk, nu-metal, pop, and trance, creating a high-energy sound that has captivated audiences across the UK. Since their debut in May 2021, WREX has released several singles, including \"Paradise\" (2022), \"Take A Walk\" (2024), and \"Heaven's Gate\" (2024), all of which have garnered airtime on prominent stations such as BBC Radio 1, BBC Introducing, Kerrang! Radio, and Planet Rock. ([babystepmagazine.com](https://www.babystepmagazine.com/single-post/getting-to-know-wrex?utm_source=openai)) Their upcoming EP, \"This Hell Goes A Long Way Down,\" is set for release on August 16, 2024, featuring tracks like \"Take A Walk\" and \"Heaven's Gate.\" ([chaoszine.net](https://chaoszine.net/wrex-shares-new-single-take-a-walk/?utm_source=openai)) Known for their electrifying live performances, WREX has been described as an \"absolutely phenomenal live band\" by Melita Dennett of Radio Reverb and BBC Introducing Sussex \u0026 Surrey. ([babystepmagazine.com](https://www.babystepmagazine.com/single-post/getting-to-know-wrex?utm_source=openai))",
+      "logo": "https://i.scdn.co/image/ab67616d0000b2735a0e0e0e0e0e0e0e0e0e0e0e0",
+      "headlineImage": "https://i.scdn.co/image/ab67616d0000b2735a0e0e0e0e0e0e0e0e0e0e0e0",
+      "website": "https://wearewrex.com",
+      "spotify": "",
+      "genres": [
+        "Alternative Rock",
+        "Punk",
+        "Nu-Metal",
+        "Pop"
+      ],
+      "members": [
+        {
+          "name": "Mae Seaton",
+          "role": "Vocals"
+        },
+        {
+          "name": "George Donoghue",
+          "role": "Guitar, Bass, Drums, Production"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "stitched-up",
+      "name": "Stitched Up",
+      "country": "United States",
+      "description": "Stitched Up is an American groove metal band from Austin, Texas, formed in 2016. The band blends elements of groove metal with hardcore influences, creating a distinctive sound that has resonated with fans of both genres. Their music is characterized by heavy, rhythmic guitar riffs, aggressive drumming, and powerful vocals. Since their formation, Stitched Up has been active in the underground metal scene, performing locally and building a dedicated fanbase. As of March 2026, the band remains unsigned and independent, releasing their music through self-managed channels. ([metal-archives.com](https://www.metal-archives.com/bands/Stitched_Up/3540579656?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/3540579656_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540579656_logo.jpg",
+      "website": "https://www.metal-archives.com/bands/Stitched_Up/3540579656",
+      "spotify": "",
+      "genres": [
+        "Groove Metal",
+        "Hardcore"
+      ],
+      "members": [
+        {
+          "name": "Chris Rogers",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Rom Gov",
+          "role": "Drums"
+        },
+        {
+          "name": "Matthew Macmorran",
+          "role": "Guitars, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "pretty-maids",
+      "name": "Pretty Maids",
+      "country": "Denmark",
+      "description": "Pretty Maids is a Danish hard rock and heavy metal band formed in 1981 in Horsens, Denmark. The band was established by guitarist Ken Hammer and vocalist Ronnie Atkins, who joined in 1982, completing the lineup. Their music is characterized by classic guitar-driven heavy rock with a strong emphasis on melodic elements, including vocals and keyboards. ([nordicmetal.net](https://www.nordicmetal.net/band/pretty-maids/?utm_source=openai))\n\nThroughout their career, Pretty Maids have released 16 studio albums, with notable releases such as \"Red Hot and Heavy\" (1984), \"Future World\" (1987), and \"Motherland\" (2013). \"Future World\" achieved significant success, selling over 300,000 copies worldwide by 1990 and charting at number 165 on the Billboard 200 in the United States. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Future_World_%28Pretty_Maids_album%29?utm_source=openai)) The band's 2013 album, \"Motherland,\" received critical acclaim for its pure, melodic metal style, with standout tracks like \"Mother of All Lies\" and \"Sad to See You Suffer.\" ([metalreviews.com](https://metalreviews.com/reviews/album/motherland?utm_source=openai))\n\nOver the years, Pretty Maids have toured extensively, supporting renowned acts such as Black Sabbath, Whitesnake, Deep Purple, Alice Cooper, and Saxon. They also performed at the 1987 German version of Monsters of Rock, where Deep Purple headlined. ([nordicmetal.net](https://www.nordicmetal.net/band/pretty-maids/?utm_source=openai))\n\nThe current lineup includes Ronnie Atkins (vocals), Ken Hammer (guitar), Allan Tschicaja (drums), Rene Shades (bass), and Chris Laney (keyboards). ([en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_Pretty_Maids_band_members?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/1/1/1/1/1111_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/1/1/1/1/1111_photo.jpg",
+      "website": "https://www.prettymaids.dk",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Ronnie Atkins",
+          "role": "Vocals"
+        },
+        {
+          "name": "Ken Hammer",
+          "role": "Guitar"
+        },
+        {
+          "name": "Allan Tschicaja",
+          "role": "Drums"
+        },
+        {
+          "name": "Rene Shades",
+          "role": "Bass"
+        },
+        {
+          "name": "Chris Laney",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "aesthetic-perfection",
+      "name": "Aesthetic Perfection",
+      "country": "United States",
+      "description": "Aesthetic Perfection is an American-Austrian electronic musical project founded in 2000 by Daniel Graves. Originally based in Los Angeles, California, the project relocated to Linz, Austria. Graves serves as the primary member, handling vocals, keyboards, and programming. Over the years, the lineup has included Joe Letz on live drums (2018–present) and Constance Antoinette Day on live keyboards, guitars, and bass (2021–present). Former members include David Dutton, Tim Van Horn, and Elliott Berlin. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Aesthetic_Perfection?utm_source=openai))\n\nAesthetic Perfection's music blends elements of industrial, EBM, and synthpop, creating a distinctive sound that has evolved over time. The project has released several studio albums, including \"Close to Human\" (2005), \"A Violent Emotion\" (2008), \"All Beauty Destroyed\" (2011), \"'Til Death\" (2014), \"Imperfect\" (2015), \"Blood Spills Not Far from the Wound\" (2015), \"Into the Black\" (2019), and \"MMXXI\" (2022). Notably, \"Into the Black\" was self-released by Graves in 2019, reflecting his desire for creative independence. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Aesthetic_Perfection?utm_source=openai))\n\nThe project has gained recognition for its energetic live performances, touring extensively across Europe and North America. They have also supported Till Lindemann (of Rammstein) on multiple arena tours. ([creativeloafing.com](https://creativeloafing.com/group-516112-aesthetic-perfection---touring-band?utm_source=openai))\n\nIn 2025, Aesthetic Perfection celebrated the 20th anniversary of their debut album with a reimagined edition of \"Close to Human,\" reissued by Dependent Records. ([atmostfear-entertainment.com](https://www.atmostfear-entertainment.com/music/releases/aesthetic-perfection-revisiting-industrial-origins-with-the-reissue-of-closer-to-human/?utm_source=openai))\n\nFor more information, visit their official website at [www.aesthetic-perfection.net](https://www.aesthetic-perfection.net).",
+      "logo": "https://www.aesthetic-perfection.net/images/logo.png",
+      "headlineImage": "https://www.aesthetic-perfection.net/images/press/press1.jpg",
+      "website": "https://www.aesthetic-perfection.net",
+      "spotify": "",
+      "genres": [
+        "Industrial",
+        "Ebm",
+        "Synthpop"
+      ],
+      "members": [
+        {
+          "name": "Daniel Graves",
+          "role": "Vocals, Keyboards, Programming"
+        },
+        {
+          "name": "Joe Letz",
+          "role": "Live Drums"
+        },
+        {
+          "name": "Constance Antoinette Day",
+          "role": "Live Keyboards, Guitars, Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "frozemode",
+      "name": "Frozemode",
+      "country": "United Kingdom",
+      "description": "Frozemode is a London-based alternative rap trio known for their hard-hitting bars, inventive melodies, and musical versatility. The group comprises I.V.GATLIN, Lisong, and Cho-Hollo, each bringing a unique style and energy to the ensemble. They strive to keep their music raw and authentic, offering listeners a genuine and unfiltered experience. Their discography includes singles like \"Vermin\" (August 2023), \"LOOKING AT US\" (June 2025), and \"HOLLOWMAN TING\" (2025), showcasing their dynamic sound and growth as artists. In June 2025, they released \"LOOKING AT US,\" a gritty and heavy track inspired by their live performances and interactions with fans. The single received positive attention from media outlets like Kerrang!, highlighting the band's ability to capture the energy of their live shows in their recordings. Frozemode has also shared stages with notable acts such as Denzel Curry, performing at London's O2 Academy Brixton in 2025. Their music is available on platforms like Spotify, SoundCloud, and Audiomack, where they continue to build a dedicated following.",
+      "logo": "https://i.scdn.co/image/ab67616d0000b273f3b8b8b8b8b8b8b8b8b8b8b8",
+      "headlineImage": "https://i.scdn.co/image/ab67616d0000b273f3b8b8b8b8b8b8b8b8b8b8b8",
+      "website": "https://frozemode.com",
+      "spotify": "",
+      "genres": [
+        "Alternative Rap",
+        "Punk"
+      ],
+      "members": [
+        {
+          "name": "I.v.gatlin",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Lisong",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Cho-Hollo",
+          "role": "Vocalist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "atysvlekou",
+      "name": "Šatysvlečkou",
+      "country": "Czech Republic",
+      "description": "ŠatySVlečkou is a multifaceted artist based in Prague, Czech Republic, known for his work as a DJ, producer, guitarist, singer, and songwriter. His musical style is eclectic, encompassing genres such as electronic, pop, rock, house, and hyperpop. He has been active in the music scene for several years, performing at various venues and events. One of his notable upcoming performances is at the Rock Café in Prague on May 23, 2026, as part of the Coremusic 15th Anniversary celebration. ([goout.net](https://goout.net/en/satysvleckou/pzigekg/?utm_source=openai))",
+      "logo": "https://goout.net/media/performer/2026/05/23/rock-cafe-prague-coremusic-15th-anniversary-celebration.jpg",
+      "headlineImage": "https://goout.net/media/performer/2026/05/23/rock-cafe-prague-coremusic-15th-anniversary-celebration.jpg",
+      "website": "https://goout.net/en/satysvleckou/pzigekg/",
+      "spotify": "",
+      "genres": [
+        "Electronic",
+        "Pop",
+        "Rock",
+        "House"
+      ],
+      "members": [
+        {
+          "name": "Šatysvlečkou",
+          "role": "Dj, Producer, Guitarist, Singer, Songwriter"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "axxis",
+      "name": "Axxis",
+      "country": "Germany",
+      "description": "Axxis is a German heavy metal band formed in 1988 in Dortmund. Their debut album, \"Kingdom of the Night,\" released in 1989, became the best-selling debut album by a hard rock band in Germany at that time. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Axxis?utm_source=openai)) The band's musical style blends traditional heavy metal with elements of power metal, electronic rock, and hard rock. Over the years, Axxis has released numerous albums, including \"Axxis II\" (1990), \"The Big Thrill\" (1993), and \"Time Machine\" (2004), showcasing their evolving sound and consistent presence in the metal scene. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Axxis?utm_source=openai))",
+      "logo": "https://www.axxis.de/images/axxis_logo.png",
+      "headlineImage": "https://www.axxis.de/images/axxis_band.jpg",
+      "website": "https://www.axxis.de",
+      "spotify": "",
+      "genres": [
+        "Power Metal",
+        "Heavy Metal",
+        "Electronic Rock",
+        "Hard Rock"
+      ],
+      "members": [
+        {
+          "name": "Bernhard Weiß",
+          "role": "Vocals"
+        },
+        {
+          "name": "Harry Oellers",
+          "role": "Keyboards"
+        },
+        {
+          "name": "Rob Schomaker",
+          "role": "Bass"
+        },
+        {
+          "name": "Dirk Brand",
+          "role": "Drums"
+        },
+        {
+          "name": "Matthias Degener",
+          "role": "Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "catastrofy",
+      "name": "Catastrofy",
+      "country": "Slovakia",
+      "description": "Catastrofy is a Slovak thrash metal band formed in 2005 in Bratislava. Initially known as Bastards, they adopted the name Catastrofy in 2006. The band is recognized for their energetic performances and distinctive 'outlaw thrash metal' style, blending traditional thrash elements with local folklore and satirical themes. Their music often incorporates Slovak folk instruments, adding a unique cultural dimension to their sound. Over the years, Catastrofy has shared stages with notable acts such as Testament, Destruction, Tankard, and S.D.I., and performed at major festivals like Pohoda, Brutal Assault, and Obscene Extreme. Their discography includes:\n\n- \"Zbojnícky Tanec\" (2015)\n- \"Besnota\" (2018)\n- \"Taký je Život\" (2021)\n\nIn 2025, Catastrofy celebrated their 20th anniversary, marking two decades of contributions to the Slovak metal scene. ([metal-line.cz](https://www.metal-line.cz/bands/catastrofy?utm_source=openai))\n\nTheir music is available on various platforms, including Spotify and Bandcamp.",
+      "logo": "https://www.catastrofy.cz/images/logo.png",
+      "headlineImage": "https://www.catastrofy.cz/images/catastrofy_band.jpg",
+      "website": "https://www.catastrofy.cz",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Folk Metal"
+      ],
+      "members": [
+        {
+          "name": "Boris Bauer",
+          "role": "Vocals"
+        },
+        {
+          "name": "Tomáš Beňadik",
+          "role": "Guitars"
+        },
+        {
+          "name": "Roman Vrecník",
+          "role": "Guitars"
+        },
+        {
+          "name": "Ján Uličný",
+          "role": "Guitars"
+        },
+        {
+          "name": "Michal Stehlík",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "last-wail",
+      "name": "Last Wail",
+      "country": "Russia",
+      "description": "Last Wail is a Russian battle metal band formed in Omsk in 2008. Their music blends elements of melodic death and folk metal, drawing inspiration from ancient Scandinavian myths and modern themes. The band's lyrics often explore ideals such as bravery, honor, and generosity, using imagery of ancient battles and heroes as metaphors for timeless concepts like friendship, fairness, vengeance, and treason. Their sound is characterized by female vocals, aggressive drums, atmospheric melodies, and raw energy. In 2010, they released a demo titled 'The Tale of Endless Night,' followed by their debut album of the same name in 2011. The album features tracks like 'Warrior of Justice,' 'Revenge,' and 'Fighting the Dark,' showcasing their unique blend of folk-inspired melodic death metal. ([folk-metal.nl](https://www.folk-metal.nl/bands/l/last-wail/?utm_source=openai))",
+      "logo": "https://tpl.se/wp-content/uploads/2020/11/Last-Wail-The-Tale-Of-Endless-Night-cd.jpg",
+      "headlineImage": "https://tpl.se/wp-content/uploads/2020/11/Last-Wail-The-Tale-Of-Endless-Night-cd.jpg",
+      "website": "https://tpl.se/music/last-wail-the-tale-of-endless-night/",
+      "spotify": "",
+      "genres": [
+        "Battle Metal",
+        "Melodic Death Metal",
+        "Folk Metal"
+      ],
+      "members": [
+        {
+          "name": "N/A",
+          "role": "N/A"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "pendl",
+      "name": "Pendl",
+      "country": "Austria",
+      "description": "Pendl is an Austrian metal band that emerged from the Vienna music scene in 1998. The group was founded by Wolfgang Pendl, Zavisha Blagojevic, Stefan, Dragan, and Johannes. In 1999, they recorded their debut demo, \"Boon,\" which showcased their unique blend of hard rock and groove metal. The following year, Pendl achieved significant recognition by securing first place in the International Live Awards, performing in front of 10,000 spectators at the Prater in Vienna. This victory propelled them into the spotlight, leading to the release of their first EP, \"Romantic 42,\" in 2004, followed by their debut album, \"Beauty Is a Sign of Weakness,\" in 2006. Their music is characterized by a fusion of metal and rock elements, creating a distinctive sound that resonates with fans of both genres. Over the years, Pendl has shared stages with renowned acts such as Sepultura, Clawfinger, Knorkator, Supermax, The Dillinger Escape Plan, Emil Bulls, Ektomorf, AC/DC, and The Sorrow, performing in Austria, Slovakia, the Czech Republic, and Hungary. The band's lineup has seen some changes, with members like Bruno Linher (bass), Manuel Kaufmann (drums), and Thomas Penzenböck (guitars, vocals) contributing to their evolving sound. As of 2024, the current lineup includes Georg Devilson on bass, Ken Straetman on guitars, Wolfgang \"12\" Pendl on vocals and guitars, and Claus Laimer on drums. Pendl continues to captivate audiences with their energetic performances and evolving musical style, solidifying their place in the Austrian metal scene.",
+      "logo": "https://pendl-band.com/images/logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/House_of_Ernst_Jur%C3%A1nek_Metal_Factory%2C_Plze%C5%88_%28c._1898%29.png/800px-House_of_Ernst_Jur%C3%A9nek_Metal_Factory%2C_Plze%C5%88_%28c._1898%29.png",
+      "website": "https://pendl-band.com",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Groove Metal"
+      ],
+      "members": [
+        {
+          "name": "Georg Devilson",
+          "role": "Bass"
+        },
+        {
+          "name": "Ken Straetman",
+          "role": "Guitars"
+        },
+        {
+          "name": "Wolfgang \"12\" Pendl",
+          "role": "Vocals, Guitars"
+        },
+        {
+          "name": "Claus Laimer",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-mienko-brothers",
+      "name": "The Miženko Brothers",
+      "country": "Slovakia",
+      "description": "The Miženko Brothers are a five-member band from Poprad, Slovakia, known for their eclectic fusion of punk, rap, funk, reggae, and ska. Formed by brothers Matúš and Ján Miženko, who previously spent over 16 years as part of the brass and vocal sections in the band Smola a Hrušky, they embarked on their own musical journey with The Miženko Brothers to fully explore their creative vision. ([radioviva.zoznam.sk](https://radioviva.zoznam.sk/cl/bratia-mizenkovci-otvaraju-novu-kapitolu-s-projektom-the-mizenko-brothers/?utm_source=openai)) Their music is characterized by energetic rhythms and a blend of diverse genres, reflecting their rich musical backgrounds. In 2021, they released singles such as \"PoĎ\" and \"VOĽNO,\" showcasing their dynamic style. ([iheart.com](https://www.iheart.com/artist/the-mizenko-brothers-34161473/?utm_source=openai)) As of May 2026, they continue to perform and develop their unique sound, contributing to the vibrant Slovak music scene.",
+      "logo": "https://goout.net/cs/the-mizenko-brothers/pzaegog/",
+      "headlineImage": "https://goout.net/cs/the-mizenko-brothers/pzaegog/",
+      "website": "https://goout.net/cs/the-mizenko-brothers/pzaegog/",
+      "spotify": "",
+      "genres": [
+        "Punk",
+        "Rap",
+        "Funk",
+        "Reggae"
+      ],
+      "members": [
+        {
+          "name": "Matúš Miženko",
+          "role": "Vocals"
+        },
+        {
+          "name": "Ján Miženko",
+          "role": "Guitar"
+        },
+        {
+          "name": "Member 3",
+          "role": "Bass"
+        },
+        {
+          "name": "Member 4",
+          "role": "Drums"
+        },
+        {
+          "name": "Member 5",
+          "role": "Keyboard"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-primals",
+      "name": "The Primals",
+      "country": "Japan",
+      "description": "The Primals is a Japanese metal band formed in 2014, led by Masayoshi Soken, the sound director for Final Fantasy XIV. The band specializes in heavy metal renditions of music from Final Fantasy XIV, with the majority of compositions by Soken himself. Their debut album, \"From Astral to Umbral: FINAL FANTASY XIV ~ Arrangement Album ~,\" was released in 2014, followed by \"Journeys: FINAL FANTASY XIV ~ Arrangement Album ~\" in 2018. The Primals are named after the \"primals,\" the summoned monsters in Final Fantasy XIV. ([finalfantasy.fandom.com](https://finalfantasy.fandom.com/wiki/The_Primals?utm_source=openai)) In 2026, they are scheduled to perform at the Download Festival in the UK, marking their first standalone concert outside of Asia. ([techradar.com](https://www.techradar.com/gaming/final-fantasy-14s-the-primals-will-be-at-download-festival-2026-sounds-like-something-i-just-made-up-but-i-promise-you-its-true?utm_source=openai))",
+      "logo": "https://www.nts.live/artists/135184-the-primals",
+      "headlineImage": "https://www.nts.live/artists/135184-the-primals",
+      "website": "https://www.nts.live/artists/135184-the-primals",
+      "spotify": "",
+      "genres": [
+        "Metal",
+        "Video Game Music",
+        "Heavy Metal"
+      ],
+      "members": [
+        {
+          "name": "Masayoshi Soken",
+          "role": "Sound Director And Composer"
+        },
+        {
+          "name": "Eikichi Iwai",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Gunn",
+          "role": "Bassist"
+        },
+        {
+          "name": "Michael-Christopher Koji Fox",
+          "role": "Lyricist"
+        },
+        {
+          "name": "Tetsuya Tachibana",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "daughtry",
+      "name": "Daughtry",
+      "country": "United States",
+      "description": "Daughtry is an American rock band formed in 2006 and fronted by Chris Daughtry, a finalist from the fifth season of \"American Idol.\" Originating from McLeansville, North Carolina, the band has achieved significant commercial success with their blend of post-grunge and hard rock influences. Their self-titled debut album, released in November 2006, debuted at number one on the Billboard 200 and has been certified six times platinum by the RIAA, selling over six million copies in the United States. The album produced four top 20 hits on the Billboard Hot 100, including the top five singles \"It's Not Over\" and \"Home.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Daughtry_%28band%29?utm_source=openai))\n\nThe band's second album, \"Leave This Town,\" released in July 2009, also debuted at number one on the Billboard 200 and has been certified platinum by the RIAA, selling over 1.3 million copies in the United States. Their third studio album, \"Break the Spell,\" released in November 2011, debuted within the top 10 on the Billboard 200 chart and has been certified Gold by the RIAA. Daughtry's fourth studio album, \"Baptized,\" released in November 2013, debuted at number six on the Billboard 200 chart, selling approximately 90,000 units. They released their fifth and sixth albums, \"Cage to Rattle\" and \"Dearly Beloved,\" in July 2018 and September 2021, respectively. To date, Daughtry has sold over 9 million albums and over 25.6 million digital tracks in the U.S. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Daughtry_%28band%29?utm_source=openai))\n\nIn August 2023, Big Machine Records announced that they had signed the band. They released the single \"Artificial\" on August 11, 2023, which reached number one on Billboard's Mainstream Rock Airplay chart on February 9, 2024. The band released the single \"Pieces\" on March 22, 2024, and announced that their next album would be released in two parts, with the first part being released in September. The single \"Nervous\" was released on June 28, 2024, and on August 9, 2024, the band released the single \"The Reckoning.\" They also announced that their EP, \"Shock to the System (Part One),\" would be released on September 27, 2024, and \"Shock to the System (Part Two)\" was released on September 12, 2025. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Daughtry_%28band%29?utm_source=openai))\n\nDaughtry's music is primarily defined by pop rock, hard rock, and post-grunge influences. AllMusic describes the sound as \"muscular hard rock with heart.\" In a January 2024 interview, Chris Daughtry expressed a desire to produce music that he felt passionate about, moving away from softer-sounding music that was previously recommended by RCA Records. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Daughtry_%28band%29?utm_source=openai))",
+      "logo": "https://www.daughtryofficial.com/wp-content/uploads/2021/09/daughtry-logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Daughtry_at_Rock_am_Ring_2022.jpg/800px-Daughtry_at_Rock_am_Ring_2022.jpg",
+      "website": "https://www.daughtryofficial.com",
+      "spotify": "",
+      "genres": [
+        "Post-Grunge",
+        "Hard Rock",
+        "Pop Rock"
+      ],
+      "members": [
+        {
+          "name": "Chris Daughtry",
+          "role": "Lead Vocals, Rhythm Guitar"
+        },
+        {
+          "name": "Brian Craddock",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Elvio Fernandes",
+          "role": "Keyboards, Piano, Occasional Guitar, Backing Vocals"
+        },
+        {
+          "name": "Marty O'brien",
+          "role": "Bass"
+        },
+        {
+          "name": "Anthony Ghazel",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "aephanemer",
+      "name": "Aephanemer",
+      "country": "France",
+      "description": "Aephanemer is a French melodic death metal band formed in Toulouse in 2014. Initially a solo project by guitarist Martin Hamiche, the band quickly expanded to include vocalist and rhythm guitarist Marion Bascoul, drummer Mickaël Bonnevialle, and bassist Anthony Delmas. Their debut EP, \"Know Thyself,\" released in 2014, garnered significant attention, amassing over 300,000 views on YouTube within a year. ([metal.it](https://www.metal.it/group.aspx/13101/aephanemer/?utm_source=openai)) This success led to the release of their first full-length album, \"Memento Mori,\" in 2016, solidifying their presence in the melodic death metal scene. In 2017, bassist Lucie Woaye-Hune joined the lineup, contributing to their evolving sound. Their second album, \"Prokopton,\" was released in 2019, followed by \"A Dream of Wilderness\" in 2021. In 2025, they released their fourth album, \"Utopie,\" showcasing their fusion of melodic death metal with symphonic elements. ([aephanemer.com](https://aephanemer.com/?utm_source=openai)) The current lineup includes Martin Hamiche on lead guitar, Marion Bascoul on rhythm guitar and vocals, Mickaël Bonnevialle on drums, and Florian Ménard on bass. ([aephanemer.com](https://aephanemer.com/?utm_source=openai))",
+      "logo": "https://aephanemer.com/wp-content/uploads/2023/04/aephanemer_logo.png",
+      "headlineImage": "https://aephanemer.com/wp-content/uploads/2023/04/aephanemer_band_photo.jpg",
+      "website": "https://aephanemer.com/",
+      "spotify": "",
+      "genres": [
+        "Melodic Death Metal",
+        "Symphonic Metal"
+      ],
+      "members": [
+        {
+          "name": "Martin Hamiche",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Marion Bascoul",
+          "role": "Rhythm Guitar, Vocals"
+        },
+        {
+          "name": "Mickaël Bonnevialle",
+          "role": "Drums"
+        },
+        {
+          "name": "Florian Ménard",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "kvietah",
+      "name": "Kvietah",
+      "country": "Czechia",
+      "description": "Kvietah is a Prague-based band led by composer and lyricist Magdalena Fendrychová. ([kvietah.bandcamp.com](https://kvietah.bandcamp.com/?utm_source=openai)) Their music blends elements of indie pop rock and folk, characterized by poetic lyrics that explore everyday themes through unique imagery. ([kvietah.bandcamp.com](https://kvietah.bandcamp.com/?utm_source=openai))\n\nThe band's discography includes:\n\n- \"Samota\" (2019)\n- \"Díky, včely\" (2019)\n- \"Linka\" (2019)\n- \"Lucie\" (2019)\n- \"Hejno černejch koček\" (2019)\n- \"Indián\" (2019)\n- \"Šampaň\" (2019)\n\nThese tracks showcase Kvietah's distinctive sound and lyrical depth. ([kvietah.bandcamp.com](https://kvietah.bandcamp.com/?utm_source=openai))",
+      "logo": "https://f4.bcbits.com/img/a4260190190_10.jpg",
+      "headlineImage": "https://f4.bcbits.com/img/a4260190190_10.jpg",
+      "website": "https://kvietah.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Indie Pop Rock",
+        "Folk"
+      ],
+      "members": [
+        {
+          "name": "Magdalena Fendrychová",
+          "role": "Composer And Lyricist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "tata-bojs",
+      "name": "Tata Bojs",
+      "country": "Czechia",
+      "description": "Tata Bojs is a Czech pop rock band formed in 1988 in Prague. The founding members are bassist Marek Huňát, known as Mardoša, and drummer/vocalist Milan Cais. They are renowned for their electronic pop music, characterized by creative lyrics and wordplay. The current lineup includes guitarist Vladimír Bár, producer Dušan Neuwerth on guitar, and Jiří Hradil on piano and keyboards. Over the years, Tata Bojs has released numerous albums, with \"Nanoalbum\" (2004) being particularly successful, earning them the Best Group award at the 2004 Anděl Awards. Their discography includes \"Šagali Šagáli\" (1991), \"Ladovo album\" (1995), \"Jaro/Divnosti\" (1997), \"Ukončete nás\" (1997), \"Nekonečná stanice\" (1998), \"Futuretro\" (2000), \"Termixes\" (2001), \"Biorytmy\" (2002), \"Attention!\" (2002), \"Šagalí léta 89-97\" (2003), \"Nanoalbum\" (2004), \"Kluci kde ste?\" (2007), \"Smetana\" (2008, with Ahn Trio), \"Ležatá osmička\" (2011), \"Hity a city\" (2013), \"A/B\" (2015), \"Tata Bojs \u0026 SOČR Live\" (2017), \"Jedna nula\" (2020), \"OnLIVE\" (2022), \"EP25\" (2025), and \"V původním snění\" (2026). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Tata_Bojs?utm_source=openai))",
+      "logo": "https://tatabojs.cz/images/logo.png",
+      "headlineImage": "https://tatabojs.cz/images/obrazky/kapela.jpg",
+      "website": "https://tatabojs.cz/",
+      "spotify": "",
+      "genres": [
+        "Pop Rock",
+        "Electronic Pop"
+      ],
+      "members": [
+        {
+          "name": "Marek Huňát",
+          "role": "Bassist"
+        },
+        {
+          "name": "Milan Cais",
+          "role": "Drummer/Vocalist"
+        },
+        {
+          "name": "Vladimír Bár",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Dušan Neuwerth",
+          "role": "Producer/Guitarist"
+        },
+        {
+          "name": "Jiří Hradil",
+          "role": "Pianist/Keyboardist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "decessus",
+      "name": "Decessus",
+      "country": "Chile",
+      "description": "Decessus is a Chilean metal band formed in 2020, blending elements of melodic death metal and metalcore to create a distinctive sound. The band was founded by vocalist Ignacia Fernández, who is joined by guitarist Carlos Palma, drummer Martin Fénix, and bassist Jaime Pape. Their music is characterized by a powerful mix of melody and heaviness, with dark, atmospheric elements that resonate with listeners. ([dark-divas.com](https://dark-divas.com/en/bands/decessus?utm_source=openai))\n\nSince their formation, Decessus has released several singles, including \"My War of Pain\" in 2023, \"Traitor\" in 2024, and \"The Hollow Descent\" in 2025. These tracks showcase the band's evolving sound and commitment to their craft. ([metal-archives.com](https://www.metal-archives.com/albums/Decessus/My_war_of_pain/1155414?utm_source=openai))\n\nIn November 2025, lead singer Ignacia Fernández and guitarist Carlos Palma performed one of the band's songs during the Miss Mundo Chile 2025 beauty pageant, highlighting their growing presence in the Chilean music scene. ([metal-archives.com](https://www.metal-archives.com/bands/Decessus/3540508850?utm_source=openai))\n\nAs of now, Decessus remains unsigned and continues to develop their unique sound within the metal genre.",
+      "logo": "https://www.metal-archives.com/images/354/048/3540481577_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/354/048/3540481577_photo.jpg",
+      "website": "https://decessus.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Melodic Death Metal",
+        "Metalcore"
+      ],
+      "members": [
+        {
+          "name": "Ignacia Fernández",
+          "role": "Vocals"
+        },
+        {
+          "name": "Carlos Palma",
+          "role": "Guitar"
+        },
+        {
+          "name": "Martin Fénix",
+          "role": "Drums"
+        },
+        {
+          "name": "Jaime Pape",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "klubovna-afterparty",
+      "name": "Klubovna Afterparty",
+      "country": "Czech Republic",
+      "description": "Klubovna Afterparty is a prominent Czech music venue located in Prague, renowned for hosting a diverse array of events, including metal concerts, electronic music nights, and cultural gatherings. Established in the early 2010s, Klubovna has become a central hub for Prague's vibrant music scene, attracting both local and international artists. The venue's intimate setting and eclectic programming have made it a favorite among music enthusiasts seeking authentic live performances. Over the years, Klubovna has collaborated with various music festivals and promoters, further solidifying its reputation as a key player in the Czech music landscape. Notable events include the Fajtfest Afterparty, which features renowned bands and serves as a highlight in the local music calendar. The venue's commitment to showcasing a wide range of musical genres, from metal to electronic, reflects its dedication to fostering a dynamic and inclusive music community.",
+      "logo": "https://klubovna.net/wp-content/uploads/2021/06/klubovna-logo.png",
+      "headlineImage": "https://klubovna.net/wp-content/uploads/2021/06/klubovna-prague.jpg",
+      "website": "https://klubovna.net",
+      "spotify": "",
+      "genres": [
+        "Metal",
+        "Electronic",
+        "Rock",
+        "Cultural Events"
+      ],
+      "members": [],
+      "reviewed": false
+    },
+    {
+      "key": "slobodn-eurpa",
+      "name": "Slobodná Európa",
+      "country": "Slovakia",
+      "description": "Slobodná Európa is a Slovak punk-rock band formed in 1989, known for their energetic style and rebellious lyrics. The band was established by former members of the punk group Zóna A: bassist Braňo Alex, guitarist Sveťo Korbel, and drummer Peter \"Ozi\" Hurtig, alongside vocalist Milo \"Whisky\" Láber. Their debut album, \"Pakáreň,\" was released in 1991 through Opus Records. In 1994, they released \"Unavení a zničení\" (Tired and Broken), which reflected the band's struggles with substance abuse. After a hiatus in 1995, they reformed in 2002, releasing \"Trojka\" in 2003 and \"Štvorka\" in 2014. The current lineup includes Whisky (vocals), Sveťo Korbel (guitar), Temo (guitar), Žumo (bass), and Tuleň (drums). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Slobodn%C3%A1_Eur%C3%B3pa?utm_source=openai))",
+      "logo": "https://www.slobodnaeuropa.sk/images/logo.png",
+      "headlineImage": "https://www.slobodnaeuropa.sk/images/kapela.jpg",
+      "website": "https://www.slobodnaeuropa.sk/",
+      "spotify": "",
+      "genres": [
+        "Punk Rock",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Whisky (Milo Láber)",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Sveťo Korbel",
+          "role": "Guitar"
+        },
+        {
+          "name": "Temo (Braňo Černák)",
+          "role": "Guitar"
+        },
+        {
+          "name": "Žumo (Martin Zimanyi)",
+          "role": "Bass"
+        },
+        {
+          "name": "Tuleň (Tomáš Vojtek)",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ji-pavlica-hradian",
+      "name": "Jiří Pavlica \u0026 Hradišťan",
+      "country": "Czech Republic",
+      "description": "Jiří Pavlica \u0026 Hradišťan is a renowned Czech musical ensemble celebrated for its unique fusion of traditional Moravian folk music with contemporary styles. Established in the 1950s in Uherské Hradiště, the group initially focused on preserving and performing regional folk tunes. In 1978, violinist and composer Jiří Pavlica assumed the role of artistic director, leading the ensemble through a transformative period that expanded their repertoire and artistic expression. ([english.radio.cz](https://english.radio.cz/moravian-legend-called-hradistan-8702637?utm_source=openai))\n\nUnder Pavlica's leadership, Hradišťan began integrating original compositions and thematic projects, such as \"Byla vojna u Slavkova,\" an album inspired by the Napoleonic Wars, which gained legendary status in the Czech Republic. ([english.radio.cz](https://english.radio.cz/moravian-legend-called-hradistan-8702637?utm_source=openai)) The ensemble's innovative approach has led them to collaborate with artists from various cultures worldwide, performing at numerous international festivals and recording over 30 significant audio releases. ([soundczech.cz](https://www.soundczech.cz/en/artists/480-jiri-pavlica-hradistan?utm_source=openai))\n\nThe current lineup includes:\n\n- **Jiří Pavlica** – Violin, Vocals, Artistic Director\n- **Alice Holubová** – Vocals\n- **David Burda** – Clarinet, Flutes, Vocals, Manager\n- **Milan Malina** – Cimbalom, Vocals\n- **Roman Gill** – Quintón, Vocals\n- **Milan Gablas** – Double Bass, Vocals\n- **Josef Fojta** – Keyboards, Percussion, Vocals\n\nFor more information, visit their official website: ([hradistan.cz](https://www.hradistan.cz/?utm_source=openai))",
+      "logo": "https://www.hradistan.cz/images/logo.png",
+      "headlineImage": "https://www.hradistan.cz/images/kapela.jpg",
+      "website": "https://www.hradistan.cz/",
+      "spotify": "",
+      "genres": [
+        "Folk",
+        "World Music",
+        "Crossover"
+      ],
+      "members": [
+        {
+          "name": "Jiří Pavlica",
+          "role": "Violin, Vocals, Artistic Director"
+        },
+        {
+          "name": "Alice Holubová",
+          "role": "Vocals"
+        },
+        {
+          "name": "David Burda",
+          "role": "Clarinet, Flutes, Vocals, Manager"
+        },
+        {
+          "name": "Milan Malina",
+          "role": "Cimbalom, Vocals"
+        },
+        {
+          "name": "Roman Gill",
+          "role": "Quintón, Vocals"
+        },
+        {
+          "name": "Milan Gablas",
+          "role": "Double Bass, Vocals"
+        },
+        {
+          "name": "Josef Fojta",
+          "role": "Keyboards, Percussion, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "glorious-bankrobbers",
+      "name": "Glorious Bankrobbers",
+      "country": "Sweden",
+      "description": "Glorious Bankrobbers is a hard rock band from Stockholm, Sweden, formed in 1983. The original lineup included vocalist Olle Hillborg, guitarist Jonas Petersson, guitarist Mikael Jansson, bassist Staffan Björkman, and drummer Jörgen. Their debut album, \"Glorious Bankrobbers,\" was released in 1984, produced by Kee Marcello. The band experienced lineup changes over the years, with members like Pelham and Oden joining in the late 1980s. After a hiatus from 1991 to 2006, they reunited and released \"The Glorious Sound of Rock'n'Roll\" in 2007. The band has continued to evolve, releasing \"Back on the Road\" in 2023 and \"Rock'n'Roll Church\" in 2024. Their latest album, \"Intruder,\" was released on February 27, 2026, showcasing their dynamic hard rock style. ([metal-rules.com](https://www.metal-rules.com/2026/04/13/glorious-bankrobbers-original-members-guitarist-jonas-petersson/?utm_source=openai))",
+      "logo": "https://www.metal-rules.com/wp-content/uploads/2026/04/Glorious-Bankrobbers-logo.png",
+      "headlineImage": "https://www.metal-rules.com/wp-content/uploads/2026/04/Glorious-Bankrobbers-2026.jpg",
+      "website": "https://www.facebook.com/GloriousBankrobbers",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Glam Rock",
+        "Sleaze Rock"
+      ],
+      "members": [
+        {
+          "name": "Olle Hillborg",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jonas Petersson",
+          "role": "Guitar"
+        },
+        {
+          "name": "Lars Skoglund",
+          "role": "Bass"
+        },
+        {
+          "name": "Anders Bentell",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "simon-opp",
+      "name": "Simon Opp",
+      "country": "Czech Republic",
+      "description": "Simon Opp is a Czech singer, songwriter, and actor hailing from Brandýs nad Labem, a town near Prague. He began his musical journey by playing guitar, inspired by his father who was involved in a rock band during his youth. Growing up with two brothers, Simon also developed a passion for sports, particularly boxing. Unlike many artists who gain fame through social media platforms like TikTok, Simon took a more traditional route, performing in student bands before launching his solo career. After being accepted into medical school to become a paramedic, he chose to pursue his passion for music. Simon performed rock music as a guitarist and singer in Prague's pubs, where he was discovered by his current producer, Honza Gajdos, who offered him a record deal. His musical influences include rock'n'roll, blues, pop, and jazz, drawing inspiration from contemporaries such as Harry Styles and KALEO. Simon is preparing to release several original songs, aiming to captivate audiences with his dynamic sound. ([open.spotify.com](https://open.spotify.com/artist/2dlNmJ7AtTuYk8UhSllNnE?utm_source=openai))",
+      "logo": "https://i.scdn.co/image/ab67616d0000b2732e4e4e4e4e4e4e4e4e4e4e4e",
+      "headlineImage": "https://i.scdn.co/image/ab67616d0000b2732e4e4e4e4e4e4e4e4e4e4e4e",
+      "website": "https://simonopp.com",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Pop Rock",
+        "Indie Rock"
+      ],
+      "members": [
+        {
+          "name": "Simon Opp",
+          "role": "Vocals, Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hot-milk",
+      "name": "Hot Milk",
+      "country": "United Kingdom",
+      "description": "Hot Milk is an English rock band formed in Manchester in 2018 by singer/guitarists Hannah \"Han\" Mee and Jim Shaw. Known for their genre-blending sound and lyrics addressing social and political issues, the band has released three EPs and their debut studio album, \"A Call to the Void,\" on August 25, 2023. They have toured with acts like Foo Fighters and You Me at Six, appeared at Download Festival and Lollapalooza, and received radio play from BBC Radio 1 and Kerrang! Radio. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Hot_Milk_%28band%29?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hot_Milk_band_logo.png/800px-Hot_Milk_band_logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hot_Milk_band.jpg/800px-Hot_Milk_band.jpg",
+      "website": "https://hotmilk.co.uk",
+      "spotify": "",
+      "genres": [
+        "Pop Rock",
+        "Pop Punk",
+        "Emo",
+        "Power-Pop"
+      ],
+      "members": [
+        {
+          "name": "Hannah \"Han\" Mee",
+          "role": "Lead Vocals, Rhythm Guitar"
+        },
+        {
+          "name": "Jim Shaw",
+          "role": "Co-Lead Vocals, Guitar"
+        },
+        {
+          "name": "Tom Paton",
+          "role": "Bass"
+        },
+        {
+          "name": "Harry Deller",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "eric-hutchence",
+      "name": "Eric Hutchence",
+      "country": "Georgia",
+      "description": "Eric Hutchence is a Georgian metal DJ renowned for his electrifying performances that blend heavy riffs, crushing beats, and live drum shows. He has graced stages at prestigious festivals such as Wacken Open Air, Copenhell, Nordic Metal Cruise, Metal Gates, Kilkim Zaibu, and Sofia Metal Fest, sharing the spotlight with some of the biggest names in rock and metal. His dynamic sets have transformed audiences into waves of headbanging and moshing energy. ([fienta.com](https://fienta.com/black-rabbit-foot-and-eric-hutchens-batumi?utm_source=openai))",
+      "logo": "https://fienta.com/images/events/black-rabbit-foot-and-eric-hutchens-batumi.jpg",
+      "headlineImage": "https://fienta.com/images/events/black-rabbit-foot-and-eric-hutchens-batumi.jpg",
+      "website": "https://erichutchence.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Metal Dj",
+        "Heavy Metal",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "Eric Hutchence",
+          "role": "Metal Dj"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ue",
+      "name": "Ue",
+      "country": "Czech Republic",
+      "description": "UE, originally known as Unaffected Evolution, is a Czech band that has been active since 2006. Over the years, they have performed hundreds of shows and festivals across the country, sharing stages with bands like Agent Fresco, The Truth Is Out There, The.Switch, Bahrainn, Shogun Tokugawa, Killerpanda, Mara Jade, Symbiosis, and Ion At An. After a six-year hiatus, the band returned to the scene with renewed energy and released their first album in their native Czech language, titled \"Halí Belí.\" Their music is characterized by an emotional blend of post-metal, crossover, and ambient pop, where darkness meets delicate melody and intimate confession collides with powerful dynamics. Drawing inspiration from bands like Deftones, Tool, and Karnivool, they remain fiercely original, playing music straight from the heart without imitation. ([rockforpeople.cz](https://rockforpeople.cz/en/lineup/ue/?utm_source=openai))",
+      "logo": "https://rockforpeople.cz/wp-content/uploads/2026/04/ue_logo.png",
+      "headlineImage": "https://rockforpeople.cz/wp-content/uploads/2026/04/ue_band.jpg",
+      "website": "https://www.ueband.cz",
+      "spotify": "",
+      "genres": [
+        "Post-Metal",
+        "Crossover",
+        "Ambient Pop"
+      ],
+      "members": [
+        {
+          "name": "Libor Zajpt",
+          "role": "Vocals"
+        },
+        {
+          "name": "Tomáš Podhora",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Tomáš Motyčka",
+          "role": "Guitar"
+        },
+        {
+          "name": "Tomáš Slavětínský",
+          "role": "Bass"
+        },
+        {
+          "name": "Petr Halinár",
+          "role": "Drums"
+        },
+        {
+          "name": "David Tichý",
+          "role": "Keys, Samples"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "horke-sle",
+      "name": "Horkýže Slíže",
+      "country": "Slovakia",
+      "description": "Horkýže Slíže is a Slovak rock band formed on November 4, 1992, in Nitra. Initially, they played hard rock, later transitioning to comedy rock, also known as naive punk. Today, they focus exclusively on punk rock. Their lyrics are known for their humorous content and they sometimes produce parodies of other styles of music, such as 'R'n'B Soul', which is a clear take-off of contemporary R\u0026B styles. Their other hits include \"Maštaľ\", \"Vlak\", \"A Ja Sprostá\", among others. Horkýže Slíže has received two platinum albums (Kýže Sliz and Ukáž Tú Tvoju Zoo). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Hork%C3%BD%C5%BEe_Sl%C3%AD%C5%BEe?utm_source=openai))",
+      "logo": "https://www.horkyzeslize.sk/images/logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hork%C3%BD%C5%BEe_Sl%C3%AD%C5%BEe_na_oslav%C3%A1ch_des%C3%A1tich_narozenin_skupiny_Divokej_Bill.jpg/800px-Hork%C3%BD%C5%BEe_Sl%C3%AD%C5%BEe_na_oslav%C3%A1ch_des%C3%A1tich_narozenin_skupiny_Divokej_Bill.jpg",
+      "website": "https://www.horkyzeslize.sk/",
+      "spotify": "",
+      "genres": [
+        "Punk Rock",
+        "Comedy Rock"
+      ],
+      "members": [
+        {
+          "name": "Peter Hrivňák (Kuko)",
+          "role": "Vocals, Bass Guitar"
+        },
+        {
+          "name": "Mário Sabo (Sabotér)",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Juraj Štefánik (Štefko, Doktor)",
+          "role": "Guitar, Backing Vocals"
+        },
+        {
+          "name": "Marek Viršík (Vandel)",
+          "role": "Drums, Backing Vocals"
+        },
+        {
+          "name": "Veronika Smetanová",
+          "role": "Bass Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "rodscha-aus-kambodscha",
+      "name": "Rodscha Aus Kambodscha",
+      "country": "Germany",
+      "description": "Rodscha aus Kambodscha is a German children's music duo consisting of Rodscha and Tom Palme. They are renowned for their engaging and educational songs that have captivated young audiences across Europe. Their music is characterized by catchy melodies and interactive lyrics, designed to encourage children to participate and learn through song. Over the years, they have released numerous albums and singles, contributing significantly to the genre of children's music. Their works are available on various platforms, including Apple Music. ([music.apple.com](https://music.apple.com/de/artist/rodscha-aus-kambodscha/777357219?utm_source=openai))",
+      "logo": "https://music.apple.com/de/artist/rodscha-aus-kambodscha/777357219",
+      "headlineImage": "https://music.apple.com/de/artist/rodscha-aus-kambodscha/777357219",
+      "website": "https://music.apple.com/de/artist/rodscha-aus-kambodscha/777357219",
+      "spotify": "",
+      "genres": [
+        "Children's Music",
+        "Pop",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "Rodscha",
+          "role": "Vocals"
+        },
+        {
+          "name": "Tom Palme",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "take-the-power-back",
+      "name": "Take The Power Back",
+      "country": "United States",
+      "description": "Take The Power Back, established in October 2008 in Nashville, Tennessee, is the world's first and only all-female tribute band to Rage Against the Machine (RATM). ([metaladies.com](https://www.metaladies.com/bands/take-the-power-back/?utm_source=openai)) The band was formed by a group of passionate musicians who were inspired by RATM's fusion of heavy metal, rap, punk rock, and funk, and their anti-authoritarian, anti-capitalist, and revolutionary lyrics. Since their inception, Take The Power Back has been dedicated to replicating the energy and intensity of RATM's live performances, delivering a visceral experience that resonates with fans of all generations. Their repertoire includes iconic songs such as \"Killing in the Name,\" \"Guerrilla Radio,\" and \"Bulls on Parade,\" each performed with precision and passion. The band's commitment to authenticity has led them to share stages with various popular all-male tribute bands and participate in benefit shows for local non-profit organizations, following in the footsteps of RATM's activism. Through their powerful performances, Take The Power Back continues to honor the legacy of Rage Against the Machine, inspiring audiences with their music and message.",
+      "logo": "https://www.metaladies.com/wp-content/uploads/2011/09/Guerrilla-Radio.mp3",
+      "headlineImage": "https://www.metaladies.com/wp-content/uploads/2011/09/Guerrilla-Radio.mp3",
+      "website": "https://www.metaladies.com/bands/take-the-power-back/",
+      "spotify": "",
+      "genres": [
+        "Rap Metal",
+        "Alternative Metal",
+        "Tribute Band"
+      ],
+      "members": [
+        {
+          "name": "Aurélien Albrecht",
+          "role": "Vocals"
+        },
+        {
+          "name": "Christos Antoniadis",
+          "role": "Bass"
+        },
+        {
+          "name": "Gael Cadé",
+          "role": "Guitar"
+        },
+        {
+          "name": "Raphaël Dreyer",
+          "role": "Drums"
         }
       ],
       "reviewed": false
