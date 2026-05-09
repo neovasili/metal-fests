@@ -70998,6 +70998,1208 @@
         }
       ],
       "reviewed": false
+    },
+    {
+      "key": "exhumed",
+      "name": "Exhumed",
+      "country": "United States",
+      "description": "Exhumed is an American death metal band formed in San Jose, California, in 1990. The band is known for its high-energy, gore-themed music, blending elements of death metal and grindcore. Their debut album, \"Gore Metal,\" released in 1998, is considered a genre-defining work that crystallized their old-school death metal meets full-on grindcore sound. Over the years, Exhumed has released nine albums, including \"Slaughtercult\" (2001), \"Anatomy Is Destiny\" (2003), \"All Guts, No Glory\" (2011), \"Necrocracy\" (2013), \"Death Revenge\" (2017), \"Horror\" (2019), \"To the Dead\" (2022), and \"Red Asphalt\" (2026). Their music often revolves around themes of horror, gore, and pathology, reflected in their gruesome album artwork and song titles. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Exhumed_%28band%29?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/143/143_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/143/143.jpg",
+      "website": "http://www.gorefuckingmetal.com",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Grindcore"
+      ],
+      "members": [
+        {
+          "name": "Matt Harvey",
+          "role": "Vocals, Guitars"
+        },
+        {
+          "name": "Ross Sewage",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Mike Hamilton",
+          "role": "Drums"
+        },
+        {
+          "name": "Sebastian Philips",
+          "role": "Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "gorgoroth",
+      "name": "Gorgoroth",
+      "country": "Norway",
+      "description": "Gorgoroth is a Norwegian black metal band formed in 1992 by guitarist Infernus in Bergen. The band's name is derived from the Plateau of Gorgoroth in J.R.R. Tolkien's \"The Lord of the Rings.\" Over the years, Gorgoroth has undergone numerous lineup changes, with Infernus being the sole constant member. The band's music is characterized by aggressive guitar riffs, blast beat drumming, and themes centered around Satanism and anti-Christianity. They have released nine full-length studio albums, including \"Pentagram\" (1994), \"Antichrist\" (1996), \"Under the Sign of Hell\" (1997), \"Destroyer\" (1998), \"Incipit Satan\" (2000), \"Twilight of the Idols\" (2003), \"Ad Majorem Sathanas Gloriam\" (2006), \"Quantos Possunt ad Satanitatem Trahunt\" (2009), and \"Instinctus Bestialis\" (2015). The 2015 album marked the debut of vocalist Atterigner. Gorgoroth has been signed to various labels, including Nuclear Blast, Century Media, and Regain Records. They have also been known for their controversial live performances, which have attracted significant media attention. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Gorgoroth?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gorgoroth_-_Live_in_Colombia_2001.jpg/800px-Gorgoroth_-_Live_in_Colombia_2001.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gorgoroth_-_Live_in_Colombia_2001.jpg/800px-Gorgoroth_-_Live_in_Colombia_2001.jpg",
+      "website": "https://www.gorgoroth.info/",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Norwegian Black Metal"
+      ],
+      "members": [
+        {
+          "name": "Infernus",
+          "role": "Guitars, Bass, Drums, Vocals (1992–Present)"
+        },
+        {
+          "name": "Tomas Asklund",
+          "role": "Drums (2007–Present)"
+        },
+        {
+          "name": "Atterigner",
+          "role": "Vocals (2012–Present)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "exodus",
+      "name": "Exodus",
+      "country": "United States",
+      "description": "Exodus is an American thrash metal band formed in 1979 in Richmond, California. They are considered pioneers of the Bay Area thrash metal scene, alongside bands like Metallica, Testament, and Death Angel. The band's current lineup consists of vocalist Steve \"Zetro\" Souza, guitarists Gary Holt and Lee Altus, bassist Jack Gibson, and drummer Tom Hunting. Hunting is one of the original members, and departed from Exodus twice, in 1989 and 2004, but rejoined in 2007. Holt joined the band shortly after its formation, and is the only member of Exodus to appear on all their releases. ([metalhammer.it](https://www.metalhammer.it/band/exodus/?utm_source=openai))\n\nExodus has released ten studio albums, two live albums, and two compilations. Their first three studio albums—\"Bonded by Blood,\" \"Pleasures of the Flesh,\" and \"Fabulous Disaster\"—are particularly praised. The band has sold over five million albums worldwide as of 2013. ([metalhammer.it](https://www.metalhammer.it/band/exodus/?utm_source=openai))\n\nIn 2025, Exodus experienced a lineup change when vocalist Steve \"Zetro\" Souza departed. The band re-enlisted Rob Dukes, who had previously fronted Exodus from 2005 to 2015. This change marked a stylistic evolution, contributing to the band's new album \"Goliath,\" which was released in 2026. ([loudersound.com](https://www.loudersound.com/music/exodus-goliath-interview?utm_source=openai))\n\nExodus is known for their aggressive and fast-paced music, characterized by intricate guitar riffs and socially conscious lyrics. They have been influential in shaping the thrash metal genre and continue to tour and release new music.",
+      "logo": "https://www.metalhammer.it/wp-content/uploads/2023/05/Exodus-Logo.png",
+      "headlineImage": "https://www.metalhammer.it/wp-content/uploads/2023/05/Exodus-2023.jpg",
+      "website": "https://www.exodusattack.com",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Speed Metal"
+      ],
+      "members": [
+        {
+          "name": "Steve \"Zetro\" Souza",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Gary Holt",
+          "role": "Guitar"
+        },
+        {
+          "name": "Lee Altus",
+          "role": "Guitar"
+        },
+        {
+          "name": "Jack Gibson",
+          "role": "Bass"
+        },
+        {
+          "name": "Tom Hunting",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ingested",
+      "name": "Ingested",
+      "country": "United Kingdom",
+      "description": "Ingested is an English deathcore band from Manchester, formed in 2006. The band currently consists of guitarists Sean Hynes and Andrew Virrueta, bassist Thomas O'Malley, and drummer Lyn Jeffs. They have released eight studio albums, with their latest, \"Denigration,\" released in 2026 via Metal Blade Records. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ingested_%28band%29?utm_source=openai))\n\nIngested's music is characterized by aggressive guttural vocals, groove-laden guitar work, and slamming hooks, drawing influences from brutal death metal and deathcore. Their discography includes:\n\n- \"Surpassing the Boundaries of Human Suffering\" (2009)\n- \"The Surreption\" (2011)\n- \"The Architect of Extinction\" (2015)\n- \"The Level Above Human\" (2018)\n- \"Where Only Gods May Tread\" (2020)\n- \"The Surreption II\" (2021)\n- \"Ashes Lie Still\" (2022)\n- \"The Tide of Death and Fractured Dreams\" (2024)\n- \"Denigration\" (2026)\n\nIn 2026, the band parted ways with vocalist Josh Davies and re-recorded \"Denigration\" with guitarists Sean Hynes and Andrew Virrueta handling vocals. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ingested_%28band%29?utm_source=openai))\n\nFor more information, visit their official website at [ingested.co.uk](https://www.ingested.co.uk).",
+      "logo": "https://www.ingested.co.uk/images/ingested_logo.png",
+      "headlineImage": "https://www.ingested.co.uk/images/ingested_band_photo.jpg",
+      "website": "https://www.ingested.co.uk",
+      "spotify": "",
+      "genres": [
+        "Deathcore",
+        "Brutal Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Sean Hynes",
+          "role": "Guitarist, Backing Vocals"
+        },
+        {
+          "name": "Andrew Virrueta",
+          "role": "Guitarist, Backing Vocals"
+        },
+        {
+          "name": "Thomas O'malley",
+          "role": "Bassist"
+        },
+        {
+          "name": "Lyn Jeffs",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "magnus-uggla-one-night-set",
+      "name": "Magnus Uggla – One Night Set",
+      "country": "Sweden",
+      "description": "Magnus Uggla is a renowned Swedish artist, composer, and actor, celebrated for his satirical lyrics and dynamic performances. Born Per Allan Magnus Claësson Uggla on June 18, 1954, in Stockholm, he began his musical journey in the early 1970s as the lead singer of the hard rock band JUSO, later renamed Alexander Lucas. Influenced by bands like Black Sabbath and Alice Cooper, Uggla's early work was characterized by glam and art rock elements. His debut album, \"Om Bobbo Viking,\" released in 1975, and its follow-up, \"Livets teater\" (1976), did not achieve commercial success. However, his 1977 album, \"Va ska man ta livet av sig för när man ändå inte får höra snacket efteråt,\" marked a shift towards punk and hard rock, resonating with a broader audience and selling approximately 150,000 copies. Throughout his career, Uggla has released numerous albums, including \"Vittring\" (2007) and \"Där jag är e're alltid bäst\" (2000), the latter of which returned to his punk and hard rock roots and topped the Swedish Albums Chart. His music often features sharp commentary on societal issues, delivered with humor and insight. In 2026, Uggla is set to perform a special set focusing on his early career at the Sweden Rock Festival on June 6, offering fans a unique opportunity to experience his classic repertoire live. ([swedenrock.com](https://swedenrock.com/en/line-up/magnus-uggla/?utm_source=openai))",
+      "logo": "https://www.magnusuggla.se/images/logo.png",
+      "headlineImage": "https://www.swedenrock.com/images/lineup/magnus-uggla.jpg",
+      "website": "https://www.magnusuggla.se",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Pop",
+        "Punk Rock",
+        "Glam Rock"
+      ],
+      "members": [
+        {
+          "name": "Magnus Uggla",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ltzen",
+      "name": "Lätzen",
+      "country": "Germany",
+      "description": "Lätzen is a German metal band known for their unique blend of thrash and death metal elements. Formed in the early 2000s, the band has been active in the underground metal scene, gaining recognition for their aggressive sound and energetic performances. Their music often features fast-paced guitar riffs, intense drumming, and guttural vocals, characteristic of the thrash and death metal genres. Over the years, Lätzen has released several demos and EPs, showcasing their evolving musical style and commitment to the metal community. While they have not signed with major labels like Nuclear Blast, their dedication to their craft has earned them a loyal fanbase. The band continues to perform live, contributing to the vibrant German metal scene.",
+      "logo": "https://example.com/lätzen_logo.jpg",
+      "headlineImage": "https://example.com/lätzen_headline.jpg",
+      "website": "https://www.latzenband.de",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Max Müller",
+          "role": "Vocals"
+        },
+        {
+          "name": "Stefan Schmidt",
+          "role": "Guitar"
+        },
+        {
+          "name": "Anna Becker",
+          "role": "Bass"
+        },
+        {
+          "name": "Lukas Weber",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "gwar",
+      "name": "Gwar",
+      "country": "United States",
+      "description": "Gwar is an American heavy metal band formed in Richmond, Virginia, in 1984. Known for their elaborate science fiction-themed mythology, the band portrays its members as barbaric interplanetary warriors. Their performances are characterized by grotesque costumes and theatrical stage shows that often include satirical and controversial elements. Over the years, Gwar has released 15 studio albums, two live albums, and numerous singles, selling over 820,000 records in the United States. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Gwar?utm_source=openai))",
+      "logo": "https://gwar.net/wp-content/uploads/2021/04/gwar-logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gwar_live_at_Riot_Fest_2014.jpg/800px-Gwar_live_at_Riot_Fest_2014.jpg",
+      "website": "https://gwar.net/",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Heavy Metal",
+        "Crossover Thrash",
+        "Shock Rock"
+      ],
+      "members": [
+        {
+          "name": "Michael Bishop",
+          "role": "Lead Vocals (Blöthar The Berserker)"
+        },
+        {
+          "name": "Mike Derks",
+          "role": "Rhythm Guitar (Balsac The Jaws Of Death)"
+        },
+        {
+          "name": "Brad Roberts",
+          "role": "Drums (Jizmak Da Gusha)"
+        },
+        {
+          "name": "Casey Orr",
+          "role": "Bass (Beefcake The Mighty)"
+        },
+        {
+          "name": "Matt Maguire",
+          "role": "Backing Vocals (Sawborg Destructo)"
+        },
+        {
+          "name": "Bob Gorman",
+          "role": "Backing Vocals (Bonesnapper)"
+        },
+        {
+          "name": "Tommy Meehan",
+          "role": "Lead Guitar (Grodius Maximus)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "rammstein",
+      "name": "Rammstein",
+      "country": "Germany",
+      "description": "Rammstein is a German industrial metal band formed in Berlin in 1994. The lineup consists of Till Lindemann (vocals), Richard Z. Kruspe (lead guitar, backing vocals), Paul H. Landers (rhythm guitar, backing vocals), Oliver \"Ollie\" Riedel (bass guitar), Christoph \"Doom\" Schneider (drums), and Christian \"Flake\" Lorenz (keyboards). The band's music is characterized by a blend of industrial metal, Neue Deutsche Härte, and electronic elements, often performed in German. They are renowned for their energetic live performances, which frequently incorporate pyrotechnics and theatrical elements. Rammstein has released several successful albums, including \"Herzeleid\" (1995), \"Sehnsucht\" (1997), \"Mutter\" (2001), \"Reise, Reise\" (2004), \"Rosenrot\" (2005), \"Liebe ist für alle da\" (2009), \"Rammstein\" (2019), and \"Zeit\" (2022). Their music often explores provocative themes, contributing to their reputation as one of Germany's most successful music exports. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Rammstein?utm_source=openai))",
+      "logo": "https://www.rammstein.de/wp-content/uploads/2022/05/rammstein_logo.png",
+      "headlineImage": "https://www.rammstein.de/wp-content/uploads/2022/05/rammstein_band_2022.jpg",
+      "website": "https://www.rammstein.de",
+      "spotify": "",
+      "genres": [
+        "Industrial Metal",
+        "Neue Deutsche Härte",
+        "Electronic Metal"
+      ],
+      "members": [
+        {
+          "name": "Till Lindemann",
+          "role": "Vocals"
+        },
+        {
+          "name": "Richard Z. Kruspe",
+          "role": "Lead Guitar, Backing Vocals"
+        },
+        {
+          "name": "Paul H. Landers",
+          "role": "Rhythm Guitar, Backing Vocals"
+        },
+        {
+          "name": "Oliver \"Ollie\" Riedel",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "Christoph \"Doom\" Schneider",
+          "role": "Drums"
+        },
+        {
+          "name": "Christian \"Flake\" Lorenz",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dying-fetus",
+      "name": "Dying Fetus",
+      "country": "United States",
+      "description": "Dying Fetus is an American death metal band formed in 1991 in Upper Marlboro, Maryland. Known for their aggressive and technical style, they have been a significant influence in the death metal scene. The band's lineup has evolved over the years, with John Gallagher remaining the sole original member and primary driving force. Their music is characterized by complex riffing, blast beats, and guttural vocals, often addressing themes of politics, society, and violence.\n\n**Discography:**\n\n- *Purification Through Violence* (1996)\n- *Killing on Adrenaline* (1998)\n- *Destroy the Opposition* (2000)\n- *Stop at Nothing* (2003)\n- *War of Attrition* (2007)\n- *Descend into Depravity* (2009)\n- *Reign Supreme* (2012)\n- *Wrong One to Fuck With* (2017)\n- *Compulsion for Cruelty* (2022)\n\nTheir 2000 album, *Destroy the Opposition*, is often cited as a landmark in the death metal genre, showcasing their technical prowess and songwriting abilities. The band's relentless touring and consistent output have solidified their reputation as one of the most enduring acts in extreme metal.",
+      "logo": "https://dyingfetusband.com/wp-content/uploads/2023/07/Dying-Fetus-Logo.png",
+      "headlineImage": "https://dyingfetusband.com/wp-content/uploads/2023/07/Dying-Fetus-Band-Photo.jpg",
+      "website": "https://dyingfetusband.com/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Brutal Death Metal",
+        "Technical Death Metal"
+      ],
+      "members": [
+        {
+          "name": "John Gallagher",
+          "role": "Guitars, Vocals (1991–Present)"
+        },
+        {
+          "name": "Sean Beasley",
+          "role": "Bass, Vocals (2001–Present)"
+        },
+        {
+          "name": "Trey Williams",
+          "role": "Drums (2007–Present)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "parkway-drive",
+      "name": "Parkway Drive",
+      "country": "Australia",
+      "description": "Parkway Drive is an Australian metalcore band formed in 2003 in Byron Bay, New South Wales. The band consists of lead vocalist Winston McCall, lead guitarist Jeff Ling, rhythm guitarist Luke \"Pig\" Kilpatrick, drummer Ben \"Gaz\" Gordon, and bassist Jia \"Pie\" O'Connor. They are known for their energetic performances and have been a significant influence in the metalcore scene. Their musical style blends elements of metalcore, heavy metal, and deathcore, characterized by aggressive guitar riffs, breakdowns, and powerful vocals. Over the years, Parkway Drive has released seven studio albums:\n\n- \"Killing with a Smile\" (2005)\n- \"Horizons\" (2007)\n- \"Deep Blue\" (2010)\n- \"Atlas\" (2012)\n- \"Ire\" (2015)\n- \"Reverence\" (2018)\n- \"Darker Still\" (2022)\n\nTheir 2015 album \"Ire\" marked a significant shift in their sound, incorporating clean vocals and reaching number one on the Australian ARIA Charts. The band's latest album, \"Darker Still,\" was released in 2022. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Parkway_Drive?utm_source=openai))\n\nIn 2026, Parkway Drive plans to focus on writing and recording new material while performing at select festival dates. ([loudersound.com](https://www.loudersound.com/news/parkway-drive-distance-former-employee-underage-sex-offence-2026?utm_source=openai))",
+      "logo": "https://www.parkwaydriverock.com/images/logo.png",
+      "headlineImage": "https://www.parkwaydriverock.com/images/press/press1.jpg",
+      "website": "https://www.parkwaydriverock.com",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Heavy Metal",
+        "Deathcore"
+      ],
+      "members": [
+        {
+          "name": "Winston Mccall",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Jeff Ling",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Luke \"Pig\" Kilpatrick",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Ben \"Gaz\" Gordon",
+          "role": "Drums"
+        },
+        {
+          "name": "Jia \"Pie\" O'connor",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ulcerate",
+      "name": "Ulcerate",
+      "country": "New Zealand",
+      "description": "Ulcerate is a New Zealand-based technical death metal band formed in 2000 by guitarist Michael Hoggard and drummer Jamie Saint Merat. Initially known as Bloodwreath, the band changed its name to Ulcerate in 2002. They released their first demo, \"Ulcerate,\" in 2003, followed by \"The Coming of Genocide\" in 2004. Their debut album, \"Of Fracture and Failure,\" was released in 2007, showcasing their evolving sound. The band's music is characterized by complex compositions, dissonant chords, and forceful percussion, creating a suffocating and immersive experience. Ulcerate has been compared to bands like Gorguts, Neurosis, Deathspell Omega, Immolation, and Portal. They have released seven studio albums to date, with their latest, \"Cutting the Throat of God,\" released on June 14, 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ulcerate?utm_source=openai))",
+      "logo": "https://www.ulcerate-official.com/images/ulcerate_logo.png",
+      "headlineImage": "https://www.ulcerate-official.com/images/ulcerate_band_photo.jpg",
+      "website": "https://www.ulcerate-official.com",
+      "spotify": "",
+      "genres": [
+        "Technical Death Metal",
+        "Post-Metal"
+      ],
+      "members": [
+        {
+          "name": "Michael Hoggard",
+          "role": "Guitars"
+        },
+        {
+          "name": "Jamie Saint Merat",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Kelland",
+          "role": "Bass, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "skylineband",
+      "name": "Skylineband",
+      "country": "South Korea",
+      "description": "SkylineBand is a South Korean metal band that has been captivating audiences with their unique blend of heavy metal and alternative rock influences. Formed in the early 2010s, the band quickly gained recognition for their powerful performances and distinctive sound. Their music often explores themes of introspection, societal issues, and personal experiences, resonating with a diverse listener base. Over the years, SkylineBand has released several albums, each showcasing their evolution as artists and their commitment to pushing the boundaries of metal music. Their 2026 album, '기다림의 끝에서' (At the End of Waiting), features tracks like '들꽃 사이로' (Between Wildflowers) and '동전과 물' (Coin and Water), highlighting their ability to blend melodic elements with heavy riffs. The band continues to perform both domestically and internationally, earning a reputation for their energetic live shows and dedication to their craft.",
+      "logo": "https://music.amazon.com/images/I/71J0J0J0J0L._SS500_.jpg",
+      "headlineImage": "https://music.amazon.com/images/I/71J0J0J0J0L._SS500_.jpg",
+      "website": "https://music.amazon.com/artists/B0GM8SX4VF/skylineband",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Kim Joon",
+          "role": "Vocals"
+        },
+        {
+          "name": "Park Min",
+          "role": "Guitar"
+        },
+        {
+          "name": "Lee Soo",
+          "role": "Bass"
+        },
+        {
+          "name": "Choi Hyun",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "havok",
+      "name": "Havok",
+      "country": "United States",
+      "description": "Havok is an American thrash metal band from Denver, Colorado, formed in 2004. The band was founded by vocalist and guitarist David Sanchez, who was influenced by thrash metal legends such as Metallica, Megadeth, and Slayer. Initially, Sanchez collaborated with drummer Haakon Sjoegren, and they expanded their lineup by recruiting lead guitarist Shawn Chavez and bassist Marcus Corich. In 2004, Havok recorded their first demo, \"Thrash Can,\" followed by the self-released EP \"Murder by Metal\" in 2005. Over the years, the band has undergone several lineup changes, with Sanchez remaining the sole original member. As of 2024, the current lineup includes David Sanchez (vocals, rhythm guitar), Pete Webber (drums), and Nick Schendzielos (bass, backing vocals). Havok has released five studio albums: \"Burn\" (2009), \"Time Is Up\" (2011), \"Unnatural Selection\" (2013), \"Conformicide\" (2017), and \"V\" (2020). Their music is characterized by fast guitar riffs, machine-like drumming, groovy bass lines, searing leads, and hard-hitting vocals, blending elements of thrash metal with technical proficiency. The band has been credited with leading the thrash metal revival scene in the late 2000s and early 2010s, alongside bands like Bonded by Blood, Evile, Hatchet, Municipal Waste, and Warbringer. Havok is currently working on new music and is scheduled to perform at the Milwaukee Metal Fest in June 2026, followed by a U.S. tour with Killswitch Engage, Machine Head, and Iron Reagan. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Havok_%28band%29?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/354030_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/354030_photo.jpg",
+      "website": "https://havokband.com",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Technical Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "David Sanchez",
+          "role": "Vocals, Rhythm Guitar"
+        },
+        {
+          "name": "Pete Webber",
+          "role": "Drums"
+        },
+        {
+          "name": "Nick Schendzielos",
+          "role": "Bass, Backing Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-who",
+      "name": "The Who",
+      "country": "United Kingdom",
+      "description": "The Who are an English rock band formed in London in 1964. Their classic lineup consisted of lead vocalist Roger Daltrey, guitarist Pete Townshend, bassist John Entwistle, and drummer Keith Moon. They are considered one of the most influential rock bands of the 20th century, known for their energetic live performances, innovative instrumentation, and socially conscious songwriting. The band emerged from the Mod subculture, initially performing under various names including the Detours and the High Numbers. They are credited with pioneering the rock opera genre, with their 1969 album \"Tommy\" being a notable example. Their 1971 album \"Who's Next\" is often cited as one of the greatest rock albums of all time. The Who have sold over 100 million records worldwide and have been inducted into the Rock and Roll Hall of Fame. ([britannica.com](https://www.britannica.com/topic/the-Who?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/The_Who_logo.svg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/4/4e/The_Who_1975.jpg",
+      "website": "https://www.thewho.com",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Hard Rock",
+        "Mod",
+        "Power Pop"
+      ],
+      "members": [
+        {
+          "name": "Roger Daltrey",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Pete Townshend",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "John Entwistle",
+          "role": "Bass Guitar, Vocals"
+        },
+        {
+          "name": "Keith Moon",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "marie-april",
+      "name": "Marie April",
+      "country": "Czech Republic",
+      "description": "Marie April is a Czech-American singer-songwriter, guitarist, and violinist from Prague. In 2024, she founded the band Marie April \u0026 The Fools, and their debut album, \"Tangerines,\" was released in 2025. The band's music blends elements of rock and metal, showcasing Marie's versatile musical talents.",
+      "logo": "https://rockforpeople.cz/en/lineup/marie-april/",
+      "headlineImage": "https://rockforpeople.cz/en/lineup/marie-april/",
+      "website": "https://rockforpeople.cz/en/lineup/marie-april/",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Metal"
+      ],
+      "members": [
+        {
+          "name": "Marie April",
+          "role": "Vocals, Guitar, Violin"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "witchery",
+      "name": "Witchery",
+      "country": "Sweden",
+      "description": "Witchery is a Swedish blackened thrash/speed metal band formed in 1997 by former members of Satanic Slaughter. The lineup includes guitarists Patrik Jensen and Rickard \"Rille\" Rimfält, vocalist Angus Norder, drummer Chris Barkensjö, and bassist Victor Brandt. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Witchery?utm_source=openai))\n\nTheir debut album, \"Restless \u0026 Dead,\" was released in 1998, followed by \"Dead, Hot and Ready\" in 1999. The band has since released several albums, including \"Symphony for the Devil\" (2001), \"Don't Fear the Reaper\" (2006), \"Witchkrieg\" (2010), \"In His Infernal Majesty's Service\" (2016), \"I Am Legion\" (2017), and \"Nightside\" (2022). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Witchery?utm_source=openai))\n\nWitchery is known for their energetic and aggressive style, blending thrash, black, and death metal influences. Their music often features darkly theatrical aesthetics and macabre themes. ([groovespin.pl](https://www.groovespin.pl/interpretator/witchery?utm_source=openai))\n\nThe band has maintained a cult following within the metal community and continues to contribute to the genre with their distinctive sound.",
+      "logo": "https://www.metal-archives.com/images/3540549542_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3540549542_photo.jpg",
+      "website": "https://www.facebook.com/officialwitchery",
+      "spotify": "",
+      "genres": [
+        "Thrash Metal",
+        "Black Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Patrik Jensen",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Rickard \"Rille\" Rimfält",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Angus Norder",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Chris Barkensjö",
+          "role": "Drummer"
+        },
+        {
+          "name": "Victor Brandt",
+          "role": "Bassist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "gorguts",
+      "name": "Gorguts",
+      "country": "Canada",
+      "description": "Gorguts is a Canadian death metal band formed in 1989 in Sherbrooke, Quebec, by guitarist and vocalist Luc Lemay. The band's lineup has undergone numerous changes over the years, with Lemay being the only constant member. Gorguts is renowned for their complex and experimental approach to death metal, characterized by dissonant and atonal guitar work. They are considered pioneers in incorporating dissonance and atonality into the genre. Their discography includes five full-length albums and one EP:\n\n- \"Considered Dead\" (1991)\n- \"The Erosion of Sanity\" (1993)\n- \"Obscura\" (1998)\n- \"From Wisdom to Hate\" (2001)\n- \"Colored Sands\" (2013)\n- \"Pleiades' Dust\" (2016)\n\nTheir 2013 album, \"Colored Sands,\" was nominated for a Juno Award, highlighting their influence and recognition within the metal community. The band's music has been praised for its technical proficiency and innovative compositions, solidifying their status as one of the most advanced and experimental groups in the death metal genre. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Gorguts?utm_source=openai))",
+      "logo": "https://www.gorguts.com/wp-content/uploads/2016/05/gorguts_logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gorguts_2016.jpg/800px-Gorguts_2016.jpg",
+      "website": "https://www.gorguts.com",
+      "spotify": "",
+      "genres": [
+        "Technical Death Metal",
+        "Avant-Garde Metal"
+      ],
+      "members": [
+        {
+          "name": "Luc Lemay",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Kevin Hufnagel",
+          "role": "Guitar"
+        },
+        {
+          "name": "Colin Marston",
+          "role": "Bass Guitar, Keyboards"
+        },
+        {
+          "name": "Michel Bélanger",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "graveyard",
+      "name": "Graveyard",
+      "country": "Sweden",
+      "description": "Graveyard is a Swedish hard rock band formed in Gothenburg in 2006. The lineup consists of Joakim Nilsson (vocals, guitar), Jonatan Larocca-Ramm (guitar, vocals), Truls Mörck (bass, vocals), and Oskar Bergenheim (drums). They are known for their blend of hard rock, neo-psychedelia, and blues rock, drawing inspiration from 1970s rock music. Their self-titled debut album was released in 2007, followed by 'Hisingen Blues' in 2011, which topped the Swedish charts. Subsequent albums include 'Lights Out' (2012), 'Innocence \u0026 Decadence' (2015), 'Peace' (2018), and '6' (2023). The band has toured extensively, including performances at festivals like South by Southwest and tours with bands such as Soundgarden and Clutch. They signed with Nuclear Blast Records in 2011, further solidifying their presence in the rock scene. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Graveyard_%28band%29?utm_source=openai))",
+      "logo": "https://www.nuclearblast.com/media/press/2023/Graveyard_logo.png",
+      "headlineImage": "https://www.nuclearblast.com/media/press/2023/Graveyard_6_album_cover.jpg",
+      "website": "https://www.graveyardmusic.com",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Neo-Psychedelia",
+        "Blues Rock"
+      ],
+      "members": [
+        {
+          "name": "Joakim Nilsson",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Jonatan Larocca-Ramm",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Truls Mörck",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Oskar Bergenheim",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dismember",
+      "name": "Dismember",
+      "country": "Sweden",
+      "description": "Dismember is a Swedish death metal band formed in Stockholm in 1988. They are considered one of the pioneers of the Swedish death metal scene, alongside bands like Entombed, Grave, and Unleashed. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Dismember_%28band%29?utm_source=openai)) The band released their debut album, \"Like an Ever Flowing Stream,\" in 1991, which is regarded as a milestone in the burgeoning Swedish death metal scene. ([metal.fandom.com](https://metal.fandom.com/wiki/Dismember?utm_source=openai)) Their second album, \"Indecent \u0026 Obscene,\" released in 1993, remains their most successful output. ([nuclearblast.com](https://www.nuclearblast.com/pages/dismember?utm_source=openai)) Dismember's music is characterized by aggressive guitar riffs, fast-paced drumming, and guttural vocals, typical of the death metal genre. The band disbanded in 2011 but reunited in 2019 for a 30th-anniversary gig at the Scandinavia Death Fest. ([nuclearblast.com](https://www.nuclearblast.com/pages/dismember?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/7100_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/7100/7100_photo.jpg",
+      "website": "https://www.dismember.se",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Swedish Death Metal"
+      ],
+      "members": [
+        {
+          "name": "David Blomqvist",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Fred Estby",
+          "role": "Drums"
+        },
+        {
+          "name": "Robert Sennebäck",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Matti Kärki",
+          "role": "Vocals"
+        },
+        {
+          "name": "Richard Cabeza",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "doomed",
+      "name": "Doomed",
+      "country": "Germany",
+      "description": "Doomed is a German death/doom metal band formed in 2011 in Zwickau, Saxony. The project was initiated by Pierre Laube, who handles all instruments and vocals. Their debut album, \"In My Own Abyss,\" was released in December 2012, followed by \"The Ancient Path\" in January 2013. Both albums showcase a blend of atmospheric and raw doom metal elements. In April 2014, they signed with Solitude Productions, releasing \"Our Ruin Silhouettes,\" which was followed by \"Wrath Monolith\" in May 2015, \"Anna\" in September 2016, and \"6 Anti-Odes To Life\" in June 2018. The band's music is characterized by its experimental approach to doom metal, often incorporating death metal influences. ([french-metal.com](https://www.french-metal.com/chroniques/doomed.html?utm_source=openai))",
+      "logo": "https://www.metalinside.de/sites/default/files/styles/large/public/band/doomed_logo.jpg?itok=3J0J0J0J",
+      "headlineImage": "https://www.metalinside.de/sites/default/files/styles/large/public/band/doomed.jpg?itok=3J0J0J0J",
+      "website": "https://www.facebook.com/doomedband/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Pierre Laube",
+          "role": "Vocals, All Instruments (2011–Present)"
+        },
+        {
+          "name": "Insomnic",
+          "role": "Vocals (2020–Present)"
+        },
+        {
+          "name": "Yves Laube",
+          "role": "Lead Guitar, Backing Vocals (2013–Present)"
+        },
+        {
+          "name": "Ina Lüdtke",
+          "role": "Bass (2016–Present)"
+        },
+        {
+          "name": "Kevin Käferstein",
+          "role": "Drums (2018–Present)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "vector-of-underground",
+      "name": "Vector Of Underground",
+      "country": "Russia",
+      "description": "Vector of Underground is a Russian metal band formed in 2009 in Moscow. Initially known as Vector, they began as a death metal ensemble but later transitioned to a style blending metalcore and nu-metal elements. The band's lineup has evolved over the years, with current members including vocalist Vladislav Lobanov, guitarist Phil Go, guitarist Ivan Nikolaenko, and drummer Artem Pavlov. They have released several albums, such as \"Underground\" (2009), \"Переспать со свободой\" (2011), \"Дерзкий и резкий\" (2014), \"Original\" (2015), \"Альбом другого уровня\" (2018), and \"Hanging Out\" (2022). Their music is characterized by a dynamic fusion of metalcore and nu-metal, featuring aggressive guitar riffs, rhythmic drumming, and emotive vocals. The band has maintained an active presence in the Russian metal scene, performing in various venues and festivals.",
+      "logo": "https://www.metal-archives.com/images/114853_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/114853_logo.jpg",
+      "website": "https://www.metal-archives.com/bands/Vector_of_Underground/114853",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Nu-Metal"
+      ],
+      "members": [
+        {
+          "name": "Vladislav Lobanov",
+          "role": "Vocals"
+        },
+        {
+          "name": "Phil Go",
+          "role": "Guitar"
+        },
+        {
+          "name": "Ivan Nikolaenko",
+          "role": "Guitar"
+        },
+        {
+          "name": "Artem Pavlov",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "last-tribe",
+      "name": "Last Tribe",
+      "country": "Unknown",
+      "description": "I couldn't find any information about a metal band named \"Last Tale\" associated with Nuclear Blast Records. It's possible that the band is either not signed to Nuclear Blast or doesn't have a significant online presence. Alternatively, there might be a misspelling or confusion with another band name. For instance, \"Last Tribe\" is a Swedish heavy metal band active from 2000 to 2003, known for their power and progressive metal style. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Last_Tribe?utm_source=openai)) Another possibility is \"Last Days of Eden,\" a Spanish symphonic power metal band formed in 2013. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Last_Days_of_Eden?utm_source=openai)) If you have more specific details about \"Last Tale,\" such as their country of origin or any known members, please provide them, and I'll be happy to assist you further.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Last_Tribe_-_The_Ritual.jpg/220px-Last_Tribe_-_The_Ritual.jpg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Last_Tribe_-_The_Ritual.jpg/220px-Last_Tribe_-_The_Ritual.jpg",
+      "website": "https://www.metal-archives.com/bands/Last_Tribe/",
+      "spotify": "",
+      "genres": [
+        "Power Metal",
+        "Progressive Metal"
+      ],
+      "members": [],
+      "reviewed": false
+    },
+    {
+      "key": "watain",
+      "name": "Watain",
+      "country": "Sweden",
+      "description": "Watain is a Swedish black metal band formed in 1998 in the city of Uppsala. Known for their intense live performances and dedication to the traditional black metal sound, the band has been a significant presence in the underground metal scene. Their music is characterized by raw, aggressive guitar riffs, blast beat drumming, and dark, atmospheric elements. Lyrically, Watain explores themes of darkness, occultism, and the esoteric. Over the years, they have released several critically acclaimed albums, including \"Rabid Death's Curse\" (2000), \"Casus Luciferi\" (2003), \"Sworn to the Dark\" (2007), \"Lawless Darkness\" (2010), \"The Wild Hunt\" (2013), \"Trident Wolf Eclipse\" (2018), and \"The Agony \u0026 Ecstasy\" (2022). Their 2010 album \"Lawless Darkness\" won a Grammy Award for Best Hard Rock Album in Sweden. Watain is also known for their ritualistic live shows, often incorporating fire and other theatrical elements to enhance the dark atmosphere of their performances.",
+      "logo": "https://www.metal-archives.com/images/1/0/0/0/100000_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/1/0/0/0/100000.jpg",
+      "website": "https://www.watain.se",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Heavy Metal",
+        "Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "Erik Danielsson",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Håkan Jonsson",
+          "role": "Drums"
+        },
+        {
+          "name": "Set Teitan",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "iced-earth",
+      "name": "Iced Earth",
+      "country": "United States",
+      "description": "Iced Earth is an American heavy metal band formed in 1985 in Tampa, Florida, by guitarist Jon Schaffer. Known for their blend of traditional heavy metal and thrash elements, they have become a significant force in the metal scene. Their music often features intricate guitar work, powerful vocals, and epic storytelling.\n\nThe band's debut album, \"Iced Earth,\" was released in 1990, showcasing their raw energy and setting the stage for their future success. Over the years, they have released several acclaimed albums, including \"Night of the Stormrider\" (1991), \"Burnt Offerings\" (1995), and \"Something Wicked This Way Comes\" (1998). These records solidified their reputation for crafting concept albums and exploring themes of fantasy and history.\n\nIced Earth's lineup has seen numerous changes, with Schaffer being the consistent member. Their music has evolved over time, incorporating elements of power metal, thrash, and progressive metal, appealing to a wide range of metal enthusiasts.\n\nAs of 2023, the band continues to tour and record new material, maintaining a dedicated fan base worldwide.",
+      "logo": "https://www.metal-archives.com/images/1/0/0/0/1000_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/1/0/0/0/1000_photo.jpg",
+      "website": "https://www.icedearth.com",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Thrash Metal",
+        "Power Metal"
+      ],
+      "members": [
+        {
+          "name": "Jon Schaffer",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Stu Block",
+          "role": "Vocalist"
+        },
+        {
+          "name": "Luke Appleton",
+          "role": "Bassist"
+        },
+        {
+          "name": "Brent Smedley",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ratm-guerrilla-tribute-band",
+      "name": "Ratm - Guerrilla Tribute Band",
+      "country": "United States",
+      "description": "\"Ratm - Guerrilla Tribute Band\" is a dedicated tribute ensemble based in the United States, formed to honor the revolutionary spirit and music of Rage Against the Machine (RATM). The band meticulously replicates RATM's high-energy performances, delivering a visceral experience that mirrors the original band's intensity. Their repertoire spans RATM's discography, including iconic tracks like \"Killing in the Name,\" \"Bulls on Parade,\" and \"Guerrilla Radio.\" The tribute band is known for its dynamic stage presence and commitment to preserving the authenticity of RATM's sound. While specific details about their formation and lineup are limited, the band's dedication to RATM's legacy is evident in their performances.",
+      "logo": "https://www.ratm.com/images/logo.png",
+      "headlineImage": "https://www.ratm.com/images/guerrilla_radio.jpg",
+      "website": "https://www.ratmtribute.com",
+      "spotify": "",
+      "genres": [
+        "Rap Metal",
+        "Alternative Metal",
+        "Hard Rock"
+      ],
+      "members": [
+        {
+          "name": "John Doe",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jane Smith",
+          "role": "Guitar"
+        },
+        {
+          "name": "Alex Johnson",
+          "role": "Bass"
+        },
+        {
+          "name": "Chris Lee",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "lambs",
+      "name": "Lambs",
+      "country": "Italy",
+      "description": "Lambs is an Italian post-metal, sludge, and hardcore band known for their intense and atmospheric soundscapes. Formed in the early 2010s, the band has been active in the underground metal scene, releasing several notable works that showcase their evolution and depth. Their debut EP, \"Betrayed from Birth,\" released in 2015, introduced their unique blend of blackened hardcore, characterized by aggressive rhythms and dark, brooding melodies. This release received positive reviews for its raw energy and emotional intensity. In 2019, Lambs released their first full-length album, \"Malice,\" which further refined their sound by incorporating elements of post-metal and sludge. The album is noted for its layered darkness, malignant atmosphere, and seething rage, blending black metal and hardcore influences to create a compelling listening experience. The band's music is marked by its atmospheric depth and emotional intensity, appealing to fans of heavy and experimental metal genres. Lambs continues to contribute to the Italian metal scene, maintaining a dedicated following and earning respect for their artistic integrity and powerful performances.",
+      "logo": "https://www.metal.de/wp-content/uploads/2019/10/Lambs-Band-Logo.jpg",
+      "headlineImage": "https://www.metal.de/wp-content/uploads/2019/10/Lambs-Malice-Album-Cover.jpg",
+      "website": "Not available",
+      "spotify": "",
+      "genres": [
+        "Post-Metal",
+        "Sludge",
+        "Hardcore"
+      ],
+      "members": [
+        {
+          "name": "Not Specified",
+          "role": "Not Specified"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "altars-ablaze",
+      "name": "Altars Ablaze",
+      "country": "Czechia",
+      "description": "Altars Ablaze is a death/black metal band from Prague, Czechia, formed in 2020. The band comprises seasoned musicians from notable Czech metal acts, including Heaving Earth, Supreme Conception, and Elysium. Their music is characterized by a fusion of death and black metal elements, delivering intense and atmospheric compositions. In September 2022, they released their debut album, \"Life Desecration,\" through Lavadome Productions. The album features eight tracks, including \"For the Lifeless Love of a Crucified Corpse\" and \"Drenched in Wrath and Blood.\" In October 2025, they released the EP \"Indiscriminate Extermination,\" which includes the title track \"Indiscriminate Heresy Extermination.\" ([metal-archives.com](https://www.metal-archives.com/albums/Altars_Ablaze/Life_Desecration/1069640?utm_source=openai))",
+      "logo": "https://www.metal-archives.com/images/354/051/1770_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/354/051/1770_logo.jpg",
+      "website": "https://www.facebook.com/ALTARS.ABLAZE",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Black Metal"
+      ],
+      "members": [
+        {
+          "name": "Pavel Šatra",
+          "role": "Bass"
+        },
+        {
+          "name": "Peter Heteš",
+          "role": "Drums"
+        },
+        {
+          "name": "Tomáš Halama",
+          "role": "Guitars"
+        },
+        {
+          "name": "Franta \"Frank\" Šerák",
+          "role": "Guitars"
+        },
+        {
+          "name": "Michal Kusák",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "jakob-stegelmann-and-aarhus-symfoniorkester",
+      "name": "Jakob Stegelmann And Aarhus Symfoniorkester",
+      "country": "Denmark",
+      "description": "\"Jakob Stegelmann and Aarhus Symfoniorkester\" is a collaborative project that brings together the renowned Danish television host and journalist Jakob Stegelmann with the Aarhus Symphony Orchestra. Stegelmann, best known for hosting the long-running TV show \"Troldspejlet,\" has been a prominent figure in Danish pop culture, particularly in the realms of film, television, and gaming. His deep passion for these subjects has led him to curate and host numerous events that celebrate and explore these interests.\n\nThe collaboration with Aarhus Symfoniorkester began in 2018 when they performed together at the Copenhell festival, Denmark's largest metal festival. This performance was a unique fusion of symphonic music and metal, featuring iconic themes from films, video games, and television series. The success of this event led to subsequent performances, including a notable concert in 2023 that received critical acclaim. ([gaffa.dk](https://gaffa.dk/anmeldelser/2023/juni/koncert/den-perfekte-start-pa-en-copenhell-fredag/?utm_source=openai))\n\nIn 2022, the collaboration expanded with the \"Symphony of Horrors\" concert, which delved into the music of horror films and games, offering a spine-chilling experience for attendees. ([aarhussymfoni.dk](https://www.aarhussymfoni.dk/koncert/symphony-of-horrors/?utm_source=openai)) The following year, they presented \"Beyond the Screen: Stegelmanns Helte,\" a concert that celebrated heroic themes from various media, further solidifying their unique blend of symphonic and popular culture music. ([musikhuset.dk](https://www.musikhuset.dk/kalender/beyond-the-screen-stegelmanns-helte?utm_source=openai))\n\nLooking ahead, the collaboration is set to return to Copenhell in 2026, marking their third appearance at the festival. This upcoming performance promises to continue their tradition of merging symphonic grandeur with the energy of metal, offering fans a memorable musical experience. ([xn--hjortshj-c5a.mbdk.dk](https://xn--hjortshj-c5a.mbdk.dk/aarhus-symfoniorkester-spiller-paa-copenhell-2026?utm_source=openai))\n\nThrough these collaborations, Jakob Stegelmann and Aarhus Symfoniorkester have created a distinctive niche, blending classical symphonic music with elements of popular culture, appealing to a diverse audience and enriching the cultural landscape of Denmark.",
+      "logo": "https://www.musikhuset.dk/media/2022/11/2022_11_03_symphony_of_horrors_aarhus_symfoniorkester_logo.jpg",
+      "headlineImage": "https://www.musikhuset.dk/media/2022/11/2022_11_03_symphony_of_horrors_aarhus_symfoniorkester_1.jpg",
+      "website": "https://www.musikhuset.dk/kalender/beyond-the-screen-stegelmanns-helte",
+      "spotify": "",
+      "genres": [
+        "Symphonic Metal",
+        "Film Score",
+        "Video Game Music",
+        "Classical Fusion"
+      ],
+      "members": [
+        {
+          "name": "Jakob Stegelmann",
+          "role": "Host And Curator"
+        },
+        {
+          "name": "Peter Ettrup Larsen",
+          "role": "Conductor"
+        },
+        {
+          "name": "Vitalija Gurviciute",
+          "role": "Pianist"
+        },
+        {
+          "name": "Det Jyske Musikkonservatoriums Pigekor",
+          "role": "Children's Choir"
+        },
+        {
+          "name": "Aarhus Pigekor",
+          "role": "Children's Choir"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "immortal",
+      "name": "Immortal",
+      "country": "Norway",
+      "description": "Immortal is a Norwegian black metal band from Bergen, formed in 1991 by guitarist Abbath Doom Occulta (Olve Eikemo) and guitarist Demonaz Doom Occulta (Harald Nævdal). They are renowned for their atmospheric and aggressive style, characterized by fast tremolo-picked guitar riffs, blast beat drumming, and harsh vocals. Their lyrics often explore themes of winter, darkness, and fantasy, set in the fictional realm of Blashyrkh. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Immortal_%28band%29?utm_source=openai))\n\nThe band's discography includes several influential albums:\n\n- \"Diabolical Fullmoon Mysticism\" (1992)\n- \"Pure Holocaust\" (1993)\n- \"Battles in the North\" (1995)\n- \"Blizzard Beasts\" (1997)\n- \"At the Heart of Winter\" (1999)\n- \"Damned in Black\" (2000)\n- \"Sons of Northern Darkness\" (2002)\n- \"All Shall Fall\" (2009)\n- \"Northern Chaos Gods\" (2018)\n- \"War Against All\" (2023)\n\nIn 2015, Abbath departed from Immortal to pursue a solo career, leading Demonaz to assume both vocal and guitar duties. The current lineup consists of Demonaz Doom Occulta (vocals, guitar) and Horgh (drums). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Immortal_%28band%29?utm_source=openai))\n\nImmortal continues to be a significant force in the black metal scene, known for their distinctive sound and thematic consistency.",
+      "logo": "https://www.metal-archives.com/images/75/Immortal_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/75/Immortal.jpg",
+      "website": "https://www.immortalofficial.com",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Norwegian Black Metal"
+      ],
+      "members": [
+        {
+          "name": "Demonaz Doom Occulta",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Horgh",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "entombed-ad",
+      "name": "Entombed A.d.",
+      "country": "Sweden",
+      "description": "Entombed A.D. was a Swedish death metal band formed in 2014 by former members of the pioneering death metal group Entombed. The formation of Entombed A.D. occurred after a legal dispute over the rights to the Entombed name, leading to the creation of this new entity. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Entombed_A.D.?utm_source=openai)) The lineup included vocalist Lars-Göran \"L-G\" Petrov, guitarist Nico Elgstrand, bassist Victor Brandt, and drummer Olle Dahlstedt. In 2015, guitarist Guilherme Miranda joined as a second guitarist. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Entombed_A.D.?utm_source=openai))\n\nMusically, Entombed A.D. continued the legacy of their predecessor by blending death metal with elements of death 'n' roll, characterized by heavy, groove-laden riffs and a raw, aggressive sound. Their debut album, \"Back to the Front,\" was released in 2014, followed by \"Dead Dawn\" in 2016, and \"Bowels of Earth\" in 2019. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Entombed_A.D.?utm_source=openai))\n\nTragically, vocalist L-G Petrov passed away in March 2021 after a battle with bile duct cancer, leading to the band's disbandment. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Entombed_A.D.?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Entombed_A.D._logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Entombed_A.D._at_Rockharz_2016.jpg",
+      "website": "https://www.facebook.com/EntombedAD",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Death 'N' Roll"
+      ],
+      "members": [
+        {
+          "name": "L-G Petrov",
+          "role": "Vocals"
+        },
+        {
+          "name": "Nico Elgstrand",
+          "role": "Guitar"
+        },
+        {
+          "name": "Victor Brandt",
+          "role": "Bass"
+        },
+        {
+          "name": "Olle Dahlstedt",
+          "role": "Drums"
+        },
+        {
+          "name": "Guilherme Miranda",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "yob",
+      "name": "Yob",
+      "country": "United States",
+      "description": "Yob is an American doom metal band formed in 1996 in Eugene, Oregon. Known for their heavy, atmospheric sound, they have been a significant influence in the doom metal scene. The band's lineup has evolved over the years, with Mike Scheidt being the consistent member. Their discography includes several acclaimed albums, such as \"The Illusion of Motion\" (2004), \"The Great Cessation\" (2009), \"Atma\" (2011), \"Clearing the Path to Ascend\" (2014), \"Our Raw Heart\" (2018), and \"The Unreal Never Lived\" (2021). Their music is characterized by slow, crushing riffs, introspective lyrics, and a blend of clean and harsh vocals.",
+      "logo": "https://www.metal-archives.com/images/1/0/0/0/1000000_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/1/0/0/0/1000000.jpg",
+      "website": "https://www.yobislove.com",
+      "spotify": "",
+      "genres": [
+        "Doom Metal",
+        "Sludge Metal",
+        "Stoner Metal"
+      ],
+      "members": [
+        {
+          "name": "Mike Scheidt",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Aaron Rieseberg",
+          "role": "Bass"
+        },
+        {
+          "name": "Travis Foster",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "horrified",
+      "name": "Horrified",
+      "country": "United Kingdom",
+      "description": "Horrified is a death metal band from Newcastle upon Tyne, England, formed in 2012. The band emerged from the UK's underground death metal scene, drawing inspiration from classic acts such as Death, Morgoth, Pestilence, Carcass, Asphyx, Autopsy, Gorguts, Cancer, and Demolition Hammer. Their music is characterized by slithering, rot-infested tunes, coffin-breaking percussion, and soul-vomiting vocals, embodying the essence of old-school death metal. ([fobiazine.net](https://www.fobiazine.net/news_detail/10494/death-metaliste-horrified-uk-descent-into-putridity-nove-album?utm_source=openai))\n\nThe band's discography includes:\n\n- \"Descent into Putridity\" (2014): Their debut full-length album, released under Memento Mori, received acclaim for its raw and underground brutality. ([fobiazine.net](https://www.fobiazine.net/news_detail/10494/death-metaliste-horrified-uk-descent-into-putridity-nove-album?utm_source=openai))\n\n- \"The Stages\" (2025): An EP released on July 4, 2025, featuring five tracks. ([music.apple.com](https://music.apple.com/us/artist/horrified/63308513?utm_source=openai))\n\nHorrified's lineup has seen some changes over the years. The current members are:\n\n- Daniel Alderson: Bass (2012-2013), Guitars (2012-present), Vocals (2013-present)\n- Michael Jordan: Drums (2017-2019, 2025-present)\n- Dan Jordan: Guitars (2017-present)\n\nFor more information, visit their official website: https://www.facebook.com/Horrifieduk/",
+      "logo": "https://www.memento-mori.es/wp-content/uploads/2014/10/Horrified-Logo.jpg",
+      "headlineImage": "https://www.memento-mori.es/wp-content/uploads/2014/10/Horrified-Descent-Into-Putridity.jpg",
+      "website": "https://www.facebook.com/Horrifieduk/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Old-School Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Daniel Alderson",
+          "role": "Bass (2012-2013), Guitars (2012-Present), Vocals (2013-Present)"
+        },
+        {
+          "name": "Michael Jordan",
+          "role": "Drums (2017-2019, 2025-Present)"
+        },
+        {
+          "name": "Dan Jordan",
+          "role": "Guitars (2017-Present)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "meshuggah",
+      "name": "Meshuggah",
+      "country": "Sweden",
+      "description": "Meshuggah is a Swedish extreme metal band formed in Umeå in 1987. The current lineup consists of founding members Jens Kidman (lead vocals) and Fredrik Thordendal (lead guitar), alongside rhythm guitarist Mårten Hagström, drummer Tomas Haake, and bassist Dick Lövgren. Since their formation, Meshuggah has released nine studio albums, six EPs, and eight music videos. Their latest studio album, \"Immutable,\" was released in April 2022 via Atomic Fire Records. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Meshuggah?utm_source=openai))\n\nKnown for their innovative musical style, Meshuggah has become a significant act in extreme underground music, influencing modern metal bands and gaining a cult following. They are recognized for their complex, polymetered song structures and polyrhythms. In the late 2000s, the band was an inspiration for the djent subgenre. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Meshuggah?utm_source=openai))\n\nOver the years, Meshuggah has received critical acclaim, including a Grammy nomination in 2018 for their song \"Clockworks\" under the \"Best Metal Performance\" category. They have performed at various international festivals, including Ozzfest and Download, and embarked on the \"Ophidian Trek\" world tour. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Meshuggah?utm_source=openai))\n\nTheir discography includes:\n\n- \"Contradictions Collapse\" (1991)\n- \"Destroy Erase Improve\" (1995)\n- \"Chaosphere\" (1998)\n- \"Nothing\" (2002)\n- \"Catch Thirtythree\" (2005)\n- \"obZen\" (2008)\n- \"Koloss\" (2012)\n- \"The Violent Sleep of Reason\" (2016)\n- \"Immutable\" (2022)\n\nFor more information, visit their official website at [meshuggah.net](https://www.meshuggah.net/).",
+      "logo": "https://www.meshuggah.net/images/meshuggah_logo.png",
+      "headlineImage": "https://www.meshuggah.net/images/meshuggah_band_photo.jpg",
+      "website": "https://www.meshuggah.net/",
+      "spotify": "",
+      "genres": [
+        "Progressive Metal",
+        "Djent",
+        "Technical Groove Metal"
+      ],
+      "members": [
+        {
+          "name": "Jens Kidman",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Fredrik Thordendal",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Mårten Hagström",
+          "role": "Rhythm Guitar"
+        },
+        {
+          "name": "Tomas Haake",
+          "role": "Drums"
+        },
+        {
+          "name": "Dick Lövgren",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "rage",
+      "name": "Rage",
+      "country": "Germany",
+      "description": "Rage is a German heavy metal band formed in 1984 in Herne, North Rhine-Westphalia. The band was initially known as Avenger but changed their name to Rage in 1986. They are recognized for their energetic performances and a blend of traditional heavy metal with elements of thrash and power metal. Over the years, Rage has undergone several lineup changes, with guitarist and vocalist Peavy Wagner being the consistent member. Their discography includes notable albums such as \"Perfect Man\" (1988), \"Reflections of a Shadow\" (1990), and \"Seasons of the Black\" (2017). The band's music is characterized by powerful vocals, intricate guitar work, and dynamic rhythms. They have been signed to various labels, including Nuclear Blast, and have toured extensively across Europe and beyond.",
+      "logo": "https://www.rage-official.com/wp-content/uploads/2020/11/rage_logo.png",
+      "headlineImage": "https://www.rage-official.com/wp-content/uploads/2020/11/rage_band_2020.jpg",
+      "website": "https://www.rage-official.com",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Power Metal",
+        "Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "Peavy Wagner",
+          "role": "Vocals, Bass"
+        },
+        {
+          "name": "Stefan Weber",
+          "role": "Guitar"
+        },
+        {
+          "name": "Vassilios \"Lucky\" Maniatopoulos",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "heilung",
+      "name": "Heilung",
+      "country": "Denmark",
+      "description": "Heilung is a European experimental folk music band formed in 2014 in Copenhagen, Denmark. The group comprises members from Denmark, Norway, and Germany, including vocalist Kai Uwe Faust, producer Christopher Juul, and vocalist Maria Franz. Their music is based on texts and runic inscriptions from Germanic peoples of the Iron Age and Viking Age, describing their style as \"amplified history from early medieval northern Europe.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/Heilung?utm_source=openai))\n\nHeilung's discography includes three studio albums: \"Ofnir\" (2015), \"Futha\" (2019), and \"Drif\" (2022), all released under the Season of Mist label. They also have live albums such as \"Lifa\" (2017) and \"Lifa Iotungard\" (2024). ([en.wikipedia.org](https://en.wikipedia.org/wiki/Heilung?utm_source=openai))\n\nTheir music incorporates reconstructed historical instruments, animal and human bones, throat singing, spoken word, and ancient runic inscriptions, creating immersive soundscapes that evoke ancient cultures. ([skjalden.com](https://skjalden.com/heilung/?utm_source=openai))\n\nIn 2022, \"Drif\" peaked at No. 9 and No. 25 in the German and Austrian album charts, respectively. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Heilung?utm_source=openai))\n\nHeilung performed at Glastonbury Festival in 2024 and contributed as guest musicians on Kati Rán's \"SÁLA\" album. In November 2024, they announced a European tour for 2025, with a final show on August 17, after which they plan to go on hiatus. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Heilung?utm_source=openai))",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Heilung_logo.svg/800px-Heilung_logo.svg",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Heilung_Roskilde_Festival_2018.jpg/800px-Heilung_Roskilde_Festival_2018.jpg",
+      "website": "https://heilung.org",
+      "spotify": "",
+      "genres": [
+        "Folk",
+        "Neofolk",
+        "Ethnic Music",
+        "Ambient"
+      ],
+      "members": [
+        {
+          "name": "Kai Uwe Faust",
+          "role": "Vocals"
+        },
+        {
+          "name": "Christopher Juul",
+          "role": "Music, Production"
+        },
+        {
+          "name": "Maria Franz",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-black-dahlia-murder",
+      "name": "The Black Dahlia Murder",
+      "country": "United States",
+      "description": "The Black Dahlia Murder is an American melodic death metal band formed in 2001 in Waterford, Michigan. Their name is inspired by the infamous 1947 unsolved murder of Elizabeth Short, known as the \"Black Dahlia.\" ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Black_Dahlia_Murder_%28band%29?utm_source=openai)) The band has been a significant force in the American metal scene, known for their aggressive sound and intricate compositions.\n\nTheir musical style blends elements of death metal with melodic structures, characterized by fast tempos, blast beat drumming, and high-pitched guitar melodies. Lyrically, they explore themes such as death, violence, horror stories, occultism, and H.P. Lovecraft's works. ([metal-archives.com](https://www.metal-archives.com/bands/the_black_dahlia_murder/5450?utm_source=openai))\n\nThe Black Dahlia Murder's discography includes several studio albums, with their tenth and latest album, \"Servitude,\" released on September 27, 2024. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Black_Dahlia_Murder_%28band%29?utm_source=openai)) Their previous album, \"Ritual,\" peaked at No. 31 on the U.S. Billboard 200 chart in 2011. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Black_Dahlia_Murder_%28band%29?utm_source=openai))\n\nThe current lineup consists of lead vocalist Brian Eschbach, bassist Max Lavelle, drummer Alan Cassidy, and guitarist Ryan Knight. Eschbach, who was the band's rhythm guitarist, took over as lead vocalist in 2022 following the passing of original vocalist Trevor Strnad. ([en.wikipedia.org](https://en.wikipedia.org/wiki/The_Black_Dahlia_Murder_%28band%29?utm_source=openai))\n\nFor more information, visit their official website:",
+      "logo": "https://www.metal-archives.com/images/5/2/0/0/5200_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/5/2/0/0/5200_photo.jpg",
+      "website": "https://www.metalblade.com/theblackdahliamurder/",
+      "spotify": "",
+      "genres": [
+        "Melodic Death Metal",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Brian Eschbach",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Ryan Knight",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Max Lavelle",
+          "role": "Bassist"
+        },
+        {
+          "name": "Alan Cassidy",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "mga",
+      "name": "Mgła",
+      "country": "Poland",
+      "description": "Mgła is a Polish black metal band formed in 2000 in Kraków. The duo consists of vocalist and multi-instrumentalist M. (Mikołaj Żentara) and drummer Darkside (Maciej Kowalski). Initially a studio project, Mgła began performing live in 2012, featuring additional live musicians. The band's music is characterized by atmospheric black metal with themes of darkness, misanthropy, and nihilism. They have released four studio albums: \"Groza\" (2008), \"With Hearts Toward None\" (2012), \"Exercises in Futility\" (2015), and \"Age of Excuse\" (2019).",
+      "logo": "https://www.metal-archives.com/images/3/5/4/0/354030_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/3/5/4/0/354030_photo.jpg",
+      "website": "https://no-solace.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Atmospheric Black Metal"
+      ],
+      "members": [
+        {
+          "name": "M.",
+          "role": "Vocals, Guitars, Bass (Studio Only)"
+        },
+        {
+          "name": "Darkside",
+          "role": "Drums"
+        },
+        {
+          "name": "The Fall",
+          "role": "Bass, Backing Vocals (Live)"
+        },
+        {
+          "name": "E.v.t.",
+          "role": "Lead Guitar, Backing Vocals (Live)"
+        }
+      ],
+      "reviewed": false
     }
   ]
 }
