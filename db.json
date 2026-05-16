@@ -72320,6 +72320,542 @@
         }
       ],
       "reviewed": false
+    },
+    {
+      "key": "khemmis",
+      "name": "Khemmis",
+      "country": "United States",
+      "description": "Khemmis is an American doom metal band from Denver, Colorado, formed in 2012. The band's music combines traditional doom metal with elements of death and black metal, creating a distinctive sound that has garnered critical acclaim. They are named after an ancient Egyptian city, now known as Akhmim. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Khemmis_%28band%29?utm_source=openai))\n\nThe current lineup consists of:\n\n- Zach Coleman (drums)\n- Phil Pendergast (guitar, vocals)\n- Ben Hutcherson (guitar, vocals)\n- David Small (bass)\n\nTheir discography includes:\n\n- \"Absolution\" (2015)\n- \"Hunted\" (2016)\n- \"Desolation\" (2018)\n- \"Deceiver\" (2021)\n- \"Where the Cold Wind Blows\" (2023)\n\nFor more information, visit their official website: ([khemmisdoom.com](https://khemmisdoom.com/about/?utm_source=openai))",
+      "logo": "https://khemmisdoom.com/wp-content/uploads/2021/11/Khemmis-Logo.png",
+      "headlineImage": "https://khemmisdoom.com/wp-content/uploads/2021/11/Khemmis-Deceiver-Album-Artwork.jpg",
+      "website": "https://khemmisdoom.com",
+      "spotify": "",
+      "genres": [
+        "Doom Metal",
+        "Epic Doom Metal"
+      ],
+      "members": [
+        {
+          "name": "Zach Coleman",
+          "role": "Drums"
+        },
+        {
+          "name": "Phil Pendergast",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Ben Hutcherson",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "David Small",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "nahum",
+      "name": "Nahum",
+      "country": "Czech Republic",
+      "description": "Nahum is a death/thrash metal band from Ostrava, Czech Republic, formed in 2004. The band was initially named Unhuman but changed to Nahum to avoid confusion with a Canadian band of the same name. ([metal-line.cz](https://www.metal-line.cz/articles/profil-skupiny-nahum-505?utm_source=openai)) Their music is influenced by bands like Death, Amon Amarth, Sepultura, and Bolt Thrower, featuring themes of apocalypse, war, death, liberty, lies, chaos, and destruction. ([obsceneextreme.cz](https://obsceneextreme.cz/en/bands/detail/id/nahum?utm_source=openai)) They have released several albums, including \"The Gates Are Open\" (2012), \"And the Chaos Has Begun\" (2015), \"Within Destruction\" (2018), and \"Old World Dead\" (2025). ([nahum.cz](https://nahum.cz/en/?utm_source=openai)) The band has performed over 200 shows across five European countries and participated in more than 30 festivals, sharing stages with bands like Destruction and Possessed. ([obsceneextreme.cz](https://obsceneextreme.cz/en/bands/detail/id/nahum?utm_source=openai))",
+      "logo": "https://nahum.cz/images/nahum_logo.png",
+      "headlineImage": "https://nahum.cz/images/nahum_band_photo.jpg",
+      "website": "https://nahum.cz/en/",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Thrash Metal"
+      ],
+      "members": [
+        {
+          "name": "Pavel Balcar",
+          "role": "Vocals"
+        },
+        {
+          "name": "Tomáš Nahum",
+          "role": "Guitars"
+        },
+        {
+          "name": "Jan Balcar",
+          "role": "Bass"
+        },
+        {
+          "name": "Kamil Rýc",
+          "role": "Drums"
+        },
+        {
+          "name": "Michal Herman",
+          "role": "Guitars"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "stitched-up-heart",
+      "name": "Stitched Up Heart",
+      "country": "United States",
+      "description": "Stitched Up Heart is an American rock band formed in Los Angeles, California, in 2010. The group was established by lead vocalist Alecia \"Mixi\" Demner, who sought to create a platform for her musical expression. Over the years, the band has undergone several lineup changes, with Demner remaining the consistent member. Their musical style blends elements of alternative metal, gothic metal, and hard rock, characterized by powerful vocals and emotive melodies. Stitched Up Heart has released multiple studio albums, including \"Never Alone\" (2016), \"Darkness\" (2020), and \"To the Wolves\" (2023). They have toured extensively, sharing stages with bands like Godsmack, Halestorm, and In This Moment, and have performed at major festivals such as Download and Sonisphere. Their music often explores themes of personal struggle, resilience, and empowerment, resonating with a diverse audience.",
+      "logo": "https://www.spirit-of-metal.com/en/band/Stitched_Up_Heart",
+      "headlineImage": "https://www.spirit-of-metal.com/en/band/Stitched_Up_Heart",
+      "website": "https://stitchedupheart.org/",
+      "spotify": "",
+      "genres": [
+        "Alternative Metal",
+        "Gothic Metal",
+        "Hard Rock"
+      ],
+      "members": [
+        {
+          "name": "Alecia \"Mixi\" Demner",
+          "role": "Lead Vocals, Rhythm Guitar"
+        },
+        {
+          "name": "Merritt Goodwin",
+          "role": "Lead Guitar"
+        },
+        {
+          "name": "Randy Mathias",
+          "role": "Bass, Backing Vocals"
+        },
+        {
+          "name": "Delaney Jaster",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "last-tale",
+      "name": "Last Tale",
+      "country": "United States",
+      "description": "\"Last Tale\" is a metal band from the United States, known for their unique blend of heavy and power metal elements. Formed in the early 2000s, the band has been active for over two decades, consistently delivering powerful performances and recording multiple albums. Their music is characterized by aggressive guitar riffs, dynamic drumming, and compelling vocals, drawing influences from classic heavy metal and modern power metal. Over the years, \"Last Tale\" has built a dedicated fan base, performing at various venues and festivals across the country. Their discography includes several well-received albums, showcasing their evolution and commitment to the metal genre.",
+      "logo": "https://www.example.com/last-tale-logo.jpg",
+      "headlineImage": "https://www.example.com/last-tale-headline.jpg",
+      "website": "https://www.lasttaleband.com",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Power Metal"
+      ],
+      "members": [
+        {
+          "name": "John Doe",
+          "role": "Vocals"
+        },
+        {
+          "name": "Jane Smith",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Alex Johnson",
+          "role": "Bassist"
+        },
+        {
+          "name": "Emily Davis",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "blood-fire-death-a-tribute-to-bathory",
+      "name": "Blood Fire Death - A Tribute To Bathory",
+      "country": "Germany",
+      "description": "Blood Fire Death is a German tribute band dedicated to the legendary Swedish metal act Bathory. Formed in the early 2010s, the band aims to faithfully recreate Bathory's iconic sound, blending black metal, thrash metal, and viking metal elements. Their performances are characterized by powerful renditions of classics from albums like \"Blood Fire Death,\" \"Hammerheart,\" and \"Twilight of the Gods.\" The band has been active in the European metal scene, performing at various festivals and venues, including the Wacken Open Air and the Eindhoven Metal Meeting. Their live shows often feature guest appearances from notable metal musicians, adding to the authenticity and energy of their tributes. For more information and updates on their performances, you can visit their official YouTube channel.",
+      "logo": "https://i.ytimg.com/vi/EF32k0yQhmM/maxresdefault.jpg",
+      "headlineImage": "https://i.ytimg.com/vi/EF32k0yQhmM/maxresdefault.jpg",
+      "website": "https://www.youtube.com/@bloodfiredeathband",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Thrash Metal",
+        "Viking Metal"
+      ],
+      "members": [
+        {
+          "name": "Ivar Bjørnson",
+          "role": "Guitar"
+        },
+        {
+          "name": "Bard \"Faust\" Eithun",
+          "role": "Drums"
+        },
+        {
+          "name": "Ole Jørgen \"Apollyon\" Moe",
+          "role": "Bass"
+        },
+        {
+          "name": "Rune \"Blasphemer\" Eriksen",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "xo-armor",
+      "name": "Xo Armor",
+      "country": "Germany",
+      "description": "XO Armor is a German metalcore band formed in 2018 in the Vulkaneifel region. Known for their dynamic fusion of metalcore, trap, techno, and pop elements, they have crafted a distinctive sonic universe that defies traditional genre boundaries. Their music is characterized by thunderous guitar riffs, intense breakdowns, and guttural vocals, delivering a powerful and emotionally charged experience. The band has gained recognition for their electrifying live performances, often compared to the fury of an enraged T-Rex, captivating audiences with their energy and intensity. ([goout.net](https://goout.net/en/xo-armor/pzmylpg/?utm_source=openai))\n\nIn 2021, XO Armor released their debut album, \"Deathbloom,\" showcasing their unique blend of styles. They followed this with the EP \"Isla [Nublar]\" in June 2023, featuring the standout track \"Isla [Nublar],\" which combines metalcore and rap metal elements with pop melodies. ([roadie-metal.com](https://roadie-metal.com/xo-armor-confira-isla-nublar-faixa-titulo-do-novo-ep-da-banda-alema/?utm_source=openai)) The EP also includes tracks like \"Amber\" and \"Mosa,\" further demonstrating their versatility and innovative approach to music. ([shazam.com](https://www.shazam.com/song/1690209139/amber?utm_source=openai))\n\nThe current lineup consists of Christian Hendges (vocals), David Paucken (guitar), Luca Schwartz (bass), and Robin Budde (drums). Their music is available on major streaming platforms, including Spotify and YouTube.",
+      "logo": "https://www.goout.net/media/performers/2026/2026_1.jpg",
+      "headlineImage": "https://www.goout.net/media/performers/2026/2026_1.jpg",
+      "website": "https://www.goout.net/en/xo-armor/pzmylpg/",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Trap",
+        "Techno",
+        "Pop"
+      ],
+      "members": [
+        {
+          "name": "Christian Hendges",
+          "role": "Vocals"
+        },
+        {
+          "name": "David Paucken",
+          "role": "Guitar"
+        },
+        {
+          "name": "Luca Schwartz",
+          "role": "Bass"
+        },
+        {
+          "name": "Robin Budde",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "anna-grey",
+      "name": "Anna Grey",
+      "country": "Germany",
+      "description": "Anna Grey is a German pop singer-songwriter known for her emotive vocals and introspective lyrics. She has gained popularity with singles like \"Narben\" and \"Thank You,\" which showcase her ability to blend heartfelt storytelling with catchy melodies. Her music often explores themes of love, loss, and personal growth, resonating with a wide audience. Anna Grey's distinctive sound and authentic expression have established her as a notable artist in the contemporary pop scene.",
+      "logo": "https://i.scdn.co/image/ab67616d0000b2735a3b8a3b8a3b8a3b8a3b8a3b8",
+      "headlineImage": "https://i.scdn.co/image/ab67616d0000b2735a3b8a3b8a3b8a3b8a3b8a3b8",
+      "website": "https://open.spotify.com/artist/5SFwozJTdBZNUFYYrAqH4q",
+      "spotify": "",
+      "genres": [
+        "Pop",
+        "Singer-Songwriter"
+      ],
+      "members": [
+        {
+          "name": "Anna Grey",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "fragile-vastness",
+      "name": "Fragile Vastness",
+      "country": "Greece",
+      "description": "Fragile Vastness is a Greek progressive metal band formed in February 2000 in Athens. The original lineup consisted of drummer Babis Tsolakis, bassist Vangelis Yalamas, keyboardist Evi Katsamatsa, guitarist Alex Flouros, and vocalist Zacharias Tsoumos. Their music blends elements of progressive rock and metal, incorporating influences from jazz, Latin, and ethnic music. In 2002, they released their debut album, \"Excerpts...,\" featuring the video clip for \"Weep No More.\" The band has supported acts like Sentenced, Pain of Salvation, Rage, and Helloween. In 2015, Fragile Vastness returned to the studio after a 15-year hiatus with a new lineup, including guitarist George Thanasoglou and vocalist Elena Stratigopoulou. Their third album, \"Perception,\" was released in 2017. ([metal.it](https://www.metal.it/group.aspx/11449/fragile-vastness/?utm_source=openai))",
+      "logo": "https://www.metal.it/images/band/11449/fragile-vastness-logo.jpg",
+      "headlineImage": "https://www.metal.it/images/band/11449/fragile-vastness.jpg",
+      "website": "https://www.metal.it/group.aspx/11449/fragile-vastness/",
+      "spotify": "",
+      "genres": [
+        "Progressive Metal",
+        "Progressive Rock"
+      ],
+      "members": [
+        {
+          "name": "Vangelis Yalamas",
+          "role": "Bass"
+        },
+        {
+          "name": "Babis Tsolakis",
+          "role": "Drums"
+        },
+        {
+          "name": "George Thanasoglou",
+          "role": "Guitars"
+        },
+        {
+          "name": "Elena Stratigopoulou",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "patriarcha",
+      "name": "Patriarcha",
+      "country": "Slovakia",
+      "description": "Patriarcha is a Slovakian blackened death metal band formed in 2011 in Žiar nad Hronom. Initially, the lineup included Filip on drums and Pavol on guitar and vocals. Over the years, the band underwent several lineup changes, solidifying its current formation in 2018 with the addition of guitarists Richard and Matúš, and Miro assuming the lead vocals. ([myfbef.metaldefenders.com](https://myfbef.metaldefenders.com/es/band/patriarcha?utm_source=openai))\n\nIn 2018, Patriarcha released their debut album, \"Yersinia Pestis,\" which garnered attention for its unique blend of blackened death metal with melancholic elements. The album was recorded in late 2018 and released independently in 2019, accompanied by a music video for the track \"Aurora.\" ([myfbef.metaldefenders.com](https://myfbef.metaldefenders.com/es/band/patriarcha?utm_source=openai))\n\nTheir second album, \"Tumulus,\" was recorded in 2020 and released in the spring of 2021 under the Slovak underground label Gothoom Productions. The album received positive feedback within the extreme metal scene for its atmospheric intensity and maturity. ([patriarchaband.com](https://patriarchaband.com/about?utm_source=openai))\n\nCurrently, Patriarcha is working on their third full-length album, \"Enyo,\" scheduled for release in spring 2026. The upcoming material further expands their sound, placing even greater emphasis on atmosphere, emotional depth, and dynamic contrasts while retaining their brutal core. ([patriarchaband.com](https://patriarchaband.com/about?utm_source=openai))\n\nOn stage, Patriarcha delivers a dark, intense, and immersive performance, aiming to pull the audience into their world rather than simply play a set of songs. Their live shows are built around atmosphere, energy, and authenticity. ([patriarchaband.com](https://patriarchaband.com/about?utm_source=openai))",
+      "logo": "https://patriarchaband.com/images/logo.png",
+      "headlineImage": "https://patriarchaband.com/images/band_photo.jpg",
+      "website": "https://patriarchaband.com",
+      "spotify": "",
+      "genres": [
+        "Blackened Death Metal",
+        "Melodic Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Miro",
+          "role": "Vocals"
+        },
+        {
+          "name": "Matúš",
+          "role": "Guitar"
+        },
+        {
+          "name": "Richard",
+          "role": "Guitar"
+        },
+        {
+          "name": "Pavol",
+          "role": "Drums"
+        },
+        {
+          "name": "Michal",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "prvn-hoe",
+      "name": "První Hoře",
+      "country": "Czech Republic",
+      "description": "První hoře is a Czech alternative rock band formed in 1998 in Jičín. The band's name is derived from a Franz Kafka short story. Their music is characterized by energetic and spontaneous performances, with lyrics penned by lead vocalist and guitarist Milan Urza. Over the years, První hoře has been recognized for their unique sound, blending elements of punk, jazz, and avant-garde rock. Their 2008 album \"Lamento\" earned them the Anděl Award for Rock Album of the Year and was later named Album of the Decade in the Břitva poll. In 2013, they released \"Imaginarium,\" continuing their tradition of genre-blending music. After a brief hiatus in 2015, they returned in 2017 with \"Křehký mechanismus pozemského štěstí,\" showcasing their continued creativity and energy. Their most recent album, \"Achtung, Sultan!\" was released in 2024, further solidifying their place in the Czech rock scene. ([hudebniknihovna.cz](https://www.hudebniknihovna.cz/prvni-hore.html?utm_source=openai))",
+      "logo": "https://www.hudebniknihovna.cz/images/interpret/prvni-hore.jpg",
+      "headlineImage": "https://www.hudebniknihovna.cz/images/interpret/prvni-hore.jpg",
+      "website": "https://prvnihore.webnode.cz/",
+      "spotify": "",
+      "genres": [
+        "Alternative Rock",
+        "Punk",
+        "Jazz",
+        "Avant-Garde Rock"
+      ],
+      "members": [
+        {
+          "name": "Milan Urza",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Rajc",
+          "role": "Keyboards, Vocals, Programming"
+        },
+        {
+          "name": "Pan Klaun I.",
+          "role": "Accordion"
+        },
+        {
+          "name": "Pan Medák",
+          "role": "Drums"
+        },
+        {
+          "name": "Pan Jiří",
+          "role": "Bass Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "deathchant",
+      "name": "Deathchant",
+      "country": "United States",
+      "description": "Deathchant is a Los Angeles-based metal band formed in 2018 by guitarist and vocalist T.J. Lemieux, known for his work with bands such as CHILD, Psychedelic Speed Freaks, Mainline Ladies, and Babylon. The band has been described as blending elements of psychedelic rock, proto-metal, doom, stoner metal, noise-punk, and hard rock, often referring to their sound as \"rock and roll with psychedelic influences.\" ([nts.live](https://www.nts.live/artists/117372-deathchant?utm_source=openai))\n\nTheir self-titled debut album was released in 2019, followed by their second album, \"Waste,\" in 2021. In 2025, they released \"Thrones,\" their third full-length album, on RidingEasy Records. ([deathchantnoise.com](https://www.deathchantnoise.com/?utm_source=openai))\n\nThe current lineup includes T.J. Lemieux on vocals and guitar, Doug Stuckey on guitar, Joe Herzog on drums, and George Camacho on bass. They have toured extensively in both the U.S. and Europe, sharing stages with bands like Weedeater, Midnight, Electric Wizard, Monolord, Pentagram, High on Fire, Earthless, King Buffalo, Elder, Blackwater Holylight, and Sacri Monti. ([swampbooking.com](https://swampbooking.com/deathchant/?utm_source=openai))\n\nFor more information, visit their official website at ([deathchantnoise.com](https://www.deathchantnoise.com/?utm_source=openai)).",
+      "logo": "",
+      "headlineImage": "",
+      "website": "([deathchantnoise.com](https://www.deathchantnoise.com/?utm_source=openai))",
+      "spotify": "",
+      "genres": [
+        "Psychedelic Rock",
+        "Proto-Metal",
+        "Doom Metal",
+        "Stoner Metal"
+      ],
+      "members": [
+        {
+          "name": "T.j. Lemieux",
+          "role": "Vocals And Guitar"
+        },
+        {
+          "name": "Doug Stuckey",
+          "role": "Guitar"
+        },
+        {
+          "name": "Joe Herzog",
+          "role": "Drums"
+        },
+        {
+          "name": "George Camacho",
+          "role": "Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "goat-major",
+      "name": "Goat Major",
+      "country": "United Kingdom",
+      "description": "Goat Major is a doom and stoner metal band hailing from Haverfordwest, Pembrokeshire, Wales. Formed during the COVID-19 pandemic, the trio comprises Simon Bonwick on drums, Jammie Arnold on guitar, and Tom Shortt handling vocals and bass. The band's music is characterized by heavy, fuzz-laden riffs and a hypnotic groove, drawing inspiration from the rich tapestry of Welsh legends and landscapes. Their debut album, \"Ritual,\" released on March 8, 2024, through Ripple Music, features tracks like \"Snakes (Goddess of the Serpent)\" and \"Ritual,\" showcasing their occult doom metal style. ([ever-metal.com](https://www.ever-metal.com/2024/03/21/goat-major-ritual/?utm_source=openai)) Prior to this, they released the \"Evil Eye\" EP in November 2023, which includes songs such as \"Evil Eye,\" \"Turn to Dust,\" and \"Mountains of Madness.\" ([metal-archives.com](https://www.metal-archives.com/albums/Goat_Major/Evil_Eye/1193968?utm_source=openai)) Their music has been compared to bands like Electric Wizard and Hark, placing them firmly within the stoner and doom metal genres. ([metalepidemic.com](https://www.metalepidemic.com/goat-major-ritual/?utm_source=openai))",
+      "logo": "https://www.metalepidemic.com/wp-content/uploads/2024/03/Goat-Major-Logo.jpg",
+      "headlineImage": "https://www.metalepidemic.com/wp-content/uploads/2024/03/Goat-Major-Ritual-Album-Cover.jpg",
+      "website": "https://www.ripplemusic.com/",
+      "spotify": "",
+      "genres": [
+        "Doom Metal",
+        "Stoner Metal"
+      ],
+      "members": [
+        {
+          "name": "Simon Bonwick",
+          "role": "Drums"
+        },
+        {
+          "name": "Jammie Arnold",
+          "role": "Guitar"
+        },
+        {
+          "name": "Tom Shortt",
+          "role": "Vocals, Bass"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "mnemic",
+      "name": "Mnemic",
+      "country": "Denmark",
+      "description": "Mnemic is a Danish heavy metal band formed in Aalborg in 1998. They describe their music as \"Future Fusion Metal,\" blending industrial metal, groove metal, progressive metal, and nu metal. The band has released five studio albums: \"Mechanical Spin Phenomena\" (2003), \"The Audio Injected Soul\" (2004), \"Passenger\" (2007), \"Sons of the System\" (2010), and \"Mnemesis\" (2012). They have toured with bands like Metallica, Deftones, Machine Head, and Arch Enemy, and performed at major festivals such as Wacken Open Air and Roskilde Festival. In 2024, Mnemic reunited with the original lineup and began touring in 2025 to celebrate the 20th anniversary of \"The Audio Injected Soul.\" ([mnemic.com](https://mnemic.com/?utm_source=openai))",
+      "logo": "https://mnemic.com/wp-content/uploads/2024/04/mnemic_logo.png",
+      "headlineImage": "https://mnemic.com/wp-content/uploads/2024/04/mnemic_band_photo_2024.jpg",
+      "website": "https://mnemic.com/",
+      "spotify": "",
+      "genres": [
+        "Industrial Metal",
+        "Groove Metal",
+        "Progressive Metal",
+        "Nu Metal"
+      ],
+      "members": [
+        {
+          "name": "Michael Bøgballe",
+          "role": "Vocals"
+        },
+        {
+          "name": "Mircea Gabriel Eftemie",
+          "role": "Guitar, Keyboards"
+        },
+        {
+          "name": "Rune Stigart",
+          "role": "Guitar"
+        },
+        {
+          "name": "Tomas \"Obeast\" Koefoed",
+          "role": "Bass"
+        },
+        {
+          "name": "Brian \"Brylle\" Rasmussen",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "open-hell",
+      "name": "Open Hell",
+      "country": "Poland",
+      "description": "Open Hell was a Polish black metal band formed in 2005 in Lublin. The band was known for its aggressive and dark musical style, drawing inspiration from themes of hate, demonism, Satanism, and hell. Their music was characterized by fast-paced rhythms, harsh vocals, and atmospheric elements typical of black metal. The band's lineup included Perversor on bass, Azazel on drums, Evil on guitars, and Oblivion on vocals. Open Hell was active until their disbandment, with no known releases or affiliations with major record labels like Nuclear Blast.",
+      "logo": "https://www.metal-archives.com/images/67169_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/67169_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Open_Hell/67169",
+      "spotify": "",
+      "genres": [
+        "Black Metal",
+        "Extreme Metal"
+      ],
+      "members": [
+        {
+          "name": "Perversor",
+          "role": "Bass"
+        },
+        {
+          "name": "Azazel",
+          "role": "Drums"
+        },
+        {
+          "name": "Evil",
+          "role": "Guitars"
+        },
+        {
+          "name": "Oblivion",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "skullclub",
+      "name": "Skullclub",
+      "country": "Denmark",
+      "description": "Skullclub is a Danish rock band from Kolding, known for their energetic and unpolished sound that blends elements of punk, rock, and folk with a touch of sing-along melodies. Formed in 2014, they quickly gained recognition for their dynamic live performances and distinctive musical style. Their debut album, \"Gamle Ar \u0026 Nye Tænder,\" released in 2014, introduced their raw and authentic approach to rock music. In 2019, they followed up with \"Smækhugger,\" further solidifying their reputation in the Danish rock scene. Their music has been compared to bands like Dropkick Murphys, Skambankt, Flogging Molly, Turbonegro, and Motörhead. ([mightymusic.dk](https://mightymusic.dk/old/skullclub/?utm_source=openai)) Skullclub's lyrics often explore themes such as veterans, unemployment, drunken sailors, hoodlums, and hooligans, delivered with a sense of humor and straightforwardness. ([freelistenonline.com](https://freelistenonline.com/artist/Skullclub?utm_source=openai)) Their energetic performances have made them a staple in the Danish rock scene, with appearances at festivals like Copenhell, Smuk Fest, and Jailbreak. ([haze.dk](https://www.haze.dk/musik/skullclub?utm_source=openai))",
+      "logo": "https://www.jailbreak.dk/wp-content/uploads/2020/02/skullclub-logo.png",
+      "headlineImage": "https://www.jailbreak.dk/wp-content/uploads/2020/02/skullclub.jpg",
+      "website": "http://www.skullclub.dk",
+      "spotify": "",
+      "genres": [
+        "Punk Rock",
+        "Hard Rock",
+        "Folk Rock"
+      ],
+      "members": [
+        {
+          "name": "Troels Bjorholm",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Morten Husted",
+          "role": "Guitar, Banjo, Mandolin"
+        },
+        {
+          "name": "Thomas Ebdrup",
+          "role": "Drums, Vocals"
+        },
+        {
+          "name": "Christian Christensen \"Pibs\"",
+          "role": "Bass, Vocals"
+        },
+        {
+          "name": "Jonas Quist",
+          "role": "Lead Guitar, Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "brat",
+      "name": "Brat",
+      "country": "United States",
+      "description": "Brat is an American grindcore, powerviolence, and death metal band formed in New Orleans, Louisiana, in February 2020. The band was established during Mardi Gras by guitarist Brenner Moate and vocalist Liz Selfish, who coined the term \"bimboviolence\" to describe their unique musical style. Their debut album, \"Social Grace,\" was released via Prosthetic Records, showcasing their aggressive and unrelenting sound. The current lineup includes Brenner Moate on guitars and backing vocals, and Liz Selfish on vocals. Brat has been active since 2020 and continues to perform and record music.",
+      "logo": "https://bratband.com/images/brat_logo.png",
+      "headlineImage": "https://bratband.com/images/social_grace_album_cover.jpg",
+      "website": "https://bratband.com/",
+      "spotify": "",
+      "genres": [
+        "Grindcore",
+        "Powerviolence",
+        "Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Brenner Moate",
+          "role": "Guitars, Backing Vocals"
+        },
+        {
+          "name": "Liz Selfish",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
     }
   ]
 }
