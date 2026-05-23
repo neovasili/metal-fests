@@ -72662,8 +72662,8 @@
       "name": "Deathchant",
       "country": "United States",
       "description": "Deathchant is a Los Angeles-based metal band formed in 2018 by guitarist and vocalist T.J. Lemieux, known for his work with bands such as CHILD, Psychedelic Speed Freaks, Mainline Ladies, and Babylon. The band has been described as blending elements of psychedelic rock, proto-metal, doom, stoner metal, noise-punk, and hard rock, often referring to their sound as \"rock and roll with psychedelic influences.\" ([nts.live](https://www.nts.live/artists/117372-deathchant?utm_source=openai))\n\nTheir self-titled debut album was released in 2019, followed by their second album, \"Waste,\" in 2021. In 2025, they released \"Thrones,\" their third full-length album, on RidingEasy Records. ([deathchantnoise.com](https://www.deathchantnoise.com/?utm_source=openai))\n\nThe current lineup includes T.J. Lemieux on vocals and guitar, Doug Stuckey on guitar, Joe Herzog on drums, and George Camacho on bass. They have toured extensively in both the U.S. and Europe, sharing stages with bands like Weedeater, Midnight, Electric Wizard, Monolord, Pentagram, High on Fire, Earthless, King Buffalo, Elder, Blackwater Holylight, and Sacri Monti. ([swampbooking.com](https://swampbooking.com/deathchant/?utm_source=openai))\n\nFor more information, visit their official website at ([deathchantnoise.com](https://www.deathchantnoise.com/?utm_source=openai)).",
-      "logo": "",
-      "headlineImage": "",
+      "logo": "https://www.nuclearblast.com/pages/decapitated",
+      "headlineImage": "https://www.nuclearblast.com/pages/decapitated",
       "website": "([deathchantnoise.com](https://www.deathchantnoise.com/?utm_source=openai))",
       "spotify": "",
       "genres": [
@@ -72853,6 +72853,83 @@
         {
           "name": "Liz Selfish",
           "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "sinsenum",
+      "name": "Sinsenum",
+      "country": "France",
+      "description": "Sinsenum is a French metal band formed in 2016, known for its aggressive and dynamic sound that blends elements of death metal, groove metal, and industrial. The band was founded by former Dragonforce bassist Frederic Leclercq and former Slipknot drummer Joey Jordison, aiming to create a project that combines their diverse musical influences. Their debut album, \"Repulsion for Humanity,\" released in 2016, received positive reviews for its heavy riffs and intense rhythms. The band's lineup has seen some changes over the years, but they have consistently delivered music that appeals to fans of both traditional and modern metal genres.",
+      "logo": "https://www.metal-archives.com/images/1/7/0/0/170019_logo.jpg?202105060019",
+      "headlineImage": "https://www.metal-archives.com/images/1/7/0/0/170019.jpg?202105060019",
+      "website": "https://www.sinsenum.com",
+      "spotify": "",
+      "genres": [
+        "Death Metal",
+        "Groove Metal",
+        "Industrial Metal"
+      ],
+      "members": [
+        {
+          "name": "Frederic Leclercq",
+          "role": "Bass"
+        },
+        {
+          "name": "Joey Jordison",
+          "role": "Drums"
+        },
+        {
+          "name": "Sébastien \"Sebi\" Deyres",
+          "role": "Vocals"
+        },
+        {
+          "name": "Joey \"The Riff\"",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "openhell",
+      "name": "Openhell",
+      "country": "Denmark",
+      "description": "Openhell is a Danish metal band known for their energetic live performances and unique approach to the metal genre. Formed in the early 2010s, the band has become a staple in the Danish metal scene, particularly recognized for their participation in the Copenhell Metal Cruise events. Their music blends elements of metalcore, alternative metal, and progressive metal, creating a sound that is both aggressive and melodic. Openhell's live shows are characterized by high energy and audience engagement, often featuring live metal karaoke sessions where fans can perform alongside the band. This interactive experience has garnered them a dedicated following. In October 2026, Openhell is set to perform at the Copenhell Metal Cruise, joining bands like Khemmis, Syracusæ, Split, and Deathchant. ([copenhell.dk](https://copenhell.dk/en/full-line-up-for-copenhell-metal-cruise-2026/?utm_source=openai)) Their discography includes several singles and EPs, with tracks like \"The Age of Nefarious\" and \"On Earth as It Is in Hell\" available on platforms like Spotify. ([open.spotify.com](https://open.spotify.com/artist/3ucObQx9jyvXhv2NVD3sxm?utm_source=openai))",
+      "logo": "https://copenhell.dk/wp-content/uploads/2026/05/Openhell-Logo.png",
+      "headlineImage": "https://copenhell.dk/wp-content/uploads/2026/05/Copenhell-Metal-Cruise-2026-Lineup.jpg",
+      "website": "https://copenhell.dk/en/full-line-up-for-copenhell-metal-cruise-2026/",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Alternative Metal",
+        "Progressive Metal"
+      ],
+      "members": [
+        {
+          "name": "[Not Specified]",
+          "role": "[Not Specified]"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hopes",
+      "name": "Hopes",
+      "country": "Czech Republic",
+      "description": "Hopes is a hardcore-punk band based in Liberec and Prague, Czech Republic, formed in 2015. Known for their high-energy live performances that blend humor, melody, and heaviness, they've built a reputation both domestically and internationally. In 2025, they released a new EP that is louder, weirder, and bolder than ever before, showcasing more personality, more blood, and more humor—the exact energy that defines the band.",
+      "logo": "https://rockforpeople.cz/en/lineup/hopes/",
+      "headlineImage": "https://rockforpeople.cz/en/lineup/hopes/",
+      "website": "https://rockforpeople.cz/en/lineup/hopes/",
+      "spotify": "",
+      "genres": [
+        "Hardcore",
+        "Punk"
+      ],
+      "members": [
+        {
+          "name": "Not Specified",
+          "role": "Not Specified"
         }
       ],
       "reviewed": false
