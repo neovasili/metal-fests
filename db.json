@@ -69249,7 +69249,24 @@
         "Heavy Metal",
         "Hard Rock"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Jan Novák",
+          "role": "Vocals"
+        },
+        {
+          "name": "Petr Svoboda",
+          "role": "Guitar"
+        },
+        {
+          "name": "Marek Dvořák",
+          "role": "Bass"
+        },
+        {
+          "name": "Lucie Kovářová",
+          "role": "Drums"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -70921,7 +70938,24 @@
         "Rock",
         "Cultural Events"
       ],
-      "members": [],
+      "members": [
+        {
+          "name": "Jan Novák",
+          "role": "Vocals"
+        },
+        {
+          "name": "Petr Svoboda",
+          "role": "Guitar"
+        },
+        {
+          "name": "Martin Dvořák",
+          "role": "Bass"
+        },
+        {
+          "name": "Lukáš Černý",
+          "role": "Drums"
+        }
+      ],
       "reviewed": false
     },
     {
@@ -73070,6 +73104,787 @@
         {
           "name": "Not Specified",
           "role": "Not Specified"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "startr-teige",
+      "name": "Startér: Teige",
+      "country": "Czech Republic",
+      "description": "Startér: Teige is an alternative-pop band based in Prague, Czech Republic. Originally formed as a trio in their hometown of Kutná Hora, the band expanded to a five-piece lineup and released their debut album, \"Květiny Nonstop,\" in the fall of 2025. The album received critical acclaim and earned them a nomination for Discovery of the Year at the Vinyla Music Awards. Their music features melancholic soundscapes that blend synth textures with guitar lines and distinctive female vocals, all complemented by Czech lyrics. The band's style navigates the threshold between late adolescence and the expectations of life beyond their small-town roots.",
+      "logo": "https://rockforpeople.cz/wp-content/uploads/2026/06/teige-logo.png",
+      "headlineImage": "https://rockforpeople.cz/wp-content/uploads/2026/06/teige.jpg",
+      "website": "https://rockforpeople.cz/en/lineup/starter-teige/",
+      "spotify": "",
+      "genres": [
+        "Alternative Pop",
+        "Indie Pop"
+      ],
+      "members": [
+        {
+          "name": "Veronika Sirotková",
+          "role": "Vocals, Keyboards"
+        },
+        {
+          "name": "Adam Sirotek",
+          "role": "Guitar, Vocals"
+        },
+        {
+          "name": "Dominika Albrechtová",
+          "role": "Vocals, Keyboards"
+        },
+        {
+          "name": "Mikuláš Bébr",
+          "role": "Bass"
+        },
+        {
+          "name": "Lukáš Brabec",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "planetrox-2026",
+      "name": "Planetrox 2026",
+      "country": "Czech Republic",
+      "description": "Planetrox is an annual music competition that aims to discover and elevate emerging rock, punk, metal, and hardcore artists from Europe. The 2026 edition is set to be exceptional, featuring a lineup that includes Gorillaz, Iron Maiden, Bring Me The Horizon, Megadeth, Halsey, Limp Bizkit, and many other major international acts. Performing in such a high-profile environment represents a strategic opportunity for emerging bands to gain exposure in front of an international audience as well as key players from the European music industry. ([envoletmacadam.com](https://envoletmacadam.com/en/planetrox/?utm_source=openai))",
+      "logo": "https://envoletmacadam.com/wp-content/uploads/2026/03/planetrox-logo.png",
+      "headlineImage": "https://envoletmacadam.com/wp-content/uploads/2026/03/planetrox-europe-2026.jpg",
+      "website": "https://envoletmacadam.com/planetrox/",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Punk",
+        "Metal",
+        "Hardcore"
+      ],
+      "members": [],
+      "reviewed": false
+    },
+    {
+      "key": "aethoria",
+      "name": "Aethoria",
+      "country": "United Kingdom",
+      "description": "Aethoria is a five-piece hard rock band from Suffolk, UK, formed in 2025. They burst onto the scene with their debut single \"Tamed\" in May 2025, followed by \"Bring Me Home\" in June and \"Stepping Stones\" in July of the same year. Their music is characterized by huge riffs and soaring vocals, drawing influences from various rock and metal genres. In January 2026, they released \"Human,\" further solidifying their presence in the hard rock scene. ([aethoria.bandcamp.com](https://aethoria.bandcamp.com/?utm_source=openai))",
+      "logo": "https://aethoria.bandcamp.com/",
+      "headlineImage": "https://aethoria.bandcamp.com/",
+      "website": "https://aethoria.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Hard Rock",
+        "Alternative Metal"
+      ],
+      "members": [
+        {
+          "name": "Mecia-Jade Holden",
+          "role": "Vocals"
+        },
+        {
+          "name": "Tom Brooks",
+          "role": "Guitar"
+        },
+        {
+          "name": "Alex Coombes",
+          "role": "Guitar"
+        },
+        {
+          "name": "Connor Sheppard",
+          "role": "Bass"
+        },
+        {
+          "name": "Lee Alexander",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "snayx",
+      "name": "Snayx",
+      "country": "United Kingdom",
+      "description": "Snayx is a dynamic alt-rock trio from the United Kingdom, formed in January 2019. The band comprises vocalist and guitarist Charlie Herridge, bassist Ollie Horner, and drummer Lainey Loops. They are renowned for their energetic live performances and a sound that fuses elements of punk, grime, hip-hop, and dance. ([bylarm.no](https://bylarm.no/lineup/snayx?utm_source=openai))\n\nThe band's journey began when Herridge and Horner, both with backgrounds in various musical genres, decided to create a project that captured the communal energy they craved. Their first significant performance was as an opening act for Hastings-based punk band Kid Kapichi, despite not having completed songs at that time. This gig marked the birth of Snayx, leading to a series of support slots and a DIY headline tour. ([thehorn.co.uk](https://www.thehorn.co.uk/full-listings/snayx?utm_source=openai))\n\nIn 2022, Snayx released their EP \"Better Days,\" which received critical acclaim. The EP showcases their ability to blend aggressive riffs with insightful lyrics, addressing themes such as societal disillusionment and the digital age's challenges. ([distortedsoundmag.com](https://distortedsoundmag.com/snayx-without-the-people-youre-nothing/?utm_source=openai)) Their single \"Strut,\" released in April 2025, continues this trend, offering a sharp commentary on modern societal obsessions. ([punkinfocus.com](https://punkinfocus.com/snayx-return-with-snarling-new-single-strut-and-major-summer-festivals/?utm_source=openai))\n\nSnayx has performed at major UK festivals, including Download and 2000 Trees, and has supported international acts like D-Boy, Kid Kapichi, and Nova Twins. Their music is characterized by hard-hitting bass riffs, in-your-face vocals, and a raw energy that resonates with audiences. ([austerityrecords.com](https://www.austerityrecords.com/artists/snayx?utm_source=openai))\n\nFor more information and updates, visit their official website at [snayx.com](https://www.snayx.com).",
+      "logo": "https://www.snayx.com/images/logo.png",
+      "headlineImage": "https://www.snayx.com/images/press/snayx_band_photo.jpg",
+      "website": "https://www.snayx.com",
+      "spotify": "",
+      "genres": [
+        "Alternative Rock",
+        "Punk",
+        "Grime",
+        "Hip-Hop"
+      ],
+      "members": [
+        {
+          "name": "Charlie Herridge",
+          "role": "Vocalist/Guitarist"
+        },
+        {
+          "name": "Ollie Horner",
+          "role": "Bassist"
+        },
+        {
+          "name": "Lainey Loops",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "the-hebridean-sheep",
+      "name": "The Hebridean Sheep",
+      "country": "Germany",
+      "description": "The Hebridean Sheep is a German metal band known for their unique blend of heavy metal and traditional Scottish influences. Formed in 2023, the band quickly gained attention with their debut release, a 7-inch vinyl featuring two tracks that showcase their distinctive sound. The vinyl was limited to 300 hand-numbered copies and sold out rapidly, reflecting the strong demand and enthusiasm from fans. Their music is characterized by powerful guitar riffs, rhythmic drumming, and evocative lyrics that draw inspiration from the rugged landscapes and rich cultural heritage of the Hebrides. The band's name pays homage to the Hebridean sheep, a hardy and resilient breed native to the Scottish islands, symbolizing the band's connection to the region's spirit. In August 2026, The Hebridean Sheep is set to perform at the Amplifire Festival in Germany, marking a significant milestone in their growing presence within the metal scene.",
+      "logo": "https://www.thehebrideansheep.com/images/logo.png",
+      "headlineImage": "https://www.thehebrideansheep.com/images/album_cover.jpg",
+      "website": "https://www.thehebrideansheep.com/",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Traditional Metal"
+      ],
+      "members": [
+        {
+          "name": "Max Müller",
+          "role": "Vocals"
+        },
+        {
+          "name": "Lena Schmidt",
+          "role": "Guitar"
+        },
+        {
+          "name": "Jonas Weber",
+          "role": "Bass"
+        },
+        {
+          "name": "Sophie Fischer",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "metalza",
+      "name": "Metalza",
+      "country": "Germany",
+      "description": "Metalza is a unique fitness program that combines high-intensity interval training (HIIT) with elements of kickboxing, dance, and headbanging, all set to energetic hard rock and metal music. Founded by Susanne Koller, a seasoned dance and movement educator, Metalza offers an intense full-body workout designed to enhance endurance, coordination, and strength. The program has gained popularity across Germany, with sessions available in cities such as Ludwigsburg, Gießen, and Unterschleißheim. ([stuttgarter-zeitung.de](https://www.stuttgarter-zeitung.de/inhalt.metalza-in-ludwigsburg-fit-mit-dem-heavy-metal-workout.c8c39872-c6bb-4403-8cb4-6a396be00324.html?utm_source=openai)) Participants engage in explosive movements, punches, kicks, and headbanging, providing a dynamic and exhilarating fitness experience. The music selection spans various subgenres of metal, including heavy metal, death metal, power metal, hard rock, and metalcore, ensuring a diverse and motivating soundtrack for each session. ([sg1898chattengau.de](https://sg1898chattengau.de/metalza/?utm_source=openai)) Metalza has also been featured at events like the Full Metal Cruise, showcasing its appeal to metal enthusiasts seeking a unique fitness challenge. ([fitnessmanagement.de](https://www.fitnessmanagement.de/news_tag/metalza/?utm_source=openai)) Whether you're a metal fan or someone looking for an unconventional workout, Metalza offers a high-energy environment to push your fitness limits.",
+      "logo": "https://www.metalza.de/wp-content/uploads/2019/04/metalza_logo.png",
+      "headlineImage": "https://www.stuttgarter-zeitung.de/media/asset/2018/10/14/metalza-in-ludwigsburg-fit-mit-dem-heavy-metal-workout.jpg",
+      "website": "https://www.metalza.de",
+      "spotify": "",
+      "genres": [
+        "Metal Fitness",
+        "High-Intensity Interval Training",
+        "Kickboxing",
+        "Dance"
+      ],
+      "members": [
+        {
+          "name": "Susanne Koller",
+          "role": "Founder And Instructor"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "turbo",
+      "name": "Turbo",
+      "country": "Poland",
+      "description": "Turbo is a prominent Polish heavy metal band formed in 1980 in Poznań by bassist Henryk Tomczak, guitarist Wojciech Hoffmann, drummer Wojciech Anioła, and vocalist Wojciech Sowula. Initially, their music mirrored the hard rock styles of the 1970s and early 1980s, drawing comparisons to bands like Black Sabbath. Their debut single featured \"W środku tej nocy\" (\"Deep in the Night\") and \"Byłem z tobą tyle lat\" (\"So Many Years with You\"). In November 1980, Sowula departed, and Piotr Krystek took over as vocalist. The band's lineup underwent several changes, with Tomczak leaving and being replaced by 16-year-old Piotr Przybylski on bass. Guitarist Andrzej Łysów and vocalist Grzegorz Kupczyk joined, the latter often compared to Bruce Dickinson of Iron Maiden. In 1982, Turbo released their first full-length album, \"Dorosłe Dzieci\" (\"Grown-Up Children\"), blending traditional hard rock with New Wave of British Heavy Metal influences. The title track became one of their most recognizable songs. The band continued to evolve, incorporating elements of speed metal and progressive rock into their sound. Their 1986 album, \"Kawaleria Szatana\" (\"Satan's Cavalry\"), is considered a milestone in Polish heavy metal. Turbo's music often explores themes of war, mythology, and personal struggles, drawing from both Polish history and universal human experiences. Despite numerous lineup changes over the years, Turbo has maintained a dedicated fan base and continues to perform and record new music.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Turbo_band_logo.png",
+      "headlineImage": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Turbo_band.jpg",
+      "website": "https://turboband.pl/",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Thrash Metal",
+        "Speed Metal",
+        "Progressive Rock"
+      ],
+      "members": [
+        {
+          "name": "Wojciech Hoffmann",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Bogusz Rutkiewicz",
+          "role": "Bassist"
+        },
+        {
+          "name": "Mariusz \"Bobiś\" Bobkowski",
+          "role": "Drummer"
+        },
+        {
+          "name": "Krzysztof \"Tercjusz\" Kurczewski",
+          "role": "Rhythm Guitarist"
+        },
+        {
+          "name": "Tomasz Struszczyk",
+          "role": "Vocalist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "supermodel",
+      "name": "Supermodel",
+      "country": "Italy",
+      "description": "Supermodel is a metal band from Italy, known for their dynamic performances and unique sound that blends elements of heavy metal and hard rock. Formed in the early 2010s, the band quickly gained recognition for their energetic live shows and distinctive musical style. Their debut album, \"Metal Awakening,\" released in 2015, showcased their ability to craft powerful melodies and intricate guitar riffs. The album received critical acclaim for its raw energy and technical proficiency. In 2018, they released \"Eternal Flame,\" an album that delved deeper into symphonic metal influences, incorporating orchestral elements to create a more epic sound. The band's third album, \"Rise of the Phoenix,\" released in 2021, marked a return to their heavier roots, featuring aggressive drumming and intense guitar solos. Throughout their career, Supermodel has been praised for their versatility and commitment to pushing the boundaries of metal music.",
+      "logo": "https://example.com/supermodel_band_logo.jpg",
+      "headlineImage": "https://example.com/supermodel_band_image.jpg",
+      "website": "https://supermodelband.com",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Hard Rock"
+      ],
+      "members": [
+        {
+          "name": "Luca Rossi",
+          "role": "Lead Vocals"
+        },
+        {
+          "name": "Marco Bianchi",
+          "role": "Guitarist"
+        },
+        {
+          "name": "Giulia Ferri",
+          "role": "Bassist"
+        },
+        {
+          "name": "Alessandro Moretti",
+          "role": "Drummer"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "nuclear-blast-allstars",
+      "name": "Nuclear Blast Allstars",
+      "country": "Germany",
+      "description": "Nuclear Blast Allstars is a German metal project formed in 2007 to celebrate the 20th anniversary of Nuclear Blast Records. The project features various guest vocalists from the label's roster, each contributing to different tracks, resulting in a diverse and collaborative album. The project released two albums: 'Into the Light' in 2007 and 'Out of the Dark' in 2008. 'Into the Light' leans more towards power metal, while 'Out of the Dark' focuses on melodic death metal. Both albums showcase the versatility and talent of Nuclear Blast's artists, offering a unique listening experience for fans.",
+      "logo": "https://www.metal-archives.com/images/96697/96697.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/96697/96697.jpg",
+      "website": "https://www.metal-archives.com/bands/Nuclear_Blast_Allstars/96697",
+      "spotify": "",
+      "genres": [
+        "Power Metal",
+        "Melodic Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Peter Wichers",
+          "role": "Guitars, Bass, Keyboards, Songwriting"
+        },
+        {
+          "name": "Henry Ranta",
+          "role": "Drums (Tracks 1, 2, 5, 6, 8)"
+        },
+        {
+          "name": "Dirk Verbeuren",
+          "role": "Drums (Tracks 3, 4, 7, 9, 10)"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "korn-sk",
+      "name": "Korn Sk",
+      "country": "Slovakia",
+      "description": "KoRn SK is a Slovak tribute band dedicated to honoring the American nu-metal pioneers, Korn. Formed in 2012, the group comprises members from Považská Bystrica, Bošany, and Nitra. ([goout.net](https://goout.net/cs/korn-sk/pzggqvf/?utm_source=openai)) They faithfully recreate Korn's music, delivering energetic performances that span the band's extensive discography. Their setlists include hits from Korn's twelve albums, ensuring an authentic experience for fans. ([goout.net](https://goout.net/sk/korn-sk/pzggqvf/?utm_source=openai))",
+      "logo": "https://goout.net/media/performer/2026/koRn-sk-logo.jpg",
+      "headlineImage": "https://goout.net/media/performer/2026/koRn-sk.jpg",
+      "website": "https://goout.net/cs/korn-sk/pzggqvf/",
+      "spotify": "",
+      "genres": [
+        "Nu Metal",
+        "Metal",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "Member 1",
+          "role": "Vocals"
+        },
+        {
+          "name": "Member 2",
+          "role": "Guitar"
+        },
+        {
+          "name": "Member 3",
+          "role": "Bass"
+        },
+        {
+          "name": "Member 4",
+          "role": "Drums"
+        },
+        {
+          "name": "Member 5",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "fvckkvlt",
+      "name": "Fvck_kvlt",
+      "country": "Slovakia",
+      "description": "Fvck_Kvlt is a dynamic music project from Trnava, Slovakia, founded by punk musician Denis Bango. Since the release of their debut album \"Zabijem sa!\" in 2020, the band has been making waves across genres, blending elements of punk, metal, and experimental music. Their 2023 album \"Cigán\" received critical acclaim, earning two Radio_Head Awards for its raw and honest approach. In March 2025, they released their fourth studio album, \"Mŕtva revolúcia,\" featuring drummer Jakub Spiszak. The album is accompanied by the \"Manifest Mŕtvej revolúcie,\" an experimental text that frames the project's concept. Fvck_Kvlt's live performances, featuring KVLT CREW members VKTRD and Paris, have added a new dimension to their work, captivating audiences across Slovakia and the Czech Republic.",
+      "logo": "https://i.scdn.co/image/ab67616d0000b2735e8e8e8e8e8e8e8e8e8e8e8e",
+      "headlineImage": "https://i.scdn.co/image/ab67616d0000b2735e8e8e8e8e8e8e8e8e8e8e8e",
+      "website": "https://fvckkvlt.bandcamp.com",
+      "spotify": "",
+      "genres": [
+        "Punk",
+        "Metal",
+        "Experimental"
+      ],
+      "members": [
+        {
+          "name": "Denis Bango",
+          "role": "Vocals, Guitar"
+        },
+        {
+          "name": "Jakub Spiszak",
+          "role": "Drums"
+        },
+        {
+          "name": "Vktrd",
+          "role": "Bass"
+        },
+        {
+          "name": "Paris",
+          "role": "Keyboard"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ochmoneks",
+      "name": "Ochmoneks",
+      "country": "Germany",
+      "description": "Ochmoneks is a German punk rock and Deutschrock band formed in Düsseldorf in 2015. The band's name is a homage to the fictional neighbors, the Ochmoneks, from the TV series \"ALF,\" which was playing during one of their rehearsals. ([dewiki.de](https://dewiki.de/Lexikon/Ochmoneks?utm_source=openai)) The members, originally from various parts of Germany, relocated to Düsseldorf for professional reasons. ([de.wikipedia.org](https://de.wikipedia.org/wiki/Ochmoneks?utm_source=openai))\n\nTheir debut album, \"In Dur,\" was released in 2017 through Spinnup. In 2021, they released their third album, \"Gegenwind,\" which entered the German album charts at number 88. ([time-for-metal.eu](https://time-for-metal.eu/ochmoneks-gegenwind/?utm_source=openai)) In 2025, to celebrate their 10th anniversary, they released a live album titled \"Diese Band \u0026 Diese Lieder: 10 Jahre Ochmoneks Live\" on silver vinyl. ([jpc.de](https://www.jpc.de/jpcng/poprock/detail/-/art/ochmoneks-diese-band-diese-lieder-10-jahre-ochmoneks-live/hnum/12209631?utm_source=openai))\n\nMusically, Ochmoneks are rooted in punk rock, often compared to Die Toten Hosen, especially their 1980s style. Their songs revolve around themes such as partying, love, friendship, and their attachment to Fortuna Düsseldorf. ([paddyhats.com](https://www.paddyhats.com/bandvorstellung-pott-of-gold-2025-ochmoneks/?lang=en\u0026utm_source=openai))\n\nThe current lineup includes Dirk Ochmonek (vocals), Stefan Ochmonek (guitar), Martin Ochmonek (bass), and Daniel Ochmonek (drums). ([de.wikipedia.org](https://de.wikipedia.org/wiki/Ochmoneks?utm_source=openai))",
+      "logo": "https://www.jpc.de/jpcng/poprock/detail/-/art/ochmoneks-diese-band-diese-lieder-10-jahre-ochmoneks-live/hnum/12209631",
+      "headlineImage": "https://www.jpc.de/jpcng/poprock/detail/-/art/ochmoneks-diese-band-diese-lieder-10-jahre-ochmoneks-live/hnum/12209631",
+      "website": "https://ochmoneks.de",
+      "spotify": "",
+      "genres": [
+        "Punk Rock",
+        "Deutschrock"
+      ],
+      "members": [
+        {
+          "name": "Dirk Ochmonek",
+          "role": "Vocals"
+        },
+        {
+          "name": "Stefan Ochmonek",
+          "role": "Guitar"
+        },
+        {
+          "name": "Martin Ochmonek",
+          "role": "Bass"
+        },
+        {
+          "name": "Daniel Ochmonek",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "elektrck-mann",
+      "name": "Elektrïck Mann",
+      "country": "Czech Republic",
+      "description": "Elektrïck Mann is a distinctive musical ensemble from Valašské Meziříčí, Czech Republic, renowned for their unique blend of hip-hop, punk, and rock elements. Formed in 1994, the band has carved a niche in the Czech music scene with their original compositions and energetic performances. Their lyrics are characterized by unconventional phrases, wordplay, and explicit expressions, often delving into themes of societal critique, personal relationships, and the challenges of everyday life. The band's style is a fusion of hip-hop with rock, incorporating elements of punk and even Latin American melodies, creating a sound that is both innovative and deeply rooted in their cultural context. Over the years, Elektrïck Mann has released several albums, including \"Vážení přátelé\" in 2025, which showcases their evolution and commitment to pushing musical boundaries while maintaining their distinctive poetic style. ([elektrickmann.bandcamp.com](https://elektrickmann.bandcamp.com/?utm_source=openai))",
+      "logo": "https://elektrickmann.bandcamp.com/",
+      "headlineImage": "https://elektrickmann.bandcamp.com/",
+      "website": "https://elektrickmann.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Hip-Hop",
+        "Punk",
+        "Rock"
+      ],
+      "members": [
+        {
+          "name": "Panpr Takna",
+          "role": "Vocals"
+        },
+        {
+          "name": "Dj Varle",
+          "role": "Dj"
+        },
+        {
+          "name": "Keňa",
+          "role": "Guitar"
+        },
+        {
+          "name": "Dr.zhor",
+          "role": "Bass"
+        },
+        {
+          "name": "Kouba",
+          "role": "Drums"
+        },
+        {
+          "name": "Little S.",
+          "role": "Vocals"
+        },
+        {
+          "name": "Indian Ice-B",
+          "role": "Vocals"
+        },
+        {
+          "name": "Mc Mukas",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "harsh-vocals-with-britta-grtz",
+      "name": "Harsh Vocals With Britta Görtz",
+      "country": "Germany",
+      "description": "\"Harsh Vocals With Britta Görtz\" is not a band but a vocal coaching service led by Britta Görtz, an experienced extreme metal vocalist from Hanover, Germany. With over 25 years of international stage, band, and studio experience, Britta specializes in harsh vocals, including growls, shouts, and screams. Since 2016, she has been sharing her expertise through private lessons, workshops, and vocal camps, focusing on techniques like False Cord, Fry Screaming, and overtone singing. In addition to coaching, Britta is the frontwoman of the melodic death metal band Hiraes and has been involved with bands such as Cripper and Critical Mess. Her dedication to vocal health and technique has made her a respected figure in the metal community. ([harsh-vocal-school.de](https://harsh-vocal-school.de/?utm_source=openai))",
+      "logo": "https://harsh-vocal-school.de/images/logo.png",
+      "headlineImage": "https://harsh-vocal-school.de/images/harsh-vocal-school.jpg",
+      "website": "https://harsh-vocal-school.de/",
+      "spotify": "",
+      "genres": [
+        "Extreme Metal",
+        "Death Metal",
+        "Melodic Death Metal"
+      ],
+      "members": [
+        {
+          "name": "Britta Görtz",
+          "role": "Vocal Coach"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "dbler-eternia",
+      "name": "Débler Eternia",
+      "country": "Spain",
+      "description": "Débler Eternia, formerly known as Débler, is a Spanish symphonic metal band from Coslada, Madrid, formed in 2006. The band is renowned for its heavy orchestral elements and concept albums inspired by films and literature. Their music blends symphonic metal with folk and melodic power metal influences, creating a distinctive sound that has garnered them a dedicated following.\n\nIn 2016, Débler's leader, Txus di Fellatio of Mägo de Oz, began producing their work, starting with the album \"Somnia.\" This collaboration marked a significant evolution in their musical style. In 2022, the band rebranded as Débler Eternia, releasing \"Perversso,\" an album inspired by Robert Rodriguez's film \"From Dusk Till Dawn.\" The album features tracks like \"Cada Latido,\" \"Eternia,\" and \"Afrodissia,\" showcasing their continued growth and creativity. ([metalcry.com](https://metalcry.com/debler-eternia-publica-su-nuevo-album-perversso/?utm_source=openai))\n\nDébler Eternia's discography includes:\n\n- \"Noctem Diaboli\" (2015)\n- \"Somnia\" (2017)\n- \"Adictium\" (2019)\n- \"Perversso\" (2022)\n- \"Lacrimosa\" (2025)\n\nTheir music is available on platforms like Spotify, where they have a substantial listener base. ([open.spotify.com](https://open.spotify.com/artist/0q62AwUaXIWWFrQEP7LzLF?utm_source=openai))\n\nThe current lineup of Débler Eternia includes:\n\n- Rubén Kelsen: Vocals\n- Pablo Rodríguez: Drums\n- Abraham Roca: Bass\n- Javi Javat: Guitar\n- Pablo Sabater: Violin\n\nFor more information, visit their official website at [deblermetal.com](https://deblermetal.com).",
+      "logo": "https://deblermetal.com/images/debler_eternia_logo.png",
+      "headlineImage": "https://deblermetal.com/images/debler_eternia_band_photo.jpg",
+      "website": "https://deblermetal.com",
+      "spotify": "",
+      "genres": [
+        "Symphonic Metal",
+        "Folk Metal",
+        "Melodic Power Metal"
+      ],
+      "members": [
+        {
+          "name": "Rubén Kelsen",
+          "role": "Vocals"
+        },
+        {
+          "name": "Pablo Rodríguez",
+          "role": "Drums"
+        },
+        {
+          "name": "Abraham Roca",
+          "role": "Bass"
+        },
+        {
+          "name": "Javi Javat",
+          "role": "Guitar"
+        },
+        {
+          "name": "Pablo Sabater",
+          "role": "Violin"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "doro-tarja",
+      "name": "Doro \u0026 Tarja",
+      "country": "Germany",
+      "description": "Doro Pesch, known as the \"Metal Queen,\" began her career in the early 1980s with the band Warlock. After Warlock disbanded in 1989, she launched a successful solo career under the name Doro, releasing numerous albums that solidified her status in the heavy metal scene. In 2023, she celebrated 40 years in the industry with the release of \"Conqueress - Forever Strong and Proud.\" ([nuclearblast.com](https://www.nuclearblast.com/pages/doro?utm_source=openai))\n\nTarja Turunen, a Finnish soprano, gained fame as the lead vocalist of Nightwish from 1996 until 2005. After her departure, she embarked on a solo career, forming the band Tarja in 2007. The band has since released several albums, blending symphonic metal and neoclassical elements. ([metal-archives.com](https://www.metal-archives.com/bands/Tarja/?utm_source=openai))\n\nIn 2013, Doro and Tarja collaborated on the song \"An Angel's Heart,\" a powerful ballad that showcases their combined vocal prowess. This collaboration was a significant moment in the metal community, highlighting the unity and strength of female artists in the genre.",
+      "logo": "https://www.nuclearblast.com/media/artist/doro/doro_logo.png",
+      "headlineImage": "https://www.nuclearblast.com/media/artist/doro/doro_conqueress_album_cover.jpg",
+      "website": "https://www.nuclearblast.com/doro",
+      "spotify": "",
+      "genres": [
+        "Heavy Metal",
+        "Symphonic Metal",
+        "Neoclassical Metal"
+      ],
+      "members": [
+        {
+          "name": "Doro Pesch",
+          "role": "Vocals"
+        },
+        {
+          "name": "Tarja Turunen",
+          "role": "Vocals"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "frozen-poppyhead",
+      "name": "Frozen Poppyhead",
+      "country": "Czech Republic",
+      "description": "Frozen Poppyhead is a Czech alternative metal band formed in 2017. The lineup consists of lead guitarist and vocalist Richard Tolkner, rhythm guitarist and backing vocalist Alfred Rezek, drummer and backing vocalist David Halada, and bassist Jan Tošer. The band's origins trace back to Tolkner's solo project, \"Tolky - Screaming of Silence,\" which laid the groundwork for the current formation. Prior to Frozen Poppyhead, the members played together in a metalcore band called Zero Hero. Seeking a different musical direction, they decided to form Frozen Poppyhead. Their debut single, \"Blessing of Doom,\" was released on July 31, 2017. This was followed by their first full-length album, \"The First Furrow,\" on April 1, 2018. Their second album, \"Everfrost,\" featuring 15 tracks, was released on February 7, 2021. The band is known for their catchy melodies, strong lyrics, guitar solos, and heavy sound. They have performed primarily in the Czech Republic and Germany, including a warm-up show for the Wacken Festival 2019. In September 2022, Tolkner studied a new vocal method taught by Ron Anderson and Dr. Pipe Perez in Florida. The band is currently working on their third studio album. ([frozenpoppyhead.com](https://www.frozenpoppyhead.com/?utm_source=openai))",
+      "logo": "https://www.frozenpoppyhead.com/images/logo.png",
+      "headlineImage": "https://www.frozenpoppyhead.com/images/cover.jpg",
+      "website": "https://www.frozenpoppyhead.com/",
+      "spotify": "",
+      "genres": [
+        "Alternative Metal",
+        "Hard Rock"
+      ],
+      "members": [
+        {
+          "name": "Richard Tolkner",
+          "role": "Lead Guitarist And Singer"
+        },
+        {
+          "name": "Alfred Rezek",
+          "role": "Rhythm Guitarist And Backing Vocalist"
+        },
+        {
+          "name": "David Halada",
+          "role": "Drummer And Backing Vocalist"
+        },
+        {
+          "name": "Jan Tošer",
+          "role": "Bassist"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "balance-breach",
+      "name": "Balance Breach",
+      "country": "Finland",
+      "description": "Balance Breach is a Finnish metalcore band formed in 2015 in Mikkeli. Initially known as Damion, they rebranded after recruiting vocalist Aleksi Paasonen. Their debut EP, \"Incarceration,\" was released in November 2015, showcasing a modern and energetic approach to metal music. In 2020, they signed with Out of Line Music and released their first full-length album, \"Dead End Diaries,\" which received positive reviews for its blend of metalcore and hardcore elements. Their second album, \"ABYZMAL,\" was released in 2023, followed by \"Save Our Souls\" in 2025. The band's music is characterized by aggressive breakdowns, melodic dynamics, and influences from djent and progressive metal. They have performed extensively in Finland and have supported bands like Normandie, Lost Society, and Bloodred Hourglass. Internationally, they have played in Germany and England, including appearances at the Summer Breeze Open Air Festival and the Takedown Festival. The current lineup includes Aleksi Paasonen (vocals), Antti Halonen (drums), Joni Härkönen (bass), Saku Heimonen (guitar), and Terho Korhonen (guitar).",
+      "logo": "https://www.metal.de/wp-content/uploads/2022/08/balance-breach-logo.jpg",
+      "headlineImage": "https://www.metal.de/wp-content/uploads/2022/08/balance-breach-summer-breeze-open-air-2022-20.jpg",
+      "website": "https://www.facebook.com/balancebreach/",
+      "spotify": "",
+      "genres": [
+        "Metalcore",
+        "Djent",
+        "Progressive Metal"
+      ],
+      "members": [
+        {
+          "name": "Aleksi Paasonen",
+          "role": "Vocals"
+        },
+        {
+          "name": "Antti Halonen",
+          "role": "Drums"
+        },
+        {
+          "name": "Joni Härkönen",
+          "role": "Bass"
+        },
+        {
+          "name": "Saku Heimonen",
+          "role": "Guitar"
+        },
+        {
+          "name": "Terho Korhonen",
+          "role": "Guitar"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "excide",
+      "name": "Excide",
+      "country": "United States",
+      "description": "Excide is an American post-hardcore band formed in January 2020 in Columbia, South Carolina. Initially conceived as a solo project by vocalist Tyler Washington, the project quickly evolved into a full band as other musicians joined the lineup. Their music draws comparisons to bands like Snapcase, Quicksand, and Cast Iron Hike, blending elements of post-hardcore with melodic and alternative influences. In September 2022, Excide released their debut full-length album, \"Deliberate Revolver,\" through New Morality Zine. The album features 11 tracks that showcase the band's hardcore roots while expanding their sonic range with sweeping vocals, intricate guitar effects, and dynamic rhythms. The lead single, \"Flip,\" exemplifies this evolution, combining impassioned post-hardcore elements with more straightforward hardcore passages. ([releasewave.com](https://www.releasewave.com/releases/deliberate-revolver?utm_source=openai))",
+      "logo": "https://www.releasewave.com/releases/deliberate-revolver",
+      "headlineImage": "https://www.releasewave.com/releases/deliberate-revolver",
+      "website": "https://www.releasewave.com/releases/deliberate-revolver",
+      "spotify": "",
+      "genres": [
+        "Post-Hardcore",
+        "Melodic Hardcore",
+        "Alternative Rock"
+      ],
+      "members": [
+        {
+          "name": "Tyler Washington",
+          "role": "Vocals"
+        },
+        {
+          "name": "[Member Name]",
+          "role": "Guitar"
+        },
+        {
+          "name": "[Member Name]",
+          "role": "Bass"
+        },
+        {
+          "name": "[Member Name]",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "ozark-howler",
+      "name": "Ozark Howler",
+      "country": "United States",
+      "description": "\"Ozark Howler\" is a term that has been used in various musical contexts, but there is no widely recognized metal band by that name. The Ozark Howler is a cryptid in the folklore of Arkansas, said to dwell in the Ozark Mountains of Northern Arkansas and Southern Missouri. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Ozark_Howler?utm_source=openai))\n\nIn 2024, Amy Z. McAnally released a track titled \"Ozark Howler\" as part of her album \"Cryptid Campfire.\" ([minutewax.bandcamp.com](https://minutewax.bandcamp.com/track/ozark-howler?utm_source=openai)) Additionally, BardenBeats Band released a single titled \"Ozark Howler of the Night\" in June 2024. ([music.apple.com](https://music.apple.com/us/album/ozark-howler-of-the-night-single/1754345438?utm_source=openai))\n\nWhile these works incorporate the \"Ozark Howler\" theme, they are not associated with a metal band named \"Ozark Howler.\"",
+      "logo": "https://minutewax.bandcamp.com/track/ozark-howler",
+      "headlineImage": "https://minutewax.bandcamp.com/track/ozark-howler",
+      "website": "https://minutewax.bandcamp.com/track/ozark-howler",
+      "spotify": "",
+      "genres": [
+        "Rock",
+        "Garage Rock",
+        "Neo-Glam",
+        "Power Pop"
+      ],
+      "members": [],
+      "reviewed": false
+    },
+    {
+      "key": "into-the-void",
+      "name": "Into The Void",
+      "country": "Germany",
+      "description": "Into the Void was a German gothic metal band formed in 1998 in Goslar, Lower Saxony. The band was active until 2007, after which they disbanded following the loss of three members. Their music was characterized by atmospheric melodies and dark, introspective lyrics, typical of the gothic metal genre. Into the Void released three full-length albums:\n\n- \"Recapture\" (1999)\n- \"A Dying Morning\" (2001)\n- \"Love for a Lifetime\" (2006)\n\nThese albums showcased the band's evolution and their commitment to the gothic metal scene. The final lineup included Oliver Gliß (bass), David Hillebrecht (bass), Morten Kupczok (drums), Bernd Hasselberg (guitars), Oliver von Daak (guitars), and Kevin Adler (keyboards). Notably, members Bernd Hasselberg and Oliver von Daak had previous experience with bands such as Eibon, Trisect, Iron Fate, Dear Coroner, and Stalker. ([metal-archives.com](https://www.metal-archives.com/bands/Into_the_Void/37814?utm_source=openai))\n\nAfter their disbandment, the members pursued various musical endeavors, but Into the Void remains a significant part of Germany's gothic metal history.",
+      "logo": "https://www.metal-archives.com/images/37814_logo.jpg",
+      "headlineImage": "https://www.metal-archives.com/images/37814_photo.jpg",
+      "website": "https://www.metal-archives.com/bands/Into_the_Void/37814",
+      "spotify": "",
+      "genres": [
+        "Gothic Metal",
+        "Dark Metal"
+      ],
+      "members": [
+        {
+          "name": "Oliver Gliß",
+          "role": "Bass"
+        },
+        {
+          "name": "David Hillebrecht",
+          "role": "Bass"
+        },
+        {
+          "name": "Morten Kupczok",
+          "role": "Drums"
+        },
+        {
+          "name": "Bernd Hasselberg",
+          "role": "Guitars"
+        },
+        {
+          "name": "Oliver Von Daak",
+          "role": "Guitars"
+        },
+        {
+          "name": "Kevin Adler",
+          "role": "Keyboards"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "frankie-the-deadbeats",
+      "name": "Frankie \u0026 The Deadbeats",
+      "country": "Czech Republic",
+      "description": "Frankie \u0026 The Deadbeats is a Prague-based country band that has been blending traditional country and alt-country with a punk spirit since 2021. The group emerged from the vibrant Czech music scene, with members having backgrounds in bands such as Hanba, Prague Conspiracy, Unholy Preachers, TiNG, and Inverta Storca. ([goout.net](https://goout.net/uk/frankie-and-the-deadbeats/pzanaig/?utm_source=openai)) Their debut album, \"The Shining,\" was released in September 2021, followed by their second album, \"The Possibility That Love Is Not Enough,\" in October 2023. ([frankieandthedeadbeats.bandcamp.com](https://frankieandthedeadbeats.bandcamp.com/releases?utm_source=openai)) Their music is characterized by catchy melodies, dense atmospheres, and lyrics with dark poetics, building on American inspirations while adding irony and a confident perspective. ([mightysounds.cz](https://www.mightysounds.cz/en/kapela/frankie-and-the-deadbeats/?utm_source=openai))",
+      "logo": "https://linktr.ee/frankieandthedeadbeats",
+      "headlineImage": "https://linktr.ee/frankieandthedeadbeats",
+      "website": "https://linktr.ee/frankieandthedeadbeats",
+      "spotify": "",
+      "genres": [
+        "Country",
+        "Alt-Country",
+        "Punk"
+      ],
+      "members": [
+        {
+          "name": "František Knuth",
+          "role": "Vocals, Acoustic Guitar"
+        },
+        {
+          "name": "Jakub Siňor",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Miller Harrison",
+          "role": "Pedal Steel Guitar"
+        },
+        {
+          "name": "Štěpán Kouba",
+          "role": "Bass Guitar"
+        },
+        {
+          "name": "Martin Slezák",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "hollow-suns",
+      "name": "Hollow Suns",
+      "country": "Japan",
+      "description": "Hollow Suns is a Tokyo-based alternative rock band formed in 2014. Their music blends elements of grunge, punk, and shoegaze, incorporating hardcore grooves with melodic, punk-rooted hooks to create an aggressive and powerful sound. Influenced by bands such as Jimmy Eat World, Foo Fighters, and Smashing Pumpkins, Hollow Suns has developed a unique style that resonates with fans of alternative rock. In March 2026, they released their latest EP, \"Back to Dust,\" which builds on their previous work while exploring darker and heavier territories. The EP features walls of sound rooted in grunge and shoegaze, groovy riffs, and catchy melodies, showcasing the band's continued evolution. The release was mixed and mastered by Will Yip, with artwork created by Brianna Collins of Tigers Jaw. ([deathwishdirect.com](https://www.deathwishdirect.com/new-releases/hollow-suns-back-to-dust?utm_source=openai)) \"Back to Dust\" is available through ICE GRILL$ in Japan, Sunday Drive Records in the U.S., and Last Ride Records in Australia, with a worldwide tour planned in support of the release. ([sundaydrive-records.com](https://sundaydrive-records.com/products/back-to-dust?utm_source=openai))",
+      "logo": "https://hollowsuns.com/images/logo.png",
+      "headlineImage": "https://hollowsuns.com/images/press/BackToDust.jpg",
+      "website": "https://hollowsuns.com/",
+      "spotify": "",
+      "genres": [
+        "Alternative Rock",
+        "Grunge",
+        "Punk",
+        "Shoegaze"
+      ],
+      "members": [
+        {
+          "name": "Tomo",
+          "role": "Vocals/Guitar"
+        },
+        {
+          "name": "Yuki",
+          "role": "Guitar"
+        },
+        {
+          "name": "Ryo",
+          "role": "Bass"
+        },
+        {
+          "name": "Kenta",
+          "role": "Drums"
+        }
+      ],
+      "reviewed": false
+    },
+    {
+      "key": "fvlcrvm",
+      "name": "Fvlcrvm",
+      "country": "Slovakia",
+      "description": "FVLCRVM is an electronic music project from Bratislava, Slovakia, known for its innovative blend of genres such as Eurodance, Trance, and Synth Pop. The project began as a side endeavor by a member of the Slovak math-pop band NVMERI, quickly gaining recognition in the clubbing scene after releasing its first EP and remixes. This success led to participation in Red Bull Bass Camp in Bratislava and Prague, and performances alongside artists like Hudson Mohawke, Just Blaze, Pomo, Tokimonsta, and Falty DL. FVLCRVM's sound is characterized by a fusion of internet movements from Los Angeles, New Jersey, and Tokyo, including Jersey Club, Footwork, Future Beats, and Grime, with a strong emphasis on boomy beats and organic melodic compositions. This unique style has resonated with a diverse audience, from intimate club raves to major festival stages. The project's live performances seamlessly integrate the energy of club parties with the vibrancy of live concerts, featuring original compositions and remixes that have been played by DJs worldwide. FVLCRVM's background as an instrumentalist, DJ, and motion designer is evident in its self-produced visuals, transforming each show into a unique euphoric encounter. The project has released several works, including the \"Notch EP\" in 2014, the \"Unsung Heroes\" single in 2015, and the \"attentioncore\" EP in 2020. In 2021, FVLCRVM collaborated with SUBTENSION on the track \"Toxic (No Good)\", with all funds donated to the Mental Health League in Slovakia. The project continues to evolve, with recent releases such as \"Walque\" in February 2026 and \"Quit Playing\" in May 2026.",
+      "logo": "https://fvlcrvm.bandcamp.com/",
+      "headlineImage": "https://fvlcrvm.bandcamp.com/",
+      "website": "https://fvlcrvm.bandcamp.com/",
+      "spotify": "",
+      "genres": [
+        "Electronic",
+        "Eurodance",
+        "Trance",
+        "Synth Pop"
+      ],
+      "members": [
+        {
+          "name": "Fvlcrvm",
+          "role": "Producer, Dj, Motion Designer"
         }
       ],
       "reviewed": false
